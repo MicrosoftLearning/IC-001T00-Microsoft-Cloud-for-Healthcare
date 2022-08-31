@@ -28,7 +28,7 @@ by creating personalized communication based on patient insights.
 
 This lab focuses on the healthcare story of Elizabeth Moore.
 
-![Timeline Description automatically generated](media/6ec25178faea7cdb8abc9ae2bf891354.png)
+![[Timeline Description automatically generated](media/6ec25178faea7cdb8abc9ae2bf891354.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P2.png)
 
 At an annual checkup earlier this year, Elizabeth learned that she has
 hypermetropia, a common eye condition in adults in which nearby objects are
