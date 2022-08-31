@@ -66,7 +66,7 @@ nearby objects are blurry).
 
 2.  Go to Apps and open Marketing.
 
-![Graphical user interface, text, application, email Description automatically generated](media/0c80e4c5c760423b6d4e4e2abda03e06.png)
+![[Graphical user interface, text, application, email Description automatically generated](media/0c80e4c5c760423b6d4e4e2abda03e06.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P3.png)
 
 1.  Navigate to the **bottom left drop-down** and change the selection from
     Marketing to **Settings**.
