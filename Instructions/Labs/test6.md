@@ -248,7 +248,7 @@ particular patient segment.
 
     4.  **Description 2**: Come join us at this virtual event!
 
-!https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P31.png
+![[Graphical user interface, text, application Description automatically generated](media/23d75f573d107d99712b8a40063f4e0d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P31.png)
 
 1.  Edit the **footer** text of the email so that it reads **©2022 Lamna
     Healthcare Event.** Do not edit the dynamic text below it.
