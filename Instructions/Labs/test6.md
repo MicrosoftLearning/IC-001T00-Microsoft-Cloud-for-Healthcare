@@ -308,34 +308,34 @@ Now let’s make our own customer journey for patients with hypermetropia.
 
 1.  Select “**Patients with Hypermetropia**” for the source segment.
 
-![select “Patients with Hypermetropia” ](media/23624d08867f764e1e2e9fdfb0399e68.png)
+![[select “Patients with Hypermetropia” ](media/23624d08867f764e1e2e9fdfb0399e68.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P40.png)
 
 1.  Click the **General** tab and rename the record to “Healthy Eye Seminar”.
     Click **Save**.
 
-![Name the record Healthy Eye Seminar](media/cb53a8ba2bbddb26d72450dbffa4cc7a.png)
+![[Name the record Healthy Eye Seminar](media/cb53a8ba2bbddb26d72450dbffa4cc7a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P41.png)
 
 1.  Go back to the **Designer** tab. On the canvas between the gray arrows after
     the starting box, select the blue plus sign (+) that appears when you scroll
     over the line.
 
-![Add button appears in designer tab](media/360ac702f2eb1f0d43e4a9429a2ec4b3.png)
+![[Add button appears in designer tab](media/360ac702f2eb1f0d43e4a9429a2ec4b3.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P42.png)
 
 1.  Select Send an email from the contextual menu.
 
-![select Send an email from the contextual menu](media/71589db06379eae22149949f2f364fc0.png)
+![[select Send an email from the contextual menu](media/71589db06379eae22149949f2f364fc0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P43.png)
 
 1.  In the panel on the right for the Email field, select the marketing email
     “**Email Invitation – Healthy Eye Seminar**” that you created in the
     previous exercise.
 
-![Customer Journey Designer View to select an email](media/694f520cda16b8cd338d67c856186663.png)
+![[Customer Journey Designer View to select an email](media/694f520cda16b8cd338d67c856186663.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P44.png)
 
-![Select the “Email Invitation – Healthy Eye Seminar” email that you created in the previous task](media/32fc70058101117b29ad6cd15875260d.png)
+![[Select the “Email Invitation – Healthy Eye Seminar” email that you created in the previous task](media/32fc70058101117b29ad6cd15875260d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P45.png)
 
 1.  Click **Save.**
 
-![click save for customer journey](media/abb79ae8383fef52a15c914de75da4cc.png)
+![[click save for customer journey](media/abb79ae8383fef52a15c914de75da4cc.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P46.png)
 
 1.  Switch to the **General** tab to configure the run schedule for your
     customer journey. Enter a **Start and End** date and time that makes sense
@@ -343,14 +343,14 @@ Now let’s make our own customer journey for patients with hypermetropia.
     upcoming Start time on today’s date. Remember the dates you enter for the
     next exercise.
 
-![Graphical user interface, application Description automatically generated](media/a25f05b4fff7e1ef0fcdd658cf2011dd.png)
+![[Graphical user interface, application Description automatically generated](media/a25f05b4fff7e1ef0fcdd658cf2011dd.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P47.png)
 
 1.  Click **Save**.
 
 2.  Your journey is now ready to go. To start the journey, navigate back to the
     Designer tab and publish it by selecting **Go live** on the command bar.
 
-![select go live on the command bar](media/de5ed776db0ab62e5f41632dd51feeb2.png)
+![[select go live on the command bar](media/de5ed776db0ab62e5f41632dd51feeb2.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P48.png)
 
 1.  Dynamics 365 Marketing copies the journey to its email marketing service,
     which executes the journey by processing contacts, performing actions, and
@@ -358,7 +358,7 @@ Now let’s make our own customer journey for patients with hypermetropia.
     journey's **Status Reason** as it sequences through **Going Live**
     to **Live**.
 
-![Your journey is now ready to go. To start the journey, publish it by selecting Go live on the command bar](media/40d5926277e159ebcfcfc164a741f4b3.png)
+![[Your journey is now ready to go. To start the journey, publish it by selecting Go live on the command bar](media/40d5926277e159ebcfcfc164a741f4b3.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P49.png)
 
 1.  Once your patient journey runs, you will be able to gather **key metrics and
     insights** from the record. When this information is available depends on
@@ -384,7 +384,7 @@ generation, and evaluation of ROI.
 1.  In the Patient Outreach application, click **Events** on the Site Map under
     Event Management**.**
 
-![Click on Events on the Sitemap](media/d9eaffe3517cf97f5953775396a879f3.png)
+![[Click on Events on the Sitemap](media/d9eaffe3517cf97f5953775396a879f3.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P50.png)
 
 1.  Select **New** on the command bar to create a new event.
 
@@ -393,40 +393,40 @@ generation, and evaluation of ROI.
     Marketing email in the previous exercise. Familiarize yourself with the
     other fields on the forms as part of the Preliminaries event stage.
 
-![new Event record](media/af57c80f2a746549154af5e6a4afb078.png)
+![[new Event record](media/af57c80f2a746549154af5e6a4afb078.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P51.png)
 
 1.  Click **Save**.
 
 2.  Since this will be a virtual event, in the Stream This Event Online section,
     toggle “**Do you want to stream this event**” to **Yes**.
 
-![Select Yes to stream the event online](media/2c517683a531aefa31bb6974004659dd.png)
+![[Select Yes to stream the event online](media/2c517683a531aefa31bb6974004659dd.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P52.png)
 
-![Graphical user interface, application Description automatically generated](media/54a8cc2efcf02bae679920ca1508b487.png)
+![[Graphical user interface, application Description automatically generated](media/54a8cc2efcf02bae679920ca1508b487.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P53.png)
 
 1.  In the Business Process Flow, select the first stage **Preliminaries**. In
     the flyout, click **Next Stage.**
 
-![Click Preliminaries and then click Next Stage](media/08a5f8a76105e84dc2724181e655b0f5.png)
+![[Click Preliminaries and then click Next Stage](media/08a5f8a76105e84dc2724181e655b0f5.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P54.png)
 
 1.  Advance each stage in the business process flow until you reach the
     **Launch** stage. Observe the fields associated with stage as you advance
     through them.
 
-![Business Process flow with all stages checked up to Launch](media/f7b0995f6d11a11941b7cc79448467bd.png)
+![[Business Process flow with all stages checked up to Launch](media/f7b0995f6d11a11941b7cc79448467bd.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P55.png)
 
 1.  Click **Go live** on the command bar. If you don’t see Go live available,
     select Save first.
 
-![Click Go live on the command bar](media/4fc68f56dc09929e68b64439c4deb451.png)
+![[Click Go live on the command bar](media/4fc68f56dc09929e68b64439c4deb451.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P56.png)
 
 1.  You will see the **Teams URL** populated.
 
-![Graphical user interface, text, application Description automatically generated](media/0e0e295f3185f7b7fdd1ad6572f39a74.png)
+![[Graphical user interface, text, application Description automatically generated](media/0e0e295f3185f7b7fdd1ad6572f39a74.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P57.png)
 
 1.  You may also choose to **change the meeting options**. After toggling to
     enable this setting, additional fields appear. These allow you to modify
     settings such as making the recording available to attendees, enabling
     meeting chat, allowing reactions, etc.
 
-![Graphical user interface, text Description automatically generated](media/3e0791109e24f0ddd603da44a6829655.png)
+![[Graphical user interface, text Description automatically generated](media/3e0791109e24f0ddd603da44a6829655.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P58.png)
