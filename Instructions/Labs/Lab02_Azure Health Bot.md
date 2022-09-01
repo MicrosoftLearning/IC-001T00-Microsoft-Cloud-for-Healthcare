@@ -352,7 +352,7 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
     The queue **Escalate To Human** is created to manage and redirect the incoming messages from a user to a Customer Service (human) Agent when Bot sends the user through to a live agent.
 
-    ![A screenshot of a computer Description automatically generated](media/3a8c720d495e6f1e3e8e233f29feb698.png)
+    ![[A screenshot of a computer Description automatically generated](media/3a8c720d495e6f1e3e8e233f29feb698.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P60.png)
 
 **Congratulations!** You have created the necessary queue to escalate to human agent and added the appropriate users to each messaging queue.
 
@@ -364,80 +364,80 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 -   **Human Routing Rule**: When context variable **EscalateToAgent** is present and set to 1, we route to the queue that has only human users (agents) who can take over conversation.
 1.  Navigate to Work Streams.
 
-    ![Table Description automatically generated](media/90ab5b0f2069e10ac4846949eb221dcc.png)
+    ![[Table Description automatically generated](media/90ab5b0f2069e10ac4846949eb221dcc.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P61.png)
 
 1.  Select and edit the **Live chat workstream** .
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](media/afc73927f2b843baad2e47e046e23149.png)
+    ![[Graphical user interface, text, application, chat or text message Description automatically generated](media/afc73927f2b843baad2e47e046e23149.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P62.png)
 
 1.  In the Live chat workstream record, select the Context Variables tab. Select + New.
 
-    ![Graphical user interface, text, application Description automatically generated](media/ea4e854aca2309c4d6d9885befc69b0c.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/ea4e854aca2309c4d6d9885befc69b0c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P63.png)
 
 1.  Create the new Context Variable with the following details:
     1.  **DisplayName:** EscalateToAgent
     2.  **Name:** EscalateToAgent
     3.  **Type:** Number
 
-        ![Graphical user interface, application Description automatically generated](media/32691edc56dc841ef9aac60430c001e8.png)
+        ![[Graphical user interface, application Description automatically generated](media/32691edc56dc841ef9aac60430c001e8.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P64.png)
 
 1.  Click Save and Close.
 1.  You should now see the new Context Variable in the Live chat workstream.
 
-    ![Graphical user interface, text, application Description automatically generated](media/23f8d98a4d875d3c9c7240a0b6ee6cfc.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/23f8d98a4d875d3c9c7240a0b6ee6cfc.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P65.png)
 
 1.  Select the **Routing Rules** tab. Click **+ Add** to create a new routing rule.
 
-    ![Graphical user interface Description automatically generated](media/da3879889457a2bcf71077613f593572.png)
+    ![[Graphical user interface Description automatically generated](media/da3879889457a2bcf71077613f593572.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P66.png)
 
 1.  Create the new Health Bot routing rule with the following details:
 2.  **Name:** ToHealthcareBot
 3.  **Queue**: Default messaging queue
 4.  No Conditions.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/3084b93efbb53cf7a3ae43d4203f6e0a.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/3084b93efbb53cf7a3ae43d4203f6e0a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P67.png)
 
 1.  Select **Save & Close.** On the Live chat workstream, click **+ Add** to add another new Routing Rule.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/6f13259ee245928e25446f58888237f8.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/6f13259ee245928e25446f58888237f8.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P68.png)
 
 1.  Create the new Omnichannel Agent routing rule with the following details:
 2.  **Name:** ToAgent
 3.  **Queue:** EscalateToHuman
 4.  Add Condition: Context Variable “EscalateToAgent = 1”
 
-    ![Graphical user interface Description automatically generated](media/b7e8939a21a7c69facab8ea33df0b2c0.png)
+    ![[Graphical user interface Description automatically generated](media/b7e8939a21a7c69facab8ea33df0b2c0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P69.png)
 
-    ![Graphical user interface, application Description automatically generated with medium confidence](media/f77be203dbddd126107dab5f03db2150.png)
+    ![[Graphical user interface, application Description automatically generated with medium confidence](media/f77be203dbddd126107dab5f03db2150.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P70.png)
 
 1.  Select Save & Close.
 1.  On the Live chat workstream, you should now see the two **Routing Rules** we created for **Bot** (ToHealthcareBot) and **Agent** (ToAgent).
 
-    ![Application Description automatically generated with medium confidence](media/274fa2c35fb1bc88254b0bbbac608f55.png)
+    ![[Application Description automatically generated with medium confidence](media/274fa2c35fb1bc88254b0bbbac608f55.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P71.png)
 
 **Congratulations!** You have created the proper context variable and routing rules that will allow customers to begin conversation with a health bot and escalate to a human agent.
 
 **Task 5: Create Chat Widget for Health Bot**
 
-1.  Navigate to Chat.
+1.  Navigate to **Chat**.
 
-    ![A picture containing graphical user interface Description automatically generated](media/8f6d4e945c13a7c3dbde4b3304d7735d.png)
+    ![[A picture containing graphical user interface Description automatically generated](media/8f6d4e945c13a7c3dbde4b3304d7735d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P72.png)
 
 1.  Select **+New** Chat Widget.
 
-    ![A picture containing graphical user interface Description automatically generated](media/98d9e34bfd280bbc192a1fb61be1c639.png)
+    ![[A picture containing graphical user interface Description automatically generated](media/98d9e34bfd280bbc192a1fb61be1c639.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P73.png)
 
 1.  Give the Chat Widget a **Name** (eg., Patient Portal Chat Widget).
 
-    ![Graphical user interface, application Description automatically generated](media/92615511958bb3fb70d8990149386c2b.png)
+    ![[Graphical user interface, application Description automatically generated](media/92615511958bb3fb70d8990149386c2b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P74.png)
 
 1.  Click **Save**.
 
-    ![Graphical user interface, text, application Description automatically generated](media/7acbbe5239426e7217887a09a7419d3c.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/7acbbe5239426e7217887a09a7419d3c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P75.png)
 
-1.  After the record is saved, a **Widget Code Snippet** will be generated. **Copy** the code snippet and store it for later use.
+1.  After the record is saved, a **Widget Code Snippet** will be generated. Copy the code snippet and store it for later use.
 
-    ![Graphical user interface, application Description automatically generated](media/7cb80103a5d724ce25e77ebaffa39486.png)
+    ![[Graphical user interface, application Description automatically generated](media/7cb80103a5d724ce25e77ebaffa39486.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P76.png)
 
 **Congratulations!** In this exercise, you have successfully configured Customer Service Omnichannel Live chat by creating the necessary Users, Queues, Work Streams, Context Variables, Routing Rules, and Chat Widget. These all work together and allow patients to chat with a virtual health bot with the option to escalate up to a human agent if needed.
 
@@ -451,37 +451,37 @@ Portal Management: Application to help you get started with the advanced portal 
 
 1.  In <http://make.powerapps.com>, open the **Portal Management** app.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/19a7a7226ebe85f3eb612fd238563bbe.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/19a7a7226ebe85f3eb612fd238563bbe.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P77.png)
 
 1.  Select **Content Snippets** in the left navigation pane
 
-    ![Table Description automatically generated with medium confidence](media/f861f24701cf02d528a172ffe0893635.png)
+    ![[Table Description automatically generated with medium confidence](media/f861f24701cf02d528a172ffe0893635.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P78.png)
 
-1.  In **Active Content Snippets**, type “**Chat**” in the **Search** box and press enter.
+1.  In **Active Content Snippets**, type **Chat** in the **Search** box and press **enter**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/cff8a7f9411b1163e8fb7c6fc8697868.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/cff8a7f9411b1163e8fb7c6fc8697868.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P79.png)
 
 1.  You will see two **Chat Widget Code** records retrieved in the list. Click to open the Chat Widget Code record related to **Customer Self-service.**
 
-    ![Table Description automatically generated with low confidence](media/eec26f0c417e86410fcad217ff590587.png)
+    ![[Table Description automatically generated with low confidence](media/eec26f0c417e86410fcad217ff590587.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P80.png)
 
-1.  In the **Chat Widget Code** record associated with Customer self-service, select **Value (HTML)** \> **Html** Tab and then paste the **Chat Widget Code snippet** that you copied and stored in the previous task.
+1.  In the **Chat Widget Code** record associated with Customer self-service, select **Value (HTML) > Html** Tab and then paste the Chat Widget Code snippet that you copied and stored in the previous task.
 
-    ![Graphical user interface, text, application, Teams Description automatically generated](media/2b2baee2c5bc49b17f41cb930fb8cba0.png)
+    ![[Graphical user interface, text, application, Teams Description automatically generated](media/2b2baee2c5bc49b17f41cb930fb8cba0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P81.png)
 
-1.  Click Save & Close.
+1.  Click **Save & Close**.
 
-    ![Graphical user interface, text, application Description automatically generated](media/b80bd27b66c7be47651b1c0c7e403456.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/b80bd27b66c7be47651b1c0c7e403456.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P82.png)
 
 1.  Now open the other **Chat Widget Code** associated with the **Healthcare Patient Portal** website.
 
-    ![A picture containing text Description automatically generated](media/ada590194178a7887fb2f26bdc5d0997.png)
+    ![[A picture containing text Description automatically generated](media/ada590194178a7887fb2f26bdc5d0997.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P83.png)
 
-1.  In the **Chat Widget Code** record associated with the Healthcare Patient Portal, paste in **Value** (HTML) the same **Chat Widget Code snippet** that you copied and stored previously and added to the customer self-service chat widget code. Replace any value that may have already populated the field.
+1.  In the **Chat Widget Code** record associated with the Healthcare Patient Portal, paste in **Value (HTML)** the same Chat Widget Code snippet that you copied and stored previously and added to the customer self-service chat widget code. Replace any value that may have already populated the field.
 
-    ![Graphical user interface, text, application, email, Teams Description automatically generated](media/c4d7d635a96cba9ea7c687f825ffaef1.png)
+    ![[Graphical user interface, text, application, email, Teams Description automatically generated](media/c4d7d635a96cba9ea7c687f825ffaef1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P84.png)
 
-1.  Select Save and Close.
+1.  Select **Save and Close**.
 
 Congratulations! In this exercise you have successfully updated the chat widget in the Power App Portal Content Snippets. With this configuration, the Health Bot will be visible on the Power Apps portal for both the customer self-service template and the healthcare patient portal template.
 
