@@ -167,7 +167,7 @@ Note: If you are in an official training, search for you assigned user – IAD U
  
 
 10.	Select the Omnichannel Agent roles to assign to your user and select OK.
-  
+ 
 
 Congratulations!  You assigned the proper omnichannel agent role to your user to allow you to be a live agent in omnichannel.
 
@@ -175,7 +175,7 @@ Task 2: Create Health Bot User in Dynamics 365 Customer Service
 We need two users to configure in Omnichannel for Dynamics 365 Customer Service:
 •	Health Bot User – This is the Azure Health Bot user we created in the previous exercise.
 •	Omnichannel Agent User – This is your current user whom you are logged into Dynamics 365.  This will allow you to be a live agent in Customer Service who receives messages from portal users through Azure Bot escalations.  Note: For official trainings, this is your assigned user, iaduser[x]
-In this task, you will create a Bot User which helps connect Azure Health Bot with Omnichannel live Chat . 
+In this task, you will create a Bot User which helps connect Azure Health Bot with Omnichannel live Chat. 
 1.	Go to https://admin.powerplatform.microsoft.com/.
 Select your Microsoft Cloud for Healthcare environment from the list 
 
@@ -201,7 +201,7 @@ Select your Microsoft Cloud for Healthcare environment from the list
  
 
 9.	Return to the Dynamics 365 User page, switch the view to Enabled Users.
-  
+ 
 
 10.	While in the Enabled User list, scroll to find your App user or use the Search bar. Double click on the user or select the row and click Edit.
 Note: If you are in an official training, search for the Application User – MCH Application ID
@@ -222,7 +222,7 @@ b.	Bot application ID: This is the Azure Health BotId you copied when enabling t
  
 
 15.	Assign the Omnichannel Agent role to the Bot User as you did for your own user in the previous task.  This will allow the bot to act as an omnichannel agent like your user.
-  
+ 
 
 Congratulations!  You successfully created a Bot User and assigned to it the Omnichannel Agent role.
 
@@ -240,7 +240,7 @@ In this task, you will create and configure the omnichannel queues necessary to 
 4.	We will now associate the Default messaging queue with the Bot User so it will respond to incoming messages from customers without agent (human) intervention.
 
 5.	Select Add Existing User on the User (Agents) subgrid to add the Bot user you previously created. 
-  
+ 
 
 6.	In the Lookup Records pane, search for your Bot User (MCHApplicationId) created in the earlier task.  
  
@@ -319,7 +319,7 @@ c.	Add Condition: Context Variable “EscalateToAgent = 1”
 
 Congratulations! You have created the proper context variable and routing rules that will allow customers to begin conversation with a health bot and escalate to a human agent.
 
-Task 5: Create Chat Widget for Health Bot 
+Task 5: Create Chat Widget for Health Bot
 1.	Navigate to Chat.
  
 
@@ -363,7 +363,7 @@ Portal Management: Application to help you get started with the advanced portal 
 7.	Now open the other Chat Widget Code associated with the Healthcare Patient Portal website.
  
 
-8.	In the Chat Widget Code record associated with the Healthcare Patient Portal, paste in Value (HTML) the same Chat Widget Code snippet that you copied and stored previously and added to the customer self-service chat widget code.  Replace any value that may have already populated the field. 
+8.	In the Chat Widget Code record associated with the Healthcare Patient Portal, paste in Value (HTML) the same Chat Widget Code snippet that you copied and stored previously and added to the customer self-service chat widget code.  Replace any value that may have already populated the field.
  
 
 9.	Select Save and Close.
