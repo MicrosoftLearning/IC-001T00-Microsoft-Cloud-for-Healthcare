@@ -15,11 +15,11 @@ The Health Bot Service contains **a built-in medical database**, including **tri
 
 The Azure Health Bot focuses on the Enhance patient engagement priority scenario by creating a virtual bot health option to allow for new avenues of care with embedded insights.
 
-![](media/df4dee19dba74e977d1d001c9dbd3a3d.png)
+![[](media/df4dee19dba74e977d1d001c9dbd3a3d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P1.png)
 
 This lab will focus on Lamna Healthcare Company.
 
-![Timeline Description automatically generated](media/c10dc56b18504fc74d826e67b4779581.png)
+![[Timeline Description automatically generated](media/c10dc56b18504fc74d826e67b4779581.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P2.png)
 
 As part of their digital transformation efforts, Lamna Healthcare Company is seeking to streamline their patient engagement capabilities by implementing Azure Health Bot to help improve processes and services, such as entering medication requests. By allowing patients to interact with this service, Lamna Healthcare Company will move one step closer to their goal of improving patient outcomes while reducing overall costs.
 
@@ -47,13 +47,13 @@ In this exercise, you will do the following:
 **Task 1: Install Azure Health Bot in Azure Subscription**
 
 1.  While logged in to your Microsoft 365 tenant, open a new tab in your internet browser incognito or in-private mode and navigate to Azure Portal at <https://portal.azure.com/>
-1.  Search for **Azure Health Bot** in the top search bar and **select** it from the search results.
+1.  Search for **Azure Health Bot** in the top search bar and select it from the search results.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/a65f6285399bdbea243f25673a5d8f49.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/a65f6285399bdbea243f25673a5d8f49.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P3.png)
 
 1.  Click **Create** button to create a new Azure Health Bot instance.
 
-    ![Create Azure Health Bot subscription](media/118bd676415131fdddd8f5fd46640242.png)
+    ![[Create Azure Health Bot subscription](media/118bd676415131fdddd8f5fd46640242.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P4.png)
 
 1.  You will be redirected to the Azure Health Bot page. Enter the following information:
     1.  **Subscription**: PowerPlatformOpenHacks Subscription
@@ -62,84 +62,83 @@ In this exercise, you will do the following:
     4.  **Region**: East US
     5.  **Plan**: Free (F0)
 
-        ![Graphical user interface, text, application, email Description automatically generated](media/2404692a9eb1c50aa92368d1c29f2884.png)
+        ![[Graphical user interface, text, application, email Description automatically generated](media/2404692a9eb1c50aa92368d1c29f2884.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P5.png)
 
-1.  Select Review + Create.
-2.  
-3.  On the Review and create page, verify your details are correct as Azure validates your Health Bot. After validation passes, the create button will become enabled. Click **Create**.
-4.  
+1.  Select **Review + Create**.
+
+1.  On the **Review and create** page, verify your details are correct as Azure validates your Health Bot. After validation passes, the create button will become enabled. Click **Create**.
 
     Note: It will take few seconds to run the backend process before the Create button is enabled.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/e3a5ecbbc2c1a6b50a71cfacd0b04066.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/e3a5ecbbc2c1a6b50a71cfacd0b04066.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P6.png)
 
 1.  You will be redirected to the **Deployment** page for your new Azure Health Bot.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/4ffffa5803371734328aee8b5ebec6ed.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/4ffffa5803371734328aee8b5ebec6ed.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P7.png)
 
 1.  When deployment is complete, the **Go to resource** button will enable. Please wait until deployment is complete for the Azure Health Bot, then select **Go to resource** when enabled.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/ac8ddd40635ce57751ed7a2eb7244758.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/ac8ddd40635ce57751ed7a2eb7244758.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P8.png)
 
 1.  You will be redirected to the **Resource** page for your new Azure Health Bot. Click the **Management portal** link in the Essential section to open your Azure Health Bot instance configuration page.
 2.  
 
     Note: Please copy this Management portal link and store it to access the Health Bot later.
 
-    ![Text, letter Description automatically generated](media/53d0583b6517951ee5e9e03bfd90d7be.png)
+    ![[Text, letter Description automatically generated](media/53d0583b6517951ee5e9e03bfd90d7be.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P9.png)
 
 1.  You will be navigated to your new Azure Health Bot instance homepage.
 
-    ![Text Description automatically generated](media/52f9eefb1d4ed9c2d11c32ce39d589e2.png)
+    ![[Text Description automatically generated](media/52f9eefb1d4ed9c2d11c32ce39d589e2.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P10.png)
 
 **Congratulations!** You have successfully created a new Health Bot instance in your Azure tenant.
 
 **Task 2: Update Azure Health Bot Settings to Enable Dynamics 365 Integration**
 
-1.  On the Azure Health Bot homepage, **expand** the side navigation bar to see the sitemap labels.
+1.  On the **Azure Health Bot** homepage, expand the side navigation bar to see the sitemap labels.
 
-    ![Graphical user interface, text Description automatically generated](media/28b505ad4ef61e0908ccc38cce4edd3f.png)
+    ![[Graphical user interface, text Description automatically generated](media/28b505ad4ef61e0908ccc38cce4edd3f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P11.png)
 
 1.  After expanding, you will see the sitemap labels next to the icons.
 
-    ![Graphical user interface, text, application Description automatically generated](media/af26ac689dd10446c23f0aaa289759c9.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/af26ac689dd10446c23f0aaa289759c9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P12.png)
 
 1.  Select **Configuration** \> **Conversation** on the navigation bar.
 
-    ![Graphical user interface, text, application Description automatically generated](media/6680b89dbb7d820457c36561e7f9837b.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/6680b89dbb7d820457c36561e7f9837b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P13.png)
 
 1.  You will be landed in the **Interactions** tab.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/5917220387c308aa24a7312572f02222.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/5917220387c308aa24a7312572f02222.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P14.png)
 
 1.  Select **Human Handoff** tab in the Conversation settings.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/12b5659e9cf72952080a3719a831e058.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/12b5659e9cf72952080a3719a831e058.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P15.png)
 
 1.  Scroll to the bottom of the **Human Handoff** page. Under **Dynamics 365 Omnichannel**, toggle **Enabled** for **Bridge Messages**. This is required to allow communication and bridge messages between the Azure health Bot and Dynamics 365 Omnichannel for Customer Service.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/ed9dd541bc7087a644bb594204b97feb.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/ed9dd541bc7087a644bb594204b97feb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P16.png)
 
 1.  Click **Save** in the top right.
--   ![](media/3ae097b8d24e332135e28974ac75c82b.png)
+-   ![[](media/3ae097b8d24e332135e28974ac75c82b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P17.png)
 
 Now let’s enable the Health Bot for **Microsoft Teams** Channel.
 
-1.  Navigate to Integration \> Channels.
+1.  Navigate to **Integration > Channels**.
 
-    ![A screenshot of a computer screen Description automatically generated with medium confidence](media/f6fb259069e6cffaddc26ea17780d922.png)
+    ![[A screenshot of a computer screen Description automatically generated with medium confidence](media/f6fb259069e6cffaddc26ea17780d922.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P18.png)
 
-1.  In the Channels list, select the toggle to **enable Microsoft Teams.**
+1.  In the **Channels** list, select the toggle to **enable Microsoft Teams.**
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/7b09cf75cd363f072946ae70a13f4ed6.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/7b09cf75cd363f072946ae70a13f4ed6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P19.png)
 
-1.  This will bring out a side window with your **Bot Id** information. **Copy and store** the BotId for later to use when creating the Dynamics 365 Application User.
+1.  This will bring out a side window with your **Bot Id** information. Copy and store the **BotId** for later to use when creating the Dynamics 365 Application User.
 
-    ![Graphical user interface, application Description automatically generated](media/d4fb13080064608042c9aec426ccfa8d.png)
+    ![[Graphical user interface, application Description automatically generated](media/d4fb13080064608042c9aec426ccfa8d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P20.png)
 
 1.  Select **Save**. This should enable Teams channel and your Microsoft Teams toggle should reflect accordingly.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/23e70b74e96269a6d816640975d6314c.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/23e70b74e96269a6d816640975d6314c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P21.png)
 
 **Congratulations!** You completed the Azure Health Bot settings for integration with Microsoft Teams and Dynamics 365 Omnichannel for Customer Service.
 
@@ -147,28 +146,27 @@ Now let’s enable the Health Bot for **Microsoft Teams** Channel.
 
 In this task, you will be using an Azure Application ID already created in our Azure tenant called “**MCH Application Id**”. Registering this Id establishes a trusted relationship between your Dynamics 365 app and the Microsoft identity platform. Using this Id, you will later create a Dynamics 365 Application User to bridge the authentication between Azure Health Bot and Power Apps.
 
-1.  Navigate back to the Azure Portal and search for **App Registrations** in the Search box.
+1.  Navigate back to the Azure Portal and search for **App Registrations** in the **Search** box.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/880203f33b48dd5a45e246ceda634900.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/880203f33b48dd5a45e246ceda634900.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P22.png)
 
 1.  You will be landed in the App registration homepage on the Owned applications tab.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/e5d5ad8a841079bc44afe93da9a96c84.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/e5d5ad8a841079bc44afe93da9a96c84.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P23.png)
 
 1.  Select the **All applications** tab.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/225827994cc3b027e0206ae3a03b1663.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/225827994cc3b027e0206ae3a03b1663.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P24.png)
 
-1.  To **search** for our Application Id, type “**MCH Application Id**” in the Search box.
+1.  To search for our Application Id, type **MCH Application Id** in the **Search** box.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/7465861b1d7ed32268c16628e2a583f3.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/7465861b1d7ed32268c16628e2a583f3.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P25.png)
 
-1.  Select the **MCH Application Id** app registration resource. **Copy and store** the **Application (client) ID** for later to use when creating the Dynamics 365 Application User.
-2.  
+1.  Select the **MCH Application Id** app registration resource. Copy and store the **Application (client) ID** for later to use when creating the Dynamics 365 Application User.
 
     Note: ID values have been removed in the screenshot for privacy purposes.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/e2f4af67d7c0e46db4986ad00b291bd2.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/e2f4af67d7c0e46db4986ad00b291bd2.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P26.png)
 
 **Congratulations!** You have successfully obtained the MCH Application ID from Application Registrations in the Azure Portal.
 
@@ -189,41 +187,41 @@ In the following tasks, you will complete the following:
 1.  While in the In-Private or Incognito window, navigate to [Power Apps](https://make.powerapps.com/).
 1.  Ensure the correct environment from the upper right **Environment** drop down is selected.
 
-    ![](media/118bf5867e47b80161dc93e75a5cef91.png)
+    ![[](media/118bf5867e47b80161dc93e75a5cef91.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P27.png)
 
-1.  Select the **gauge icon** in the upper right corner and navigate to **Advanced Settings**.
+1.  Select the **gauge** icon in the upper right corner and navigate to **Advanced Settings**.
 
-    ![Graphical user interface, application Description automatically generated](media/26d7f778f6db24083fd5f0fc77101de9.png)
+    ![[Graphical user interface, application Description automatically generated](media/26d7f778f6db24083fd5f0fc77101de9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P28.png)
 
 1.  A new window should open and navigate to Dynamics 365. It may take a while to load. If it’s been longer than a minute, stop and reload the page. It should then load faster. It will land you in the Business Management section of Dynamics 365.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/bfcdad8c3daa5eb23e266aa932b4b341.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/bfcdad8c3daa5eb23e266aa932b4b341.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P29.png)
 
-1.  On the top command bar next to Dynamics 365, select **Settings** to open the drop-down, then select **Security** in the third column under System.
+1.  On the top command bar next to **Dynamics 365**, select **Settings** to open the drop-down, then select **Security** in the third column under **System**.
 
-    ![Screenshot of Dynamics 365 navigation to settings and security on command bar](media/8df791e0613a679d2667dfda6ad39d00.png)
+    ![[Screenshot of Dynamics 365 navigation to settings and security on command bar](media/8df791e0613a679d2667dfda6ad39d00.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P30.png)
 
-1.  Under Security, select **Users**.
+1.  Under **Security**, select **Users**.
 
-    ![Screenshot of Users option first in the list of security settings](media/d56e54332566174314f7f98e4b2868da.png)
+    ![[Screenshot of Users option first in the list of security settings](media/d56e54332566174314f7f98e4b2868da.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P31.png)
 
-1.  Switch the view drop down from Omnichannel Users to **Enabled Users** for the grid view so that your user will show in the list.
+1.  Switch the **view** drop down from **Omnichannel Users** to **Enabled Users** for the grid view so that your user will show in the list.
 
-    ![Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](media/4bb54de365815f3f95a48ceb32e4184b.png)
+    ![[Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](media/4bb54de365815f3f95a48ceb32e4184b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P32.png)
 
-1.  While in the Enabled User list, scroll to **find your user** or use the **Search** bar.
+1.  While in the **Enabled User** list, scroll to find your user or use the **Search** bar.
 
-    Note: If you are in an official training, search for you assigned user – IAD User [x]
+    Note: If you are in an official training, search for your assigned user – IAD User [x]
 
-    ![Screenshot of searching for user in enabled user list](media/07f63477e1de63e1e662c2e29930b06f.png)
+    ![[Screenshot of searching for user in enabled user list](media/07f63477e1de63e1e662c2e29930b06f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P33.png)
 
 1.  Select your user for the training and select **Manage Roles** on the top command bar.
 
-    ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](media/2fea347790e3a9500986ebef69801b9f.png)
+    ![[Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](media/2fea347790e3a9500986ebef69801b9f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P34.png)
 
-1.  Select the Omnichannel Agent roles to assign to your user and select **OK**.
+1.  Select the **Omnichannel Agent** roles to assign to your user and select **OK**.
 
-    ![Table Description automatically generated with medium confidence](media/b05a09d5daad58c6cd7c7b2ed0f05699.png)
+    ![[Table Description automatically generated with medium confidence](media/b05a09d5daad58c6cd7c7b2ed0f05699.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P35.png)
 
 **Congratulations!** You assigned the proper omnichannel agent role to your user to allow you to be a live agent in omnichannel.
 
@@ -236,69 +234,69 @@ We need two users to configure in Omnichannel for Dynamics 365 Customer Service:
 
 In this task, you will create a **Bot User** which helps connect **Azure Health Bot** with **Omnichannel live Chat**.
 
-1.  Go to <https://admin.powerplatform.microsoft.com/>.
-
-    Select your Microsoft Cloud for Healthcare environment from the list![Graphical user interface, text, application Description automatically generated](media/1836537d73376573e5fb9d2b7558e082.png)
+1.  Go to <https://admin.powerplatform.microsoft.com/>. Select your Microsoft Cloud for Healthcare environment from the list
+    
+    ![[Graphical user interface, text, application Description automatically generated](media/1836537d73376573e5fb9d2b7558e082.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P36.png)
 
 1.  You will land on your environments detail page.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/ef6fd936eacf8812499e25fbbaac2b61.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/ef6fd936eacf8812499e25fbbaac2b61.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P37.png)
 
 1.  Click the **Settings** button on the top command bar.
 
-    ![Text, whiteboard Description automatically generated](media/85896a835a3355e762af5fe9840d9bad.png)
+    ![[Text, whiteboard Description automatically generated](media/85896a835a3355e762af5fe9840d9bad.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P38.png)
 
-1.  Expand Users + permissions and click Application users.
+1.  Expand **Users + permissions** and click **Application users**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/c8a2f4bc9448863f58f0f8420f8139cc.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/c8a2f4bc9448863f58f0f8420f8139cc.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P39.png)
 
 1.  Select (**+**) **New app user** button to create a new Application User.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/935cbf1daaa11d4ab5fc020ab9014ef8.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/935cbf1daaa11d4ab5fc020ab9014ef8.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P40.png)
 
 1.  Select (+) **Add an app** on the create screen that slides out on the right side.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/e5d95c0f349069e99f0cf6d5fefcad2b.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/e5d95c0f349069e99f0cf6d5fefcad2b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P41.png)
 
 2.  Paste the **Application ID** (the Application (client) ID you obtained in the Azure portal for the supplied MCH Application ID) into the search box and select the app from the list. Click **Add** at the bottom right.
 
-    ![Graphical user interface, text, application, Teams Description automatically generated](media/04529b8785762351e44e2e906f5fced3.png)
+    ![[Graphical user interface, text, application, Teams Description automatically generated](media/04529b8785762351e44e2e906f5fced3.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P42.png)
 
 1.  Select a **Business unit** from the drop-down list (the options in the list will be unique for each Dynamics 365 environment). Click **Create** at the bottom right.
 
-    ![Graphical user interface, text, application Description automatically generated](media/766532b9d83e34aa9b8b41dd66e934b8.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/766532b9d83e34aa9b8b41dd66e934b8.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P43.png)
 
-1.  Return to the Dynamics 365 User page, switch the view to **Enabled Users**.
+1.  Return to the **Dynamics 365 User** page, switch the view to **Enabled Users**.
 
-    ![Graphical user interface, text, application Description automatically generated](media/985aae3322d74c4bc36d775810b35e47.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/985aae3322d74c4bc36d775810b35e47.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P44.png)
 
-1.  While in the Enabled User list, scroll to **find your App user** or use the **Search** bar. Double click on the user or select the row and click Edit.
+1.  While in the **Enabled User** list, scroll to find your App user or use the **Search** bar. Double-click on the user or select the row and click **Edit**.
 
     Note: If you are in an official training, search for the Application User – MCH Application ID
 
-    ![](media/abd8a20335589b70afb5ebf62c687f50.png)
+    ![[](media/abd8a20335589b70afb5ebf62c687f50.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P45.png)
 
-1.  Change the **form type** from User to **Application User** above the User Name.
+1.  Change the form type from **User** to **Application User** above the User Name.
 
-    ![Graphical user interface, text, application Description automatically generated](media/4a1e0727b512c95398686e7b7dcd41c7.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/4a1e0727b512c95398686e7b7dcd41c7.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P46.png)
 
 1.  You will see a new form appear that aligns to an Application User.
 
-    ![Graphical user interface, application Description automatically generated](media/188b4b17bee4759cb8c95aec9e9f377f.png)
+    ![[Graphical user interface, application Description automatically generated](media/188b4b17bee4759cb8c95aec9e9f377f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P47.png)
 
 1.  In the **User Information** section, enter or select the following information and click the **Save** icon in the bottom right corner:
     1.  **User type**: Select **Bot application user**. This will *display a new field* to store the Bot application Id.
     2.  **Bot application ID**: This is the Azure Health BotId you copied when enabling the Teams channel. This field is displayed once the User Type is selected to be Bot application user.
 
-        ![Graphical user interface, text, application Description automatically generated](media/613b59124cdcbc567f57ec3f6bd36a65.png)
+        ![[Graphical user interface, text, application Description automatically generated](media/613b59124cdcbc567f57ec3f6bd36a65.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P48.png)
 
 1.  Select **Manage Roles** on the command bar.
 
-    ![Graphical user interface, text, application, Word Description automatically generated](media/e0df0d9fd01df99602ded8488485f9f0.png)
+    ![[Graphical user interface, text, application, Word Description automatically generated](media/e0df0d9fd01df99602ded8488485f9f0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P49.png)
 
-1.  Assign the **Omnichannel Agent** **role** to the Bot User as you did for your own user in the previous task. This will allow the bot to act as an omnichannel agent like your user.
+1.  Assign the **Omnichannel Agent** role to the Bot User as you did for your own user in the previous task. This will allow the bot to act as an omnichannel agent like your user.
 
-    ![Table Description automatically generated with medium confidence](media/b05a09d5daad58c6cd7c7b2ed0f05699.png)
+    ![[Table Description automatically generated with medium confidence](media/b05a09d5daad58c6cd7c7b2ed0f05699.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P50.png)
 
 **Congratulations**! You successfully created a Bot User and assigned to it the Omnichannel Agent role.
 
@@ -308,46 +306,46 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
 1.  In <http://make.powerapps.com>, open the **Omnichannel admin center** app.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/4a2241abec19cb58b0fa8d53e26568c6.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/4a2241abec19cb58b0fa8d53e26568c6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P51.png)
 
 1.  Select **Queues** on the left navigation bar.
 
-    ![Graphical user interface, application Description automatically generated](media/4429705a7d07ee921c512d1d56aa0549.png)
+    ![[Graphical user interface, application Description automatically generated](media/4429705a7d07ee921c512d1d56aa0549.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P52.png)
 
-1.  Open Default Messaging Queue.
+1.  Open **Default Messaging Queue**.
 
-    ![Graphical user interface, text, application Description automatically generated](media/c381d8b1a189a23a51aba7c4e56b233e.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/c381d8b1a189a23a51aba7c4e56b233e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P53.png)
 
 1.  We will now associate the Default messaging queue with the Bot User so it will respond to incoming messages from customers without agent (human) intervention.
-2.  
-3.  Select **Add Existing User** on the **User (Agents)** subgrid to add the Bot user you previously created.
 
-    ![Graphical user interface, text, application Description automatically generated](media/53cf7717406aeb991c1c2cbd9ed01202.png)
+1.  Select **Add Existing User** on the **User (Agents)** subgrid to add the Bot user you previously created.
 
-1.  In the Lookup Records pane, search for your **Bot User** (MCHApplicationId) created in the earlier task.
+    ![[Graphical user interface, text, application Description automatically generated](media/53cf7717406aeb991c1c2cbd9ed01202.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P54.png)
 
-    ![Graphical user interface, application, email Description automatically generated](media/1ef135ce446f7448e5f6bc0b394a4448.png)
+1.  In the **Lookup Records** pane, search for your Bot User (**MCHApplicationId**) created in the earlier task.
 
-1.  **Select** **the** **record** from the list and click **Add**.
+    ![[Graphical user interface, application, email Description automatically generated](media/1ef135ce446f7448e5f6bc0b394a4448.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P55.png)
 
-    ![Graphical user interface, application Description automatically generated](media/c96c1e82e974a167ddf6e76e5966c434.png)
+1.  Select the record from the list and click **Add**.
+
+    ![[Graphical user interface, application Description automatically generated](media/c96c1e82e974a167ddf6e76e5966c434.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P56.png)
 
 1.  You should now see the Bot User (MCH Application Id) in the Users (Agents) list. **Save & Close.**
 
     Note: If the user does not populate after adding, make sure you assigned the omnichannel agent security role to the bot user in the previous task (it may take up to 15 minutes for changes to take effect).
 
-    ![Graphical user interface, text, application Description automatically generated](media/e0629b9ccfa1f6a18f76466cae90165c.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/e0629b9ccfa1f6a18f76466cae90165c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P57.png)
 
 1.  Go back to the **Omnichannel queues** grid. Click **+** **New** to create a new Queue.
 
-    ![Graphical user interface, application Description automatically generated with medium confidence](media/87c1634389cce5500645938304e9a677.png)
+    ![[Graphical user interface, application Description automatically generated with medium confidence](media/87c1634389cce5500645938304e9a677.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P58.png)
 
 1.  Give the new Queue the following details:
     1.  **Name**: “Escalate To Human”
     2.  **Priority**: 1 (lower than default queue)
     3.  Click **Save**.
 
-        ![Graphical user interface, application Description automatically generated](media/a33a43043a6c27bc3242c3a98a365144.png)
+        ![[Graphical user interface, application Description automatically generated](media/a33a43043a6c27bc3242c3a98a365144.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P59.png)
 
 1.  A Users (Agents) **subgrid should appear** on the right and your **user should be automatically added** to the list. If your user account is not on the list, add it through the Add Existing User button now.
 2.  
