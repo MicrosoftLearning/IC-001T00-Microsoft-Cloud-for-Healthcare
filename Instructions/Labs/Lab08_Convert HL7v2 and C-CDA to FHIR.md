@@ -9,12 +9,9 @@ In today's health industry, the FHIR R4 format has become the standard medium fo
 ### Learning objectives
 
 In this lab, you will:
-
--   Specify API request parameters for converting data into FHIR
-
-    Prepare/clean data for conversion into FHIR
-
--   Make API calls to convert HL7v2 and C-CDA data into FHIR
+- Specify API request parameters for converting data into FHIR
+- Prepare/clean data for conversion into FHIR
+- Make API calls to convert HL7v2 and C-CDA data into FHIR
 
 ### Step 1 - Prepare an API request to convert HL7v2 into FHIR
 
