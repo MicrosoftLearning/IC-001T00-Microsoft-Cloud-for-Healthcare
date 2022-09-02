@@ -8,6 +8,8 @@ Data ingestion into FHIR is a vital capability for a healthcare organization's i
 
 For this lab, you will upload FHIR data bundles for import into the FHIR service. You will need to examine error logs and determine what is preventing the data in one of the bundles from being ingested.
 
+image
+
 ### Learning objectives
 
 In this lab, you will:
