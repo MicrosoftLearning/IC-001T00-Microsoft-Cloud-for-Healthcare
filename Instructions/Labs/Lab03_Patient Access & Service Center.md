@@ -266,75 +266,75 @@ In this task, you will continue as **Casey** and navigate the features of the Pa
 
 1.  After registering for an account in the **Patient Access Portal**, you should be welcomed by the portal Homepage or profile page if your account requires action, such as email confirmation required. You can ignore the email confirmation warning if displayed.
 
-    ![Graphical user interface, application Description automatically generated](media/e2519952290c4b7808b08d7d65e6d880.png)
+    ![[Graphical user interface, application Description automatically generated](media/e2519952290c4b7808b08d7d65e6d880.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P43.png)
 
 1.  Select **Lamna Healthcare** in the upper left to go back to the Homepage.
 
-    ![Graphical user interface, application Description automatically generated](media/3fa87ce9f874614b804657d0bc26cd18.png)
+    ![[Graphical user interface, application Description automatically generated](media/3fa87ce9f874614b804657d0bc26cd18.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P44.png)
 
 1.  You will be navigated to the Patient Portal **Homepage**.
 
-    ![Graphical user interface, application Description automatically generated](media/edd13cbeb614c2da3be6399108a4ae41.png)
+    ![[Graphical user interface, application Description automatically generated](media/edd13cbeb614c2da3be6399108a4ae41.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P45.png)
 
 1.  In the center of the homepage, you will see **shortcuts** to schedule an appointment, view messages, or find a doctor.
 
-    ![Screenshot of homepage shortcuts](media/638bef51cae429fb425812ff81fedd14.jpeg)
+    ![[Screenshot of homepage shortcuts](media/638bef51cae429fb425812ff81fedd14.jpeg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P46.png)
 
 1.  Below the shortcuts, you will see **current patient information** including unread messages, upcoming appointments, and current medications.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/2651c1fa4b133250b3cdb592a5e1bb79.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/2651c1fa4b133250b3cdb592a5e1bb79.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P47.png)
 
 1.  In the left navigation bar, you will see all available options for navigation in the Patient Portal. Click through the options to see what’s available and each associated screen.
 
-    ![Graphical user interface, application Description automatically generated](media/44e0855db215207e1d806f362657bc84.png)
+    ![[Graphical user interface, application Description automatically generated](media/44e0855db215207e1d806f362657bc84.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P48.png)
 
 1.  **Home** command will direct you to the homepage.
-2.  
-3.  **Find a** **doctor** shows a list of practitioners with associated information.
 
-    ![Table Description automatically generated](media/b46da4073d8ae30b098c88d9e68e2802.png)
+1.  **Find a doctor** shows a list of practitioners with associated information.
+
+    ![[Table Description automatically generated](media/b46da4073d8ae30b098c88d9e68e2802.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P49.png)
 
 1.  **Messages** allows a secure method to send and receive messages to healthcare professionals. Expand Messages on the navigation bar to see both the **Inbox** and **Sent** messages.
 
-    ![Graphical user interface, text, application Description automatically generated](media/0b3dfec5cfd26a0fb2ffae1b133b8e24.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/0b3dfec5cfd26a0fb2ffae1b133b8e24.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P50.png)
 
-1.  Expand **Appointments** to check **upcoming** and **schedule** **new** appointments. Scheduling new appointments allows for **clinic** or **virtual** appointments, which also includes instant virtual appointments. The Virtual Visit Lab will go through the process of booking an instant virtual appointment.
+1.  Expand **Appointments** to check upcoming and schedule new appointments. Scheduling new appointments allows for clinic or virtual appointments, which also includes instant virtual appointments. The Virtual Visit Lab will go through the process of booking an instant virtual appointment.
 
-    ![Graphical user interface, text, application Description automatically generated](media/45a0c94134f93577215b5b10a874ae9b.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/45a0c94134f93577215b5b10a874ae9b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P51.png)
 
-1.  Check **Medical records** including **medications**, **allergies**, **conditions, visit summaries**, **care plans**, and **care team**. You can see a full overview and filter by date and type.
+1.  Check **Medical records** including medications, allergies, conditions, visit summaries, care plans, and care team. You can see a full overview and filter by date and type.
 
-    ![Graphical user interface, text, email Description automatically generated](media/9cc4b68f58784f0ac3581541e567be66.png)
+    ![[Graphical user interface, text, email Description automatically generated](media/9cc4b68f58784f0ac3581541e567be66.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P52.png)
 
 1.  Lastly, there is Personal information, including emergency contacts and insurance coverages.
 
-    ![Text Description automatically generated](media/070d2df534c62b19930c545db8e76d7f.png)
+    ![[Text Description automatically generated](media/070d2df534c62b19930c545db8e76d7f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P53.png)
 
-    ![Graphical user interface, text, application Description automatically generated](media/6b0d8912dfc0e6ea0023b31de824035e.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/6b0d8912dfc0e6ea0023b31de824035e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P54.png)
 
 1.  The Azure Health Bot icon shows at the lower right-hand corner of the screen. You may start a conversation by clicking **Let’s Chat** button to open the virtual assistant.
 
-    ![Screenshot of Let's Chat virtual assistant Health Bot](media/d57b9e593f492102cdd20dbbd438d7e6.png)
+    ![[Screenshot of Let's Chat virtual assistant Health Bot](media/d57b9e593f492102cdd20dbbd438d7e6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P55.png)
 
 1.  In the final exercise, we will have a full conversation with the bot, but for now we will close and continue.
 
-    ![Screenshot of closing the Health Bot conversation](media/12f977916359020d423e6738565c1c1c.png)
+    ![[Screenshot of closing the Health Bot conversation](media/12f977916359020d423e6738565c1c1c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P56.png)
 
 1.  You may access the patient Profile page at any time by selecting the patient’s name in the upper right drop-down and selecting **Profile**.
 
-    ![Graphical user interface, text, application Description automatically generated](media/5123b861b30e199a8b0165933892c1d2.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/5123b861b30e199a8b0165933892c1d2.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P57.png)
 
 1.  Here you can customize the patient profile as needed. For now, we will keep it the same.
 
-    ![Graphical user interface, application Description automatically generated](media/2e9e895883dbdda3057021b22952966b.png)
+    ![[Graphical user interface, application Description automatically generated](media/2e9e895883dbdda3057021b22952966b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P58.png)
 
 1.  You may log out of the Patient Portal by selecting the patient’s name in the upper right drop-down and selecting **Sign Out**.
 
-    ![Graphical user interface, text, application Description automatically generated](media/ee216091aca8d2d1a1fb53cbb74ad1da.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/ee216091aca8d2d1a1fb53cbb74ad1da.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P59.png)
 
 1.  You should be redirected back to the sign in page.
 
-    ![A person holding a baby Description automatically generated with low confidence](media/d591821c155ce37b42cad19bf4937d6d.jpeg)
+    ![[A person holding a baby Description automatically generated with low confidence](media/d591821c155ce37b42cad19bf4937d6d.jpeg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P60.png)
 
 **Congratulations!** You have navigated the Patient Portal to see what information and communication is available to the Patient. In this exercise, you learned how to configure the Patient Access Portal to display as the Healthcare Patient Portal, modify the portal to display the company name, invite patients to register to the website, and navigate the website features.
 
@@ -350,7 +350,7 @@ See the following documentation to learn more about the productivity pane: [Prod
 
 In this exercise, you will create an agent script to appear in the productivity pane in Patient Service Center. The following screen shows the productivity pane on the right-hand side with the Agent Scripts tab showing. The agent script selected is Validate Patient Information and there are two steps shown. You will not see this below output until the final exercise in this lab while testing escalation, however, you will be creating the components needed to display in the productivity pane later.
 
-![Graphical user interface, application Description automatically generated](media/e9e70b76c91efe963f17e1245dbcc88f.JPG)
+![[Graphical user interface, application Description automatically generated](media/e9e70b76c91efe963f17e1245dbcc88f.JPG)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P61.png)
 
 **Task 1: Assign Productivity Tools Administrator Role**
 
@@ -361,47 +361,47 @@ See the following documentation to learn more about these roles: [Assign roles a
 1.  Using an In-Private or Incognito window, navigate to [Power Apps](http://make.powerapps.com).
 1.  Select the correct environment from the upper right **Environment** drop down.
 
-    ![](media/396337261137b8319d9cae85d9cefbba.png)
+    ![[](media/396337261137b8319d9cae85d9cefbba.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P62.png)
 
 1.  Select **Apps** on the left navigation bar.
 
-    ![Graphical user interface, application Description automatically generated](media/7ab15895d0ee4a9b65aa90fe7b2bb640.png)
+    ![[Graphical user interface, application Description automatically generated](media/7ab15895d0ee4a9b65aa90fe7b2bb640.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P63.png)
 
-1.  Open the Omnichannel admin center app.
+1.  Open the **Omnichannel admin center** app.
 
-    ![Screenshot of Omnichannel Administrator App in Power Apps](media/1f903d0ba4d66a015c432c0ba5e4f797.png)
+    ![[Screenshot of Omnichannel Administrator App in Power Apps](media/1f903d0ba4d66a015c432c0ba5e4f797.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P64.png)
 
-1.  Select the **gauge icon** in the upper right corner and navigate to **Advanced Settings**.
+1.  Select the **gauge** icon in the upper right corner and navigate to **Advanced Settings**.
 
-    ![Screenshot of Advanced settings in Settings drop down](media/8f673538d6f6c594ae83a217d121200c.png)
+    ![[Screenshot of Advanced settings in Settings drop down](media/8f673538d6f6c594ae83a217d121200c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P65.png)
 
 1.  A new window should open and navigate to Dynamics 365. It may take a while to load. If it’s been longer than a minute, stop and reload the page. It should then load faster.
-2.  
-3.  In Dynamics 365, select Settings \> Security.
 
-    ![Screenshot of Dynamics 365 navigation to settings and security on command bar](media/8df791e0613a679d2667dfda6ad39d00.png)
+1.  In Dynamics 365, select **Settings > Security**.
 
-1.  Under Security, select **Users**.
+    ![[Screenshot of Dynamics 365 navigation to settings and security on command bar](media/8df791e0613a679d2667dfda6ad39d00.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P66.png)
 
-    ![Screenshot of Users option first in the list of security settings](media/d56e54332566174314f7f98e4b2868da.png)
+1.  Under **Security**, select **Users**.
+
+    ![[Screenshot of Users option first in the list of security settings](media/d56e54332566174314f7f98e4b2868da.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P67.png)
 
 1.  Switch the view drop down from Omnichannel Users to **Enabled Users** for the grid view so that your user will show in the list.
 
-    ![Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](media/4bb54de365815f3f95a48ceb32e4184b.png)
+    ![[Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](media/4bb54de365815f3f95a48ceb32e4184b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P68.png)
 
-1.  While in the Enabled User list, scroll down to **find your user** or use the **Search** bar.
+1.  While in the **Enabled User** list, scroll down to **find your user** or use the **Search** bar.
 
-    ![Screenshot of searching for user in enabled user list](media/07f63477e1de63e1e662c2e29930b06f.png)
+    ![[Screenshot of searching for user in enabled user list](media/07f63477e1de63e1e662c2e29930b06f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P69.png)
 
 1.  Select your user for the training and select **Manage Roles** on the top command bar.
 
-    ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](media/2fea347790e3a9500986ebef69801b9f.png)
+    ![[Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](media/2fea347790e3a9500986ebef69801b9f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P70.png)
 
 1.  Scroll down and select the following two roles to your user and select **OK**.
     1.  Productivity tools administrator
     2.  Productivity tools user
 
-        ![Screenshot of Manage User Roles dialog where 2 roles have been selected: Productivity tools administrator and Productivity tools user](media/4bdee9a7ed4c8c640a681b207b202e82.png)
+        ![[Screenshot of Manage User Roles dialog where 2 roles have been selected: Productivity tools administrator and Productivity tools user](media/4bdee9a7ed4c8c640a681b207b202e82.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P71.png)
 
         Note: You will assign more roles in this lab. It is recommended to leave the User screen open.
 
