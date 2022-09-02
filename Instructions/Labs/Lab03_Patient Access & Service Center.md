@@ -153,41 +153,41 @@ We will first open the Portal to show the Customer Self-Service template current
 In this task, we will edit the Patient Portal website to align the name with Lamna Healthcare Company since the template uses a generic company name.
 
 1.  Navigate to **Apps** in <https://make.powerapps.com>.
-1.  Select the Healthcare Patient Portal app and click More Commands (…) \> Edit.
+1.  Select the **Healthcare Patient Portal** app and click **More Commands (…) > Edit**.
 
-    ![Graphical user interface, application Description automatically generated](media/b80aced98cd2d73b58c646537cc26dac.png)
+    ![[Graphical user interface, application Description automatically generated](media/b80aced98cd2d73b58c646537cc26dac.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P22.png)
 
 1.  The Patient Portal designer will load after getting thing ready.
 
-    ![Graphical user interface, application Description automatically generated](media/acf541e7ed85ad1ae051d4adc1501fe4.png)
+    ![[Graphical user interface, application Description automatically generated](media/acf541e7ed85ad1ae051d4adc1501fe4.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P23.png)
 
 1.  Once loaded, you should see **Contoso Healthcare** in the upper left of the design screen. The name may be overlapping the logo but will display properly on the website.
 
-    ![Graphical user interface, table Description automatically generated](media/1aa54af4205ceccbc609d0c27ea24854.png)
+    ![[Graphical user interface, table Description automatically generated](media/1aa54af4205ceccbc609d0c27ea24854.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P24.png)
 
-1.  Click the text box that reads Contoso Healthcare and change it to **Lamna Healthcare**.
+1.  Click the text box that reads **Contoso Healthcare** and change it to **Lamna Healthcare**.
 
-    ![A picture containing table Description automatically generated](media/7056dc139049101a98f96a8faa2346ee.png)
+    ![[A picture containing table Description automatically generated](media/7056dc139049101a98f96a8faa2346ee.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P25.png)
 
 1.  The page should automatically save the changes. You can verify in the command bar that it says **Saved**, has the green check mark, and on hover shows the correct saved time.
 
-    ![A picture containing background pattern Description automatically generated](media/d758717616fdf61843f047075274fba4.png)
+    ![[A picture containing background pattern Description automatically generated](media/d758717616fdf61843f047075274fba4.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P26.png)
 
 1.  Select **Sync Configurations** in the command bar to sync data to CDS.
 
-    ![Graphical user interface, application Description automatically generated](media/d358036b7b72daa60269c26dfb117f55.png)
+    ![[Graphical user interface, application Description automatically generated](media/d358036b7b72daa60269c26dfb117f55.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P27.png)
 
 1.  It may take a moment to load the preview.
 
-    ![Graphical user interface Description automatically generated](media/856c9b494ef46aefade5841ca92399b1.png)
+    ![[Graphical user interface Description automatically generated](media/856c9b494ef46aefade5841ca92399b1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P28.png)
 
 1.  Once configurations are completed syncing, select **Browse website** on the command bar.
 
-    ![](media/a470a73c9f4cc83c7889783d7aa9852a.png)
+    ![[](media/a470a73c9f4cc83c7889783d7aa9852a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P29.png)
 
 1.  The Healthcare Patient Portal should open, and you should see the **Lamna Healthcare** company name in the upper left corner.
 
-    ![A person holding a baby Description automatically generated with low confidence](media/3572173d1baad1996d694beb62f6c8d4.png)
+    ![[A person holding a baby Description automatically generated with low confidence](media/3572173d1baad1996d694beb62f6c8d4.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P30.png)
 
 **Congratulations!** You completed modifying the Healthcare Patient Portal to display the correct company name.
 
