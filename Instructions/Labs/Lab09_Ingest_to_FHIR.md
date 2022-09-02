@@ -1,4 +1,19 @@
-# Module 5 Lesson 4 Lab 9: Convert HL7v2 and C-CDA to FHIR
+# Module 5 Lesson 4 Lab 9: Ingest to FHIR
+
+### Overview
+
+In this lab, you will learn how to use the FHIR Loader utility to ingest FHIR data into the FHIR service.
+
+Data ingestion into FHIR is a vital capability for a healthcare organization's integration with multiple health data systems. While the FHIR service does features a custom $import operation for data ingestion, it is only recommended for the initial transfer of data into the FHIR service (data loading at high speeds). Alternate approaches can be used for the ongoing, transactional loading of FHIR data. In this challenge, we will be using Microsoft's FHIR Loader (OSS) utility, which is an Azure Function App built for importing data into the FHIR service.
+
+### Learning objectives
+
+In this lab, you will:
+-	ingest FHIR data into FHIR service with FHIR Loader
+-	identify issues in loading FHIR bundles
+-	recognize data constraints with FHIR Loader
+-	track and compare FHIR Loader operations
+
 
 ### Step 1 - Download Sample Data
 
