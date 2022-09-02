@@ -579,45 +579,39 @@ In this task, you will create a new knowledge article about Asthma for agents to
 
 1.  In **Customer Service Hub,** on the left navigation bar, go to the bottom left corner where you previously modified the drop down. Change it back from Customer Service Admin Center to **Service**.
 
-    ![Screenshot of bottom left drop down selection changing back from Service Management to Service ](media/e871a19df46d79073edfe588b14e1067.png)
+    ![[Screenshot of bottom left drop down selection changing back from Service Management to Service ](media/e871a19df46d79073edfe588b14e1067.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P100.png)
 
-1.  In the sitemap, navigate to Service \> Knowledge Articles.
+1.  In the sitemap, navigate to **Service > Knowledge Articles**.
 
-    ![Screenshot of Knowledge Article option in site map](media/00ffb41c57784a8f3cb9793f7e566c46.png)
+    ![[Screenshot of Knowledge Article option in site map](media/00ffb41c57784a8f3cb9793f7e566c46.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P101.png)
 
-1.  Select New on the command bar.
+1.  Select **New** on the command bar.
 
-    ![Screenshot of New button on command bar in Knowledge Article section](media/57c21bff3f4cedf8bf8db26f8e3e618b.png)
+    ![[Screenshot of New button on command bar in Knowledge Article section](media/57c21bff3f4cedf8bf8db26f8e3e618b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P102.png)
 
-1.  You should be on the **Content** tab of a new knowledge article.
+1.  You should be on the Content tab of a new knowledge article.
 
-    ![Screenshot of content tab of a new knowledge article](media/05ebe37355ff7b3b0fc38c7b4bb1be91.png)
+    ![[Screenshot of content tab of a new knowledge article](media/05ebe37355ff7b3b0fc38c7b4bb1be91.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P103.png)
 
-1.  On the **Article** Content section tab of the new knowledge article, specify the following details:
-    1.  Title: Shortness of Breath
-    2.  Keywords: Asthma, shortness of breath, trouble breathing, inhaler, albuterol
-    3.  Description: Uncomfortable sensation or awareness of breathing or needing to breathe.
+1.  On the **Article Content** section tab of the new knowledge article, specify the following details:
+    1.  **Title**: Shortness of Breath
+    2.  **Keywords**: Asthma, shortness of breath, trouble breathing, inhaler, albuterol
+    3.  **Description**: Uncomfortable sensation or awareness of breathing or needing to breathe.
 
-        ![Screenshot of the new knowledge article with title, keyword, and description completed](media/6153262144eab58ac00217ae64c4537c.png)
+        [![Screenshot of the new knowledge article with title, keyword, and description completed](media/6153262144eab58ac00217ae64c4537c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P104.png)
 
-    4.  In the Content section, copy and paste the content for your knowledge article.
+    4.  In the **Content** section, copy and paste the content for your knowledge article.
 
 **Common causes**
 
 Shortness of breath is not always related to an underlying condition. It may be caused by:
 
 • Aerobic exercise
-
 • Intense physical activity
-
 • High altitude with lower oxygen levels
-
 • Poor cardiovascular fitness
-
 • Anxiety
-
 • Being obese
-
 • General weakness
 
 **Treatment**
@@ -625,62 +619,50 @@ Shortness of breath is not always related to an underlying condition. It may be 
 Self-treatment: Self- care steps that may be helpful in some less- serious cases:
 
 • Stop smoking
-
 • Avoid exposure to pollutants, allergens and environmental toxins
-
 • Lose weight if overweight
-
 • Avoid exertion at elevations
-
 • Take slow even breaths
-
 • When you breathe out, put your lips together, like slowly blowing out a candle (Pursed Lip Breathing)
 
 **See a doctor if you notice:**
 
 • Chest pain or pressure
-
 • Inability to function
 
 **See a doctor immediately if you notice:**
 
 • Fever or a change in the amount, color, or thickness of sputum
-
 • Breathlessness does not go away after resting for 30 minutes
-
 • Swelling in the feet and ankles
-
 • Trouble breathing when you lie flat
-
 • High fever, chills, and cough
-
 • Wheezing
-
 • Worsening of pre- existing shortness of breath
 
 1.  Select **Save**.
 
-    ![Screenshot of save button on command bar for the new knowledge article](media/e5d4e192477dd75f6562c2b79044024c.png)
+    ![[Screenshot of save button on command bar for the new knowledge article](media/e5d4e192477dd75f6562c2b79044024c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P105.png)
 
 The Business Process flow bar at the top of the form helps you to drive the article towards completeness. You have the option to customize the stages in the Business Process flow to suit your requirements. We will now complete the author stage so it can move into review.
 
 1.  On the Business process bar, select **Author**. The business step options should pop out below.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/57bfddad3d76fe1f19df74c9367f44c8.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/57bfddad3d76fe1f19df74c9367f44c8.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P106.png)
 
 1.  Add the **Article Subject:** Default Subject. This is the subject of the article to help with searches.
-2.  
-3.  Check the box for **Mark for Review** as Mark Complete.
-4.  
-5.  In the Assign Primary Author drop-down list, you may choose a person who is responsible for maintaining the article content. By default, the user who creates the article is the primary author. For this training, we will keep it as our IAD user.
-6.  
-7.  Select **Next** Stage to mark the article complete and ready for review.
 
-    ![Screenshot of close up of the author stage with information filled out](media/68e191a98761c7f8cf1af06369315737.png)
+1.  Check the box for **Mark for Review** as **Mark Complete**.
+
+1.  In the **Assign Primary Author** drop-down list, you may choose a person who is responsible for maintaining the article content. By default, the user who creates the article is the primary author. For this training, we will keep it as our IAD user.
+
+1.  Select **Next Stage** to mark the article complete and ready for review.
+
+    ![[Screenshot of close up of the author stage with information filled out](media/68e191a98761c7f8cf1af06369315737.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P107.png)
 
 1.  The knowledge article is now in the review stage of the business process flow and is ready for review.
 
-    ![Screenshot of Review Stage selected in the business process flow](media/8ffe9c715b0d79ed71b64d9f2afb6fd1.png)
+    ![[Screenshot of Review Stage selected in the business process flow](media/8ffe9c715b0d79ed71b64d9f2afb6fd1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P108.png)
 
 **Congratulations!** You have successfully created a knowledge article for Shortness of Breath and marked it for review.
 
@@ -688,31 +670,31 @@ The Business Process flow bar at the top of the form helps you to drive the arti
 
 To ensure accuracy of the knowledge article, typically someone else would review and approve it. For this training exercise, you will mark the article reviewed and approved yourself. Quick note that this task also requires the Knowledge Manager role or another that can approve knowledge articles.
 
-1.  In Customer Service Hub, navigate to Service \> Dashboards and use the drop-down to choose the My Knowledge Dashboard.
+1.  In **Customer Service Hub**, navigate to **Service > Dashboards** and use the drop-down to choose the **My Knowledge Dashboard**.
 
-    ![Screenshot of Dashboards selected in site map, changing the view from Tier 1 dashboard to My Knowledge Dashboard in Customer Service Hub](media/99ab776f79b9c1dee74989e3566de123.png)
+    ![[Screenshot of Dashboards selected in site map, changing the view from Tier 1 dashboard to My Knowledge Dashboard in Customer Service Hub](media/99ab776f79b9c1dee74989e3566de123.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P109.png)
 
 1.  Note the **Shortness of Breath** knowledge article in My Active Articles stream.
 
-    ![Screenshot of "Shortness of Breath"  article showing in My Active Articles stream in My Knowledge Dashboard](media/cad75dd81011f049765e4289b10ea811.png)
+    ![[Screenshot of "Shortness of Breath"  article showing in My Active Articles stream in My Knowledge Dashboard](media/cad75dd81011f049765e4289b10ea811.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P110.png)
 
 1.  Select the **Shortness of Breath** knowledge article.
-2.  
-3.  On the Business process bar, in the Review stage and in the Review drop-down, select Approve.
 
-    ![Screenshot of the business process flow of a knowledge article which is in review stage and has the Review field drop down selected on the approved option](media/43e8f5464d7afc435088a38e554e1476.png)
+1.  On the Business process bar, in the Review stage and in the **Review** drop-down, select **Approve**.
 
-1.  Click OK when prompted to Confirm approve article.
+    ![[Screenshot of the business process flow of a knowledge article which is in review stage and has the Review field drop down selected on the approved option](media/43e8f5464d7afc435088a38e554e1476.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P111.png)
 
-    ![Screenshot of the OK button to confirm approval of article](media/225c0dc11357426a72918a03147f61a3.png)
+1.  Click **OK** when prompted to confirm approve article.
+
+    ![[Screenshot of the OK button to confirm approval of article](media/225c0dc11357426a72918a03147f61a3.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P112.png)
 
 1.  Select **Next Stage** to move to Publish stage.
 
-    ![Screenshot of the next stage button below the review field in the business process flow](media/9170066168ce52a44b2a506e28a27544.png)
+    ![[Screenshot of the next stage button below the review field in the business process flow](media/9170066168ce52a44b2a506e28a27544.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P113.png)
 
-1.  You should now be in the **Publish** stage and **Status Reason** should have changed to **Approved.**
+1.  You should now be in the Publish stage and Status Reason should have changed to Approved.
 
-    ![Screenshot of publish stage currently highlighted and status reason field in upper right changed to approved](media/aad77bd8e2b677707d0228875832b2b1.png)
+    ![[Screenshot of publish stage currently highlighted and status reason field in upper right changed to approved](media/aad77bd8e2b677707d0228875832b2b1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P114.png)
 
 **Congratulations!** You have successfully reviewed and approved the knowledge article. We will show you how to publish the Knowledge Articles to be available during patient service center calls.
 
@@ -721,29 +703,30 @@ To ensure accuracy of the knowledge article, typically someone else would review
 In this task, you will learn how to publish the knowledge article so it’s live and ready to be used.
 
 1.  In your **Shortness of Breath** Knowledge Article, Select the **Publish** stage.
-    1.  For Set Product Associated check the box Completed.
+    1.  For **Set Product Associated** check the box **Completed**.
     2.  Add an **Expiration Date** for one year from now.
     3.  Select **Finish**
 
-        ![Screenshot of fields filled in for publish stage of knowledge article.  Check Completed textbox for Set Product Associated and Add an expiration date for one year from now](media/a58a4eee25001ea231db54551034f46b.png)
+        ![[Screenshot of fields filled in for publish stage of knowledge article.  Check Completed textbox for Set Product Associated and Add an expiration date for one year from now](media/a58a4eee25001ea231db54551034f46b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P115.png)
 
-1.  Once you select Finish, the business process flow should show as completed.
+1.  Once you select **Finish**, the business process flow should show as completed.
 
-    ![Screenshot of business process flow showing completed flag after selecting finish](media/7ef44795ee7e7b508110f1d643665faa.png)
+    ![[Screenshot of business process flow showing completed flag after selecting finish](media/7ef44795ee7e7b508110f1d643665faa.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P116.png)
 
-1.  Now you can specify the additional Publish details. On the command bar to go **More** \> **Publish**.
+1.  Now you can specify the additional Publish details. On the command bar to go **More > Publish**.
 
-    ![Screenshot of Command bar selecting more and Publish command](media/36c8b3abe8da59c416dead6c56edaa7f.png)
+    ![[Screenshot of Command bar selecting more and Publish command](media/36c8b3abe8da59c416dead6c56edaa7f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P117.png)
 
 1.  Specify the following details (see screenshot below):
-    1.  Publish: Now
-    2.  Published Status: Published
-    3.  Expiration State: Published
-    4.  Expiration Status: Published
-    5.  Publish approved related translations with Article, choose Yes.
+    1.  **Publish**: Now
+    2.  **Published Status**: Published
+    3.  **Expiration State**: Published
+    4.  **Expiration Status**: Published
+    5.  Publish approved related translations with Article, choose **Yes**.
+
 1.  Select **Publish**
 
-    ![Screenshot of Publish dialog with details filled out and publish button at bottom](media/83239e1b381acd73c49268fc373fb101.png)
+    ![[Screenshot of Publish dialog with details filled out and publish button at bottom](media/83239e1b381acd73c49268fc373fb101.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P118.png)
 
 **Congratulations!** You have successfully reviewed and published the knowledge article. We will see these knowledge articles highlighted in Patient Service Center when testing the final escalation.
 
@@ -753,18 +736,19 @@ In this exercise, you will utilize the Smart Assist features and test the full e
 
 The following screen shows Patient Service Center after a patient has been escalated to a call agent. This lab will conclude by bringing together all the components we’ve set up in previous exercises and show how the call agent can give personalized experiences with proposed insights directly in the application.
 
-![Graphical user interface, application Description automatically generated](media/8e6706ef2eef1c1bdb9efbf831041956.jpeg)
+![[Graphical user interface, application Description automatically generated](media/8e6706ef2eef1c1bdb9efbf831041956.jpeg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P119.jpg)
 
 **Task 1: Patient Logs into Access Portal & Agent logs into Patient Service Center**
 
 1.  Navigate to Power Apps and open the **Lamna Healthcare Patient Portal** app.
+
 1.  Sign into the Patient Portal as Caseyn Jensen, using the credentials you created in Exercise 1, Task 2 when you registered Casey for the patient portal.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/db07329384b199f5a9f6d94f03b3d336.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/db07329384b199f5a9f6d94f03b3d336.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P120.png)
 
 1.  You should be directed to the profile if your email requires confirmation. Click **Contoso Healthcare** in the upper left to go to the portal Homepage.
 
-    ![Graphical user interface, application Description automatically generated](media/430a84080ec4eb8c3541d5945b916b57.png)
+    ![[Graphical user interface, application Description automatically generated](media/430a84080ec4eb8c3541d5945b916b57.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P121.png)
 
 1.  Your patient is all set in the Patient Portal. Now we need to make sure an agent is available for them when the Health Bot needs to escalate.
 
@@ -774,19 +758,20 @@ The following screen shows Patient Service Center after a patient has been escal
 
 2.  If you didn’t assign the Omnichannel agent role in Lab 04, assign the proper role by following the steps in Exercise 2, Task 1 – Assign Productivity User Roles. Once you’ve selected your user and clicked **Manage Roles**, assign the **Omnichannel agent** role and click **OK**.
 
-    ![Graphical user interface, application Description automatically generated](media/3b75a901c3e5d933582bfe973909e26c.png)
+    ![[Graphical user interface, application Description automatically generated](media/3b75a901c3e5d933582bfe973909e26c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P122.png)
 
-1.  Navigate to Apps and open the **Patient Service Center** app.
+1.  Navigate to **Apps** and open the **Patient Service Center** app.
 
-    ![Graphical user interface, application, Teams Description automatically generated](media/cf542213d626521ace985ea2f08e48e8.png)
+    ![[Graphical user interface, application, Teams Description automatically generated](media/cf542213d626521ace985ea2f08e48e8.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P123.png)
 
-1.  In the **Patient Service Center**, you should see a “Loading…” splash screen that goes through percentages. This ensures the live agent status is captured properly.
+1.  In the Patient Service Center, you should see a “Loading…” splash screen that goes through percentages. This ensures the live agent status is captured properly.
 
-    ![Screenshot of splash screen which is faded white background and shows loading percentages for page load.  This will allow omnichannel to work properly.](media/6854dfaaeceff89490446f0545377eab.png)
+    ![[Screenshot of splash screen which is faded white background and shows loading percentages for page load.  This will allow omnichannel to work properly.](media/6854dfaaeceff89490446f0545377eab.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P124.png)
 
     1.  If you don’t see the splash screen and the presence indicator is grayed out, escalation into the app from the health bot won’t work properly.
-    2.  Refresh again or close and reopen Patient Service Center until the splash screen appears. You may need to close all other apps or close incognito altogether and sign back in.
-    3.  If you just assigned the Omnichannel agent role, it may take up to 15 minutes to apply and for the presence to show for your user.
+    1.  Refresh again or close and reopen Patient Service Center until the splash screen appears. You may need to close all other apps or close incognito altogether and sign back in.
+    1.  If you just assigned the Omnichannel agent role, it may take up to 15 minutes to apply and for the presence to show for your user.
+
 1.  Once your presence indicator is green, you are ready to accept patient escalations.
 
 **Congratulations!** You have successfully logged in as both the patient and the live agent. Now it’s time to start the Health Bot conversation.
@@ -794,22 +779,24 @@ The following screen shows Patient Service Center after a patient has been escal
 **Task 2: Patient Escalates through Healthcare Bot**
 
 1.  Select the **Let’s Chat** Health Bot chat widget in the bottom right corner of the portal.
+
 1.  The Health Bot should go through the same conversation you created in Lab 04.
-2.  Make sure you set the Welcome message in the Health Bot lab
-3.  If the welcome message doesn’t show, check the settings you did in Lab 04 (Teams and Human handoff enabled). Also make sure you added the widget snippet to the Patient Healthcare chat widget.
+    1.  Make sure you set the Welcome message in the Health Bot lab
+    1.  If the welcome message doesn’t show, check the settings you did in Lab 04 (Teams and Human handoff enabled). Also make sure you added the widget snippet to the Patient Healthcare chat widget.
+
 1.  Select **Lamna Healthcare** **Support** to start a support conversation.
 
-    ![Graphical user interface, text, application Description automatically generated](media/f7998f51dffae5f8261257a48c16004c.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/f7998f51dffae5f8261257a48c16004c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P125.png)
 
 1.  Select **Live Agent** in the next prompt to escalate to an agent.
 
-    ![Graphical user interface, text, application Description automatically generated](media/9a82e8062df05c6b478fc2faab834062.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/9a82e8062df05c6b478fc2faab834062.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P126.png)
 
 1.  You will see the chat notifies you -- **An agent will be with you in a moment.**
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](media/fbd6bfbbec418bf994d9698671442a55.png)
+    ![[Graphical user interface, text, application, chat or text message Description automatically generated](media/fbd6bfbbec418bf994d9698671442a55.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P127.png)
 
-1.  Now let’s switch over to the **Patient Service Center** app so you can accept the escalation as an agent.
+1.  Now let’s switch over to the Patient Service Center app so you can accept the escalation as an agent.
 
 **Congratulations!** You have successfully configured and started a conversation with the Health Bot in the Healthcare Patient Portal and asked to escalate to an agent in Patient Service Center.
 
@@ -818,22 +805,23 @@ The following screen shows Patient Service Center after a patient has been escal
 In this task, you will act as the Patient Service Center Agent, accept the escalation from the healthbot and assist the patient with their issue by using the productivity pane.
 
 1.  Navigate back to the **Patient Service Center** app. You should be signed in as your IAD User.
+
 1.  Notice in the upper right corner there is a **Chat request** from your user.
 
-    ![Graphical user interface, application Description automatically generated](media/a86b475cd7f4a303e6c23504344da447.png)
+    ![[Graphical user interface, application Description automatically generated](media/a86b475cd7f4a303e6c23504344da447.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P128.png)
 
 1.  Select **Accept** to start a conversation with the patient.
 
-    ![Graphical user interface, application Description automatically generated](media/e05e4951c00fe8148cb16c780ad0591e.png)
+    ![[Graphical user interface, application Description automatically generated](media/e05e4951c00fe8148cb16c780ad0591e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P129.png)
 
 1.  The page should reload and show the patient record, active chat, and productivity pane as seen below.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/8a35ab925db7741cabcc59089d727d13.png)![Graphical user interface, text, application Description automatically generated](media/ee07e8ee1d71c1a249f16a2b9f49f4b0.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/8a35ab925db7741cabcc59089d727d13.png)![Graphical user interface, text, application Description automatically generated](media/ee07e8ee1d71c1a249f16a2b9f49f4b0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P130.png)
 
-2.  See the chat directly embedded on the left-hand side. Try out the command bar below it to see various options such as **auto-replies** and **surveys**.
-3.  
-4.  Navigate the **productivity pane**. Go through the **agent script** and check off ones you complete asking the patient.
-5.  
-6.  Go to **Knowledge Article** tab and **search** for “Breath” or “Inhaler”. Notice your Knowledge Article appear.
+1.  See the chat directly embedded on the left-hand side. Try out the command bar below it to see various options such as **auto-replies** and **surveys**.
+  
+1.  Navigate the **productivity pane**. Go through the **agent script** and check off ones you complete asking the patient.
+  
+6.  Go to **Knowledge Article** tab and search for **Breath** or **Inhaler**. Notice your Knowledge Article appear.
 
 **Congratulations!** You completed the full experience from logging in as a patient to the portal, conversing with the health bot, and escalating into Patient Service Center to navigate the features for the agent.
