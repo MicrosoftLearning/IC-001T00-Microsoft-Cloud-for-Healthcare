@@ -1,5 +1,32 @@
 # Module 6 Lesson 4 Lab 13: DICOM Service
 
+### Overview
+
+In this challenge, you will get experience working with medical images using the DICOM service in Azure Health Data Services.
+
+The [DICOMweb™](https://www.dicomstandard.org/using/dicomweb) standard is the RESTful API protocol used throughout the health industry for medical image storage, querying, and exchange. The DICOM service within [Azure Health Data Services](https://docs.microsoft.com/azure/healthcare-apis/healthcare-apis-overview) is a DICOMweb™-compliant server that ingests and persists DICOM objects at multiple thousands of images per second. DICOM service in Azure Health Data Services facilitates transmission of imaging data with any DICOMweb™ enabled system or application through standard transactions like [Store (STOW-RS)](https://docs.microsoft.com/azure/healthcare-apis/dicom/dicom-services-conformance-statement#store-stow-rs), [Search (QIDO-RS)](https://docs.microsoft.com/azure/healthcare-apis/dicom/dicom-services-conformance-statement#search-qido-rs), and [Retrieve (WADO-RS)](https://docs.microsoft.com/azure/healthcare-apis/dicom/dicom-services-conformance-statement#retrieve-wado-rs). DICOM service is part of Azure Health Data Services, which establishes [HIPAA](https://docs.microsoft.com/azure/compliance/offerings/offering-hipaa-us) and [HITRUST](https://docs.microsoft.com/azure/compliance/offerings/offering-hitrust) compliance for all [PHI (protected health information)](https://www.hhs.gov/answers/hipaa/what-is-phi/index.html) stored within an Azure Health Data Services workspace. This means you can upload PHI data to the DICOM service and the data will remain safely within the Azure Health Data Services workspace compliance boundary. In this challenge, we will be looking at how to deploy, configure, and use DICOM service for its foundational features.
+
+### Learning objectives
+
+In this lab, you will:
+
+-   Set up a DICOM service instance within an Azure Health Data Services
+    workspace
+-   Configure DICOM service settings for usage
+    -   Add role assignment
+    -   Obtain an access token
+-   Ingest DICOM files into the service
+-   Search among the files that are stored within the DICOM service
+-   Retrieve DICOM files
+-   Check logs of changes in DICOM service via Change Feed
+-   Manage supported tags in your DICOM service instance
+    -   Add extended query tags
+    -   List extended query tags
+    -   Get extended query tags
+    -   Update extended query tags
+    -   Delete extended query tags
+-   Use a DICOM viewer to view DICOM images
+
 ### Step 1 - Find your Azure Health Data Services workspace using Azure Portal
 
 In Lab-01 of this workshop, you deployed an Azure Health Data Services workspace in your resource group. You can view your Azure Health Data Services workspace settings by navigating to **Portal** -\> **Resource Group** and finding the resource with a name ending in **"ws"** (see image below).
