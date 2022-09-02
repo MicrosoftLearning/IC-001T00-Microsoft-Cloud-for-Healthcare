@@ -13,10 +13,10 @@ image
 ### Learning objectives
 
 In this lab, you will:
--	ingest FHIR data into FHIR service with FHIR Loader
--	identify issues in loading FHIR bundles
--	recognize data constraints with FHIR Loader
--	track and compare FHIR Loader operations
+-	Ingest FHIR data into FHIR service with FHIR Loader
+-	Identify issues in loading FHIR bundles
+-	Recognize data constraints with FHIR Loader
+-	Track and compare FHIR Loader operations
 
 
 ### Step 1 - Download Sample Data
