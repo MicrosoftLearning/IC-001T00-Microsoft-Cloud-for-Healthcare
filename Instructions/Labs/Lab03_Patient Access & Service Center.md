@@ -18,17 +18,17 @@ The Patient Service Center includes the following capabilities:
 
 -   **Monitor patient conversations** - An ongoing conversations dashboard provides information on the conversations that are handled by the agents and integrated bots.
 -   **Agent scripts** - Use provider-specific agent scripts to address patient issues.
--   Monitor effectiveness - Conversation intelligence provides insights for service center managers on agent performance.
+-   **Monitor effectiveness** - Conversation intelligence provides insights for service center managers on agent performance.
 -   **Follow-up** - Send follow-up surveys on patient satisfaction, reminders on appointments, and more.
 -   **Appointment scheduling** - Schedule or reschedule appointments during conversations with patients.
 
 The Patient Access Portal and Patient Service Center modules focus on the **Enhance Patient Engagement** priority scenario by communicating effectively with patients with the prebuilt guidance and automated systems.
 
-![Graphical user interface Description automatically generated](media/df4dee19dba74e977d1d001c9dbd3a3d.png)
+![[Graphical user interface Description automatically generated](media/df4dee19dba74e977d1d001c9dbd3a3d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P1.png)
 
 The lab for this module will focus on the healthcare story of Casey Jensen.
 
-![Timeline Description automatically generated](media/d5a64c7764ba9f24286ff331aaad8bd4.png)
+![[Timeline Description automatically generated](media/d5a64c7764ba9f24286ff331aaad8bd4.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P2.png)
 
 Casey is an avid runner but has exercise-induced asthma and requires an albuterol inhaler to help her breathe while running. Casey has realized that her current albuterol inhaler is low on medication and decides that it's a good time to get a refill.
 
@@ -57,7 +57,7 @@ A **Portal** is an external website that allows for communication between a comp
 
 Here’s what you should see after configuring and logging into the Healthcare Patient Portal:
 
-![Screenshot of Healthcare Patient Portal landing page](media/a4aac2020f8208d5c4ce226518242a48.jpeg)
+![[Screenshot of Healthcare Patient Portal landing page](media/a4aac2020f8208d5c4ce226518242a48.jpeg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P3.png)
 
 If you’d like to learn more about portals, check out Microsoft Docs: [What is Power Apps portals?](https://docs.microsoft.com/en-us/powerapps/maker/portals/overview)
 
@@ -72,81 +72,79 @@ We will first open the Portal to show the Customer Self-Service template current
 1.  Navigate to <https://make.powerapps.com> in an In-Private or Incognito window.
 1.  Select the correct environment from the upper right **Environment** drop down.
 
-    ![](media/118bf5867e47b80161dc93e75a5cef91.png)
+    ![[](media/118bf5867e47b80161dc93e75a5cef91.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P4.png)
 
 1.  Select **Apps** on the left navigation bar.
 
-    ![Graphical user interface, application Description automatically generated](media/7ab15895d0ee4a9b65aa90fe7b2bb640.png)
+    ![[Graphical user interface, application Description automatically generated](media/7ab15895d0ee4a9b65aa90fe7b2bb640.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P5.png)
 
 1.  Find the **Lamna Healthcare** **Patient Portal** app. It should be the only app where the app type is Portal. You may also search for it in the Search bar in the upper right.
 
-    ![Screenshot of Lamna Healthcare Patient Portal in App list](media/d9c9fdf86983ff0ad75b9781e2d0399c.png)
+    ![[Screenshot of Lamna Healthcare Patient Portal in App list](media/d9c9fdf86983ff0ad75b9781e2d0399c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P6.png)
 
-1.  Click the app name to **open** the **Lamna Healthcare Patient Portal**. You may also select More Commands (…) \> Browse or click Browse on the top command bar to open it.
+1.  Click the app name to open the **Lamna Healthcare Patient Portal**. You may also select **More Commands (…) > Browse** or click **Browse** on the top command bar to open it.
 
-    ![Screenshot of selecting Lamna Healthcare Patient Portal](media/a00d6bf269495a44ecccd0bb4011c764.png)
+    ![[Screenshot of selecting Lamna Healthcare Patient Portal](media/a00d6bf269495a44ecccd0bb4011c764.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P7.png)
 
 1.  You should see the Customer Self-Service template shown in the Lamna Healthcare Patient Portal.
 
-    ![Screenshot of customer self-service portal landing page](media/5c21b675adf113661526ce9d7322fb7d.png)
+    ![[Screenshot of customer self-service portal landing page](media/5c21b675adf113661526ce9d7322fb7d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P8.png)
 
 1.  Close the Lamna Healthcare Patient Portal website. Now you will configure it to the Healthcare Patient Portal template.
-2.  
-3.  Return to Apps section in Power Apps. Select the **Lamna Healthcare Patient Portal** app if it isn’t already selected.
 
-    ![Screenshot of Lamna Healthcare Patient Portal in App list](media/d9c9fdf86983ff0ad75b9781e2d0399c.png)
+1.  Return to Apps section in Power Apps. Select the **Lamna Healthcare Patient Portal** app if it isn’t already selected.
 
-1.  Select More Commands (…) \> Settings.
+    ![[Screenshot of Lamna Healthcare Patient Portal in App list](media/d9c9fdf86983ff0ad75b9781e2d0399c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P9.png)
 
-    ![Screenshot of selecting Lamna Healthcare Patient Portal](media/bab62afdddd0a7f8d4294463f4e58f85.png)
+1.  Select **More Commands (…) > Settings**.
+
+    ![[Screenshot of selecting Lamna Healthcare Patient Portal](media/bab62afdddd0a7f8d4294463f4e58f85.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P10.png)
 
 1.  This will bring out the **Portal settings** panel on the right.
 
-    ![Graphical user interface, application Description automatically generated](media/6fe6f74488d5c91b22712f44941e658d.png)
+    ![[Graphical user interface, application Description automatically generated](media/6fe6f74488d5c91b22712f44941e658d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P11.png)
 
-1.  In Portal settings, under Advanced options, select Administration.
+1.  In **Portal settings**, under **Advanced options**, select **Administration**.
 
-    ![Screenshot of portal settings dialog](media/491eec7fa5d805cb64a60fd61dc4b32f.png)
+    ![[Screenshot of portal settings dialog](media/491eec7fa5d805cb64a60fd61dc4b32f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P12.png)
 
-1.  Selecting Administration will open a new window, the **Power Apps Portals admin center,** where you can do portal administrative tasks.
+1.  Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You should be first navigated to the **Portal Details** tab of the Power Apps Portals admin center.
 
-    You should be first navigated to the **Portal Details** tab of the Power Apps Portals admin center**.**
+    ![[Graphical user interface, application Description automatically generated](media/1dfcb065aeca17a47e7e1b4c0b5f08f8.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P13.png)
 
-    ![Graphical user interface, application Description automatically generated](media/1dfcb065aeca17a47e7e1b4c0b5f08f8.png)
+1.  Scroll down to **Update Portal Binding > Select Website Record**.
 
-1.  Scroll down to Update Portal Binding \> Select Website Record.
-
-    ![Screenshot of current portal binding as customer self-service](media/ca0ab3497406e60443d5f6e422aeffbd.png)
+    ![[Screenshot of current portal binding as customer self-service](media/ca0ab3497406e60443d5f6e422aeffbd.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P14.png)
 
 1.  Open the **Select Website Record** drop down and change the value from Customer Self-Service to **Healthcare Patient Portal.** This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario.
 
-    ![Screenshot of selecting Healthcare Patient Portal in drop down](media/98ec46b914bc968d646627bf7cb5a5fd.png)
+    ![[Screenshot of selecting Healthcare Patient Portal in drop down](media/98ec46b914bc968d646627bf7cb5a5fd.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P15.png)
 
 1.  Select **Update**.
 
-    ![Screenshot of updating portal binding](media/ceebde8bfffa247f33bb8d6cb4a83083.png)
+    ![[Screenshot of updating portal binding](media/ceebde8bfffa247f33bb8d6cb4a83083.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P16.png)
 
 1.  Select **Portal Actions** section on the left navigation. Then click the first option, **Restart.**
 
-    ![Screenshot of selecting Portals Admin Center, select Portal Actions, and Restart](media/6632dccb2295a51ee6da61feb1b553d6.png)
+    ![[Screenshot of selecting Portals Admin Center, select Portal Actions, and Restart](media/6632dccb2295a51ee6da61feb1b553d6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P17.png)
 
 1.  When prompted, confirm the **Restart** for the portal. This will allow the change to take effect.
 
-    ![Screenshot of restart confirmation dialog](media/ebfccbea2a3e3a0b524dbb248adc124d.png)
+    ![[Screenshot of restart confirmation dialog](media/ebfccbea2a3e3a0b524dbb248adc124d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P18.png)
 
 1.  Wait 1-5 minutes for the portal to restart. (Feel free to refill water or stretch your legs!)
-2.  
-3.  After a few minutes, open the **Lamna Healthcare Patient Portal** in Power Apps.
 
-    ![Screenshot of Lamna Healthcare Patient Portal in App list](media/d9c9fdf86983ff0ad75b9781e2d0399c.png)
+1.  After a few minutes, open the **Lamna Healthcare Patient Portal** in Power Apps.
+
+    ![[Screenshot of Lamna Healthcare Patient Portal in App list](media/d9c9fdf86983ff0ad75b9781e2d0399c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P19.png)
 
 1.  If you see **HTTP Error 503: The service is unavailable,** the portal is still restarting.
 
-    ![Screenshot of Server Unavailable, error 503 ](media/21097c788c60e469bf2af43f909bf8e0.png)
+    ![[Screenshot of Server Unavailable, error 503 ](media/21097c788c60e469bf2af43f909bf8e0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P20.png)
 
 1.  Once the Portal is opened and running properly, it should look like the following:
 
-    ![Screenshot of Patient Access Portal sign in page with the Healthcare Patient Portal template configured.](media/b20128a1bc4c2800499865d3159af9ce.jpeg)
+    ![[Screenshot of Patient Access Portal sign in page with the Healthcare Patient Portal template configured.](media/b20128a1bc4c2800499865d3159af9ce.jpeg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P21.png)
 
 **Congratulations!** You completed the post deployment steps to configure the Healthcare Patient Portal template deployed from Patient Access. After updating the bindings and restarting the portal, the website now shows as Healthcare Patient Portal template rather than Customer Self-Service.
 
