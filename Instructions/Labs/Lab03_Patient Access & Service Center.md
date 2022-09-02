@@ -598,7 +598,7 @@ In this task, you will create a new knowledge article about Asthma for agents to
     2.  **Keywords**: Asthma, shortness of breath, trouble breathing, inhaler, albuterol
     3.  **Description**: Uncomfortable sensation or awareness of breathing or needing to breathe.
 
-        [![Screenshot of the new knowledge article with title, keyword, and description completed](media/6153262144eab58ac00217ae64c4537c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P104.png)
+        ![[Screenshot of the new knowledge article with title, keyword, and description completed](media/6153262144eab58ac00217ae64c4537c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P104.png)
 
     4.  In the **Content** section, copy and paste the content for your knowledge article.
 
