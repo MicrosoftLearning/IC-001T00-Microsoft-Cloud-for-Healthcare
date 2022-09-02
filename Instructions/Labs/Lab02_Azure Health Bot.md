@@ -493,7 +493,7 @@ In this exercise, you will be doing the following:
 
 -   Designing the below Health Bot Scenario called **MCH_PatientService**
 
-    ![Diagram Description automatically generated](media/aa3babb0c8c18ad33678a2160e4a1eda.png)
+    ![[Diagram Description automatically generated](media/aa3babb0c8c18ad33678a2160e4a1eda.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P92.png)
 
 -   Design another Health Bot Scenario called **MCH_PatientServiceWelcome**. This scenario holds the starting statement which will allow the user to invoke the **MCH_PatientService** scenario.
 -   Set the **Automatic Welcome Scenario** to be the MCH_PatientServiceWelcome custom scenario you create. This will begin the scenario when a user first interacts with the Health Bot.
@@ -502,45 +502,43 @@ In this exercise, you will be doing the following:
 
 In this task, you will create the **MCH_PatientService** bot scenario using the designer canvas.
 
-1.  Navigate back to the Azure Health Bot instance homepage where you set the bot settings. This is the portal management link you copied from the Azure portal.
+1.  Navigate back to the Azure **Health Bot instance** homepage where you set the bot settings. This is the portal management link you copied from the Azure portal.
 
-    ![Text Description automatically generated](media/52f9eefb1d4ed9c2d11c32ce39d589e2.png)
+    ![[Text Description automatically generated](media/52f9eefb1d4ed9c2d11c32ce39d589e2.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P93.png)
 
-1.  Click to Expand the Side navigation bar. Navigate to **Scenario** \> **Manage.**
+1.  Click to expand the side navigation bar. Navigate to **Scenario > Manage**.
 
-    ![Graphical user interface, text, application Description automatically generated](media/54b43717341fa742eaaec826aeb1b6ee.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/54b43717341fa742eaaec826aeb1b6ee.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P94.png)
 
 1.  Click **+ New** button on the top ribbon.
 
-    ![Graphical user interface, text Description automatically generated](media/a253ee03b82b4b8561a42dff2df19774.png)
+    ![[Graphical user interface, text Description automatically generated](media/a253ee03b82b4b8561a42dff2df19774.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P95.png)
 
 1.  Provide the following details for the new health bot scenario:
     1.  **Name**: MCH_PatientService
     2.  **Scenario ID**: MCH_PatientService
 
-        ![Graphical user interface, text, application, email Description automatically generated](media/e0ed6333d9b8c65cc4dc48173addf264.png)
+        ![[Graphical user interface, text, application, email Description automatically generated](media/e0ed6333d9b8c65cc4dc48173addf264.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P96.png)
 
-1.  Now let’s design the scenario conversation. It should navigate you directly to the designer. If not, select the MCH_PatientService scenario in **Scenarios** \> **Manage** to edit.
+1.  Now let’s design the scenario conversation. It should navigate you directly to the designer. If not, select the MCH_PatientService scenario in **Scenarios > Manage** to edit.
 
-    ![A screenshot of a computer Description automatically generated](media/417c5fe2418f598d479045a83f5c4150.png)
+    ![[A screenshot of a computer Description automatically generated](media/417c5fe2418f598d479045a83f5c4150.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P97.png)
 
 **Step 1: Add Bot Introduction Statement**
 
-1.  Add a beginning **Statement** to the scenario by **selecting** the icon **and** **dragging** Statement icon onto the editor.
+1.  Add a beginning **Statement** to the scenario by selecting the icon and dragging Statement icon onto the editor.
 
-    ![A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)
+    ![[A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P98.png)
 
-1.  Enter the Display Text:
+1.  Enter the Display Text: **Hi there, I’m your Healthcare Assistant.**
 
-    Hi there, I’m your Healthcare Assistant.
+1.  Select the **pencil** next to **Statement** in the top bar and change Title to **Intro**. Click **OK**.
 
-1.  Select the **pencil** next to Statement in the top bar and Change Title to “**Intro**”. Click **OK**.
-
-    ![Graphical user interface, text, application, email Description automatically generated](media/657c4b563cd91c6565437ab8e50067d0.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/657c4b563cd91c6565437ab8e50067d0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P99.png)
 
 1.  Click **OK**. You will see the intro statement added to the designer canvas. Double click anytime to edit.
 
-    ![A picture containing graphical user interface Description automatically generated](media/1e92ce2c1feebfa7c619eccab58449e8.png)
+    ![[A picture containing graphical user interface Description automatically generated](media/1e92ce2c1feebfa7c619eccab58449e8.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P100.png)
 
 **Step 2: Add Statement for Medication Request or Live Agent**
 
@@ -548,156 +546,155 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
 1.  Select **Prompt** icon and drag down onto canvas
 
-    ![A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)
+    ![[A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P101.png)
 
 1.  Enter the following details:
     1.  **Display Text**: Would you like to request a medication refill or chat with a live agent?
-    2.  **Variable name:** MedicationOrAgent
-    3.  Data type: string
-    4.  Rename title to **MedOrAgent**.
+    2.  **Variable name**: MedicationOrAgent
+    3.  **Data type**: string
+    4.  Rename Title to **MedOrAgent**.
+
 1.  Click **Cards** button.
 
-    ![Graphical user interface, text, application, email, Teams Description automatically generated](media/93b11208ed430ea0ad07198abdd1ca14.png)
+    ![[Graphical user interface, text, application, email, Teams Description automatically generated](media/93b11208ed430ea0ad07198abdd1ca14.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P102.png)
 
 1.  Select **Add Card**.
 
-    ![A picture containing chart Description automatically generated](media/281be669c17d3b241eca69feecd52f3f.png)
+    ![[A picture containing chart Description automatically generated](media/281be669c17d3b241eca69feecd52f3f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P103.png)
 
 1.  Select Card Type as **HeroCard.** Leave title blank as we already prompted with display text.
-2.  
-3.  Click **Add Action** button twice to add two actions:
-4.  For the first action, select the following:
-    1.  Action type: imBack
-        1.  Action value: MedicationRefill
-        2.  Action title: “Medication Refill”
-5.  For the second action, fill in the following:
-    1.  Action type: imBack
-        1.  Action value: LiveAgent
-        2.  Action title: “Live Agent”
 
-            ![Graphical user interface, application Description automatically generated](media/a44d164a6edc930f6c1658426ac63c95.png)
+1.  Click **Add Action** button twice to add two actions:
+    1.  For the first action, select the following:
+        1.  **Action type**: imBack
+        1.  **Action value**: MedicationRefill
+        1.  **Action title**: “Medication Refill”
+    1.  For the second action, fill in the following:
+        1.  **Action type**: imBack
+        1.  **Action value**: LiveAgent
+        1.  **Action title**: “Live Agent”
 
-1.  Click Ok three times to get back to designer
+        ![[Graphical user interface, application Description automatically generated](media/a44d164a6edc930f6c1658426ac63c95.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P104.png)
 
-    ![Shape Description automatically generated with medium confidence](media/34f82d64754dd2e3d878ec8258ccc951.png)
+1.  Click **Ok** three times to get back to designer
 
-    ![Graphical user interface, text, application, email, Teams Description automatically generated](media/3b58f00a534b55890a493f97f6166b48.png)
+    ![[Shape Description automatically generated with medium confidence](media/34f82d64754dd2e3d878ec8258ccc951.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P105.png)
 
-1.  Connect Intro and Appointment boxes. Select the bottom circle on intro and drag it to the top circle on the new prompt. An arrow will automatically appear when you try to connect Intro and MedOrAgent boxes using ellipse pointer.
+    ![[Graphical user interface, text, application, email, Teams Description automatically generated](media/3b58f00a534b55890a493f97f6166b48.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P106.png)
 
-    ![Diagram Description automatically generated](media/b1cfb7c9f5fbb82fa6fae62b1f7175e5.png)
+1.  Connect **Intro** and **Appointment** boxes. Select the bottom circle on **Intro** and drag it to the top circle on the new prompt. An arrow will automatically appear when you try to connect Intro and MedOrAgent boxes using ellipse pointer.
+
+    ![[Diagram Description automatically generated](media/b1cfb7c9f5fbb82fa6fae62b1f7175e5.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P107.png)
 
 1.  Select **Save**.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](media/640c882facec6712afe2e94a9884987d.png)
+    ![[A screenshot of a computer Description automatically generated with medium confidence](media/640c882facec6712afe2e94a9884987d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P108.png)
 
 1.  Select **Run** to see the output in the WebChat on the right.
 
-    ![Diagram Description automatically generated](media/630a466e889e3ed9c2f83c4e97756eaf.png)
+    ![[Diagram Description automatically generated](media/630a466e889e3ed9c2f83c4e97756eaf.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P109.png)
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/efcba2d9805cba46e311eb53335e1854.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/efcba2d9805cba46e311eb53335e1854.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P110.png)
 
 **Step 3: Add MedicationOrAgent Decision Branch**
 
 This section checks whether the user has clicked Medication Refill or Live Agent with the help of the variable MedicationOrAgent. It will redirect the message accordingly.
 
-1.  Add a **Branch** to the designer canvas**.**
+1.  Add a **Branch** to the designer canvas.
 
-    ![Graphical user interface, application Description automatically generated](media/c7265982598d0257ce5f9d3f17ca96e7.png)
+    ![[Graphical user interface, application Description automatically generated](media/c7265982598d0257ce5f9d3f17ca96e7.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P111.png)
 
-1.  Enter the following in the javascript Boolean expression:
--   scenario.MedicationOrAgent === "MedicationRefill"
+1.  Enter the following in the javascript Boolean expression: **scenario.MedicationOrAgent === "MedicationRefill"**
+
 1.  Rename to **IsMedRefill.** Select **OK**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/7a39b7c348f4cc0c8c1a5a53eafabceb.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/7a39b7c348f4cc0c8c1a5a53eafabceb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P112.png)
 
 1.  Select and drag the bottom circle of the **MedOrAgent** prompt to the top circle of the **IsMedRefill** branch decision to connect them.
 
-    ![Diagram Description automatically generated](media/b113af54b4c9c9c48da94edaa5068ec4.png)
+    ![[Diagram Description automatically generated](media/b113af54b4c9c9c48da94edaa5068ec4.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P113.png)
 
 **Step 4: Prompt User to Enter Data for Medication Refill Option**
 
 1.  Add a **Prompt** element. This will be used to display the Form data (using Adaptive Card) to capture Patient name, email, and phone to create an appointment.
 
-    ![A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)
+    ![[A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P114.png)
 
 1.  Add the following details:
-    1.  Variable name: formData
-    2.  Variable Data Type: Object
+    1.  **Variable name**: formData
+    2. **Variable Data Type**: Object
     3.  Change Title to **Submit**
     4.  Do not add any display text since the adaptive card will display instead
 
-        ![Graphical user interface, text, application, email, Teams Description automatically generated](media/1ad4bef6081c37eb67d2d0f93a97eebe.png)
+        ![[Graphical user interface, text, application, email, Teams Description automatically generated](media/1ad4bef6081c37eb67d2d0f93a97eebe.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P115.png)
 
-1.  Click Cards button \> Add Card \> Adaptive Card.
-2.  
-3.  Refer to the lab resources file **AdaptiveCardForMedicationRefill.txt** and copy the json content and paste it in the json section of your card.
+1.  Click **Cards** button > **Add Card** > **Adaptive Card**.
 
-    ![Graphical user interface, text, application Description automatically generated](media/404152ca20198d07c212414011a659eb.png)
+1.  Refer to the lab resources file **AdaptiveCardForMedicationRefill.txt** and copy the json content and paste it in the json section of your card.
+
+    ![[Graphical user interface, text, application Description automatically generated](media/404152ca20198d07c212414011a659eb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P116.png)
 
 1.  Select **OK** three times to get back to the designer.
-2.  
-3.  **Connect** the **Yes** condition of the **IsMedRefill** branch to the **Submit** prompt.
+  
+1.  Connect the **Yes** condition of the **IsMedRefill** branch to the **Submit** prompt.
 
-    ![Diagram Description automatically generated](media/a5bb7a0418310b933aff30336c4063c1.png)
+    ![[Diagram Description automatically generated](media/a5bb7a0418310b933aff30336c4063c1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P117.png)
 
-1.  **Save** and **run** your current scenario. If you don’t save the scenario first, it won’t run with updates since the last save. If you haven’t saved at all, it won’t recognize any conversation.
+1.  Save and run your current scenario. If you don’t save the scenario first, it won’t run with updates since the last save. If you haven’t saved at all, it won’t recognize any conversation.
 
-    ![Graphical user interface Description automatically generated with medium confidence](media/1c8ffc95d5934d3955cfe53d3346265e.png)
+    ![[Graphical user interface Description automatically generated with medium confidence](media/1c8ffc95d5934d3955cfe53d3346265e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P118.png)
 
 1.  You should see the below output when running the conversation and selecting “Medication Refill” card when prompted to show the AdaptiveCard.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/fca92b19bfce499d598d7a55713c47ee.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/fca92b19bfce499d598d7a55713c47ee.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P119.png)
 
 **Step 5: Add Confirmation Statement**
 
 1.  Add a **Statement** element.
 
-    ![A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)
+    ![[A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P120.png)
 
-1.  Add **Display text** as the following:
-
-    scenario.formData.myName + " - Thanks for providing the information, we have created a Medication Request for you regarding the following medication: " + scenario.formData.myMedReq
+1.  Add **Display text** as the following: **scenario.formData.myName + " - Thanks for providing the information, we have created a Medication Request for you regarding the following medication: " + scenario.formData.myMedReq**
 
 1.  Rename the statement to **Confirmation**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/c47dcb3d7a32364f35a2294bb7d671c9.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/c47dcb3d7a32364f35a2294bb7d671c9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P121.png)
 
-1.  Connect the Submit step to the Confirmation step in the designer canvas.
+1.  Connect the **Submit** step to the **Confirmation** step in the designer canvas.
 
-    ![Diagram Description automatically generated](media/d1acfdfdd2e30d7c4c7f2f185fe6ef35.png)
+    ![[Diagram Description automatically generated](media/d1acfdfdd2e30d7c4c7f2f185fe6ef35.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P122.png)
 
 1.  Select **Save** and **Run** to see your scenario in the webchat.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/5690a711f136db5f2ca17266ac7d9e45.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/5690a711f136db5f2ca17266ac7d9e45.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P123.png)
 
-1.  **Fill in information** for the request and click **Submit** to see the confirmation text.
+1.  Fill in information for the request and click **Submit** to see the confirmation text.
 
-    ![Graphical user interface, application, email Description automatically generated](media/786f6621fef13817f85e684137fab801.png)
+    ![[Graphical user interface, application, email Description automatically generated](media/786f6621fef13817f85e684137fab801.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P124.png)
 
 **Step 6: Invoke Live Agent Action**
 
 1.  Add a **Statement** element to the canvas.
 
-    ![A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)
+    ![[A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P125.png)
 
-1.  Enter **Display Text**: Please wait, I am transferring your request to a live agent for further assistance.
-2.  
-3.  Rename the statement to **Live Chat**.
+1.  Enter **Display Text**: **Please wait, I am transferring your request to a live agent for further assistance.**
+  
+1.  Rename the statement to **Live Chat**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/ee2a571508a2098b1c9bec202dc4eca2.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/ee2a571508a2098b1c9bec202dc4eca2.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P126.png)
 
 1.  Click **OK** to return to the designer page.
-2.  
-3.  **Connect** the **No** decision of the **IsMedRefill** branch to the **Live Chat** statement.
+  
+1.  Connect the **No** decision of the **IsMedRefill** branch to the **Live Chat** statement.
 
-    ![Diagram Description automatically generated](media/889f727bb25d21b0c1673b7186cf851b.png)
+    ![[Diagram Description automatically generated](media/889f727bb25d21b0c1673b7186cf851b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P127.png)
 
 **Step 7: Add Action to Invoke Escalation**
 
 1.  Add an **Action** element to the canvas, used to trigger an escalation to Omnichannel Live Agent
 
-    ![](media/df4a09908aab05c4afd2452b91e3421e.png)
+    ![[](media/df4a09908aab05c4afd2452b91e3421e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P128.png)
 
 1.  Add the following code in the action, which will trigger the Live agent chat:
 
@@ -709,21 +706,21 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 2.  Name the action **Escalate**. Click **OK** to return to the designer page.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/17adbd0c4d01461d3b903d3646b533f5.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/17adbd0c4d01461d3b903d3646b533f5.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P129.png)
 
-1.  **Connect** the **Live Chat** to the new **EscalateToAgent** action. You completed the final connection!
+1.  Connect the **Live Chat** to the new **EscalateToAgent** action. You completed the final connection!
 
-    ![Diagram Description automatically generated](media/902c24320f1946f91119a0bfc17405cb.png)
+    ![[Diagram Description automatically generated](media/902c24320f1946f91119a0bfc17405cb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P130.png)
 
-1.  **Save** and **run** your scenario to see the full scenario output.
-2.  
-3.  Test all logical paths. Selecting Live Agent in the authored card should show the escalation action.
+1.  Save and run your scenario to see the full scenario output.
 
-    ![Graphical user interface, application Description automatically generated](media/8488f1dd21de5b0c2c5f57e47d099b35.png)
+1.  Test all logical paths. Selecting Live Agent in the authored card should show the escalation action.
 
-1.  **Exit** the MCH_PatientSerivce scenario editor.
+    ![[Graphical user interface, application Description automatically generated](media/8488f1dd21de5b0c2c5f57e47d099b35.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P131.png)
 
-    ![Graphical user interface, application, Word Description automatically generated](media/b8c32a8fa1d1e6352b3f1107dfe233e8.png)
+1.  Exit the **MCH_PatientSerivce** scenario editor.
+
+    ![[Graphical user interface, application, Word Description automatically generated](media/b8c32a8fa1d1e6352b3f1107dfe233e8.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P132.png)
 
 **Task 2: Create MCH_PatientServiceWelcome Scenario**
 
@@ -731,106 +728,105 @@ In this task, you will create another bot scenario called **MCH_PatientServiceWe
 
 1.  On the Azure Health Bot scenarios page, select **+New** to create another new scenario
 
-    ![Graphical user interface, text, application Description automatically generated](media/c6b04a9da53ad529f22ef4d556d45127.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/c6b04a9da53ad529f22ef4d556d45127.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P133.png)
 
-1.  Provide the following details for the new scenario:
+1.  Provide the following details for the new scenario and click **Create**:
     1.  **Name**: MCH_PatientServiceWelcome
-    2.  **Scenario ID**: MCH_PatientServiceWelcome
-    3.  Select **Create**.
+    1.  **Scenario ID**: MCH_PatientServiceWelcome
 
-        ![Graphical user interface, text, application, email Description automatically generated](media/1b11ff53df84e918ea553680a7af058d.png)
+        ![[Graphical user interface, text, application, email Description automatically generated](media/1b11ff53df84e918ea553680a7af058d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P134.png)
 
 1.  On the scenario editor designer, add a **Statement** element.
 
-    ![A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)
+    ![[A picture containing application Description automatically generated](media/b516d814db8461c6eb70cdf3ad149ce9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P135.png)
 
 1.  Rename the statement **Welcome**. Do not add any Display text as we will show it in the card instead.
 
-    ![Graphical user interface, text, application, email, Teams Description automatically generated](media/74531c6974cde48e51ba6c35e56c591e.png)
+    ![[Graphical user interface, text, application, email, Teams Description automatically generated](media/74531c6974cde48e51ba6c35e56c591e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P136.png)
 
 1.  Select **Cards.**
 
-    ![Graphical user interface, application Description automatically generated](media/47643908c0f6bc1989a8daf5e2ca2c7b.png)
+    ![[Graphical user interface, application Description automatically generated](media/47643908c0f6bc1989a8daf5e2ca2c7b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P137.png)
 
 1.  Select **Add Card**.
 
-    ![A picture containing graphical user interface Description automatically generated](media/ac86d871f38494a993d9a9bd5f9f1f83.png)
+    ![[A picture containing graphical user interface Description automatically generated](media/ac86d871f38494a993d9a9bd5f9f1f83.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P138.png)
 
-1.  Choose **HeroCard.** Add **Title**: Welcome to Lamna Healthcare Patient Service Portal
+1.  Choose **HeroCard.** Add **Title**: **Welcome to Lamna Healthcare Patient Service Portal**
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/e741b113d254e8d41ee2f7a2bf958cd1.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/e741b113d254e8d41ee2f7a2bf958cd1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P139.png)
 
 1.  Select **Add Action** and provide the following details:
-2.  Action type: imBack
-3.  **Action value**: "begin MCH_PatientService"
-4.  **Action title**: "Lamna Healthcare Support"
+    1.  **Action type**: imBack
+    1.  **Action value**: "begin MCH_PatientService"
+    1.  **Action title**: "Lamna Healthcare Support"
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/a0d7274c808aad868044608d858c64c4.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/a0d7274c808aad868044608d858c64c4.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P140.png)
 
 1.  Click **OK** and view your completed scenario. This will be used to kick off the conversation and allow the other MCH_PatientService scenario to be invoked through the authored card.
 
-    ![Table Description automatically generated with low confidence](media/8e359f4b4786269de20defefc053c6f0.png)
+    ![[Table Description automatically generated with low confidence](media/8e359f4b4786269de20defefc053c6f0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P141.png)
 
-1.  **Save** and **run** to test your bot scenario **MCH_PatientServiceWelcome** scenario in the Web Chat.
+1.  Save and run to test your bot scenario **MCH_PatientServiceWelcome** scenario in the Web Chat.
 
-    ![Text Description automatically generated with medium confidence](media/a6d6888f3b8e614b1e6898637ae4e48d.png)
+    ![[Text Description automatically generated with medium confidence](media/a6d6888f3b8e614b1e6898637ae4e48d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P142.png)
 
-1.  **Exit** the scenario designer.
+1.  Exit the scenario designer.
 
 **Task 3: Configure Welcome Scenario as Automatic**
 
 In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic Welcome Scenario” in settings. This will always trigger the welcome scenario when a user starts a conversion with the **Azure** **Health Bot**.
 
-1.  Navigate to Configuration \> Conversation
+1.  Navigate to **Configuration > Conversation**
 
-    ![Graphical user interface, application Description automatically generated](media/71293e93eb1c9b1f83bc4a25e82d6dbe.png)
+    ![[Graphical user interface, application Description automatically generated](media/71293e93eb1c9b1f83bc4a25e82d6dbe.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P143.png)
 
 1.  In the **Interactions** tab, scroll down to the **Automatic Welcome** section.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/fe96dc9aa5d19f2d14139f7459c37c73.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/fe96dc9aa5d19f2d14139f7459c37c73.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P144.png)
 
-1.  In the Automatic welcome scenario dropdown, select the MCH\_ PatientServiceWelcome scenario.
+1.  In the **Automatic welcome** scenario dropdown, select the **MCH_PatientServiceWelcomeScenario**.
 
-    ![Graphical user interface, application Description automatically generated](media/749d66eeb5e6727e2003be406ac57fc1.png)
+    ![[Graphical user interface, application Description automatically generated](media/749d66eeb5e6727e2003be406ac57fc1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P145.png)
 
 **Task 4: Test Health Bot Escalation from Power Apps Portal to Dynamics 365 Omnichannel**
 
-1.  Navigate to Power Apps and click to open **Lamna Healthcare Patient Portal**.
+1.  Navigate to **Power Apps** and click to open **Lamna Healthcare Patient Portal**.
 
-    ![Opem Lamna Healthcare Portal](media/4ab86dc05d1b52e1fbfbe9ed18ccd3af.png)
+    ![[Opem Lamna Healthcare Portal](media/4ab86dc05d1b52e1fbfbe9ed18ccd3af.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P146.png)
 
 1.  You should see the Health Bot “Let’s Chat” button in the lower right-hand corner of the screen. This means the chat widget was successfully embedded into the Customer Self-service portal.
 
-    ![Graphical user interface, website Description automatically generated](media/6683bae327bf4773ae70d6ab3a6d035a.png)
+    ![[Graphical user interface, website Description automatically generated](media/6683bae327bf4773ae70d6ab3a6d035a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P147.png)
 
-1.  When you the click chat widget, bot will trigger a welcome scenario message we created and set as the default welcome message (**MCH_PatientServiceWelcome)**.
+1.  When you the click chat widget, bot will trigger a welcome scenario message we created and set as the default welcome message **(MCH_PatientServiceWelcome)**.
 
-    ![Graphical user interface, text, application Description automatically generated](media/b8eb18cb6b252e2a24987cbf10c0ce05.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/b8eb18cb6b252e2a24987cbf10c0ce05.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P148.png)
 
-1.  Navigate back to Power Apps and open **Customer Service Workspace.**
+1.  Navigate back to **Power Apps** and open **Customer Service Workspace.**
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/b09bde1f0830a5c103062359f145ef38.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/b09bde1f0830a5c103062359f145ef38.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P149.png)
 
     **Note**: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when green with checkmark in circle**)**
 
-    ![Check presence status](media/11c92a2a155e998af758dd1eb2765cc6.png)
+    ![[Check presence status](media/11c92a2a155e998af758dd1eb2765cc6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P150.png)
 
     Splash screen:
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/e58927b04a1dd6043c593bd66f9b1102.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/e58927b04a1dd6043c593bd66f9b1102.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P151.png)
 
-1.  In the Health Bot in Lamna Healthcare Patient Portal, click **Lamna Healthcare Support** button, then the **Live Agent** button to witness the escalation into Omnichannel to chat with a live agent (your user!)
+1.  In the **Health Bot in Lamna Healthcare Patient Portal**, click **Lamna Healthcare Support** button, then the **Live Agent** button to witness the escalation into Omnichannel to chat with a live agent (your user!)
 
-    ![Graphical user interface, application Description automatically generated](media/6a5907104682e1c1adfa1bad184b157f.png) ![Graphical user interface, text, application, chat or text message Description automatically generated](media/a2737e43893fda1bddebcba898810df3.png)
+    ![[Graphical user interface, application Description automatically generated](media/6a5907104682e1c1adfa1bad184b157f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P152.png) ![[Graphical user interface, text, application, chat or text message Description automatically generated](media/a2737e43893fda1bddebcba898810df3.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P153.png)
 
-1.  Navigating back to Omnichannel for Customer Service, your user as the **Live Agent** should receive an incoming notification with **Accept/Reject** options for that chat.
-2.  
+1.  Navigating back to **Omnichannel for Customer Service**, your user as the Live Agent should receive an incoming notification with Accept/Reject options for that chat.
+
 3.  Click **Accept** to connect and chat with customer (In this case chat with the **patient**).
 
-    ![live agent notification on Customer Service](media/5a7e0e433a3cdc34a690e4a34d21698e.png)
+    ![[live agent notification on Customer Service](media/5a7e0e433a3cdc34a690e4a34d21698e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P154.png)
 
 1.  As soon as Live Chat Agent accepts the incoming chat notification, Omnichannel for Customer Service has opened a **Live Chat Widget** and Agent would be able to see the entire bot conversation with user and continue the chat conversation with user for further assistance.
 
-    ![live agent notification on Customer Service](media/6acb2789860498db29fd59afed37b410.png)
+    ![[live agent notification on Customer Service](media/6acb2789860498db29fd59afed37b410.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab02/L2P155.png)
 
 **Congratulations!** You have successfully extended the Azure Health Bot with custom scenarios and tested the end-to-end escalation scenario from a patient using the Azure Health Bot in Power Apps Portals to chatting with a Live Agent in Omnichannel for Customer Service.
