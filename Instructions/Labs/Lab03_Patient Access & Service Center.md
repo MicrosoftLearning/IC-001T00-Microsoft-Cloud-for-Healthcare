@@ -412,57 +412,58 @@ See the following documentation to learn more about these roles: [Assign roles a
 In this task, you will create an agent script in the Omnichannel admin center app. This script will guide the agent to **validate patient information** when a conversation is initiated between a patient and an agent in Patient Service Center. The script will have two steps, one to **confirm phone information** and another to **verify insurance information**. This task will guide you through creation of this agent script and its steps.
 
 1.  Navigate to **Omnichannel admin center** application which you opened in the first task.
-1.  In the left navigation bar, under **Agent Experience**, select **Agent Scripts.**
-2.  
-3.  On the Active Agent scripts page, select +New.
 
-    ![Omnichannel Administration app to create new agent scripts](media/089b479205b27b682872f9f693bcf427.png)
+1.  In the left navigation bar, under **Agent Experience**, select **Agent Scripts.**
+
+1.  On the **Active Agent scripts** page, select **+New**.
+
+    ![[Omnichannel Administration app to create new agent scripts](media/089b479205b27b682872f9f693bcf427.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P72.png)
 
 1.  For the **New Agent script** record, specify the following:
     1.  **Name:** Validate Patient Information
     2.  **Unique Name**: msdyn_ValidatePatientInformation
 
-        ![Create new agent script called Validate Patient Information](media/424e9ffba8a8729ed5f6ef7fef5f697e.png)
+        ![[Create new agent script called Validate Patient Information](media/424e9ffba8a8729ed5f6ef7fef5f697e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P73.png)
 
-1.  Click **Save**. The **Agent script** steps should appear on the right
+1.  Click **Save**. The Agent script steps should appear on the right
 
-    ![Graphical user interface, text, application Description automatically generated](media/baf7c183a9b679cfbd9324f68b4b0364.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/baf7c183a9b679cfbd9324f68b4b0364.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P74.png)
 
-1.  In the Agent script steps section, select +New Agent script step.
+1.  In the **Agent script steps** section, select **+New Agent script step**.
 
-    ![Add Agent script step to the new agent script](media/69e50ed3d916abd30dd1e169169ce18a.png)
+    ![[Add Agent script step to the new agent script](media/69e50ed3d916abd30dd1e169169ce18a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P75.png)
 
-1.  **Quick Create** form for the **Agent script step** appears. Specify the following fields:
+1.  Quick Create form for the Agent script step appears. Specify the following fields:
     1.  **Name:** Confirm Phone Number
     2.  **Unique Name**: msdyn_ConfirmPhone
-    3.  Order: 1
-    4.  Action type: Text
+    3.  **Order**: 1
+    4.  **Action type**: Text
     5.  **Text instructions**: Ask patient to confirm phone number.
 
-        ![Screenshot of Quick create form for a step to Confirm Phone Number for the patient](media/bd79321f1edbc3acefc77ee02c45e273.png)
+        ![[Screenshot of Quick create form for a step to Confirm Phone Number for the patient](media/bd79321f1edbc3acefc77ee02c45e273.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P76.png)
 
 1.  Click **Save and Close**. Now let’s add another step.
-2.  
-3.  In the Agent script steps section, select +New Agent script step again.
 
-    ![Screenshot of New Agent script step button in agent script steps subgrid ](media/9b9b4c3927e3928c2165b592427ca1b4.png)
+1.  In the Agent script steps section, select +New Agent script step again.
 
-1.  Another **Quick Create** form for the **Agent script step** appears. Specify the following fields:
-2.  **Name:** Verify Insurance Information
-3.  **Unique Name**: msdyn_VerifyInsuranceInformation
-4.  Order: 2
-5.  Action type: Text
-6.  **Text instructions**: Ask Patient for Insurance Provider and ID \#. Verify their response matches insurance information on file.
+    ![[Screenshot of New Agent script step button in agent script steps subgrid ](media/9b9b4c3927e3928c2165b592427ca1b4.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P77.png)
 
-![Screenshot of Quick create form for a step to Verify Insurance Information for the patient](media/7b82621394d3b31e2a4050e6bcef29d3.png)
+1.  Another Quick Create form for the Agent script step appears. Specify the following fields:
+    1.  **Name:** Verify Insurance Information
+    1.  **Unique Name**: msdyn_VerifyInsuranceInformation
+    1.  **Order**: 2
+    1.  **Action type**: Text
+    1.  **Text instructions**: Ask Patient for Insurance Provider and ID \#. Verify their response matches insurance information on file.
 
-1.  Select **Save and Close**. Both steps should now be in the **Agent script steps** table.
+![[Screenshot of Quick create form for a step to Verify Insurance Information for the patient](media/7b82621394d3b31e2a4050e6bcef29d3.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P78.png)
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/9ae9c32c1ceeb9d84c620c7b7f39e1ee.png)
+1.  Select **Save and Close**. Both steps should now be in the Agent script steps table.
+
+    ![[Graphical user interface, text, application, email Description automatically generated](media/9ae9c32c1ceeb9d84c620c7b7f39e1ee.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P79.png)
 
 1.  The agent script is now complete. Select **Save & Close**.
 
-    ![Screenshot of the completed "Validate Patient Information" Agent script](media/a40d9b391cd9cd61c4fc141bfa45145d.png)
+    ![[Screenshot of the completed "Validate Patient Information" Agent script](media/a40d9b391cd9cd61c4fc141bfa45145d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P80.png)
 
 **Congratulations!** You have completed creating an agent script with two steps to validate patient information, including phone number and insurance information.
 
@@ -472,37 +473,39 @@ In this task, you will associate the agent script with a session template so it 
 
 1.  Open the **Omnichannel admin center** app in Power Apps if you aren’t already in it.
 
-    ![Screenshot of Omnichannel Administrator App in Power Apps](media/1f903d0ba4d66a015c432c0ba5e4f797.png)
+    ![[Screenshot of Omnichannel Administrator App in Power Apps](media/1f903d0ba4d66a015c432c0ba5e4f797.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P81.png)
 
 1.  In the left navigation bar, under **Agent Experience**, select **Sessions**.
 
-    ![Graphical user interface, application Description automatically generated](media/e038d4d0259fd80402c86883e6b77606.png)
+    ![[Graphical user interface, application Description automatically generated](media/e038d4d0259fd80402c86883e6b77606.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P82.png)
 
 1.  Select the **Chat session – default** session template. We will associate this session with the agent script.
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](media/b594ef069577ba1493cf80899ee4a25d.png)
+    ![[Graphical user interface, text, application, chat or text message Description automatically generated](media/b594ef069577ba1493cf80899ee4a25d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P83.png)
 
-1.  Double click or select Edit on the command bar to open the **Chat session – default** record.
+1.  Double click or select **Edit** on the command bar to open the Chat session – default record.
 
-    ![Graphical user interface, table Description automatically generated](media/93a09a033715c2df44ea0617c8e20ce6.JPG)
+    ![[Graphical user interface, table Description automatically generated](media/93a09a033715c2df44ea0617c8e20ce6.JPG)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P84.png)
 
-1.  Select the Agent scripts tab. In the Agent scripts section, select Add Existing Agent script.
+1.  Select the **Agent scripts** tab. In the **Agent scripts** section, select **Add Existing Agent script**.
 
-    ![Screenshot of Add existing agent script button in the agent scripts subgrid of the "Chat session - Default" template](media/099a5bc9ce948faf09e58c42de11c5f2.png)
+    ![[Screenshot of Add existing agent script button in the agent scripts subgrid of the "Chat session - Default" template](media/099a5bc9ce948faf09e58c42de11c5f2.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P85.png)
 
-1.  The **Lookup Records** pane should appear on the right.
+1.  The Lookup Records pane should appear on the right.
 
-    ![Screenshot of Searching for Validate Patient Information record in Lookup field](media/00b24e808e88c2eabc959a20fc6fd5a0.png)
+    ![[Screenshot of Searching for Validate Patient Information record in Lookup field](media/00b24e808e88c2eabc959a20fc6fd5a0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P86.png)
 
-1.  In the Look for Records box, select the **search icon** (magnifying glass).![Screenshot of selecting "Validate Patient Information" which shows as agent script record](media/94971a046f6950267b5636b9413b45f4.png)
-2.  
-3.  Select the **Validate Patient Information** agent script from the list and click **Add.**
+1.  In the **Look for Records** box, select the **search** icon (magnifying glass).
 
-    ![Screenshot of Add button on bottom of Lookup Records pane](media/96a82f74b0eb1ffaaa0e8ee100eb7e42.png)
+  ![[Screenshot of selecting "Validate Patient Information" which shows as agent script record](media/94971a046f6950267b5636b9413b45f4.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P87.png)
+ 
+1.  Select the **Validate Patient Information** agent script from the list and click **Add.**
+
+    ![[Screenshot of Add button on bottom of Lookup Records pane](media/96a82f74b0eb1ffaaa0e8ee100eb7e42.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P88.png)
 
 1.  Chat session – default Session Template should have the Validate Patient Information Agent script.
 
-    ![chat session - default agent script tab](media/1364191676ecbba4aafca6224e4f2686.png)
+    ![[chat session - default agent script tab](media/1364191676ecbba4aafca6224e4f2686.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P89.png)
 
 **Congratulations!** You have successfully created an agent script with two steps and associated the agent script with the default chat session. Now your agents can use this script during a default chat session with a patient.
 
@@ -510,28 +513,30 @@ In this task, you will associate the agent script with a session template so it 
 
 In this exercise, you will learn how to create and manage **Knowledge Articles** that can address any number of issues your customers would like to discuss during the patient service center conversation. These knowledge articles will appear in the productivity pane in Patient Service Center through AI-enabled suggestions.
 
-![Graphical user interface, application Description automatically generated](media/8a9c44ffbba7b810ea6f9389d72c1088.jpeg)
+![[Graphical user interface, application Description automatically generated](media/8a9c44ffbba7b810ea6f9389d72c1088.jpeg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P90.jpg)
 
 **Task 1: Assign Knowledge Manager User Role**
 
 In this task, we will assign the necessary user role to create and view knowledge articles.
 
 1.  If you kept the User Settings page up from the previous exercise, navigate to that page. If you didn’t keep it open, follow all the steps in Exercise 2, Task 1 and then return here to assign the proper role.
+
 1.  Once you’ve selected your user and clicked **Manage Roles**, you must assign the necessary role(s).
 
-    ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](media/2fea347790e3a9500986ebef69801b9f.png)
+    ![[Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](media/2fea347790e3a9500986ebef69801b9f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P91.png)
 
 1.  There are three roles you can choose with [create/read permissions for Knowledge Articles](https://docs.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article#create-a-knowledge-article).
     1.  Knowledge Manager
     2.  Customer Service Manager
     3.  Customer Service Representative
+
 1.  For this lab, select the **Knowledge Manager** role.
 
-    ![Screenshot of Manage User Roles dialog with Knowledge Manager role selected](media/0c6f6bcfb699312d64d3cf30bbecf7e1.png)
+    ![[Screenshot of Manage User Roles dialog with Knowledge Manager role selected](media/0c6f6bcfb699312d64d3cf30bbecf7e1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P92.png)
 
-1.  Also ensure you have the System Administrator role. Official training users have it assigned.
+1.  Also ensure you have the **System Administrator** role. Official training users have it assigned.
 
-    ![Graphical user interface Description automatically generated](media/a6456591f6c79edcde47af8d81355902.png)
+    ![[Graphical user interface Description automatically generated](media/a6456591f6c79edcde47af8d81355902.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P93.png)
 
 1.  Select **OK** to close the Manage User Roles window and accept changes.
 
@@ -541,32 +546,32 @@ In this task, we will assign the necessary user role to create and view knowledg
 
 1.  In [Power Apps](http://make.powerapps.com), open the **Customer Service Hub** app.
 
-    ![Screenshot of Customer Service Hub application in Power Apps list](media/e4e8ca9f21365f405fd6d7de651decaf.png)
+    ![[Screenshot of Customer Service Hub application in Power Apps list](media/e4e8ca9f21365f405fd6d7de651decaf.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P94.png)
 
-1.  In Customer Service Hub**,** on the left navigation bar, go to the bottom left corner where there’s a drop down that says **Service**. Select it and change the area to **Customer Service Admin Center**.
+1.  In **Customer Service Hub**, on the left navigation bar, go to the bottom left corner where there’s a drop down that says **Service**. Select it and change the area to **Customer Service Admin Center**.
 
-    ![Screenshot of bottom left drop down selection changing from Service to Service Management](media/32e65e67c221eedb9537ff1830158665.png)
+    ![[Screenshot of bottom left drop down selection changing from Service to Service Management](media/32e65e67c221eedb9537ff1830158665.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P95.png)
 
-1.  Once in in the Customer Service Admin Center area, scroll down to Knowledge Base Management section and select Settings in the left navigation.
+1.  Once in the **Customer Service Admin Center** area, scroll down to **Knowledge Base Management** section and select **Settings** in the left navigation.
 
-    ![Screenshot of Settings option in the site map in Knowledge Base Management section](media/0f47a4ea6cb910d750c1ed3faf283858.png)
+    ![[Screenshot of Settings option in the site map in Knowledge Base Management section](media/0f47a4ea6cb910d750c1ed3faf283858.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P96.png)
 
-1.  **Record Types** allows you to configure the record types you want to turn on for knowledge management.
+1.  Record Types allows you to configure the record types you want to turn on for knowledge management.
     1.  The list will include all entities that are available for an N:N relationship.
-    2.  Knowledge management is enabled for **Case** table by default. Because our scenario will also use the Case table, **we don’t need to add any additional tables at this time**.
+    1.  Knowledge management is enabled for Case table by default. Because our scenario will also use the Case table, we don’t need to add any additional tables at this time.
 
-        ![Screenshot of Record Types for knowledge management, with all available on the left and selected on the right.  Currently selected are Case and Contact.](media/823d8feb0addd6d1ca4624cc313cd0e3.png)
+        ![[Screenshot of Record Types for knowledge management, with all available on the left and selected on the right.  Currently selected are Case and Contact.](media/823d8feb0addd6d1ca4624cc313cd0e3.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P97.png)
 
 1.  For Support Portal Connection, this allows you to integrate an external portal for publishing knowledge articles.
     1.  Selecting Yes would share the knowledge article as a link in the email sent to the customer.
     2.  Selecting No would share the article content inserted in the email body.
     3.  Keep as **No** as we will not be integrating an external portal connection
 
-        ![Text Description automatically generated](media/ea379ac5d214d37effa00e3118c4c844.png)
+        ![[Text Description automatically generated](media/ea379ac5d214d37effa00e3118c4c844.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P98.png)
 
-1.  In the Knowledge Articles Feedback section, set Enable users to provide feedback on knowledge articles from search control to Yes. This will allow users to provide feedback on knowledge articles opened from knowledge search control.
+1.  In the **Knowledge Articles Feedback** section, set **Enable users to provide feedback on knowledge articles from search control** to **Yes**. This will allow users to provide feedback on knowledge articles opened from knowledge search control.
 
-    ![Graphical user interface, text, application Description automatically generated](media/39b8281dcce100a7026284c8684e0cac.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/39b8281dcce100a7026284c8684e0cac.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P99.png)
 
 **Task 3: Create Knowledge Article**
 
