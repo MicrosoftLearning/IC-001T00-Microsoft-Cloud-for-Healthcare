@@ -199,27 +199,27 @@ In this task, you will learn how to **create an invitation code** for patients t
 
 1.  Open the **Healthcare Administration** app in [Power Apps](http://make.powerapps.com).
 
-    ![Screenshot of Apps screen with Healthcare Administration App](media/546ab9d2b2e4d2a6f5b8192a7d00eb18.png)
+    ![[Screenshot of Apps screen with Healthcare Administration App](media/546ab9d2b2e4d2a6f5b8192a7d00eb18.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P31.png)
 
-1.  In the Administration section of the sitemap, select **People,** if not already selected. You will see the **Active Patients** grid view. Open the **Casey Jensen** patient record so we can obtain an invitation code for her to use.
+1.  In the **Administration** section of the sitemap, select **People,** if not already selected. You will see the **Active Patients** grid view. Open the **Casey Jensen** patient record so we can obtain an invitation code for her to use.
 
-    ![Graphical user interface, application Description automatically generated](media/eb2ddad1307dfd171cdfe13436fbe1ad.png)
+    ![[Graphical user interface, application Description automatically generated](media/eb2ddad1307dfd171cdfe13436fbe1ad.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P32.png)
 
 1.  On Casey Jensen patient record, select **Create Invitation** from the top command bar. It should be near the right side.
 
-    ![Graphical user interface, text, application Description automatically generated](media/bdec1fee98911c5ddb646aeeeeed1ad8.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/bdec1fee98911c5ddb646aeeeeed1ad8.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P33.png)
 
 1.  You may have to expand additional options to see this command in the drop down.
 
-    ![Screenshot of Create Invitation command after expanding more options](media/a51267c180b172cd4b60ae3ebf393afc.png)
+    ![[Screenshot of Create Invitation command after expanding more options](media/a51267c180b172cd4b60ae3ebf393afc.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P34.png)
 
 1.  A New Invitation form will appear. You don’t need to make any changes. Click **Save.** Once saved, an invitation code will be created for the patient. Let’s go retrieve it.
 
-    ![Graphical user interface, application Description automatically generated](media/3c9bf2c5682525105562acec474e93cb.png)
+    ![[Graphical user interface, application Description automatically generated](media/3c9bf2c5682525105562acec474e93cb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P35.png)
 
 1.  Go to the **Advanced** tab on the Invitation record. Copy and store the **Invitation Code** for accessing the Patient Portal in the next task.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/34524f1a4b0e995152d4920b42f19bad.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/34524f1a4b0e995152d4920b42f19bad.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P36.png)
 
 **Congratulations!**  You have successfully created an invitation code for **Casey** to register an account in the Patient Portal.
 
@@ -229,32 +229,32 @@ In this task, you will **transition personas** and act as **Casey Jensen**, who 
 
 1.  Open the Lamna Healthcare Patient Portal in [Power Apps](https://make.powerapps.com/).
 
-    ![Screenshot of Lamna Healthcare Patient Portal in App list](media/d9c9fdf86983ff0ad75b9781e2d0399c.png)
+    ![[Screenshot of Lamna Healthcare Patient Portal in App list](media/d9c9fdf86983ff0ad75b9781e2d0399c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P37.png)
 
 1.  In the first task, we configured the portal to the Healthcare Patient Portal template. Now that it’s been restarted, your Patient Portal should open and look like the following:
 
-    ![Screenshot of Healthcare Patient Portal Sign in Landing Page](media/8b600d15eb5bafdcb7a735457814c725.png)
+    ![[Screenshot of Healthcare Patient Portal Sign in Landing Page](media/8b600d15eb5bafdcb7a735457814c725.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P38.png)
 
 1.  If you still see the Customer Self-Service template, make sure you’ve completed Exercise 1, Task 1 to change the template to the Healthcare Patient Portal.
-2.  
-3.  In the Patient Portal, select **Sign in**.
 
-    ![Screenshot of Sign in prompt](media/a3e05c50406a1d8acc6a3b0c8dde49a6.png)
+1.  In the Patient Portal, select **Sign in**.
+
+    ![[Screenshot of Sign in prompt](media/a3e05c50406a1d8acc6a3b0c8dde49a6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P39.png)
 
 1.  After the sign in page loads, select the **Redeem invitation** tab.
 
-    ![Graphical user interface, text, application Description automatically generated](media/4f705ca9a55d46441a14a5d21f2d9b4c.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/4f705ca9a55d46441a14a5d21f2d9b4c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P40.png)
 
 1.  Paste the **Invitation code** you stored for Casey Jensen. Click **Register.**
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/98ea55cae8145080378d854c4b47fda7.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/98ea55cae8145080378d854c4b47fda7.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P41.png)
 
 1.  Register a new local account for Casey Jensen with the following recommended details:
     1.  **Email**: Casey.Jensen@contoso.com (should auto-fill)
     2.  **Username**: CaseyJensen
     3.  **Password**: Make up your own. Please note the password to use for sign in later.
 
-        ![Graphical user interface, text, application, email Description automatically generated](media/46b12ab28790cc7676100e227610ec40.png)
+        ![[Graphical user interface, text, application, email Description automatically generated](media/46b12ab28790cc7676100e227610ec40.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab03/L3P42.png)
 
 1.  Click **Register**. After selecting Register, you should be signed into the Patient Portal.
 
