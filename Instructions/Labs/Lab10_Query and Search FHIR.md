@@ -1,5 +1,153 @@
 # Module 5 Lesson 4 Lab 10: Query and Search FHIR
 
+### Overview
+
+In this challenge, you will learn how to use [FHIR search](https://www.hl7.org/fhir/search.html) operations to query data in your FHIR service.
+
+The FHIR specification defines a RESTful API framework for interacting with Resources in a FHIR server database. Healthcare system integrators and app developers can take advantage of the rich set of search parameters in the FHIR API for querying Resources. In this challenge, you will get practice using the FHIR search API to query Resources in the [FHIR service](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview) in [Azure Health Data Services](https://docs.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-overview).
+
+Think of these FHIR searches in user terms – a doctor may want to find all encounters for patients with a certain condition. Queries like this are focused on retrieving Resource instances per some filter criteria (in this example, Encounter instances filtered by their reference to a type of Condition).
+
+**FHIR search basics**
+
+At the top level, the FHIR data model is made up of a collection of Resources for structuring information generated in real-world healthcare settings. Resources in FHIR represent the different entities tied to healthcare activities. There are Resources for the people involved (Patient, Practitioner, etc.), the events that occur (Encounter, Observation, Procedure, etc.), and many other aspects connected with healthcare scenarios.
+
+Within every Resource, FHIR defines a set of Elements for storing details that uniquely identify each Resource instance\* on a FHIR server. Elements such as id and meta apply to all Resource types in FHIR, while other Elements are attached to specific Resource types (e.g., the gender Element is only found in Patient, Person, Practitioner, and RelatedPerson Resources). Furthermore, the FHIR model is designed to allow users to add Elements to Resources through extensions.
+
+Along with Elements, each Resource in FHIR is defined with a set of search parameters. When a remote client app makes a FHIR search API call, search parameters are used to focus the data retrieved from the FHIR server. There are standard search parameters that apply to all Resource types (e.g., \_id, \_lastUpdated), and there are search parameters specific to certain Resource types (e.g., gender is a search parameter defined for Patient). Additionally, FHIR provides a framework for creating custom search parameters. See the links below for more information.
+
+\*Note: A Resource instance on a FHIR server has a unique, server-wide Resource id. This id is also referred to as the Resource instance's [Logical ID](https://www.hl7.org/fhir/resource.html#id).
+
+-   [Standard Search Parameters](https://www.hl7.org/fhir/search.html#all)
+-   [Patient Resource-specific Search Parameters](https://www.hl7.org/fhir/patient.html#search) (note that Resource-specific search parameters are always listed at the bottom of the "Content" tab in FHIR R4 Resource documentation)
+-   [Defining Custom Search Parameters](https://docs.microsoft.com/azure/healthcare-apis/fhir/how-to-do-custom-search)
+
+**Searching with GET**
+
+The simplest way to execute a search in FHIR is to send a GET API request. As an example, if you send a request for the Patient Resource type without specifying any search parameters, you will receive a Bundle containing all Patient Resource instances stored in the FHIR server database.
+
+>   GET {{fhirurl}}/Patient
+
+If you wanted to narrow this search down to Patient Resource instances that were last updated on a certain date, you could include the \_lastUpdated search parameter as shown below.
+
+>   GET {{fhirurl}}/Patient?_lastUpdated=2022-04-21
+
+**Searching with POST**
+
+You can also make FHIR search API calls with POST. This is useful if the query string is too long for a single line or if the query contains Personal Health Information (PHI). To search using POST, the search parameters are delivered in the body of the request. In this challenge, we will not be using POST API calls for searches, but we have included a sample API call in the FHIR Search collection in Postman to demonstrate how to query with POST. When you get to Step 2 in this lab, try sending POST Step 2 - List Patient by ID using POST in the FHIR Search collection.
+
+**FHIR search responses**
+
+When a search request is successful, you’ll receive a JSON FHIR Bundle response containing the Resource instance(s) returned from the search (if no Resource
+instances matched the search criteria, then the Bundle will be empty). The Bundle Resource in FHIR supports paging and many other methods of managing search results. If the search request fails, you’ll find the error details in an OperationOutcome Resource returned from the FHIR server.
+
+**Common Search Parameters**
+
+There are a select few search parameters in FHIR that apply to all Resource types. The FHIR service in Azure Health Data Services supports the following search parameters for all Resource types: \_id, \_lastUpdated, \_profile, \_security, \_tag, and \_type.
+
+The search parameter \_id is used to specify the Logical ID of a Resource instance on a FHIR server.
+
+>   GET {{fhirurl}}/Patient?_id=123
+
+This query returns a Bundle containing the Patient Resource instance with the given id.
+
+Response (excerpt):
+
+{
+
+"resourceType": "Bundle",
+
+"id": "XXXXXXXXXXXXXXXXXXXXXXXXXX",
+
+"meta": {
+
+"lastUpdated": "2022-07-06T13:23:05.1216075+00:00"
+
+},
+
+"type": "searchset",
+
+"link": [
+
+{
+
+"relation": "self",
+
+"url": "https://{{fhirurl}}/Patient?_id=123"
+
+}
+
+],
+
+"entry": [
+
+{
+
+"fullUrl": "https://{{fhirurl}}/Patient/123",
+
+"resource": {
+
+"resourceType": "Patient",
+
+"id": "123"
+
+}
+
+}
+
+],
+
+...}
+
+**Single Resource Instance Request**
+
+Compare the above to a single Resource instance request\*, which uses the RESTful API pattern of putting the Resource id directly in the URL path (rather than using the \_id search parameter). With the request below, the Resource instance is returned in response, but not inside a Bundle.
+
+>   GET {{fhirurl}}/Patient/123
+
+Response (excerpt):
+
+{
+
+"resourceType": "Patient",
+
+"id": "123",
+
+"meta": {
+
+"versionId": "1",
+
+"lastUpdated": "2022-05-09T20:53:22.981+00:00",
+
+"profile": [
+
+"http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+
+]
+
+},
+
+...}
+
+\*Note: The GET {{fhirurl}}/\<Resource\>/\<id\> pattern is technically a read interaction (and not a search interaction, as defined by HL7).
+
+### Learning objectives
+
+In this lab, you will:
+
+-   Explain the basic concepts of FHIR search
+
+-   Perform both Common and Composite searches
+
+-   Use modifiers in FHIR searches
+
+-   Use Chained and Reverse Chained search result parameters
+
+-   Use Include and Reverse Include search result parameters
+
+-   Use a custom search parameter
+
+
 ### Step 1 - Save Sample Resources
 
 To begin, you are going to populate your FHIR service with additional sample Resources.
