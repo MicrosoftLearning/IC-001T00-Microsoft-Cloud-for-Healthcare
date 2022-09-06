@@ -246,40 +246,41 @@ It is available natively for Apple iOS and Google Android phones and tablets, th
 
 Here is a calendar view of scheduled work orders:
 
-![Graphical user interface, application Description automatically generated](media/2e5e9db963ab6d530418845ade450cf6.jpeg)
+![[Graphical user interface, application Description automatically generated](media/2e5e9db963ab6d530418845ade450cf6.jpeg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P42.png)
 
 **Task 1: Assign Security Roles to Field Service Mobile Users**
 
 In this task we will assign the Field Service – Resource role to Home Health workers.
 
 1.  Navigate to <https://make.powerapps.com> in your incognito window.
+
 1.  Click the **gear icon** in the upper righthand corner and go to **Advanced Settings**.
 
-    ![Graphical user interface, application Description automatically generated](media/26d7f778f6db24083fd5f0fc77101de9.png)
+    ![[Graphical user interface, application Description automatically generated](media/26d7f778f6db24083fd5f0fc77101de9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P43.png)
 
 1.  You will be navigated to the classic view. If it takes a while to load, refresh the page.
 
-    ![Graphical user interface, text, application Description automatically generated](media/285d4a3caa05eeb169876c5d44c11624.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/285d4a3caa05eeb169876c5d44c11624.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P44.png)
 
 1.  Click **Settings** on the top command bar and then in the flyout menu choose **Security**.
 
-    ![Graphical user interface, application, website Description automatically generated](media/9e2e1cfb3cfdc3e00849d1e1938e66da.png)
+    ![[Graphical user interface, application, website Description automatically generated](media/9e2e1cfb3cfdc3e00849d1e1938e66da.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P45.png)
 
 1.  Click **Users**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/9aa374708ca8db47660463e546249b76.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/9aa374708ca8db47660463e546249b76.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P46.png)
 
 1.  Select the view drop-down and change the view to show “**Enabled Users**”.
 
-    ![Graphical user interface, text, application Description automatically generated](media/9ff0176dc324515b5652585ebebd844b.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/9ff0176dc324515b5652585ebebd844b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P47.png)
 
 1.  Find and select the user whom you would like to assign the “Field Service – Resource” role. Select **Manage Roles** on the command bar.
 
-    ![Graphical user interface, text, application Description automatically generated](media/f5571d213e2744cb9a522827de51773e.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/f5571d213e2744cb9a522827de51773e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P48.png)
 
-1.  Scroll down to select the “**Field Service – Resource**” security role and click OK.
+1.  Scroll down to select the **Field Service – Resource** security role and click **OK**.
 
-    ![Graphical user interface, application, table Description automatically generated](media/0328b9e0b0c4d0fa928a84b7efe8e321.png)
+    ![[Graphical user interface, application, table Description automatically generated](media/0328b9e0b0c4d0fa928a84b7efe8e321.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P49.png)
 
 **Congratulations**! You have assigned the Field Service – Resource role to a Field Service Mobile Home Health user in the Microsoft Cloud for Healthcare.
 
@@ -288,11 +289,13 @@ In this task we will assign the Field Service – Resource role to Home Health w
 In this task, we will walk through how to download the Field Service Mobile app to an iOS or Android device and sign in.
 
 1.  Go to the app store on your iOS or Android device and search for Dynamics 365 Field Service.
-1.  Download the app called **Field Service (Dynamics 365),** as seen in the following screenshot. It is the mobile application built on the Power Platform.
-1.  Launch the app and sign in with the Microsoft Cloud for Healthcare username and password for the user that you assigned the “Field Service – Resource” security role to in the previous task.
 
-    ![Graphical user interface, application Description automatically generated](media/fd954522fc93ff4e89e6fa3adf204cfa.jpg)![Graphical user interface, text, application, chat or text message Description automatically generated](media/e8b070c9401384ce23dde2a47e69dd4f.png)
+1.  Download the app called **Field Service (Dynamics 365)**, as seen in the following screenshot. It is the mobile application built on the Power Platform.
 
+1.  Launch the app and sign in with the Microsoft Cloud for Healthcare username and password for the user that you assigned the **Field Service – Resource** security role to in the previous task.
+
+    ![[Graphical user interface, application Description automatically generated](media/fd954522fc93ff4e89e6fa3adf204cfa.jpg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P50.png)![Graphical user interface, text, application, chat or text message Description automatically generated](media/e8b070c9401384ce23dde2a47e69dd4f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P51.png)
+    
 **Congratulations**! You have downloaded and signed into the Field Service Mobile as a Home Health user in the Microsoft Cloud for Healthcare
 
 **Task 3: Use the Field Service Mobile app to manage Home Health Work Orders**
@@ -301,37 +304,38 @@ In the last exercise, we assigned **Home Health Work Order** 00034 to our Home H
 
 1.  On your mobile device, log into the Field Service Mobile App as your Bookable Resource user. If you encounter a message that says “Contact your administrator for access to your organization’s mobile apps”, select the menu icon in the top left and **toggle Show non-production apps to Yes**.
 
-    ![Graphical user interface, application Description automatically generated](media/9a5550e99f9452a0bd2fc1167ec305cb.png)![Graphical user interface, application, Teams Description automatically generated](media/b72140bc6e194e5f30a4dfcba11d72ac.png)![Graphical user interface, application, Teams Description automatically generated](media/e4d773ccab2f6e32d22cb313d85f6faa.png)
+    ![[Graphical user interface, application Description automatically generated](media/9a5550e99f9452a0bd2fc1167ec305cb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P52.png)
+    ![[Graphical user interface, application, Teams Description automatically generated](media/b72140bc6e194e5f30a4dfcba11d72ac.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P53.png)![[Graphical user interface, application, Teams Description automatically generated](media/e4d773ccab2f6e32d22cb313d85f6faa.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P54.png)
 
-1.  In the list of environments, **find the Microsoft Cloud for Healthcare environment** that you have been working in. You will find the Home Health Work Order in the calendar view in an “**In Progress**” state.
+1.  In the list of environments, find the Microsoft Cloud for Healthcare environment that you have been working in. You will find the Home Health Work Order in the calendar view in an **In Progress** state.
 
-    ![Graphical user interface, application Description automatically generated](media/9877ab5409479e5a37e06c419e4dc40e.png)
+    ![[Graphical user interface, application Description automatically generated](media/9877ab5409479e5a37e06c419e4dc40e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P55.png)
 
-1.  **Click to open** the Work Order. Notice the Booking Status says **In Progress**. Expand the status field using the blue arrow in the upper right. Click the **magnifying glass** next to the status field to modify the value.
+1.  Click to open the Work Order. Notice the **Booking Status** says **In Progress**. Expand the status field using the blue arrow in the upper right. Click the **magnifying glass** next to the status field to modify the value.
 
-    ![Graphical user interface, application Description automatically generated](media/236f05ee83a34f4b146c0d7c71613b01.png)![Graphical user interface, application Description automatically generated](media/f45d26ce6b69d27a0b2f8f0ac9099be2.png)
+    ![[Graphical user interface, application Description automatically generated](media/236f05ee83a34f4b146c0d7c71613b01.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P56.png)![[Graphical user interface, application Description automatically generated](media/f45d26ce6b69d27a0b2f8f0ac9099be2.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P57.png)
 
-1.  **Remove** In progress from the selected values by clicking the x next to it.
+1.  Remove **In progress** from the selected values by clicking the **x** next to it.
 
-    ![Graphical user interface, application Description automatically generated](media/fe5149ab79fe7715ab06602c378cf0c0.png)![Graphical user interface, text, application, chat or text message Description automatically generated](media/1b5d968705fbc93319a405827d0361b6.png)
+    ![[Graphical user interface, application Description automatically generated](media/fe5149ab79fe7715ab06602c378cf0c0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P58.png)![[Graphical user interface, text, application, chat or text message Description automatically generated](media/1b5d968705fbc93319a405827d0361b6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P59.png)
 
 1.  Set the **Booking Status** to **Completed** to close the Work Order. Click **Save** in the upper right.
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](media/88234ac2354b631f88825427c02c62f6.png)![Graphical user interface, application Description automatically generated](media/ac17e377cdf7e66cc9447e14a95f4bf6.png)
+    ![[Graphical user interface, text, application, chat or text message Description automatically generated](media/88234ac2354b631f88825427c02c62f6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P60.png)![[Graphical user interface, application Description automatically generated](media/ac17e377cdf7e66cc9447e14a95f4bf6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P61.png)
 
 1.  The Work order has been completed and the time values have reflected based on the start time and when we completed the order. We are now finished with the mobile app.
 
-    ![Graphical user interface, application Description automatically generated](media/7b07e14bda3da47cab31084a8f7bf61b.png)![Graphical user interface, application Description automatically generated](media/7038371b29c0b298e93fd72388d413df.png)
+    ![[Graphical user interface, application Description automatically generated](media/7b07e14bda3da47cab31084a8f7bf61b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P62.png)![[Graphical user interface, application Description automatically generated](media/7038371b29c0b298e93fd72388d413df.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P63.png)
 
-1.  Navigate back to the **Home Health app**. You’ll see on the **schedule board** the work order has been updated to show the reflected time and status.
+1.  Navigate back to the **Home Health** app. You’ll see on the schedule board the work order has been updated to show the reflected time and status.
 
-    ![Graphical user interface, application Description automatically generated](media/3cb76fabb19cc0c3148ffc5db983cdb5.png)
+    ![[Graphical user interface, application Description automatically generated](media/3cb76fabb19cc0c3148ffc5db983cdb5.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P64.png)
 
-1.  Click **Home Care** on the site map and find **Work Order 00034**. You will see that the **System Status** has been updated to “Completed”.
+1.  Click **Home Care** on the site map and find **Work Order 00034**. You will see that the **System Status** has been updated to **Complete**.
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](media/1815d724599e1253ad7dabb657008321.png)
+    ![[Graphical user interface, text, application, chat or text message Description automatically generated](media/1815d724599e1253ad7dabb657008321.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P65.png)
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/da0c30550746d4d1719b3ec421857302.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/da0c30550746d4d1719b3ec421857302.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P66.png)
 
 **Congratulations!** You have assigned a Home Health Work Order to a Home Health Bookable Resource, made updates to the work order in the Field Service mobile app, and then viewed those changes in the Microsoft Cloud for Healthcare Home Health app. For more information on the Field Service mobile app, see [Install and set up the Field Service (Dynamics 365) mobile app \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/field-service/mobile-power-app-get-started).
 
