@@ -13,11 +13,11 @@ Key capabilities for Care Management include the following:
 
 Care Management focuses on both **Enhance patient engagement** and **Empower health team collaboration** priority scenarios. It creates a system that allows for enhanced care team collaboration and coordination, virtual care options, and a 360 view of patient healthcare data including patient insights.
 
-![](media/79f592b09aad64a0d3d21828ea58d42a.png)
+![[](media/79f592b09aad64a0d3d21828ea58d42a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P1.png)
 
 This lab will focus on the story of Lamna Healthcare Company, who is opening a new location in Redmond, WA.
 
-![Timeline Description automatically generated](media/d90748559ac8eae3d4d04a84e1151fbb.png)
+![[Timeline Description automatically generated](media/d90748559ac8eae3d4d04a84e1151fbb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P2.png)
 
 Now that Lamna Healthcare Company’s new location is ready to open, we need to ensure the new location record is in the system and that the employees understand the healthcare data model basics and how the tables and relationships are surfaced in the Care Management application.
 
@@ -59,7 +59,7 @@ In this task, you will explore the main tables related to Patient Data. Select e
 
 See the following for the Patient Detail Entity Relationship Diagram.
 
-![Graphical user interface, application Description automatically generated](media/08dc74a176b36028ebc3e35f0a937d10.jpg)
+![[Graphical user interface, application Description automatically generated](media/08dc74a176b36028ebc3e35f0a937d10.jpg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P3.png)
 
 **Task 2: Navigate Clinical Data Tables and Relationships**
 
@@ -81,7 +81,7 @@ In this task, you will explore the main tables related to Clinic Data. Select ea
 
 See the next page for the Clinical Data Entity Relationship Diagram.
 
-![Graphical user interface, application Description automatically generated](media/05075fb4c9dbd0e38c064e03897c9c97.jpg)
+![[Graphical user interface, application Description automatically generated](media/05075fb4c9dbd0e38c064e03897c9c97.jpg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P4.png)
 
 **Task 3: Navigate Care Plan Management Tables and Relationships**
 
@@ -101,86 +101,87 @@ In this task, you will explore the main tables related to Care Plan Management. 
 
 See the following for the Care Plan Management Entity Relationship Diagram.
 
-![Graphical user interface, application Description automatically generated](media/27160a0927de6027e9873ab92345fbf2.jpg)
+![[Graphical user interface, application Description automatically generated](media/27160a0927de6027e9873ab92345fbf2.jpg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P5.png)
 
 ### Step 2: Navigate Care Management Application
 
 In this exercise, you will navigate the patient record and explore all the detailed information that is captured about the patient by Microsoft Cloud for Healthcare. In this case, we will examine the healthcare information of Amber Rodriguez to see how a care team member would obtain a full view of the patient.
 
 1.  Navigate to <http://make.powerapps.com/> in an In-Private or Incognito window. If you are in an official training class, sign in with your assigned user.
+
 1.  Select the proper **Environment** in the upper right. If you are in an official training class, select your assigned environment.
 
-    ![](media/118bf5867e47b80161dc93e75a5cef91.png)
+    ![[](media/118bf5867e47b80161dc93e75a5cef91.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P6.png)
 
 1.  In Power Apps, select **Apps** in the left sitemap. Select and open **Care Management**.
 
-    ![Graphical user interface, application Description automatically generated](media/2a19659adb9c22230ed741c1f9a9303f.png)
+    ![[Graphical user interface, application Description automatically generated](media/2a19659adb9c22230ed741c1f9a9303f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P7.png)
 
 1.  You will be landed in the **Health Analytics** section showing the **Care Coordinator Dashboard**. This is a helpful tool for care coordinators to get a complete view of their healthcare organization data, including care plans, care plan activities, care plan goals, appointments (EMR), and activity timeline.
 
-    ![Graphical user interface, application Description automatically generated](media/cbb5c4b72b39f2e8c377248e36af60c9.png)
+    ![[Graphical user interface, application Description automatically generated](media/cbb5c4b72b39f2e8c377248e36af60c9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P8.png)
 
 1.  Select **People** in the left Site Map.
 
-    ![Graphical user interface, text, application Description automatically generated](media/85fbe650715662b8c8252aaadf0af405.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/85fbe650715662b8c8252aaadf0af405.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P9.png)
 
 1.  Find and select **Amber Rodriguez** from the Active Patients view. Open the record by double clicking or selecting Edit in the command bar.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/56b3e05fbf3a7b7ac10bedae35f2b545.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/56b3e05fbf3a7b7ac10bedae35f2b545.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P10.png)
 
 1.  Take a moment to examine the **Summary** tab on Amber’s patient record. The purpose of the patient record is to give a comprehensive view of Amber’s latest information. In the summary tab, the care team member will have a full view of Amber’s **Conditions**, **Test Results**, **Patient Relationships**, **Allergies** **and** **Sensitivities**, **Clinical Data**, and **Patient Interactions**.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](media/aece7e52dd8bbdf39dfd13c57c2da543.png)
+    ![[A screenshot of a computer Description automatically generated with medium confidence](media/aece7e52dd8bbdf39dfd13c57c2da543.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P11.png)
 
 1.  In the **Conditions** section, the care provider can get a view of all of Amber’s pre-existing conditions.
 
-    ![Graphical user interface Description automatically generated with medium confidence](media/ed471bd892c2486a7e393343000a1497.png)
+    ![[Graphical user interface Description automatically generated with medium confidence](media/ed471bd892c2486a7e393343000a1497.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P12.png)
 
 1.  In the **Patient Relationships** section, you can see Amber’s related people in the system.
 
-    ![Graphical user interface, application Description automatically generated](media/3e980c857fb377396f7011af456d6309.png)
+    ![[Graphical user interface, application Description automatically generated](media/3e980c857fb377396f7011af456d6309.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P13.png)
 
 1.  In the **Allergies and Sensitivities** section, you can get a singular point of view of all the reported allergies that the care givers need to be aware of for the patient.
 
-    ![Graphical user interface, text, application Description automatically generated](media/3f9d2cd18f3db7be4d93cf5edf760ac9.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/3f9d2cd18f3db7be4d93cf5edf760ac9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P14.png)
 
 1.  In the **Clinical Data** section, you can cycle through the various icons to see different medical details including **medical requests**, **encounters**, **procedures**, and **observations**. This is a simple and efficient way to observe patient healthcare details.
 
-    ![Graphical user interface, text, application Description automatically generated](media/857505ce99ff289785a6ba33a23747b0.png) ![Graphical user interface, text, application Description automatically generated](media/8a89d0cfab7dcabc995d8d3c98168571.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/857505ce99ff289785a6ba33a23747b0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P15.png) ![[Graphical user interface, text, application Description automatically generated](media/8a89d0cfab7dcabc995d8d3c98168571.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P16.png)
 
-![Graphical user interface, text, application Description automatically generated](media/afac34a1c18add9893ba17fca9060abd.png) ![Graphical user interface, text, application Description automatically generated](media/4c846026a9380abd3ad217e5e2f9458a.png)
+![[Graphical user interface, text, application Description automatically generated](media/afac34a1c18add9893ba17fca9060abd.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P17.png) ![[Graphical user interface, text, application Description automatically generated](media/4c846026a9380abd3ad217e5e2f9458a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P18.png)
 
 1.  The **Patient Interactions** section shows any activity, note, or post and can be filtered or sorted.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/27d02c9808170cf52bfcdc9ddfbe2a95.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/27d02c9808170cf52bfcdc9ddfbe2a95.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P19.png)
 
-1.  Click on the Profile Tab to get **Patient, Address, and Insurance Information.** In the Patient Information, notice that key patient data such as Date of Birth and Primary Practitioner are shown. The healthcare data model uses the contact entity from the Common Data Model and defines the type of contact as patient, practitioner, or related person. This determines the type of form shown.
+1.  Click on the **Profile** tab to get **Patient, Address, and Insurance Information.** In the **Patient Information**, notice that key patient data such as **Date of Birth** and **Primary Practitioner** are shown. The healthcare data model uses the contact entity from the Common Data Model and defines the type of contact as patient, practitioner, or related person. This determines the type of form shown.
 
-    ![Graphical user interface Description automatically generated](media/9f4466d314f0a2d11d4e18afc7421e38.png)
+    ![[Graphical user interface Description automatically generated](media/9f4466d314f0a2d11d4e18afc7421e38.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P20.png)
 
 1.  Select the **Clinical Timeline** tab. On this tab, a care team member will be able to view a weekly calendar of the patient’s clinical information as well as a list of any upcoming or previous events.
 
-    ![Graphical user interface, application Description automatically generated](media/47bb09b76655d5f81f71320381032978.png)
+    ![[Graphical user interface, application Description automatically generated](media/47bb09b76655d5f81f71320381032978.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P21.png)
 
-1.  Select the **Upcoming** **events** dropdown in the right pane and switch to **previous** **events**.
+1.  Select the **Upcoming** **events** dropdown in the right pane and switch to **previous events**.
 
-    ![Graphical user interface, application Description automatically generated](media/2f102538a299c6070e97c1e43d37aae8.png)
+    ![[Graphical user interface, application Description automatically generated](media/2f102538a299c6070e97c1e43d37aae8.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P22.png)
 
 1.  See the list of events Amber had previously including **Appointments**, **Care Plans**, **Encounters**, and **Medication Requests**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/03611d0bce2002e3fc25efe62cf78d71.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/03611d0bce2002e3fc25efe62cf78d71.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P23.png)
 
 1.  Select the **Care Team** tab. On this tab, the care team member can find other members who may be providing care to the patient for any current conditions and care plans.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](media/a8f43baec21466a9ab68ad702798bffe.png)
+    ![[A screenshot of a computer Description automatically generated with medium confidence](media/a8f43baec21466a9ab68ad702798bffe.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P24.png)
 
 1.  Select the **Care Plan** tab. On this tab, the care team member will be able to see a full view of all the Care Plans associated to the patient. This includes a list of their care plan activities and statistics for completed activities and goals. You can create a new care plan or filter by care plan type in this view.
 
-    ![Graphical user interface, application Description automatically generated](media/374c5050ba6952672dbca5af43b6907f.png)
+    ![[Graphical user interface, application Description automatically generated](media/374c5050ba6952672dbca5af43b6907f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P25.png)
 
 1.  Finally, select the **Related** tab to see any additional details related to the patient record.
 
-    ![Graphical user interface, application Description automatically generated](media/551d832b2e36e250cf17170cc73d02a9.png)
+    ![[Graphical user interface, application Description automatically generated](media/551d832b2e36e250cf17170cc73d02a9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P26.png)
 
 **Congratulations!** You have explored the Care Management app and its featured data within a patient record.
 
