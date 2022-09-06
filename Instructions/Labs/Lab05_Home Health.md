@@ -179,7 +179,7 @@ Now we will associate the Thomson Household home care work order with the Spanis
 
 1.  Click **+ New Requirement Characteristic**.
 
-    [![Graphical user interface, text, application Description automatically generated](media/3333a3c57c1fd92bd21e73b14969d43f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P29.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/3333a3c57c1fd92bd21e73b14969d43f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P29.png)
 
 1.  Choose **Spanish fluency** for the **Characteristic** and Work Order **00034** as the **Resource Requirement**.
 
