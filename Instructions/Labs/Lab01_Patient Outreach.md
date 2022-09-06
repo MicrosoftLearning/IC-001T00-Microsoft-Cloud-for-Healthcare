@@ -28,7 +28,7 @@ by creating personalized communication based on patient insights.
 
 This lab focuses on the healthcare story of Elizabeth Moore.
 
-![[Timeline Description automatically generated](media/6ec25178faea7cdb8abc9ae2bf891354.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P2.png)
+![Timeline Description automatically generated](./IMAGES/L1P2.png)
 
 At an annual checkup earlier this year, Elizabeth learned that she has
 hypermetropia, a common eye condition in adults in which nearby objects are
@@ -63,51 +63,51 @@ nearby objects are blurry).
 
 2.  Go to **Apps** and open **Marketing**.
 
-![[Graphical user interface, text, application, email Description automatically generated](media/0c80e4c5c760423b6d4e4e2abda03e06.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P3.png)
+![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P3.png)
 
 1.  Navigate to the bottom left drop-down and change the selection from
     **Marketing** to **Settings**.
 
-![[Graphical user interface, text, application Description automatically generated](media/e72fa56c5f3c9527b0b0e58dbf7e4fc6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P4.png)
+![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P4.png)
 
 1.  On the **Settings overview** screen, select **Dataset configuration** under **Data
     management**.
 
-![[Graphical user interface, application Description automatically generated](media/8018d431e68878191fbd44f227ab6dbc.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P5.png)
+![Graphical user interface, application Description automatically generated](./IMAGES/L1P5.png)
 
 1.  Scroll down and select the **Condition (msemr_condition)** entity.
 
-![[Graphical user interface, text, application Description automatically generated](media/330743414440f627a1f4255c263b1b45.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P6.png)
+![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P6.png)
 
 1.  **Publish Changes** on the top right.
 
-![[Publish Changes.](media/077c825edf16384e8cfe22ed35173493.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P7.png)
+![Publish Changes.](./IMAGES/L1P7.png)
 
 Note: While it may take up to 30 minutes for changes to take effect, they are generally ready in a few minutes.
 
 1.  Go back to **Apps** and open **Patient Outreach**.
 
-![[Graphical user interface, text, application, email Description automatically generated](media/756d685076162bd7b183689ddf2c3d67.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P8.png)
+![Graphical user interface, text, application, email Description automatically generated(./IMAGES/L1P8.png)
 
 1.  Click **Segments** on the left navigation bar to create a new specific group of patients.
 
-![[Click Segments to create a new specific group of patients.](media/e48936f82e9265eb2f56ab8a968aa15f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P9.png)
+![Click Segments to create a new specific group of patients.](./IMAGES/L1P9.png)
 
 1.  Click **New** to create a new Patient Segment. Select **+ New Dynamic Segment**.
 
-![[Click New to create a new Patient Segment. Select + Dynamic Segment. ](media/2e14944f52f2405cd8d880626adc2886.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P10.png)
+![Click New to create a new Patient Segment. Select + Dynamic Segment. ](./IMAGES/L1P10.png)
 
 Did you know? Static segments enable you to choose and add segment members manually based on existing lists or search results. Dynamic Segments, which you define by using a set of rules and conditions, are constantly and automatically changing based on information in your database. Since we want our group to change depending on database information, we are choosing the dynamic segment option.
 
 1.  When prompted to choose a **Segment Template** option, click **Skip** since we will create our own Segment.
 
-![[Graphical user interface, application Description automatically generated](media/8836f85b428d1f8643dfa2ec92798483.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P11.png)
+![Graphical user interface, application Description automatically generated](./IMAGES/L1P11.png)
 
 1.  Name the new Segment **Patients with Hypermetropia**. Select **Add query block.**
 
-![[Name the new segment "Patients with Hypermetropia"](media/bed72c718ece1a4d43ce46e0a30ea54a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P12.png)
+![Name the new segment "Patients with Hypermetropia"](./IMAGES/L1P12.png)
 
-![[Graphical user interface, text, application, email, Teams Description automatically generated](media/3d9cfc2c4084728e90d9da89ee2b1327.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P13.png)
+![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/L1P13.png)
 
 1.  We will now create a new Segment for Active Patients who have a Hypermetropia condition where the Contact has a Status of Active, and the related Condition Description contains “Hypermetropia”. Configure this new segment by doing the following:
 
@@ -119,7 +119,7 @@ Did you know? Static segments enable you to choose and add segment members manua
 
     4.  Click **Add > Add related entity**.
 
-![[Graphical user interface, text, application Description automatically generated](media/ff2da8f66ed1224f9becf605992b852d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P14.png)
+![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P14.png)
 
 1.  It should default to **AND** in the drop-down. Now let’s add the second part of the condition.
 
@@ -127,21 +127,21 @@ Did you know? Static segments enable you to choose and add segment members manua
 
 3.  Click the nested **Add > Add condition to Condition**.
 
-![[Graphical user interface, text, application, email Description automatically generated](media/de65a23fcb8bd5d9911eec87e9d81336.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P15.png)
+![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P15.png)
 
 1.  Select attribute Condition (msemr_name).
 
 2.  Change the operator to **Contains** and type **Hypermetropia**.
 
-![[Graphical user interface, text, application Description automatically generated](media/016344261ae2303d7040022ed2d55fa1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P16.png)
+![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P16.png)
 
 1.  Select **Save** and then select **Go live** to publish the segment (you won't be able to use it in a customer journey until it goes live, even though you've saved it).
 
-![[Select Save and then select Go live to publish the segment (you won't be able to use it in a customer journey until it goes live, even though you've saved it).](media/18bef382e7318fb6a8c07c6dade833e3.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P17.png)
+![Select Save and then select Go live to publish the segment (you won't be able to use it in a customer journey until it goes live, even though you've saved it).](./IMAGES/L1P17.png)
 
 1.  Select **Refresh** on the command bar to refresh the page. Select the **Members** tab to see which patients have been added to the Dynamic Segment. Notice Elizabeth Moore in the list who will eventually be a recipient of our marketing event outreach email.
 
-![[Graphical user interface, text, application, email Description automatically generated](media/bc651fc36c2e87f121023f3a4e4ba2f2.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/L1P18.png)
+![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P18.png)
 
 **Congratulations**! You have completed the steps to create a patient segment that groups together contacts with hypermetropia. This patient segment will be used in the next set of tasks. For more information about dynamics segments, see [Create a dynamic segment (Dynamics 365 Marketing) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/marketing/create-segment). For more information about segments in general, see [Working with segments (Dynamics 365 Marketing) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/marketing/segmentation-lists-subscriptions).
 
