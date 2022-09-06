@@ -231,7 +231,7 @@ In this exercise, you will be creating a new Location record for the **Lamna Hea
 
 1.  You will see the newly created **Lamna Healthcare – Redmond, WA** location associated to the record.
 
-    ![[Text Description automatically generated](media/f1f9af1e9530d8c9872f39b4a5ed9e39.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P35.png)
+    ![[Text Description automatically generated](media/f1f9af1e9530d8c9872f39b4a5ed9e39.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P36.png)
 
 **Congratulations!** You created a new location in Redmond, WA for Lamna Healthcare Company using the Care Management application.
 
