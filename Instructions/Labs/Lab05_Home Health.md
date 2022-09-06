@@ -13,11 +13,11 @@ Key capabilities of Home Health include:
 
 Home Health focuses on both the **Empower health team collaboration** and **Enhance patient engagement** priority scenarios by creating a system that allows for improved care team coordination with optimized resources and enhanced patient engagement with personalized experiences and home visits.
 
-![Chart Description automatically generated with medium confidence](media/45d491cf8432b9a27508118cffbf4b8c.png)
+![[Chart Description automatically generated with medium confidence](media/45d491cf8432b9a27508118cffbf4b8c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P1.png)
 
 This lab will focus on the healthcare story of Monica Thomson.
 
-![Timeline Description automatically generated](media/54f29d6f3dc7b9698687890145216753.png)
+![[Timeline Description automatically generated](media/54f29d6f3dc7b9698687890145216753.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P2.png)
 
 Monica sprained her knee while ice skating last winter and was prescribed at-home physical therapy by her practitioner to rehabilitate the injury. To facilitate this home care scenario, Lamna Healthcare Company has deployed Microsoft Cloud for Healthcare’s Home Health capabilities.
 
@@ -47,80 +47,81 @@ Each resource can have different attributes that distinguish it from others, inc
 Now let’s create a Bookable Resource in the Home Health application.
 
 1.  Navigate to <https://make.powerapps.com/>.
-1.  Open the Field Service app.
 
-    ![Open the Field Service app](media/b1a5c43c06384c7a293c57933e5b391a.png)
+1.  Open the **Field Service** app.
+
+    ![[Open the Field Service app](media/b1a5c43c06384c7a293c57933e5b391a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P3.png)
 
 1.  In the bottom left of the navigation pane, change the area from **Service** to **Resources.**
 
-    ![Change the area from Service to Resources](media/95c251ccd13f8c6659db279af81dec04.png)
+    ![[Change the area from Service to Resources](media/95c251ccd13f8c6659db279af81dec04.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P4.png)
 
 1.  This will take you to the Bookable Resources entity. Click **New** on the command bar to create a new **Bookable Resource**.
 
-    ![Click New on the command bar to create a new Bookable Resource](media/57c73f1284ffd4bbc9b4e4e3d6f14b09.png)
+    ![[Click New on the command bar to create a new Bookable Resource](media/57c73f1284ffd4bbc9b4e4e3d6f14b09.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P5.png)
 
 1.  Select **Resource Type**. A Resource type is a classification that describes who or what the resource is and how the resource relates to your organization. In this case, select **User**, who is a person and a member of your organization and needs access to the Field Service Mobile app.
 
-    ![Select Resource Type](media/06b3cbe9c8ae58066483399b36f73b10.png)
+    ![[Select Resource Type](media/06b3cbe9c8ae58066483399b36f73b10.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P6.png)
 
 1.  Pick your training **User** and select your **Time Zone.**
 
-    ![Pick a User and select their Time Zone](media/912185bb5ef9ce22d4b6ace29c5dd887.png)
+    ![[Pick a User and select their Time Zone](media/912185bb5ef9ce22d4b6ace29c5dd887.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P7.png)
 
-2.  Click **Scheduling** to decide where the resource starts and ends his or her working day for scheduling and routing purposes. There are three options available when selecting the **Start/End location** for the Bookable Resource:
-3.  
--   **Location agnostic** - select this option if the location of this resource is not required for the business need and does not need to be considered during the scheduling process. Note that if the work location of a requirement is set to on site, location agnostic resources will not return in results.
--   **Resource Address** - select this option if the resource starts and ends his or her day at a unique location. The exact location is derived from the latitude and longitude values on the related user, account, or contact records depending on the resource type.
--   **Organizational Unit** - select this option if the resource starts and ends the day at an organizational unit, typically representing a company location.
+1.  Click **Scheduling** to decide where the resource starts and ends his or her working day for scheduling and routing purposes. There are three options available when selecting the **Start/End location** for the Bookable Resource:
+  
+    1. **Location agnostic** - select this option if the location of this resource is not required for the business need and does not need to be considered during the scheduling process. Note that if the work location of a requirement is set to on site, location agnostic resources will not return in results.
+    1. **Resource Address** - select this option if the resource starts and ends his or her day at a unique location. The exact location is derived from the latitude and longitude values on the related user, account, or contact records depending on the resource type.
+    1. **Organizational Unit** - select this option if the resource starts and ends the day at an organizational unit, typically representing a company location.
 
     In this case, choose **Location Agnostic**.
 
-    ![Choose Location Agnostic](media/2b5b3e9699b5070a0d21a1a29bd69ffb.png)
+    ![[Choose Location Agnostic](media/2b5b3e9699b5070a0d21a1a29bd69ffb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P8.png)
 
 1.  Click the **Field Service** tab to optionally configure any other aspects of the Bookable Resource.
 
-    ![Chart, scatter chart Description automatically generated](media/6dfa2885a17d20b8036d2ffc496f0eb5.png)
+    ![[Chart, scatter chart Description automatically generated](media/6dfa2885a17d20b8036d2ffc496f0eb5.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P9.png)
 
 1.  **Save** the record.
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](media/771a887f4633174c726ae60b9363f7f7.png)
+    ![[Graphical user interface, text, application, chat or text message Description automatically generated](media/771a887f4633174c726ae60b9363f7f7.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P10.png)
 
-1.  After **saving** the bookable resource, it's time to set the **working hours** of the resource. Working hours are considered by the following:
+1.  After saving the bookable resource, it's time to set the working hours of the resource. Working hours are considered by the following:
 -   The schedule board by displaying working and nonworking hours as different colors.
 -   The schedule assistant by only displaying resources that are working in the result.
 -   Resource Scheduling Optimization, which automatically books requirements to resources that are working.
 
-    Click **Show** **Work Hours** on the command bar:
+    Click **Show Work Hours** on the command bar:
 
-    ![Click Show Working Hours on the command bar](media/151ca48127d9a991bf68c921af5e568e.png)
+    ![[Click Show Working Hours on the command bar](media/151ca48127d9a991bf68c921af5e568e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P11.png)
 
-1.  Click +New -\> Working hours.
+1.  Click **+New -> Working hours**.
 
-    ![Click +New -\> Working Hours](media/181a12785dcac45bb27f8e71faddf1b0.png)
+    ![[Click +New -\> Working Hours](media/181a12785dcac45bb27f8e71faddf1b0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P12.png)
 
-1.  Choose **date** you want the working schedule to begin on, the beginning and end **time** of working hours (such as 8am to 5pm), along with a **repeat** option such as "every day” and then click off Sunday and Saturday. Click **Save**.
+1.  Choose the **date** you want the working schedule to begin on, the beginning and end **time** of working hours (such as 8am to 5pm), along with a **repeat** option such as "every day” and then click off **Sunday** and **Saturday**. Click **Save**.
 
-    ![Choose date you want the working schedule to begin on, the beginning and end time of working hours (such as 8am to 5pm), along with a repeat option such as "every day” and then click off Sunday and Saturday.  Click Save](media/6a0c710657f66aa08b28beb4c782e253.png)
+    ![[Choose date you want the working schedule to begin on, the beginning and end time of working hours (such as 8am to 5pm), along with a repeat option such as "every day” and then click off Sunday and Saturday.  Click Save](media/6a0c710657f66aa08b28beb4c782e253.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P13.png)
 
-1.  Go back to the General tab. If the bookable resource has specific skills, you should add them now. To create a **Resource Characteristic**, go to the subgrid on the form and select **+New Bookable Resource Characteristic** from the command menu.
+1.  Go back to the **General** tab. If the bookable resource has specific skills, you should add them now. To create a **Resource Characteristic**, go to the subgrid on the form and select **+New Bookable Resource Characteristic** from the command menu.
 
-    ![Go back to General and create a Resource Characteristic by selecting +New Bookable Resource Characteristic](media/4addb5bc71276945cbf404f5282b0573.png)
+    ![[Go back to General and create a Resource Characteristic by selecting +New Bookable Resource Characteristic](media/4addb5bc71276945cbf404f5282b0573.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P14.png)
 
 1.  In the **Skill Name** field, click the magnifying glass and select **+New Characteristic.**
 
-    ![Graphical user interface, text, application Description automatically generated](media/9e47dbcc38923b1358bce279553da777.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/9e47dbcc38923b1358bce279553da777.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P15.png)
 
-1.  A quick create form for Characteristic will appear. We want to assign a characteristic to the bookable resource. In this case, the user can speak Spanish fluently. Therefore, type “**Spanish fluency**” for the characteristic **Name** and click **Save & Close.**
+1.  A quick create form for Characteristic will appear. We want to assign a characteristic to the bookable resource. In this case, the user can speak Spanish fluently. Therefore, type **Spanish fluency** for the characteristic **Name** and click **Save & Close**.
 
-    ![Graphical user interface, text, application Description automatically generated](media/74797c398cdc9bdf884e028a8988a3eb.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/74797c398cdc9bdf884e028a8988a3eb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P16.png)
 
 1.  Back on the Bookable Resource Characteristic quick create form, the Skill Name should be populated with the new Spanish fluency characteristic. Click **Save & Close**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/819dac43a33e1309360befe3e8c19655.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/819dac43a33e1309360befe3e8c19655.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P17.png)
 
 Note: Characteristics represent a resource's skills and certifications. This could be concrete, like a CPR certification; more general, like accounting or web development experience; or as simple as security clearance for a specific building or fluency in the Spanish language.
 
-1.  If you’d like more data in the system, you may create **two** more **Bookable Resources** following the same process. For each of them, select **Contact** as the **Resource Type** and choose any Contact in the system. Choose **Location Agnostic** just as before and click **Save**. Configure the **Work Hours** the same as the previous Bookable Resource and click **Save & Close**.
+1.  If you’d like more data in the system, you may create two more Bookable Resources following the same process. For each of them, select **Contact** as the **Resource Type** and choose any Contact in the system. Choose **Location Agnostic** just as before and click **Save**. Configure the **Work Hours** the same as the previous Bookable Resource and click **Save & Close**.
 
 **Congratulations**! You have created a Bookable Resource. In the next task, we will use this bookable resource to help configure the Schedule Board. For more information on bookable resources, see [Set up bookable resources (Dynamics 365 Field Service) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/field-service/set-up-bookable-resources).
 
