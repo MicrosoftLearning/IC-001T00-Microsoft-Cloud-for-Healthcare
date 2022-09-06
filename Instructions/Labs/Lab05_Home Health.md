@@ -294,7 +294,7 @@ In this task, we will walk through how to download the Field Service Mobile app 
 
 1.  Launch the app and sign in with the Microsoft Cloud for Healthcare username and password for the user that you assigned the **Field Service – Resource** security role to in the previous task.
 
-    ![[Graphical user interface, application Description automatically generated](media/fd954522fc93ff4e89e6fa3adf204cfa.jpg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P50.png)![Graphical user interface, text, application, chat or text message Description automatically generated](media/e8b070c9401384ce23dde2a47e69dd4f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P51.png)
+    ![[Graphical user interface, application Description automatically generated](media/fd954522fc93ff4e89e6fa3adf204cfa.jpg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P50.png)![[Graphical user interface, text, application, chat or text message Description automatically generated](media/e8b070c9401384ce23dde2a47e69dd4f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P51.png)
     
 **Congratulations**! You have downloaded and signed into the Field Service Mobile as a Home Health user in the Microsoft Cloud for Healthcare
 
@@ -304,8 +304,7 @@ In the last exercise, we assigned **Home Health Work Order** 00034 to our Home H
 
 1.  On your mobile device, log into the Field Service Mobile App as your Bookable Resource user. If you encounter a message that says “Contact your administrator for access to your organization’s mobile apps”, select the menu icon in the top left and **toggle Show non-production apps to Yes**.
 
-    ![[Graphical user interface, application Description automatically generated](media/9a5550e99f9452a0bd2fc1167ec305cb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P52.png)
-    ![[Graphical user interface, application, Teams Description automatically generated](media/b72140bc6e194e5f30a4dfcba11d72ac.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P53.png)![[Graphical user interface, application, Teams Description automatically generated](media/e4d773ccab2f6e32d22cb313d85f6faa.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P54.png)
+    ![[Graphical user interface, application Description automatically generated](media/9a5550e99f9452a0bd2fc1167ec305cb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P52.png)![[Graphical user interface, application, Teams Description automatically generated](media/b72140bc6e194e5f30a4dfcba11d72ac.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P53.png)![[Graphical user interface, application, Teams Description automatically generated](media/e4d773ccab2f6e32d22cb313d85f6faa.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P54.png)
 
 1.  In the list of environments, find the Microsoft Cloud for Healthcare environment that you have been working in. You will find the Home Health Work Order in the calendar view in an **In Progress** state.
 
