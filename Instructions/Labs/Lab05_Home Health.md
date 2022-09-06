@@ -131,102 +131,103 @@ In this exercise, you will configure the schedule board for the **Bookable Resou
 
 Here is an example of a configured **Schedule Board**:
 
-![Screenshot of a configured Schedule Board in Home Health application](media/aeacbb4f554003cb9c42aa839388a71f.png)
+![[Screenshot of a configured Schedule Board in Home Health application](media/aeacbb4f554003cb9c42aa839388a71f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P18.png)
 
 1.  Navigate to <https://make.powerapps.com/>.
-1.  Open the Resource Scheduling app.
 
-    ![Open the Resource Scheduling app](media/9ad0ae5cb7830f6f7074c10313a4ac56.png)
+1.  Open the **Resource Scheduling** app.
 
-1.  Change the area in the bottom left navigation drop down from Resource Scheduling to **Settings.**
+    ![[Open the Resource Scheduling app](media/9ad0ae5cb7830f6f7074c10313a4ac56.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P19.png)
 
-    ![Change the area to Settings](media/87279fa1881a42a05db9c8e1da84d81e.png)
+1.  Change the area in the bottom left navigation drop down from **Resource Scheduling** to **Settings.**
 
-1.  Click **Administration** on the site map**.**
+    ![[Change the area to Settings](media/87279fa1881a42a05db9c8e1da84d81e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P20.png)
 
-    ![Click Administration](media/f04c55dd887897948a1f82c89f8bc9d0.png)
+1.  Click **Administration** on the site map.
 
-1.  Select Scheduling Parameters.
+    ![[Click Administration](media/f04c55dd887897948a1f82c89f8bc9d0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P21.png)
 
-    ![Click Scheduling Parameters](media/f63619719cf902b97ebc6e55ca63a4fc.png)
+1.  Select **Scheduling Parameters**.
 
-1.  Set “**Connect to Maps**” to **Yes**. Then click **OK** to accept the terms. If it is already set to yes, you can skip this step.
+    ![[Click Scheduling Parameters](media/f63619719cf902b97ebc6e55ca63a4fc.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P22.png)
 
-    ![Change “Connect to Maps” to Yes ](media/4cbdb340e4a282e077dda43e73eef342.png)
+1.  Set **Connect to Maps** to **Yes**. Then click **OK** to accept the terms. If it is already set to yes, you can skip this step.
 
-    ![Click OK to accept the terms](media/ecd54790de6f4377d6d0cf53f887c55f.png)
+    ![[Change “Connect to Maps” to Yes ](media/4cbdb340e4a282e077dda43e73eef342.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P23.png)
 
-1.  Click Save & Close.
-2.  
-3.  Open the Home Health app.
+    ![[Click OK to accept the terms](media/ecd54790de6f4377d6d0cf53f887c55f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P24.png)
 
-    ![open the Home Health app](media/bb83b5144e3bb88e1a933e92793973d5.png)
+1.  Click **Save & Close**.
+  
+1.  Open the **Home Health** app.
+
+    ![[open the Home Health app](media/bb83b5144e3bb88e1a933e92793973d5.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P25.png)
 
 Now we will associate the Thomson Household home care work order with the Spanish fluency characteristic, so they match Monica with someone who is fluent in Spanish. We have already applied this characteristic to her practitioner. We also want to set the estimated duration for the home visit.
 
 1.  Click **Home Care** on the left sitemap and open the Home Care Work Order record number **00034** associated with the **Thomson Household**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/870340179b05ade4bc62518074ac8f59.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/870340179b05ade4bc62518074ac8f59.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P26.png)
 
-1.  On the Summary tab, scroll down to the Primary Incident section and set the **Primary Incident Estimated Duration** to 1 hour (this will ensure that the work order takes up time on the Resource’s calendar).
+1.  On the **Summary** tab, scroll down to the **Primary Incident** section and set the **Primary Incident Estimated Duration** to **1 hour** (this will ensure that the work order takes up time on the Resource’s calendar).
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/6a0f0f32186542789d541366d0315f92.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/6a0f0f32186542789d541366d0315f92.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P27.png)
 
 1.  Click **Related** and then click **Characteristics**.
 
-    ![Graphical user interface, application Description automatically generated](media/9d27c5a0e12148357743819ecf94a783.png)
+    ![[Graphical user interface, application Description automatically generated](media/9d27c5a0e12148357743819ecf94a783.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P28.png)
 
 1.  Click **+ New Requirement Characteristic**.
 
-    ![Graphical user interface, text, application Description automatically generated](media/3333a3c57c1fd92bd21e73b14969d43f.png)
+    [![Graphical user interface, text, application Description automatically generated](media/3333a3c57c1fd92bd21e73b14969d43f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P29.png)
 
-1.  Choose “**Spanish fluency**” for the **Characteristic** and Work Order **00034** as the **Resource Requirement**.
+1.  Choose **Spanish fluency** for the **Characteristic** and Work Order **00034** as the **Resource Requirement**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/b2340c112dfc1d7dd3e1325f484e8202.png)
+    ![[Graphical user interface, text, application, email Description automatically generated](media/b2340c112dfc1d7dd3e1325f484e8202.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P30.png)
 
 **Important**: Make sure the **Work Order** number populated in the **Resource Requirement** field on the general tab matches the Work Order number on the **Field Service** tab on the Resource Requirement record.
 
-![Graphical user interface, application Description automatically generated](media/e99ce9b925e5d9f9925113d40f719d0d.png)
+![[Graphical user interface, application Description automatically generated](media/e99ce9b925e5d9f9925113d40f719d0d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P31.png)
 
 1.  Click **Save & Close**. You will now see the new characteristic requirement in the subgrid.
 
-    ![Graphical user interface, text, application Description automatically generated](media/f0e96545df55391a166842653a59fb05.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/f0e96545df55391a166842653a59fb05.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P32.png)
 
 1.  Now let’s configure the schedule board. Select **Schedule Board** on the left site map.
 
-    ![Click Schedule Board](media/fc1c9bf18ae93e0bf5f47935aaf0684a.png)
+    ![[Click Schedule Board](media/fc1c9bf18ae93e0bf5f47935aaf0684a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P33.png)
 
-1.  Click the **plus button (+)** in the upper right corner to create a new **Schedule Board tab.**
+1.  Click the **plus button (+)** in the upper right corner to create a new **Schedule Board** tab.
 
-    ![Click the + button to create a new Schedule Board tab](media/96f93675be2ede04b25fbcfa0e0f20b1.png)
+    ![[Click the + button to create a new Schedule Board tab](media/96f93675be2ede04b25fbcfa0e0f20b1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P34.png)
 
 1.  Name the new Schedule Board tab “**My Schedule Board Tab**”. Leave all defaults and click **Add**.
 
-    ![Graphical user interface, application Description automatically generated](media/319c3cd7e3c8273689bad5e9687d81d4.png)
+    ![[Graphical user interface, application Description automatically generated](media/319c3cd7e3c8273689bad5e9687d81d4.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P35.png)
 
 1.  Click on the Scheduler Settings **gear icon.**
 
-    ![Click on the Scheduler Settings gear ](media/2a9c3de563a10ebdf690081a9b070f13.png)
+    ![[Click on the Scheduler Settings gear ](media/2a9c3de563a10ebdf690081a9b070f13.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P36.png)
 
-1.  Change the Hours view to be closer to typical working hours, such as 6am to 6pm.
+1.  Change the **Hours** view to be closer to typical working hours, such as 6am to 6pm.
 
-    ![Change the Hours view to be closer to typical working hours, such as 6am to 6pm](media/5c7cfa078bf08c50d5ce5340c7fed871.png)
+    ![[Change the Hours view to be closer to typical working hours, such as 6am to 6pm](media/5c7cfa078bf08c50d5ce5340c7fed871.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P37.png)
 
-1.  Open the Unscheduled Work Orders by selecting the small arrow at the bottom of the screen.
+1.  Open the scheduled Work Orders by selecting the small arrow at the bottom of the screen.
 
-    ![Graphical user interface, application, table, Excel Description automatically generated](media/d05a532231b5800ab460033648e7c25b.png)
+    ![[Graphical user interface, application, table, Excel Description automatically generated](media/d05a532231b5800ab460033648e7c25b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P38.png)
 
 1.  Select the **Unscheduled Work Orders** tab. Find work order **00034** where you added the **Spanish fluency** characteristic and click the grid to highlight it. Select **Find Availability** to open the Schedule Assistant filter.
 
-    ![Graphical user interface, application Description automatically generated](media/78dea84161b4a04573e5e0b6740fd19b.png)
+    ![[Graphical user interface, application Description automatically generated](media/78dea84161b4a04573e5e0b6740fd19b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P39.png)
 
-1.  Notice that any Bookable Resources which do not have the “Spanish fluency” characteristic are dropped from the search. Click the **Book** button on the Bookable Resource’s schedule to schedule the work order.
+1.  Notice that any Bookable Resources which do not have the “Spanish fluency” characteristic are dropped from the search. Click the **Book** button on the **Bookable Resource’s** schedule to schedule the work order.
 
-    ![Graphical user interface, text, application Description automatically generated](media/195879ec181adb6613e5b3fe19468cb1.png)
+    ![[Graphical user interface, text, application Description automatically generated](media/195879ec181adb6613e5b3fe19468cb1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P40.png)
 
 1.  The work order is now scheduled and will no longer show in the Unscheduled Work Orders grid. The Resource Optimizing tool will schedule it for the next available time. Click **Exit Search** to close the pane.
 
-    ![The work order is now scheduled and has disappeared from the bottom grid.  Click Exit Search to close the pane](media/9112a5b430ee7da1881def66e34086a6.png)
+    ![[The work order is now scheduled and has disappeared from the bottom grid.  Click Exit Search to close the pane](media/9112a5b430ee7da1881def66e34086a6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P41.png)
 
 **Congratulations**! You have configured a Schedule Board tab and scheduled a Home Health visit using the bookable resource you created in the previous task. For more information on schedule boards, see [Use and configure the schedule board (Dynamics 365 Field Service) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/field-service/configure-schedule-board).
 
