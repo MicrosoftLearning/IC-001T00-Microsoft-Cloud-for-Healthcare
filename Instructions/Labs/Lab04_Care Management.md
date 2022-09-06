@@ -189,49 +189,49 @@ In this exercise, you will navigate the patient record and explore all the detai
 
 In this exercise, you will be creating a new Location record for the **Lamna Healthcare Company** Organization. They have opened a new branch in **Redmond, WA** and we need to ensure this location is in the system.
 
-1.  Select and open **Care Management** from the Apps list if you do not already have it open.
+1.  Select and open **Care Management** from the **Apps** list if you do not already have it open.
 
-    ![Graphical user interface, application Description automatically generated](media/2a19659adb9c22230ed741c1f9a9303f.png)
+    ![[Graphical user interface, application Description automatically generated](media/2a19659adb9c22230ed741c1f9a9303f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P27.png)
 
-1.  In the Care Management sitemap on the left, select **Locations**.
+1.  In the **Care Management** sitemap on the left, select **Locations**.
 
-    ![A picture containing graphical user interface Description automatically generated](media/bab9713cc6e3f1f07b24fdd86670566e.png)
+    ![[A picture containing graphical user interface Description automatically generated](media/bab9713cc6e3f1f07b24fdd86670566e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P28.png)
 
 1.  In the **All Locations** view, select **+New**.
 
-    ![A picture containing diagram Description automatically generated](media/1ed2a19470c8eb0ee8ac4e61f45ab4fc.png)
+    ![[A picture containing diagram Description automatically generated](media/1ed2a19470c8eb0ee8ac4e61f45ab4fc.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P29.png)
 
 1.  Fill in the following information for the new location:
-    1.  **Name:** Lamna Healthcare – Redmond, WA
-    2.  Address City: Redmond
-    3.  Address State: WA
-    4.  **Managing Organization:** Lamna Healthcare Company
+    1.  **Name**: Lamna Healthcare – Redmond, WA
+    2.  **Address City**: Redmond
+    3.  **Address State**: WA
+    4.  **Managing Organization**: Lamna Healthcare Company
 
-        ![Graphical user interface, application Description automatically generated](media/258996f8ceb6554715c44af24d022a95.png)
+        ![[Graphical user interface, application Description automatically generated](media/258996f8ceb6554715c44af24d022a95.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P30.png)
 
-        ![Graphical user interface, application Description automatically generated](media/a508bbcb74657145a3597079a12b52a4.png)
+        ![[Graphical user interface, application Description automatically generated](media/a508bbcb74657145a3597079a12b52a4.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P31.png)
 
 1.  Click **Save & Close**. Now let’s see the new location in the Managing Organization record.
-2.  
-3.  In the sitemap on the left, select **Organizations**.
 
-    ![Graphical user interface, application Description automatically generated](media/2447a4fa83811e78e19239c7838cf8be.png)
+1.  In the sitemap on the left, select **Organizations**.
 
-1.  Change the grid view in the drop-down from “My Active Accounts” to “**Active Accounts**”.
+    ![[Graphical user interface, application Description automatically generated](media/2447a4fa83811e78e19239c7838cf8be.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P32.png)
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/a1e9cfc551f86e7a0a48f81422a2ee20.png)
+1.  Change the grid view in the drop-down from **My Active Accounts** to **Active Accounts**.
+
+    ![[Graphical user interface, text, application, email Description automatically generated](media/a1e9cfc551f86e7a0a48f81422a2ee20.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P33.png)
 
 1.  Once in the **Active Accounts** view, select the **Lamna Healthcare Company** Organization.
 
-    ![Graphical user interface, application Description automatically generated](media/29e7ee587e35f1a596f4554977ced7fd.png)
+    ![[Graphical user interface, application Description automatically generated](media/29e7ee587e35f1a596f4554977ced7fd.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P34.png)
 
 1.  On the Lamna Healthcare Company record, click the **Related** tab and scroll down to select **Locations**.
 
-    ![Graphical user interface, application, email Description automatically generated](media/2d0b9c4af88fd69d59a2b4190bc69644.png)
+    ![[Graphical user interface, application, email Description automatically generated](media/2d0b9c4af88fd69d59a2b4190bc69644.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P35.png)
 
 1.  You will see the newly created **Lamna Healthcare – Redmond, WA** location associated to the record.
 
-    ![Text Description automatically generated](media/f1f9af1e9530d8c9872f39b4a5ed9e39.png)
+    ![[Text Description automatically generated](media/f1f9af1e9530d8c9872f39b4a5ed9e39.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab04/L4P35.png)
 
 **Congratulations!** You created a new location in Redmond, WA for Lamna Healthcare Company using the Care Management application.
 
