@@ -13,11 +13,11 @@ Key capabilities of Home Health include:
 
 Home Health focuses on both the **Empower health team collaboration** and **Enhance patient engagement** priority scenarios by creating a system that allows for improved care team coordination with optimized resources and enhanced patient engagement with personalized experiences and home visits.
 
-![[Chart Description automatically generated with medium confidence](media/45d491cf8432b9a27508118cffbf4b8c.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P1.png)
+![Chart Description automatically generated with medium confidence](./IMAGES/Lab05/L5P1.png)
 
 This lab will focus on the healthcare story of Monica Thomson.
 
-![[Timeline Description automatically generated](media/54f29d6f3dc7b9698687890145216753.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P2.png)
+![Timeline Description automatically generated](./IMAGES/Lab05/L5P2.png)
 
 Monica sprained her knee while ice skating last winter and was prescribed at-home physical therapy by her practitioner to rehabilitate the injury. To facilitate this home care scenario, Lamna Healthcare Company has deployed Microsoft Cloud for Healthcare’s Home Health capabilities.
 
@@ -50,23 +50,23 @@ Now let’s create a Bookable Resource in the Home Health application.
 
 1.  Open the **Field Service** app.
 
-    ![[Open the Field Service app](media/b1a5c43c06384c7a293c57933e5b391a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P3.png)
+    ![Open the Field Service app](./IMAGES/Lab05/L5P3.png)
 
 1.  In the bottom left of the navigation pane, change the area from **Service** to **Resources.**
 
-    ![[Change the area from Service to Resources](media/95c251ccd13f8c6659db279af81dec04.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P4.png)
+    ![Change the area from Service to Resources](./IMAGES/Lab05/L5P4.png)
 
 1.  This will take you to the Bookable Resources entity. Click **New** on the command bar to create a new **Bookable Resource**.
 
-    ![[Click New on the command bar to create a new Bookable Resource](media/57c73f1284ffd4bbc9b4e4e3d6f14b09.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P5.png)
+    ![Click New on the command bar to create a new Bookable Resource](./IMAGES/Lab05/L5P5.png)
 
 1.  Select **Resource Type**. A Resource type is a classification that describes who or what the resource is and how the resource relates to your organization. In this case, select **User**, who is a person and a member of your organization and needs access to the Field Service Mobile app.
 
-    ![[Select Resource Type](media/06b3cbe9c8ae58066483399b36f73b10.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P6.png)
+    ![Select Resource Type](./IMAGES/Lab05/L5P6.png)
 
 1.  Pick your training **User** and select your **Time Zone.**
 
-    ![[Pick a User and select their Time Zone](media/912185bb5ef9ce22d4b6ace29c5dd887.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P7.png)
+    ![Pick a User and select their Time Zone](./IMAGES/Lab05/L5P7.png)
 
 1.  Click **Scheduling** to decide where the resource starts and ends his or her working day for scheduling and routing purposes. There are three options available when selecting the **Start/End location** for the Bookable Resource:
   
@@ -76,15 +76,15 @@ Now let’s create a Bookable Resource in the Home Health application.
 
     In this case, choose **Location Agnostic**.
 
-    ![[Choose Location Agnostic](media/2b5b3e9699b5070a0d21a1a29bd69ffb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P8.png)
+    ![Choose Location Agnostic](./IMAGES/Lab05/L5P8.png)
 
 1.  Click the **Field Service** tab to optionally configure any other aspects of the Bookable Resource.
 
-    ![[Chart, scatter chart Description automatically generated](media/6dfa2885a17d20b8036d2ffc496f0eb5.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P9.png)
+    ![Chart, scatter chart Description automatically generated](./IMAGES/Lab05/L5P9.png)
 
 1.  **Save** the record.
 
-    ![[Graphical user interface, text, application, chat or text message Description automatically generated](media/771a887f4633174c726ae60b9363f7f7.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P10.png)
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab05/L5P10.png)
 
 1.  After saving the bookable resource, it's time to set the working hours of the resource. Working hours are considered by the following:
 -   The schedule board by displaying working and nonworking hours as different colors.
@@ -93,31 +93,31 @@ Now let’s create a Bookable Resource in the Home Health application.
 
     Click **Show Work Hours** on the command bar:
 
-    ![[Click Show Working Hours on the command bar](media/151ca48127d9a991bf68c921af5e568e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P11.png)
+    ![Click Show Working Hours on the command bar](./IMAGES/Lab05/L5P11.png)
 
 1.  Click **+New -> Working hours**.
 
-    ![[Click +New -\> Working Hours](media/181a12785dcac45bb27f8e71faddf1b0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P12.png)
+    ![Click +New -\> Working Hours](./IMAGES/Lab05/L5P12.png)
 
 1.  Choose the **date** you want the working schedule to begin on, the beginning and end **time** of working hours (such as 8am to 5pm), along with a **repeat** option such as "every day” and then click off **Sunday** and **Saturday**. Click **Save**.
 
-    ![[Choose date you want the working schedule to begin on, the beginning and end time of working hours (such as 8am to 5pm), along with a repeat option such as "every day” and then click off Sunday and Saturday.  Click Save](media/6a0c710657f66aa08b28beb4c782e253.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P13.png)
+    ![Choose date you want the working schedule to begin on, the beginning and end time of working hours (such as 8am to 5pm), along with a repeat option such as "every day” and then click off Sunday and Saturday.  Click Save](./IMAGES/Lab05/L5P13.png)
 
 1.  Go back to the **General** tab. If the bookable resource has specific skills, you should add them now. To create a **Resource Characteristic**, go to the subgrid on the form and select **+New Bookable Resource Characteristic** from the command menu.
 
-    ![[Go back to General and create a Resource Characteristic by selecting +New Bookable Resource Characteristic](media/4addb5bc71276945cbf404f5282b0573.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P14.png)
+    ![Go back to General and create a Resource Characteristic by selecting +New Bookable Resource Characteristic](./IMAGES/Lab05/L5P14.png)
 
 1.  In the **Skill Name** field, click the magnifying glass and select **+New Characteristic.**
 
-    ![[Graphical user interface, text, application Description automatically generated](media/9e47dbcc38923b1358bce279553da777.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P15.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P15.png)
 
 1.  A quick create form for Characteristic will appear. We want to assign a characteristic to the bookable resource. In this case, the user can speak Spanish fluently. Therefore, type **Spanish fluency** for the characteristic **Name** and click **Save & Close**.
 
-    ![[Graphical user interface, text, application Description automatically generated](media/74797c398cdc9bdf884e028a8988a3eb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P16.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P16.png)
 
 1.  Back on the Bookable Resource Characteristic quick create form, the Skill Name should be populated with the new Spanish fluency characteristic. Click **Save & Close**.
 
-    ![[Graphical user interface, text, application, email Description automatically generated](media/819dac43a33e1309360befe3e8c19655.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P17.png)
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P17.png)
 
 Note: Characteristics represent a resource's skills and certifications. This could be concrete, like a CPR certification; more general, like accounting or web development experience; or as simple as security clearance for a specific building or fluency in the Spanish language.
 
@@ -131,103 +131,103 @@ In this exercise, you will configure the schedule board for the **Bookable Resou
 
 Here is an example of a configured **Schedule Board**:
 
-![[Screenshot of a configured Schedule Board in Home Health application](media/aeacbb4f554003cb9c42aa839388a71f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P18.png)
+![Screenshot of a configured Schedule Board in Home Health application](./IMAGES/Lab05/L5P18.png)
 
 1.  Navigate to <https://make.powerapps.com/>.
 
 1.  Open the **Resource Scheduling** app.
 
-    ![[Open the Resource Scheduling app](media/9ad0ae5cb7830f6f7074c10313a4ac56.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P19.png)
+    ![Open the Resource Scheduling app](./IMAGES/Lab05/L5P19.png)
 
 1.  Change the area in the bottom left navigation drop down from **Resource Scheduling** to **Settings.**
 
-    ![[Change the area to Settings](media/87279fa1881a42a05db9c8e1da84d81e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P20.png)
+    ![Change the area to Settings](./IMAGES/Lab05/L5P20.png)
 
 1.  Click **Administration** on the site map.
 
-    ![[Click Administration](media/f04c55dd887897948a1f82c89f8bc9d0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P21.png)
+    ![Click Administration](./IMAGES/Lab05/L5P21.png)
 
 1.  Select **Scheduling Parameters**.
 
-    ![[Click Scheduling Parameters](media/f63619719cf902b97ebc6e55ca63a4fc.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P22.png)
+    ![Click Scheduling Parameters](./IMAGES/Lab05/L5P22.png)
 
 1.  Set **Connect to Maps** to **Yes**. Then click **OK** to accept the terms. If it is already set to yes, you can skip this step.
 
-    ![[Change “Connect to Maps” to Yes ](media/4cbdb340e4a282e077dda43e73eef342.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P23.png)
+    ![Change “Connect to Maps” to Yes ](./IMAGES/Lab05/L5P23.png)
 
-    ![[Click OK to accept the terms](media/ecd54790de6f4377d6d0cf53f887c55f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P24.png)
+    ![Click OK to accept the terms](./IMAGES/Lab05/L5P24.png)
 
 1.  Click **Save & Close**.
   
 1.  Open the **Home Health** app.
 
-    ![[open the Home Health app](media/bb83b5144e3bb88e1a933e92793973d5.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P25.png)
+    ![open the Home Health app](./IMAGES/Lab05/L5P25.png)
 
 Now we will associate the Thomson Household home care work order with the Spanish fluency characteristic, so they match Monica with someone who is fluent in Spanish. We have already applied this characteristic to her practitioner. We also want to set the estimated duration for the home visit.
 
 1.  Click **Home Care** on the left sitemap and open the Home Care Work Order record number **00034** associated with the **Thomson Household**.
 
-    ![[Graphical user interface, text, application, email Description automatically generated](media/870340179b05ade4bc62518074ac8f59.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P26.png)
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P26.png)
 
 1.  On the **Summary** tab, scroll down to the **Primary Incident** section and set the **Primary Incident Estimated Duration** to **1 hour** (this will ensure that the work order takes up time on the Resource’s calendar).
 
-    ![[Graphical user interface, text, application, email Description automatically generated](media/6a0f0f32186542789d541366d0315f92.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P27.png)
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P27.png)
 
 1.  Click **Related** and then click **Characteristics**.
 
-    ![[Graphical user interface, application Description automatically generated](media/9d27c5a0e12148357743819ecf94a783.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P28.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P28.png)
 
 1.  Click **+ New Requirement Characteristic**.
 
-    ![[Graphical user interface, text, application Description automatically generated](media/3333a3c57c1fd92bd21e73b14969d43f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P29.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P29.png)
 
 1.  Choose **Spanish fluency** for the **Characteristic** and Work Order **00034** as the **Resource Requirement**.
 
-    ![[Graphical user interface, text, application, email Description automatically generated](media/b2340c112dfc1d7dd3e1325f484e8202.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P30.png)
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P30.png)
 
 **Important**: Make sure the **Work Order** number populated in the **Resource Requirement** field on the general tab matches the Work Order number on the **Field Service** tab on the Resource Requirement record.
 
-![[Graphical user interface, application Description automatically generated](media/e99ce9b925e5d9f9925113d40f719d0d.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P31.png)
+![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P31.png)
 
 1.  Click **Save & Close**. You will now see the new characteristic requirement in the subgrid.
 
-    ![[Graphical user interface, text, application Description automatically generated](media/f0e96545df55391a166842653a59fb05.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P32.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P32.png)
 
 1.  Now let’s configure the schedule board. Select **Schedule Board** on the left site map.
 
-    ![[Click Schedule Board](media/fc1c9bf18ae93e0bf5f47935aaf0684a.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P33.png)
+    ![Click Schedule Board](./IMAGES/Lab05/L5P33.png)
 
 1.  Click the **plus button (+)** in the upper right corner to create a new **Schedule Board** tab.
 
-    ![[Click the + button to create a new Schedule Board tab](media/96f93675be2ede04b25fbcfa0e0f20b1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P34.png)
+    ![Click the + button to create a new Schedule Board tab](./IMAGES/Lab05/L5P34.png)
 
 1.  Name the new Schedule Board tab “**My Schedule Board Tab**”. Leave all defaults and click **Add**.
 
-    ![[Graphical user interface, application Description automatically generated](media/319c3cd7e3c8273689bad5e9687d81d4.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P35.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P35.png)
 
 1.  Click on the Scheduler Settings **gear icon.**
 
-    ![[Click on the Scheduler Settings gear ](media/2a9c3de563a10ebdf690081a9b070f13.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P36.png)
+    ![Click on the Scheduler Settings gear ](./IMAGES/Lab05/L5P36.png)
 
 1.  Change the **Hours** view to be closer to typical working hours, such as 6am to 6pm.
 
-    ![[Change the Hours view to be closer to typical working hours, such as 6am to 6pm](media/5c7cfa078bf08c50d5ce5340c7fed871.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P37.png)
+    ![Change the Hours view to be closer to typical working hours, such as 6am to 6pm](./IMAGES/Lab05/L5P37.png)
 
 1.  Open the scheduled Work Orders by selecting the small arrow at the bottom of the screen.
 
-    ![[Graphical user interface, application, table, Excel Description automatically generated](media/d05a532231b5800ab460033648e7c25b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P38.png)
+    ![Graphical user interface, application, table, Excel Description automatically generated](./IMAGES/Lab05/L5P38.png)
 
 1.  Select the **Unscheduled Work Orders** tab. Find work order **00034** where you added the **Spanish fluency** characteristic and click the grid to highlight it. Select **Find Availability** to open the Schedule Assistant filter.
 
-    ![[Graphical user interface, application Description automatically generated](media/78dea84161b4a04573e5e0b6740fd19b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P39.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P39.png)
 
 1.  Notice that any Bookable Resources which do not have the “Spanish fluency” characteristic are dropped from the search. Click the **Book** button on the **Bookable Resource’s** schedule to schedule the work order.
 
-    ![[Graphical user interface, text, application Description automatically generated](media/195879ec181adb6613e5b3fe19468cb1.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P40.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P40.png)
 
 1.  The work order is now scheduled and will no longer show in the Unscheduled Work Orders grid. The Resource Optimizing tool will schedule it for the next available time. Click **Exit Search** to close the pane.
 
-    ![[The work order is now scheduled and has disappeared from the bottom grid.  Click Exit Search to close the pane](media/9112a5b430ee7da1881def66e34086a6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P41.png)
+    ![The work order is now scheduled and has disappeared from the bottom grid.  Click Exit Search to close the pane](./IMAGES/Lab05/L5P41.png)
 
 **Congratulations**! You have configured a Schedule Board tab and scheduled a Home Health visit using the bookable resource you created in the previous task. For more information on schedule boards, see [Use and configure the schedule board (Dynamics 365 Field Service) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/field-service/configure-schedule-board).
 
@@ -246,7 +246,7 @@ It is available natively for Apple iOS and Google Android phones and tablets, th
 
 Here is a calendar view of scheduled work orders:
 
-![[Graphical user interface, application Description automatically generated](media/2e5e9db963ab6d530418845ade450cf6.jpeg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P42.png)
+![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P42.png)
 
 **Task 1: Assign Security Roles to Field Service Mobile Users**
 
@@ -256,31 +256,31 @@ In this task we will assign the Field Service – Resource role to Home Health w
 
 1.  Click the **gear icon** in the upper righthand corner and go to **Advanced Settings**.
 
-    ![[Graphical user interface, application Description automatically generated](media/26d7f778f6db24083fd5f0fc77101de9.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P43.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P43.png)
 
 1.  You will be navigated to the classic view. If it takes a while to load, refresh the page.
 
-    ![[Graphical user interface, text, application Description automatically generated](media/285d4a3caa05eeb169876c5d44c11624.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P44.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P44.png)
 
 1.  Click **Settings** on the top command bar and then in the flyout menu choose **Security**.
 
-    ![[Graphical user interface, application, website Description automatically generated](media/9e2e1cfb3cfdc3e00849d1e1938e66da.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P45.png)
+    ![Graphical user interface, application, website Description automatically generated](./IMAGES/Lab05/L5P45.png)
 
 1.  Click **Users**.
 
-    ![[Graphical user interface, text, application, email Description automatically generated](media/9aa374708ca8db47660463e546249b76.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P46.png)
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P46.png)
 
 1.  Select the view drop-down and change the view to show “**Enabled Users**”.
 
-    ![[Graphical user interface, text, application Description automatically generated](media/9ff0176dc324515b5652585ebebd844b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P47.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P47.png)
 
 1.  Find and select the user whom you would like to assign the “Field Service – Resource” role. Select **Manage Roles** on the command bar.
 
-    ![[Graphical user interface, text, application Description automatically generated](media/f5571d213e2744cb9a522827de51773e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P48.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P48.png)
 
 1.  Scroll down to select the **Field Service – Resource** security role and click **OK**.
 
-    ![[Graphical user interface, application, table Description automatically generated](media/0328b9e0b0c4d0fa928a84b7efe8e321.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P49.png)
+    ![Graphical user interface, application, table Description automatically generated](./IMAGES/Lab05/L5P49.png)
 
 **Congratulations**! You have assigned the Field Service – Resource role to a Field Service Mobile Home Health user in the Microsoft Cloud for Healthcare.
 
@@ -294,7 +294,7 @@ In this task, we will walk through how to download the Field Service Mobile app 
 
 1.  Launch the app and sign in with the Microsoft Cloud for Healthcare username and password for the user that you assigned the **Field Service – Resource** security role to in the previous task.
 
-    ![[Graphical user interface, application Description automatically generated](media/fd954522fc93ff4e89e6fa3adf204cfa.jpg)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P50.png)![[Graphical user interface, text, application, chat or text message Description automatically generated](media/e8b070c9401384ce23dde2a47e69dd4f.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P51.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P50.png)![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab05/L5P51.png)
     
 **Congratulations**! You have downloaded and signed into the Field Service Mobile as a Home Health user in the Microsoft Cloud for Healthcare
 
@@ -304,37 +304,37 @@ In the last exercise, we assigned **Home Health Work Order** 00034 to our Home H
 
 1.  On your mobile device, log into the Field Service Mobile App as your Bookable Resource user. If you encounter a message that says “Contact your administrator for access to your organization’s mobile apps”, select the menu icon in the top left and **toggle Show non-production apps to Yes**.
 
-    ![[Graphical user interface, application Description automatically generated](media/9a5550e99f9452a0bd2fc1167ec305cb.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P52.png)![[Graphical user interface, application, Teams Description automatically generated](media/b72140bc6e194e5f30a4dfcba11d72ac.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P53.png)![[Graphical user interface, application, Teams Description automatically generated](media/e4d773ccab2f6e32d22cb313d85f6faa.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P54.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P52.png)![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab05/L5P53.png)![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab05/L5P54.png)
 
 1.  In the list of environments, find the Microsoft Cloud for Healthcare environment that you have been working in. You will find the Home Health Work Order in the calendar view in an **In Progress** state.
 
-    ![[Graphical user interface, application Description automatically generated](media/9877ab5409479e5a37e06c419e4dc40e.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P55.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P55.png)
 
 1.  Click to open the Work Order. Notice the **Booking Status** says **In Progress**. Expand the status field using the blue arrow in the upper right. Click the **magnifying glass** next to the status field to modify the value.
 
-    ![[Graphical user interface, application Description automatically generated](media/236f05ee83a34f4b146c0d7c71613b01.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P56.png)![[Graphical user interface, application Description automatically generated](media/f45d26ce6b69d27a0b2f8f0ac9099be2.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P57.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P56.png)![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P57.png)
 
 1.  Remove **In progress** from the selected values by clicking the **x** next to it.
 
-    ![[Graphical user interface, application Description automatically generated](media/fe5149ab79fe7715ab06602c378cf0c0.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P58.png)![[Graphical user interface, text, application, chat or text message Description automatically generated](media/1b5d968705fbc93319a405827d0361b6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P59.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P58.png)![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab05/L5P59.png)
 
 1.  Set the **Booking Status** to **Completed** to close the Work Order. Click **Save** in the upper right.
 
-    ![[Graphical user interface, text, application, chat or text message Description automatically generated](media/88234ac2354b631f88825427c02c62f6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P60.png)![[Graphical user interface, application Description automatically generated](media/ac17e377cdf7e66cc9447e14a95f4bf6.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P61.png)
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab05/L5P60.png)![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P61.png)
 
 1.  The Work order has been completed and the time values have reflected based on the start time and when we completed the order. We are now finished with the mobile app.
 
-    ![[Graphical user interface, application Description automatically generated](media/7b07e14bda3da47cab31084a8f7bf61b.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P62.png)![[Graphical user interface, application Description automatically generated](media/7038371b29c0b298e93fd72388d413df.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P63.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P62.png)![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P63.png)
 
 1.  Navigate back to the **Home Health** app. You’ll see on the schedule board the work order has been updated to show the reflected time and status.
 
-    ![[Graphical user interface, application Description automatically generated](media/3cb76fabb19cc0c3148ffc5db983cdb5.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P64.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P64.png)
 
 1.  Click **Home Care** on the site map and find **Work Order 00034**. You will see that the **System Status** has been updated to **Complete**.
 
-    ![[Graphical user interface, text, application, chat or text message Description automatically generated](media/1815d724599e1253ad7dabb657008321.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P65.png)
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab05/L5P65.png)
 
-    ![[Graphical user interface, text, application, email Description automatically generated](media/da0c30550746d4d1719b3ec421857302.png)](https://github.com/MicrosoftLearning/IC-001T00-Microsoft-Cloud-for-Healthcare/blob/master/Instructions/Labs/IMAGES/Lab05/L5P66.png)
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P66.png)
 
 **Congratulations!** You have assigned a Home Health Work Order to a Home Health Bookable Resource, made updates to the work order in the Field Service mobile app, and then viewed those changes in the Microsoft Cloud for Healthcare Home Health app. For more information on the Field Service mobile app, see [Install and set up the Field Service (Dynamics 365) mobile app \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/field-service/mobile-power-app-get-started).
 
