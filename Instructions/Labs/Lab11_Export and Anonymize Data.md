@@ -54,7 +54,7 @@ It's recommended to add the containerName and configFilename parameters to your 
 -   Authorization: Bearer {{bearerToken}}
 -   Prefer: respond-async
 
-![export-header](media/1f12bd1b726e27f3678a9a871c0953c7.png)
+![export-header](./IMAGES/Lab11/L11P1.png)
 
 1.  Be sure to Save your GET Export Anonymized FHIR Data request.
 2.  Refresh your access token if necessary (use POST AuthorizeGetToken).
