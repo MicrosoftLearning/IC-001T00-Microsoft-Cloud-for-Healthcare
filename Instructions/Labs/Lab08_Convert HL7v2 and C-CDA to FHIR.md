@@ -19,20 +19,20 @@ To convert HL7v2 data into FHIR, first you must prepare a \$convert-data API req
 
 1.  Go to Postman and create a new API request by clicking **Add request** in the FHIR CALLS collection imported in Lab-01.
 
-    ![Graphical user interface Description automatically generated](media/a2afda2674beca350dc1c2bc6e4e6307.png)
+    ![Graphical user interface Description automatically generated](./IMAGES/Lab08/L8P1.png)
 
 1.  Rename the new request to **Convert Data - HL7**.
 1.  Fill in the URL of the request with **{{fhirurl}}/\$convert-data**.
 1.  Change the HTTP operation from **GET** to **POST**.
 
-    ![](media/1bc2c76278019b9bd9e6bad114191fd8.png)
+    ![](./IMAGES/Lab08/L8P2.png)
 
 1.  Go to the **Authorization** tab of the request and make the following changes:
     1.  For **Type**, choose **OAuth 2.0**.
     2.  Add **{{bearerToken}}** below the **Available Tokens** menu.
     3.  Put **Bearer** in the **Header Prefix** field (if it is not already there).
 
-        ![Request Authorization Tab](media/aeccc5f93c0462ccecad111b622ea959.jpg)
+        ![Request Authorization Tab](./IMAGES/Lab08/L8P3.png)
 
 1.  Be sure to **Save** the **Convert Data - HL7** request.
 
@@ -43,7 +43,7 @@ To convert HL7v2 data into FHIR, first you must prepare a \$convert-data API req
 1.  Copy and paste the HL7v2 message into the **Body** of the **Convert Data – HL7** request in Postman. Format the JSON request parameters following the example given in the **\$convert-data** [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data#sample-request).
 1.  In the **Body** tab in Postman, select the **raw** button and choose **JSON** from the dropdown menu on the right.
 
-    ![](media/1488a7b278cd2b87fb0694a67569cbfc.png)
+    ![](./IMAGES/Lab08/L8P4.png)
 
 1.  You will need to make some changes in the HL7v2 payload so that the formatting follows the sample request given in the \$convert-data [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data#sample-request).
 2.  
@@ -103,7 +103,7 @@ Now you will make another API request similar to the one above, except this time
 
 1.  In Postman, click on **Add request** again to create another API request in the **FHIR CALLS** collection imported in Lab 7.
 
-    ![Graphical user interface Description automatically generated](media/a2afda2674beca350dc1c2bc6e4e6307.png)
+    ![Graphical user interface Description automatically generated](./IMAGES/Lab08/L8P5.png)
 
 1.  Rename the new request to **Convert Data - CCDA**.
 1.  Fill in the URL of the request as before with b.
@@ -112,7 +112,7 @@ Now you will make another API request similar to the one above, except this time
 2.  Switch the **Type** to **OAuth 2.0**.
 3.  Add **{{bearerToken}}** below **Available Tokens**.
 
-    ![Request Authorization Tab](media/aeccc5f93c0462ccecad111b622ea959.jpg)
+    ![Request Authorization Tab](./IMAGES/Lab08/L8P6.png)
 
 1.  Make sure to **Save** the **Convert Data - CCDA request**.
 
