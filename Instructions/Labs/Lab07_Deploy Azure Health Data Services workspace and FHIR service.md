@@ -10,7 +10,7 @@ In this lab, you will deploy an **Azure Health Data Services workspace** contain
 
 In the Azure health ecosystem, the Azure Health Data Services workspace is a logical container for associated healthcare service instances such as FHIR, DICOM (Digital Imaging and Communications in Medicine), and MedTech services. You can provision multiple FHIR, DICOM, and MedTech services in a single workspace to meet your solution needs.
 
-![Graphical user interface, application, Teams Description automatically generated](media/2790d5724c13d7d735b0307ba2d2b36e.png)
+![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab07/L1P1.png)
 
 The workspace also creates a compliance boundary (HIPAA, HITRUST) within which protected health information can travel. This means that [Role-Based Access Control (RBAC)](https://docs.microsoft.com/azure/healthcare-apis/configure-azure-rbac), private network data transit with [Private Link](https://docs.microsoft.com/azure/healthcare-apis/healthcare-apis-configure-private-link), and [event messages](https://docs.microsoft.com/azure/healthcare-apis/events/events-deploy-portal) can all be configured at the workspace level – reducing your system management complexity.
 
@@ -38,17 +38,19 @@ In the first part of this lab, you will
 -   [FHIR-Proxy (for Lab-07)](https://github.com/microsoft/fhir-proxy)
 1.  To begin, CTRL+click (Windows or Linux) or CMD+click (Mac) on the Deploy to Azure button below to open the deployment form in a new browser tab.
 
-    ![](media/88401a321e9ab43984e628a8e64bfe2b.png)
+    ![](./IMAGES/Lab07/L1P2.png)
 
 1.  Select or fill in the parameter values (see image below).
 
-    Important: In order to successfully deploy resources with this ARM template, the user must have [Owner](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner) rights for the [Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) where the components are deployed. Before running the ARM template, it is recommended to create a new resource group first and check that you have Owner permissions. Once you confirm that you have Owner rights, then select that resource group in the dropdown menu when you fill out the deployment form (see \#3 below).
+Important: In order to successfully deploy resources with this ARM template, the user must have [Owner](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner) rights for the [Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) where the components are deployed. Before running the ARM template, it is recommended to create a new resource group first and check that you have Owner permissions. Once you confirm that you have Owner rights, then select that resource group in the dropdown menu when you fill out the deployment form (see \#3 below).
 
-2.  Enter a custom **Deployment Prefix**. This prefix will be prepended to the names of all created resources ("trn05" is shown as an example prefix).
-3.  Make sure to select the "true" values as shown.
+1.  Enter a custom **Deployment Prefix**. This prefix will be prepended to the names of all created resources ("trn05" is shown as an example prefix).
+
+1.  Make sure to select the "true" values as shown.
+
 1.  Click **Review + create** when ready, and then click **Create** on the next page.
 
-    ![Graphical user interface Description automatically generated](media/27eaba55814ebace0e92de6b1f3cf487.png)
+    ![Graphical user interface Description automatically generated](./IMAGES/Lab07/L1P3.png)
 
 Note: This deployment typically takes 20 minutes. During the deployment, you can read the instructions linked in Step 2 below. When the deployment finishes, go ahead and proceed with those instructions.
 
