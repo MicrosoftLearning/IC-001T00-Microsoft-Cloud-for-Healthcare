@@ -8,7 +8,9 @@ Data ingestion into FHIR is a vital capability for a healthcare organization's i
 
 For this lab, you will upload FHIR data bundles for import into the FHIR service. You will need to examine error logs and determine what is preventing the data in one of the bundles from being ingested.
 
-image
+Below is a component view of FHIR Loader connected to the FHIR service endpoint.
+
+![Graphical user interface Description automatically generated](./IMAGES/Lab09/L9P1.png)
 
 ### Learning objectives
 
@@ -32,23 +34,23 @@ Visit the FHIR Loader (OSS) repository [here](https://github.com/microsoft/fhir-
 
 1.  In Azure Portal, navigate to the Blob Storage account that was created for FHIR Loader in Lab-01. Go to **Portal -\> Resource Group -\> Storage account** (the name of the Storage account will end in **"impsa"**).
 
-![Graphical user interface Description automatically generated](media/c660d0e200fcb143a1b039dec50dc294.png)
+![Graphical user interface Description automatically generated](./IMAGES/Lab09/L9P2.png)
 
 1.  In the Storage account, click on the **Storage browser (preview)** blade and then click on **Blob containers**.
 
-![Graphical user interface, application Description automatically generated](media/404fbf7039c8105160567637eaf20039.png)
+![Graphical user interface, application Description automatically generated](./IMAGES/Lab09/L9P3.png)
 
 -   
 1.  Click on the **zip** container and upload the good_bundles.zip file downloaded in Step 1 of this lab.
 
-![Graphical user interface, application Description automatically generated](media/d3ea92d504b59587ba02f17ed55b6ffd.png)
+![Graphical user interface, application Description automatically generated](./IMAGES/Lab09/L9P4.png)
 
 -   Once you click **Upload**, the FHIR Loader will automatically import the data from the .zip file into the FHIR service database.
 1.  Now, when you do a refresh and click on **bundlesprocessed**, you should see six files as shown below.
 
 *Note: If you upload a .zip file, the names of the bundles within the .zip archive are exposed (not the .zip filename itself).*
 
-![Graphical user interface, text, application Description automatically generated](media/dc344ba965b18cd9b440cb766211ecbb.png)
+![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab09/L9P5.png)
 
 ### Step 3 - Debug issues with importing FHIR data
 
@@ -63,16 +65,16 @@ Here are some points for inspecting FHIR Loader operations:
 
 -   In **Storage browser (preview)**, go to **Container** -\> **bundleserr** to view info about errors in importing FHIR bundles.
 
-![Graphical user interface, text, application, email Description automatically generated](media/73cad23739978b4eb9e207510f0d8ac8.png)
+![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab09/L9P6.png)
 
 -   Find the **.response** file and click on the three dots (···) located on the right end of the file. Then click **View/edit**.
 
-![Graphical user interface, application Description automatically generated](media/f60c009b0430df0f79fca87330ea4b56.png)
+![Graphical user interface, application Description automatically generated](./IMAGES/Lab09/L9P7.png)
 
 -   What is the reason given for the error?
 -   In comparison, you can go to **bundlesprocessed** and look in the .result files for ingest operations that succeeded. For example, in the image below there is a 201 status code, meaning success. The response shows an endpoint for a FHIR Resource ExplanationOfBenefit/\<resourceId\>, indicating that this Resource (ExplanationOfBenefit/\<resourceId\>) has been successfully persisted in FHIR service from the ingest operation.
 
-![Graphical user interface, text, application, Word Description automatically generated](media/51c7d437f7843a45b94a53a3db240deb.png)
+![Graphical user interface, text, application, Word Description automatically generated](./IMAGES/Lab09/L9P8.png)
 
 What does success look like for Lab-03?
 
