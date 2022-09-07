@@ -10,7 +10,7 @@ In this lab, you will deploy an **Azure Health Data Services workspace** contain
 
 In the Azure health ecosystem, the Azure Health Data Services workspace is a logical container for associated healthcare service instances such as FHIR, DICOM (Digital Imaging and Communications in Medicine), and MedTech services. You can provision multiple FHIR, DICOM, and MedTech services in a single workspace to meet your solution needs.
 
-![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab07/L1P1.png)
+![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab07/L7P1.png)
 
 The workspace also creates a compliance boundary (HIPAA, HITRUST) within which protected health information can travel. This means that [Role-Based Access Control (RBAC)](https://docs.microsoft.com/azure/healthcare-apis/configure-azure-rbac), private network data transit with [Private Link](https://docs.microsoft.com/azure/healthcare-apis/healthcare-apis-configure-private-link), and [event messages](https://docs.microsoft.com/azure/healthcare-apis/events/events-deploy-portal) can all be configured at the workspace level – reducing your system management complexity.
 
@@ -38,7 +38,7 @@ In the first part of this lab, you will
 -   [FHIR-Proxy (for Lab-07)](https://github.com/microsoft/fhir-proxy)
 1.  To begin, CTRL+click (Windows or Linux) or CMD+click (Mac) on the Deploy to Azure button below to open the deployment form in a new browser tab.
 
-    ![](./IMAGES/Lab07/L1P2.png)
+    ![](./IMAGES/Lab07/L7P2.png)
 
 1.  Select or fill in the parameter values (see image below).
 
@@ -50,7 +50,7 @@ Important: In order to successfully deploy resources with this ARM template, the
 
 1.  Click **Review + create** when ready, and then click **Create** on the next page.
 
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab07/L1P3.png)
+    ![Graphical user interface Description automatically generated](./IMAGES/Lab07/L7P3.png)
 
 Note: This deployment typically takes 20 minutes. During the deployment, you can read the instructions linked in Step 2 below. When the deployment finishes, go ahead and proceed with those instructions.
 
