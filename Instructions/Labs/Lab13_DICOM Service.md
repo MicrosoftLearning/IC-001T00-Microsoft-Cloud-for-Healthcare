@@ -110,7 +110,7 @@ Step 2 - Populate DICOM service with single instance images
 
 1.  Press **Send** for each POST Store-single-instance call and you will populate your DICOM service with the three .dcm single instance files.
 
-### Step 3 - Execute Outlined Features via Postman Collection
+### Step 7 - Execute Outlined Features via Postman Collection
 
 -   The Conformance-as-Postman collection has a complete set of API calls that you can execute one by one. See the list below for details.
 -   Store DICOM files to the service
@@ -146,7 +146,7 @@ By default, the DICOM service supports querying on the DICOM tags specified in [
 
 You can follow the instructions given in this [Extended Query Tag Overview article](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-extended-query-tags-overview) to manage query tags.
 
-### Step 4 – BONUS : Set up a DICOM viewer for DICOM service
+### Step 8 – BONUS : Set up a DICOM viewer for DICOM service
 
 As an added challenge, go to [this repo](https://github.com/microsoft/dicom-ohif) and follow the instructions to set up an [Open Health Imaging Foundation DICOM viewer](https://ohif.org) for your DICOM service.
 
