@@ -72,5 +72,3 @@ What does success look like for Lab-09?
 
 -   Configure MedTech service for mapping medical IoT device data to FHIR.
 -   Generate a custom mapping for medical IoT device data into FHIR.
-
-s
