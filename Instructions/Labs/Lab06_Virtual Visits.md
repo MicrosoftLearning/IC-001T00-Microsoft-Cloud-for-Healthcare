@@ -36,8 +36,9 @@ Below is an example of the appointment booking screen in the Patient Portal. As 
 
 ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P3.png)
 
-1.  Go to <https://make.powerapps.com/>.
-1.  In the upper right-hand corner, click the **funnel** **icon** which will open **Advanced Find**.
+1.  Go to <https://make.powerapps.com/> and open **Virtual Clinic**.
+
+1.  In the upper right-hand corner, click the **funnel** icon which will open **Advanced Find**.
 
     ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6P4.png)
 
