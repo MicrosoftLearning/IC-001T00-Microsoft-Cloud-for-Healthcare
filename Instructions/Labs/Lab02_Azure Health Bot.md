@@ -220,7 +220,7 @@ In the following tasks, you will complete the following:
 
     ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab02/L2P34.png)
 
-1.  Select the **Omnichannel Agent** roles to assign to your user and select **OK**.
+1.  If necessary, select the **Omnichannel Agent** roles to assign to your user and select **OK**.
 
     ![Table Description automatically generated with medium confidence](./IMAGES/Lab02/L2P35.png)
 
@@ -269,6 +269,10 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
 1.  Return to the **Dynamics 365 User** page, switch the view to **Enabled Users**.
 
+    ![Screenshot of Dynamics 365 navigation to settings and security on command bar](./IMAGES/Lab02/L2P43A.png)
+    
+    ![Screenshot of Users option first in the list of security settings](./IMAGES/Lab02/L2P43B.png)
+
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P44.png)
 
 1.  While in the **Enabled User** list, scroll to find your App user or use the **Search** bar. Double-click on the user or select the row and click **Edit**.
@@ -295,7 +299,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
     ![Graphical user interface, text, application, Word Description automatically generated](./IMAGES/Lab02/L2P49.png)
 
-1.  Assign the **Omnichannel Agent** role to the Bot User as you did for your own user in the previous task. This will allow the bot to act as an omnichannel agent like your user.
+1.  If necessary, assign the **Omnichannel Agent** role to the Bot User as you did for your own user in the previous task. This will allow the bot to act as an omnichannel agent like your user.
 
     ![Table Description automatically generated with medium confidence](./IMAGES/Lab02/L2P50.png)
 
