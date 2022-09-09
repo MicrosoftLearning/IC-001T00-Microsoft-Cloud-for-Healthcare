@@ -166,7 +166,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Text Description automatically generated](./IMAGES/L1P23.png)
 
-1.  Navigate back to **Marketing** emails list and select your newly created segment **Email Invitation – Healthy Eye Virtual Seminar**.
+1.  Navigate back to **Marketing** emails list and select your newly created segment **Email Invitation – Healthy Eye Seminar Virtual Event**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P24.png)
 
