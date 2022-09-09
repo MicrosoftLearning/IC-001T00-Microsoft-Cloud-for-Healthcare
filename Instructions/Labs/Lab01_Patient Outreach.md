@@ -295,7 +295,7 @@ In this exercise, you will create a healthcare-focused, virtual educational **Ev
 
 1.  In the **Patient Outreach** application, click **Events** on the **Site Map** under **Event Management**.
 
-![Click on Events on the Sitemap](./IMAGES/L1P50.png)
+    ![Click on Events on the Sitemap](./IMAGES/L1P50.png)
 
 1.  Select **New** on the command bar to create a new event.
 
