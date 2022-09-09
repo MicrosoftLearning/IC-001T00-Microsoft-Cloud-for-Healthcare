@@ -188,11 +188,11 @@ In this exercise, you will create a marketing email that will be used to reach o
 
 1.  Find and select the file **Glasses.jpg** which you just saved. Click **Upload**.
 
-    ![Select the “Glasses.jpg” image from the [file location], click Upload, then click Done](./IMAGES/L1P29.png)
+    ![Select the “Glasses.jpg” image from the [file location], click Upload](./IMAGES/L1P29.png)
 
 1.  Select **Done**.
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P30.png)
+    ![Click Done](./IMAGES/L1P30.png)
 
 1.  Edit the text of the email as follows:
 
