@@ -84,7 +84,7 @@ nearby objects are blurry).
 
 1.  Go back to **Apps** and open **Patient Outreach**.
 
-    ![Graphical user interface, text, application, email Description automatically generated(./IMAGES/L1P8.png)
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P8.png)
 
 1.  Click **Segments** on the left navigation bar to create a new specific group of patients.
 
