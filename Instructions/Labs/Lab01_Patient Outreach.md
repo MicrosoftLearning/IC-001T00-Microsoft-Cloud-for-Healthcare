@@ -61,23 +61,23 @@ nearby objects are blurry).
 1.  While logged into your Microsoft 365 tenant, navigate to
     <https://make.powerapps.com/>.
 
-2.  Go to **Apps** and open **Marketing**.
+1.  Go to **Apps** and open **Marketing**.
 
-![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P3.png)
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P3.png)
 
 1.  Navigate to the bottom left drop-down and change the selection from
     **Marketing** to **Settings**.
 
-![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P4.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P4.png)
 
 1.  On the **Settings overview** screen, select **Dataset configuration** under **Data
     management**.
 
-![Graphical user interface, application Description automatically generated](./IMAGES/L1P5.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/L1P5.png)
 
 1.  Scroll down and select the **Condition (msemr_condition)** entity.
 
-![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P6.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P6.png)
 
 1.  **Publish Changes** on the top right.
 
