@@ -120,7 +120,7 @@ In this exercise, you will do the following:
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P16.png)
 
 1.  Click **Save** in the top right.
--   ![](./IMAGES/Lab02/L2P17.png)
+    ![](./IMAGES/Lab02/L2P17.png)
 
 Now let’s enable the Health Bot for **Microsoft Teams** Channel.
 
@@ -259,7 +259,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P41.png)
 
-2.  Paste the **Application ID** (the Application (client) ID you obtained in the Azure portal for the supplied MCH Application ID) into the search box and select the app from the list. Click **Add** at the bottom right.
+1.  Paste the **Application ID** (the Application (client) ID you obtained in the Azure portal for the supplied MCH Application ID) into the search box and select the app from the list. Click **Add** at the bottom right.
 
     ![Graphical user interface, text, application, Teams Description automatically generated](./IMAGES/Lab02/L2P42.png)
 
@@ -291,7 +291,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
 1.  In the **User Information** section, enter or select the following information and click the **Save** icon in the bottom right corner:
     1.  **User type**: Select **Bot application user**. This will *display a new field* to store the Bot application Id.
-    2.  **Bot application ID**: This is the Azure Health BotId you copied when enabling the Teams channel. This field is displayed once the User Type is selected to be Bot application user.
+    1.  **Bot application ID**: This is the Azure Health BotId you copied when enabling the Teams channel. This field is displayed once the User Type is selected to be Bot application user.
 
         ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P48.png)
 
@@ -366,7 +366,8 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
 -   **Route to Bot:** Initial customer conversation is through Health Bot in the default messaging queue. When the chat bot is first opened, route to Default queue which only contains the bot user (agent).
 -   **Human Routing Rule**: When context variable **EscalateToAgent** is present and set to 1, we route to the queue that has only human users (agents) who can take over conversation.
-1.  Navigate to Work Streams.
+
+1.  Navigate to **Work Streams**.
 
     ![Table Description automatically generated](./IMAGES/Lab02/L2P61.png)
 
@@ -374,7 +375,7 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2P62.png)
 
-1.  In the Live chat workstream record, select the Context Variables tab. Select + New.
+1.  In the **Live chat** workstream record, select the **Context Variables** tab. Select **+ New**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P63.png)
 
@@ -799,7 +800,7 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
 1.  Navigate to **Power Apps** and click to open **Lamna Healthcare Patient Portal**.
 
-    ![Opem Lamna Healthcare Portal](./IMAGES/Lab02/L2P146.png)
+    ![Open Lamna Healthcare Portal](./IMAGES/Lab02/L2P146.png)
 
 1.  You should see the Health Bot “Let’s Chat” button in the lower right-hand corner of the screen. This means the chat widget was successfully embedded into the Customer Self-service portal.
 
