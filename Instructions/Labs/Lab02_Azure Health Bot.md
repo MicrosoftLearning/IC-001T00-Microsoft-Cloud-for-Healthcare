@@ -93,7 +93,7 @@ In this exercise, you will do the following:
 
 **Congratulations!** You have successfully created a new Health Bot instance in your Azure tenant.
 
-**Task 2: Update Azure Health Bot Settings to Enable Dynamics 365 Integration**
+#### Task 2: Update Azure Health Bot Settings to Enable Dynamics 365 Integration
 
 1.  On the **Azure Health Bot** homepage, expand the side navigation bar to see the sitemap labels.
 
@@ -142,7 +142,7 @@ In this exercise, you will do the following:
 
 **Congratulations!** You completed the Azure Health Bot settings for integration with Microsoft Teams and Dynamics 365 Omnichannel for Customer Service.
 
-**Task 3: Obtain Azure Application ID**
+#### Task 3: Obtain Azure Application ID
 
 In this task, you will be using an Azure Application ID already created in our Azure tenant called “**MCH Application Id**”. Registering this Id establishes a trusted relationship between your Dynamics 365 app and the Microsoft identity platform. Using this Id, you will later create a Dynamics 365 Application User to bridge the authentication between Azure Health Bot and Power Apps.
 
@@ -182,7 +182,7 @@ In the following tasks, you will complete the following:
 4.  Configure a Context Variable and Routing rule to route the message either to a Bot or Agent.
 -   
 
-**Task 1: Assign Omnichannel Agent Security Role**
+## Task 1: Assign Omnichannel Agent Security Role
 
 1.  While in the In-Private or Incognito window, navigate to [Power Apps](https://make.powerapps.com/).
 
@@ -226,7 +226,7 @@ In the following tasks, you will complete the following:
 
 **Congratulations!** You assigned the proper omnichannel agent role to your user to allow you to be a live agent in omnichannel.
 
-**Task 2: Create Health Bot User in Dynamics 365 Customer Service**
+#### Task 2: Create Health Bot User in Dynamics 365 Customer Service
 
 We need two users to configure in Omnichannel for Dynamics 365 Customer Service:
 
@@ -305,7 +305,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
 **Congratulations**! You successfully created a Bot User and assigned to it the Omnichannel Agent role.
 
-**Task 3: Create and Configure Omnichannel Queues**
+#### Task 3: Create and Configure Omnichannel Queues
 
 In this task, you will create and configure the omnichannel queues necessary to communicate with the correct bot or agent depending on the situation.
 
@@ -360,7 +360,7 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
 **Congratulations!** You have created the necessary queue to escalate to human agent and added the appropriate users to each messaging queue.
 
-**Task 4: Update Live Work Stream with Context Variables and Routing Rules**
+#### Task 4: Update Live Work Stream with Context Variables and Routing Rules
 
 In this task, we will set up basic chat routing. This will allow for users to chat with a bot user in certain cases and a live human agent in other scenarios. The routing rules will allow chat to behave as follows:
 
@@ -424,7 +424,7 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
 **Congratulations!** You have created the proper context variable and routing rules that will allow customers to begin conversation with a health bot and escalate to a human agent.
 
-**Task 5: Create Chat Widget for Health Bot**
+#### Task 5: Create Chat Widget for Health Bot
 
 1.  Navigate to **Chat**.
 
@@ -505,7 +505,7 @@ In this exercise, you will be doing the following:
 -   Design another Health Bot Scenario called **MCH_PatientServiceWelcome**. This scenario holds the starting statement which will allow the user to invoke the **MCH_PatientService** scenario.
 -   Set the **Automatic Welcome Scenario** to be the MCH_PatientServiceWelcome custom scenario you create. This will begin the scenario when a user first interacts with the Health Bot.
 
-**Task 1: Create MCH_PatientService Scenario**
+#### Task 1: Create MCH_PatientService Scenario
 
 In this task, you will create the **MCH_PatientService** bot scenario using the designer canvas.
 
@@ -531,7 +531,7 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
     ![A screenshot of a computer Description automatically generated](./IMAGES/Lab02/L2P97.png)
 
-**Step 1: Add Bot Introduction Statement**
+##### Step 1: Add Bot Introduction Statement
 
 1.  Add a beginning **Statement** to the scenario by selecting the icon and dragging Statement icon onto the editor.
 
