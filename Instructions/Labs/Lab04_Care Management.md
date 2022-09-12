@@ -1,6 +1,6 @@
 # Module 4 Lesson 2 Lab 4: Care Management
 
-### Overview
+## Overview
 
 The **Care Management** application allows healthcare systems to provide coordinated care to each patient by quickly communicating the right information, at the right time, to the right people. Users can easily create, personalize, and enable new care plans for patients, manage care teams, and view patients’ clinical timelines and care insights right within the application.
 
@@ -21,7 +21,7 @@ This lab will focus on the story of Lamna Healthcare Company, who is opening a n
 
 Now that Lamna Healthcare Company’s new location is ready to open, we need to ensure the new location record is in the system and that the employees understand the healthcare data model basics and how the tables and relationships are surfaced in the Care Management application.
 
-### Learning objectives
+## Learning objectives
 
 In this lab, you will:
 
@@ -29,7 +29,7 @@ In this lab, you will:
 -   Navigate the Care Management application
 -   Create a new Location record
 
-### Step 1: Explore the Healthcare Data Model
+## Exercise 1: Explore the Healthcare Data Model
 
 In this exercise, you will learn about the core care management data tables. If you’d like to explore the tables in deeper detail on Microsoft Docs, please visit [Overview of Microsoft Cloud for Healthcare entities](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/healthcare-overview).
 
@@ -44,7 +44,7 @@ The healthcare data model uses some of the out-of-the-box tables from Dynamics 3
 
 Visit [Healthcare data model overview](https://docs.microsoft.com/en-us/dynamics365/industry/healthcare/overview-data-model) on Microsoft Docs to learn more about the Healthcare data model.
 
-**Task 1: Navigate Patient Details Tables and Relationships**
+### Task 1: Navigate Patient Details Tables and Relationships
 
 In this task, you will explore the main tables related to Patient Data. Select each table name to navigate to the Microsoft Docs page that goes into detail about each table.
 
@@ -61,7 +61,7 @@ See the following for the Patient Detail Entity Relationship Diagram.
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P3.png)
 
-**Task 2: Navigate Clinical Data Tables and Relationships**
+### Task 2: Navigate Clinical Data Tables and Relationships
 
 In this task, you will explore the main tables related to Clinic Data. Select each table name to navigate to the Microsoft Docs page that goes into detail about each table.
 
@@ -83,7 +83,7 @@ See the next page for the Clinical Data Entity Relationship Diagram.
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P4.png)
 
-**Task 3: Navigate Care Plan Management Tables and Relationships**
+### Task 3: Navigate Care Plan Management Tables and Relationships
 
 In this task, you will explore the main tables related to Care Plan Management. Select each table name to navigate to the Microsoft Docs page that goes into detail about each table.
 
@@ -103,7 +103,7 @@ See the following for the Care Plan Management Entity Relationship Diagram.
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P5.png)
 
-### Step 2: Navigate Care Management Application
+## Exercise 2: Navigate Care Management Application
 
 In this exercise, you will navigate the patient record and explore all the detailed information that is captured about the patient by Microsoft Cloud for Healthcare. In this case, we will examine the healthcare information of Amber Rodriguez to see how a care team member would obtain a full view of the patient.
 
@@ -149,7 +149,7 @@ In this exercise, you will navigate the patient record and explore all the detai
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P15.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P16.png)
 
-![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P17.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P18.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P17.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P18.png)
 
 1.  The **Patient Interactions** section shows any activity, note, or post and can be filtered or sorted.
 
@@ -185,7 +185,7 @@ In this exercise, you will navigate the patient record and explore all the detai
 
 **Congratulations!** You have explored the Care Management app and its featured data within a patient record.
 
-### Step 3: Create a New Location
+## Step 3: Create a New Location
 
 In this exercise, you will be creating a new Location record for the **Lamna Healthcare Company** Organization. They have opened a new branch in **Redmond, WA** and we need to ensure this location is in the system.
 
