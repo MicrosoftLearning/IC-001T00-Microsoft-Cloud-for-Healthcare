@@ -1,6 +1,6 @@
 # Module 4 Lesson 1- Lab 2: Azure Health Bot
 
-### Overview
+## Overview
 
 The Azure Health Bot Service is a cloud platform that empowers developers in healthcare organizations to build and deploy their compliant, AI-powered Patient insights and health bots, that help them improve processes and reduce costs. It allows you to offer your users intelligent and personalized access to health-related information and interactions through a natural conversation experience.
 
@@ -25,7 +25,7 @@ As part of their digital transformation efforts, Lamna Healthcare Company is see
 
 In this lab, you'll play the role of a Lamna Healthcare IT developer and configure Azure Health Bot for a medication refill scenario.
 
-### Learning objectives
+## Learning objectives
 
 In this lab, you will:
 
@@ -34,7 +34,7 @@ In this lab, you will:
 -   Embed Azure Health Bot in a Power Apps Portal
 -   Extend Azure Health Bot with custom scenarios
 
-### Exercise 1: Set Up Azure Health Bot
+## Exercise 1: Set Up Azure Health Bot
 
 In this exercise, you will do the following:
 
@@ -44,7 +44,7 @@ In this exercise, you will do the following:
 
 **Azure Health Bot** empowers developers in healthcare organizations to build and deploy AI-powered, compliant, conversational healthcare experiences at scale. It combines built-in medical database with natural language capabilities to understand clinical terminology and can be easily customized to support your organization's clinical use cases. The service ensures alignment with industry compliance requirements and is privacy protected to HIPAA standards. To learn more about Azure Health Bot, please reference this [Azure Health Bot documentation](https://docs.microsoft.com/en-us/azure/health-bot/).
 
-#### Task 1: Install Azure Health Bot in Azure Subscription
+### Task 1: Install Azure Health Bot in Azure Subscription
 
 1.  While logged in to your Microsoft 365 tenant, open a new tab in your internet browser incognito or in-private mode and navigate to Azure Portal at <https://portal.azure.com/>
 
@@ -93,7 +93,7 @@ In this exercise, you will do the following:
 
 **Congratulations!** You have successfully created a new Health Bot instance in your Azure tenant.
 
-#### Task 2: Update Azure Health Bot Settings to Enable Dynamics 365 Integration
+### Task 2: Update Azure Health Bot Settings to Enable Dynamics 365 Integration
 
 1.  On the **Azure Health Bot** homepage, expand the side navigation bar to see the sitemap labels.
 
@@ -142,7 +142,7 @@ In this exercise, you will do the following:
 
 **Congratulations!** You completed the Azure Health Bot settings for integration with Microsoft Teams and Dynamics 365 Omnichannel for Customer Service.
 
-#### Task 3: Obtain Azure Application ID
+### Task 3: Obtain Azure Application ID
 
 In this task, you will be using an Azure Application ID already created in our Azure tenant called “**MCH Application Id**”. Registering this Id establishes a trusted relationship between your Dynamics 365 app and the Microsoft identity platform. Using this Id, you will later create a Dynamics 365 Application User to bridge the authentication between Azure Health Bot and Power Apps.
 
@@ -170,7 +170,7 @@ In this task, you will be using an Azure Application ID already created in our A
 
 **Congratulations!** You have successfully obtained the MCH Application ID from Application Registrations in the Azure Portal.
 
-### Exercise 2: Configure Omnichannel Live Chat
+## Exercise 2: Configure Omnichannel Live Chat
 
 In this exercise, you will be configuring live chat for **Dynamics 365 Omnichannel for Customer Service**. Omnichannel for Customer Service offers a suite of capabilities that extend the power of Dynamics 365 Customer Service Enterprise to enable organizations to instantly connect and engage with their customers across digital messaging channels.
 
@@ -181,7 +181,7 @@ In the following tasks, you will complete the following:
 3.  Configure Queues for Bot and Agent Users
 4.  Configure a Context Variable and Routing rule to route the message either to a Bot or Agent.
 
-#### Task 1: Assign Omnichannel Agent Security Role
+### Task 1: Assign Omnichannel Agent Security Role
 
 1.  While in the In-Private or Incognito window, navigate to [Power Apps](https://make.powerapps.com/).
 
@@ -225,7 +225,7 @@ In the following tasks, you will complete the following:
 
 **Congratulations!** You assigned the proper omnichannel agent role to your user to allow you to be a live agent in omnichannel.
 
-#### Task 2: Create Health Bot User in Dynamics 365 Customer Service
+### Task 2: Create Health Bot User in Dynamics 365 Customer Service
 
 We need two users to configure in Omnichannel for Dynamics 365 Customer Service:
 
@@ -304,7 +304,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
 **Congratulations**! You successfully created a Bot User and assigned to it the Omnichannel Agent role.
 
-#### Task 3: Create and Configure Omnichannel Queues
+### Task 3: Create and Configure Omnichannel Queues
 
 In this task, you will create and configure the omnichannel queues necessary to communicate with the correct bot or agent depending on the situation.
 
@@ -359,7 +359,7 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
 **Congratulations!** You have created the necessary queue to escalate to human agent and added the appropriate users to each messaging queue.
 
-#### Task 4: Update Live Work Stream with Context Variables and Routing Rules
+### Task 4: Update Live Work Stream with Context Variables and Routing Rules
 
 In this task, we will set up basic chat routing. This will allow for users to chat with a bot user in certain cases and a live human agent in other scenarios. The routing rules will allow chat to behave as follows:
 
@@ -423,7 +423,7 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
 **Congratulations!** You have created the proper context variable and routing rules that will allow customers to begin conversation with a health bot and escalate to a human agent.
 
-#### Task 5: Create Chat Widget for Health Bot
+### Task 5: Create Chat Widget for Health Bot
 
 1.  Navigate to **Chat**.
 
@@ -447,7 +447,7 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
 **Congratulations!** In this exercise, you have successfully configured Customer Service Omnichannel Live chat by creating the necessary Users, Queues, Work Streams, Context Variables, Routing Rules, and Chat Widget. These all work together and allow patients to chat with a virtual health bot with the option to escalate up to a human agent if needed.
 
-### Exercise 3: Embed Health Bot in Power Apps Portal
+## Exercise 3: Embed Health Bot in Power Apps Portal
 
 In this exercise, you will be embedding the **Omnichannel Chat Widget** into the Power Apps Customer self-service portal using Portal Management configuration. In your environment, we created a Lamna Healthcare Company Portal using the **Customer self-service portal** template before deploying Microsoft Cloud for Healthcare. Now we will configure the chat widget to show on the customer website.
 
@@ -491,7 +491,7 @@ Portal Management: Application to help you get started with the advanced portal 
 
 **Congratulations!** In this exercise you have successfully updated the chat widget in the Power App Portal Content Snippets. With this configuration, the Health Bot will be visible on the Power Apps portal for both the customer self-service template and the healthcare patient portal template.
 
-### Exercise 4: Extend Azure Health Bot with Custom Scenarios
+## Exercise 4: Extend Azure Health Bot with Custom Scenarios
 
 **Dynamics 365 Omnichannel** integration allows the patient to interact with **Azure Health Bot** using the Dynamics 365 chat widget to access the medical knowledge and your custom scenarios. It also, allows the escalation of a bot conversation to a live agent to continue the interaction. When escalating a conversation, Dynamics passes along the conversation history and the context to the agent.
 
@@ -504,7 +504,7 @@ In this exercise, you will be doing the following:
 -   Design another Health Bot Scenario called **MCH_PatientServiceWelcome**. This scenario holds the starting statement which will allow the user to invoke the **MCH_PatientService** scenario.
 -   Set the **Automatic Welcome Scenario** to be the MCH_PatientServiceWelcome custom scenario you create. This will begin the scenario when a user first interacts with the Health Bot.
 
-#### Task 1: Create MCH_PatientService Scenario
+### Task 1: Create MCH_PatientService Scenario
 
 In this task, you will create the **MCH_PatientService** bot scenario using the designer canvas.
 
@@ -530,7 +530,7 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
     ![A screenshot of a computer Description automatically generated](./IMAGES/Lab02/L2P97.png)
 
-##### Step 1: Add Bot Introduction Statement
+#### Step 1: Add Bot Introduction Statement
 
 1.  Add a beginning **Statement** to the scenario by selecting the icon and dragging Statement icon onto the editor.
 
@@ -546,7 +546,7 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
     ![A picture containing graphical user interface Description automatically generated](./IMAGES/Lab02/L2P100.png)
 
-##### Step 2: Add Statement for Medication Request or Live Agent
+#### Step 2: Add Statement for Medication Request or Live Agent
 
 This section prompts two buttons Medication Refill and Live Agent. When user click any one of the buttons it will set the appropriate text to the variable MedicationOrAgent.
 
@@ -602,7 +602,7 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P110.png)
 
-##### Step 3: Add MedicationOrAgent Decision Branch
+#### Step 3: Add MedicationOrAgent Decision Branch
 
 This section checks whether the user has clicked Medication Refill or Live Agent with the help of the variable MedicationOrAgent. It will redirect the message accordingly.
 
@@ -620,7 +620,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P113.png)
 
- ##### Step 4: Prompt User to Enter Data for Medication Refill Option
+##### Step 4: Prompt User to Enter Data for Medication Refill Option
 
 1.  Add a **Prompt** element. This will be used to display the Form data (using Adaptive Card) to capture Patient name, email, and phone to create an appointment.
 
@@ -654,7 +654,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P119.png)
 
-##### Step 5: Add Confirmation Statement
+#### Step 5: Add Confirmation Statement
 
 1.  Add a **Statement** element.
 
@@ -678,7 +678,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab02/L2P124.png)
 
-##### Step 6: Invoke Live Agent Action
+#### Step 6: Invoke Live Agent Action
 
 1.  Add a **Statement** element to the canvas.
 
@@ -696,7 +696,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P127.png)
 
-##### Step 7: Add Action to Invoke Escalation
+#### Step 7: Add Action to Invoke Escalation
 
 1.  Add an **Action** element to the canvas, used to trigger an escalation to Omnichannel Live Agent
 
@@ -728,7 +728,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Graphical user interface, application, Word Description automatically generated](./IMAGES/Lab02/L2P132.png)
 
-#### Task 2: Create MCH_PatientServiceWelcome Scenario**
+### Task 2: Create MCH_PatientServiceWelcome Scenario**
 
 In this task, you will create another bot scenario called **MCH_PatientServiceWelcome** to invoke the **MCH_PatientService** scenario.
 
@@ -779,7 +779,7 @@ In this task, you will create another bot scenario called **MCH_PatientServiceWe
 
 1.  Exit the scenario designer.
 
-#### Task 3: Configure Welcome Scenario as Automatic
+### Task 3: Configure Welcome Scenario as Automatic
 
 In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic Welcome Scenario” in settings. This will always trigger the welcome scenario when a user starts a conversion with the **Azure** **Health Bot**.
 
@@ -795,7 +795,7 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P145.png)
 
-#### Task 4: Test Health Bot Escalation from Power Apps Portal to Dynamics 365 Omnichannel
+### Task 4: Test Health Bot Escalation from Power Apps Portal to Dynamics 365 Omnichannel
 
 1.  Navigate to **Power Apps** and click to open **Lamna Healthcare Patient Portal**.
 
