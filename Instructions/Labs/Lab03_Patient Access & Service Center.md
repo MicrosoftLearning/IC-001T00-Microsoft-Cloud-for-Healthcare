@@ -43,7 +43,7 @@ In this lab, you will:
 -   Create and configure Knowledge Articles
 -   Experience escalation scenario from Patient Portal through Azure Health Bot into Patient Service Center
 
-## Step 1: Configure & Navigate the Patient Access Portal
+## Exercise 1: Configure & Navigate the Patient Access Portal
 
 In this exercise, you will learn how to do the following:
 
@@ -340,7 +340,7 @@ In this task, you will continue as **Casey** and navigate the features of the Pa
 
 **Congratulations!** You have navigated the Patient Portal to see what information and communication is available to the Patient. In this exercise, you learned how to configure the Patient Access Portal to display as the Healthcare Patient Portal, modify the portal to display the company name, invite patients to register to the website, and navigate the website features.
 
-## Step 2: Configure Agent Scripts
+## Exercise 2: Configure Agent Scripts
 
 Lamna Healthcare Company wants to ensure they have proper tools in place to provide the best service and guidance during patient interactions.
 
@@ -512,7 +512,7 @@ In this task, you will associate the agent script with a session template so it 
 
 **Congratulations!** You have successfully created an agent script with two steps and associated the agent script with the default chat session. Now your agents can use this script during a default chat session with a patient.
 
-## Step 3: Configure Knowledge Articles
+## Exercise 3: Configure Knowledge Articles
 
 In this exercise, you will learn how to create and manage **Knowledge Articles** that can address any number of issues your customers would like to discuss during the patient service center conversation. These knowledge articles will appear in the productivity pane in Patient Service Center through AI-enabled suggestions.
 
@@ -729,7 +729,7 @@ In this task, you will learn how to publish the knowledge article so it’s live
 
 **Congratulations!** You have successfully reviewed and published the knowledge article. We will see these knowledge articles highlighted in Patient Service Center when testing the final escalation.
 
-## Step 4: Experience Escalation & Smart Assist Features
+## Exercise 4: Experience Escalation & Smart Assist Features
 
 In this exercise, you will utilize the Smart Assist features and test the full experience you configured for the patient and patient service center agent. Starting from when the patient logs into the portal website, continuing with a health bot conversation, and ending with an escalation to a human agent who can provide proper care in Dynamics 365 with Agent Scripts and Knowledge Articles.
 
