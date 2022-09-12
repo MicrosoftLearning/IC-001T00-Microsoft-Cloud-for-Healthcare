@@ -1,7 +1,7 @@
 Module 4 Lesson 1- Lab 1: Patient Outreach
 ==========================================
 
-### Overview
+## Overview
 
 The **Patient Outreach** application in Microsoft Cloud for Healthcare allows
 healthcare providers to communicate with their communities and patients in a
@@ -40,7 +40,7 @@ In this lab, you will play the role of a Lamna Healthcare Company marketing
 administrator and will use the Patient Outreach capabilities in Microsoft Cloud
 for Healthcare to create a virtual marketing event.
 
-### Learning objectives
+## Learning objectives
 
 In this lab, you will:
 
@@ -49,7 +49,7 @@ In this lab, you will:
 -   Create a patient journey.
 -   Create a healthcare marketing event.
 
-### Exercise 1: Create a Patient Segment
+## Exercise 1: Create a Patient Segment
 
 In this exercise, you will create a Patient Segment using the Patient Outreach
 app in Microsoft Cloud for Healthcare. A **Patient Segment** is used to group
@@ -142,7 +142,7 @@ nearby objects are blurry).
 
 **Congratulations**! You have completed the steps to create a patient segment that groups together contacts with hypermetropia. This patient segment will be used in the next set of tasks. For more information about dynamics segments, see [Create a dynamic segment (Dynamics 365 Marketing) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/marketing/create-segment). For more information about segments in general, see [Working with segments (Dynamics 365 Marketing) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/marketing/segmentation-lists-subscriptions).
 
-### Exercise 2: Create a Marketing Email 
+## Exercise 2: Create a Marketing Email 
 
 In this exercise, you will create a marketing email that will be used to reach out to the patient segment you created in the previous exercise. Marketing emails are used to directly communicate with the patients that reside in a particular patient segment.
 
@@ -214,7 +214,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 **Congratulations**! You have completed the necessary steps to create a marketing email for patient outreach. This marketing email will be used in the
 next set of tasks. For more information on creating marketing emails, see [Create a marketing email (Dynamics 365 Marketing) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/marketing/create-marketing-email).
 
-### Exercise 3: Create a Patient Journey
+## Exercise 3: Create a Patient Journey
 
 In this exercise, you will create a Patient Journey for the patient segment that you created in the first exercise. A **Patient Journey** can expand your
 organization’s patient outreach marketing capabilities by helping healthcare organizations guide the members of a selected segment through the communication process. It does this by using automated messaging, activity generation, interactive decision points, and more.
@@ -289,7 +289,7 @@ Now let’s make our own customer journey for patients with hypermetropia.
 
 **Congratulations**! You have created a patient journey by utilizing the patient segment and marketing email you created in the previous exercise. For more information on patient journeys, see [Create a simple customer journey (Dynamics 365 Marketing) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/marketing/create-simple-customer-journey).
 
-### Exercise 4: Create a Virtual Healthcare Educational Event
+## Exercise 4: Create a Virtual Healthcare Educational Event
 
 In this exercise, you will create a healthcare-focused, virtual educational **Event** corresponding to the patient journey you created in the previous exercise that sends the Healthy Eye Seminar event invite to everyone in the patient segment. The **Marketing Event Management** feature helps you every step of the way, from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting, final analytics, lead generation, and evaluation of ROI.
 
