@@ -1,6 +1,6 @@
 # Module 4 Lesson 1- Lab 3: Patient Access & Service Center
 
-### Overview
+## Overview
 
 Microsoft Cloud for Healthcare includes Patient Access and Patient Service Center.
 
@@ -34,7 +34,7 @@ Casey is an avid runner but has exercise-induced asthma and requires an albutero
 
 In this lab, you'll first play the role of a Lamna Healthcare system administrator, where you'll set up the Patient Access portal and various tools in the Patient Service Center application. Next, you'll play the role of Casey, who will sign in to the portal, navigate the various options, interact with the Azure Health Bot, and escalate to a live agent in Patient Service Center to refill the medication.
 
-### Learning objectives
+## Learning objectives
 
 In this lab, you will:
 
@@ -43,7 +43,7 @@ In this lab, you will:
 -   Create and configure Knowledge Articles
 -   Experience escalation scenario from Patient Portal through Azure Health Bot into Patient Service Center
 
-### Step 1: Configure & Navigate the Patient Access Portal
+## Step 1: Configure & Navigate the Patient Access Portal
 
 In this exercise, you will learn how to do the following:
 
@@ -61,7 +61,7 @@ Here’s what you should see after configuring and logging into the Healthcare P
 
 If you’d like to learn more about portals, check out Microsoft Docs: [What is Power Apps portals?](https://docs.microsoft.com/en-us/powerapps/maker/portals/overview)
 
-**Task 1: Configure the Healthcare Patient Portal**
+### Task 1: Configure the Healthcare Patient Portal
 
 Prior to deploying Microsoft Cloud for Healthcare, we created a portal in your environment using the **Customer Self-Service** template. This was a prerequisite to install the Healthcare Patient Portal as part of the Patient Access module.
 
@@ -149,7 +149,7 @@ We will first open the Portal to show the Customer Self-Service template current
 
 **Congratulations!** You completed the post deployment steps to configure the Healthcare Patient Portal template deployed from Patient Access. After updating the bindings and restarting the portal, the website now shows as Healthcare Patient Portal template rather than Customer Self-Service.
 
-**Task 2: Modify Company Name in Patient Portal**
+### Task 2: Modify Company Name in Patient Portal
 
 In this task, we will edit the Patient Portal website to align the name with Lamna Healthcare Company since the template uses a generic company name.
 
@@ -193,7 +193,7 @@ In this task, we will edit the Patient Portal website to align the name with Lam
 
 **Congratulations!** You completed modifying the Healthcare Patient Portal to display the correct company name.
 
-**Task 3: Invite a Patient to the Portal**
+### Task 3: Invite a Patient to the Portal
 
 Now that the Patient Portal is ready to go, we need to allow Lamna Healthcare patients to create accounts.
 
@@ -225,7 +225,7 @@ In this task, you will learn how to **create an invitation code** for patients t
 
 **Congratulations!**  You have successfully created an invitation code for **Casey** to register an account in the Patient Portal.
 
-**Task 4: Redeem Invitation Code and Sign into Patient Portal**
+### Task 4: Redeem Invitation Code and Sign into Patient Portal
 
 In this task, you will **transition personas** and act as **Casey Jensen**, who just received an invitation code to Lamna Healthcare’s Patient Portal and is excited to register and navigate its features.
 
@@ -262,7 +262,7 @@ In this task, you will **transition personas** and act as **Casey Jensen**, who 
 
 **Congratulations!** You have successfully redeemed an invitation to register an account for Casey and signed in.
 
-**Task 5: Navigate the Patient Access Portal**
+### Task 5: Navigate the Patient Access Portal
 
 In this task, you will continue as **Casey** and navigate the features of the Patient Portal.
 
@@ -340,7 +340,7 @@ In this task, you will continue as **Casey** and navigate the features of the Pa
 
 **Congratulations!** You have navigated the Patient Portal to see what information and communication is available to the Patient. In this exercise, you learned how to configure the Patient Access Portal to display as the Healthcare Patient Portal, modify the portal to display the company name, invite patients to register to the website, and navigate the website features.
 
-### Step 2: Configure Agent Scripts
+## Step 2: Configure Agent Scripts
 
 Lamna Healthcare Company wants to ensure they have proper tools in place to provide the best service and guidance during patient interactions.
 
@@ -354,7 +354,7 @@ In this exercise, you will create an agent script to appear in the productivity 
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P61.png)
 
-**Task 1: Assign Productivity Tools Administrator Role**
+### Task 1: Assign Productivity Tools Administrator Role
 
 In this task, you will assign the necessary roles to your user to create and use agent scripts. Specifically, you will be adding the **Productivity tools administrator** and **Productivity tools user** roles. The Productivity tools administrator can do any action (create/read/write/append/delete) on the agent script, while the Productivity tools user only has read capabilities. Since we are creating them, we need the administrator role.
 
@@ -410,7 +410,7 @@ See the following documentation to learn more about these roles: [Assign roles a
 
 **Congratulations!** You have successfully assigned the necessary **Productivity tools** user roles to set up and use agent scripts.
 
-**Task 2: Create an Agent Script**
+### Task 2: Create an Agent Script
 
 In this task, you will create an agent script in the Omnichannel admin center app. This script will guide the agent to **validate patient information** when a conversation is initiated between a patient and an agent in Patient Service Center. The script will have two steps, one to **confirm phone information** and another to **verify insurance information**. This task will guide you through creation of this agent script and its steps.
 
@@ -470,7 +470,7 @@ In this task, you will create an agent script in the Omnichannel admin center ap
 
 **Congratulations!** You have completed creating an agent script with two steps to validate patient information, including phone number and insurance information.
 
-**Task 3: Associate the Agent Script with a Session Template**
+### Task 3: Associate the Agent Script with a Session Template
 
 In this task, you will associate the agent script with a session template so it will load for agents based on the type of session they’ve opened. We will be associating the agent script we just created with the **Default chat session.** This is the default chat session that opens during an escalation to an agent in Patient Service Center.
 
@@ -500,7 +500,7 @@ In this task, you will associate the agent script with a session template so it 
 
 1.  In the **Look for Records** box, select the **search** icon (magnifying glass).
 
-  ![Screenshot of selecting "Validate Patient Information" which shows as agent script record](./IMAGES/Lab03/L3P87.png)
+    ![Screenshot of selecting "Validate Patient Information" which shows as agent script record](./IMAGES/Lab03/L3P87.png)
  
 1.  Select the **Validate Patient Information** agent script from the list and click **Add.**
 
@@ -512,13 +512,13 @@ In this task, you will associate the agent script with a session template so it 
 
 **Congratulations!** You have successfully created an agent script with two steps and associated the agent script with the default chat session. Now your agents can use this script during a default chat session with a patient.
 
-### Step 3: Configure Knowledge Articles
+## Step 3: Configure Knowledge Articles
 
 In this exercise, you will learn how to create and manage **Knowledge Articles** that can address any number of issues your customers would like to discuss during the patient service center conversation. These knowledge articles will appear in the productivity pane in Patient Service Center through AI-enabled suggestions.
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P90.jpg)
 
-**Task 1: Assign Knowledge Manager User Role**
+### Task 1: Assign Knowledge Manager User Role
 
 In this task, we will assign the necessary user role to create and view knowledge articles.
 
@@ -545,7 +545,7 @@ In this task, we will assign the necessary user role to create and view knowledg
 
 **Congratulations!** You have assigned the proper roles to create and read knowledge articles.
 
-**Task 2: Set up Knowledge Management Settings**
+### Task 2: Set up Knowledge Management Settings
 
 1.  In [Power Apps](http://make.powerapps.com), open the **Customer Service Hub** app.
 
@@ -576,7 +576,7 @@ In this task, we will assign the necessary user role to create and view knowledg
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P99.png)
 
-**Task 3: Create Knowledge Article**
+### Task 3: Create Knowledge Article
 
 In this task, you will create a new knowledge article about Asthma for agents to access during patient conversations.
 
@@ -605,49 +605,45 @@ In this task, you will create a new knowledge article about Asthma for agents to
 
     4.  In the **Content** section, copy and paste the content for your knowledge article.
 
-**Common causes**
+    **Common causes**
 
-Shortness of breath is not always related to an underlying condition. It may be caused by:
+    Shortness of breath is not always related to an underlying condition. It may be caused by:
+    - Aerobic exercise
+    - Intense physical activity
+    - High altitude with lower oxygen levels
+    - Poor cardiovascular fitness
+    - Anxiety
+    - Being obese
+    - General weakness
 
-• Aerobic exercise
-• Intense physical activity
-• High altitude with lower oxygen levels
-• Poor cardiovascular fitness
-• Anxiety
-• Being obese
-• General weakness
+    **Treatment**
 
-**Treatment**
+    Self-treatment: Self- care steps that may be helpful in some less- serious cases:
+    - Stop smoking
+    - Avoid exposure to pollutants, allergens and environmental toxins
+    - Lose weight if overweight
+    - Avoid exertion at elevations
+    - Take slow even breaths
+    - When you breathe out, put your lips together, like slowly blowing out a candle (Pursed Lip Breathing)
 
-Self-treatment: Self- care steps that may be helpful in some less- serious cases:
+    **See a doctor if you notice:**
+    - Chest pain or pressure
+    - Inability to function
 
-• Stop smoking
-• Avoid exposure to pollutants, allergens and environmental toxins
-• Lose weight if overweight
-• Avoid exertion at elevations
-• Take slow even breaths
-• When you breathe out, put your lips together, like slowly blowing out a candle (Pursed Lip Breathing)
-
-**See a doctor if you notice:**
-
-• Chest pain or pressure
-• Inability to function
-
-**See a doctor immediately if you notice:**
-
-• Fever or a change in the amount, color, or thickness of sputum
-• Breathlessness does not go away after resting for 30 minutes
-• Swelling in the feet and ankles
-• Trouble breathing when you lie flat
-• High fever, chills, and cough
-• Wheezing
-• Worsening of pre- existing shortness of breath
+    **See a doctor immediately if you notice:**
+    - Fever or a change in the amount, color, or thickness of sputum
+    - Breathlessness does not go away after resting for 30 minutes
+    - Swelling in the feet and ankles
+    - Trouble breathing when you lie flat
+    - High fever, chills, and cough
+    - Wheezing
+    - Worsening of pre- existing shortness of breath
 
 1.  Select **Save**.
 
     ![Screenshot of save button on command bar for the new knowledge article](./IMAGES/Lab03/L3P105.png)
 
-The Business Process flow bar at the top of the form helps you to drive the article towards completeness. You have the option to customize the stages in the Business Process flow to suit your requirements. We will now complete the author stage so it can move into review.
+    The Business Process flow bar at the top of the form helps you to drive the article towards completeness. You have the option to customize the stages in the Business Process flow to suit your requirements. We will now complete the author stage so it can move into review.
 
 1.  On the Business process bar, select **Author**. The business step options should pop out below.
 
@@ -669,7 +665,7 @@ The Business Process flow bar at the top of the form helps you to drive the arti
 
 **Congratulations!** You have successfully created a knowledge article for Shortness of Breath and marked it for review.
 
-**Task 4: Review and Publish Knowledge Article**
+### Task 4: Review and Publish Knowledge Article
 
 To ensure accuracy of the knowledge article, typically someone else would review and approve it. For this training exercise, you will mark the article reviewed and approved yourself. Quick note that this task also requires the Knowledge Manager role or another that can approve knowledge articles.
 
@@ -701,7 +697,7 @@ To ensure accuracy of the knowledge article, typically someone else would review
 
 **Congratulations!** You have successfully reviewed and approved the knowledge article. We will show you how to publish the Knowledge Articles to be available during patient service center calls.
 
-**Task 5: Publish your Knowledge Article**
+### Task 5: Publish your Knowledge Article
 
 In this task, you will learn how to publish the knowledge article so it’s live and ready to be used.
 
@@ -733,7 +729,7 @@ In this task, you will learn how to publish the knowledge article so it’s live
 
 **Congratulations!** You have successfully reviewed and published the knowledge article. We will see these knowledge articles highlighted in Patient Service Center when testing the final escalation.
 
-### Step 4: Experience Escalation & Smart Assist Features
+## Step 4: Experience Escalation & Smart Assist Features
 
 In this exercise, you will utilize the Smart Assist features and test the full experience you configured for the patient and patient service center agent. Starting from when the patient logs into the portal website, continuing with a health bot conversation, and ending with an escalation to a human agent who can provide proper care in Dynamics 365 with Agent Scripts and Knowledge Articles.
 
@@ -741,7 +737,7 @@ The following screen shows Patient Service Center after a patient has been escal
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P119.jpg)
 
-**Task 1: Patient Logs into Access Portal & Agent logs into Patient Service Center**
+### Task 1: Patient Logs into Access Portal & Agent logs into Patient Service Center
 
 1.  Navigate to Power Apps and open the **Lamna Healthcare Patient Portal** app.
 
@@ -773,13 +769,13 @@ The following screen shows Patient Service Center after a patient has been escal
 
     1.  If you don’t see the splash screen and the presence indicator is grayed out, escalation into the app from the health bot won’t work properly.
     1.  Refresh again or close and reopen Patient Service Center until the splash screen appears. You may need to close all other apps or close incognito altogether and sign back in.
-    1.  If you just assigned the Omnichannel agent role, it may take up to 15 minutes to apply and for the presence to show for your user.
+   1.  If you just assigned the Omnichannel agent role, it may take up to 15 minutes to apply and for the presence to show for your user.
 
 1.  Once your presence indicator is green, you are ready to accept patient escalations.
 
 **Congratulations!** You have successfully logged in as both the patient and the live agent. Now it’s time to start the Health Bot conversation.
 
-**Task 2: Patient Escalates through Healthcare Bot**
+### Task 2: Patient Escalates through Healthcare Bot
 
 1.  Select the **Let’s Chat** Health Bot chat widget in the bottom right corner of the portal.
 
@@ -803,7 +799,7 @@ The following screen shows Patient Service Center after a patient has been escal
 
 **Congratulations!** You have successfully configured and started a conversation with the Health Bot in the Healthcare Patient Portal and asked to escalate to an agent in Patient Service Center.
 
-**Task 3: Agent Provides Personalized Care in Patient Service Center with the Productivity Pane**
+### Task 3: Agent Provides Personalized Care in Patient Service Center with the Productivity Pane
 
 In this task, you will act as the Patient Service Center Agent, accept the escalation from the healthbot and assist the patient with their issue by using the productivity pane.
 
