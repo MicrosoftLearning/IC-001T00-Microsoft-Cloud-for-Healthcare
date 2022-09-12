@@ -180,9 +180,8 @@ In the following tasks, you will complete the following:
 2.  Create an Application User using the **MCH Application Id** and your **Bot ID**
 3.  Configure Queues for Bot and Agent Users
 4.  Configure a Context Variable and Routing rule to route the message either to a Bot or Agent.
--   
 
-## Task 1: Assign Omnichannel Agent Security Role
+#### Task 1: Assign Omnichannel Agent Security Role
 
 1.  While in the In-Private or Incognito window, navigate to [Power Apps](https://make.powerapps.com/).
 
@@ -547,7 +546,7 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
     ![A picture containing graphical user interface Description automatically generated](./IMAGES/Lab02/L2P100.png)
 
-**Step 2: Add Statement for Medication Request or Live Agent**
+##### Step 2: Add Statement for Medication Request or Live Agent
 
 This section prompts two buttons Medication Refill and Live Agent. When user click any one of the buttons it will set the appropriate text to the variable MedicationOrAgent.
 
@@ -603,7 +602,7 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P110.png)
 
-**Step 3: Add MedicationOrAgent Decision Branch**
+##### Step 3: Add MedicationOrAgent Decision Branch
 
 This section checks whether the user has clicked Medication Refill or Live Agent with the help of the variable MedicationOrAgent. It will redirect the message accordingly.
 
@@ -621,7 +620,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P113.png)
 
-**Step 4: Prompt User to Enter Data for Medication Refill Option**
+ ##### Step 4: Prompt User to Enter Data for Medication Refill Option
 
 1.  Add a **Prompt** element. This will be used to display the Form data (using Adaptive Card) to capture Patient name, email, and phone to create an appointment.
 
@@ -655,7 +654,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P119.png)
 
-**Step 5: Add Confirmation Statement**
+##### Step 5: Add Confirmation Statement
 
 1.  Add a **Statement** element.
 
@@ -679,7 +678,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab02/L2P124.png)
 
-**Step 6: Invoke Live Agent Action**
+##### Step 6: Invoke Live Agent Action
 
 1.  Add a **Statement** element to the canvas.
 
@@ -697,7 +696,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P127.png)
 
-**Step 7: Add Action to Invoke Escalation**
+##### Step 7: Add Action to Invoke Escalation
 
 1.  Add an **Action** element to the canvas, used to trigger an escalation to Omnichannel Live Agent
 
@@ -729,7 +728,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Graphical user interface, application, Word Description automatically generated](./IMAGES/Lab02/L2P132.png)
 
-**Task 2: Create MCH_PatientServiceWelcome Scenario**
+#### Task 2: Create MCH_PatientServiceWelcome Scenario**
 
 In this task, you will create another bot scenario called **MCH_PatientServiceWelcome** to invoke the **MCH_PatientService** scenario.
 
@@ -780,7 +779,7 @@ In this task, you will create another bot scenario called **MCH_PatientServiceWe
 
 1.  Exit the scenario designer.
 
-**Task 3: Configure Welcome Scenario as Automatic**
+#### Task 3: Configure Welcome Scenario as Automatic
 
 In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic Welcome Scenario” in settings. This will always trigger the welcome scenario when a user starts a conversion with the **Azure** **Health Bot**.
 
@@ -796,7 +795,7 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P145.png)
 
-**Task 4: Test Health Bot Escalation from Power Apps Portal to Dynamics 365 Omnichannel**
+#### Task 4: Test Health Bot Escalation from Power Apps Portal to Dynamics 365 Omnichannel
 
 1.  Navigate to **Power Apps** and click to open **Lamna Healthcare Patient Portal**.
 
