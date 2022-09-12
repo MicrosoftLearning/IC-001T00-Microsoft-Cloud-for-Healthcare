@@ -25,16 +25,10 @@ In this lab, you will:
 
 ## Exercise 1: Deploy Azure Health Data Services workspace and FHIR service to your Azure environment
 
-In the first part of this lab, you will
-
--   Use a template to deploy resources with the Azure Portal. This template will deploy
-
-    [Azure Health Data Services workspace](https://docs.microsoft.com/en-us/azure/healthcare-apis/workspace-overview)
-
+In the first part of this lab, you will use a template to deploy resources with the Azure Portal. This template will deploy
+-   [Azure Health Data Services workspace](https://docs.microsoft.com/en-us/azure/healthcare-apis/workspace-overview)
 -   [FHIR service](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
-
-    [FHIR Loader (for Lab-03)](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
-
+-   [FHIR Loader (for Lab-03)](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
 -   [FHIR-Proxy (for Lab-07)](https://github.com/microsoft/fhir-proxy)
 
 1.  To begin, CTRL+click (Windows or Linux) or CMD+click (Mac) on the Deploy to Azure button below to open the deployment form in a new browser tab.
@@ -62,12 +56,11 @@ To learn more about the resources deployed with this ARM template, view [here.](
 In the next part of this lab, you will
 
 -   Visit another page and follow the instructions on setting up Postman.
-
-    Make API calls to test FHIR service using Postman.
+-   Make API calls to test FHIR service using Postman.
 
 1. To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open a Postman tutorial in a new browser tab.
 
-[Postman Setup Tutorial](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components)
+    [Postman Setup Tutorial](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components)
 
 1. Follow the instructions and return here when finished.
 
