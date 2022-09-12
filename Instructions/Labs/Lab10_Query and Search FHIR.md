@@ -196,7 +196,6 @@ For composite searches, FHIR service in Azure Health Data Services supports the 
 -   Token, Quantity
 -   Token, String
 -   Token, Token
--   
 
 ### Task 1
 
