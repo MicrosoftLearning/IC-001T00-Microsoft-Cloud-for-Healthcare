@@ -1,6 +1,6 @@
 # Module 4 Lesson 2 Lab 6: Virtual Visits
 
-### Overview
+## Overview
 
 Microsoft Cloud for Healthcare’s Virtual Clinic application allows clinicians to use video conferencing to provide high-quality, personalized, and affordable consultations. Using the entire meetings platform in Microsoft Teams, providers will be able to schedule, manage, and conduct virtual visits with patients. The Virtual Clinic application can then be embedded inside of Microsoft Teams to provide a practitioner with a full view of their patient’s information and history all in one unique experience.
 
@@ -16,7 +16,7 @@ After coming home from hiking, Reed noticed he had a new rash on his right leg. 
 
 In this lab, you will first play the role of a Lamna Healthcare system administrator by configuring the Microsoft Cloud for Healthcare Virtual Clinic application to be used for virtual appointments. Then, you will play the role of Reed Flores by scheduling a virtual appointment with his practitioner, Alex Johnson. Finally, you will join the virtual appointment from the view of a practitioner to observe the complete end-to-end experience.
 
-### Learning objectives
+## Learning objectives
 
 In this lab, you will:
 
@@ -24,11 +24,11 @@ In this lab, you will:
 -   Configure Microsoft Teams for virtual visits
 -   Schedule a virtual visit in the Patient Portal
 
-### Step 1: Configure Virtual Clinic Application
+## Exercise 1: Configure Virtual Clinic Application
 
 In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual Clinic application. The Virtual Clinic application allows practitioners to use video conferencing in Microsoft Teams to provide high-quality, personalized, and affordable consultations for their patients.
 
-**Task 1: Create a new Practitioner Specialty for the Patient Portal**
+### Task 1: Create a new Practitioner Specialty for the Patient Portal
 
 In this task, we are going to create a new **Practitioner Specialty** for the Patient Portal. Practitioner Specialties are used to define the **reason** why a patient is booking the virtual appointment. They are defined as Codeable Concepts records, with the type of Practitioner Specialty.
 
@@ -60,7 +60,7 @@ Below is an example of the appointment booking screen in the Patient Portal. As 
 
 **Congratulations!** You have created a new Practitioner Specialty that will now be available for selection as an appointment visit in the Patient Portal.
 
-**Task 2: Configure Mapped System User on Practitioner Record**
+### Task 2: Configure Mapped System User on Practitioner Record
 
 In this task, you will configure the Mapped System User field on the Practitioner record. This field should be set to the system user that maps to the contact record. In our case here, we will set it to the record associated with our logged in user. This will allow our user to act as the practitioner in the virtual visit.
 
@@ -85,7 +85,7 @@ There are two different places the Teams meeting may be created:
 
 **Congratulations!** You have mapped the practitioner record to your logged in user.
 
-**Task 3: Enable a Practitioner’s Schedule**
+### Task 3: Enable a Practitioner’s Schedule
 
 In this task, you will configure the practitioner’s schedule to allow patients to book appointments with them using the Patient Portal. This will allow Reed to schedule an appointment with his practitioner, Alex Johnson.
 
@@ -103,7 +103,7 @@ In this task, you will configure the practitioner’s schedule to allow patients
 
 **Congratulations!** You have enabled a practitioner’s schedule to be used for booking virtual appointments.
 
-**Task 4: Configure Slots**
+### Task 4: Configure Slots
 
 In this task, we will configure a new appointment slot to show practitioner’s availability. This will allow patients to select an available appointment time slot when booking with a practitioner. In this case, we will enable the practitioner, Alex Johnson, to be available today at a set time for virtual appointments.
 
@@ -125,7 +125,7 @@ In this task, we will configure a new appointment slot to show practitioner’s 
 
 **Congratulations!** You have created a new virtual slot for Reed to book with his practitioner, Alex Johnson.
 
-**Task 5: Configure Environment Variables**
+### Task 5: Configure Environment Variables
 
 In this task, you will configure the environment variables necessary to generate a Microsoft Teams URL for virtual appointments.
 
@@ -155,7 +155,7 @@ In this task, you will configure the environment variables necessary to generate
 
 **Congratulations!** You have obtained the Virtual Visit Client ID and Virtual Visit Secret combination to be used to authenticate against the Microsoft Graph API to schedule virtual meeting events. You have also entered the email address of a primary event scheduler.
 
-**Task 6: Activate Flows and Connection References**
+### Task 6: Activate Flows and Connection References
 
 In this task, we will activate the Flows and Connection References that deployed along with the Virtual Clinic application.
 
@@ -219,7 +219,7 @@ In this task, we will activate the Flows and Connection References that deployed
 
 **Congratulations!** You have set the Connection References and turn on the Cloud flow for creating virtual appointments.
 
-### Step 2: Configure Microsoft Teams for Virtual Visits
+## Exercise 2: Configure Microsoft Teams for Virtual Visits
 
 In this exercise, you will configure integration with Microsoft Teams for Lamna Healthcare Company. Microsoft Teams offers several features useful for hospitals and other healthcare organizations. By integrating Microsoft Cloud for Healthcare with Microsoft Teams, you can improve the collaboration between your care team staff and enhance patient care. You can quickly schedule and conduct virtual visits remotely with patients.
 
@@ -229,7 +229,7 @@ Additionally, your care team can use Microsoft Teams internally to do the follow
 -   Store and share files and documents to collaborate.
 -   Use Shifts to create, manage, and share schedules among your staff.
 
-**Task 1: Install and Set up Microsoft Teams Integration**
+### Task 1: Install and Set up Microsoft Teams Integration
 
 By default, the Basic and Enhanced Microsoft Teams integration is disabled for customer engagement apps in Dynamics 365. In this Task, we will enable Microsoft Teams in Dynamics 365.
 
@@ -281,7 +281,7 @@ By default, the Basic and Enhanced Microsoft Teams integration is disabled for c
 
 **Congratulations!** You have enabled Microsoft Teams integration for Dynamics 365.
 
-**Task 2: Embed Virtual Clinic App in Microsoft Teams**
+### Task 2: Embed Virtual Clinic App in Microsoft Teams
 
 In this task, you will customize the Microsoft Teams experience for a practitioner by embedding the Virtual Clinic app to the Teams channel in your environment. We will be utilizing the Microsoft Teams web experience for this task.
 
@@ -329,11 +329,11 @@ In this task, you will customize the Microsoft Teams experience for a practition
 
 **Congratulations!** You have embedded the Virtual Clinic app in Microsoft Teams.
 
-### Step 3: Schedule a Virtual Visit
+## Exercise 3: Schedule a Virtual Visit
 
 In this final exercise, you will use the items that you configured in the previous exercises to schedule a virtual visit between Reed Flores and his practitioner, Alex Johnson.
 
-**Task 1: Schedule an Instant Virtual Appointment**
+### Task 1: Schedule an Instant Virtual Appointment
 
 In this task, you will log in to the Patient Portal as Reed Flores and schedule an instant virtual appointment.
 
@@ -444,4 +444,3 @@ In this task, you will log in to the Patient Portal as Reed Flores and schedule 
     ![Graphical user interface, website Description automatically generated](./IMAGES/Lab06/L6P80.png)
 
 **Congratulations!** You have scheduled an instant virtual appointment using the patient portal and joined the appointment as a practitioner using the Virtual Clinic app embedded in Microsoft Teams.
-
