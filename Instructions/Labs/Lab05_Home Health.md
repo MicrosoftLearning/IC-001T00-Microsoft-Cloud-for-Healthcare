@@ -23,7 +23,7 @@ Monica sprained her knee while ice skating last winter and was prescribed at-hom
 
 In this lab, you will play the role of a Lamna Healthcare Company Home Health dispatcher to configure the Home Health application.
 
-### Learning objectives
+## Learning objectives
 
 In this lab, you will:
 
