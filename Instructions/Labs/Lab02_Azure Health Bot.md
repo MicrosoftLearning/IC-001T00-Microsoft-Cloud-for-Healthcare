@@ -620,7 +620,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P113.png)
 
-##### Step 4: Prompt User to Enter Data for Medication Refill Option
+#### Step 4: Prompt User to Enter Data for Medication Refill Option
 
 1.  Add a **Prompt** element. This will be used to display the Form data (using Adaptive Card) to capture Patient name, email, and phone to create an appointment.
 
