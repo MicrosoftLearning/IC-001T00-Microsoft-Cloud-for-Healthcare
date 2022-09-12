@@ -1,6 +1,6 @@
 # Module 5 Lesson 4 Lab 7: Deploy Azure Health Data Services workspace and FHIR service
 
-### Overview
+## Overview
 
 In this lab, you will deploy an **Azure Health Data Services workspace** containing a **FHIR service** instance. In addition, you will set up Postman as your application for testing the FHIR service API.
 
@@ -14,7 +14,7 @@ In the Azure health ecosystem, the Azure Health Data Services workspace is a log
 
 The workspace also creates a compliance boundary (HIPAA, HITRUST) within which protected health information can travel. This means that [Role-Based Access Control (RBAC)](https://docs.microsoft.com/azure/healthcare-apis/configure-azure-rbac), private network data transit with [Private Link](https://docs.microsoft.com/azure/healthcare-apis/healthcare-apis-configure-private-link), and [event messages](https://docs.microsoft.com/azure/healthcare-apis/events/events-deploy-portal) can all be configured at the workspace level – reducing your system management complexity.
 
-### Learning objectives
+## Learning objectives
 
 In this lab, you will:
 
@@ -23,7 +23,7 @@ In this lab, you will:
 -   Create an AAD service client for Postman and grant it access to your FHIR service
 -   Configure and use Postman for sending web API requests to your FHIR service
 
-### Step 1: Deploy Azure Health Data Services workspace and FHIR service to your Azure environment
+## Exercise 1: Deploy Azure Health Data Services workspace and FHIR service to your Azure environment
 
 In the first part of this lab, you will
 
@@ -36,13 +36,14 @@ In the first part of this lab, you will
     [FHIR Loader (for Lab-03)](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
 
 -   [FHIR-Proxy (for Lab-07)](https://github.com/microsoft/fhir-proxy)
+
 1.  To begin, CTRL+click (Windows or Linux) or CMD+click (Mac) on the Deploy to Azure button below to open the deployment form in a new browser tab.
 
     ![](./IMAGES/Lab07/L7P2.png)
 
 1.  Select or fill in the parameter values (see image below).
 
-Important: In order to successfully deploy resources with this ARM template, the user must have [Owner](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner) rights for the [Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) where the components are deployed. Before running the ARM template, it is recommended to create a new resource group first and check that you have Owner permissions. Once you confirm that you have Owner rights, then select that resource group in the dropdown menu when you fill out the deployment form (see \#3 below).
+    Important: In order to successfully deploy resources with this ARM template, the user must have [Owner](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner) rights for the [Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) where the components are deployed. Before running the ARM template, it is recommended to create a new resource group first and check that you have Owner permissions. Once you confirm that you have Owner rights, then select that resource group in the dropdown menu when you fill out the deployment form (see \#3 below).
 
 1.  Enter a custom **Deployment Prefix**. This prefix will be prepended to the names of all created resources ("trn05" is shown as an example prefix).
 
@@ -56,7 +57,7 @@ Note: This deployment typically takes 20 minutes. During the deployment, you can
 
 To learn more about the resources deployed with this ARM template, view [here.](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components)
 
-### Step 2 - Set up Postman and test FHIR service
+## Exercise 2 - Set up Postman and test FHIR service
 
 In the next part of this lab, you will
 
@@ -64,22 +65,18 @@ In the next part of this lab, you will
 
     Make API calls to test FHIR service using Postman.
 
-To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open a Postman tutorial in a new browser tab.
+1. To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open a Postman tutorial in a new browser tab.
 
 [Postman Setup Tutorial](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components)
 
-Follow the instructions and return here when finished.
+1. Follow the instructions and return here when finished.
 
 What does success look like for Lab 7?
 
 -   Azure Health Data Services workspace and FHIR service deployed and available in Azure.
-
-    Other Azure resources for later labs successfully deployed. Template deployment must show no errors.
-
+-   Other Azure resources for later labs successfully deployed. Template deployment must show no errors.
 -   App registration created in Azure Active Directory for use with Postman and your FHIR service.
-
-    Postman set up and able to connect with your FHIR service.
-
+-   Postman set up and able to connect with your FHIR service.
     -   Capability Statement from your FHIR service – received.
 
         {
@@ -105,8 +102,5 @@ What does success look like for Lab 7?
         }
 
 -   POST AuthorizeGetToken call in Postman to obtain an AAD access token – succeeded.
-
-    POST Save Patient call in Postman to populate FHIR service with a Patient Resource – succeeded.
-
+-   POST Save Patient call in Postman to populate FHIR service with a Patient Resource – succeeded.
 -   GET List Patients call in Postman to retrieve a bundle with at least one Patient Resource from your FHIR service – succeeded
-
