@@ -1,6 +1,6 @@
 # Module 4 Lesson 2 Lab 5: Home Health
 
-### Overview
+## Overview
 
 Microsoft Cloud for Healthcare’s **Home Health** application allows provider personnel to schedule appointments for the patient based on a variety of factors. It allows for the communication of the right information, at the right time, to the right people, to provide safe and effective care to your patients. Manage home visit schedules, notify patients, and give access to medical information to the provider on the go.
 
@@ -31,7 +31,7 @@ In this lab, you will:
 -   Configure the Schedule Board
 -   Leverage Care Management Components with the Field Service Mobile App
 
-### Step 1: Create a Bookable Resource
+## Exercise 1: Create a Bookable Resource
 
 In this exercise, you will learn how to create a **Bookable Resource** to be used for scheduling a Home Health Work Order. A bookable resource in the Microsoft Cloud for Healthcare is anything that needs to be scheduled. This most commonly includes people, equipment, and physical spaces (facilities). Bookable Resources must be created before scheduling a Home Health Work Order.
 
@@ -69,7 +69,6 @@ Now let’s create a Bookable Resource in the Home Health application.
     ![Pick a User and select their Time Zone](./IMAGES/Lab05/L5P7.png)
 
 1.  Click **Scheduling** to decide where the resource starts and ends his or her working day for scheduling and routing purposes. There are three options available when selecting the **Start/End location** for the Bookable Resource:
-  
     1. **Location agnostic** - select this option if the location of this resource is not required for the business need and does not need to be considered during the scheduling process. Note that if the work location of a requirement is set to on site, location agnostic resources will not return in results.
     1. **Resource Address** - select this option if the resource starts and ends his or her day at a unique location. The exact location is derived from the latitude and longitude values on the related user, account, or contact records depending on the resource type.
     1. **Organizational Unit** - select this option if the resource starts and ends the day at an organizational unit, typically representing a company location.
@@ -82,14 +81,14 @@ Now let’s create a Bookable Resource in the Home Health application.
 
     ![Chart, scatter chart Description automatically generated](./IMAGES/Lab05/L5P9.png)
 
-1.  **Save** the record.
+1.  Save the record.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab05/L5P10.png)
 
 1.  After saving the bookable resource, it's time to set the working hours of the resource. Working hours are considered by the following:
--   The schedule board by displaying working and nonworking hours as different colors.
--   The schedule assistant by only displaying resources that are working in the result.
--   Resource Scheduling Optimization, which automatically books requirements to resources that are working.
+    1. The schedule board by displaying working and nonworking hours as different colors.
+    1. The schedule assistant by only displaying resources that are working in the result.
+    1. Resource Scheduling Optimization, which automatically books requirements to resources that are working.
 
     Click **Show Work Hours** on the command bar:
 
@@ -119,13 +118,13 @@ Now let’s create a Bookable Resource in the Home Health application.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P17.png)
 
-Note: Characteristics represent a resource's skills and certifications. This could be concrete, like a CPR certification; more general, like accounting or web development experience; or as simple as security clearance for a specific building or fluency in the Spanish language.
+    Note: Characteristics represent a resource's skills and certifications. This could be concrete, like a CPR certification; more general, like accounting or web development experience; or as simple as security clearance for a specific building or fluency in the Spanish language.
 
 1.  If you’d like more data in the system, you may create two more Bookable Resources following the same process. For each of them, select **Contact** as the **Resource Type** and choose any Contact in the system. Choose **Location Agnostic** just as before and click **Save**. Configure the **Work Hours** the same as the previous Bookable Resource and click **Save & Close**.
 
 **Congratulations**! You have created a Bookable Resource. In the next task, we will use this bookable resource to help configure the Schedule Board. For more information on bookable resources, see [Set up bookable resources (Dynamics 365 Field Service) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/field-service/set-up-bookable-resources).
 
-### Step 2: Configure the Schedule Board
+## Exercise 2: Configure the Schedule Board
 
 In this exercise, you will configure the schedule board for the **Bookable Resource** created in the previous task. The schedule board provides an overview of resource availability and bookings you can make. Before you use the schedule board, it is important to set up the views and filters to your preference. To use the schedule board booking functionality, geocoding, and location services, you need to turn on maps.
 
@@ -185,9 +184,9 @@ Now we will associate the Thomson Household home care work order with the Spanis
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P30.png)
 
-**Important**: Make sure the **Work Order** number populated in the **Resource Requirement** field on the general tab matches the Work Order number on the **Field Service** tab on the Resource Requirement record.
+    **Important**: Make sure the **Work Order** number populated in the **Resource Requirement** field on the general tab matches the Work Order number on the **Field Service** tab on the Resource Requirement record.
 
-![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P31.png)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P31.png)
 
 1.  Click **Save & Close**. You will now see the new characteristic requirement in the subgrid.
 
@@ -231,7 +230,7 @@ Now we will associate the Thomson Household home care work order with the Spanis
 
 **Congratulations**! You have configured a Schedule Board tab and scheduled a Home Health visit using the bookable resource you created in the previous task. For more information on schedule boards, see [Use and configure the schedule board (Dynamics 365 Field Service) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/field-service/configure-schedule-board).
 
-### Step 3 – BONUS : Leverage Care Management Components with Field Service Mobile App
+## Exercise 3 – BONUS : Leverage Care Management Components with Field Service Mobile App
 
 In this exercise, we will walk you through the **Field Service Mobile App** and demonstrate how to leverage **Care Management** components from the perspective of a Nurse or a Physical Therapist out in the field working with a patient. We will explain the installation process, how to set up **Home Health** users and security profiles, and how to use the mobile app to complete work orders.
 
@@ -248,7 +247,7 @@ Here is a calendar view of scheduled work orders:
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P42.png)
 
-**Task 1: Assign Security Roles to Field Service Mobile Users**
+### Task 1: Assign Security Roles to Field Service Mobile Users
 
 In this task we will assign the Field Service – Resource role to Home Health workers.
 
@@ -284,7 +283,7 @@ In this task we will assign the Field Service – Resource role to Home Health w
 
 **Congratulations**! You have assigned the Field Service – Resource role to a Field Service Mobile Home Health user in the Microsoft Cloud for Healthcare.
 
-**Task 2: Download the Field Service Mobile app and sign in**
+### Task 2: Download the Field Service Mobile app and sign in
 
 In this task, we will walk through how to download the Field Service Mobile app to an iOS or Android device and sign in.
 
@@ -298,7 +297,7 @@ In this task, we will walk through how to download the Field Service Mobile app 
     
 **Congratulations**! You have downloaded and signed into the Field Service Mobile as a Home Health user in the Microsoft Cloud for Healthcare
 
-**Task 3: Use the Field Service Mobile app to manage Home Health Work Orders**
+### Task 3: Use the Field Service Mobile app to manage Home Health Work Orders
 
 In the last exercise, we assigned **Home Health Work Order** 00034 to our Home Health Bookable Resource. We will now view and make updates to the work order in the Field Service mobile app, and then view those changes in the Microsoft Cloud for Healthcare Home Health app.
 
@@ -337,4 +336,3 @@ In the last exercise, we assigned **Home Health Work Order** 00034 to our Home H
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P66.png)
 
 **Congratulations!** You have assigned a Home Health Work Order to a Home Health Bookable Resource, made updates to the work order in the Field Service mobile app, and then viewed those changes in the Microsoft Cloud for Healthcare Home Health app. For more information on the Field Service mobile app, see [Install and set up the Field Service (Dynamics 365) mobile app \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/field-service/mobile-power-app-get-started).
-
