@@ -34,7 +34,7 @@ In this lab, you will:
 -   Embed Azure Health Bot in a Power Apps Portal
 -   Extend Azure Health Bot with custom scenarios
 
-### Step 1: Set Up Azure Health Bot
+### Exercise 1: Set Up Azure Health Bot
 
 In this exercise, you will do the following:
 
@@ -122,7 +122,7 @@ In this exercise, you will do the following:
 1.  Click **Save** in the top right.
     ![](./IMAGES/Lab02/L2P17.png)
 
-Now let’s enable the Health Bot for **Microsoft Teams** Channel.
+    Now let’s enable the Health Bot for **Microsoft Teams** Channel.
 
 1.  Navigate to **Integration > Channels**.
 
@@ -170,7 +170,7 @@ In this task, you will be using an Azure Application ID already created in our A
 
 **Congratulations!** You have successfully obtained the MCH Application ID from Application Registrations in the Azure Portal.
 
-### Step 2: Configure Omnichannel Live Chat
+### Exercise 2: Configure Omnichannel Live Chat
 
 In this exercise, you will be configuring live chat for **Dynamics 365 Omnichannel for Customer Service**. Omnichannel for Customer Service offers a suite of capabilities that extend the power of Dynamics 365 Customer Service Enterprise to enable organizations to instantly connect and engage with their customers across digital messaging channels.
 
@@ -347,8 +347,8 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
 1.  Give the new Queue the following details:
     1.  **Name**: “Escalate To Human”
-    2.  **Priority**: 1 (lower than default queue)
-    3.  Click **Save**.
+    1.  **Priority**: 1 (lower than default queue)
+    1.  Click **Save**.
 
         ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P59.png)
 
@@ -381,8 +381,8 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
 1.  Create the new Context Variable with the following details:
     1.  **DisplayName:** EscalateToAgent
-    2.  **Name:** EscalateToAgent
-    3.  **Type:** Number
+    1.  **Name:** EscalateToAgent
+    1.  **Type:** Number
 
         ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P64.png)
 
@@ -448,7 +448,7 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
 **Congratulations!** In this exercise, you have successfully configured Customer Service Omnichannel Live chat by creating the necessary Users, Queues, Work Streams, Context Variables, Routing Rules, and Chat Widget. These all work together and allow patients to chat with a virtual health bot with the option to escalate up to a human agent if needed.
 
-### Step 3: Embed Health Bot in Power Apps Portal
+### Exercise 3: Embed Health Bot in Power Apps Portal
 
 In this exercise, you will be embedding the **Omnichannel Chat Widget** into the Power Apps Customer self-service portal using Portal Management configuration. In your environment, we created a Lamna Healthcare Company Portal using the **Customer self-service portal** template before deploying Microsoft Cloud for Healthcare. Now we will configure the chat widget to show on the customer website.
 
@@ -490,9 +490,9 @@ Portal Management: Application to help you get started with the advanced portal 
 
 1.  Select **Save and Close**.
 
-Congratulations! In this exercise you have successfully updated the chat widget in the Power App Portal Content Snippets. With this configuration, the Health Bot will be visible on the Power Apps portal for both the customer self-service template and the healthcare patient portal template.
+**Congratulations!** In this exercise you have successfully updated the chat widget in the Power App Portal Content Snippets. With this configuration, the Health Bot will be visible on the Power Apps portal for both the customer self-service template and the healthcare patient portal template.
 
-### Step 4: Extend Azure Health Bot with Custom Scenarios
+### Exercise 4: Extend Azure Health Bot with Custom Scenarios
 
 **Dynamics 365 Omnichannel** integration allows the patient to interact with **Azure Health Bot** using the Dynamics 365 chat widget to access the medical knowledge and your custom scenarios. It also, allows the escalation of a bot conversation to a live agent to continue the interaction. When escalating a conversation, Dynamics passes along the conversation history and the context to the agent.
 
@@ -711,7 +711,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     });
 
-2.  Name the action **Escalate**. Click **OK** to return to the designer page.
+1.  Name the action **Escalate**. Click **OK** to return to the designer page.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P129.png)
 
@@ -828,7 +828,7 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
 1.  Navigating back to **Omnichannel for Customer Service**, your user as the Live Agent should receive an incoming notification with Accept/Reject options for that chat.
 
-3.  Click **Accept** to connect and chat with customer (In this case chat with the **patient**).
+1.  Click **Accept** to connect and chat with customer (In this case chat with the **patient**).
 
     ![live agent notification on Customer Service](./IMAGES/Lab02/L2P154.png)
 
