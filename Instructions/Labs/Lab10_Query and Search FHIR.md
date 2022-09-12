@@ -1,6 +1,6 @@
 # Module 5 Lesson 4 Lab 10: Query and Search FHIR
 
-### Overview
+## Overview
 
 In this challenge, you will learn how to use [FHIR search](https://www.hl7.org/fhir/search.html) operations to query data in your FHIR service.
 
@@ -131,50 +131,46 @@ Response (excerpt):
 
 \*Note: The GET {{fhirurl}}/\<Resource\>/\<id\> pattern is technically a read interaction (and not a search interaction, as defined by HL7).
 
-### Learning objectives
+## Learning objectives
 
 In this lab, you will:
-
 -   Explain the basic concepts of FHIR search
-
 -   Perform both Common and Composite searches
-
 -   Use modifiers in FHIR searches
-
 -   Use Chained and Reverse Chained search result parameters
-
 -   Use Include and Reverse Include search result parameters
-
 -   Use a custom search parameter
 
 
-### Step 1 - Save Sample Resources
+## Exercise 1: Save Sample Resources
 
 To begin, you are going to populate your FHIR service with additional sample Resources.
 
-Exercise Task
+### Task 1
 
-1.  Go to Postman and access the FHIR Search collection provided in Lab-01. Make sure that the fhir-service environment is active and that you have a valid access token (use POST AuthorizeGetToken to get a token refresh).
-2.  There is a request titled Step 1 - Save Sample Resource Bundle. Click on this request, and then click **Send** to deliver the Bundle to your FHIR service. This will save some Resources that future requests in this lab require.
+1.  Go to **Postman** and access the **FHIR Search collection** provided in Lab-07. Make sure that the fhir-service environment is active and that you have a valid access token (use POST AuthorizeGetToken to get a token refresh).
+
+2.  There is a request titled **Step 1 - Save Sample Resource Bundle**. Click this request, and then click **Send** to deliver the Bundle to your FHIR service. This will save some Resources that future requests in this lab require.
 
 **Note:** The FHIR Search collection has sample requests to demonstrate many different FHIR searches. They aren't always specified by name in these instructions, but in Postman they will start with "Step \#" for reference.
 
-### Step 2 - Make FHIR API Calls with Search Parameters
+## Exercise 2: Make FHIR API Calls with Search Parameters
 
 Now you can experiment with a variety of search parameters for querying data in FHIR.
 
 On top of the common search parameters, it's possible to add modifiers right after a parameter to sharpen search results. Some example modifiers are: not, :exact, and :contains. Take a quick look at the [modifiers section](https://www.hl7.org/fhir/search.html#modifiers) of the official FHIR documentation to get a sense of how these are used.
 
-Exercise Task
+### Task 1
 
-1.  Go to Postman, access the FHIR Search collection, and search for Patient Resources using \_id, name, and other parameters following the examples for Step 2. Try adding modifiers to fine-tune the results.
+1.  Go to **Postman**, access the **FHIR Search collection**, and search for **Patient Resources** using **\_id**, **name**, and other parameters following the examples for Exercise 2. Try adding modifiers to fine-tune the results.
+
 -   **Q:** What Element(s) are you searching against when you assign a value to the name parameter in a Patient search?
 
 **Note:** The FHIR service in Azure Health Data Services supports most Resource-specific search parameters defined in the FHIR specification. The Resource-specific search parameters that are not supported are listed here: [FHIR R4 Unsupported Search Parameters](https://github.com/microsoft/fhir-server/blob/main/src/Microsoft.Health.Fhir.Core/Data/R4/unsupported-search-parameters.json).
 
-### Step 3 - Perform Composite Searches
+## Exercise 3: Perform Composite Searches
 
-Overview
+**Overview**
 
 In cases where you perform searches with more than one parameter, the most immediate way of doing this is with the logical AND (&) operator.
 
@@ -202,16 +198,21 @@ For composite searches, FHIR service in Azure Health Data Services supports the 
 -   Token, Token
 -   
 
-Exercise Task
+### Task 1
 
-1.  Using the FHIR Search collection in Postman, search for Patient Resource instances narrowed by the following search parameters: date, lastmodified, identifier, and more. Then, modify the included API calls with the & operator to combine different search parameters.
-2.  In Postman, make an API call with the Step 3 - List Patient Observations by Results Composite request. Then modify the http://loinc.org\|8462-4 (diastolic blood pressure) value and see if you can get different search results.
+1.  Using the **FHIR Search collection** in **Postman**, search for **Patient Resource** instances narrowed by the following search parameters: **date**, **lastmodified**, **identifier**, and more. 
+
+1.  Then, modify the included API calls with the **&** operator to combine different search parameters.
+
+1.  In **Postman**, make an API call with the **Step 3 - List Patient Observations by Results Composite** request. 
+
+1.  Then modify the **http://loinc.org\|8462-4 (diastolic blood pressure)** value and see if you can get different search results.
 
 To learn more about composite searches in FHIR, please visit [here](https://build.fhir.org/search.html#combining).
 
-### Step 4 - Add Search Result Parameters
+## Exercie 4: Add Search Result Parameters
 
-Overview
+**Overview**
 
 FHIR specifies a set of parameters for organizing and aggregating search results. Below are several examples.
 
@@ -222,13 +223,13 @@ FHIR specifies a set of parameters for organizing and aggregating search results
 | \_total    | For returning the number of Resource instances that match the given search criteria. For example, \_total=accurate returns the exact number of Resource instances found.                                                                                                           |
 | \_sort     | For setting the sorting hierarchy of results according to a comma-separated list of search parameters. For example, \_sort=status,date,category.                                                                                                                                   |
 
-Exercise Task
+### Task 1
 
-1.  Using the FHIR Search collection in Postman, perform several Patient queries with the following search result parameters: \_summary=true, \_summary=count, \_total=accurate, \_sort=gender.
+1.  Using the **FHIR Search collection** in **Postman**, perform several Patient queries with the following search result parameters: **\_summary=true**, **\_summary=count**, **\_total=accurate**, **\_sort=gender**.
 
-### Step 5 - Use the Chained & Reverse Chained Search Result Parameters
+## Exercise 5: Use the Chained & Reverse Chained Search Result Parameters
 
-Overview
+**Overview**
 
 Resources in FHIR are equipped with reference Elements for capturing relationships between the people, activities, and items associated in real-world healthcare scenarios. To create a reference between Resources in FHIR, a reference Element in one Resource must be populated with another Resource's [Logical ID](https://www.hl7.org/fhir/resource.html#id), [Business Identifier](https://www.hl7.org/fhir/resource.html#identifiers), or [Canonical URL](https://www.hl7.org/fhir/resource.html#canonical).
 
@@ -270,13 +271,15 @@ Despite this, the FHIR specification does make room for reverse-chained searchin
 
 GET {{fhirurl}}/Patient?_has:Observation:patient:code=55284-4
 
-Exercise Task
+### Task 1
 
-1.  Using the FHIR Search collection in Postman, conduct several chained searches. Then try a reverse-chained search using the \_has parameter. For more examples of chained and reverse-chained searches, refer to the [FHIR search examples](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples) page.
+1.  Using the **FHIR Search collection** in **Postman**, conduct several chained searches. 
 
-### Step 6 - Use the Include & Reverse Include Search Result Parameters
+1.  Then try a reverse-chained search using the **\_has** parameter. For more examples of chained and reverse-chained searches, refer to the [FHIR search examples](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples) page.
 
-Overview
+## Exercise 6: Use the Include & Reverse Include Search Result Parameters
+
+**Overview**
 
 As discussed in Step 5, a reference in FHIR forms a connection from one Resource to another. FHIR enables querying for and traversing reference connections in order to narrow search results. In some situations, you may also want to use reference associations between Resources to cast a wider net for exploratory searches in a FHIR server's database.
 
@@ -292,24 +295,31 @@ GET {{fhirurl}}/Patient?_address-city='XXXXXXX'&_revinclude=MedicationRequest:pa
 
 Note: Because of the potential for "open-ended" searches with \_include and \_revinclude, the number of results returned from these searches is capped to an arbitrary limit on the FHIR service in Azure Health Data Services.
 
-Exercise Task
+### Task 1
 
-1.  Using the FHIR Search collection in Postman, search for PractitionerRole Resources and include the associated Practitioner Resources in the results.
-2.  Do a search using \_revinclude to discover all PractitionerRole Resources for an Organization. For more examples of searches with the \_include and \_revinclude parameters, please see the [FHIR search examples](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples) page.
+1.  Using the **FHIR Search collection** in **Postman**, search for **PractitionerRole Resources** and include the associated **Practitioner Resources** in the results.
 
-### Step 7 - Use a Custom Search Parameter
+1.  Do a search using **\_revinclude** to discover all PractitionerRole Resources for an Organization. For more examples of searches with the \_include and \_revinclude parameters, please see the [FHIR search examples](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples) page.
+
+## Exercise 7: Use a Custom Search Parameter
 
 At some point, you will find a use case where you need to retrieve information that none of the default search parameters in FHIR are cut out for. To address this, FHIR provides a way to define your own custom search parameters for specialized queries.
 
-Exercise Task
+### Task 1
 
-1.  To create a new search parameter, you need to POST a SearchParameter Resource to the FHIR service database. See the Create New Search Parameter call in the FHIR Search Postman collection for an example. When ready, go ahead and run the Create New Search Parameter call in Postman.
-2.  To perform a search using the custom search parameter that you just created, first [follow these instructions](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-do-custom-search#test-search-parameters) to test the search parameter. Return here when you have finished the process.
-3.  Then, [run a re-index job](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-run-a-reindex) on your FHIR service to activate the new search parameter. You can use the Reindex call in the FHIR Search collection to accomplish this.
-4.  *Note:* Reindexing can take up to several minutes.
-5.  Once you have tested the new search parameter and re-indexed the FHIR service database, try running the Search by Custom Search Parameter call in the FHIR Search collection. You should receive a Bundle with results filtered by the custom search parameter.
+1.  To create a new search parameter, you need to POST a SearchParameter Resource to the FHIR service database. See the **Create New Search Parameter call** in the **FHIR Search Postman collection** for an example. 
 
-What does success look like for Lab-04?
+1.  When ready, go ahead and run the **Create New Search Parameter** call in **Postman**.
+
+1.  To perform a search using the custom search parameter that you just created, first [**follow these instructions**](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-do-custom-search#test-search-parameters) to test the search parameter. Return here when you have finished the process.
+
+1.  Then, [**run a re-index job**](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-run-a-reindex) on your FHIR service to activate the new search parameter. You can use the Reindex call in the FHIR Search collection to accomplish this.
+
+1.  *Note:* Reindexing can take up to several minutes.
+
+1.  Once you have tested the new search parameter and re-indexed the FHIR service database, try running the **Search by Custom Search Parameter** call in the **FHIR Search collection**. You should receive a Bundle with results filtered by the custom search parameter.
+
+What does success look like for Lab-10?
 
 -   Develop a basic understanding of how to perform FHIR search operations in FHIR service.
 -   Perform several queries using paired/multiple parameters for Common and Composite Search.
