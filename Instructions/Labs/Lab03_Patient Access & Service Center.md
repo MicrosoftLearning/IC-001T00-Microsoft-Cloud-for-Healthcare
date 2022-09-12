@@ -447,7 +447,7 @@ In this task, you will create an agent script in the Omnichannel admin center ap
 
 1.  Click **Save and Close**. Now let’s add another step.
 
-1.  In the Agent script steps section, select +New Agent script step again.
+1.  In the **Agent script steps** section, select **+New Agent script step** again.
 
     ![Screenshot of New Agent script step button in agent script steps subgrid ](./IMAGES/Lab03/L3P77.png)
 
@@ -685,7 +685,7 @@ To ensure accuracy of the knowledge article, typically someone else would review
 
 1.  Click **OK** when prompted to confirm approve article.
 
-    ![Screenshot of the OK button to confirm approval of article](./L3P112.png)
+    ![Screenshot of the OK button to confirm approval of article](./IMAGES/Lab03/L3P112.png)
 
 1.  Select **Next Stage** to move to Publish stage.
 
