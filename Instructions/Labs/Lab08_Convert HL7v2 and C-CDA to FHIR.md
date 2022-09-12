@@ -156,37 +156,37 @@ Now you will make another API request similar to the one above, except this time
 
 After making the \$convert-data request, you should receive a FHIR Bundle response containing the C-CDA data converted into FHIR R4. The top of the response will be as shown below.
 
-{
+    {
 
-"resourceType": "Bundle",
+    "resourceType": "Bundle",
 
-"type": "batch",
+    "type": "batch",
 
-"entry": [
+    "entry": [
 
-{
+    {
 
-"fullUrl": "urn:uuid:0990ecf3-327d-4194-1aae-00724d4cba22",
+    "fullUrl": "urn:uuid:0990ecf3-327d-4194-1aae-00724d4cba22",
 
-"resource": {
+    "resource": {
 
-"resourceType": "Composition",
+    "resourceType": "Composition",
 
-"id": "0990ecf3-327d-4194-1aae-00724d4cba22",
+    "id": "0990ecf3-327d-4194-1aae-00724d4cba22",
 
-"identifier": {
+    "identifier": {
 
-"use": "official",
+    "use": "official",
 
-"value": "2.16.840.1.113883.19.5.99999.1"
+    "value": "2.16.840.1.113883.19.5.99999.1"
 
-},
+    },
 
-...}
+    ...}
 
-...}
+    ...}
 
-...}
+    ...}
 
 Note: If you get an error, check that the "" characters are properly escaped in the C-CDA payload.
 
