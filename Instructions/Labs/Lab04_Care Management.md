@@ -185,7 +185,7 @@ In this exercise, you will navigate the patient record and explore all the detai
 
 **Congratulations!** You have explored the Care Management app and its featured data within a patient record.
 
-## Step 3: Create a New Location
+## Exercise 3: Create a New Location
 
 In this exercise, you will be creating a new Location record for the **Lamna Healthcare Company** Organization. They have opened a new branch in **Redmond, WA** and we need to ensure this location is in the system.
 
