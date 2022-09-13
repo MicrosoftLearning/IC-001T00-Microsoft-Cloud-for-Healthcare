@@ -122,7 +122,7 @@ You can follow the provided articles that go over how to programmatically commun
 
 1.  Click the **POST AuthorizeGetToken** request and click **Send**. You should receive a 200 OK message in response. Your access token is now saved to the bearerToken environment variable in your dicom-service Postman environment. Access tokens expire after 60 minutes. A refresh can be obtained by sending the POST AuthorizeGetToken request again.
 
-**Task 2: Populate DICOM service with single instance images
+**Task 2: Populate DICOM service with single instance images**
 
 1.  Once your dicom-service Postman environment is set up and you have obtained an access token, please go to [**this repo**](https://github.com/microsoft/dicom-server/tree/main/docs/dcms) and download the three DICOM instance files (**.dcm**).
 
