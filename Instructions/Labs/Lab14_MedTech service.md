@@ -1,6 +1,6 @@
 # Module 7 Lesson 4 Lab 14: MedTech service
 
-### Overview
+## Overview
 
 In this lab, you will get experience working with medical IoT data using the [MedTech service](https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/iot-connector-overview) in Azure Health Data Services.
 
