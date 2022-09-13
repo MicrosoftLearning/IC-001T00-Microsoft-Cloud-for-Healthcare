@@ -21,14 +21,14 @@ In this lab, you will:
 -	Track and compare FHIR Loader operations
 
 
-## Exercise 1 - Download Sample Data
+## Exercise 1: Download Sample Data
 
 Start by downloading these two .zip files to your desktop (when you click the links, you will see a download button on the right).
 
 -   [good_bundles.zip](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-03%20-%20Ingest%20to%20FHIR/samples/good_bundles.zip)
 -   [bad_bundles.zip](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-03%20-%20Ingest%20to%20FHIR/samples/bad_bundles.zip)
 
-## Exercise 2 - Use FHIR Loader to upload data
+## Exercise 2: Use FHIR Loader to upload data
 
 Visit the FHIR Loader (OSS) repository [here](https://github.com/microsoft/fhir-loader) and read the documentation for more info on the operating principles of the application.
 
@@ -52,7 +52,7 @@ Visit the FHIR Loader (OSS) repository [here](https://github.com/microsoft/fhir-
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab09/L9P5.png)
 
-## Exercise 3 - Debug issues with importing FHIR data
+## Exercise 3: Debug issues with importing FHIR data
 
 1.  Now try importing the **bad_bundles.zip** file that you downloaded in Exercise 1 of this lab. Upload the file to the same container where you uploaded the good_bundles.zip file.
 
@@ -60,7 +60,7 @@ Visit the FHIR Loader (OSS) repository [here](https://github.com/microsoft/fhir-
 
 Refer to the **Troubleshooting** section below or the FHIR Loader [testing](https://github.com/microsoft/fhir-loader/blob/main/docs/testing.md) documentation for information on tracking issues in FHIR data ingestion.
 
-## Exercise 4 – BONUS: Troubleshooting
+## Exercise 4: BONUS - Troubleshooting
 
 Here are some points for inspecting FHIR Loader operations:
 
