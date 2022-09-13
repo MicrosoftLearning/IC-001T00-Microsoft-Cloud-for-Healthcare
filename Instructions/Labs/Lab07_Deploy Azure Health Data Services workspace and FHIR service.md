@@ -51,7 +51,7 @@ Note: This deployment typically takes 20 minutes. During the deployment, you can
 
 To learn more about the resources deployed with this ARM template, view [here.](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components)
 
-## Exercise 2 - Set up Postman and test FHIR service
+## Exercise 2: Set up Postman and test FHIR service
 
 In the next part of this lab, you will
 
