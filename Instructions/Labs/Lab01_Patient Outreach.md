@@ -58,85 +58,85 @@ better targeted with marketing communications. In this example, you will create
 a Patient Segment for patients with hypermetropia (a vision condition in which
 nearby objects are blurry).
 
-1.  While logged into your Microsoft 365 tenant, navigate to <https://make.powerapps.com/>.
+1[].  While logged into your Microsoft 365 tenant, navigate to <https://make.powerapps.com/>.
 
-1.  Go to **Apps** and open **Marketing**.
+1[].  Go to **Apps** and open **Marketing**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P3.png)
 
-1.  Navigate to the bottom left drop-down and change the selection from **Marketing** to **Settings**.
+1[].  Navigate to the bottom left drop-down and change the selection from **Real-time Marketing** to **Settings**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P4.png)
 
-1.  On the **Settings overview** screen, select **Dataset configuration** under **Data management**.
+1[].  On the **Settings overview** screen, select **Dataset configuration** under **Data management**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/L1P5.png)
 
-1.  Scroll down and select the **Condition (msemr_condition)** entity.
+1[].  Scroll down and select the **Condition (msemr_condition)** entity.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P6.png)
 
-1.  **Publish Changes** on the top right.
+1[].  Select **Publish Changes** on the top right and select **OK** twice.
 
     ![Publish Changes.](./IMAGES/L1P7.png)
 
     Note: While it may take up to 30 minutes for changes to take effect, they are generally ready in a few minutes.
 
-1.  Go back to **Apps** and open **Patient Outreach**.
+1[].  Go back to **Apps** and open **Patient Outreach**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P8.png)
 
-1.  Click **Segments** on the left navigation bar to create a new specific group of patients.
+1[].  Select **Segments** on the left navigation bar to create a new specific group of patients.
 
     ![Click Segments to create a new specific group of patients.](./IMAGES/L1P9.png)
 
-1.  Click **New** to create a new Patient Segment. Select **+ New Dynamic Segment**.
+1[].  Select **New** to create a new Patient Segment. Select **+ New Dynamic Segment**.
 
-    ![Click New to create a new Patient Segment. Select + Dynamic Segment. ](./IMAGES/L1P10.png)
+    ![Select New to create a new Patient Segment. Select + Dynamic Segment. ](./IMAGES/L1P10.png)
 
     Did you know? Static segments enable you to choose and add segment members manually based on existing lists or search results. Dynamic Segments, which you define by using a set of rules and conditions, are constantly and automatically changing based on information in your database. Since we want our group to change depending on database information, we are choosing the dynamic segment option.
 
-1.  When prompted to choose a **Segment Template** option, click **Skip** since we will create our own Segment.
+1[].  When prompted to choose a **Segment Template** option, select **Skip** since we will create our own Segment.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/L1P11.png)
 
-1.  Name the new Segment **Patients with Hypermetropia**. Select **Add query block.**
+1[].  Name the new Segment **Patients with Hypermetropia**. Select **Add query block.**
 
     ![Name the new segment "Patients with Hypermetropia"](./IMAGES/L1P12.png)
 
     ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/L1P13.png)
 
-1.  We will now create a new Segment for Active Patients who have a Hypermetropia condition where the Contact has a Status of Active, and the related Condition Description contains “Hypermetropia”. Configure this new segment by doing the following:
+    We will now create a new Segment for Active Patients who have a Hypermetropia condition where the Contact has a Status of Active, and the related Condition Description contains “Hypermetropia”. Configure this new segment by doing the following:
 
-    1.  Leave **Contact** as the main entity.
+1[].  Leave **Contact** as the main entity.
 
-    1.  In the attribute drop-down, select **Status** from the list of fields.
+1[].  In the **Select attribute** drop-down, select **Status** from the list of fields.
 
-    1.  When the additional fields appear, set condition to Status **Is Active**.
+1[].  When the additional fields appear, set condition to Status **Is Active**.
 
-    1.  Click **Add > Add related entity**.
+1[].  Select **Add > Add related entity**.
 
-        ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P14.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P14.png)
 
-1.  It should default to **AND** in the drop-down. Now let’s add the second part of the condition.
+    It should default to **AND** in the drop-down. Now let’s add the second part of the condition.
 
-1.  In **Select related entity** drop down, choose **Condition (Condition -\> Contact (Patient))**.
+1[].  In **Select related entity** drop down, choose **Condition (Condition -> Contact (Patient))**.
 
-1.  Click the nested **Add > Add condition to Condition**.
+1[].  Select the nested **Add > Add condition to Condition**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P15.png)
 
-1.  Select attribute Condition (msemr_name).
+1[].  Select attribute **Condition (msemr_name)**.
 
-1.  Change the operator to **Contains** and type **Hypermetropia**.
+1[].  Change the operator to **Contains** and type **Hypermetropia**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P16.png)
 
-1.  Select **Save** and then select **Go live** to publish the segment (you won't be able to use it in a customer journey until it goes live, even though you've saved it).
+1[].  Select **Save** and then select **Go live** to publish the segment (you won't be able to use it in a customer journey until it goes live, even though you've saved it).
 
     ![Select Save and then select Go live to publish the segment (you won't be able to use it in a customer journey until it goes live, even though you've saved it).](./IMAGES/L1P17.png)
 
-1.  Select **Refresh** on the command bar to refresh the page. Select the **Members** tab to see which patients have been added to the Dynamic Segment. Notice Elizabeth Moore in the list who will eventually be a recipient of our marketing event outreach email.
+1[].  Select **Refresh** on the command bar to refresh the page. Select the **Members** tab to see which patients have been added to the Dynamic Segment. Notice Elizabeth Moore in the list who will eventually be a recipient of our marketing event outreach email.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P18.png)
 
