@@ -13,7 +13,7 @@ In this lab, you will:
 - Prepare/clean data for conversion into FHIR
 - Make API calls to convert HL7v2 and C-CDA data into FHIR
 
-## Exercise 1 - Prepare an API request to convert HL7v2 into FHIR
+## Exercise 1: Prepare an API request to convert HL7v2 into FHIR
 
 To convert HL7v2 data into FHIR, first you must prepare a \$convert-data API request.
 
@@ -38,7 +38,7 @@ To convert HL7v2 data into FHIR, first you must prepare a \$convert-data API req
 
 1.  Be sure to **Save** the **Convert Data - HL7** request.
 
-## Exercise 2 - Set up Request Parameters2
+## Exercise 2: Set up Request Parameters2
 
 1.  Review the FHIR service [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data) for an overview of the **\$convert-data** operation.
 
@@ -58,7 +58,7 @@ To convert HL7v2 data into FHIR, first you must prepare a \$convert-data API req
 
 1.  Make sure to **Save** the **Convert Data - HL7** request.
 
-## Exercise 3 - Convert Data
+## Exercise 3: Convert Data
 
 1.  In Postman, get a new AAD access token using the **POST AuthorizeGetToken** call.
 
@@ -102,7 +102,7 @@ After making the **\$convert-data** request, you should receive a JSON FHIR **Bu
 
 Note: If you get an error, check to make sure that **\\** and **\\n** characters have been properly added to the HL7v2 payload.
 
-## Exercise 4 - Prepare a request to convert C-CDA data into FHIR
+## Exercise 4: Prepare a request to convert C-CDA data into FHIR
 
 Now you will make another API request similar to the one above, except this time you will be converting C-CDA data into FHIR.
 
@@ -124,7 +124,7 @@ Now you will make another API request similar to the one above, except this time
 
 1.  Make sure to save the **Convert Data - CCDA request**.
 
-## Exercise 5 - Set up Request Parameters
+## Exercise 5: Set up Request Parameters
 
 1.  Click [**CCDA_Ford_Elaine.xml**](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-02%20-%20Convert%20HL7v2%20and%20C-CDA%20to%20FHIR/samples/CCDA_Ford_Elaine.xml) to view a sample C-CDA data file (click on Raw on the right side to view the entire data string in your browser window).
 
@@ -148,7 +148,7 @@ Now you will make another API request similar to the one above, except this time
 
 1.  Make sure to save the Convert Data - CCDA request.
 
-## Exercise 6 - Convert Data
+## Exercise 6: Convert Data
 
 1.  Get a new access token from AAD with POST AuthorizeGetToken (this is not strictly necessary unless it has been over 60 minutes since the last access token was issued).
 
