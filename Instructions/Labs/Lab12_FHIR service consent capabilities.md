@@ -37,7 +37,7 @@ Before setting up FHIR-Proxy for Consent Opt-Out filtering, you must first confi
 
 1. To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open the FHIR-Proxy authentication setup instructions in a new browser tab.
 
-[FHIR-Proxy Authentication Setup Instructions](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#step-2---complete-fhir-proxy-authentication)
+    [FHIR-Proxy Authentication Setup Instructions](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#step-2---complete-fhir-proxy-authentication)
 
 1.   When you go to the page, follow the instructions in **Step 2** and **Step 3** (you already completed the instructions in Step 1 when you deployed components in Lab-07). 
 
@@ -49,7 +49,7 @@ In the next part of this challenge, you will be setting up a new environment in 
 
 1. To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open the Postman setup instructions for FHIR-Proxy in a new browser tab.
 
-[Postman Tutorial for FHIR-Proxy](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#step-2---complete-fhir-proxy-authentication)
+    [Postman Tutorial for FHIR-Proxy](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#step-2---complete-fhir-proxy-authentication)
 
 1.   Follow the instructions and return here when finished.
 
