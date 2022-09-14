@@ -532,88 +532,90 @@ In this exercise, you will learn how to create and manage **Knowledge Articles**
 
 In this task, we will assign the necessary user role to create and view knowledge articles.
 
-1.  If you kept the User Settings page up from the previous exercise, navigate to that page. If you didn’t keep it open, follow all the steps in Exercise 2, Task 1 and then return here to assign the proper role.
+1. [] If you kept the **User Settings** page up from the previous exercise, navigate to that page. If you didn’t keep it open, follow all the steps in Exercise 2, Task 1 and then return here to assign the proper role.
 
-1.  Once you’ve selected your user and clicked **Manage Roles**, you must assign the necessary role(s).
+1. [] Once you’ve selected your user and selected **Manage Roles**, you must assign the necessary role(s).
 
     ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab03/L3P91.png)
 
-1.  There are three roles you can choose with [create/read permissions for Knowledge Articles](https://docs.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article#create-a-knowledge-article).
+1. [] There are three roles you can choose with [create/read permissions for Knowledge Articles](https://docs.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article#create-a-knowledge-article).
     1.  Knowledge Manager
-    2.  Customer Service Manager
-    3.  Customer Service Representative
+    1.  Customer Service Manager
+    1.  Customer Service Representative
 
-1.  For this lab, select the **Knowledge Manager** role.
+1. [] For this lab, select the **Knowledge Manager** role.
 
     ![Screenshot of Manage User Roles dialog with Knowledge Manager role selected](./IMAGES/Lab03/L3P92.png)
 
-1.  Also ensure you have the **System Administrator** role. Official training users have it assigned.
+1. [] Also ensure you have the **System Administrator** role. Official training users have it assigned.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab03/L3P93.png)
 
-1.  Select **OK** to close the Manage User Roles window and accept changes.
+1. [] Select **OK** to close the **Manage User Roles** window and accept changes.
 
 **Congratulations!** You have assigned the proper roles to create and read knowledge articles.
 
+
 ### Task 2: Set up Knowledge Management Settings
 
-1.  In [Power Apps](http://make.powerapps.com), open the **Customer Service Hub** app.
+1. [] In [Power Apps](http://make.powerapps.com), open the **Customer Service Hub** app.
 
     ![Screenshot of Customer Service Hub application in Power Apps list](./IMAGES/Lab03/L3P94.png)
 
-1.  In **Customer Service Hub**, on the left navigation bar, go to the bottom left corner where there’s a drop down that says **Service**. Select it and change the area to **Customer Service Admin Center**.
+1. [] In **Customer Service Hub**, on the left navigation bar, go to the bottom left corner where there’s a dropdown that says **Service**. Select it and change the area to **Customer Service Admin Center**.
 
     ![Screenshot of bottom left drop down selection changing from Service to Service Management](./IMAGES/Lab03/L3P95.png)
 
-1.  Once in the **Customer Service Admin Center** area, scroll down to **Knowledge Base Management** section and select **Settings** in the left navigation.
+1. [] Once in the **Customer Service Admin Center** area, scroll down to **Knowledge Base Management** section and select **Settings** in the left navigation.
 
     ![Screenshot of Settings option in the site map in Knowledge Base Management section](./IMAGES/Lab03/L3P96.png)
 
-1.  Record Types allows you to configure the record types you want to turn on for knowledge management.
+1. [] Record Types allows you to configure the record types you want to turn on for knowledge management.
     1.  The list will include all entities that are available for an N:N relationship.
     1.  Knowledge management is enabled for Case table by default. Because our scenario will also use the Case table, we don’t need to add any additional tables at this time.
 
         ![Screenshot of Record Types for knowledge management, with all available on the left and selected on the right.  Currently selected are Case and Contact.](./IMAGES/Lab03/L3P97.png)
 
-1.  For Support Portal Connection, this allows you to integrate an external portal for publishing knowledge articles.
+1. [] For Support Portal Connection, this allows you to integrate an external portal for publishing knowledge articles.
     1.  Selecting Yes would share the knowledge article as a link in the email sent to the customer.
-    2.  Selecting No would share the article content inserted in the email body.
-    3.  Keep as **No** as we will not be integrating an external portal connection
+    1.  Selecting No would share the article content inserted in the email body.
+    1.  Keep as **No** as we will not be integrating an external portal connection
 
         ![Text Description automatically generated](./IMAGES/Lab03/L3P98.png)
 
-1.  In the **Knowledge Articles Feedback** section, set **Enable users to provide feedback on knowledge articles from search control** to **Yes**. This will allow users to provide feedback on knowledge articles opened from knowledge search control.
+1. [] In the **Knowledge Articles Feedback** section, set **Enable users to provide feedback on knowledge articles from search control** to **Yes**. This will allow users to provide feedback on knowledge articles opened from knowledge search control.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P99.png)
+
 
 ### Task 3: Create Knowledge Article
 
 In this task, you will create a new knowledge article about Asthma for agents to access during patient conversations.
 
-1.  In **Customer Service Hub,** on the left navigation bar, go to the bottom left corner where you previously modified the drop down. Change it back from Customer Service Admin Center to **Service**.
+1. [] In **Customer Service Hub,** on the left navigation bar, go to the bottom left corner where you previously modified the dropdown. Change it back from **Customer Service Admin Center** to **Service**.
 
     ![Screenshot of bottom left drop down selection changing back from Service Management to Service ](./IMAGES/Lab03/L3P100.png)
 
-1.  In the sitemap, navigate to **Service > Knowledge Articles**.
+1. [] In the sitemap, navigate to **Service > Knowledge Articles**.
 
     ![Screenshot of Knowledge Article option in site map](./IMAGES/Lab03/L3P101.png)
 
-1.  Select **New** on the command bar.
+1. [] Select **New** on the command bar.
 
     ![Screenshot of New button on command bar in Knowledge Article section](./IMAGES/Lab03/L3P102.png)
 
-1.  You should be on the Content tab of a new knowledge article.
+1. [] You should be on the **Content** tab of a new knowledge article.
 
     ![Screenshot of content tab of a new knowledge article](./IMAGES/Lab03/L3P103.png)
 
-1.  On the **Article Content** section tab of the new knowledge article, specify the following details:
-    1.  **Title**: Shortness of Breath
-    2.  **Keywords**: Asthma, shortness of breath, trouble breathing, inhaler, albuterol
-    3.  **Description**: Uncomfortable sensation or awareness of breathing or needing to breathe.
+1. [] On the **Article Content** section tab of the new knowledge article, specify the following details:
+    1. [] **Title**: Shortness of Breath
+    2. [] **Keywords**: Asthma, shortness of breath, trouble breathing, inhaler, albuterol
+    3. [] **Description**: Uncomfortable sensation or awareness of breathing or needing to breathe.
 
         ![Screenshot of the new knowledge article with title, keyword, and description completed](./IMAGES/Lab03/L3P104.png)
 
-    4.  In the **Content** section, copy and paste the content for your knowledge article.
+1. [] In the **Content** section, copy and paste the content for your knowledge article.
 
     **Common causes**
 
@@ -649,95 +651,99 @@ In this task, you will create a new knowledge article about Asthma for agents to
     - Wheezing
     - Worsening of pre- existing shortness of breath
 
-1.  Select **Save**.
+1. [] Select **Save**.
 
     ![Screenshot of save button on command bar for the new knowledge article](./IMAGES/Lab03/L3P105.png)
 
     The Business Process flow bar at the top of the form helps you to drive the article towards completeness. You have the option to customize the stages in the Business Process flow to suit your requirements. We will now complete the author stage so it can move into review.
 
-1.  On the Business process bar, select **Author**. The business step options should pop out below.
+1. [] On the **Business process** bar, select **Author**. The business step options should pop out below.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P106.png)
 
-1.  Add the **Article Subject:** Default Subject. This is the subject of the article to help with searches.
+1. [] Add the **Article Subject:** Default Subject. This is the subject of the article to help with searches.
 
-1.  Check the box for **Mark for Review** as **Mark Complete**.
+1. [] Check the box for **Mark for Review** as **Mark Complete**.
 
-1.  In the **Assign Primary Author** drop-down list, you may choose a person who is responsible for maintaining the article content. By default, the user who creates the article is the primary author. For this training, we will keep it as our IAD user.
+1. [] In the **Assign Primary Author** dropdown list, you may choose a person who is responsible for maintaining the article content. By default, the user who creates the article is the primary author. For this training, we will keep it as our IAD user.
 
-1.  Select **Next Stage** to mark the article complete and ready for review.
+1. [] Select **Next Stage** to mark the article complete and ready for review.
 
     ![Screenshot of close up of the author stage with information filled out](./IMAGES/Lab03/L3P107.png)
 
-1.  The knowledge article is now in the review stage of the business process flow and is ready for review.
+1. [] The knowledge article is now in the review stage of the business process flow and is ready for review.
 
     ![Screenshot of Review Stage selected in the business process flow](./IMAGES/Lab03/L3P108.png)
 
 **Congratulations!** You have successfully created a knowledge article for Shortness of Breath and marked it for review.
 
+
 ### Task 4: Review and Publish Knowledge Article
 
 To ensure accuracy of the knowledge article, typically someone else would review and approve it. For this training exercise, you will mark the article reviewed and approved yourself. Quick note that this task also requires the Knowledge Manager role or another that can approve knowledge articles.
 
-1.  In **Customer Service Hub**, navigate to **Service > Dashboards** and use the drop-down to choose the **My Knowledge Dashboard**.
+1. [] In **Customer Service Hub**, navigate to **Service > Dashboards** and use the dropdown to choose the **My Knowledge Dashboard**.
 
     ![Screenshot of Dashboards selected in site map, changing the view from Tier 1 dashboard to My Knowledge Dashboard in Customer Service Hub](./IMAGES/Lab03/L3P109.png)
 
-1.  Note the **Shortness of Breath** knowledge article in My Active Articles stream.
+1. [] Note the **Shortness of Breath** knowledge article in **My Active Articles** stream.
 
     ![Screenshot of "Shortness of Breath"  article showing in My Active Articles stream in My Knowledge Dashboard](./IMAGES/Lab03/L3P110.png)
 
-1.  Select the **Shortness of Breath** knowledge article.
+1. [] Select the **Shortness of Breath** knowledge article.
 
-1.  On the Business process bar, in the Review stage and in the **Review** drop-down, select **Approve**.
+1. [] On the **Business process** bar, in the **Review** stage and in the **Review** dropdown, select **Approve**.
 
     ![Screenshot of the business process flow of a knowledge article which is in review stage and has the Review field drop down selected on the approved option](./IMAGES/Lab03/L3P111.png)
 
-1.  Click **OK** when prompted to confirm approve article.
+1. [] Select **OK** when prompted to confirm approve article.
 
     ![Screenshot of the OK button to confirm approval of article](./IMAGES/Lab03/L3P112.png)
 
-1.  Select **Next Stage** to move to Publish stage.
+1. [] Select **Next Stage** to move to **Publish** stage.
 
     ![Screenshot of the next stage button below the review field in the business process flow](./IMAGES/Lab03/L3P113.png)
 
-1.  You should now be in the Publish stage and Status Reason should have changed to Approved.
+1. [] You should now be in the **Publish** stage and **Status Reason** should have changed to **Approved**.
 
     ![Screenshot of publish stage currently highlighted and status reason field in upper right changed to approved](./IMAGES/Lab03/L3P114.png)
 
 **Congratulations!** You have successfully reviewed and approved the knowledge article. We will show you how to publish the Knowledge Articles to be available during patient service center calls.
 
+
 ### Task 5: Publish your Knowledge Article
 
 In this task, you will learn how to publish the knowledge article so it’s live and ready to be used.
 
-1.  In your **Shortness of Breath** Knowledge Article, Select the **Publish** stage.
-    1.  For **Set Product Associated** check the box **Completed**.
-    2.  Add an **Expiration Date** for one year from now.
-    3.  Select **Finish**
+1. [] In your **Shortness of Breath** Knowledge Article, select the **Publish** stage.
+    1. [] For **Set Product Associated** check the box **Completed**.
+    1. [] Add an **Expiration Date** for one year from now.
+    1. [] Select **Finish**
 
         ![Screenshot of fields filled in for publish stage of knowledge article.  Check Completed textbox for Set Product Associated and Add an expiration date for one year from now](./IMAGES/Lab03/L3P115.png)
 
-1.  Once you select **Finish**, the business process flow should show as completed.
+1. [] Once you select **Finish**, the business process flow should show as completed.
 
     ![Screenshot of business process flow showing completed flag after selecting finish](./IMAGES/Lab03/L3P116.png)
 
-1.  Now you can specify the additional Publish details. On the command bar to go **More > Publish**.
+1. [] Now you can specify the additional Publish details. On the command bar to go **More > Publish**.
 
     ![Screenshot of Command bar selecting more and Publish command](./IMAGES/Lab03/L3P117.png)
 
-1.  Specify the following details (see screenshot below):
-    1.  **Publish**: Now
-    2.  **Published Status**: Published
-    3.  **Expiration State**: Published
-    4.  **Expiration Status**: Published
-    5.  Publish approved related translations with Article, choose **Yes**.
+1. [] Specify the following details (see screenshot below):
+    1. [] **Publish**: Now
+    1. [] **Published Status**: Published
+    1. [] **Expiration State**: Published
+    1. [] **Expiration Status**: Published
+    1. [] Publish approved related translations with Article, choose **Yes**.
 
-1.  Select **Publish**
+1. [] Select **Publish**
 
     ![Screenshot of Publish dialog with details filled out and publish button at bottom](./IMAGES/Lab03/L3P118.png)
 
 **Congratulations!** You have successfully reviewed and published the knowledge article. We will see these knowledge articles highlighted in Patient Service Center when testing the final escalation.
+
+===
 
 ## Exercise 4: Experience Escalation & Smart Assist Features
 
