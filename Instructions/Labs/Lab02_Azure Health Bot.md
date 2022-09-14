@@ -57,7 +57,7 @@ In this exercise, you will do the following:
     ![Create Azure Health Bot subscription](./IMAGES/Lab02/L2P4.png)
 
 1. [] You will be redirected to the Azure Health Bot page. Enter the following information:
-    1. [] **Subscription**: +++PowerPlatformOpenHacks Subscription+++
+    1. [] **Subscription**: +++Azure Pass - Sponsorship+++
     1. [] **Resource Group**: +++IndustryLabs+++
     1. [] **Name**: iaduser[x]-healthbot (e.g., iaduser01-healthbot, using your assigned user)
     1. [] **Region**: East US
@@ -120,7 +120,7 @@ In this exercise, you will do the following:
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P16.png)
 
-1. [] Select **Save** in the top right.
+1. [] Select **Save**.
     ![](./IMAGES/Lab02/L2P17.png)
 
     Now let’s enable the Health Bot for **Microsoft Teams** Channel.
