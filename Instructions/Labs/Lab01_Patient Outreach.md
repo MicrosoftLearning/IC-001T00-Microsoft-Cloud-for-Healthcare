@@ -225,15 +225,15 @@ Here is an example of a configured **Patient Journey**, which focuses on the Pat
 
 Now let’s make our own customer journey for patients with hypermetropia.
 
-1.  In the **Patient Outreach** app in <http://make.powerapps.com/>, click **Patient journeys** under **Marketing execution** on the Site map.
+1.  In the **Patient Outreach** app, select **Patient journeys** under **Marketing execution** on the Site map.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/L1P35.png)
 
-1.  Click **New** to create a new Patient Journey.
+1.  Select **New** to create a new Patient Journey.
 
     ![Click New to create a new Patient Journey](./IMAGES/L1P36.png)
 
-1.  When prompted to choose a **Customer journey template** option, click **Skip** as we will create our own customer journey.
+1.  When prompted to choose a **Customer journey template** option, select **Skip** as we will create our own customer journey.
 
     ![Click Skip as we will create our own customer journey](./IMAGES/L1P37.png)
 
@@ -241,7 +241,7 @@ Now let’s make our own customer journey for patients with hypermetropia.
 
     ![New customer journey screenshot](./IMAGES/L1P38.png)
 
-1.  In the **Audience** panel that shows on the right, **search** for the **Patients with Hypermetropia** segment that you created in the previous task.
+1.  In the **Audience** panel that shows on the right, search for the **Patients with Hypermetropia** segment that you created in the previous task.
 
     ![Find the “Patients with Hypermetropia” segment that you created in the previous task](./IMAGES/L1P39.png)
 
@@ -249,7 +249,7 @@ Now let’s make our own customer journey for patients with hypermetropia.
 
     ![select “Patients with Hypermetropia” ](./IMAGES/L1P40.png)
 
-1.  Click the **General** tab and rename the record to **Healthy Eye Seminar**. Click **Save**.
+1.  Select the **General** tab and rename the record to **Healthy Eye Seminar**. Select **Save**.
 
     ![Name the record Healthy Eye Seminar](./IMAGES/L1P41.png)
 
@@ -261,13 +261,13 @@ Now let’s make our own customer journey for patients with hypermetropia.
 
     ![select Send an email from the contextual menu](./IMAGES/L1P43.png)
 
-1.  In the panel on the right for the **Email** field, select the marketing email **Email Invitation – Healthy Eye Seminar**” that you created in the previous exercise.
+1.  In the panel on the right for the **Email** field, select the marketing email **Email Invitation – Healthy Eye Seminar Virtual Event** that you created in the previous exercise.
 
     ![Customer Journey Designer View to select an email](./IMAGES/L1P44.png)
 
     ![Select the “Email Invitation – Healthy Eye Seminar” email that you created in the previous task](./IMAGES/L1P45.png)
 
-1.  Click **Save.**
+1.  Select **Save.**
 
     ![click save for customer journey](./IMAGES/L1P46.png)
 
@@ -275,7 +275,7 @@ Now let’s make our own customer journey for patients with hypermetropia.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/L1P47.png)
 
-1.  Click **Save**.
+1.  Select **Save**.
 
 1.  Your journey is now ready to go. To start the journey, navigate back to the **Designer** tab and publish it by selecting **Go live** on the command bar.
 
