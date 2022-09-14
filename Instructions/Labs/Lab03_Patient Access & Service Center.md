@@ -366,49 +366,49 @@ In this task, you will assign the necessary roles to your user to create and use
 
 See the following documentation to learn more about these roles: [Assign roles and enable users for Omnichannel for Customer Service](https://docs.microsoft.com/en-us/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges)
 
-1.  Using an In-Private or Incognito window, navigate to [Power Apps](http://make.powerapps.com).
+1. [] Using an In-Private or Incognito window, navigate to [Power Apps](http://make.powerapps.com).
 
-1.  Select the correct environment from the upper right **Environment** drop down.
+1. [] Select the correct environment from the upper right **Environment** dropdown.
 
     ![](./IMAGES/Lab03/L3P62.png)
 
-1.  Select **Apps** on the left navigation bar.
+1. [] Select **Apps** on the left navigation bar.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P63.png)
 
-1.  Open the **Omnichannel admin center** app.
+1. [] Open the **Omnichannel admin center** app.
 
     ![Screenshot of Omnichannel Administrator App in Power Apps](./IMAGES/Lab03/L3P64.png)
 
-1.  Select the **gauge** icon in the upper right corner and navigate to **Advanced Settings**.
+1. [] Select the **gauge** icon in the upper right corner and navigate to **Advanced Settings**.
 
     ![Screenshot of Advanced settings in Settings drop down](./IMAGES/Lab03/L3P65.png)
 
-1.  A new window should open and navigate to Dynamics 365. It may take a while to load. If it’s been longer than a minute, stop and reload the page. It should then load faster.
+1. [] A new window should open and navigate to Dynamics 365. It may take a while to load. If it’s been longer than a minute, stop and reload the page. It should then load faster.
 
-1.  In Dynamics 365, select **Settings > Security**.
+1. [] In Dynamics 365, select **Settings > Security**.
 
     ![Screenshot of Dynamics 365 navigation to settings and security on command bar](./IMAGES/Lab03/L3P66.png)
 
-1.  Under **Security**, select **Users**.
+1. [] Under **Security**, select **Users**.
 
     ![Screenshot of Users option first in the list of security settings](./IMAGES/Lab03/L3P67.png)
 
-1.  Switch the view drop down from Omnichannel Users to **Enabled Users** for the grid view so that your user will show in the list.
+1. [] Switch the view dropdown from **Omnichannel Users** to **Enabled Users** for the grid view so that your user will show in the list.
 
     ![Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](./IMAGES/Lab03/L3P68.png)
 
-1.  While in the **Enabled User** list, scroll down to **find your user** or use the **Search** bar.
+1. [] While in the **Enabled User** list, scroll down to **find your user** or use the **Search** bar.
 
     ![Screenshot of searching for user in enabled user list](./IMAGES/Lab03/L3P69.png)
 
-1.  Select your user for the training and select **Manage Roles** on the top command bar.
+1. [] Select your user for the training and select **Manage Roles** on the top command bar.
 
     ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab03/L3P70.png)
 
-1.  Scroll down and select the following two roles to your user and select **OK**.
-    1.  Productivity tools administrator
-    2.  Productivity tools user
+1. [] Scroll down and select the following two roles to your user and select **OK**.
+    1. [] Productivity tools administrator
+    1. [] Productivity tools user
 
         ![Screenshot of Manage User Roles dialog where 2 roles have been selected: Productivity tools administrator and Productivity tools user](./IMAGES/Lab03/L3P71.png)
 
@@ -416,107 +416,111 @@ See the following documentation to learn more about these roles: [Assign roles a
 
 **Congratulations!** You have successfully assigned the necessary **Productivity tools** user roles to set up and use agent scripts.
 
+
 ### Task 2: Create an Agent Script
 
 In this task, you will create an agent script in the Omnichannel admin center app. This script will guide the agent to **validate patient information** when a conversation is initiated between a patient and an agent in Patient Service Center. The script will have two steps, one to **confirm phone information** and another to **verify insurance information**. This task will guide you through creation of this agent script and its steps.
 
-1.  Navigate to **Omnichannel admin center** application which you opened in the first task.
+1. [] Navigate to **Omnichannel admin center** application which you opened in the first task.
 
-1.  In the left navigation bar, under **Agent Experience**, select **Agent Scripts.**
+1. [] In the left navigation bar, under **Agent Experience**, select **Agent Scripts.**
 
-1.  On the **Active Agent scripts** page, select **+New**.
+1. [] On the **Active Agent scripts** page, select **+New**.
 
     ![Omnichannel Administration app to create new agent scripts](./IMAGES/Lab03/L3P72.png)
 
-1.  For the **New Agent script** record, specify the following:
-    1.  **Name:** Validate Patient Information
-    2.  **Unique Name**: msdyn_ValidatePatientInformation
+1. [] For the **New Agent script** record, specify the following:
+    1. [] **Name:** Validate Patient Information
+    1. [] **Unique Name**: msdyn_ValidatePatientInformation
 
         ![Create new agent script called Validate Patient Information](./IMAGES/Lab03/L3P73.png)
 
-1.  Click **Save**. The Agent script steps should appear on the right
+1. [] Select **Save**. The Agent script steps should appear on the right
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P74.png)
 
-1.  In the **Agent script steps** section, select **+New Agent script step**.
+1. [] In the **Agent script steps** section, select **+New Agent script step**.
 
     ![Add Agent script step to the new agent script](./IMAGES/Lab03/L3P75.png)
 
-1.  Quick Create form for the Agent script step appears. Specify the following fields:
-    1.  **Name:** Confirm Phone Number
-    2.  **Unique Name**: msdyn_ConfirmPhone
-    3.  **Order**: 1
-    4.  **Action type**: Text
-    5.  **Text instructions**: Ask patient to confirm phone number.
+1. [] Quick Create form for the Agent script step appears. Specify the following fields:
+    1. [] **Name:** Confirm Phone Number
+    1. [] **Unique Name**: msdyn_ConfirmPhone
+    1. [] **Order**: 1
+    1. [] **Action type**: Text
+    1. [] **Text instructions**: Ask patient to confirm phone number.
 
         ![Screenshot of Quick create form for a step to Confirm Phone Number for the patient](./IMAGES/Lab03/L3P76.png)
 
-1.  Click **Save and Close**. Now let’s add another step.
+1. [] Select **Save and Close**. Now let’s add another step.
 
-1.  In the **Agent script steps** section, select **+New Agent script step** again.
+1. [] In the **Agent script steps** section, select **+New Agent script step** again.
 
     ![Screenshot of New Agent script step button in agent script steps subgrid ](./IMAGES/Lab03/L3P77.png)
 
-1.  Another Quick Create form for the Agent script step appears. Specify the following fields:
-    1.  **Name:** Verify Insurance Information
-    1.  **Unique Name**: msdyn_VerifyInsuranceInformation
-    1.  **Order**: 2
-    1.  **Action type**: Text
-    1.  **Text instructions**: Ask Patient for Insurance Provider and ID \#. Verify their response matches insurance information on file.
+1. [] Another Quick Create form for the Agent script step appears. Specify the following fields:
+    1. [] **Name:** Verify Insurance Information
+    1. [] **Unique Name**: msdyn_VerifyInsuranceInformation
+    1. [] **Order**: 2
+    1. [] **Action type**: Text
+    1. [] **Text instructions**: Ask Patient for Insurance Provider and ID \#. Verify their response matches insurance information on file.
 
-![Screenshot of Quick create form for a step to Verify Insurance Information for the patient](./IMAGES/Lab03/L3P78.png)
+    ![Screenshot of Quick create form for a step to Verify Insurance Information for the patient](./IMAGES/Lab03/L3P78.png)
 
-1.  Select **Save and Close**. Both steps should now be in the Agent script steps table.
+1. [] Select **Save and Close**. Both steps should now be in the Agent script steps table.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P79.png)
 
-1.  The agent script is now complete. Select **Save & Close**.
+1. [] The agent script is now complete. Select **Save & Close**.
 
     ![Screenshot of the completed "Validate Patient Information" Agent script](./IMAGES/Lab03/L3P80.png)
 
 **Congratulations!** You have completed creating an agent script with two steps to validate patient information, including phone number and insurance information.
 
+
 ### Task 3: Associate the Agent Script with a Session Template
 
 In this task, you will associate the agent script with a session template so it will load for agents based on the type of session they’ve opened. We will be associating the agent script we just created with the **Default chat session.** This is the default chat session that opens during an escalation to an agent in Patient Service Center.
 
-1.  Open the **Omnichannel admin center** app in Power Apps if you aren’t already in it.
+1. [] Open the **Omnichannel admin center** app in Power Apps if you aren’t already in it.
 
     ![Screenshot of Omnichannel Administrator App in Power Apps](./IMAGES/Lab03/L3P81.png)
 
-1.  In the left navigation bar, under **Agent Experience**, select **Sessions**.
+1. [] In the left navigation bar, under **Agent Experience**, select **Sessions**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P82.png)
 
-1.  Select the **Chat session – default** session template. We will associate this session with the agent script.
+1. [] Select the **Chat session – default** session template. We will associate this session with the agent script.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab03/L3P83.png)
 
-1.  Double click or select **Edit** on the command bar to open the Chat session – default record.
+1. [] Double-click or select **Edit** on the command bar to open the Chat session – default record.
 
     ![Graphical user interface, table Description automatically generated](./IMAGES/Lab03/L3P84.png)
 
-1.  Select the **Agent scripts** tab. In the **Agent scripts** section, select **Add Existing Agent script**.
+1. [] Select the **Agent scripts** tab. In the **Agent scripts** section, select **Add Existing Agent script**.
 
     ![Screenshot of Add existing agent script button in the agent scripts subgrid of the "Chat session - Default" template](./IMAGES/Lab03/L3P85.png)
 
-1.  The Lookup Records pane should appear on the right.
+1. [] The Lookup Records pane should appear on the right.
 
     ![Screenshot of Searching for Validate Patient Information record in Lookup field](./IMAGES/Lab03/L3P86.png)
 
-1.  In the **Look for Records** box, select the **search** icon (magnifying glass).
+1. [] In the **Look for Records** box, select the **search** icon (magnifying glass).
 
     ![Screenshot of selecting "Validate Patient Information" which shows as agent script record](./IMAGES/Lab03/L3P87.png)
  
-1.  Select the **Validate Patient Information** agent script from the list and click **Add.**
+1. [] Select the **Validate Patient Information** agent script from the list and select **Add.**
 
     ![Screenshot of Add button on bottom of Lookup Records pane](./IMAGES/Lab03/L3P88.png)
 
-1.  Chat session – default Session Template should have the Validate Patient Information Agent script.
+1. [] Chat session – default Session Template should have the Validate Patient Information Agent script.
 
     ![chat session - default agent script tab](./IMAGES/Lab03/L3P89.png)
 
 **Congratulations!** You have successfully created an agent script with two steps and associated the agent script with the default chat session. Now your agents can use this script during a default chat session with a patient.
+
+===
 
 ## Exercise 3: Configure Knowledge Articles
 
