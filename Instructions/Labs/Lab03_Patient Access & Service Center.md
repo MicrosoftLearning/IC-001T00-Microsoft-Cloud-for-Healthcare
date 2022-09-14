@@ -755,88 +755,90 @@ The following screen shows Patient Service Center after a patient has been escal
 
 ### Task 1: Patient Logs into Access Portal & Agent logs into Patient Service Center
 
-1.  Navigate to Power Apps and open the **Lamna Healthcare Patient Portal** app.
+1. [] Navigate to Power Apps and open the **Lamna Healthcare Patient Portal** app.
 
-1.  Sign into the Patient Portal as Caseyn Jensen, using the credentials you created in Exercise 1, Task 2 when you registered Casey for the patient portal.
+1. [] Sign into the **Patient Portal** as **Caseyn Jensen**, using the credentials you created in Exercise 1, Task 2 when you registered Casey for the patient portal.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P120.png)
 
-1.  You should be directed to the profile if your email requires confirmation. Click **Contoso Healthcare** in the upper left to go to the portal Homepage.
+1. [] You should be directed to the profile if your email requires confirmation. Select **Contoso Healthcare** in the upper left to go to the portal Homepage.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P121.png)
 
-1.  Your patient is all set in the Patient Portal. Now we need to make sure an agent is available for them when the Health Bot needs to escalate.
+1. [] Your patient is all set in the Patient Portal. Now we need to make sure an agent is available for them when the Health Bot needs to escalate.
 
     ![A screenshot of a computer Description automatically generated with low confidence](./IMAGES/Lab03/L3P122.png)
 
     Note: Before opening Patient Service Center, make sure you have completed adding the Omnichannel agent role to your user in Lab 04.
 
-2.  If you didn’t assign the Omnichannel agent role in Lab 04, assign the proper role by following the steps in Exercise 2, Task 1 – Assign Productivity User Roles. Once you’ve selected your user and clicked **Manage Roles**, assign the **Omnichannel agent** role and click **OK**.
+1. [] If you didn’t assign the Omnichannel agent role in Lab 02, assign the proper role by following the steps in Exercise 2, Task 1 – Assign Productivity User Roles. Once you’ve selected your user and selected **Manage Roles**, assign the **Omnichannel agent** role and select **OK**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P123.png)
 
-1.  Navigate to **Apps** and open the **Patient Service Center** app.
+1. [] Navigate to **Apps** and open the **Patient Service Center** app.
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab03/L3P124.png)
 
-1.  In the Patient Service Center, you should see a “Loading…” splash screen that goes through percentages. This ensures the live agent status is captured properly.
+1. [] In the Patient Service Center, you should see a “Loading…” splash screen that goes through percentages. This ensures the live agent status is captured properly.
 
     ![Screenshot of splash screen which is faded white background and shows loading percentages for page load.  This will allow omnichannel to work properly.](./IMAGES/Lab03/L3P125.png)
 
-    1.  If you don’t see the splash screen and the presence indicator is grayed out, escalation into the app from the health bot won’t work properly.
-    1.  Refresh again or close and reopen Patient Service Center until the splash screen appears. You may need to close all other apps or close incognito altogether and sign back in.
-   1.  If you just assigned the Omnichannel agent role, it may take up to 15 minutes to apply and for the presence to show for your user.
+    1. [] If you don’t see the splash screen and the presence indicator is grayed out, escalation into the app from the health bot won’t work properly.
+    1. [] Refresh again or close and reopen Patient Service Center until the splash screen appears. You may need to close all other apps or close incognito altogether and sign back in.
+   1. [] If you just assigned the Omnichannel agent role, it may take up to 15 minutes to apply and for the presence to show for your user.
 
-1.  Once your presence indicator is green, you are ready to accept patient escalations.
+1. [] Once your presence indicator is green, you are ready to accept patient escalations.
 
 **Congratulations!** You have successfully logged in as both the patient and the live agent. Now it’s time to start the Health Bot conversation.
 
+
 ### Task 2: Patient Escalates through Healthcare Bot
 
-1.  Select the **Let’s Chat** Health Bot chat widget in the bottom right corner of the portal.
+1. [] Select the **Let’s Chat** Health Bot chat widget in the bottom right corner of the portal.
 
-1.  The Health Bot should go through the same conversation you created in Lab 04.
-    1.  Make sure you set the Welcome message in the Health Bot lab
-    1.  If the welcome message doesn’t show, check the settings you did in Lab 04 (Teams and Human handoff enabled). Also make sure you added the widget snippet to the Patient Healthcare chat widget.
+1. [] The Health Bot should go through the same conversation you created in Lab 02.
+    1. [] Make sure you set the Welcome message in the Health Bot lab
+    1. [] If the welcome message doesn’t show, check the settings you did in Lab 02 (Teams and Human handoff enabled). Also make sure you added the widget snippet to the Patient Healthcare chat widget.
 
-1.  Select **Lamna Healthcare** **Support** to start a support conversation.
+1. [] Select **Lamna Healthcare** **Support** to start a support conversation.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P126.png)
 
-1.  Select **Live Agent** in the next prompt to escalate to an agent.
+1. [] Select **Live Agent** in the next prompt to escalate to an agent.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P127.png)
 
-1.  You will see the chat notifies you -- **An agent will be with you in a moment.**
+1. [] You will see the chat notifies you -- **An agent will be with you in a moment.**
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab03/L3P128.png)
 
-1.  Now let’s switch over to the Patient Service Center app so you can accept the escalation as an agent.
+1. [] Now let’s switch over to the Patient Service Center app so you can accept the escalation as an agent.
 
 **Congratulations!** You have successfully configured and started a conversation with the Health Bot in the Healthcare Patient Portal and asked to escalate to an agent in Patient Service Center.
+
 
 ### Task 3: Agent Provides Personalized Care in Patient Service Center with the Productivity Pane
 
 In this task, you will act as the Patient Service Center Agent, accept the escalation from the healthbot and assist the patient with their issue by using the productivity pane.
 
-1.  Navigate back to the **Patient Service Center** app. You should be signed in as your IAD User.
+1. [] Navigate back to the **Patient Service Center** app. You should be signed in as your IAD User.
 
-1.  Notice in the upper right corner there is a **Chat request** from your user.
+1. [] Notice in the upper right corner there is a **Chat request** from your user.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P129.png)
 
-1.  Select **Accept** to start a conversation with the patient.
+1. [] Select **Accept** to start a conversation with the patient.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P130.png)
 
-1.  The page should reload and show the patient record, active chat, and productivity pane as seen below.
+1. [] The page should reload and show the patient record, active chat, and productivity pane as seen below.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P131.png)
 
-1.  See the chat directly embedded on the left-hand side. Try out the command bar below it to see various options such as **auto-replies** and **surveys**.
+1. [] See the chat directly embedded on the left-hand side. Try out the command bar below it to see various options such as **auto-replies** and **surveys**.
   
-1.  Navigate the **productivity pane**. Go through the **agent script** and check off ones you complete asking the patient.
+1. [] Navigate the **productivity pane**. Go through the **agent script** and check off ones you complete asking the patient.
   
-6.  Go to **Knowledge Article** tab and search for **Breath** or **Inhaler**. Notice your Knowledge Article appear.
+1. [] Go to **Knowledge Article** tab and search for **Breath** or **Inhaler**. Notice your Knowledge Article appear.
 
 **Congratulations!** You completed the full experience from logging in as a patient to the portal, conversing with the health bot, and escalating into Patient Service Center to navigate the features for the agent.
