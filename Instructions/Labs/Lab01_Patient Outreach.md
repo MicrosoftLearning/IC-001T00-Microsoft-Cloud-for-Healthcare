@@ -146,7 +146,7 @@ nearby objects are blurry).
 
 In this exercise, you will create a marketing email that will be used to reach out to the patient segment you created in the previous exercise. Marketing emails are used to directly communicate with the patients that reside in a particular patient segment.
 
-1.  In the **Patient Outreach** app, scroll down to **Marketing Execution** in the left navigation pane and click **Marketing emails.**
+1.  In the **Patient Outreach** app, scroll down to **Marketing Execution** in the left navigation pane and select **Marketing emails.**
 
     ![Click Marketing emails](./IMAGES/L1P19.png)
 
@@ -154,7 +154,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Graphical user interface, text, email Description automatically generated](./IMAGES/L1P20.png)
 
-1.  Click **Save** on the command bar and then **Save as**.
+1.  Select the **Save** dropdown on the command bar and then **Save as**.
 
     ![](./IMAGES/L1P21.png)
 
@@ -162,7 +162,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Text Description automatically generated](./IMAGES/L1P22.png)
 
-1.  Click **Save and Close**.
+1.  Select **Save and Close**.
 
     ![Text Description automatically generated](./IMAGES/L1P23.png)
 
@@ -170,11 +170,11 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P24.png)
 
-1.  Click the image in the Designer.
+1.  Select the image in the Designer.
 
     ![Graphical user interface, website Description automatically generated](./IMAGES/L1P25.png)
 
-1.  Hover over the image in the **Edit image** pane and click **Replace**. Click **Upload to library**.
+1.  Hover over the image in the **Edit image** pane and select **Replace**. Click **Upload to library**.
 
     ![Graphical user interface, application, PowerPoint Description automatically generated](./IMAGES/L1P26.png)
 
@@ -186,9 +186,9 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/L1P28.png)
 
-1.  Find and select the file **Glasses.jpg** which you just saved. Click **Upload**.
+1.  Find and select the file **Glasses.jpg** which you just saved and select **Open**. Select **Upload**.
 
-    ![Select the “Glasses.jpg” image from the [file location], click Upload](./IMAGES/L1P29.png)
+    ![Select the “Glasses.jpg” image from the file location, click Upload](./IMAGES/L1P29.png)
 
 1.  Select **Done**.
 
@@ -207,7 +207,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/L1P32.png)
 
-1.  Click **Save** on the command bar and then click **Go live** so that the marketing email is available for use.
+1.  Select **Save** on the command bar and then select **Go live** so that the marketing email is available for use.
 
     ![](./IMAGES/L1P33.png)
 
