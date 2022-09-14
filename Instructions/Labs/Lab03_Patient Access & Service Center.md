@@ -69,129 +69,131 @@ Lamna Healthcare wants to associate the previously installed Customer Self-Servi
 
 We will first open the Portal to show the Customer Self-Service template currently bound. After the configuration steps in this task, you will see the new Healthcare Patient Portal user interface.
 
-1.  Navigate to <https://make.powerapps.com> in an In-Private or Incognito window.
+1. [] Navigate to <https://make.powerapps.com> in an In-Private or Incognito window.
 
-1.  Select the correct environment from the upper right **Environment** drop down.
+1. [] Select the correct environment from the upper right **Environment** dropdown.
 
     ![](./IMAGES/Lab03/L3P4.png)
 
-1.  Select **Apps** on the left navigation bar.
+1. [] Select **Apps** on the left navigation bar.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P5.png)
 
-1.  Find the **Lamna Healthcare** **Patient Portal** app. It should be the only app where the app type is Portal. You may also search for it in the Search bar in the upper right.
+1. [] Find the **Lamna Healthcare** **Patient Portal** app. It should be the only app where the app type is Portal. You may also search for it in the Search bar in the upper right.
 
     ![Screenshot of Lamna Healthcare Patient Portal in App list](./IMAGES/Lab03/L3P6.png)
 
-1.  Click the app name to open the **Lamna Healthcare Patient Portal**. You may also select **More Commands (…) > Browse** or click **Browse** on the top command bar to open it.
+1. [] Select the app name to open the **Lamna Healthcare Patient Portal**. You may also select **More Commands (…) > Browse** or click **Browse** on the top command bar to open it.
 
     ![Screenshot of selecting Lamna Healthcare Patient Portal](./IMAGES/Lab03/L3P7.png)
 
-1.  You should see the Customer Self-Service template shown in the Lamna Healthcare Patient Portal.
+1. [] You should see the Customer Self-Service template shown in the Lamna Healthcare Patient Portal.
 
     ![Screenshot of customer self-service portal landing page](./IMAGES/Lab03/L3P8.png)
 
-1.  Close the Lamna Healthcare Patient Portal website. Now you will configure it to the Healthcare Patient Portal template.
+1. [] Close the **Lamna Healthcare Patient Portal** website. Now you will configure it to the Healthcare Patient Portal template.
 
-1.  Return to Apps section in Power Apps. Select the **Lamna Healthcare Patient Portal** app if it isn’t already selected.
+1. [] Return to **Apps** section in Power Apps. Select the **Lamna Healthcare Patient Portal** app if it isn’t already selected.
 
     ![Screenshot of Lamna Healthcare Patient Portal in App list](./IMAGES/Lab03/L3P9.png)
 
-1.  Select **More Commands (…) > Settings**.
+1. [] Select **More Commands (…) > Settings**.
 
     ![Screenshot of selecting Lamna Healthcare Patient Portal](./IMAGES/Lab03/L3P10.png)
 
-1.  This will bring out the **Portal settings** panel on the right.
+1. [] This will bring out the **Portal settings** panel on the right.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P11.png)
 
-1.  In **Portal settings**, under **Advanced options**, select **Administration**.
+1. [] In **Portal settings**, under **Advanced options**, select **Administration**.
 
     ![Screenshot of portal settings dialog](./IMAGES/Lab03/L3P12.png)
 
-1.  Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You should be first navigated to the **Portal Details** tab of the Power Apps Portals admin center.
+1. [] Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You should be first navigated to the **Portal Details** tab of the Power Apps Portals admin center.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P13.png)
 
-1.  Scroll down to **Update Portal Binding > Select Website Record**.
+1. [] Scroll down to **Update Portal Binding > Select Website Record**.
 
     ![Screenshot of current portal binding as customer self-service](./IMAGES/Lab03/L3P14.png)
 
-1.  Open the **Select Website Record** drop down and change the value from Customer Self-Service to **Healthcare Patient Portal.** This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario.
+1. [] Open the **Select Website Record** dropdown and change the value from Customer Self-Service to +++**Healthcare Patient Portal**+++. This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario.
 
     ![Screenshot of selecting Healthcare Patient Portal in drop down](./IMAGES/Lab03/L3P15.png)
 
-1.  Select **Update**.
+1. [] Select **Update**.
 
     ![Screenshot of updating portal binding](./IMAGES/Lab03/L3P16.png)
 
-1.  Select **Portal Actions** section on the left navigation. Then click the first option, **Restart.**
+1. [] Select **Portal Actions** section on the left navigation. Then select the first option, **Restart.**
 
     ![Screenshot of selecting Portals Admin Center, select Portal Actions, and Restart](./IMAGES/Lab03/L3P17.png)
 
-1.  When prompted, confirm the **Restart** for the portal. This will allow the change to take effect.
+1. [] When prompted, confirm the **Restart** for the portal. This will allow the change to take effect.
 
     ![Screenshot of restart confirmation dialog](./IMAGES/Lab03/L3P18.png)
 
-1.  Wait 1-5 minutes for the portal to restart. (Feel free to refill water or stretch your legs!)
+1. [] Wait 1-5 minutes for the portal to restart. (Feel free to refill water or stretch your legs!)
 
-1.  After a few minutes, open the **Lamna Healthcare Patient Portal** in Power Apps.
+1. [] After a few minutes, open the **Lamna Healthcare Patient Portal** in Power Apps.
 
     ![Screenshot of Lamna Healthcare Patient Portal in App list](./IMAGES/Lab03/L3P19.png)
 
-1.  If you see **HTTP Error 503: The service is unavailable,** the portal is still restarting.
+1. [] If you see **HTTP Error 503: The service is unavailable,** the portal is still restarting.
 
     ![Screenshot of Server Unavailable, error 503 ](./IMAGES/Lab03/L3P20.png)
 
-1.  Once the Portal is opened and running properly, it should look like the following:
+1. [] Once the Portal is opened and running properly, it should look like the following:
 
     ![Screenshot of Patient Access Portal sign in page with the Healthcare Patient Portal template configured.](./IMAGES/Lab03/L3P21.png)
 
 **Congratulations!** You completed the post deployment steps to configure the Healthcare Patient Portal template deployed from Patient Access. After updating the bindings and restarting the portal, the website now shows as Healthcare Patient Portal template rather than Customer Self-Service.
 
+
 ### Task 2: Modify Company Name in Patient Portal
 
 In this task, we will edit the Patient Portal website to align the name with Lamna Healthcare Company since the template uses a generic company name.
 
-1.  Navigate to **Apps** in <https://make.powerapps.com>.
+1. [] Navigate to **Apps** in <https://make.powerapps.com>.
 
-1.  Select the **Healthcare Patient Portal** app and click **More Commands (…) > Edit**.
+1. [] Select the **Healthcare Patient Portal** app and select **More Commands (…) > Edit**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P22.png)
 
-1.  The Patient Portal designer will load after getting thing ready.
+1. [] The Patient Portal designer will load after getting thing ready.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P23.png)
 
-1.  Once loaded, you should see **Contoso Healthcare** in the upper left of the design screen. The name may be overlapping the logo but will display properly on the website.
+1. [] Once loaded, you should see **Contoso Healthcare** in the upper left of the design screen. The name may be overlapping the logo but will display properly on the website.
 
     ![Graphical user interface, table Description automatically generated](./IMAGES/Lab03/L3P24.png)
 
-1.  Click the text box that reads **Contoso Healthcare** and change it to **Lamna Healthcare**.
+1. [] Select the text box that reads **Contoso Healthcare** and change it to **Lamna Healthcare**.
 
     ![A picture containing table Description automatically generated](./IMAGES/Lab03/L3P25.png)
 
-1.  The page should automatically save the changes. You can verify in the command bar that it says **Saved**, has the green check mark, and on hover shows the correct saved time.
+1. [] The page should automatically save the changes. You can verify in the command bar that it says **Saved**, has the green check mark, and on hover shows the correct saved time.
 
     ![A picture containing background pattern Description automatically generated](./IMAGES/Lab03/L3P26.png)
 
-1.  Select **Sync Configurations** in the command bar to sync data to CDS.
+1. [] Select **Sync Configurations** in the command bar to sync data to CDS.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P27.png)
 
-1.  It may take a moment to load the preview.
+1. [] It may take a moment to load the preview.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab03/L3P28.png)
 
-1.  Once configurations are completed syncing, select **Browse website** on the command bar.
+1. [] Once configurations are completed syncing, select **Browse website** on the command bar.
 
     ![](./IMAGES/Lab03/L3P29.png)
 
-1.  The Healthcare Patient Portal should open, and you should see the **Lamna Healthcare** company name in the upper left corner.
+1. [] The Healthcare Patient Portal should open, and you should see the **Lamna Healthcare** company name in the upper left corner.
 
     ![A person holding a baby Description automatically generated with low confidence](./IMAGES/Lab03/L3P30.png)
 
 **Congratulations!** You completed modifying the Healthcare Patient Portal to display the correct company name.
+
 
 ### Task 3: Invite a Patient to the Portal
 
@@ -199,146 +201,150 @@ Now that the Patient Portal is ready to go, we need to allow Lamna Healthcare pa
 
 In this task, you will learn how to **create an invitation code** for patients to sign up and use the Lamna Healthcare Patient Portal. Since **Casey Jensen** will be accessing the patient portal to fill her medication in this lab, we will create an account for her.
 
-1.  Open the **Healthcare Administration** app in [Power Apps](http://make.powerapps.com).
+1. [] Open the **Healthcare Administration** app in [Power Apps](http://make.powerapps.com).
 
     ![Screenshot of Apps screen with Healthcare Administration App](./IMAGES/Lab03/L3P31.png)
 
-1.  In the **Administration** section of the sitemap, select **People,** if not already selected. You will see the **Active Patients** grid view. Open the **Casey Jensen** patient record so we can obtain an invitation code for her to use.
+1. [] In the **Administration** section of the sitemap, select **People,** if not already selected. You will see the **Active Patients** grid view. Open the **Casey Jensen** patient record so we can obtain an invitation code for her to use.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P32.png)
 
-1.  On Casey Jensen patient record, select **Create Invitation** from the top command bar. It should be near the right side.
+1. [] On Casey Jensen patient record, select **Create Invitation** from the top command bar. It should be near the right side.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P33.png)
 
-1.  You may have to expand additional options to see this command in the drop down.
+1. [] You may have to expand additional options to see this command in the dropdown.
 
     ![Screenshot of Create Invitation command after expanding more options](./IMAGES/Lab03/L3P34.png)
 
-1.  A New Invitation form will appear. You don’t need to make any changes. Click **Save.** Once saved, an invitation code will be created for the patient. Let’s go retrieve it.
+1. [] A New Invitation form will appear. You don’t need to make any changes. Select **Save**. Once saved, an invitation code will be created for the patient. Let’s go retrieve it.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P35.png)
 
-1.  Go to the **Advanced** tab on the Invitation record. Copy and store the **Invitation Code** for accessing the Patient Portal in the next task.
+1. [] Go to the **Advanced** tab on the Invitation record. Copy and store the **Invitation Code** for accessing the Patient Portal in the next task.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P36.png)
 
 **Congratulations!**  You have successfully created an invitation code for **Casey** to register an account in the Patient Portal.
 
+
 ### Task 4: Redeem Invitation Code and Sign into Patient Portal
 
 In this task, you will **transition personas** and act as **Casey Jensen**, who just received an invitation code to Lamna Healthcare’s Patient Portal and is excited to register and navigate its features.
 
-1.  Open the Lamna Healthcare Patient Portal in [Power Apps](https://make.powerapps.com/).
+1. [] Open the Lamna Healthcare Patient Portal in [Power Apps](https://make.powerapps.com/).
 
     ![Screenshot of Lamna Healthcare Patient Portal in App list](./IMAGES/Lab03/L3P37.png)
 
-1.  In the first task, we configured the portal to the Healthcare Patient Portal template. Now that it’s been restarted, your Patient Portal should open and look like the following:
+1. [] In the first task, we configured the portal to the Healthcare Patient Portal template. Now that it’s been restarted, your Patient Portal should open and look like the following:
 
     ![Screenshot of Healthcare Patient Portal Sign in Landing Page](./IMAGES/Lab03/L3P38.png)
 
-1.  If you still see the Customer Self-Service template, make sure you’ve completed Exercise 1, Task 1 to change the template to the Healthcare Patient Portal.
+1. [] If you still see the Customer Self-Service template, make sure you’ve completed Exercise 1, Task 1 to change the template to the Healthcare Patient Portal.
 
-1.  In the Patient Portal, select **Sign in**.
+1. [] In the Patient Portal, select **Sign in**.
 
     ![Screenshot of Sign in prompt](./IMAGES/Lab03/L3P39.png)
 
-1.  After the sign in page loads, select the **Redeem invitation** tab.
+1. [] After the sign in page loads, select the **Redeem invitation** tab.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P40.png)
 
-1.  Paste the **Invitation code** you stored for Casey Jensen. Click **Register.**
+1. [] Paste the **Invitation code** you stored for Casey Jensen. Select **Register.**
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P41.png)
 
-1.  Register a new local account for Casey Jensen with the following recommended details:
-    1.  **Email**: Casey.Jensen@contoso.com (should auto-fill)
-    2.  **Username**: CaseyJensen
-    3.  **Password**: Make up your own. Please note the password to use for sign in later.
+1. [] Register a new local account for Casey Jensen with the following recommended details:
+    1. [] **Email**: Casey.Jensen@contoso.com (should auto-fill)
+    1. [] **Username**: CaseyJensen
+    1. [] **Password**: Make up your own. Please note the password to use for sign in later.
 
         ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P42.png)
 
-1.  Click **Register**. After selecting Register, you should be signed into the Patient Portal.
+1. [] Select **Register**. After selecting Register, you should be signed into the Patient Portal.
 
 **Congratulations!** You have successfully redeemed an invitation to register an account for Casey and signed in.
+
 
 ### Task 5: Navigate the Patient Access Portal
 
 In this task, you will continue as **Casey** and navigate the features of the Patient Portal.
 
-1.  After registering for an account in the **Patient Access Portal**, you should be welcomed by the portal Homepage or profile page if your account requires action, such as email confirmation required. You can ignore the email confirmation warning if displayed.
+1. [] After registering for an account in the **Patient Access Portal**, you should be welcomed by the portal Homepage or profile page if your account requires action, such as email confirmation required. You can ignore the email confirmation warning if displayed.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P43.png)
 
-1.  Select **Lamna Healthcare** in the upper left to go back to the Homepage.
+1. [] Select **Lamna Healthcare** in the upper left to go back to the Homepage.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P44.png)
 
-1.  You will be navigated to the Patient Portal **Homepage**.
+1. [] You will be navigated to the Patient Portal **Homepage**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P45.png)
 
-1.  In the center of the homepage, you will see **shortcuts** to schedule an appointment, view messages, or find a doctor.
+1. [] In the center of the homepage, you will see **shortcuts** to schedule an appointment, view messages, or find a doctor.
 
     ![Screenshot of homepage shortcuts](./IMAGES/Lab03/L3P46.png)
 
-1.  Below the shortcuts, you will see **current patient information** including unread messages, upcoming appointments, and current medications.
+1. [] Below the shortcuts, you will see **current patient information** including unread messages, upcoming appointments, and current medications.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P47.png)
 
-1.  In the left navigation bar, you will see all available options for navigation in the Patient Portal. Click through the options to see what’s available and each associated screen.
+1. [] In the left navigation bar, you will see all available options for navigation in the Patient Portal. Select the options to see what’s available and each associated screen.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P48.png)
 
-1.  **Home** command will direct you to the homepage.
+1. [] **Home** command will direct you to the homepage.
 
-1.  **Find a doctor** shows a list of practitioners with associated information.
+1. [] **Find a doctor** shows a list of practitioners with associated information.
 
     ![Table Description automatically generated](./IMAGES/Lab03/L3P49.png)
 
-1.  **Messages** allows a secure method to send and receive messages to healthcare professionals. Expand Messages on the navigation bar to see both the **Inbox** and **Sent** messages.
+1. [] **Messages** allows a secure method to send and receive messages to healthcare professionals. Expand **Messages** on the navigation bar to see both the **Inbox** and **Sent** messages.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P50.png)
 
-1.  Expand **Appointments** to check upcoming and schedule new appointments. Scheduling new appointments allows for clinic or virtual appointments, which also includes instant virtual appointments. The Virtual Visit Lab will go through the process of booking an instant virtual appointment.
+1. [] Expand **Appointments** to check upcoming and schedule new appointments. Scheduling new appointments allows for clinic or virtual appointments, which also includes instant virtual appointments. The Virtual Visit Lab will go through the process of booking an instant virtual appointment.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P51.png)
 
-1.  Check **Medical records** including medications, allergies, conditions, visit summaries, care plans, and care team. You can see a full overview and filter by date and type.
+1. [] Check **Medical records** including medications, allergies, conditions, visit summaries, care plans, and care team. You can see a full overview and filter by date and type.
 
     ![Graphical user interface, text, email Description automatically generated](./IMAGES/Lab03/L3P52.png)
 
-1.  Lastly, there is Personal information, including emergency contacts and insurance coverages.
+1. [] Lastly, there is Personal information, including emergency contacts and insurance coverages.
 
     ![Text Description automatically generated](./IMAGES/Lab03/L3P53.png)
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P54.png)
 
-1.  The Azure Health Bot icon shows at the lower right-hand corner of the screen. You may start a conversation by clicking **Let’s Chat** button to open the virtual assistant.
+1. [] The Azure Health Bot icon shows at the lower right-hand corner of the screen. You may start a conversation by selecting **Let’s Chat** button to open the virtual assistant.
 
     ![Screenshot of Let's Chat virtual assistant Health Bot](./IMAGES/Lab03/L3P55.png)
 
-1.  In the final exercise, we will have a full conversation with the bot, but for now we will close and continue.
+1. [] In the final exercise, we will have a full conversation with the bot, but for now we will close and continue.
 
     ![Screenshot of closing the Health Bot conversation](./IMAGES/Lab03/L3P56.png)
 
-1.  You may access the patient Profile page at any time by selecting the patient’s name in the upper right drop-down and selecting **Profile**.
+1. [] You may access the patient Profile page at any time by selecting the patient’s name in the upper right dropdown and selecting **Profile**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P57.png)
 
-1.  Here you can customize the patient profile as needed. For now, we will keep it the same.
+1. [] Here you can customize the patient profile as needed. For now, we will keep it the same.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P58.png)
 
-1.  You may log out of the Patient Portal by selecting the patient’s name in the upper right drop-down and selecting **Sign Out**.
+1. [] You may log out of the Patient Portal by selecting the patient’s name in the upper right drop-down and selecting **Sign Out**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P59.png)
 
-1.  You should be redirected back to the sign in page.
+1. [] You should be redirected back to the sign in page.
 
     ![A person holding a baby Description automatically generated with low confidence](./IMAGES/Lab03/L3P60.png)
 
 **Congratulations!** You have navigated the Patient Portal to see what information and communication is available to the Patient. In this exercise, you learned how to configure the Patient Access Portal to display as the Healthcare Patient Portal, modify the portal to display the company name, invite patients to register to the website, and navigate the website features.
+
+===
 
 ## Exercise 2: Configure Agent Scripts
 
