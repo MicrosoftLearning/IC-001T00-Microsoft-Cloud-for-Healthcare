@@ -293,7 +293,7 @@ Now let’s make our own customer journey for patients with hypermetropia.
 
 In this exercise, you will create a healthcare-focused, virtual educational **Event** corresponding to the patient journey you created in the previous exercise that sends the Healthy Eye Seminar event invite to everyone in the patient segment. The **Marketing Event Management** feature helps you every step of the way, from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting, final analytics, lead generation, and evaluation of ROI.
 
-1.  In the **Patient Outreach** application, click **Events** on the **Site Map** under **Event Management**.
+1.  In the **Patient Outreach** application, select **Events** on the Site Map under **Event Management**.
 
     ![Click on Events on the Sitemap](./IMAGES/L1P50.png)
 
@@ -303,7 +303,7 @@ In this exercise, you will create a healthcare-focused, virtual educational **Ev
 
     ![new Event record](./IMAGES/L1P51.png)
 
-1.  Click **Save**.
+1.  Select **Save**.
 
 1.  Since this will be a virtual event, in the **Stream This Event Online** section, toggle “**Do you want to stream this event**” to **Yes**.
 
@@ -311,15 +311,15 @@ In this exercise, you will create a healthcare-focused, virtual educational **Ev
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/L1P53.png)
 
-1.  In the **Business Process Flow**, select the first stage **Preliminaries**. In the flyout, click **Next Stage.**
+1.  In the **Business Process Flow**, select the first stage **Preliminaries**. In the flyout, select **Next Stage.**
 
     ![Click Preliminaries and then click Next Stage](./IMAGES/L1P54.png)
 
-1.  Advance each stage in the business process flow until you reach the **Launch** stage. Observe the fields associated with stage as you advance through them.
+1.  Advance each stage in the business process flow until you reach the **Launch** stage. Observe the fields associated with each stage as you advance through them.
 
     ![Business Process flow with all stages checked up to Launch](./IMAGES/L1P55.png)
 
-1.  Click **Go live** on the command bar. If you don’t see Go live available, select **Save** first.
+1.  Select **Go live** on the command bar. If you don’t see Go live available, select **Save** first.
 
     ![Click Go live on the command bar](./IMAGES/L1P56.png)
 
