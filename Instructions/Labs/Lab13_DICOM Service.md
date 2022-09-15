@@ -33,68 +33,75 @@ In Lab-07, you deployed an Azure Health Data Services workspace in your resource
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab13/L13P1.png)
 
-1. Click the item in the list. 
+1. [] Select the item in the list. 
 
-1. Then, scroll down and click the **DICOM service** blade. 
+1. [] Then, scroll down and select the **DICOM service** blade. 
 
-1. Once there, click the **+Add DICOM service** button and proceed to the next step.
+1. [] Once there, select the **+Add DICOM service** button and proceed to the next step.
 
-### Exercise 2: Deploy DICOM service using Azure Portal
+===
+
+## Exercise 2: Deploy DICOM service using Azure Portal
 
 Now you will visit another page and follow the instructions to [Deploy DICOM service using the Azure portal](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/deploy-dicom-services-in-azure). 
 
-1. Go directly to #3 in the instructions and begin from there. 
+1. [] Go directly to #3 in the instructions and begin from there. 
 
-1. Then return here when finished.
+1. [] Then return here when finished.
 
-*Note: DICOM service deployment typically takes several minutes.*
+> [!NOTE] Note: DICOM service deployment typically takes several minutes.
+
+===
 
 ## Exercise 3: Configure Azure roles for access to DICOM data
 
 You will need to add the **DICOM Data Owner** role for yourself (i.e., your username in Azure) as well as for the Postman service client that you created in Lab-07  ([documentation available here](https://docs.microsoft.com/azure/healthcare-apis/configure-azure-rbac#assign-roles-for-the-dicom-service)).
 
+===
+
 ## Exercise 4: Import Postman environment and collection files to connect with DICOM service
 
-1.  Access the **Postman environment template** for **DICOM service** [here](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-08%20-%20DICOM%20service/postman/dicom-service.postman_environment.json). 
+1. [] Access the **Postman environment template** for **DICOM service** [here](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-08%20-%20DICOM%20service/postman/dicom-service.postman_environment.json). 
 
-1.  Save the file locally (click **Raw** and then do a **Save as** from your browser).
+1. [] Save the file locally (select **Raw** and then do a **Save as** from your browser).
 
-1.  In Postman, find the **Environments** tab on the left and click the **Import** button.
+1. [] In Postman, find the **Environments** tab on the left and select the **Import** button.
 
-1.  Import the **dicom-service.postman_environment.json** file that you just saved locally.
-    1. Add the file to Postman using the **Upload Files** button. 
-    1. Then click **Import**.
+1. [] Import the **dicom-service.postman_environment.json** file that you just saved locally.
+    1. [] Add the file to Postman using the **Upload Files** button. 
+    1. [] Then select **Import**.
 
-1.  Now, access the **Conformance-as-Postman.postman_collection.json** file available [here](https://github.com/microsoft/dicom-server/blob/main/docs/resources/Conformance-as-Postman.postman_collection.json) and save the file locally. 
+1. [] Now, access the **Conformance-as-Postman.postman_collection.json** file available [here](https://github.com/microsoft/dicom-server/blob/main/docs/resources/Conformance-as-Postman.postman_collection.json) and save the file locally. 
 
-1.  Then import the file into Postman.
-    1. Add the file to Postman using the **Upload Files** button. 
-    1. Then click **Import**.
+1. [] Then import the file into Postman.
+    1. [] Add the file to Postman using the **Upload Files** button. 
+    1. [] Then select **Import**.
+
+===
 
 ## Exercise 5: Configure Postman environment
 
 You will now configure a new Postman environment for DICOM service (dicom-service).
 
-1.  For the dicom-service Postman environment, you will need to retrieve the following values:
+1. [] For the dicom-service Postman environment, you will need to retrieve the following values:
+    1. [] From your existing fhir-service Postman environment:
+        1. [] **tenantId** - AAD tenant ID (you also can find it in **AAD** -\> **Overview** -\> **Tenant ID**).
+        1. [] **clientId** - Application (client) ID for Postman service client app.
+        1. [] **clientSecret** - Client secret for your Postman app.
 
-    1. *From your existing* fhir-service *Postman environment:*
+    1. New values you need to input:
+        1. [] **resource** - https://dicom.healthcareapis.azure.com
+        1. [] **baseUrl** - Service URL appended with **/v1**. 
+            1. [] Go to **Portal > Resource Group > DICOM service > Service URL**. 
+            1. [] Copy and add **/v1** on the end: /**https://</workspace-name/>-</dicom-service-name/>.dicom.azurehealthcareapis.com/v1**.
 
-        1. **tenantId** - AAD tenant ID (you also can find it in **AAD** -\> **Overview** -\> **Tenant ID**).
-        1. **clientId** - Application (client) ID for Postman service client app.
-        1. **clientSecret** - Client secret for your Postman app.
+1. [] Populate the above parameter values in your dicom-service Postman environment. 
 
-    1. *New values you need to input:*
+1. [] Input the values in the **CURRENT VALUE** column. Leave bearerToken blank. 
 
-        1. **resource** - https://dicom.healthcareapis.azure.com
-        1. **baseUrl** - Service URL appended with **/v1**. 
-            1. Go to **Portal** -> **Resource Group** -> **DICOM service** -> **Service URL**. 
-            1. Copy and add **/v1** on the end: **https://<workspace-name\>-\<dicom-service-name\>.dicom.azurehealthcareapis.com/v1**.
+1. []  Make sure to select **Save** to retain the dicom-service environment values.
 
-1. Populate the above parameter values in your dicom-service Postman environment. 
-
-1. Input the values in the **CURRENT VALUE** column. Leave bearerToken blank. 
-
-1. Make sure to click **Save** to retain the dicom-service environment values.
+===
 
 ## Exercise 6: Choose a path for the rest of the lab
 
@@ -116,23 +123,25 @@ You can follow the provided articles that go over how to programmatically commun
 
 **Task 1: Obtain an access token to connect with DICOM service**
 
-1.  In Postman, make sure you have selected your **dicom-service environment** as the active environment.
+1. [] In Postman, make sure you have selected your **dicom-service environment** as the active environment.
 
-1.  Click the **Conformance-as-Postman** collection.
+1. [] Select the **Conformance-as-Postman** collection.
 
-1.  Click the **POST AuthorizeGetToken** request and click **Send**. You should receive a 200 OK message in response. Your access token is now saved to the bearerToken environment variable in your dicom-service Postman environment. Access tokens expire after 60 minutes. A refresh can be obtained by sending the POST AuthorizeGetToken request again.
+1. [] Select the **POST AuthorizeGetToken** request and select **Send**. You should receive a 200 OK message in response. Your access token is now saved to the bearerToken environment variable in your dicom-service Postman environment. Access tokens expire after 60 minutes. A refresh can be obtained by sending the POST AuthorizeGetToken request again.
 
 **Task 2: Populate DICOM service with single instance images**
 
-1.  Once your dicom-service Postman environment is set up and you have obtained an access token, please go to [**this repo**](https://github.com/microsoft/dicom-server/tree/main/docs/dcms) and download the three DICOM instance files (**.dcm**).
+1. [] Once your dicom-service Postman environment is set up and you have obtained an access token, please go to [**this repo**](https://github.com/microsoft/dicom-server/tree/main/docs/dcms) and download the three DICOM instance files (**.dcm**).
 
-1.  Then, for each of the three **POST Store-single-instance** calls in the **Conformance-as-Postman** collection, 
-    1. Go to **Body**, click the **x** next to the filename.
-    1. Click **Select File** and choose the appropriate **.dcm** file (downloaded in the previous step).
+1. [] Then, for each of the three **POST Store-single-instance** calls in the **Conformance-as-Postman** collection, 
+    1. [] Go to **Body**, select the **x** next to the filename.
+    1. [] Select **Select File** and choose the appropriate **.dcm** file (downloaded in the previous step).
 
     ![A screenshot of a computer Description automatically generated with medium confidence](./IMAGES/Lab13/L13P2.png)
 
-1.  Press **Send** for each POST Store-single-instance call and you will populate your DICOM service with the three .dcm single instance files.
+1. [] Press **Send** for each POST Store-single-instance call and you will populate your DICOM service with the three .dcm single instance files.
+
+===
 
 ## Exercise 7: Execute Outlined Features via Postman Collection
 
@@ -169,6 +178,8 @@ The Change Feed provides logs of all the changes that occur in your DICOM servic
 By default, the DICOM service supports querying on the DICOM tags specified in [the conformance statement](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-services-conformance-statement#searchable-attributes). By enabling extended query tags, the list of tags can easily be expanded based on the application's needs.
 
 You can follow the instructions given in this [Extended Query Tag Overview article](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-extended-query-tags-overview) to manage query tags.
+
+===
 
 ## Exercise 8: BONUS : Set up a DICOM viewer for DICOM service
 
