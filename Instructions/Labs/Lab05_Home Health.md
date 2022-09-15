@@ -98,7 +98,7 @@ Now let’s create a Bookable Resource in the Home Health application.
 
     ![Click +New -\> Working Hours](./IMAGES/Lab05/L5P12.png)
 
-1.  Choose the **date** you want the working schedule to begin on, the beginning and end **time** of working hours (such as 8am to 5pm), along with a **repeat** option such as "every day” and then deselect **Sunday** and **Saturday**. Select **Save**.
+1. [] Choose the **date** you want the working schedule to begin on, the beginning and end **time** of working hours (such as 8am to 5pm), along with a **repeat** option such as "every day” and then deselect **Sunday** and **Saturday**. Select **Save**.
 
     ![Choose date you want the working schedule to begin on, the beginning and end time of working hours (such as 8am to 5pm), along with a repeat option such as "every day” and then click off Sunday and Saturday.  Click Save](./IMAGES/Lab05/L5P13.png)
 
