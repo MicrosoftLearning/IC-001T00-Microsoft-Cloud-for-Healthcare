@@ -412,7 +412,7 @@ See the following documentation to learn more about these roles: [Assign roles a
 
         ![Screenshot of Manage User Roles dialog where 2 roles have been selected: Productivity tools administrator and Productivity tools user](./IMAGES/Lab03/L3P71.png)
 
-> [NOTE] Note: You will assign more roles in this lab. It is recommended to leave the User screen open.
+> [!NOTE] Note: You will assign more roles in this lab. It is recommended to leave the User screen open.
 
 **Congratulations!** You have successfully assigned the necessary **Productivity tools** user roles to set up and use agent scripts.
 
@@ -769,7 +769,7 @@ The following screen shows Patient Service Center after a patient has been escal
 
     ![A screenshot of a computer Description automatically generated with low confidence](./IMAGES/Lab03/L3P122.png)
 
-    > [NOTE] Note: Before opening Patient Service Center, make sure you have completed adding the Omnichannel agent role to your user in Lab 04.
+    > [!NOTE] Note: Before opening Patient Service Center, make sure you have completed adding the Omnichannel agent role to your user in Lab 04.
 
 1. [] If you didn’t assign the Omnichannel agent role in Lab 02, assign the proper role by following the steps in Exercise 2, Task 1 – Assign Productivity User Roles. Once you’ve selected your user and selected **Manage Roles**, assign the **Omnichannel agent** role and select **OK**.
 
