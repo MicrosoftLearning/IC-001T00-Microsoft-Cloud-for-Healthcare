@@ -36,25 +36,25 @@ Below is an example of the appointment booking screen in the Patient Portal. As 
 
 ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P3.png)
 
-1.  Go to <https://make.powerapps.com/> and open **Virtual Clinic**.
+1. [] Go to <https://make.powerapps.com/> and open **Virtual Clinic**.
 
-1.  In the upper right-hand corner, click the **funnel** icon which will open **Advanced Find**.
+1. [] In the upper right-hand corner, select the **funnel** icon which will open **Advanced Find**.
 
     ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6P4.png)
 
-1.  In the **Search** box, browse for **Codeable Concepts** and click **Results**.
+1. [] In the **Search** box, browse for **Codeable Concepts** and select **Results**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P5.png)
 
-1.  Click New Codeable Concept.
+1. [] Select **New Codeable Concept**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P6.png)
 
-1.  In the new Codable Concept record, fill in the following details and click **Save**.
-    1.  **Name**: General Medicine
-    2.  **Text**: General Medicine
-    3.  **Type**: Practitioner Specialty
-    4.  **Code**: general
+1. [] In the new Codable Concept record, fill in the following details and select **Save**.
+    1. [] **Name**: General Medicine
+    1. [] **Text**: General Medicine
+    1. [] **Type**: Practitioner Specialty
+    1. [] **Code**: general
 
         ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P7.png)
 
@@ -69,19 +69,19 @@ There are two different places the Teams meeting may be created:
 -   In the case of virtual appointments, the Teams meeting is created on the mapped user’s calendar.
 -   In the case of instant virtual appointments, the Teams meeting is created on the Organizer (organizer email for virtual appointments) specified in the Admin settings.
 
-1.  In Power Apps, select **Apps** and then open the **Virtual Clinic** application.
+1. [] In Power Apps, select **Apps** and then open the **Virtual Clinic** application.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P8.png)
 
-1.  Click **People**, change the view to **Active Practitioners**, and open the **Alex Johnson** record.
+1. [] Select **People**, change the view to **Active Practitioners**, and open the **Alex Johnson** record.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P9.png)
 
-1.  Select your logged in user as the **Mapped System User**.
+1. [] Select your logged in user as the **Mapped System User**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P10.png)
 
-1.  Click **Save & Close**.
+1. [] Select **Save & Close**.
 
 **Congratulations!** You have mapped the practitioner record to your logged in user.
 
@@ -89,15 +89,15 @@ There are two different places the Teams meeting may be created:
 
 In this task, you will configure the practitioner’s schedule to allow patients to book appointments with them using the Patient Portal. This will allow Reed to schedule an appointment with his practitioner, Alex Johnson.
 
-1.  In the **Virtual Clinic** app, change the sitemap area in the lower left corner from **Operations** to **Schedule Administration**.
+1. [] In the **Virtual Clinic** app, change the sitemap area in the lower left corner from **Operations** to **Schedule Administration**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P11.png)
 
-1.  On the sitemap, select **Schedules** and open the **Alex Johnson schedule** record.
+1. [] On the sitemap, select **Schedules** and open the **Alex Johnson schedule** record.
 
     ![Table Description automatically generated](./IMAGES/Lab06/L6P12.png)
 
-1.  Change **Active** from No to **Yes** and click **Save**.
+1. [] Change **Active** from **No** to **Yes** and select **Save**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P13.png)
 
@@ -107,19 +107,19 @@ In this task, you will configure the practitioner’s schedule to allow patients
 
 In this task, we will configure a new appointment slot to show practitioner’s availability. This will allow patients to select an available appointment time slot when booking with a practitioner. In this case, we will enable the practitioner, Alex Johnson, to be available today at a set time for virtual appointments.
 
-1.  In the **Virtual Clinic** app, select **Slots** on the Site Map and click **+ New**.
+1. [] In the **Virtual Clinic** app, select **Slots** on the Site Map and select **+ New**.
 
     ![Graphical user interface, table Description automatically generated](./IMAGES/Lab06/L6P14.png)
 
-1.  Fill in the following record details and click **Save & Close**.
-    1.  **Name**: Alex Johnson Slot
-    2.  **Start**: Today, at a later time
-    3.  **End**: Today, an hour after the Start
-    4.  **Schedule**: Alex Johnson schedule
-    5.  **Status**: Free
-    6.  **isVirtual**: Yes
-    7.  **Specialty**: General Medicine (the practitioner specialty record you created)
-    8.  **Service Category**: General Medicine (same as specialty)
+1. [] Fill in the following record details and select **Save & Close**.
+    1. [] **Name**: Alex Johnson Slot
+    1. [] **Start**: Today, at a later time
+    1. [] **End**: Today, an hour after the Start
+    1. [] **Schedule**: Alex Johnson schedule
+    1. [] **Status**: Free
+    1. [] **isVirtual**: Yes
+    1. [] **Specialty**: General Medicine (the practitioner specialty record you created)
+    1. [] **Service Category**: General Medicine (same as specialty)
 
         ![A screenshot of a computer Description automatically generated](./IMAGES/Lab06/L6P15.png)
 
@@ -129,27 +129,27 @@ In this task, we will configure a new appointment slot to show practitioner’s 
 
 In this task, you will configure the environment variables necessary to generate a Microsoft Teams URL for virtual appointments.
 
-1.  Go to <https://make.powerapps.com/>
+1. [] Go to <https://make.powerapps.com/>
 
-1.  Go to **Apps** and click on **See environment variables**.
+1. [] Go to **Apps** and select **See environment variables**.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P16.png)
 
-1.  Scroll down to the bottom to find the **Virtual Visit Secret** and the **Virtual Visit Client ID**. These environment variables are used to authenticate against the Microsoft Graph API to schedule the meeting event. To set these up, we need to create a new Application Registration in Microsoft Azure.
+1. [] Scroll down to the bottom to find the **Virtual Visit Secret** and the **Virtual Visit Client ID**. These environment variables are used to authenticate against the Microsoft Graph API to schedule the meeting event. To set these up, we need to create a new Application Registration in Microsoft Azure.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P17.png)
 
-1.  Copy and paste the following variables:
-    1.  **Virtual Visit Secret**: aJm7Q\~y_bSlwV0z\~pQ0NZ3-zIlmhNKJbPzPfa
-    2.  **Virtual Visit Client ID**: dfda9044-cb98-4b0f-8086-cd651dbe4af4
+1. [] Copy and paste the following variables:
+    1. [] **Virtual Visit Secret**: aJm7Q\~y_bSlwV0z\~pQ0NZ3-zIlmhNKJbPzPfa
+    1. [] **Virtual Visit Client ID**: dfda9044-cb98-4b0f-8086-cd651dbe4af4
 
         ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P18.png)
 
-1.  Finally, enter the email address of your logged in user into the **Virtual Appointment Scheduler Email** field (*ex: iaduser77@powerplatformopenhacks.onmicrosoft.com*).
+1. [] Finally, enter the email address of your logged in user into the **Virtual Appointment Scheduler Email** field (*ex: iaduser77@powerplatformopenhacks.onmicrosoft.com*).
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P19.png)
 
-1.  Click **Save and close**.
+1. [] Select **Save and close**.
 
     ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6P20.png)
 
@@ -159,65 +159,67 @@ In this task, you will configure the environment variables necessary to generate
 
 In this task, we will activate the Flows and Connection References that deployed along with the Virtual Clinic application.
 
-1.  Navigate to <https://make.powerapps.com/>.
+1. [] Navigate to <https://make.powerapps.com/>.
 
-1.  Click **Solutions** and then click **+ New Solution**.
+1. [] Select **Solutions** and then select **+ New Solution**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P21.png)
 
-1.  Name the solution **LamnaHealthcare**, choose the **Default Publisher** and click **Create**.
+1. [] Name the solution **LamnaHealthcare**, choose the **Default Publisher** and select **Create**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P22.png)
 
-1.  Select the new **LamnaHealthcare** solution and click **Edit**.
+1. [] Select the new **LamnaHealthcare** solution and select **Edit**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P23.png)
 
-1.  Click **+ Add existing** and select **Cloud flow** under **Automation**.
+1. [] Select **+ Add existing** and select **Cloud flow** under **Automation**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P24.png)
 
-1.  Select **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status to booked** and click **Add**.
+1. [] Select **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status to booked** and select **Add**.
 
     ![Table Description automatically generated](./IMAGES/Lab06/L6P25.png)
 
-1.  Select the **Cloud flow**. Navigate to **Details in a new tab** on the command bar to open Power Automate.
+1. [] Select the **Cloud flow**. Navigate to **Details in a new tab** on the command bar to open Power Automate.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P26.png)
 
-1.  Under the **Connection References** section, click **Edit**
+1. [] Under the **Connection References** section, select **Edit**
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P27.png)
 
-1.  Click **Edit**.
+1. [] Select **Edit**.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab06/L6P28.png)
 
-1.  Click **Sign in** for **Microsoft Dataverse** to create the Connection Reference.
+1. [] Select **Sign in** for **Microsoft Dataverse** to create the Connection Reference.
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P29.png)
 
-1.  Click **Sign in** for **Office 365 Users** to create the Connection Reference.
+1. [] Select **Sign in** for **Office 365 Users** to create the Connection Reference.
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P30.png)
 
-1.  Click **Continue**.
+1. [] Select **Continue**.
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P31.png)
 
-1.  Click **Save** to commit your updates.
+1. [] Select **Save** to commit your updates.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P32.png)
 
-1.  Click the **Back** arrow to return to the flow’s main page. Ensure it has completed saving first.
+1. [] Select the **Back** arrow to return to the flow’s main page. Ensure it has completed saving first.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P33.png)
 
-1.  Click **Turn on** to turn on the flow.
+1. [] Select **Turn on** to turn on the flow.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P34.png)
 
 **Congratulations!** You have set the Connection References and turn on the Cloud flow for creating virtual appointments.
+
+===
 
 ## Exercise 2: Configure Microsoft Teams for Virtual Visits
 
@@ -233,49 +235,49 @@ Additionally, your care team can use Microsoft Teams internally to do the follow
 
 By default, the Basic and Enhanced Microsoft Teams integration is disabled for customer engagement apps in Dynamics 365. In this Task, we will enable Microsoft Teams in Dynamics 365.
 
-1.  Go to <https://admin.powerplatform.microsoft.com/>.
+1. [] Go to <https://admin.powerplatform.microsoft.com/>.
 
-1.  Select your Microsoft Cloud for Healthcare environment from the list
+1. [] Select your Microsoft Cloud for Healthcare environment from the list
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P35A.png)
 
-1.  You will land on your environments detail page.
+1. [] You will land on your environments detail page.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P35.png)
 
-1.  Click the **Settings** button on the top command bar.
+1. [] Select the **Settings** button on the top command bar.
 
     ![Text, whiteboard Description automatically generated](./IMAGES/Lab06/L6P36.png)
 
-1.  Expand **Integration** and click **Teams integration settings**.
+1. [] Expand **Integration** and select **Teams integration settings**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P37.png)
 
-1.  On the Microsoft Teams collaboration and chat page, switch **Turn on the linking of Dynamics 365 records to Microsoft Teams channels** to **Yes**.
+1. [] On the Microsoft Teams collaboration and chat page, switch **Turn on the linking of Dynamics 365 records to Microsoft Teams channels** to **Yes**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P38.png)
 
-1.  Click the **Save** button at the bottom left.
+1. [] Select the **Save** button at the bottom left.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P39.png)
 
-1.  After the page finishes saving, switch **Turn on Enhanced Microsoft Teams Integration** to **Yes**.
+1. [] After the page finishes saving, switch **Turn on Enhanced Microsoft Teams Integration** to **Yes**.
 
     ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab06/L6P40.png)
 
-1.  Another pop-up window will open to grant permissions. Select the user you are signed in as currently.
+1. [] Another pop-up window will open to grant permissions. Select the user you are signed in as currently.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P41.png)
 
-1.  Click **Accept** for requested permissions. It may take several minutes to configure. Ensure you do not have pop ups blocked that may interfere with the communication. If so, turn off blockers for this website, cancel and try connecting again.
+1. [] Select **Accept** for requested permissions. It may take several minutes to configure. Ensure you do not have pop ups blocked that may interfere with the communication. If so, turn off blockers for this website, cancel and try connecting again.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P42.png)
 
-1.  Once the dialog disappears, click the **Save** button at the bottom left.
+1. [] Once the dialog disappears, select the **Save** button at the bottom left.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P43.png)
 
-1.  You will now see that both Microsoft Teams Integration settings are set to Yes. Click **OK**.
+1. [] You will now see that both Microsoft Teams Integration settings are set to Yes. Select **OK**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P44.png)
 
@@ -285,49 +287,51 @@ By default, the Basic and Enhanced Microsoft Teams integration is disabled for c
 
 In this task, you will customize the Microsoft Teams experience for a practitioner by embedding the Virtual Clinic app to the Teams channel in your environment. We will be utilizing the Microsoft Teams web experience for this task.
 
-1.  While logged in to your Microsoft 365 tenant, open a new tab and go to [teams.microsoft.com](https://teams.microsoft.com).
+1. [] While logged in to your Microsoft 365 tenant, open a new tab and go to [teams.microsoft.com](https://teams.microsoft.com).
 
-1.  Click **Next** through the prompts, and then click **Let’s Go.**
+1. [] Select **Next** through the prompts, and then select **Let’s Go.**
 
     ![Graphical user interface, application, website Description automatically generated](./IMAGES/Lab06/L6P45.png)
 
-1.  Select **Teams** on the left navigation bar and then click **Create Team.**
+1. [] Select **Teams** on the left navigation bar and then select **Create Team.**
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab06/L6P46.png)
 
-1.  Select **From scratch**.
+1. [] Select **From scratch**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P47.png)
 
-1.  Select **Public**.
+1. [] Select **Public**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P48.png)
 
-1.  Name the Team “**Lamna Healthcare – Redmond**” and click **Create**. You may skip add members step.
+1. [] Name the Team **Lamna Healthcare – Redmond** and select **Create**. You may skip add members step.
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P49.png)
 
-1.  Once the Team is created and the **General channel** selected, click the **+** button to add a tab
+1. [] Once the Team is created and the **General channel** selected, select the **+** button to add a tab
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P50.png)
 
-1.  Search for **Power Apps** and select **Power Apps**
+1. [] Search for **Power Apps** and select **Power Apps**
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P51.png)
 
-1.  Click **Add**
+1. [] Select **Add**
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P52.png)
 
-1.  Select **Model-driven apps** form the dropdown menu, then scroll down and select **Virtual Clinic** and click **Save**. Ensure to select the app that is associated with your environment.
+1. [] Select **Model-driven apps** form the dropdown menu, then scroll down and select **Virtual Clinic** and select **Save**. Ensure to select the app that is associated with your environment.
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P53.png)
 
-1.  You will now see the Virtual Clinic app embedded in Microsoft Teams
+1. [] You will now see the Virtual Clinic app embedded in Microsoft Teams
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P54.png)
 
 **Congratulations!** You have embedded the Virtual Clinic app in Microsoft Teams.
+
+===
 
 ## Exercise 3: Schedule a Virtual Visit
 
@@ -337,109 +341,109 @@ In this final exercise, you will use the items that you configured in the previo
 
 In this task, you will log in to the Patient Portal as Reed Flores and schedule an instant virtual appointment.
 
-1.  Go to <https://make.powerapps.com/>
+1. [] Go to <https://make.powerapps.com/>
 
-1.  First, we must create an account in the patient portal for Reed Flores like we did for Casey Jensen in Lab 05: Patient Access & Service Center. Go to **Apps** and open **Healthcare Administration**.
+1. [] First, we must create an account in the patient portal for Reed Flores like we did for Casey Jensen in Lab 05: Patient Access & Service Center. Go to **Apps** and open **Healthcare Administration**.
 
     ![Screenshot of Apps screen with Healthcare Administration App](./IMAGES/Lab06/L6P55.png)
 
-1.  Open **Reed Flores**’ record and select **Create Invitation** on the command bar.
+1. [] Open **Reed Flores**’ record and select **Create Invitation** on the command bar.
 
     ![](./IMAGES/Lab06/L6P56.png)
 
-1.  Click **Save** and navigate to the **Advanced** tab for the invitation code. Store the invitation code.
+1. [] Select **Save** and navigate to the **Advanced** tab for the invitation code. Store the invitation code.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P57.png)
 
-1.  Navigate back to **Power Apps** and open the **Lamna Healthcare Patient Portal.**
+1. [] Navigate back to **Power Apps** and open the **Lamna Healthcare Patient Portal.**
 
     ![Table Description automatically generated with low confidence](./IMAGES/Lab06/L6P58.png)
 
-1.  Select **Sign in**.
+1. [] Select **Sign in**.
 
     ![Graphical user interface, text Description automatically generated](./IMAGES/Lab06/L6P59.png)
 
-1.  Select the **Redeem Invitation** tab, enter the **Invitation code**, and click **Register**.
+1. [] Select the **Redeem Invitation** tab, enter the **Invitation code**, and select **Register**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P60.png)
 
-1.  Create an account for **Reed Flores**. Click **Register**.
+1. [] Create an account for **Reed Flores**. Select **Register**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P61.png)
 
-1.  If you are landed on the profile page, select the **Lamna Healthcare** name or logo in the top left to go to the homepage.
+1. [] If you are landed on the profile page, select the **Lamna Healthcare** name or logo in the top left to go to the homepage.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P62.png)
 
-1.  Expand **Appointments** and select **Schedule new**.
+1. [] Expand **Appointments** and select **Schedule new**.
 
     ![Graphical user interface, website Description automatically generated](./IMAGES/Lab06/L6P63.png)
 
-1.  Select **Instant virtual appointment**.
+1. [] Select **Instant virtual appointment**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P64.png)
 
-1.  Select the **General Medicine** option that you created earlier in the lab as the reason for the visit.
+1. [] Select the **General Medicine** option that you created earlier in the lab as the reason for the visit.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P65.png)
 
-1.  On the Personal tab, Reed Flores’ personal information should auto-populate. Scroll down and click **Next** to go to the next section. It may take a moment for the button to enable.
+1. [] On the Personal tab, Reed Flores’ personal information should auto-populate. Scroll down and select **Next** to go to the next section. It may take a moment for the button to enable.
 
     ![](./IMAGES/Lab06/L6P66.png)
 
-1.  On the insurance section, click **+ Add Insurance.**
+1. [] On the insurance section, select **+ Add Insurance.**
 
     ![Graphical user interface Description automatically generated with medium confidence](./IMAGES/Lab06/L6P67.png)
 
-1.  Fill out the required fields with any information and click **Next.**
+1. [] Fill out the required fields with any information and select **Next.**
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P68.png)
 
-1.  Click **Next.**
+1. [] Select **Next.**
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P69.png)
 
-1.  Check the box for **Consent Terms** and then click **Join queue**.
+1. [] Check the box for **Consent Terms** and then select **Join queue**.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P70.png)
 
-1.  A new internet browser tab will open and may be blank. Let’s join as the practitioner first and then rejoin as the patient.
+1. [] A new internet browser tab will open and may be blank. Let’s join as the practitioner first and then rejoin as the patient.
 
-1.  Open a new tab in your browser and go to [teams.microsoft.com](https://teams.microsoft.com). Select **Use the web app instead**.
+1. [] Open a new tab in your browser and go to [teams.microsoft.com](https://teams.microsoft.com). Select **Use the web app instead**.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab06/L6P71.png)
 
-1.  Navigate to the **Virtual Clinic** app that you embedded in the **Lamna Healthcare – Redmond** Teams channel.
+1. [] Navigate to the **Virtual Clinic** app that you embedded in the **Lamna Healthcare – Redmond** Teams channel.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P72.png)
 
-1.  On the Instant Virtual Appointment Dashboard, you will see that **Reed Flores** has arrived for a virtual appointment. Double-click to open the record.
+1. [] On the Instant Virtual Appointment Dashboard, you will see that **Reed Flores** has arrived for a virtual appointment. Double-click to open the record.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P73.png)
 
-1.  When **Reed Flores**’ patient record opens, click **Join Meeting**.
+1. [] When **Reed Flores**’ patient record opens, select **Join Meeting**.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P74.png)
 
-1.  Click **Cancel** as we will not open the Microsoft Teams desktop app in this example.
+1. [] Select **Cancel** as we will not open the Microsoft Teams desktop app in this example.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P75.png)
 
-1.  Click **Continue on this browser** to proceed with opening the virtual meeting.
+1. [] Select **Continue on this browser** to proceed with opening the virtual meeting.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P76.png)
 
-1.  Click **Join now** to join the virtual meeting.
+1. [] Select **Join now** to join the virtual meeting.
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P77.png)
 
-1.  Click **Teams** on the right to reduce the size of the meeting and see the full holistic experience for a practitioner.
+1. [] Select **Teams** on the right to reduce the size of the meeting and see the full holistic experience for a practitioner.
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P78.png)
 
     ![A screenshot of a computer Description automatically generated](./IMAGES/Lab06/L6P79.png)
 
-1.  Go back to the **Lamna Healthcare Patient Portal** tab and click the link provided to join the appointment as the patient in the portal.
+1. [] Go back to the **Lamna Healthcare Patient Portal** tab and select the link provided to join the appointment as the patient in the portal.
 
     ![Graphical user interface, website Description automatically generated](./IMAGES/Lab06/L6P80.png)
 
