@@ -80,7 +80,7 @@ nearby objects are blurry).
 
     ![Publish Changes.](./IMAGES/L1P7.png)
 
-    Note: While it may take up to 30 minutes for changes to take effect, they are generally ready in a few minutes.
+    > [NOTE] Note: While it may take up to 30 minutes for changes to take effect, they are generally ready in a few minutes.
 
 1. [] Go back to **Apps** and open **Patient Outreach**.
 
@@ -94,7 +94,7 @@ nearby objects are blurry).
 
     ![Select New to create a new Patient Segment. Select + Dynamic Segment. ](./IMAGES/L1P10.png)
 
-    Did you know? Static segments enable you to choose and add segment members manually based on existing lists or search results. Dynamic Segments, which you define by using a set of rules and conditions, are constantly and automatically changing based on information in your database. Since we want our group to change depending on database information, we are choosing the dynamic segment option.
+    > [HELP] Did you know? Static segments enable you to choose and add segment members manually based on existing lists or search results. Dynamic Segments, which you define by using a set of rules and conditions, are constantly and automatically changing based on information in your database. Since we want our group to change depending on database information, we are choosing the dynamic segment option.
 
 1. [] When prompted to choose a **Segment Template** option, select **Skip** since we will create our own Segment.
 
