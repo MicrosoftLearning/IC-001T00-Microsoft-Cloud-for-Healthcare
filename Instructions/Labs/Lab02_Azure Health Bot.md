@@ -69,7 +69,7 @@ In this exercise, you will do the following:
 
 1. [] On the **Review and create** page, verify your details are correct as Azure validates your Health Bot. After validation passes, the create button will become enabled. Select **Create**.
 
-    > [NOTE] Note: It will take few seconds to run the backend process before the Create button is enabled.
+    > [!NOTE] Note: It will take few seconds to run the backend process before the Create button is enabled.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P6.png)
 
@@ -83,7 +83,7 @@ In this exercise, you will do the following:
 
 1. [] You will be redirected to the **Resource** page for your new Azure Health Bot. Select the **Management portal** link in the Essential section to open your Azure Health Bot instance configuration page.
 
-    > [NOTE] Note: Please copy this Management portal link and store it to access the Health Bot later.
+    > [!NOTE] Note: Please copy this Management portal link and store it to access the Health Bot later.
 
     ![Text, letter Description automatically generated](./IMAGES/Lab02/L2P9.png)
 
@@ -166,7 +166,7 @@ In this task, you will be using an Azure Application ID already created in our A
 
 1. [] Select the **MCH Application Id** app registration resource. Copy and store the **Application (client) ID** for later to use when creating the Dynamics 365 Application User.
 
-    > [NOTE] Note: ID values have been removed in the screenshot for privacy purposes.
+    > [!NOTE] Note: ID values have been removed in the screenshot for privacy purposes.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P26.png)
 
@@ -215,7 +215,7 @@ In the following tasks, you will complete the following:
 
 1. [] While in the **Enabled User** list, scroll to find your user or use the **Search** bar.
 
-    > [NOTE] Note: If you are in an official training, search for your assigned user – IAD User [x]
+    > [!NOTE] Note: If you are in an official training, search for your assigned user – IAD User [x]
 
     ![Screenshot of searching for user in enabled user list](./IMAGES/Lab02/L2P33.png)
 
@@ -281,7 +281,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
 1. [] While in the **Enabled User** list, scroll to find your App user or use the **Search** bar. Double-click on the user or select the row and click **Edit**.
 
-    > [NOTE] Note: If you are in an official training, search for the Application User – MCH Application ID
+    > [!NOTE] Note: If you are in an official training, search for the Application User – MCH Application ID
 
     ![](./IMAGES/Lab02/L2P45.png)
 
@@ -341,7 +341,7 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
 1. [] You should now see the Bot User (MCH Application Id) in the Users (Agents) list. Save and close.
 
-    > [NOTE] Note: If the user does not populate after adding, make sure you assigned the omnichannel agent security role to the bot user in the previous task (it may take up to 15 minutes for changes to take effect).
+    > [!NOTE] Note: If the user does not populate after adding, make sure you assigned the omnichannel agent security role to the bot user in the previous task (it may take up to 15 minutes for changes to take effect).
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P57.png)
 
@@ -824,7 +824,7 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P149.png)
 
-    > [ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when green with checkmark in circle**)**
+    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when green with checkmark in circle**)**
 
     ![Check presence status](./IMAGES/Lab02/L2P150.png)
 
