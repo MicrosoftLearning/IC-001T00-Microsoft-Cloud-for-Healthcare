@@ -31,25 +31,27 @@ In the first part of this lab, you will use a template to deploy resources with 
 -   [FHIR Loader (for Lab-03)](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
 -   [FHIR-Proxy (for Lab-07)](https://github.com/microsoft/fhir-proxy)
 
-1.  To begin, CTRL+click (Windows or Linux) or CMD+click (Mac) on the Deploy to Azure button below to open the deployment form in a new browser tab.
+1. [] To begin, CTRL+click (Windows or Linux) or CMD+click (Mac) on the Deploy to Azure button below to open the deployment form in a new browser tab.
 
     ![](./IMAGES/Lab07/L7P2.png)
 
 1.  Select or fill in the parameter values (see image below).
 
-    Important: In order to successfully deploy resources with this ARM template, the user must have [Owner](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner) rights for the [Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) where the components are deployed. Before running the ARM template, it is recommended to create a new resource group first and check that you have Owner permissions. Once you confirm that you have Owner rights, then select that resource group in the dropdown menu when you fill out the deployment form (see \#3 below).
+    > [!ALERT] Important: In order to successfully deploy resources with this ARM template, the user must have [Owner](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner) rights for the [Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) where the components are deployed. Before running the ARM template, it is recommended to create a new resource group first and check that you have Owner permissions. Once you confirm that you have Owner rights, then select that resource group in the dropdown menu when you fill out the deployment form (see \#3 below).
 
-1.  Enter a custom **Deployment Prefix**. This prefix will be prepended to the names of all created resources ("trn05" is shown as an example prefix).
+1. [] Enter a custom **Deployment Prefix**. This prefix will be prepended to the names of all created resources ("trn05" is shown as an example prefix).
 
-1.  Make sure to select the "true" values as shown.
+1. [] Make sure to select the "true" values as shown.
 
-1.  Click **Review + create** when ready, and then click **Create** on the next page.
+1. [] Select **Review + create** when ready, and then select **Create** on the next page.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab07/L7P3.png)
 
-Note: This deployment typically takes 20 minutes. During the deployment, you can read the instructions linked in Step 2 below. When the deployment finishes, go ahead and proceed with those instructions.
+> [!NOTE] Note: This deployment typically takes 20 minutes. During the deployment, you can read the instructions linked in Step 2 below. When the deployment finishes, go ahead and proceed with those instructions.
 
 To learn more about the resources deployed with this ARM template, view [here.](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components)
+
+===
 
 ## Exercise 2: Set up Postman and test FHIR service
 
@@ -58,11 +60,11 @@ In the next part of this lab, you will
 -   Visit another page and follow the instructions on setting up Postman.
 -   Make API calls to test FHIR service using Postman.
 
-1. To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open a Postman tutorial in a new browser tab.
+1. [] To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open a Postman tutorial in a new browser tab.
 
     [Postman Setup Tutorial](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components)
 
-1. Follow the instructions and return here when finished.
+1. [] Follow the instructions and return here when finished.
 
 What does success look like for Lab 7?
 
