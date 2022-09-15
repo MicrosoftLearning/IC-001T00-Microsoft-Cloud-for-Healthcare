@@ -80,7 +80,7 @@ nearby objects are blurry).
 
     ![Publish Changes.](./IMAGES/L1P7.png)
 
-    > [NOTE] Note: While it may take up to 30 minutes for changes to take effect, they are generally ready in a few minutes.
+    > [!NOTE] Note: While it may take up to 30 minutes for changes to take effect, they are generally ready in a few minutes.
 
 1. [] Go back to **Apps** and open **Patient Outreach**.
 
