@@ -103,133 +103,137 @@ See the following for the Care Plan Management Entity Relationship Diagram.
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P5.png)
 
+===
+
 ## Exercise 2: Navigate Care Management Application
 
 In this exercise, you will navigate the patient record and explore all the detailed information that is captured about the patient by Microsoft Cloud for Healthcare. In this case, we will examine the healthcare information of Amber Rodriguez to see how a care team member would obtain a full view of the patient.
 
-1.  Navigate to <http://make.powerapps.com/> in an In-Private or Incognito window. If you are in an official training class, sign in with your assigned user.
+1. [] Navigate to <http://make.powerapps.com/> in an In-Private or Incognito window. If you are in an official training class, sign in with your assigned user.
 
-1.  Select the proper **Environment** in the upper right. If you are in an official training class, select your assigned environment.
+1. [] Select the proper **Environment** in the upper right. If you are in an official training class, select your assigned environment.
 
     ![](./IMAGES/Lab04/L4P6.png)
 
-1.  In Power Apps, select **Apps** in the left sitemap. Select and open **Care Management**.
+1. [] In Power Apps, select **Apps** in the left sitemap. Select and open **Care Management**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P7.png)
 
-1.  You will be landed in the **Health Analytics** section showing the **Care Coordinator Dashboard**. This is a helpful tool for care coordinators to get a complete view of their healthcare organization data, including care plans, care plan activities, care plan goals, appointments (EMR), and activity timeline.
+1. [] You will be landed in the **Health Analytics** section showing the **Care Coordinator Dashboard**. This is a helpful tool for care coordinators to get a complete view of their healthcare organization data, including care plans, care plan activities, care plan goals, appointments (EMR), and activity timeline.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P8.png)
 
-1.  Select **People** in the left Site Map.
+1. [] Select **People** in the left Site Map.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P9.png)
 
-1.  Find and select **Amber Rodriguez** from the Active Patients view. Open the record by double clicking or selecting Edit in the command bar.
+1. [] Find and select **Amber Rodriguez** from the Active Patients view. Open the record by double clicking or selecting Edit in the command bar.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab04/L4P10.png)
 
-1.  Take a moment to examine the **Summary** tab on Amber’s patient record. The purpose of the patient record is to give a comprehensive view of Amber’s latest information. In the summary tab, the care team member will have a full view of Amber’s **Conditions**, **Test Results**, **Patient Relationships**, **Allergies** **and** **Sensitivities**, **Clinical Data**, and **Patient Interactions**.
+1. [] Take a moment to examine the **Summary** tab on Amber’s patient record. The purpose of the patient record is to give a comprehensive view of Amber’s latest information. In the summary tab, the care team member will have a full view of Amber’s **Conditions**, **Test Results**, **Patient Relationships**, **Allergies** **and** **Sensitivities**, **Clinical Data**, and **Patient Interactions**.
 
     ![A screenshot of a computer Description automatically generated with medium confidence](./IMAGES/Lab04/L4P11.png)
 
-1.  In the **Conditions** section, the care provider can get a view of all of Amber’s pre-existing conditions.
+1. [] In the **Conditions** section, the care provider can get a view of all of Amber’s pre-existing conditions.
 
     ![Graphical user interface Description automatically generated with medium confidence](./IMAGES/Lab04/L4P12.png)
 
-1.  In the **Patient Relationships** section, you can see Amber’s related people in the system.
+1. [] In the **Patient Relationships** section, you can see Amber’s related people in the system.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P13.png)
 
-1.  In the **Allergies and Sensitivities** section, you can get a singular point of view of all the reported allergies that the care givers need to be aware of for the patient.
+1. [] In the **Allergies and Sensitivities** section, you can get a singular point of view of all the reported allergies that the care givers need to be aware of for the patient.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P14.png)
 
-1.  In the **Clinical Data** section, you can cycle through the various icons to see different medical details including **medical requests**, **encounters**, **procedures**, and **observations**. This is a simple and efficient way to observe patient healthcare details.
+1. [] In the **Clinical Data** section, you can cycle through the various icons to see different medical details including **medical requests**, **encounters**, **procedures**, and **observations**. This is a simple and efficient way to observe patient healthcare details.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P15.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P16.png)
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P17.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P18.png)
 
-1.  The **Patient Interactions** section shows any activity, note, or post and can be filtered or sorted.
+1. [] The **Patient Interactions** section shows any activity, note, or post and can be filtered or sorted.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab04/L4P19.png)
 
-1.  Click on the **Profile** tab to get **Patient, Address, and Insurance Information.** In the **Patient Information**, notice that key patient data such as **Date of Birth** and **Primary Practitioner** are shown. The healthcare data model uses the contact entity from the Common Data Model and defines the type of contact as patient, practitioner, or related person. This determines the type of form shown.
+1. [] Select the **Profile** tab to get **Patient, Address, and Insurance Information.** In the **Patient Information**, notice that key patient data such as **Date of Birth** and **Primary Practitioner** are shown. The healthcare data model uses the contact entity from the Common Data Model and defines the type of contact as patient, practitioner, or related person. This determines the type of form shown.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab04/L4P20.png)
 
-1.  Select the **Clinical Timeline** tab. On this tab, a care team member will be able to view a weekly calendar of the patient’s clinical information as well as a list of any upcoming or previous events.
+1. [] Select the **Clinical Timeline** tab. On this tab, a care team member will be able to view a weekly calendar of the patient’s clinical information as well as a list of any upcoming or previous events.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P21.png)
 
-1.  Select the **Upcoming** **events** dropdown in the right pane and switch to **previous events**.
+1. [] Select the **Upcoming** **events** dropdown in the right pane and switch to **previous events**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P22.png)
 
-1.  See the list of events Amber had previously including **Appointments**, **Care Plans**, **Encounters**, and **Medication Requests**.
+1. [] See the list of events Amber had previously including **Appointments**, **Care Plans**, **Encounters**, and **Medication Requests**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab04/L4P23.png)
 
-1.  Select the **Care Team** tab. On this tab, the care team member can find other members who may be providing care to the patient for any current conditions and care plans.
+1. [] Select the **Care Team** tab. On this tab, the care team member can find other members who may be providing care to the patient for any current conditions and care plans.
 
     ![A screenshot of a computer Description automatically generated with medium confidence](./IMAGES/Lab04/L4P24.png)
 
-1.  Select the **Care Plan** tab. On this tab, the care team member will be able to see a full view of all the Care Plans associated to the patient. This includes a list of their care plan activities and statistics for completed activities and goals. You can create a new care plan or filter by care plan type in this view.
+1. [] Select the **Care Plan** tab. On this tab, the care team member will be able to see a full view of all the Care Plans associated to the patient. This includes a list of their care plan activities and statistics for completed activities and goals. You can create a new care plan or filter by care plan type in this view.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P25.png)
 
-1.  Finally, select the **Related** tab to see any additional details related to the patient record.
+1. [] Finally, select the **Related** tab to see any additional details related to the patient record.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P26.png)
 
 **Congratulations!** You have explored the Care Management app and its featured data within a patient record.
 
+===
+
 ## Exercise 3: Create a New Location
 
 In this exercise, you will be creating a new Location record for the **Lamna Healthcare Company** Organization. They have opened a new branch in **Redmond, WA** and we need to ensure this location is in the system.
 
-1.  Select and open **Care Management** from the **Apps** list if you do not already have it open.
+1. [] Select and open **Care Management** from the **Apps** list if you do not already have it open.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P27.png)
 
-1.  In the **Care Management** sitemap on the left, select **Locations**.
+1. [] In the **Care Management** sitemap on the left, select **Locations**.
 
     ![A picture containing graphical user interface Description automatically generated](./IMAGES/Lab04/L4P28.png)
 
-1.  In the **All Locations** view, select **+New**.
+1. [] In the **All Locations** view, select **+New**.
 
     ![A picture containing diagram Description automatically generated](./IMAGES/Lab04/L4P29.png)
 
-1.  Fill in the following information for the new location:
+1. [] Fill in the following information for the new location:
     1.  **Name**: Lamna Healthcare – Redmond, WA
-    2.  **Address City**: Redmond
-    3.  **Address State**: WA
-    4.  **Managing Organization**: Lamna Healthcare Company
+    1.  **Address City**: Redmond
+    1.  **Address State**: WA
+    1.  **Managing Organization**: Lamna Healthcare Company
 
         ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P30.png)
 
         ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P31.png)
 
-1.  Click **Save & Close**. Now let’s see the new location in the Managing Organization record.
+1. [] Select **Save & Close**. Now let’s see the new location in the Managing Organization record.
 
-1.  In the sitemap on the left, select **Organizations**.
+1. [] In the sitemap on the left, select **Organizations**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P32.png)
 
-1.  Change the grid view in the drop-down from **My Active Accounts** to **Active Accounts**.
+1. [] Change the grid view in the drop-down from **My Active Accounts** to **Active Accounts**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab04/L4P33.png)
 
-1.  Once in the **Active Accounts** view, select the **Lamna Healthcare Company** Organization.
+1. [] Once in the **Active Accounts** view, select the **Lamna Healthcare Company** Organization.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P34.png)
 
-1.  On the Lamna Healthcare Company record, click the **Related** tab and scroll down to select **Locations**.
+1. [] On the Lamna Healthcare Company record, click the **Related** tab and scroll down to select **Locations**.
 
     ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab04/L4P35.png)
 
-1.  You will see the newly created **Lamna Healthcare – Redmond, WA** location associated to the record.
+1. [] You will see the newly created **Lamna Healthcare – Redmond, WA** location associated to the record.
 
     ![Text Description automatically generated](./IMAGES/Lab04/L4P36.png)
 
