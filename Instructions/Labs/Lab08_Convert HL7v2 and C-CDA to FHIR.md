@@ -52,7 +52,7 @@ To convert HL7v2 data into FHIR, first you must prepare a \$convert-data API req
 
 1. [] In the **Body**, enter and format the JSON request parameters following the example given in the **\$convert-data** [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data#sample-request). Use the screenshot below for guidance.
 
-    ![](./IMAGES/Lab08/L8P4a.png)
+    ![](./IMAGES/Lab08/L8P4b.png)
 
 1. [] Copy and paste the HL7v2 message into the **inputData valueString**. You will need to make some changes in the HL7v2 payload so that the formatting follows the sample request given in the \$convert-data [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data#sample-request).
 
