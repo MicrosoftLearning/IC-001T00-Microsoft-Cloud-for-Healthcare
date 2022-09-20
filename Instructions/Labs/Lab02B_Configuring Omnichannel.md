@@ -1,4 +1,4 @@
-# Module 4 Lesson 1- Lab 2b: Configuring Omnichannel
+# Module 4 Lesson 1- Lab 2B: Configuring Omnichannel
 
 ## Overview
 
