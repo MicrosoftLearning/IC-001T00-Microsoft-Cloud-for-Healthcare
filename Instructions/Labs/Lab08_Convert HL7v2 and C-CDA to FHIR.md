@@ -17,11 +17,11 @@ In this lab, you will:
 
 To convert HL7v2 data into FHIR, first you must prepare a \$convert-data API request.
 
-1. [] Go to Postman and create a new API request by selecting **Add request** in the FHIR CALLS collection imported in Lab-01.
+1. [] Go to **Postman** and create a new API request by selecting **Add request** in the **FHIR CALLS** collection imported in Lab-01.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab08/L8P1.png)
 
-1. [] Rename the new request to **Convert Data - HL7**.
+1. [] In the top bar, rename the new request to **Convert Data - HL7**.
 
 1. [] Fill in the URL of the request with **{{fhirurl}}/\$convert-data**.
 
@@ -40,25 +40,27 @@ To convert HL7v2 data into FHIR, first you must prepare a \$convert-data API req
 
 ===
 
-## Exercise 2: Set up Request Parameters2
+## Exercise 2: Set up Request Parameters
 
 1. [] Review the FHIR service [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data) for an overview of the **\$convert-data** operation.
 
 1. [] Select [**ADT_A01.hl7**](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-02%20-%20Convert%20HL7v2%20and%20C-CDA%20to%20FHIR/samples/ADT_A01.hl7) to view a sample HL7v2 message (you may want to click on the **Raw** button on the right for ease of viewing).
 
-1. [] Copy and paste the HL7v2 message into the **Body** of the **Convert Data – HL7** request in Postman. Format the JSON request parameters following the example given in the **\$convert-data** [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data#sample-request).
-
 1. [] In the **Body** tab in Postman, select the **raw** button and choose **JSON** from the dropdown menu on the right.
 
     ![](./IMAGES/Lab08/L8P4.png)
 
-1. [] You will need to make some changes in the HL7v2 payload so that the formatting follows the sample request given in the \$convert-data [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data#sample-request).
+1. [] In the **Body**, enter and format the JSON request parameters following the example given in the **\$convert-data** [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data#sample-request). Use the screenshot below for guidance.
+
+    ![](./IMAGES/Lab08/L8P4a.png)
+
+1. [] Copy and paste the HL7v2 message into the **inputData valueString**. You will need to make some changes in the HL7v2 payload so that the formatting follows the sample request given in the \$convert-data [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data#sample-request).
 
     > [!HINT] Hint: In the sample request in the documentation (link above), look at how the \\ escape character is used to escape the \\& in the HL7v2 payload. Also pay attention to the way \\n newline characters are used. You will need to add at least one \\ escape character and several \\n newline characters in the HL7v2 message in the Convert Data - HL7 request. Use this [online tool](https://www.freeformatter.com/json-escape.html) for automatically escaping JSON if you would prefer not to do this manually.
 
     *Optional – prepare the JSON request parameters and HL7v2 payload in VS Code (with the HL7 extension installed) first before pasting into the body of the Postman request.
 
-1. [] Make sure to **Save** the **Convert Data - HL7** request.
+1. [] Make sure to save the **Convert Data - HL7** request.
 
 ===
 
