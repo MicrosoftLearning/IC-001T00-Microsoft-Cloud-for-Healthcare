@@ -1,4 +1,4 @@
-# Module 4 Lesson 1- Lab 2: Azure Health Bot
+# Module 4 Lesson 1- Lab 2a: Azure Health Bot
 
 ## Overview
 
