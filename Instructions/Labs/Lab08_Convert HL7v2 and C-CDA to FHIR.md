@@ -120,7 +120,7 @@ Now you will make another API request similar to the one above, except this time
 
 1. [] Rename the new request to **Convert Data - CCDA**.
 
-1. [] Fill in the URL of the request as before with **b**.
+1. [] Fill in the URL of the request as before with **{{fhirurl}}/$convert-data**.
 
 1. [] Change the HTTP operation from **GET** to **POST**.
 
@@ -154,17 +154,19 @@ Now you will make another API request similar to the one above, except this time
 
 1. [] When ready, copy and paste the JSON-formatted request parameters with the C-CDA payload into the body of the **Convert Data - CCDA** request in Postman.
 
-1. [] Select the **raw** button and choose **JSON** from the dropdown menu on the right.
+    1. [] Select the **raw** button and choose **JSON** from the dropdown menu on the right.
+    1. [] Paste the sample request in from the documentation above.
+    1. [] Replace the **inputData valueString** value with the CCDA string  
 
-1. [] Make sure to save the Convert Data - CCDA request.
+1. [] Make sure to save the **Convert Data - CCDA** request.
 
 ===
 
 ## Exercise 6: Convert Data
 
-1. [] Get a new access token from AAD with POST AuthorizeGetToken (this is not strictly necessary unless it has been over 60 minutes since the last access token was issued).
+1. [] Get a new access token from AAD with **POST AuthorizeGetToken** (this is not strictly necessary unless it has been over 60 minutes since the last access token was issued).
 
-1. [] Go to the Convert Data - CCDA request and press Send.
+1. [] Go to the **Convert Data - CCDA** request and press **Send**.
 
 After making the \$convert-data request, you should receive a FHIR Bundle response containing the C-CDA data converted into FHIR R4. The top of the response will be as shown below.
 
