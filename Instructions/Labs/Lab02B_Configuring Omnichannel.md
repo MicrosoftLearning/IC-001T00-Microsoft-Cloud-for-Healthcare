@@ -35,7 +35,7 @@ In the following tasks, you will complete the following:
 
 ### Task 1: Assign Omnichannel Agent Security Role
 
-1. [] While in the In-Private or Incognito window, navigate to [Power Apps](https://make.powerapps.com/).
+1. [] While in the In-Private or Incognito window, navigate to +++https://make.powerapps.com/ +++.
 
 1. [] Ensure the correct environment from the upper right **Environment** dropdown is selected.
 
@@ -57,13 +57,11 @@ In the following tasks, you will complete the following:
 
     ![Screenshot of Users option first in the list of security settings](./IMAGES/Lab02/L2P31.png)
 
-1. [] Switch the **view** dropdown from **Omnichannel Users** to **Enabled Users** for the grid view so that your user will show in the list.
+1. [] Switch the dropdown from **Omnichannel Users** to **Enabled Users** for the grid view so that your user will show in the list. You may have to select the ellipsis next to Chart Pane to open the contectual menu and select System Views to make the view dropdown visible.
 
     ![Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](./IMAGES/Lab02/L2P32.png)
 
-1. [] While in the **Enabled User** list, scroll to find your user or use the **Search** bar.
-
-    > [!NOTE] Note: If you are in an official training, search for your assigned user – IAD User [x]
+1. [] While in the **Enabled User** list, scroll to find the **Mod Administrator** or use the **Search** bar.
 
     ![Screenshot of searching for user in enabled user list](./IMAGES/Lab02/L2P33.png)
 
@@ -87,7 +85,7 @@ We need two users to configure in Omnichannel for Dynamics 365 Customer Service:
 
 In this task, you will create a **Bot User** which helps connect **Azure Health Bot** with **Omnichannel live Chat**.
 
-1. [] Go to <https://admin.powerplatform.microsoft.com/>. Select your Microsoft Cloud for Healthcare environment from the list
+1. [] Go to +++https://admin.powerplatform.microsoft.com+++. Select your **MC4H Labs** environment from the list
     
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P36.png)
 
@@ -128,8 +126,6 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P44.png)
 
 1. [] While in the **Enabled User** list, scroll to find your App user or use the **Search** bar. Double-click on the user or select the row and click **Edit**.
-
-    > [!NOTE] Note: If you are in an official training, search for the Application User – MCH Application ID
 
     ![](./IMAGES/Lab02/L2P45.png)
 
@@ -173,19 +169,19 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P53.png)
 
-1. [] We will now associate the Default messaging queue with the Bot User so it will respond to incoming messages from customers without agent (human) intervention.
+    We will now associate the Default messaging queue with the Bot User so it will respond to incoming messages from customers without agent (human) intervention.
 
 1. [] Select **Add Existing User** on the **User (Agents)** subgrid to add the Bot user you previously created.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P54.png)
 
-1. [] In the **Lookup Records** pane, search for your Bot User (**MCHApplicationId**) created in the earlier task.
+1. [] In the **Lookup Records** pane, search for your Bot User (**MCH Application**) created in the earlier task.
 
     ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab02/L2P55.png)
 
 1. [] Select the record from the list and select **Add**.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P56.png)
+    ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab02/L2P56.png)
 
 1. [] You should now see the Bot User (MCH Application Id) in the Users (Agents) list. Save and close.
 
