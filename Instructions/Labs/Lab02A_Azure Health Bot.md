@@ -58,7 +58,7 @@ In this exercise, you will do the following:
 
 1. [] You will be redirected to the Azure Health Bot page. Enter the following information:
     1. [] **Subscription**: +++Azure Pass - Sponsorship+++
-    1. [] **Resource Group**: +++IndustryLabs+++
+    1. [] **Resource Group**: +++Training-266467+++
     1. [] **Name**: iaduser[x]-healthbot (e.g., iaduser01-healthbot, using your assigned user)
     1. [] **Region**: East US
     1. [] **Plan**: Free (F0)
@@ -77,13 +77,11 @@ In this exercise, you will do the following:
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P7.png)
 
-1. [] When deployment is complete, the **Go to resource** button will enable. Please wait until deployment is complete for the Azure Health Bot, then select **Go to resource** when enabled.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P8.png)
+1. [] Please wait until deployment is complete for the Azure Health Bot, then select **Go to resource** when enabled.
 
 1. [] You will be redirected to the **Resource** page for your new Azure Health Bot. Select the **Management portal** link in the Essential section to open your Azure Health Bot instance configuration page.
 
-    > [!NOTE] Note: Please copy this Management portal link and store it to access the Health Bot later.
+    > [!ALERT] Note: Please copy this Management portal link and store it to access the Health Bot later.
 
     ![Text, letter Description automatically generated](./IMAGES/Lab02/L2P9.png)
 
@@ -96,13 +94,7 @@ In this exercise, you will do the following:
 
 ### Task 2: Update Azure Health Bot Settings to Enable Dynamics 365 Integration
 
-1. [] On the **Azure Health Bot** homepage, expand the side navigation bar to see the sitemap labels.
-
-    ![Graphical user interface, text Description automatically generated](./IMAGES/Lab02/L2P11.png)
-
-1. [] After expanding, you will see the sitemap labels next to the icons.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P12.png)
+1. [] On the **Azure Health Bot** homepage, expand the side navigation bar to see the sitemap labels, if needed. After expanding, you will see the sitemap labels next to the icons.
 
 1. [] Select **Configuration > Conversation** on the navigation bar.
 
@@ -121,6 +113,7 @@ In this exercise, you will do the following:
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P16.png)
 
 1. [] Select **Save**.
+
     ![](./IMAGES/Lab02/L2P17.png)
 
     Now let’s enable the Health Bot for **Microsoft Teams** Channel.
@@ -129,15 +122,15 @@ In this exercise, you will do the following:
 
     ![A screenshot of a computer screen Description automatically generated with medium confidence](./IMAGES/Lab02/L2P18.png)
 
-1. [] In the **Channels** list, select the toggle to **enable Microsoft Teams**.
+1. [] In the **Channels** list, select the toggle to enable **Microsoft Teams**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P19.png)
 
-1. [] This will bring out a side window with your **Bot Id** information. Copy and store the **BotId** for later to use when creating the Dynamics 365 Application User.
+1. [] This will bring out a side window with your **Bot Id** information. Copy and store the **Bot Id** for later to use when creating the Dynamics 365 Application User.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P20.png)
 
-1. [] Select **Save**. This should enable Teams channel and your Microsoft Teams toggle should reflect accordingly.
+1. [] Select **Creae**. This should enable Teams channel and your Microsoft Teams toggle should reflect accordingly.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P21.png)
 
@@ -153,39 +146,45 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] In the left navigation, select **Azure Active Directory**. 
 
-1. [] On the Overview page, under **Manage**, select **App registration**. 
+1. [] On the **Overview** page, under **Manage**, select **App registration**. 
 
 1. [] In the **App registrations** pane, select **+ New registration**. 
 
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T1S4.png)
+
 1. [] Complete the application registration using the following information: 
 
-    | Property | Value | 
-
-    |---|---| 
-
-    | Name | +++MCH Application+++ | 
-
-    | Supported account types | Accounts in any organizational directory (Any Azure AD directory - Multitenant | 
-
+    | Property | Value |
+    |---|---|
+    | Name | +++MCH Application+++ |
+    | Supported account types | Accounts in any organizational directory (Any Azure AD directory - Multitenant |
     | Redirect URI (optional) > Select a platform | Web | 
 
-1. [] Select **Register**.   
+1. [] Select **Register**. A URL is not required. 
 
-A URL is not required. 
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T1S6.png)
 
 ## Task 2. Assign permissions to the MCH Application 
 
 1. [] In the **MCH Application** pane, under **Manage**, select **API permissions**. 
 
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S1.png)
+
 1. [] Under **Configured permissions**, on the menu, select **+ Add a permission**. 
+
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S2.png)
 
 1. [] In the **Request API permissions** pane, select the **APIs my organization uses** tab. 
 
 1. [] Locate and then select +++Dataverse+++. 
 
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S4.png)
+
 1. [] Select **Delegated permissions** and then, under **Permission**, select the **user_impersonation**. 
 
 1. [] Select **Add permissions**. 
+
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S6.png)
 
 1. [] Select **+ Add a permission**. 
 
@@ -195,11 +194,15 @@ A URL is not required.
 
 1. [] Under **Select permissions**, expand **Calendars**. 
 
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S10.png)
+
 1. [] Select the **Calendars.ReadWrite** checkbox and then select **Add permissions**. 
 
 1. [] Under **Configured permissions**, on the menu, select **Grant admin consent for Contoso**. 
 
 1. [] In the **Grant admin consent confirmation** dialog box, select **Yes**.
+
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S13.png)
 
 ### Task 3. Create a new client secret and record secret and app Id values 
 
@@ -208,6 +211,8 @@ A URL is not required.
 1. [] On the menu, select **+ New client secret**. 
 
 1. [] In the **Add a client secret** pane, in the **Description** box, enter +++Lamna Healthcare app secret+++ and then select **Add**. 
+
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T3S3.png)
 
 1. [] In the **Value** column, select the **Copy to clipboard** icon to copy the secret value to the clipboard and then paste the secret value in the following text box: 
 
@@ -221,6 +226,8 @@ A URL is not required.
 
     @lab.TextBox(clientappid) 
 
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T3S6.png)
+
 ### Task 4. Configure environment variables 
 
 1. [] In Microsoft Edge, go to +++https://make.powerapps.com+++ 
@@ -232,6 +239,8 @@ A URL is not required.
 1. [] In the **Environment variables** pane, in the **Virtual Visit Client ID** box, enter +++@lab.Variable(clientappid)+++ 
 
 1. [] In the **Virtual Visit Secret** box, enter +++@lab.Variable(AppSecret)+++ 
+
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T4S5.png)
 
 1. [] In the **Virtual Appointment Scheduler Email** box, enter +++@lab.CloudCredential(WWLM365Enterprise2019wSPE_E).Username+++ 
 
@@ -249,19 +258,23 @@ A URL is not required.
 
 1. [] In the **Solutions** list, to the right of **LamnaHealthcare**, select the ellipsis and then select **Edit**. 
 
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S5.png)
+
 1. [] On the menu, select **Add existing** > **Automation** > **Cloud flow**. 
 
 1. [] In the **Add existing cloud flows** pane, select **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status booked** and then select **Add**. 
 
 1. [] Hover over the cloud flow and then, on the left, select the checkbox. 
 
-1. [] On the menu, select the **Edit** menu and then select **Edit in new tab**. 
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S8.png)
 
-    !IMAGE[solution-edit-in-new-tab-menu.png](solution-edit-in-new-tab-menu.png) 
+1. [] On the menu, select **Edit**. 
 
 1. [] In the **Welcome to Power Automate** dialog box, select **Get started**. 
 
 1. [] To the right of **Microsoft Dataverse** select **Sign in**. 
+
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S11.png)
 
 1. [] To the right of **Office 365 Users** select **Sign in**. 
 
@@ -269,9 +282,13 @@ A URL is not required.
 
 1. [] Review the new flow and then, in the top right menu, select **Save**. 
 
-1. [] Close the **Edit your flow** browser tab. 
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S14.png)
 
-1. [] On the previous Power Apps tab, with the flow still selected, on the menu select **Turn on**. It may take 10-15 seconds for the flow to turn on and the page to refresh. 
+1. [] Select the back arrow next to **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status to booked**. 
+
+1. [] Reslect the flow and on the menu select **Turn on**. It may take 10-15 seconds for the flow to turn on and the page to refresh. 
+
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S16.png)
 
 1. [] When complete, in the left navigation, select **&larr; Back to solutions**.   
 
@@ -285,7 +302,7 @@ In this task, you will be using the Azure Application ID you created in Task 1 i
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P22.png)
 
-1. [] You will be landed in the **App registration** homepage on the Owned applications tab.
+1. [] You will be landed in the **App registration** homepage on the **Owned applications** tab.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P23.png)
 
@@ -293,11 +310,11 @@ In this task, you will be using the Azure Application ID you created in Task 1 i
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P24.png)
 
-1. [] To search for our Application Id, type +++**MCH Application Id**+++ in the **Search** box.
+1. [] To search for our Application Id, type +++**MCH Application**+++ in the **Search** box.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P25.png)
 
-1. [] Select the **MCH Application Id** app registration resource. Copy and store the **Application (client) ID** for later to use when creating the Dynamics 365 Application User.
+1. [] Select the **MCH Application** app registration resource. Copy and store the **Application (client) ID** for later to use when creating the Dynamics 365 Application User.
 
     > [!NOTE] Note: ID values have been removed in the screenshot for privacy purposes.
 
