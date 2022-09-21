@@ -164,7 +164,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T1S6.png)
 
-## Task 2. Assign permissions to the MCH Application 
+### Task 2. Assign permissions to the MCH Application 
 
 1. [] In the **MCH Application** pane, under **Manage**, select **API permissions**. 
 
@@ -290,9 +290,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S16.png)
 
-1. [] When complete, in the left navigation, select **&larr; Back to solutions**.   
-
-If the navigation menu is collapsed, you will use the left arrow icon. 
+1. [] When complete, in the left navigation, select **&larr; Back to solutions**. If the navigation menu is collapsed, you will use the left arrow icon. 
 
 ### Task 6: Obtain Azure Application ID
 
