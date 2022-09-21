@@ -2,7 +2,7 @@
 
 ## Overview
 
-x insights.
+Dynamics 365 Omnichannel integration allows the patient to interact with Health Bot using the Dynamics 365 chat widget to access the medical knowledge and your custom scenarios. It also allows the escalation of a bot conversation to a live agent to continue the interaction. When escalating a conversation, Dynamics passes along the conversation history and the context to the agent.
 
 ![](./IMAGES/Lab02/L2P1.png)
 
@@ -10,16 +10,17 @@ This lab will focus on Lamna Healthcare Company.
 
 ![Timeline Description automatically generated](./IMAGES/Lab02/L2P2.png)
 
-x
+As stated in the Lab 2A, Lamna Healthcare Company is seeking to streamline their patient engagement capabilities by implementing Azure Health Bot to help improve processes and services, such as entering medication requests. By allowing patients to interact with this service, Lamna Healthcare Company will move one step closer to their goal of improving patient outcomes while reducing overall costs.
 
-In this lab, you'll play the role of a Lamna Healthcare IT developer and configure Azure Health Bot for a medication refill scenario.
+In this lab, you'll play the role of a Lamna Healthcare IT developer and use the Azure Health Bot you configured in Lab2A to integrate with Dynamics 365 Omnichannel. This will complete the work for a medication refill scenario.
 
 ## Learning objectives
 
 In this lab, you will:
 
--   Create...
--   Configure Dynamics 365 Customer Service Omnichannel Live Chat
+- Configure Dynamics 365 Customer Service Omnichannel Live Chat
+- Embed Azure Health Bot in a Power Apps Portal
+- Extend Azure Health Bot with custom scenarios
 
 ## Exercise 1: Configure Omnichannel Live Chat
 
