@@ -31,8 +31,6 @@ In this lab, you will:
 
 -   Set up Azure Health Bot
 -   Configure Dynamics 365 Customer Service Omnichannel Live Chat
--   Embed Azure Health Bot in a Power Apps Portal
--   Extend Azure Health Bot with custom scenarios
 
 ## Exercise 1: Set Up Azure Health Bot
 
