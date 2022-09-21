@@ -284,7 +284,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] Select the back arrow next to **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status to booked**. 
 
-1. [] Reslect the flow and on the menu select **Turn on**. It may take 10-15 seconds for the flow to turn on and the page to refresh. 
+1. [] Reselect the flow and on the menu select **Turn on**. It may take 10-15 seconds for the flow to turn on and the page to refresh. 
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S16.png)
 
