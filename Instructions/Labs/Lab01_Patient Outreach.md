@@ -94,7 +94,7 @@ nearby objects are blurry).
 
     ![Select New to create a new Patient Segment. Select + Dynamic Segment. ](./IMAGES/L1P10.png)
 
-    > [HELP] Did you know? Static segments enable you to choose and add segment members manually based on existing lists or search results. Dynamic Segments, which you define by using a set of rules and conditions, are constantly and automatically changing based on information in your database. Since we want our group to change depending on database information, we are choosing the dynamic segment option.
+    > [!KNOWLEDGE] Did you know? Static segments enable you to choose and add segment members manually based on existing lists or search results. Dynamic Segments, which you define by using a set of rules and conditions, are constantly and automatically changing based on information in your database. Since we want our group to change depending on database information, we are choosing the dynamic segment option.
 
 1. [] When prompted to choose a **Segment Template** option, select **Skip** since we will create our own Segment.
 
