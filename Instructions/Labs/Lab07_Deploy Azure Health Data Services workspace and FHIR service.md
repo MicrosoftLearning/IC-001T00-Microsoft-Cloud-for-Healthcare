@@ -28,8 +28,8 @@ In this lab, you will:
 In the first part of this lab, you will use a template to deploy resources with the Azure Portal. This template will deploy
 -   [Azure Health Data Services workspace](https://docs.microsoft.com/en-us/azure/healthcare-apis/workspace-overview)
 -   [FHIR service](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
--   [FHIR Loader (for Lab-03)](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
--   [FHIR-Proxy (for Lab-07)](https://github.com/microsoft/fhir-proxy)
+-   [FHIR Loader (for Lab-09)](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
+-   [FHIR-Proxy (for Lab-13)](https://github.com/microsoft/fhir-proxy)
 
 1. [] To begin, go to [Deploy to Azure](https://portal.azure.com/#create/Microsoft.Template) to open the deployment form in a new browser tab.
 
