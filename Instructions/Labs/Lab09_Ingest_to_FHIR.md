@@ -4,13 +4,21 @@
 
 In this lab, you will learn how to use the FHIR Loader utility to ingest FHIR data into the FHIR service.
 
-Data ingestion into FHIR is a vital capability for a healthcare organization's integration with multiple health data systems. While the FHIR service does features a custom $import operation for data ingestion, it is only recommended for the initial transfer of data into the FHIR service (data loading at high speeds). Alternate approaches can be used for the ongoing, transactional loading of FHIR data. In this challenge, we will be using Microsoft's FHIR Loader (OSS) utility, which is an Azure Function App built for importing data into the FHIR service.
+Data ingestion into FHIR is a vital capability for a healthcare organization's integration with multiple health data systems. While the FHIR service does features a custom $import operation for data ingestion, it is only recommended for the initial transfer of data into the FHIR service (data loading at high speeds). Alternate approaches can be used for the ongoing, transactional loading of FHIR data. In this lab, we will be using Microsoft's FHIR Loader (OSS) utility, which is an Azure Function App built for importing data into the FHIR service.
 
 For this lab, you will upload FHIR data bundles for import into the FHIR service. You will need to examine error logs and determine what is preventing the data in one of the bundles from being ingested.
 
 Below is a component view of FHIR Loader connected to the FHIR service endpoint.
 
 ![Graphical user interface Description automatically generated](./IMAGES/Lab09/L9P1.png)
+
+In Lab-07, the ARM template automatically deployed and configured FHIR Loader to connect with FHIR service in your resource group.
+
+For this lab, you will upload FHIR data bundles for import into the FHIR service. You will need to examine error logs and determine what is preventing the data in one of the bundles from being ingested.
+
+**Prerequisites**
+- Successful completion of Challenge-01
+- A text editor (e.g., [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Learning objectives
 
@@ -34,11 +42,11 @@ In this lab, you will:
 
 Visit the FHIR Loader (OSS) repository [here](https://github.com/microsoft/fhir-loader) and read the documentation for more info on the operating principles of the application.
 
-1. [] In Azure Portal, navigate to the Blob Storage account that was created for FHIR Loader in Lab-01. Go to **Portal -\> Resource Group -\> Storage account** (the name of the Storage account will end in **"impsa"**).
+1. [] In Azure Portal, navigate to the Blob Storage account that was created for FHIR Loader in Lab-07. Go to **Portal -> Resource Groups -> [name of resource group] -> Storage account** (the name of the Storage account will end in **"impsa"**).
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab09/L9P2.png)
 
-1. [] In the **Storage account**, click the **Storage browser (preview)** blade and then click **Blob containers**.
+1. [] In the **Storage account**, select the **Storage browser** blade and then select **Blob containers**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab09/L9P3.png)
 
@@ -46,9 +54,9 @@ Visit the FHIR Loader (OSS) repository [here](https://github.com/microsoft/fhir-
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab09/L9P4.png)
 
-    -   Once you select **Upload**, the FHIR Loader will automatically import the data from the .zip file into the FHIR service database.
+1. [] Select **Upload**, and the FHIR Loader will automatically import the data from the .zip file into the FHIR service database.
 
-1. [] Now, when you do a refresh and select **bundlesprocessed**, you should see six files as shown below.
+1. [] Now, when you do a refresh and select **bundlesprocessed** under **Blob containers**, you should see six files as shown below.
 
     > [!NOTE] Note: If you upload a .zip file, the names of the bundles within the .zip archive are exposed (not the .zip filename itself).*
 
@@ -70,7 +78,7 @@ Refer to the **Troubleshooting** section below or the FHIR Loader [testing](http
 
 Here are some points for inspecting FHIR Loader operations:
 
-1. [] In **Storage browser (preview)**, go to **Container** -\> **bundleserr** to view info about errors in importing FHIR bundles.
+1. [] In **Storage browser**, go to **Blob container** -\> **View all** -\> **bundleserr** to view info about errors in importing FHIR bundles.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab09/L9P6.png)
 
@@ -80,7 +88,7 @@ Here are some points for inspecting FHIR Loader operations:
 
     -   What is the reason given for the error?
 
-1. [] In comparison, you can go to **bundlesprocessed** and look in the .result files for ingest operations that succeeded. For example, in the image below there is a 201 status code, meaning success. The response shows an endpoint for a FHIR Resource ExplanationOfBenefit/\<resourceId\>, indicating that this Resource (ExplanationOfBenefit/\<resourceId\>) has been successfully persisted in FHIR service from the ingest operation.
+1. [] In comparison, you can go to **bundlesprocessed** and look in the **.result** files for ingest operations that succeeded. For example, in the image below there is a 201 status code, meaning success. The response shows an endpoint for a FHIR Resource ExplanationOfBenefit/\<resourceId\>, indicating that this Resource (ExplanationOfBenefit/\<resourceId\>) has been successfully persisted in FHIR service from the ingest operation.
 
     ![Graphical user interface, text, application, Word Description automatically generated](./IMAGES/Lab09/L9P8.png)
 
