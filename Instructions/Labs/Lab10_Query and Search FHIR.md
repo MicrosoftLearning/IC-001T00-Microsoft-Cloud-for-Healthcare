@@ -205,7 +205,7 @@ For composite searches, FHIR service in Azure Health Data Services supports the 
 
 ### Task 1
 
-1. [] Using the **FHIR Search collection** in **Postman**, search for **Patient Resource** instances narrowed by the following search parameters: **date**, **lastmodified**, **identifier**, and more. 
+1. [] Using the **FHIR Search** collection in **Postman**, search for **Patient Resource** instances narrowed by the following search parameters: **date**, **lastmodified**, **identifier**, and more. 
 
 1. [] Then, modify the included API calls with the **&** operator to combine different search parameters.
 
@@ -232,7 +232,7 @@ FHIR specifies a set of parameters for organizing and aggregating search results
 
 ### Task 1
 
-1. [] Using the **FHIR Search collection** in **Postman**, perform several Patient queries with the following search result parameters: **\_summary=true**, **\_summary=count**, **\_total=accurate**, **\_sort=gender**.
+1. [] Using the **FHIR Search** collection in **Postman**, perform several Patient queries with the following search result parameters: **\_summary=true**, **\_summary=count**, **\_total=accurate**, **\_sort=gender**.
 
 ===
 
@@ -282,7 +282,7 @@ GET {{fhirurl}}/Patient?_has:Observation:patient:code=55284-4
 
 ### Task 1
 
-1. [] Using the **FHIR Search collection** in **Postman**, conduct several chained searches. 
+1. [] Using the **FHIR Search** collection in **Postman**, conduct several chained searches. 
 
 1. [] Then try a reverse-chained search using the **\_has** parameter. For more examples of chained and reverse-chained searches, refer to the [FHIR search examples](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples) page.
 
@@ -292,7 +292,7 @@ GET {{fhirurl}}/Patient?_has:Observation:patient:code=55284-4
 
 **Overview**
 
-As discussed in Step 5, a reference in FHIR forms a connection from one Resource to another. FHIR enables querying for and traversing reference connections in order to narrow search results. In some situations, you may also want to use reference associations between Resources to cast a wider net for exploratory searches in a FHIR server's database.
+As discussed in Exercise 5, a reference in FHIR forms a connection from one Resource to another. FHIR enables querying for and traversing reference connections in order to narrow search results. In some situations, you may also want to use reference associations between Resources to cast a wider net for exploratory searches in a FHIR server's database.
 
 To illustrate, let's imagine you are interested in retrieving all AllergyIntolerance instances with a specific code. Additionally, you would like to retrieve all Patient instances on the FHIR server that are referenced by this type of AllergyIntolerance. You could do this in two searches by first querying with AllergyIntolerance?_code= and then searching for referenced Patient instances using \_has:AllergyIntolerance:patient:code=.
 
@@ -308,9 +308,9 @@ Note: Because of the potential for "open-ended" searches with \_include and \_re
 
 ### Task 1
 
-1. [] Using the **FHIR Search collection** in **Postman**, search for **PractitionerRole Resources** and include the associated **Practitioner Resources** in the results.
+1. [] Using the **FHIR Search** collection in **Postman**, search for **PractitionerRole Resources** and include the associated **Practitioner Resources** in the results.
 
-1. [] Do a search using **\_revinclude** to discover all PractitionerRole Resources for an Organization. For more examples of searches with the \_include and \_revinclude parameters, please see the [FHIR search examples](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples) page.
+1. [] Do a search using **\_revinclude** to discover all **PractitionerRole Resources** for an Organization. For more examples of searches with the \_include and \_revinclude parameters, please see the [FHIR search examples](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples) page.
 
 ===
 
@@ -320,13 +320,13 @@ At some point, you will find a use case where you need to retrieve information t
 
 ### Task 1
 
-1. [] To create a new search parameter, you need to POST a SearchParameter Resource to the FHIR service database. See the **Create New Search Parameter call** in the **FHIR Search Postman collection** for an example. 
+1. [] To create a new search parameter, you need to POST a SearchParameter Resource to the FHIR service database. See the **Create New Search Parameter** call in the **FHIR Search** Postman collection for an example. 
 
 1. [] When ready, go ahead and run the **Create New Search Parameter** call in **Postman**.
 
-1. [] To perform a search using the custom search parameter that you just created, first [**follow these instructions**](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-do-custom-search#test-search-parameters) to test the search parameter. Return here when you have finished the process.
+1. [] To perform a search using the custom search parameter that you just created, first [follow these instructions](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-do-custom-search#test-search-parameters) to test the search parameter. Return here when you have finished the process.
 
-1. [] Then, [**run a re-index job**](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-run-a-reindex) on your FHIR service to activate the new search parameter. You can use the Reindex call in the FHIR Search collection to accomplish this.
+1. [] Then, [run a re-index job](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-run-a-reindex) on your FHIR service to activate the new search parameter. You can use the Reindex call in the FHIR Search collection to accomplish this.
 
     > [!NOTE] Note: Reindexing can take up to several minutes.
 
