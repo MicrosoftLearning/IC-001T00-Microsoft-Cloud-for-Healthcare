@@ -2,9 +2,9 @@
 
 ## Overview
 
-In this challenge, you will learn how to use [FHIR search](https://www.hl7.org/fhir/search.html) operations to query data in your FHIR service.
+In this lab, you will learn how to use [FHIR search](https://www.hl7.org/fhir/search.html) operations to query data in your FHIR service.
 
-The FHIR specification defines a RESTful API framework for interacting with Resources in a FHIR server database. Healthcare system integrators and app developers can take advantage of the rich set of search parameters in the FHIR API for querying Resources. In this challenge, you will get practice using the FHIR search API to query Resources in the [FHIR service](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview) in [Azure Health Data Services](https://docs.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-overview).
+The FHIR specification defines a RESTful API framework for interacting with Resources in a FHIR server database. Healthcare system integrators and app developers can take advantage of the rich set of search parameters in the FHIR API for querying Resources. In this lab, you will get practice using the FHIR search API to query Resources in the [FHIR service](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview) in [Azure Health Data Services](https://docs.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-overview).
 
 Think of these FHIR searches in user terms – a doctor may want to find all encounters for patients with a certain condition. Queries like this are focused on retrieving Resource instances per some filter criteria (in this example, Encounter instances filtered by their reference to a type of Condition).
 
@@ -34,7 +34,7 @@ If you wanted to narrow this search down to Patient Resource instances that were
 
 **Searching with POST**
 
-You can also make FHIR search API calls with POST. This is useful if the query string is too long for a single line or if the query contains Personal Health Information (PHI). To search using POST, the search parameters are delivered in the body of the request. In this challenge, we will not be using POST API calls for searches, but we have included a sample API call in the FHIR Search collection in Postman to demonstrate how to query with POST. When you get to Step 2 in this lab, try sending POST Step 2 - List Patient by ID using POST in the FHIR Search collection.
+You can also make FHIR search API calls with POST. This is useful if the query string is too long for a single line or if the query contains Personal Health Information (PHI). To search using POST, the search parameters are delivered in the body of the request. In this lab, we will not be using POST API calls for searches, but we have included a sample API call in the FHIR Search collection in Postman to demonstrate how to query with POST. When you get to Exercise 2 in this lab, try sending POST Step 2 - List Patient by ID using POST in the FHIR Search collection.
 
 **FHIR search responses**
 
@@ -148,9 +148,11 @@ To begin, you are going to populate your FHIR service with additional sample Res
 
 ### Task 1
 
-1. [] Go to **Postman** and access the **FHIR Search collection** provided in Lab-07. Make sure that the fhir-service environment is active and that you have a valid access token (use POST AuthorizeGetToken to get a token refresh).
+1. [] Go to **Postman** and access the **FHIR Search** collection provided in Lab-07. Make sure that the fhir-service environment is active and that you have a valid access token (use POST AuthorizeGetToken to get a token refresh).
 
 1. [] There is a request titled **Step 1 - Save Sample Resource Bundle**. Select this request, and then select **Send** to deliver the Bundle to your FHIR service. This will save some Resources that future requests in this lab require.
+
+    ![Graphical user interface Description automatically generated](./IMAGES/Lab10/L10P1.png)
 
 > [!NOTE] **Note:** The FHIR Search collection has sample requests to demonstrate many different FHIR searches. They aren't always specified by name in these instructions, but in Postman they will start with "Step \#" for reference.
 
@@ -164,7 +166,7 @@ On top of the common search parameters, it's possible to add modifiers right aft
 
 ### Task 1
 
-1. [] Go to **Postman**, access the **FHIR Search collection**, and search for **Patient Resources** using **\_id**, **name**, and other parameters following the examples for Exercise 2. Try adding modifiers to fine-tune the results.
+1. [] Go to **Postman**, access the **FHIR Search** collection, and search for **Patient Resources** using **\_id**, **name**, and other parameters following the examples for Exercise 2. Try adding modifiers to fine-tune the results.
 
 -   **Q:** What Element(s) are you searching against when you assign a value to the name parameter in a Patient search?
 
@@ -178,19 +180,19 @@ On top of the common search parameters, it's possible to add modifiers right aft
 
 In cases where you perform searches with more than one parameter, the most immediate way of doing this is with the logical AND (&) operator.
 
-GET {{fhirurl}}/Patient?_lastUpdated=gt2021-10-01&gender=female
+> GET {{fhirurl}}/Patient?_lastUpdated=gt2021-10-01&gender=female
 
 In the example above, the query is for Patient Resource instances that were updated after October 1st, 2021 (_lastUpdated=gt2021-10-01) *and* whose gender Element value is female (gender=female).
 
 This method with & works as expected when the queried Elements are single attributes (e.g., gender). But in situations where Resource attributes are defined across *pairs* of Elements, the & operator may return incorrect results if it cannot distinguish which Elements are paired together vs which ones are separate from each other.
 
-GET {{fhirurl}}/Group?characteristic=gender&value=mixed
+> GET {{fhirurl}}/Group?characteristic=gender&value=mixed
 
 In the above example, we are searching for Group Resource instances with characteristic=gender&value=mixed. When we inspect the search results, to our surprise we find that the search has returned a Group instance with "characteristic": "gender" and "value": "male". Taking a closer look, we discover this was due to the Group instance having "characteristic" : "gender", "value": "male" *and* "characteristic": "age", "value": "mixed". As it turns out, the & operator returned a positive match on "characteristic": "gender" and "value": "mixed" despite these Elements having no connection with each other.
 
 To remedy this shortcoming of the & operator, some Resources are defined with composite search parameters, which make it possible to search against Element pairs as logically inter-related units. The example below demonstrates how to perform a composite search for Group Resource instances that contain "characteristic" : "gender" paired with "value": "mixed". Note the use of the \$ operator to specify the value of the paired search parameter.
 
-GET {{fhirurl}}/Group?characteristic-value=gender\$mixed
+> GET {{fhirurl}}/Group?characteristic-value=gender\$mixed
 
 For composite searches, FHIR service in Azure Health Data Services supports the following data type pairings (the request directly above is an example of a Token, Token pairing):
 
