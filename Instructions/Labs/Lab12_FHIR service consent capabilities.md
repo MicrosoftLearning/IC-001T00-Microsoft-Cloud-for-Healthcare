@@ -2,11 +2,11 @@
 
 ## Overview
 
-In this challenge, you will use [FHIR-Proxy](https://github.com/microsoft/fhir-proxy) (OSS) to block access to data stored in the [FHIR service](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview).
+In this lab, you will use [FHIR-Proxy](https://github.com/microsoft/fhir-proxy) (OSS) to block access to data stored in the [FHIR service](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview).
 
-The wide adoption of [FHIR R4](https://hl7.org/FHIR/) has given patients a new measure of control over their health data. With a patient's data stored in FHIR, mechanisms are available to block certain providers and/or organizations from accessing the data if the patient elects to withhold records. One way these data restrictions are managed in FHIR is through the [Consent Resource](https://build.fhir.org/consent.html). In this challenge, we will be exploring capabilities in the Azure health data platform that make it possible for patients to opt out of sharing their FHIR records with certain parties.
+The wide adoption of [FHIR R4](https://hl7.org/FHIR/) has given patients a new measure of control over their health data. With a patient's data stored in FHIR, mechanisms are available to block certain providers and/or organizations from accessing the data if the patient elects to withhold records. One way these data restrictions are managed in FHIR is through the [Consent Resource](https://build.fhir.org/consent.html). In this lab, we will be exploring capabilities in the Azure health data platform that make it possible for patients to opt out of sharing their FHIR records with certain parties.
 
-In this challenge, you will be activating the [Consent Opt-Out filter](https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#consent-opt-out-filter) in [FHIR-Proxy](https://github.com/microsoft/fhir-proxy) (OSS). You will be modifying authorization settings to block a specific practitioner from accessing a patient's FHIR records in the FHIR service. For configuring and testing the Consent Opt-Out filter, you will be setting up Postman to call the FHIR-Proxy endpoint.
+In this lab, you will be activating the [Consent Opt-Out filter](https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#consent-opt-out-filter) in [FHIR-Proxy](https://github.com/microsoft/fhir-proxy) (OSS). You will be modifying authorization settings to block a specific practitioner from accessing a patient's FHIR records in the FHIR service. For configuring and testing the Consent Opt-Out filter, you will be setting up Postman to call the FHIR-Proxy endpoint.
 
 **HIR-Proxy and FHIR service overview**
 
@@ -18,7 +18,7 @@ Component View of FHIR-Proxy and FHIR service with Postman set up to call the FH
 
 FHIR-Proxy asserts control over FHIR data interactions only if its [pre- and/or post-processing modules](https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#date-sort-post-processor) have been enabled and configured. Otherwise, with no special configuration, API calls made to the FHIR-Proxy endpoint go straight through to the FHIR service, and responses are sent back unfiltered to the remote client app (such as Postman in our case).
 
-In Lab 7, you enabled the Consent Opt-Out filter when you deployed FHIR-Proxy. Now you'll need to do some configuration for the filter to take effect.
+In Lab 07, you enabled the Consent Opt-Out filter when you deployed FHIR-Proxy. Now you'll need to do some configuration for the filter to take effect.
 
 ## Learning objectives
 
@@ -47,11 +47,11 @@ Before setting up FHIR-Proxy for Consent Opt-Out filtering, you must first confi
 
 ## Exercise 2: Configure Postman to connect with the FHIR-Proxy endpoint
 
-In the next part of this challenge, you will be setting up a new environment in Postman so that API calls go to the FHIR-Proxy endpoint rather than directly to the FHIR service endpoint.
+In the next part of this lab, you will be setting up a new environment in Postman so that API calls go to the FHIR-Proxy endpoint rather than directly to the FHIR service endpoint.
 
-1. [] o begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open the Postman setup instructions for FHIR-Proxy in a new browser tab.
+1. [] To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open the Postman setup instructions for FHIR-Proxy in a new browser tab.
 
-    [Postman Tutorial for FHIR-Proxy](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#step-2---complete-fhir-proxy-authentication)
+    [Postman Tutorial for FHIR-Proxy](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/Postman_FHIR-Proxy_README.md)
 
 1. []  Follow the instructions and return here when finished.
 
@@ -73,7 +73,7 @@ In the next part of this challenge, you will be setting up a new environment in 
 
 1. [] To confirm you have the **Patient** and **Practitioner Resources** needed for this lab, send the following requests in **Postman**:
 
-    GET {{fhirurl}}/Patient/WDT000000001
+    **GET Patient to Test Consent Opt Out**: GET {{fhirurl}}/Patient/WDT000000001
 
     GET {{fhirurl}}/Practitioner/WDT000000003
 
