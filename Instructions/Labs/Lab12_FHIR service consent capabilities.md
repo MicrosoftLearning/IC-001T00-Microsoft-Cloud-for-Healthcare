@@ -139,7 +139,7 @@ Now you will be linking the Practitioner/WDT000000003 Resource to your user acco
 
 1. [] In the **Profile** blade, copy the **Object ID** for your account.
 
-1. [] You will also need your \<fhir_proxy_app_name\> (**Portal** -> **Resource Group** -> **\<fhir_proxy_app_name\>**).
+1. [] You will also need your \<fhir_proxy_app_name> (**Portal** -> **Resource Group** -> **\<fhir_proxy_app_name>**).
 
 1. [] In Postman, get a new access token (POST AuthorizeGetToken).
 
