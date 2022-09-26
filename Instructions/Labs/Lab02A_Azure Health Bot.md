@@ -214,7 +214,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] In the **Value** column, select the **Copy to clipboard** icon to copy the secret value to the clipboard and then paste the secret value in the following text box: 
 
-    @lab.TextBox(AppSecret) 
+        @lab.TextBox(AppSecret) 
 
      >[!ALERT] You <u>**must**</u> record the secret value now. This value will be masked and not recoverable after you browse away from this page. You may also want to record this value in a text editor like Notepad to ensure you have a copy. 
 
@@ -222,7 +222,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] To the right of **Application (client) ID**, select the **Copy to clipboard** icon to copy the secret value to the clipboard and then paste the secret value in the following text box: 
 
-    @lab.TextBox(clientappid) 
+        @lab.TextBox(clientappid) 
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T3S6.png)
 
