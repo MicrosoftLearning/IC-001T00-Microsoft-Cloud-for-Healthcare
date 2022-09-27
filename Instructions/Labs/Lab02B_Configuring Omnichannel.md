@@ -57,7 +57,7 @@ In the following tasks, you will complete the following:
 
     ![Screenshot of Users option first in the list of security settings](./IMAGES/Lab02/L2P31.png)
 
-1. [] Switch the dropdown from **Omnichannel Users** to **Enabled Users** for the grid view so that your user will show in the list. You may have to select the ellipsis next to Chart Pane to open the contectual menu and select System Views to make the view dropdown visible.
+1. [] Switch the dropdown from **Omnichannel Users** to **Enabled Users** for the grid view so that your user will show in the list. You may have to select the ellipsis next to Chart Pane to open the contectual menu and select System Views to make the view dropdown visible. This may take several minutes for the page to display.
 
     ![Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](./IMAGES/Lab02/L2P32.png)
 
@@ -117,7 +117,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P43.png)
 
-1. [] Return to the **Dynamics 365 User** page, switch the view to **Enabled Users**.
+1. [] Return to the **Dynamics 365 User** page, switch the view to **Enabled Users**. This may take several minutes for the page to display.
 
     ![Screenshot of Dynamics 365 navigation to settings and security on command bar](./IMAGES/Lab02/L2P43A.png)
     
@@ -125,7 +125,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P44.png)
 
-1. [] While in the **Enabled User** list, scroll to find your App user or use the **Search** bar. Double-click on the user or select the row and click **Edit**.
+1. [] While in the **Enabled User** list, scroll to find your **App user** (this is your MCH user, not the MOD admin user) or use the **Search** bar. Double-click on the user or select the row and click **Edit**.
 
     ![](./IMAGES/Lab02/L2P45.png)
 
