@@ -109,15 +109,13 @@ We will first open the Portal to show the Customer Self-Service template current
 
     ![Screenshot of portal settings dialog](./IMAGES/Lab03/L3P12.png)
 
-1. [] Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You should be first navigated to the **Portal Details** tab of the Power Apps Portals admin center.
+1. [] Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You may have to re-sign in. You should be first navigated to the **Portal Details** tab of the Power Apps Portals admin center.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P13.png)
 
 1. [] Scroll down to **Update Portal Binding > Select Website Record**.
 
-    ![Screenshot of current portal binding as customer self-service](./IMAGES/Lab03/L3P14.png)
-
-1. [] Open the **Select Website Record** dropdown and change the value from Customer Self-Service to +++**Healthcare Patient Portal**+++. This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario.
+ 1. [] Open the **Select Website Record** dropdown and change the value from **Customer Self-Service** to **Healthcare Patient Portal**, if necessary. This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario.
 
     ![Screenshot of selecting Healthcare Patient Portal in drop down](./IMAGES/Lab03/L3P15.png)
 
@@ -156,7 +154,7 @@ In this task, we will edit the Patient Portal website to align the name with Lam
 
 1. [] Navigate to **Apps** in <https://make.powerapps.com>.
 
-1. [] Select the **Healthcare Patient Portal** app and select **More Commands (…) > Edit**.
+1. [] Select the **Lamna Healthcare Patient Portal** app and select **More Commands (…) > Edit**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P22.png)
 
@@ -199,7 +197,7 @@ In this task, we will edit the Patient Portal website to align the name with Lam
 
 Now that the Patient Portal is ready to go, we need to allow Lamna Healthcare patients to create accounts.
 
-In this task, you will learn how to **create an invitation code** for patients to sign up and use the Lamna Healthcare Patient Portal. Since **Casey Jensen** will be accessing the patient portal to fill her medication in this lab, we will create an account for her.
+In this task, you will learn how to create an invitation code for patients to sign up and use the Lamna Healthcare Patient Portal. Since Casey Jensen will be accessing the patient portal to fill her medication in this lab, we will create an account for her.
 
 1. [] Open the **Healthcare Administration** app in [Power Apps](http://make.powerapps.com).
 
@@ -209,13 +207,9 @@ In this task, you will learn how to **create an invitation code** for patients t
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P32.png)
 
-1. [] On Casey Jensen patient record, select **Create Invitation** from the top command bar. It should be near the right side.
+1. [] On the **Casey Jensen** patient record, select **Create Invitation** from the top command bar. It should be near the right side. If you don't see it, you may have to expand additional options (vertical ellipsis) to see this command in the dropdown.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P33.png)
-
-1. [] You may have to expand additional options to see this command in the dropdown.
-
-    ![Screenshot of Create Invitation command after expanding more options](./IMAGES/Lab03/L3P34.png)
 
 1. [] A New Invitation form will appear. You don’t need to make any changes. Select **Save**. Once saved, an invitation code will be created for the patient. Let’s go retrieve it.
 
@@ -230,9 +224,9 @@ In this task, you will learn how to **create an invitation code** for patients t
 
 ### Task 4: Redeem Invitation Code and Sign into Patient Portal
 
-In this task, you will **transition personas** and act as **Casey Jensen**, who just received an invitation code to Lamna Healthcare’s Patient Portal and is excited to register and navigate its features.
+In this task, you will transition personas and act as Casey Jensen, who just received an invitation code to Lamna Healthcare’s Patient Portal and is excited to register and navigate its features.
 
-1. [] Open the Lamna Healthcare Patient Portal in [Power Apps](https://make.powerapps.com/).
+1. [] Open the **Lamna Healthcare Patient Portal** in [Power Apps](https://make.powerapps.com/).
 
     ![Screenshot of Lamna Healthcare Patient Portal in App list](./IMAGES/Lab03/L3P37.png)
 
@@ -256,7 +250,7 @@ In this task, you will **transition personas** and act as **Casey Jensen**, who 
 
 1. [] Register a new local account for Casey Jensen with the following recommended details:
     1. [] **Email**: Casey.Jensen@contoso.com (should auto-fill)
-    1. [] **Username**: CaseyJensen
+    1. [] **Username**: +++CaseyJensen+++
     1. [] **Password**: Make up your own. Please note the password to use for sign in later.
 
         ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P42.png)
@@ -268,25 +262,25 @@ In this task, you will **transition personas** and act as **Casey Jensen**, who 
 
 ### Task 5: Navigate the Patient Access Portal
 
-In this task, you will continue as **Casey** and navigate the features of the Patient Portal.
+In this task, you will continue as Casey and navigate the features of the Patient Portal.
 
 1. [] After registering for an account in the **Patient Access Portal**, you should be welcomed by the portal Homepage or profile page if your account requires action, such as email confirmation required. You can ignore the email confirmation warning if displayed.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P43.png)
 
-1. [] Select **Lamna Healthcare** in the upper left to go back to the Homepage.
+1. [] Select **Lamna Healthcare** in the upper left to go back to the Homepage, if you are not already there.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P44.png)
 
-1. [] You will be navigated to the Patient Portal **Homepage**.
+1. [] You will be navigated to the Patient Portal Homepage.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P45.png)
 
-1. [] In the center of the homepage, you will see **shortcuts** to schedule an appointment, view messages, or find a doctor.
+1. [] In the center of the homepage, you will see shortcuts to **Schedule an appointment**, **View messages**, or **Find a doctor**.
 
     ![Screenshot of homepage shortcuts](./IMAGES/Lab03/L3P46.png)
 
-1. [] Below the shortcuts, you will see **current patient information** including unread messages, upcoming appointments, and current medications.
+1. [] Below the shortcuts, you will see current patient information including **Unread messages**, **Upcoming appointments**, and current **Medications**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P47.png)
 
@@ -294,29 +288,26 @@ In this task, you will continue as **Casey** and navigate the features of the Pa
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P48.png)
 
-1. [] **Home** command will direct you to the homepage.
+    1. [] **Home** command will direct you to the homepage.
+    1. [] **Find a doctor** shows a list of practitioners with associated information.
 
-1. [] **Find a doctor** shows a list of practitioners with associated information.
+        ![Table Description automatically generated](./IMAGES/Lab03/L3P49.png)
 
-    ![Table Description automatically generated](./IMAGES/Lab03/L3P49.png)
+    1. [] **Messages** allows a secure method to send and receive messages to healthcare professionals. Expand **Messages** on the navigation bar to see both the **Inbox** and **Sent** messages.
 
-1. [] **Messages** allows a secure method to send and receive messages to healthcare professionals. Expand **Messages** on the navigation bar to see both the **Inbox** and **Sent** messages.
+        ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P50.png)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P50.png)
+    1. [] Expand **Appointments** to check upcoming and schedule new appointments. Scheduling new appointments allows for clinic or virtual appointments, which also includes instant virtual appointments. The Virtual Visit Lab will go through the process of booking an instant virtual appointment.
 
-1. [] Expand **Appointments** to check upcoming and schedule new appointments. Scheduling new appointments allows for clinic or virtual appointments, which also includes instant virtual appointments. The Virtual Visit Lab will go through the process of booking an instant virtual appointment.
+        ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P51.png)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P51.png)
+    1. [] Check **Medical records** including medications, allergies, conditions, visit summaries, care plans, and care team. You can see a full overview and filter by date and type.
 
-1. [] Check **Medical records** including medications, allergies, conditions, visit summaries, care plans, and care team. You can see a full overview and filter by date and type.
+        ![Graphical user interface, text, email Description automatically generated](./IMAGES/Lab03/L3P52.png)
 
-    ![Graphical user interface, text, email Description automatically generated](./IMAGES/Lab03/L3P52.png)
+    1. [] Lastly, there is **Personal information**, including emergency contacts and insurance coverages.
 
-1. [] Lastly, there is Personal information, including emergency contacts and insurance coverages.
-
-    ![Text Description automatically generated](./IMAGES/Lab03/L3P53.png)
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P54.png)
+        ![Text Description automatically generated](./IMAGES/Lab03/L3P53.png)
 
 1. [] The Azure Health Bot icon shows at the lower right-hand corner of the screen. You may start a conversation by selecting **Let’s Chat** button to open the virtual assistant.
 
@@ -368,7 +359,7 @@ See the following documentation to learn more about these roles: [Assign roles a
 
 1. [] Using an In-Private or Incognito window, navigate to [Power Apps](http://make.powerapps.com).
 
-1. [] Select the correct environment from the upper right **Environment** dropdown.
+1. [] Select the correct environment from the upper right **Environment** dropdown, if necessary.
 
     ![](./IMAGES/Lab03/L3P62.png)
 
@@ -380,7 +371,7 @@ See the following documentation to learn more about these roles: [Assign roles a
 
     ![Screenshot of Omnichannel Administrator App in Power Apps](./IMAGES/Lab03/L3P64.png)
 
-1. [] Select the **gauge** icon in the upper right corner and navigate to **Advanced Settings**.
+1. [] Select the **gear** icon in the upper right corner and navigate to **Advanced Settings**.
 
     ![Screenshot of Advanced settings in Settings drop down](./IMAGES/Lab03/L3P65.png)
 
@@ -406,7 +397,7 @@ See the following documentation to learn more about these roles: [Assign roles a
 
     ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab03/L3P70.png)
 
-1. [] Scroll down and select the following two roles to your user and select **OK**.
+1. [] Scroll down and select the following two roles to add to your user and select **OK**.
     1. [] Productivity tools administrator
     1. [] Productivity tools user
 
@@ -423,15 +414,17 @@ In this task, you will create an agent script in the Omnichannel admin center ap
 
 1. [] Navigate to **Omnichannel admin center** application which you opened in the first task.
 
-1. [] In the left navigation bar, under **Agent Experience**, select **Agent Scripts.**
+1. [] In the left navigation bar, select **Agent Experience**, and in the **Agent experience** page, select **Manage** to the right of **Agent Scripts**.
+
+    ![Omnichannel Administration app to create new agent scripts](./IMAGES/Lab03/L3P71b.png)
 
 1. [] On the **Active Agent scripts** page, select **+New**.
 
     ![Omnichannel Administration app to create new agent scripts](./IMAGES/Lab03/L3P72.png)
 
 1. [] For the **New Agent script** record, specify the following:
-    1. [] **Name:** Validate Patient Information
-    1. [] **Unique Name**: msdyn_ValidatePatientInformation
+    1. [] **Name**: +++Validate Patient Information+++
+    1. [] **Unique Name**: +++msdyn_ValidatePatientInformation+++
 
         ![Create new agent script called Validate Patient Information](./IMAGES/Lab03/L3P73.png)
 
@@ -443,12 +436,12 @@ In this task, you will create an agent script in the Omnichannel admin center ap
 
     ![Add Agent script step to the new agent script](./IMAGES/Lab03/L3P75.png)
 
-1. [] Quick Create form for the Agent script step appears. Specify the following fields:
-    1. [] **Name:** Confirm Phone Number
-    1. [] **Unique Name**: msdyn_ConfirmPhone
+1. [] The Quick Create form for the Agent script step appears. Specify the following fields:
+    1. [] **Name**: +++Confirm Phone Number+++
+    1. [] **Unique Name**: +++msdyn_ConfirmPhone+++
     1. [] **Order**: 1
     1. [] **Action type**: Text
-    1. [] **Text instructions**: Ask patient to confirm phone number.
+    1. [] **Text instructions**: +++Ask patient to confirm phone number.+++
 
         ![Screenshot of Quick create form for a step to Confirm Phone Number for the patient](./IMAGES/Lab03/L3P76.png)
 
@@ -459,11 +452,11 @@ In this task, you will create an agent script in the Omnichannel admin center ap
     ![Screenshot of New Agent script step button in agent script steps subgrid ](./IMAGES/Lab03/L3P77.png)
 
 1. [] Another Quick Create form for the Agent script step appears. Specify the following fields:
-    1. [] **Name:** Verify Insurance Information
-    1. [] **Unique Name**: msdyn_VerifyInsuranceInformation
+    1. [] **Name**: +++Verify Insurance Information+++
+    1. [] **Unique Name**: +++msdyn_VerifyInsuranceInformation+++
     1. [] **Order**: 2
     1. [] **Action type**: Text
-    1. [] **Text instructions**: Ask Patient for Insurance Provider and ID \#. Verify their response matches insurance information on file.
+    1. [] **Text instructions**: +++Ask Patient for Insurance Provider and ID \#. Verify their response matches insurance information on file.+++
 
     ![Screenshot of Quick create form for a step to Verify Insurance Information for the patient](./IMAGES/Lab03/L3P78.png)
 
@@ -480,13 +473,13 @@ In this task, you will create an agent script in the Omnichannel admin center ap
 
 ### Task 3: Associate the Agent Script with a Session Template
 
-In this task, you will associate the agent script with a session template so it will load for agents based on the type of session they’ve opened. We will be associating the agent script we just created with the **Default chat session.** This is the default chat session that opens during an escalation to an agent in Patient Service Center.
+In this task, you will associate the agent script with a session template so it will load for agents based on the type of session they’ve opened. We will be associating the agent script we just created with the Default chat session. This is the default chat session that opens during an escalation to an agent in Patient Service Center.
 
 1. [] Open the **Omnichannel admin center** app in Power Apps if you aren’t already in it.
 
     ![Screenshot of Omnichannel Administrator App in Power Apps](./IMAGES/Lab03/L3P81.png)
 
-1. [] In the left navigation bar, under **Agent Experience**, select **Sessions**.
+1. [] In the left navigation bar, select **Agent Experience**. On the **Agent experience** page, select **Manage** to the right of **Session templates**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P82.png)
 
@@ -494,7 +487,7 @@ In this task, you will associate the agent script with a session template so it 
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab03/L3P83.png)
 
-1. [] Double-click or select **Edit** on the command bar to open the Chat session – default record.
+1. [] Double-click or select **Edit** on the command bar to open the **Chat session – default** record.
 
     ![Graphical user interface, table Description automatically generated](./IMAGES/Lab03/L3P84.png)
 
@@ -508,8 +501,6 @@ In this task, you will associate the agent script with a session template so it 
 
 1. [] In the **Look for Records** box, select the **search** icon (magnifying glass).
 
-    ![Screenshot of selecting "Validate Patient Information" which shows as agent script record](./IMAGES/Lab03/L3P87.png)
- 
 1. [] Select the **Validate Patient Information** agent script from the list and select **Add.**
 
     ![Screenshot of Add button on bottom of Lookup Records pane](./IMAGES/Lab03/L3P88.png)
@@ -524,7 +515,7 @@ In this task, you will associate the agent script with a session template so it 
 
 ## Exercise 3: Configure Knowledge Articles
 
-In this exercise, you will learn how to create and manage **Knowledge Articles** that can address any number of issues your customers would like to discuss during the patient service center conversation. These knowledge articles will appear in the productivity pane in Patient Service Center through AI-enabled suggestions.
+In this exercise, you will learn how to create and manage Knowledge Articles that can address any number of issues your customers would like to discuss during the patient service center conversation. These knowledge articles will appear in the productivity pane in Patient Service Center through AI-enabled suggestions.
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P90.jpg)
 
@@ -562,7 +553,7 @@ In this task, we will assign the necessary user role to create and view knowledg
 
     ![Screenshot of Customer Service Hub application in Power Apps list](./IMAGES/Lab03/L3P94.png)
 
-1. [] In **Customer Service Hub**, on the left navigation bar, go to the bottom left corner where there’s a dropdown that says **Service**. Select it and change the area to **Customer Service Admin Center**.
+1. [] In **Customer Service Hub**, on the left navigation bar, go to the bottom left corner where there’s a dropdown that says **Service**. Select it and change the area to **Service Management**. 
 
     ![Screenshot of bottom left drop down selection changing from Service to Service Management](./IMAGES/Lab03/L3P95.png)
 
@@ -570,29 +561,28 @@ In this task, we will assign the necessary user role to create and view knowledg
 
     ![Screenshot of Settings option in the site map in Knowledge Base Management section](./IMAGES/Lab03/L3P96.png)
 
-1. [] Record Types allows you to configure the record types you want to turn on for knowledge management.
-    1.  The list will include all entities that are available for an N:N relationship.
-    1.  Knowledge management is enabled for Case table by default. Because our scenario will also use the Case table, we don’t need to add any additional tables at this time.
+1. [] **Record Types** allows you to configure the record types you want to turn on for knowledge management. The list will include all entities that are available for an N:N relationship. Knowledge management is enabled for **Case** table by default. Because our scenario will also use the Case table, we don’t need to add any additional tables at this time. You should remove the other types.
 
         ![Screenshot of Record Types for knowledge management, with all available on the left and selected on the right.  Currently selected are Case and Contact.](./IMAGES/Lab03/L3P97.png)
 
-1. [] For Support Portal Connection, this allows you to integrate an external portal for publishing knowledge articles.
+1. [] **Support portal connection** allows you to integrate an external portal for publishing knowledge articles.
     1.  Selecting Yes would share the knowledge article as a link in the email sent to the customer.
     1.  Selecting No would share the article content inserted in the email body.
-    1.  Keep as **No** as we will not be integrating an external portal connection
+    1.  [] Keep as **No** as we will not be integrating an external portal connection
 
         ![Text Description automatically generated](./IMAGES/Lab03/L3P98.png)
 
-1. [] In the **Knowledge Articles Feedback** section, set **Enable users to provide feedback on knowledge articles from search control** to **Yes**. This will allow users to provide feedback on knowledge articles opened from knowledge search control.
+1. [] In the **Knowledge articles feedback** section, set **Enable users to provide feedback on knowledge articles from search control** to **Yes**, if necessary. This will allow users to provide feedback on knowledge articles opened from knowledge search control.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P99.png)
-
+    
+1. Select **Save**.
 
 ### Task 3: Create Knowledge Article
 
 In this task, you will create a new knowledge article about Asthma for agents to access during patient conversations.
 
-1. [] In **Customer Service Hub,** on the left navigation bar, go to the bottom left corner where you previously modified the dropdown. Change it back from **Customer Service Admin Center** to **Service**.
+1. [] In **Customer Service Hub,** on the left navigation bar, go to the bottom left corner where you previously modified the dropdown. Change it back from **Service Management** to **Service**.
 
     ![Screenshot of bottom left drop down selection changing back from Service Management to Service ](./IMAGES/Lab03/L3P100.png)
 
@@ -604,14 +594,14 @@ In this task, you will create a new knowledge article about Asthma for agents to
 
     ![Screenshot of New button on command bar in Knowledge Article section](./IMAGES/Lab03/L3P102.png)
 
-1. [] You should be on the **Content** tab of a new knowledge article.
+1. [] You should be on the **Content** tab of a **New Knowledge Article**.
 
     ![Screenshot of content tab of a new knowledge article](./IMAGES/Lab03/L3P103.png)
 
 1. [] On the **Article Content** section tab of the new knowledge article, specify the following details:
-    1. [] **Title**: Shortness of Breath
-    1. [] **Keywords**: Asthma, shortness of breath, trouble breathing, inhaler, albuterol
-    1. [] **Description**: Uncomfortable sensation or awareness of breathing or needing to breathe.
+    1. [] **Title**: +++Shortness of Breath+++
+    1. [] **Keywords**: +++Asthma, shortness of breath, trouble breathing, inhaler, albuterol+++
+    1. [] **Description**: +++Uncomfortable sensation or awareness of breathing or needing to breathe.+++
 
         ![Screenshot of the new knowledge article with title, keyword, and description completed](./IMAGES/Lab03/L3P104.png)
 
@@ -657,23 +647,23 @@ In this task, you will create a new knowledge article about Asthma for agents to
 
     The Business Process flow bar at the top of the form helps you to drive the article towards completeness. You have the option to customize the stages in the Business Process flow to suit your requirements. We will now complete the author stage so it can move into review.
 
-1. [] On the **Business process** bar, select **Author**. The business step options should pop out below.
+1. [] On the Business process bar, select **Author**. The business step options should pop out below.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P106.png)
 
-1. [] Add the **Article Subject:** Default Subject. This is the subject of the article to help with searches.
+1. [] From the the **Article Subject:** dropdown select **Default Subject**. This is the subject of the article to help with searches.
 
 1. [] Check the box for **Mark for Review** as **Mark Complete**.
 
-1. [] In the **Assign Primary Author** dropdown list, you may choose a person who is responsible for maintaining the article content. By default, the user who creates the article is the primary author. For this training, we will keep it as our IAD user.
+1. [] In the **Assign Primary Author** dropdown list, you may choose a person who is responsible for maintaining the article content. By default, the user who creates the article is the primary author. For this training, we will keep it as our MOD user.
 
 1. [] Select **Next Stage** to mark the article complete and ready for review.
 
     ![Screenshot of close up of the author stage with information filled out](./IMAGES/Lab03/L3P107.png)
 
-1. [] The knowledge article is now in the review stage of the business process flow and is ready for review.
+The knowledge article is now in the review stage of the business process flow and is ready for review.
 
-    ![Screenshot of Review Stage selected in the business process flow](./IMAGES/Lab03/L3P108.png)
+![Screenshot of Review Stage selected in the business process flow](./IMAGES/Lab03/L3P108.png)
 
 **Congratulations!** You have successfully created a knowledge article for Shortness of Breath and marked it for review.
 
@@ -682,7 +672,7 @@ In this task, you will create a new knowledge article about Asthma for agents to
 
 To ensure accuracy of the knowledge article, typically someone else would review and approve it. For this training exercise, you will mark the article reviewed and approved yourself. Quick note that this task also requires the Knowledge Manager role or another that can approve knowledge articles.
 
-1. [] In **Customer Service Hub**, navigate to **Service > Dashboards** and use the dropdown to choose the **My Knowledge Dashboard**.
+1. [] In **Customer Service Hub**, in the left navigation select **Dashboards** and use the dropdown to choose the **My Knowledge Dashboard**.
 
     ![Screenshot of Dashboards selected in site map, changing the view from Tier 1 dashboard to My Knowledge Dashboard in Customer Service Hub](./IMAGES/Lab03/L3P109.png)
 
@@ -692,7 +682,7 @@ To ensure accuracy of the knowledge article, typically someone else would review
 
 1. [] Select the **Shortness of Breath** knowledge article.
 
-1. [] On the **Business process** bar, in the **Review** stage and in the **Review** dropdown, select **Approve**.
+1. [] On the **Business process** bar, in the **Review** stage and in the **Review** dropdown, select **Approved**.
 
     ![Screenshot of the business process flow of a knowledge article which is in review stage and has the Review field drop down selected on the approved option](./IMAGES/Lab03/L3P111.png)
 
@@ -716,19 +706,15 @@ To ensure accuracy of the knowledge article, typically someone else would review
 In this task, you will learn how to publish the knowledge article so it’s live and ready to be used.
 
 1. [] In your **Shortness of Breath** Knowledge Article, select the **Publish** stage.
-    1. [] For **Set Product Associated** check the box **Completed**.
+    1. [] For **Set Product Associated**, check the box **Completed**.
     1. [] Add an **Expiration Date** for one year from now.
     1. [] Select **Finish**
 
         ![Screenshot of fields filled in for publish stage of knowledge article.  Check Completed textbox for Set Product Associated and Add an expiration date for one year from now](./IMAGES/Lab03/L3P115.png)
 
-1. [] Once you select **Finish**, the business process flow should show as completed.
+1. [] Once you select **Finish**, the **Publish** popout window will open.
 
     ![Screenshot of business process flow showing completed flag after selecting finish](./IMAGES/Lab03/L3P116.png)
-
-1. [] Now you can specify the additional Publish details. On the command bar to go **More > Publish**.
-
-    ![Screenshot of Command bar selecting more and Publish command](./IMAGES/Lab03/L3P117.png)
 
 1. [] Specify the following details (see screenshot below):
     1. [] **Publish**: Now
@@ -757,19 +743,17 @@ The following screen shows Patient Service Center after a patient has been escal
 
 1. [] Navigate to Power Apps and open the **Lamna Healthcare Patient Portal** app.
 
-1. [] Sign into the **Patient Portal** as **Caseyn Jensen**, using the credentials you created in Exercise 1, Task 2 when you registered Casey for the patient portal.
+1. [] Sign into the **Patient Portal** as **Caseyn Jensen**, using the credentials you created in Exercise 1, Task 4 when you registered Casey for the patient portal (username = CaseyJensen and the password is the one you created).
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P120.png)
 
-1. [] You should be directed to the profile if your email requires confirmation. Select **Contoso Healthcare** in the upper left to go to the portal Homepage.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P121.png)
+1. [] You may be directed to the profile if your email requires confirmation. In which case, select **Lamna Healthcare** in the upper left to go to the portal Homepage, if necessary.
 
 1. [] Your patient is all set in the Patient Portal. Now we need to make sure an agent is available for them when the Health Bot needs to escalate.
 
     ![A screenshot of a computer Description automatically generated with low confidence](./IMAGES/Lab03/L3P122.png)
 
-    > [!NOTE] Note: Before opening Patient Service Center, make sure you have completed adding the Omnichannel agent role to your user in Lab 04.
+    > [!NOTE] Note: Before opening Patient Service Center, make sure you have completed adding the Omnichannel agent role to your user in Lab 02.
 
 1. [] If you didn’t assign the Omnichannel agent role in Lab 02, assign the proper role by following the steps in Exercise 2, Task 1 – Assign Productivity User Roles. Once you’ve selected your user and selected **Manage Roles**, assign the **Omnichannel agent** role and select **OK**.
 
