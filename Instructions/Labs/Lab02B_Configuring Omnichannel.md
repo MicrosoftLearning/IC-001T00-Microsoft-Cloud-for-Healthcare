@@ -35,7 +35,7 @@ In the following tasks, you will complete the following:
 
 ### Task 1: Assign Omnichannel Agent Security Role
 
-1. [] While in the In-Private or Incognito window, navigate to +++https://make.powerapps.com/ +++.
+1. [] While in the In-Private or Incognito window, navigate to +++https://make.powerapps.com/+++.
 
 1. [] Ensure the correct environment from the upper right **Environment** dropdown is selected.
 
