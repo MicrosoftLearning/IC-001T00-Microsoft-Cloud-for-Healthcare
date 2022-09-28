@@ -216,7 +216,7 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 -   **Route to Bot:** Initial customer conversation is through Health Bot in the default messaging queue. When the chat bot is first opened, route to Default queue which only contains the bot user (agent).
 -   **Human Routing Rule**: When context variable **EscalateToAgent** is present and set to 1, we route to the queue that has only human users (agents) who can take over conversation.
 
-1. [] Navigate to **Work Streams**.
+1. [] Navigate to **Workstreams**.
 
     ![Table Description automatically generated](./IMAGES/Lab02/L2P61.png)
 
