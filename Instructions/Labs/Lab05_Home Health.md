@@ -46,9 +46,9 @@ Each resource can have different attributes that distinguish it from others, inc
 
 Now let’s create a Bookable Resource in the Home Health application.
 
-1. [] Navigate to <https://make.powerapps.com/>.
+1. [] Navigate to <https://make.powerapps.com/>. Ensure the MC4H Labs Environment is selected in the upper right. 
 
-1. [] Open the **Field Service** app.
+1. [] Open the **Field Service** app. You may have to sign out and back into Dynamics 365 as your user.
 
     ![Open the Field Service app](./IMAGES/Lab05/L5P3.png)
 
@@ -60,20 +60,20 @@ Now let’s create a Bookable Resource in the Home Health application.
 
     ![Click New on the command bar to create a new Bookable Resource](./IMAGES/Lab05/L5P5.png)
 
-1. [] Select **Resource Type**. A Resource type is a classification that describes who or what the resource is and how the resource relates to your organization. In this case, select **User**, who is a person and a member of your organization and needs access to the Field Service Mobile app.
+1. [] Select **Resource Type**. A Resource type is a classification that describes who or what the resource is and how the resource relates to your organization. In this case, if necessary, select **User**, who is a person and a member of your organization and needs access to the Field Service Mobile app.
 
     ![Select Resource Type](./IMAGES/Lab05/L5P6.png)
 
-1. [] Pick your training **User** and select your **Time Zone.**
+1. [] Pick your training **User** (**MCH Application**) and select your **Time Zone.**
 
     ![Pick a User and select their Time Zone](./IMAGES/Lab05/L5P7.png)
 
-1. [] Select **Scheduling** to decide where the resource starts and ends his or her working day for scheduling and routing purposes. There are three options available when selecting the **Start/End location** for the Bookable Resource:
+1. [] Select the **Scheduling** tab to decide where the resource starts and ends his or her working day for scheduling and routing purposes. There are three options available when selecting the **Start/End location** for the Bookable Resource:
     1. **Location agnostic** - select this option if the location of this resource is not required for the business need and does not need to be considered during the scheduling process. Note that if the work location of a requirement is set to on site, location agnostic resources will not return in results.
     1. **Resource Address** - select this option if the resource starts and ends his or her day at a unique location. The exact location is derived from the latitude and longitude values on the related user, account, or contact records depending on the resource type.
     1. **Organizational Unit** - select this option if the resource starts and ends the day at an organizational unit, typically representing a company location.
 
-    In this case, choose **Location Agnostic**.
+1. [] In this case, choose **Location Agnostic**.
 
     ![Choose Location Agnostic](./IMAGES/Lab05/L5P8.png)
 
@@ -98,7 +98,7 @@ Now let’s create a Bookable Resource in the Home Health application.
 
     ![Click +New -\> Working Hours](./IMAGES/Lab05/L5P12.png)
 
-1. [] Choose the **date** you want the working schedule to begin on, the beginning and end **time** of working hours (such as 8am to 5pm), along with a **repeat** option such as "every day” and then deselect **Sunday** and **Saturday**. Select **Save**.
+1. [] Choose the date you want the working schedule to begin on, set the **Repeat** option to **Every day**, deselect **Sunday** and **Saturday**, and set the beginning and end time of working hours (such as 8am to 5pm). Select **Save**.
 
     ![Choose date you want the working schedule to begin on, the beginning and end time of working hours (such as 8am to 5pm), along with a repeat option such as "every day” and then click off Sunday and Saturday.  Click Save](./IMAGES/Lab05/L5P13.png)
 
@@ -110,17 +110,17 @@ Now let’s create a Bookable Resource in the Home Health application.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P15.png)
 
-1. [] A quick create form for Characteristic will appear. We want to assign a characteristic to the bookable resource. In this case, the user can speak Spanish fluently. Therefore, type **Spanish fluency** for the characteristic **Name** and click **Save & Close**.
+1. [] A quick create form for Characteristic will appear. We want to assign a characteristic to the bookable resource. In this case, the user can speak Spanish fluently. Therefore, type +++**Spanish fluency**+++ for the characteristic **Name** and select **Save & Close**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P16.png)
 
-1. [] Back on the Bookable Resource Characteristic quick create form, the Skill Name should be populated with the new Spanish fluency characteristic. Select **Save & Close**.
+1. [] Back on the Bookable Resource Characteristic quick create form, the Skill Name should be populated with the new Spanish fluency characteristic. Select **Save & Close**. Select **Save & Close** on the **Bookable Resource**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P17.png)
 
-    > [NOTE] Note: Characteristics represent a resource's skills and certifications. This could be concrete, like a CPR certification; more general, like accounting or web development experience; or as simple as security clearance for a specific building or fluency in the Spanish language.
+    > [!NOTE] Note: Characteristics represent a resource's skills and certifications. This could be concrete, like a CPR certification; more general, like accounting or web development experience; or as simple as security clearance for a specific building or fluency in the Spanish language.
 
-1. [] If you’d like more data in the system, you may create two more Bookable Resources following the same process. For each of them, select **Contact** as the **Resource Type** and choose any Contact in the system. Choose **Location Agnostic** just as before and click **Save**. Configure the **Work Hours** the same as the previous Bookable Resource and click **Save & Close**.
+1. [] If you’d like more data in the system, you may create two more Bookable Resources following the same process. For each of them, select **Contact** as the **Resource Type** and choose any Contact in the system. Choose **Location Agnostic** just as before and select **Save**. Configure the **Work Hours** the same as the previous Bookable Resource and select **Save & Close**.
 
 **Congratulations**! You have created a Bookable Resource. In the next task, we will use this bookable resource to help configure the Schedule Board. For more information on bookable resources, see [Set up bookable resources (Dynamics 365 Field Service) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/field-service/set-up-bookable-resources).
 
@@ -152,7 +152,7 @@ Here is an example of a configured **Schedule Board**:
 
     ![Click Scheduling Parameters](./IMAGES/Lab05/L5P22.png)
 
-1. [] Set **Connect to Maps** to **Yes**. Then click **OK** to accept the terms. If it is already set to yes, you can skip this step.
+1. [] Set **Connect to Maps** to **Yes**. Then select **OK** to accept the terms. If it is already set to yes, you can skip this step.
 
     ![Change “Connect to Maps” to Yes ](./IMAGES/Lab05/L5P23.png)
 
@@ -174,7 +174,7 @@ Here is an example of a configured **Schedule Board**:
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P27.png)
 
-1. [] Select **Related** and then select **Characteristics**.
+1. [] Select the **Related** tab and then select **Characteristics**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P28.png)
 
@@ -186,7 +186,7 @@ Here is an example of a configured **Schedule Board**:
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P30.png)
 
-    > [ALERT] **Important**: Make sure the **Work Order** number populated in the **Resource Requirement** field on the general tab matches the Work Order number on the **Field Service** tab on the Resource Requirement record.
+    > [!ALERT] **Important**: Make sure the **Work Order** number populated in the **Resource Requirement** field on the general tab matches the Work Order number on the **Field Service** tab on the Resource Requirement record.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P31.png)
 
@@ -202,15 +202,15 @@ Here is an example of a configured **Schedule Board**:
 
     ![Click the + button to create a new Schedule Board tab](./IMAGES/Lab05/L5P34.png)
 
-1. [] Name the new Schedule Board tab “**My Schedule Board Tab**”. Leave all defaults and click **Add**.
+1. [] Name the new Schedule Board tab +++**My Schedule Board Tab**+++. Leave all defaults and click **Add**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P35.png)
 
-1. [] Select the Scheduler Settings **gear icon.**
+1. [] Select the Scheduler Settings **gear** icon.
 
     ![Click on the Scheduler Settings gear ](./IMAGES/Lab05/L5P36.png)
 
-1. [] Change the **Hours** view to be closer to typical working hours, such as 6am to 6pm.
+1. [] Change the **Working Time** to be closer to typical working hours, such as **6am** to **6pm**.
 
     ![Change the Hours view to be closer to typical working hours, such as 6am to 6pm](./IMAGES/Lab05/L5P37.png)
 
@@ -218,15 +218,15 @@ Here is an example of a configured **Schedule Board**:
 
     ![Graphical user interface, application, table, Excel Description automatically generated](./IMAGES/Lab05/L5P38.png)
 
-1. [] Select the **Unscheduled Work Orders** tab. Find work order **00034** where you added the **Spanish fluency** characteristic and click the grid to highlight it. Select **Find Availability** to open the Schedule Assistant filter.
+1. [] Select the **Unscheduled Work Orders** tab. Find work order **00034** where you added the **Spanish fluency** characteristic and select the grid to highlight it. Select **Find Availability** to open the Schedule Assistant filter.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P39.png)
 
-1. [] Notice that any Bookable Resources which do not have the “Spanish fluency” characteristic are dropped from the search. Select the **Book** button on the **Bookable Resource’s** schedule to schedule the work order.
+1. [] Notice that any Bookable Resources which do not have the “Spanish fluency” characteristic are dropped from the search. Hover over an open hour on the **Bookable Resource’s** schedule and select the **Book** button to schedule the work order.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P40.png)
 
-1. [] The work order is now scheduled and will no longer show in the Unscheduled Work Orders grid. The Resource Optimizing tool will schedule it for the next available time. Select **Exit Search** to close the pane.
+1. [] Select **Exit Search** to close the pane. The work order is now scheduled and will no longer show in the Unscheduled Work Orders grid. The Resource Optimizing tool will schedule it for the next available time.
 
     ![The work order is now scheduled and has disappeared from the bottom grid.  Click Exit Search to close the pane](./IMAGES/Lab05/L5P41.png)
 
@@ -273,7 +273,7 @@ In this task we will assign the Field Service – Resource role to Home Health w
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab05/L5P46.png)
 
-1. [] Select the view drop-down and change the view to show “**Enabled Users**”.
+1. [] Select the view drop-down and change the view to show **Enabled Users**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P47.png)
 
