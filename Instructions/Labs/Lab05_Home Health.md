@@ -275,8 +275,6 @@ In this task we will assign the Field Service – Resource role to Home Health w
 
 1. [] Select the view drop-down and change the view to show **Enabled Users**.
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P47.png)
-
 1. [] Find and select the user whom you would like to assign the “Field Service – Resource” role. Select **Manage Roles** on the command bar.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab05/L5P48.png)
