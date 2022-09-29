@@ -45,7 +45,7 @@ In Lab-07, you deployed an Azure Health Data Services workspace in your resource
 
 Now you will visit another page and follow the instructions to [Deploy DICOM service using the Azure portal](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/deploy-dicom-services-in-azure). 
 
-1. [] Go directly to #3 in the instructions and begin from there. 
+1. [] Begin at step 4 under Deploying DICOM service. 
 
 1. [] Then return here when finished.
 
@@ -67,13 +67,15 @@ You will need to add the **DICOM Data Owner** role for yourself (i.e., your user
 
 1. [] In Postman, find the **Environments** tab on the left and select the **Import** button.
 
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab13/L13P1b.png)
+
 1. [] Import the **dicom-service.postman_environment.json** file that you just saved locally.
     1. [] Add the file to Postman using the **Upload Files** button. 
     1. [] Then select **Import**.
 
 1. [] Now, access the **Conformance-as-Postman.postman_collection.json** file available [here](https://github.com/microsoft/dicom-server/blob/main/docs/resources/Conformance-as-Postman.postman_collection.json) and save the file locally. 
 
-1. [] Then import the file into Postman.
+1. [] Then import the file into Postman. This will show up as a collection when imported.
     1. [] Add the file to Postman using the **Upload Files** button. 
     1. [] Then select **Import**.
 
@@ -83,21 +85,20 @@ You will need to add the **DICOM Data Owner** role for yourself (i.e., your user
 
 You will now configure a new Postman environment for DICOM service (dicom-service).
 
-1. [] For the dicom-service Postman environment, you will need to retrieve the following values:
-    1. [] From your existing fhir-service Postman environment:
-        1. [] **tenantId** - AAD tenant ID (you also can find it in **AAD** -\> **Overview** -\> **Tenant ID**).
-        1. [] **clientId** - Application (client) ID for Postman service client app.
-        1. [] **clientSecret** - Client secret for your Postman app.
+1. [] For the **dicom-service** Postman environment, you will need to retrieve the following values from your existing fhir-service Postman environment:
+    1. [] **tenantId**
+    1. [] **clientId** - Application (client) ID for Postman service client app
+    1. [] **clientSecret** - Client secret for your Postman app
 
-    1. New values you need to input:
-        1. [] **resource** - https://dicom.healthcareapis.azure.com
-        1. [] **baseUrl** - Service URL appended with **/v1**. 
-            1. [] Go to **Portal > Resource Group > DICOM service > Service URL**. 
-            1. [] Copy and add **/v1** on the end: /**https://</workspace-name/>-</dicom-service-name/>.dicom.azurehealthcareapis.com/v1**.
+    >[!HINT] These values can be found by selecting **Environments** > **fhir-service** or in Azure as you have done before).
 
-1. [] Populate the above parameter values in your dicom-service Postman environment. 
+1. Retrieve the following new values from Azure:
+    1. [] **resource** - https://dicom.healthcareapis.azure.com
+    1. [] **baseUrl** - Service URL appended with **/v1**. 
+        1. [] Go to **Portal > Resource Group > DICOM service > Service URL**. 
+        1. [] Copy and add **/v1** on the end: /**https://</workspace-name/>-</dicom-service-name/>.dicom.azurehealthcareapis.com/v1**.
 
-1. [] Input the values in the **CURRENT VALUE** column. Leave bearerToken blank. 
+1. [] Populate the above parameter values in your dicom-service Postman environment. Input the values in the **CURRENT VALUE** column. Leave **bearerToken** blank. 
 
 1. []  Make sure to select **Save** to retain the dicom-service environment values.
 
@@ -105,19 +106,10 @@ You will now configure a new Postman environment for DICOM service (dicom-servic
 
 ## Exercise 6: Choose a path for the rest of the lab
 
-From here, you will be using the DICOM service for the features outlined in [the beginning of this lab](https://github.com/microsoft/azure-health-data-services-workshop/tree/main/Challenge-08%20-%20DICOM%20service#learning-objectives-for-Lab-08). You have the option to follow either of these paths:
+From here, you will be using the DICOM service for the features outlined in the objectives at the beginning of this lab. You have the option to follow either of these paths:
 
-**Basic Path**
-
-You can use an already configured Postman collection to execute the series of tasks.
-
--or-
-
-**Advanced Path**
-
-You can follow the provided articles that go over how to programmatically communicate with the DICOM service using C\#, Python, or cURL.
-
-
+- **Basic Path** where you can use an already configured Postman collection to execute the series of tasks. This will covered in this exercise.
+- **Advanced Path** where you can follow the provided articles that go over how to programmatically communicate with the DICOM service using C\#, Python, or cURL. This is covered in Exercise 7.
 
 **Basic Path**
 
@@ -131,19 +123,21 @@ You can follow the provided articles that go over how to programmatically commun
 
 **Task 2: Populate DICOM service with single instance images**
 
-1. [] Once your dicom-service Postman environment is set up and you have obtained an access token, please go to [**this repo**](https://github.com/microsoft/dicom-server/tree/main/docs/dcms) and download the three DICOM instance files (**.dcm**).
+1. [] Once your dicom-service Postman environment is set up and you have obtained an access token, please go to [this repo](https://github.com/microsoft/dicom-server/tree/main/docs/dcms) and download the three DICOM instance files (**.dcm**).
 
 1. [] Then, for each of the three **POST Store-single-instance** calls in the **Conformance-as-Postman** collection, 
     1. [] Go to **Body**, select the **x** next to the filename.
-    1. [] Select **Select File** and choose the appropriate **.dcm** file (downloaded in the previous step).
+    1. [] Select **Select File** and choose the appropriate **.dcm** file (downloaded in the previous step) and select **Open**.
 
     ![A screenshot of a computer Description automatically generated with medium confidence](./IMAGES/Lab13/L13P2.png)
+    
+1. [] Save each call.
 
 1. [] Press **Send** for each POST Store-single-instance call and you will populate your DICOM service with the three .dcm single instance files.
 
 ===
 
-## Exercise 7: Execute Outlined Features via Postman Collection
+## Exercise 7: Advanced Path - Execute Outlined Features via Postman Collection
 
 The Conformance-as-Postman collection has a complete set of API calls that you can execute one by one. See the list below for details.
 -   Store DICOM files to the service
@@ -157,8 +151,6 @@ The Conformance-as-Postman collection has a complete set of API calls that you c
 -   Update extended query tags
 -   Delete extended query tags
 
-**Advanced Path**
-
 **Task 1: Choose your preferred method for uploading, searching, and retrieving DICOM images (C#, cURL, or Python)**
 
 Each method comes with a set of prerequisites and instructions for getting started:
@@ -171,13 +163,13 @@ Each method comes with a set of prerequisites and instructions for getting start
 
 **Task 2: Check the logs of the changes in the DICOM service via Change Feed**
 
-The Change Feed provides logs of all the changes that occur in your DICOM service. You can view instructions in this [Change Feed Overview article](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-change-feed-overview).
+The Change Feed provides logs of all the changes that occur in your DICOM service. You can view instructions in this [Change Feed Overview](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-change-feed-overview) article.
 
 **Task 3: Manage Extended Query tags in your DICOM service instance**
 
-By default, the DICOM service supports querying on the DICOM tags specified in [the conformance statement](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-services-conformance-statement#searchable-attributes). By enabling extended query tags, the list of tags can easily be expanded based on the application's needs.
+By default, the DICOM service supports querying on the DICOM tags specified in the [conformance statement](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-services-conformance-statement#searchable-attributes). By enabling extended query tags, the list of tags can easily be expanded based on the application's needs.
 
-You can follow the instructions given in this [Extended Query Tag Overview article](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-extended-query-tags-overview) to manage query tags.
+You can follow the instructions given in this [Extended Query Tag Overview](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-extended-query-tags-overview) article to manage query tags.
 
 ===
 
