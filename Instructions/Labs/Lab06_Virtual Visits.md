@@ -30,7 +30,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 ### Task 1: Create a new Practitioner Specialty for the Patient Portal
 
-In this task, we are going to create a new **Practitioner Specialty** for the Patient Portal. Practitioner Specialties are used to define the **reason** why a patient is booking the virtual appointment. They are defined as Codeable Concepts records, with the type of Practitioner Specialty.
+In this task, we are going to create a new Practitioner Specialty for the Patient Portal. Practitioner Specialties are used to define the reason why a patient is booking the virtual appointment. They are defined as Codeable Concepts records, with the type of Practitioner Specialty.
 
 Below is an example of the appointment booking screen in the Patient Portal. As the first step in the process, the user must select a reason for their appointment.
 
@@ -50,11 +50,11 @@ Below is an example of the appointment booking screen in the Patient Portal. As 
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P6.png)
 
-1. [] In the new Codable Concept record, fill in the following details and select **Save**.
-    1. [] **Name**: General Medicine
-    1. [] **Text**: General Medicine
-    1. [] **Type**: Practitioner Specialty
-    1. [] **Code**: general
+1. [] In the **New Codable Concept** record, fill in the following details and select **Save**.
+    1. [] **Name**: +++General Medicine+++
+    1. [] **Text**: +++General Medicine+++
+    1. [] **Type**: Practitioner Specialty (you may have to scroll down pretty far)
+    1. [] **Code**: +++general+++
 
         ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P7.png)
 
@@ -81,7 +81,7 @@ There are two different places the Teams meeting may be created:
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P10.png)
 
-1. [] Select **Save & Close**.
+1. [] Select **Save & Close**. If you receive a "Duplicate records found" message, select **Ignore and Save**.
 
 **Congratulations!** You have mapped the practitioner record to your logged in user.
 
@@ -97,7 +97,7 @@ In this task, you will configure the practitioner’s schedule to allow patients
 
     ![Table Description automatically generated](./IMAGES/Lab06/L6P12.png)
 
-1. [] Change **Active** from **No** to **Yes** and select **Save**.
+1. [] Verify the toolbar at the top shows **Deactivate** as a choice instead of **Activate**. This means the schedule is active. Select the back arrow next to **Show Chart**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P13.png)
 
@@ -112,7 +112,7 @@ In this task, we will configure a new appointment slot to show practitioner’s 
     ![Graphical user interface, table Description automatically generated](./IMAGES/Lab06/L6P14.png)
 
 1. [] Fill in the following record details and select **Save & Close**.
-    1. [] **Name**: Alex Johnson Slot
+    1. [] **Name**: +++Alex Johnson Slot+++
     1. [] **Start**: Today, at a later time
     1. [] **End**: Today, an hour after the Start
     1. [] **Schedule**: Alex Johnson schedule
