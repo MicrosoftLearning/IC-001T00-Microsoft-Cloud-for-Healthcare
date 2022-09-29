@@ -31,7 +31,7 @@ In the first part of this lab, you will use a template to deploy resources with 
 -   [FHIR Loader (for Lab-09)](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
 -   [FHIR-Proxy (for Lab-13)](https://github.com/microsoft/fhir-proxy)
 
-1. [] To begin, select the following link to open the [deployment form](https://portal.azure.com/#create/Microsoft.Template](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fazure-health-data-services-workshop%2Fmain%2Fresources%2Fdeploy%2Fdeployfhirtrain.json) in a new browser tab.
+1. [] To begin, select the following link, [deployment form](https://portal.azure.com/#create/Microsoft.Template](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fazure-health-data-services-workshop%2Fmain%2Fresources%2Fdeploy%2Fdeployfhirtrain.json) to open the form in a new browser tab.
 
 1. [] Select or fill in the parameter values (see image below).
 
