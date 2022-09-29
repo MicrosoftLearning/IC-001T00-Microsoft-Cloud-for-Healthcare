@@ -31,11 +31,9 @@ In the first part of this lab, you will use a template to deploy resources with 
 -   [FHIR Loader (for Lab-09)](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
 -   [FHIR-Proxy (for Lab-13)](https://github.com/microsoft/fhir-proxy)
 
-1. [] To begin, go to [Deploy to Azure](https://portal.azure.com/#create/Microsoft.Template) to open the deployment form in a new browser tab.
+1. [] To begin, open the [deployment form](https://portal.azure.com/#create/Microsoft.Template](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fazure-health-data-services-workshop%2Fmain%2Fresources%2Fdeploy%2Fdeployfhirtrain.json) in a new browser tab.
 
-    ![](./IMAGES/Lab07/L7P2.png)
-
-1.  Select or fill in the parameter values (see image below).
+1. [] Select or fill in the parameter values (see image below).
 
     > [!ALERT] Important: In order to successfully deploy resources with this ARM template, the user must have [Owner](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner) rights for the [Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) where the components are deployed. Before running the ARM template, it is recommended to create a new resource group first and check that you have Owner permissions. Once you confirm that you have Owner rights, then select that resource group in the dropdown menu when you fill out the deployment form.
 
