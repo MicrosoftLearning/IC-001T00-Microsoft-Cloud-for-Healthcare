@@ -31,11 +31,11 @@ In this lab, you will:
 
 In the first part of this lab, you will use the Azure Portal to deploy an Event Hubs namespace in preparation to create your own Event Hub.
 
-1. [] To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below and follow the instructions for creating an Event Hubs namespace.
+1. [] To begin, select the link below and follow the instructions for creating an Event Hubs namespace.
 
     [Create an Event Hubs namespace](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create#create-an-event-hubs-namespace)
 
-1. [] Continue on to the next section in the link below to create your own Event Hub.
+1. [] Continue to the next section in the link below to create your own Event Hub.
 
     [Create an Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create#create-an-event-hub)
 
@@ -45,19 +45,21 @@ In the first part of this lab, you will use the Azure Portal to deploy an Event 
 
 Now you will use Azure Portal to deploy and configure MedTech service within your Azure Health Data Services workspace.
 
-1. [] Open the instructions to [Deploy MedTech service in the Azure Portal](https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure) in a new browser tab.
+1. [] Select the following link, [Deploy MedTech service in the Azure Portal](https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure "Deploy MedTech Service instructions") to open the instructions in a new browser tab.
 
-1. [] When you get to the part of the instructions to [**Configure MedTech service to ingest data**](https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure#configure-medtech-service-to-ingest-data), for this training it is recommended to use the default [**Consumer group**](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-features#consumer-groups) that was assigned when you deployed your Event Hub in the previous exercise.
+1. [] When you get to the part of the instructions to **Configure MedTech service to ingest data**, for this training it is recommended to use the default **Consumer group** that was assigned when you deployed your Event Hub in the previous exercise (for more information on consumer groups, select the following link, [**Consumer groups**](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-features#consumer-groups "Consumer groups") .
 
 ===
 
 ## Exercise 3: Import data mappings for converting medical IoT device data into FHIR
 
-In the [Configure Device mapping properties](https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure#configure-device-mapping-properties) section, you will be going to [another GitHub repository](https://github.com/microsoft/iomt-fhir/blob/main/docs/Configuration.md#device-content-mapping) and copying two sample data mapping templates to paste directly into MedTech service in Azure portal. You will paste one of the templates in the MedTech service **Device Mapping** tab and another in the MedTech service **Destination** tab. 
+In the **Configure Device mapping properties** section, you will be going to [another GitHub repository](https://github.com/microsoft/iomt-fhir/blob/main/docs/Configuration.md#device-content-mapping) and copying two sample data mapping templates to paste directly into MedTech service in Azure portal. You will paste one of the templates in the MedTech service **Device Mapping** tab and another in the MedTech service **Destination** tab. 
 
-1. [] Read the instructions both [**here**](https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure#configure-device-mapping-properties) and [**here**](https://github.com/microsoft/iomt-fhir/blob/main/docs/Configuration.md#device-content-mapping).
+1. [] Follow the instructions in the [Deploy the MedTech service using the Azure portal](https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure#configure-device-mapping-properties) article under the section, **Configure the device mapping properties**.
 
-1. [] Then go [**here**](https://github.com/microsoft/azure-health-data-services-workshop/tree/main/Challenge-09%20-%20MedTech%20service/SampleData/Answers) to copy the two sample templates.
+1. [] Next, read the  **Device Content Mapping** section in the GitHub repository [here](https://github.com/microsoft/iomt-fhir/blob/main/docs/Configuration.md#device-content-mapping).
+
+1. [] Then go [here](https://github.com/microsoft/azure-health-data-services-workshop/tree/main/Challenge-09%20-%20MedTech%20service/SampleData/Answers) to copy the two sample templates.
 
 > [!NOTE] **Note:** The instructions in the GitHub repository linked above are written for the IoMT FHIR Connector for Azure (OSS), but the same principles apply to MedTech service.
 
@@ -67,7 +69,7 @@ In the [Configure Device mapping properties](https://docs.microsoft.com/en-us/az
 
 Now you will configure permissions so that MedTech service can securely connect with FHIR service and the Event Hub that you deployed in Exercise 1 of this lab. 
 
-1. [] Continue with [**the instructions for granting access**](https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure#granting-medtech-service-access) through to the end of the page
+1. [] In the **Deploy the MedTech service using the Azure portal** article, continue with the instructions under the **Granting the MedTech service access to the device message event hub and FHIR service** section through to the end of the page.
 
 1. [] Then return here when finished.
 
