@@ -320,13 +320,11 @@ At some point, you will find a use case where you need to retrieve information t
 
 ### Task 1
 
-1. [] To create a new search parameter, you need to POST a SearchParameter Resource to the FHIR service database. See the **Create New Search Parameter** call in the **FHIR Search** Postman collection for an example. 
+1. [] To create a new search parameter, you need to POST a SearchParameter Resource to the FHIR service database. Review the **Create New Search Parameter** call in the **FHIR Search** Postman collection to see how this is done and when ready, select **Send** to run the call and create the new search parameter.
 
-1. [] When ready, go ahead and run the **Create New Search Parameter** call in **Postman**.
+1. [] Select the following link to review the documentation on how to perform a search using the custom search parameter that you just created: [Defining custom search parameters](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-do-custom-search#test-search-parameters). Return here when you have finished the review.
 
-1. [] To perform a search using the custom search parameter that you just created, first [follow these instructions](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-do-custom-search#test-search-parameters) to test the search parameter. Return here when you have finished the process.
-
-1. [] Then, [run a re-index job](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-run-a-reindex) on your FHIR service to activate the new search parameter. You can use the Reindex call in the FHIR Search collection to accomplish this.
+1. [] Then, review the **Reindex** call in the **FHIR Search** Postman collection and select **Send**.
 
     > [!NOTE] Note: Reindexing can take up to several minutes.
 
