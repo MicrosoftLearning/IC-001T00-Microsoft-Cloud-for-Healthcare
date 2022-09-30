@@ -68,7 +68,7 @@ In the next part of this lab, you will
 
 1. [] Follow the instructions and return here when finished.
 
->[!ALERT]Important: Store the clientSecret **Value** when you create your Postman app registration. That is the value you will need later in Postman when you fill in the clientSecret. You will not be able to get this value again. If you save the wrong value, you will have to create another secret.
+>[!ALERT]Important: Store the **clientSecret Value**, not the **clientSecret ID** when you create your Postman app registration. That is the value you will need later in Postman when you fill in the clientSecret. You will not be able to get this value again. If you save the wrong item, you will have to create another secret.
 
 What does success look like for Lab 7?
 
