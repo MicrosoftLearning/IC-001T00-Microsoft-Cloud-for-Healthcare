@@ -31,9 +31,11 @@ More information on HIPAA de-identification rules can be found [here](https://ww
 
 ## Exercise 2: Configure storage account for export
 
-1. [] Follow the instructions in the **Exporting de-identified data** article located [here](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/de-identified-export) for creating your anonymizationConfig.json file and placing it inside the anonymization container within your "expsa" storage account.
+1. [] Follow the instructions in the **Exporting de-identified data** article located [here](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/de-identified-export) for creating your anonymizationConfig.json file and placing it inside the anonymization container within your **expsa** storage account. Return when you reach **Manage Configuration File in ACR**.
 
-2. [] Next, follow the instructions in the **Configure export settings and set up a storage account** article [here](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/configure-export-data) for configuring your "expsa" storage account for the \$export operation Read the note below about the FHIR service managed identity.
+    > [!HINT] Copy the sample configuration file and save it as a JSON file to your computer. Then in your storage account, select **Containers > anonymization > Upload** and upload the file.
+
+2. [] Next, follow the instructions in the **Configure export settings and set up a storage account** article [here](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/configure-export-data) for configuring your **expsa** storage account for the \$export operation. Return when you reach **Securing the FHIR service $export operation**. Read the note below about the FHIR service managed identity.
 
 > [!NOTE] Note: When you deployed Azure components in Lab-07, a [managed identity](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview) was automatically enabled for your FHIR service. That managed identity is what needs to be assigned the Storage Blob Data Contributor role in one of the ADLS Gen2 storage accounts in your resource group. The name of this storage account ends with "expsa". Keep in mind that you are configuring the storage account in this step (and not the FHIR service!). In the storage account, be careful not to add a role assignment to a service client or a service principal by mistake!
 
@@ -51,11 +53,11 @@ The general form of the request string will be:
 
 GET {{fhirurl}}/\$export?_container={{containerName}}&_anonymizationConfig={{configFilename}}
 
-It's recommended to add the containerName and configFilename parameters to your fhir-service environment in Postman. Otherwise, you will need to put these names directly in the request string.
+1. [] In Postman, select your **fhir-service** environment and add the **containerName** and **configFilename** parameters and select **Save**.
 
-1. [] In **Postman**, go to the **Authorization** tab for the **GET Export Anonymized FHIR Data** request and make sure that **Inherit auth from parent** is selected.
+1. [] Go to the **Authorization** tab for the **GET Export Anonymized FHIR Data** request and make sure that **Inherit auth from parent** is selected.
 
-2. [] Under the **Headers** tab for the **GET Export Anonymized FHIR Data** request in **Postman**, add/modify the three headers as shown below. A screenshot of the Headers tab in Postman is provided for reference.
+1. [] Under the **Headers** tab for the **GET Export Anonymized FHIR Data** request in **Postman**, add/modify the three headers as shown below. A screenshot of the Headers tab in Postman is provided for reference.
     1. [] **Accept**: application/fhir+json
     1. [] **Authorization**: Bearer {{bearerToken}}
     1. [] **Prefer**: respond-async
