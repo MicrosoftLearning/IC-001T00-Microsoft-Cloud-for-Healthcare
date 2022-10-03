@@ -53,6 +53,8 @@ The general form of the request string will be:
 
 GET {{fhirurl}}/\$export?_container={{containerName}}&_anonymizationConfig={{configFilename}}
 
+1. [] From the portal, note the name of the anonymization containg and the file name of the configuration file.
+
 1. [] In Postman, select your **fhir-service** environment and add the **containerName** and **configFilename** parameters and select **Save**.
 
 1. [] Go to the **Authorization** tab for the **GET Export Anonymized FHIR Data** request and make sure that **Inherit auth from parent** is selected.
