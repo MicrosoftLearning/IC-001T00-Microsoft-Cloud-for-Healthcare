@@ -35,13 +35,178 @@ In this lab, you will:
 
 Before setting up FHIR-Proxy for Consent Opt-Out filtering, you must first configure FHIR-Proxy authentication so that FHIR-Proxy can securely connect with the FHIR service.
 
-1. [] To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open the FHIR-Proxy authentication setup instructions in a new browser tab.
+### Task 1: Complete FHIR-Proxy authentication
 
-    [FHIR-Proxy Authentication Setup Instructions](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#step-2---complete-fhir-proxy-authentication)
+1. [] In the Azure Portal, navigate to your resource group and select it.
 
-1. [] When you go to the page, follow the instructions in **Step 2** and **Step 3** (you already completed the instructions in Step 1 when you deployed components in Lab-07). 
+1. [] In the **Resources** list, find the resource ending in **pxyfa** and select it.
 
-1. [] Please return here when finished.
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1a.png)
+    
+1. [] In the resource menu, under **Settings**, select **Authentication**.
+
+1. [] Select **Add identity provider**.
+
+1. [] On the **Add an identity provider** page, select the **Identity provider** menu and then select **Microsoft**.
+
+1. [] Under **App Service authentication settings > Restrict Access**, select **Allow unauthenticated access**.
+
+1. [] Select **Next: Permissions**.
+
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1b.png)
+
+1. On the menu, select **+ Add permission**.
+
+1. In the **Request API permissions** pane, scroll down and expand **User**.
+
+1. Select **User.Read** and then select **Update permissions**.
+
+1. [] Select **Add**.
+
+### Task 2: Configure App Roles
+
+1. [] In the **Authentication** pane, under **Identity provider**, select **Microsoft (/<fhirproxyname/>)**.
+
+1. [] In the resource menu, under **Manage**, select **Manifest**.
+
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1c.png)
+    
+1. [] In the Manifest JSON file, locate the **appRoles** element.
+
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1d.png)
+
+1. [] Press **enter** between the square brackets **[]** to create a new row and enter the following member types:
+
+json
+```
+{
+    "allowedMemberTypes": [
+        "User",
+        "Application"
+    ],
+    "description": "Writer of the FHIR Server",
+    "displayName": "Resource Writer",
+    "id": "2d1c681b-71e0-4f12-9040-d0f42884be86",
+    "isEnabled": true,
+    "lang": null,
+    "origin": "Application",
+    "value": "Writer"
+},
+{
+    "allowedMemberTypes": [
+        "User",
+        "Application"
+    ],
+    "description": "Reader of the FHIR Server",
+    "displayName": "Resource Reader",
+    "id": "24c50db1-1e11-4273-b6a0-b697f734bcb4",
+    "isEnabled": true,
+    "lang": null,
+    "origin": "Application",
+    "value": "Reader"
+},
+{
+    "allowedMemberTypes": [
+        "User",
+        "Application"
+    ],
+    "description": "DataScientist Role with de-id access to all resources",
+    "displayName": "DataScientist",
+    "id": "b90c2f1a-6a2c-4d1e-9ee6-d97cd5632307",
+    "isEnabled": true,
+    "lang": null,
+    "origin": "Application",
+    "value": "DataScientist"
+},
+{
+    "allowedMemberTypes": [
+        "User",
+        "Application"
+    ],
+    "description": "RelatedPerson Access to FHIR Resources",
+    "displayName": "RelatedPerson",
+    "id": "75f86d84-27b6-4740-bd3d-4ec763c36144",
+    "isEnabled": true,
+    "lang": null,
+    "origin": "Application",
+    "value": "RelatedPerson"
+},
+{
+    "allowedMemberTypes": [
+        "User",
+        "Application"
+    ],
+    "description": "Patient Access to FHIR resources",
+    "displayName": "Patient",
+    "id": "94b4402c-ea4a-43ac-a8f2-85a482e303a9",
+    "isEnabled": true,
+    "lang": null,
+    "origin": "Application",
+    "value": "Patient"
+},
+{
+    "allowedMemberTypes": [
+        "User",
+        "Application"
+    ],
+    "description": "Practitioner Access to FHIR resources",
+    "displayName": "Practitioner",
+    "id": "8796299c-9039-4eb0-a93d-6eda41763238",
+    "isEnabled": true,
+    "lang": null,
+    "origin": "Application",
+    "value": "Practitioner"
+},
+{
+    "allowedMemberTypes": [
+        "User",
+        "Application"
+    ],
+    "description": "Administrator of the FHIR Server",
+    "displayName": "Administrator",
+    "id": "ef3fd1c8-82cc-4619-a484-2cbcf97eefc1",
+    "isEnabled": true,
+    "lang": null,
+    "origin": "Application",
+    "value": "Administrator"
+}
+```
+
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1e.png)
+    
+1. [] On the menu, select **Save**.
+
+### Task 3: Configure API permissions
+
+1. [] In the resource menu, under **Manage**, select **API permissions**.
+
+1. [] Under **Configured permissions**, select **+ Add a permission**.
+
+1. [] In the **Request API permissions** pane, select the **APIs my organization uses** tab.
+
+1. [] In the search box, enter +++Azure Healthcare APIs+++.
+
+1. [] In the results, select **Azure Healthcare APIs**
+
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1f.png)
+
+1. [] Select the **user_impersonation** checkbox and then select **Add permissions**.
+
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1g.png)
+
+1. Under **Configured permissions**, select **Grant admin consent for Contoso**.
+
+1. [] In the **Grant admin consent confirmation** dialog box, select **Yes**.
+
+1. [] Verify the Status has been updated.
+
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1h.png)
+
+1. [] In the resource menu, under **Manage**, select **App roles**.
+
+1. [] Review the App roles that have been created.
+
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1i.png)
 
 ===
 
@@ -49,11 +214,49 @@ Before setting up FHIR-Proxy for Consent Opt-Out filtering, you must first confi
 
 In the next part of this lab, you will be setting up a new environment in Postman so that API calls go to the FHIR-Proxy endpoint rather than directly to the FHIR service endpoint.
 
-1. [] To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open the Postman setup instructions for FHIR-Proxy in a new browser tab.
+1. [] In Microsoft Azure in **Azure Active Directory**, navigate to your **Postman** service client app (go to **Azure Portal -> AAD -> App registrations -> Postman**).
 
-    [Postman Tutorial for FHIR-Proxy](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/Postman_FHIR-Proxy_README.md)
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1j.png)
 
-1. []  Follow the instructions and return here when finished.
+1. [] On the resource menu, under **Manage**, select **API permissions** and select **+ Add a permission**.
+
+1. [] Select the **My APIs** tab and you will see a list containing the FHIR-Proxy instance that you deployed and registered earlier. Select the **FHIR-Proxy** app name.
+
+1. [] Under **What type of permissions does your application require**, select **Delegated permissions**.
+
+1. [] Select the **user_impersonation** checkbox and then select **Add permissions**.
+
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1k.png)
+
+1. [] On the menu, select **+ Add a permission**.
+
+1. [] In the **Request API permissions** pane, select the **My APIs** tab.
+
+1. [] Select the **FHIR-Proxy** app name.
+
+1. [] Select **Application permissions**.
+
+1. [] Select the **Resource Reader** and **Resource Writer** checkboxes and then select **Add permissions**.
+
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1l.png)
+
+1. [] Under **Configured permissions**, select **+ Add a permission**.
+
+1. [] In the **Request API permissions** pane, select the **APIs my organization uses** tab.
+
+1. [] In the search box, enter +++Azure Healthcare APIs+++.
+
+1. [] In the results, select **Azure Healthcare APIs**.
+
+1. [] Select the **user_impersonation** checkbox and then select **Add permissions**.
+
+1. [] Under **Configured permissions**, select **Grant admin consent for Contoso**.
+
+1. [] In the **Grant admin consent confirmation** dialog box, select **Yes**.
+
+1. [] Verify the **Status** has been updated.
+
+
 
 ===
 
