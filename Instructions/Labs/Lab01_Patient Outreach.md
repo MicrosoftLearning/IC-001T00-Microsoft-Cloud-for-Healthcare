@@ -58,7 +58,7 @@ better targeted with marketing communications. In this example, you will create
 a Patient Segment for patients with hypermetropia (a vision condition in which
 nearby objects are blurry).
 
-1. [] Navigate to +++https://make.powerapps.com/ +++ and log into your Microsoft 365 tenant, if needed.
+1. [] Navigate to +++https://make.powerapps.com/+++ and log into your Microsoft 365 tenant, if needed.
 
 1. [] Go to **Apps** and open **Marketing**.
 
