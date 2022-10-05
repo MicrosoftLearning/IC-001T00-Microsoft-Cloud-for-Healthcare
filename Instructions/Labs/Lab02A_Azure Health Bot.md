@@ -128,7 +128,7 @@ In this exercise, you will do the following:
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P20.png)
 
-1. [] Select **Creae**. This should enable Teams channel and your Microsoft Teams toggle should reflect accordingly.
+1. [] Select **Create**. This should enable Teams channel and your Microsoft Teams toggle should reflect accordingly.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P21.png)
 
