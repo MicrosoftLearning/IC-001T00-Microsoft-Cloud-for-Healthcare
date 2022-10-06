@@ -81,7 +81,7 @@ In the following tasks, you will complete the following:
 We need two users to configure in Omnichannel for Dynamics 365 Customer Service:
 
 -   **Health Bot User** – This is the Azure Health Bot user we created in the previous exercise.
--   **Omnichannel Agent** **User** – This is your current user whom you are logged into Dynamics 365. This will allow you to be a live agent in Customer Service who receives messages from portal users through Azure Bot escalations*. Note: For official trainings, this is your assigned user, iaduser[x]*
+-   **Omnichannel Agent User** – This is your current user whom you are logged into Dynamics 365. This will allow you to be a live agent in Customer Service who receives messages from portal users through Azure Bot escalations. Note: For official trainings, this is your assigned user, MOD Administrator.
 
 In this task, you will create a **Bot User** which helps connect **Azure Health Bot** with **Omnichannel live Chat**.
 
@@ -183,24 +183,27 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
     ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab02/L2P56.png)
 
-1. [] You should now see the Bot User (MCH Application Id) in the Users (Agents) list. Save and close.
+1. [] You should now see the Bot User (MCH Application) in the Users list. Save and close.
 
     > [!NOTE] Note: If the user does not populate after adding, make sure you assigned the omnichannel agent security role to the bot user in the previous task (it may take up to 15 minutes for changes to take effect).
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P57.png)
 
-1. [] Go back to the **Omnichannel queues** grid. Select **+ New** to create a new Queue.
+1. [] Go back to the **Queues** grid. Select **+ New queue** to create a new Queue.
 
     ![Graphical user interface, application Description automatically generated with medium confidence](./IMAGES/Lab02/L2P58.png)
 
 1. [] Give the new Queue the following details:
-    1. [] **Name**: “Escalate To Human”
-    1. [] **Priority**: 1 (lower than default queue)
-    1. [] Select **Save**.
+    1. [] **Name**: +++Escalate To Human+++
+    1. [] **Type**: Messaging
+    1. [] **Group number**: 1
+    1. [] Select **Create**.
 
         ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P59.png)
 
-1. [] A Users (Agents) **subgrid should appear** on the right and your **user should be automatically added** to the list. If your user account is not on the list, add it through the Add Existing User button now. 
+1. [] A **Users** subgrid should appear. If your user is not visible, select **Add Users** in the subgrid.
+
+1. [] Search for and add your **MOD Administrator** user to the queue. The user is now added to the queue with the agent role.
 
     The queue **Escalate To Human** is created to manage and redirect the incoming messages from a user to a Customer Service (human) Agent when Bot sends the user through to a live agent.
 
@@ -319,7 +322,7 @@ Portal Management: Application to help you get started with the advanced portal 
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P79.png)
 
-1. [] You will see two **Chat Widget Code** records retrieved in the list. Select to open the Chat Widget Code record related to **Customer Self-service.**
+1. [] You will see two **Chat Widget Code** records retrieved in the list. Select to open the Chat Widget Code record related to **Lamna Healthcare Patient Portal.**
 
     ![Table Description automatically generated with low confidence](./IMAGES/Lab02/L2P80.png)
 
@@ -374,7 +377,7 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
     ![Graphical user interface, text Description automatically generated](./IMAGES/Lab02/L2P95.png)
 
-1.  Provide the following details for the new health bot scenario:
+1.  Provide the following details for the new health bot scenario and select **Create**:
     1.  **Name**: MCH_PatientService
     1.  **Scenario ID**: MCH_PatientService
 
@@ -392,15 +395,15 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
 1. [] Enter the Display Text: +++**Hi there, I’m your Healthcare Assistant.**+++
 
-1. {} Select the **pencil** next to **Statement** in the top bar and change Title to **Intro**. Select **OK**.
+1. {} Select the **pencil** next to **Statement** in the top bar and change Title to **Intro**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P99.png)
 
-1. [] Select **OK**. You will see the intro statement added to the designer canvas. Double-click anytime to edit.
+1. [] Select **Save**. You will see the intro statement added to the designer canvas. Double-click anytime to edit.
 
     ![A picture containing graphical user interface Description automatically generated](./IMAGES/Lab02/L2P100.png)
 
-#### Step 2: Add Statement for Medication Request or Live Agent
+#### Step 2: Add Prompt for Medication Request or Live Agent
 
 This section prompts two buttons Medication Refill and Live Agent. When user click any one of the buttons it will set the appropriate text to the variable MedicationOrAgent.
 
@@ -414,21 +417,17 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
     1. [] **Data type**: string
     1. [] Rename Title to **MedOrAgent**.
 
-1. [] Select **Cards** button.
-
-    ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab02/L2P102.png)
-
-1. [] Select **Add Card**.
+1. [] Select **Add Cards**.
 
     ![A picture containing chart Description automatically generated](./IMAGES/Lab02/L2P103.png)
 
-1. [] Select Card Type as **HeroCard.** Leave title blank as we already prompted with display text.
+1. [] Select **Card Type** as **Hero Card.** Leave title blank as we already prompted with display text.
 
 1. [] Select **Add Action** button twice to add two actions:
     1. [] For the first action, select the following:
         1. [] **Action type**: imBack
         1. [] **Action value**: MedicationRefill
-        1. [] **Action title**: “Medication Refill”
+        1. [] **Action title**: "Medication Refill"
     1. [] For the second action, fill in the following:
         1. [] **Action type**: imBack
         1. [] **Action value**: LiveAgent
@@ -436,11 +435,7 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
         ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P104.png)
 
-1. [] Select **Ok** three times to get back to designer
-
-    ![Shape Description automatically generated with medium confidence](./IMAGES/Lab02/L2P105.png)
-
-    ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab02/L2P106.png)
+1. [] Select **Ok** and then **Save** to get back to designer.
 
 1. [] Connect **Intro** and **Appointment** boxes. Select the bottom circle on **Intro** and drag it to the top circle on the new prompt. An arrow will automatically appear when you try to connect Intro and MedOrAgent boxes using ellipse pointer.
 
@@ -466,11 +461,11 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 1. [] Enter the following in the javascript Boolean expression: **scenario.MedicationOrAgent === "MedicationRefill"**
 
-1. [] Rename to **IsMedRefill**. Select **OK**.
+1. [] Rename to **IsMedRefill**. Select **Save**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P112.png)
 
-1. [] Select and drag the bottom circle of the **MedOrAgent** prompt to the top circle of the **IsMedRefill** branch decision to connect them.
+1. [] Select and drag the bottom circle of the **MedOrAgent** prompt to the top circle of the **IsMedRefill** branch decision to connect them. Select **Save**.
 
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P113.png)
     
@@ -482,20 +477,20 @@ This section checks whether the user has clicked Medication Refill or Live Agent
     ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P114.png)
 
 1. [] Add the following details:
-    1. [] **Variable name**: formData
-    2. [] **Variable Data Type**: Object
+    1. [] **Input variable**: formData
+    2. [] **Input Type**: Object
     3. [] Change Title to **Submit**
     4. [] Do not add any display text since the adaptive card will display instead
 
         ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab02/L2P115.png)
 
-1. [] Select **Cards** button > **Add Card** > **Adaptive Card**.
+1. [] Select **Add Cards** button and select **Adaptive Card** in **Card Type**.
 
 1. [] Refer to the lab resources file **AdaptiveCardForMedicationRefill.txt** and copy the json content and paste it in the json section of your card.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P116.png)
 
-1. [] Select **OK** three times to get back to the designer.
+1. [] Select **OK** and **Save** to get back to the designer.
   
 1. [] Connect the **Yes** condition of the **IsMedRefill** branch to the **Submit** prompt.
 
@@ -503,9 +498,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 1. [] Save and run your current scenario. If you don’t save the scenario first, it won’t run with updates since the last save. If you haven’t saved at all, it won’t recognize any conversation.
 
-    ![Graphical user interface Description automatically generated with medium confidence](./IMAGES/Lab02/L2P118.png)
-
-1. [] You should see the below output when running the conversation and selecting “Medication Refill” card when prompted to show the AdaptiveCard.
+1. [] Select **Medication Refill** card when prompted to show the AdaptiveCard.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P119.png)
 
@@ -517,7 +510,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 1. [] Add **Display text** as the following: +++**scenario.formData.myName + " - Thanks for providing the information, we have created a Medication Request for you regarding the following medication: " + scenario.formData.myMedReq**+++
 
-1. [] Rename the statement to **Confirmation**.
+1. [] Rename the statement to **Confirmation** and select **Save**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P121.png)
 
@@ -525,7 +518,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P122.png)
 
-1. [] Select **Save** and **Run** to see your scenario in the webchat.
+1. [] Select **Save** and select **Refresh** in the **Web Chat** pane. Select **Run** to see your scenario in the webchat.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P123.png)
 
@@ -537,15 +530,13 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 1. [] Add a **Statement** element to the canvas.
 
-    ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P125.png)
-
-1. [] Enter +++**Display Text**: **Please wait, I am transferring your request to a live agent for further assistance.**+++
+1. [] Enter **Display Text**: +++**Please wait, I am transferring your request to a live agent for further assistance.**+++
   
 1. [] Rename the statement to **Live Chat**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P126.png)
 
-1. [] Select **OK** to return to the designer page.
+1. [] Select **Save** to return to the designer page.
   
 1. [] Connect the **No** decision of the **IsMedRefill** branch to the **Live Chat** statement.
 
@@ -565,7 +556,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     });
 
-1. [] Name the action **Escalate**. Select **OK** to return to the designer page.
+1. [] Name the action **Escalate**. Select **Save** to return to the designer page.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P129.png)
 
@@ -573,17 +564,17 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P130.png)
 
-1. [] Save and run your scenario to see the full scenario output.
+1. [] Save, refresh the chat, and run your scenario to see the full scenario output.
 
-1. [] Test all logical paths. Selecting Live Agent in the authored card should show the escalation action.
+1. [] Select **Live Agent** in the authored card should show the escalation action.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P131.png)
 
-1. [] Exit the **MCH_PatientSerivce** scenario editor.
+1. [] Select the back arrow next to **MCH_PatientSerivce** in the scenario editor.
 
     ![Graphical user interface, application, Word Description automatically generated](./IMAGES/Lab02/L2P132.png)
 
-### Task 2: Create MCH_PatientServiceWelcome Scenario**
+### Task 2: Create MCH_PatientServiceWelcome Scenario
 
 In this task, you will create another bot scenario called **MCH_PatientServiceWelcome** to invoke the **MCH_PatientService** scenario.
 
@@ -591,7 +582,7 @@ In this task, you will create another bot scenario called **MCH_PatientServiceWe
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P133.png)
 
-1. [] Provide the following details for the new scenario and click **Create**:
+1. [] Provide the following details for the new scenario and select **Create**:
     1. [] **Name**: MCH_PatientServiceWelcome
     1. [] **Scenario ID**: MCH_PatientServiceWelcome
 
@@ -599,21 +590,15 @@ In this task, you will create another bot scenario called **MCH_PatientServiceWe
 
 1. [] On the scenario editor designer, add a **Statement** element.
 
-    ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P135.png)
-
 1. [] Rename the statement **Welcome**. Do not add any Display text as we will show it in the card instead.
 
     ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab02/L2P136.png)
 
-1. [] Select **Cards.**
+1. [] Select ** Add Cards.**
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P137.png)
 
-1. [] Select **Add Card**.
-
-    ![A picture containing graphical user interface Description automatically generated](./IMAGES/Lab02/L2P138.png)
-
-1. [] Choose **HeroCard.** Add **Title**: **Welcome to Lamna Healthcare Patient Service Portal**
+1. [] Choose **Hero Card**. Add **Title**: **Welcome to Lamna Healthcare Patient Service Portal**
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P139.png)
 
@@ -624,7 +609,7 @@ In this task, you will create another bot scenario called **MCH_PatientServiceWe
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P140.png)
 
-1. [] Select **OK** and view your completed scenario. This will be used to kick off the conversation and allow the other MCH_PatientService scenario to be invoked through the authored card.
+1. [] Select **OK** and **Save** to view your completed scenario. This will be used to kick off the conversation and allow the other MCH_PatientService scenario to be invoked through the authored card.
 
     ![Table Description automatically generated with low confidence](./IMAGES/Lab02/L2P141.png)
 
@@ -632,7 +617,7 @@ In this task, you will create another bot scenario called **MCH_PatientServiceWe
 
     ![Text Description automatically generated with medium confidence](./IMAGES/Lab02/L2P142.png)
 
-1. [] Exit the scenario designer.
+1. [] Select the back arrow next to **MCH_PatientSerivce** in the scenario editor.
 
 ### Task 3: Configure Welcome Scenario as Automatic
 
@@ -646,7 +631,7 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P144.png)
 
-1. [] In the **Automatic welcome** scenario dropdown, select the **MCH_PatientServiceWelcomeScenario**.
+1. [] In the **Automatic welcome scenario** dropdown, select the **MCH_PatientServiceWelcome**. Select **Save**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P145.png)
 
@@ -664,11 +649,11 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P148.png)
 
-1. [] Navigate back to **Power Apps** and open **Customer Service Workspace.**
+    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when green with checkmark in circle**)**
+
+1. [] To verify the presence status, navigate back to **Power Apps** and open **Customer Service Workspace.**
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P149.png)
-
-    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when green with checkmark in circle**)**
 
     ![Check presence status](./IMAGES/Lab02/L2P150.png)
 
