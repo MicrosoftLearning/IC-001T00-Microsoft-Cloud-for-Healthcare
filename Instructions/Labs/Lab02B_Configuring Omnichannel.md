@@ -214,65 +214,108 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
 ### Task 4: Update Live Work Stream with Context Variables and Routing Rules
 
+Workstreams are containers to enrich, route, and assign work items. A workstream is associated with a channel, such as live chat, voice, or case. After a bot is added to a workstream, the incoming work item is first routed to the selected bot at runtime based off classification rules. For more information, see Create workstreams for unified routing on Microsoft Learn.
+
 In this task, we will set up basic chat routing. This will allow for users to chat with a bot user in certain cases and a live human agent in other scenarios. The routing rules will allow chat to behave as follows:
 
 -   **Route to Bot:** Initial customer conversation is through Health Bot in the default messaging queue. When the chat bot is first opened, route to Default queue which only contains the bot user (agent).
 -   **Human Routing Rule**: When context variable **EscalateToAgent** is present and set to 1, we route to the queue that has only human users (agents) who can take over conversation.
 
+#### Step 1: Create live chat workstream
+
 1. [] Navigate to **Workstreams**.
 
     ![Table Description automatically generated](./IMAGES/Lab02/L2P61.png)
 
-1. [] Select and edit the **Live chat workstream** .
+1. [] Select **+ New Workstream** on the command bar.
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2P62.png)
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT01.png)
+    
+1. [] Enter the following details for the new workstream and select **Create**:
+    1. [] **Name**: +++Chat Workstream+++
+    1. [] **Type**: Messaging
+    1. [] **Channel**: Chat
+    1. [] **Work distribution mode**: Push
 
-1. [] In the **Live chat** workstream record, select the **Context Variables** tab. Select **+ New**.
+        ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT02.png)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P63.png)
+1. [] On the **Chat Workstream** record, you must set up your chat channel. Select **Set up chat** under **Live chat**.
 
-1. [] Create the new Context Variable with the following details:
-    1. [] **DisplayName:** EscalateToAgent
-    1. [] **Name:** EscalateToAgent
-    1. [] **Type:** Number
+        ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT03.png)
 
-        ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P64.png)
+1. [] The Live Chat setup screen will open. Enter the channel details as follows and select **Next.**:
+    1. [] **Name**: Chat Widget
+    1. [] **Language**: English – United States
 
-1. [] Select **Save and Close**.
+        ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT04.png)
 
-1. [] You should now see the new Context Variable in the Live chat workstream.
+1. [] On the following screen, toggle to enable **Proactive chat**. 
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P65.png)
+1. [] Select **Next** to see the **Behaviors** settings you can customize for your bot, including automated messages and surveys. No need to customize anything here now.
 
-1. [] Select the **Routing Rules** tab. Select **+ Add** to create a new routing rule.
+1. [] Select **Next** to see the **User features** that can be defined for the bot. Nothing is needed here now.
 
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab02/L2P66.png)
+1. [] Review your settings and select **Create channel**.
 
-1. [] Create the new Health Bot routing rule with the following details:
-    1. [] **Name:** ToHealthcareBot
-    1. [] **Queue**: Default messaging queue
-    1. [] No Conditions.
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT05.png)
+        
+1. [] Once the chat channel is successfully created, copy the script of the chat **widget**, and save it somewhere like Notepad to add it to your website later. Select **Done** to close the wizard.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P67.png)
+1. [] In your new **Chat Workstream** record, select **Add Bot** to add the Azure Health bot for initial routing.
 
-1. [] Select **Save & Close.** On the Live chat workstream, select **+ Add** to add another new Routing Rule.
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT06.png)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P68.png)
+1. [] Find and select your bot. Select **Save and close**.
 
-1. [] Create the new Omnichannel Agent routing rule with the following details:
-    1. [] **Name:** ToAgent
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT07.png)
+
+1. [] This should open the advanced settings and display your bot in the Smart assist bots subgrid. If necessary, expand **Advanced settings** to see the **Smart assist bots** subgrid.
+
+    > [!ALERT] If the MCH Application bot is not visible in the Smart assist bots subgrid, add it as you did in the Bots subgrid.
+
+1. [] Now we want to define a new context variable and routing rule. Select **+ Add Context variable**.
+
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT08.png)
+
+1. [] In the context variable flyout, select **+ Add** to add new context variable.
+
+1. [] Create the new Context Variable with the following details and select **Create**:
+    1. [] **Name**: +++EscalateToAgent+++
+    1. [] **Type**: Number
+
+        ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT09.png)
+
+1. [] Close the context variable panel. You should now see the new EscalateToAgent context variable in the live chat workstream. 
+
+1. [] Select **Advanced Settings** to collapse to the main page.
+
+1. [] In the **Routing rules** subgrid, next to **Route to queues**, select **+Create ruleset**.
+
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT10.png)
+
+1. [] Create the new route-to-queues ruleset with the following details and select **Create**:
+    1. [] **Name:** +++Human Agent+++
     1. [] **Queue:** EscalateToHuman
-    1. [] **Add Condition:** Context Variable “EscalateToAgent = 1”
 
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab02/L2P69.png)
+        ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT11.png)
 
-    ![Graphical user interface, application Description automatically generated with medium confidence](./IMAGES/Lab02/L2P70.png)
+1. [] In the new **Human Agent** queue ruleset, select **+ Create rule**.
 
-1. [] Select **Save & Close**.
+1. [] Name the new rule +++**Human Agent Rule**+++.
 
-1. [] On the Live chat workstream, you should now see the two **Routing Rules** we created for **Bot** (ToHealthcareBot) and **Agent** (ToAgent).
+1. [] Under **Conditions**, choose **Add related entity** from the dropdown.
 
-    ![Application Description automatically generated with medium confidence](./IMAGES/Lab02/L2P71.png)
+1. [] In the first two dropdowns, choose **Context item value** and **Contains data**. In the inline condition, choose **EscalateToAgent Equals 1**.
+
+1. [] In the **Route to queues** section, choose **Escalate to Human** queue created previously. 
+
+1. [] The configured rule set is shown below. Select **Create**.
+
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT12.png)
+
+1. [] The Chat Workstream now has a Human Agent ruleset that will escalate to a human agent when the EscalateToAgent context variable is set to 1
+
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT13.png)
 
 **Congratulations!** You have created the proper context variable and routing rules that will allow customers to begin conversation with a health bot and escalate to a human agent.
 
