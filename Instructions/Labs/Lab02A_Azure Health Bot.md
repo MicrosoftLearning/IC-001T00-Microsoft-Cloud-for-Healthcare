@@ -222,7 +222,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] To the right of **Application (client) ID**, select the **Copy to clipboard** icon to copy the secret value to the clipboard and then paste the secret value in the following text box: 
 
-        @lab.TextBox(clientappid) 
+    @lab.TextBox(clientappid) 
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T3S6.png)
 
