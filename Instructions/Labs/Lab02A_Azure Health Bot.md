@@ -131,6 +131,8 @@ In this exercise, you will do the following:
 1. [] Select **Create**. This should enable Teams channel and your Microsoft Teams toggle should reflect accordingly.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P21.png)
+    
+1. [] In the **Channels** list, select the toggle to enable **Omnichannel**. Select **Create** in the side window.
 
 **Congratulations!** You completed the Azure Health Bot settings for integration with Microsoft Teams and Dynamics 365 Omnichannel for Customer Service.
 
