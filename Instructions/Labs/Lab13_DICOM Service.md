@@ -124,24 +124,15 @@ You will now configure a new Postman environment for DICOM service (dicom-servic
 
 ===
 
-## Exercise 6: Choose a path for the rest of the lab
+## Exercise 6: Populate DICOM service with single instance images
 
-From here, you will be using the DICOM service for the features outlined in the objectives at the beginning of this lab. You have the option to follow either of these paths:
-
-- **Basic Path** where you can use an already configured Postman collection to execute the series of tasks. This will covered in this exercise.
-- **Advanced Path** where you can follow the provided articles that go over how to programmatically communicate with the DICOM service using C\#, Python, or cURL. This is covered in Exercise 7.
-
-**Basic Path**
-
-**Task 1: Obtain an access token to connect with DICOM service**
+From here, you will be using the DICOM service for the features outlined in the objectives at the beginning of this lab. In this exercise, you will use an already configured Postman collection to execute the series of tasks.
 
 1. [] In Postman, make sure you have selected your **dicom-service** environment as the active environment.
 
 1. [] Select the **FHIR calls** collection.
 
 1. [] Select the **POST AuthorizeGetToken** request and select **Send**. You should receive a 200 OK message in response. Your access token is now saved to the bearerToken environment variable in your dicom-service Postman environment. Access tokens expire after 60 minutes. A refresh can be obtained by sending the POST AuthorizeGetToken request again.
-
-**Task 2: Populate DICOM service with single instance images**
 
 1. [] Once your dicom-service Postman environment is set up and you have obtained an access token, please go to [this repo](https://github.com/microsoft/dicom-server/tree/main/docs/dcms) and download the three DICOM instance files (**.dcm**) to your Postman directory on your computer (C:\Users\[your username]\Postman\files.
 
@@ -157,8 +148,10 @@ From here, you will be using the DICOM service for the features outlined in the 
 
 ===
 
-## Exercise 7: Advanced Path - Execute Outlined Features via Postman Collection
+## BONUS! Exercise 7: Execute Outlined Features via Postman Collection
 
+This exercise is a bonus exercise where you can follow the provided articles that go over how to programmatically communicate with the DICOM service using C\#, Python, or cURL.
+- 
 The Conformance-as-Postman collection has a complete set of API calls that you can execute one by one. See the list below for details.
 -   Store DICOM files to the service
 -   Search among the files that are stored within the DICOM service
