@@ -416,45 +416,43 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
     ![Graphical user interface, text Description automatically generated](./IMAGES/Lab02/L2P95.png)
 
-1.  Provide the following details for the new health bot scenario and select **Create**:
-    1.  **Name**: MCH_PatientService
-    1.  **Scenario ID**: MCH_PatientService
+1. [] Provide the following details for the new health bot scenario and select **Create**:
+    1. [] **Name**: +++MCH_PatientService+++
+    1. [] **Scenario ID**: +++MCH_PatientService+++
 
         ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P96.png)
 
-1.  Now let’s design the scenario conversation. It should navigate you directly to the designer. If not, select the MCH_PatientService scenario in **Scenarios > Manage** to edit.
+1. [] It should navigate you directly to the designer. If not, select the MCH_PatientService scenario in **Scenarios > Manage** to edit. Now let’s design the scenario conversation. 
 
     ![A screenshot of a computer Description automatically generated](./IMAGES/Lab02/L2P97.png)
 
 #### Step 1: Add Bot Introduction Statement
 
-1. [] Add a beginning **Statement** to the scenario by selecting the icon and dragging Statement icon onto the editor.
+1. [] Select **+ Add element > Conversational elements > Statement** to add a beginning **Statement** to the scenario to the editor.
 
     ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P98.png)
 
-1. [] Enter the Display Text: +++**Hi there, I’m your Healthcare Assistant.**+++
+1. [] Enter the **Display Text**: +++Hi there, I’m your Healthcare Assistant.+++
 
 1. {} Select the **pencil** next to **Statement** in the top bar and change Title to **Intro**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P99.png)
+    ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P99.png)
 
-1. [] Select **Save**. You will see the intro statement added to the designer canvas. Double-click anytime to edit.
-
-    ![A picture containing graphical user interface Description automatically generated](./IMAGES/Lab02/L2P100.png)
+1. [] Select **Save**. You will see the intro statement added to the designer canvas. To edit it, you can double-click anytime.
 
 #### Step 2: Add Prompt for Medication Request or Live Agent
 
 This section prompts two buttons Medication Refill and Live Agent. When user click any one of the buttons it will set the appropriate text to the variable MedicationOrAgent.
 
-1. [] Select **Prompt** icon and drag down onto canvas
+1. [] Select **Add element > Conversational elements > Prompt** icon to add a prompt.
 
     ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P101.png)
 
 1. [] Enter the following details:
-    1. [] **Display Text**: Would you like to request a medication refill or chat with a live agent?
-    1. [] **Variable name**: MedicationOrAgent
+    1. [] **Display Text**: +++Would you like to request a medication refill or chat with a live agent?+++
+    1. [] **Variable name**: ++MedicationOrAgent++
     1. [] **Data type**: string
-    1. [] Rename Title to **MedOrAgent**.
+    1. [] Rename Title to +++**MedOrAgent**+++.
 
 1. [] Select **Add Cards**.
 
@@ -462,21 +460,25 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
 1. [] Select **Card Type** as **Hero Card.** Leave title blank as we already prompted with display text.
 
-1. [] Select **Add Action** button twice to add two actions:
-    1. [] For the first action, select the following:
-        1. [] **Action type**: imBack
-        1. [] **Action value**: MedicationRefill
-        1. [] **Action title**: "Medication Refill"
-    1. [] For the second action, fill in the following:
-        1. [] **Action type**: imBack
-        1. [] **Action value**: LiveAgent
-        1. [] **Action title**: “Live Agent”
+    ![A picture containing chart Description automatically generated](./IMAGES/Lab02/L2P103b.png)
 
-        ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P104.png)
+1. [] Select **Add Action** button twice to add two actions.
+
+1. [] For the first action, select the following:
+    1. [] **Action type**: imBack
+    1. [] **Action value**: +++MedicationRefill+++
+    1. [] **Action title**: +++"Medication Refill"+++
+
+1. [] For the second action, fill in the following:
+    1. [] **Action type**: imBack
+    1. [] **Action value**: +++LiveAgent+++
+    1. [] **Action title**: +++“Live Agent”+++
+
+    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P104.png)
 
 1. [] Select **Ok** and then **Save** to get back to designer.
 
-1. [] Connect **Intro** and **Appointment** boxes. Select the bottom circle on **Intro** and drag it to the top circle on the new prompt. An arrow will automatically appear when you try to connect Intro and MedOrAgent boxes using ellipse pointer.
+1. [] Select the bottom circle on **Intro** and drag it to the top circle on the new prompt, **MedOrAgent** to connect them. An arrow will automatically appear when you try to connect Intro and MedOrAgent boxes using ellipse pointer.
 
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P107.png)
 
@@ -489,6 +491,10 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P109.png)
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P110.png)
+    
+1. [] Select the Refresh button on the title bar of the chat window to clear the chat for the next text.
+
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P110b.png)
 
 #### Step 3: Add MedicationOrAgent Decision Branch
 
@@ -498,9 +504,9 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P111.png)
 
-1. [] Enter the following in the javascript Boolean expression: **scenario.MedicationOrAgent === "MedicationRefill"**
+1. [] Enter the following in the javascript Boolean expression: +++scenario.MedicationOrAgent === "MedicationRefill"+++
 
-1. [] Rename to **IsMedRefill**. Select **Save**.
+1. [] Rename to +++IsMedRefill+++. Select **Save**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P112.png)
 
@@ -515,15 +521,15 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P114.png)
 
-1. [] Add the following details:
-    1. [] **Input variable**: formData
+1. [] Add the following details and select **Add Cards**:
+    1. [] **Input variable**: +++formData+++
     2. [] **Input Type**: Object
-    3. [] Change Title to **Submit**
+    3. [] Change Title to +++Submit+++
     4. [] Do not add any display text since the adaptive card will display instead
 
         ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab02/L2P115.png)
 
-1. [] Select **Add Cards** button and select **Adaptive Card** in **Card Type**.
+1. [] Select **Adaptive Card** in **Card Type**.
 
 1. [] Refer to the lab resources file **AdaptiveCardForMedicationRefill.txt** and copy the json content and paste it in the json section of your card.
 
@@ -537,7 +543,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 1. [] Save and run your current scenario. If you don’t save the scenario first, it won’t run with updates since the last save. If you haven’t saved at all, it won’t recognize any conversation.
 
-1. [] Select **Medication Refill** card when prompted to show the AdaptiveCard.
+1. [] Select the  **Medication Refill** card when prompted. The AdaptiveCard will be displayed.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P119.png)
 
@@ -549,7 +555,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 1. [] Add **Display text** as the following: +++**scenario.formData.myName + " - Thanks for providing the information, we have created a Medication Request for you regarding the following medication: " + scenario.formData.myMedReq**+++
 
-1. [] Rename the statement to **Confirmation** and select **Save**.
+1. [] Rename the statement to +++Confirmation+++ and select **Save**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P121.png)
 
@@ -558,8 +564,6 @@ This section checks whether the user has clicked Medication Refill or Live Agent
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P122.png)
 
 1. [] Select **Save** and select **Refresh** in the **Web Chat** pane. Select **Run** to see your scenario in the webchat.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P123.png)
 
 1. [] Fill in information for the request and select **Submit** to see the confirmation text.
 
@@ -571,7 +575,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 1. [] Enter **Display Text**: +++**Please wait, I am transferring your request to a live agent for further assistance.**+++
   
-1. [] Rename the statement to **Live Chat**.
+1. [] Rename the statement to +++Live Chat+++
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P126.png)
 
@@ -583,7 +587,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 #### Step 7: Add Action to Invoke Escalation
 
-1. [] Add an **Action** element to the canvas, used to trigger an escalation to Omnichannel Live Agent
+1. [] Add an **Action** element to the canvas that will be used to trigger an escalation to Omnichannel Live Agent
 
     ![](./IMAGES/Lab02/L2P128.png)
 
@@ -595,7 +599,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     });
 
-1. [] Name the action **Escalate**. Select **Save** to return to the designer page.
+1. [] Name the action +++Escalate+++. Select **Save** to return to the designer page.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P129.png)
 
@@ -622,8 +626,8 @@ In this task, you will create another bot scenario called **MCH_PatientServiceWe
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P133.png)
 
 1. [] Provide the following details for the new scenario and select **Create**:
-    1. [] **Name**: MCH_PatientServiceWelcome
-    1. [] **Scenario ID**: MCH_PatientServiceWelcome
+    1. [] **Name**: +++MCH_PatientServiceWelcome+++
+    1. [] **Scenario ID**: +++MCH_PatientServiceWelcome+++
 
         ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P134.png)
 
@@ -631,26 +635,22 @@ In this task, you will create another bot scenario called **MCH_PatientServiceWe
 
 1. [] Rename the statement **Welcome**. Do not add any Display text as we will show it in the card instead.
 
-    ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab02/L2P136.png)
-
-1. [] Select ** Add Cards.**
+1. [] Select **Add Cards**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P137.png)
 
-1. [] Choose **Hero Card**. Add **Title**: **Welcome to Lamna Healthcare Patient Service Portal**
+1. [] Choose **Hero Card**. Add **Title**: +++Welcome to Lamna Healthcare Patient Service Portal+++
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P139.png)
 
 1. [] Select **Add Action** and provide the following details:
     1. [] **Action type**: imBack
-    1. [] **Action value**: "begin MCH_PatientService"
-    1. [] **Action title**: "Lamna Healthcare Support"
+    1. [] **Action value**: +++"begin MCH_PatientService"+++
+    1. [] **Action title**: +++"Lamna Healthcare Support"+++
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P140.png)
 
 1. [] Select **OK** and **Save** to view your completed scenario. This will be used to kick off the conversation and allow the other MCH_PatientService scenario to be invoked through the authored card.
-
-    ![Table Description automatically generated with low confidence](./IMAGES/Lab02/L2P141.png)
 
 1. [] Save and run to test your bot scenario **MCH_PatientServiceWelcome** scenario in the Web Chat.
 
@@ -680,15 +680,15 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Open Lamna Healthcare Portal](./IMAGES/Lab02/L2P146.png)
 
-1. [] You should see the Health Bot “Let’s Chat” button in the lower right-hand corner of the screen. This means the chat widget was successfully embedded into the Customer Self-service portal.
+1. [] You should see the Health Bot **Let’s Chat** button in the lower right-hand corner of the screen. This means the chat widget was successfully embedded into the Customer Self-service portal.
 
     ![Graphical user interface, website Description automatically generated](./IMAGES/Lab02/L2P147.png)
 
-1. [] When you the select chat widget, bot will trigger a welcome scenario message we created and set as the default welcome message **(MCH_PatientServiceWelcome)**.
+1. [] When you the select the chat widget, the bot will trigger the welcome scenario message we created and set as the default welcome message **(MCH_PatientServiceWelcome)**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P148.png)
 
-    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when green with checkmark in circle**)**
+    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when the green circle with the checkmark appears)
 
 1. [] To verify the presence status, navigate back to **Power Apps** and open **Customer Service Workspace.**
 
@@ -704,7 +704,7 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P152.png) ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2P153.png)
 
-1. [] Navigating back to **Omnichannel for Customer Service**, your user as the Live Agent should receive an incoming notification with Accept/Reject options for that chat.
+1. [] Navigating back to **Omnichannel for Customer Service**, your user as the Live Agent should receive an incoming notification with **Accept/Reject** options for that chat.
 
 1. [] Select **Accept** to connect and chat with customer (In this case chat with the **patient**).
 
