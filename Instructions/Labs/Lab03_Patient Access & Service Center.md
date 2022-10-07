@@ -109,7 +109,7 @@ We will first open the Portal to show the Customer Self-Service template current
 
     ![Screenshot of portal settings dialog](./IMAGES/Lab03/L3P12.png)
 
-1. [] Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You may have to re-sign in. You should be first navigated to the **Portal Details** tab of the Power Apps Portals admin center.
+1. [] Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You may have to re-sign in. You should be first navigated to the **Portal Details** tab of the **Power Apps Portals admin center**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P13.png)
 
@@ -154,7 +154,7 @@ In this task, we will edit the Patient Portal website to align the name with Lam
 
 1. [] Navigate to **Apps** in <https://make.powerapps.com>.
 
-1. [] Select the **Lamna Healthcare Patient Portal** app and select **More Commands (…) > Edit**.
+1. [] Select the **Lamna Healthcare Patient Portal** app and select **More Commands (…) > Edit**. If you receive a dialog with options to **Open in Power Pages** or **Open in Power Apps**, select **Open in Power Apps**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P22.png)
 
@@ -182,7 +182,7 @@ In this task, we will edit the Patient Portal website to align the name with Lam
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab03/L3P28.png)
 
-1. [] Once configurations are completed syncing, select **Browse website** on the command bar.
+1. [] Once configurations have completed syncing, select **Browse website** on the command bar.
 
     ![](./IMAGES/Lab03/L3P29.png)
 
@@ -199,11 +199,11 @@ Now that the Patient Portal is ready to go, we need to allow Lamna Healthcare pa
 
 In this task, you will learn how to create an invitation code for patients to sign up and use the Lamna Healthcare Patient Portal. Since Casey Jensen will be accessing the patient portal to fill her medication in this lab, we will create an account for her.
 
-1. [] Open the **Healthcare Administration** app in [Power Apps](http://make.powerapps.com).
+1. [] Open the **Healthcare Administration** app in [Power Apps](http://make.powerapps.com). You may have to select the back arrow in the browser window.
 
     ![Screenshot of Apps screen with Healthcare Administration App](./IMAGES/Lab03/L3P31.png)
 
-1. [] In the **Administration** section of the sitemap, select **People,** if not already selected. You will see the **Active Patients** grid view. Open the **Casey Jensen** patient record so we can obtain an invitation code for her to use.
+1. [] In the **Administration** section of the sitemap, select **People,** if not already selected. You will see the **Active Patients** grid view. Open the **Casey Jensen** patient record by double-clicking it so we can obtain an invitation code for her to use.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P32.png)
 
@@ -215,7 +215,7 @@ In this task, you will learn how to create an invitation code for patients to si
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P35.png)
 
-1. [] Go to the **Advanced** tab on the Invitation record. Copy and store the **Invitation Code** for accessing the Patient Portal in the next task.
+1. [] Go to the **Advanced** tab on the **Invitation** record. Copy and store the **Invitation Code** (in Notepad or similar program) for accessing the Patient Portal in the next task.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P36.png)
 
@@ -389,7 +389,7 @@ See the following documentation to learn more about these roles: [Assign roles a
 
     ![Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](./IMAGES/Lab03/L3P68.png)
 
-1. [] While in the **Enabled User** list, scroll down to **find your user** or use the **Search** bar.
+1. [] While in the **Enabled User** list, scroll down to find your user or use the **Search** bar.
 
     ![Screenshot of searching for user in enabled user list](./IMAGES/Lab03/L3P69.png)
 
@@ -428,11 +428,11 @@ In this task, you will create an agent script in the Omnichannel admin center ap
 
         ![Create new agent script called Validate Patient Information](./IMAGES/Lab03/L3P73.png)
 
-1. [] Select **Save**. The Agent script steps should appear on the right
+1. [] Select **Save**. The **Agent script steps** should appear on the right
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P74.png)
 
-1. [] In the **Agent script steps** section, select **+New Agent script step**.
+1. [] In the **Agent script steps** section, select **+New Agent script step**. You may have to select the vertical ellipsis depending on the size of your window.
 
     ![Add Agent script step to the new agent script](./IMAGES/Lab03/L3P75.png)
 
@@ -525,7 +525,7 @@ In this task, we will assign the necessary user role to create and view knowledg
 
 1. [] If you kept the **User Settings** page up from the previous exercise, navigate to that page. If you didn’t keep it open, follow all the steps in Exercise 2, Task 1 and then return here to assign the proper role.
 
-1. [] Once you’ve selected your user and selected **Manage Roles**, you must assign the necessary role(s).
+1. [] Select your user and select **Manage Roles**. You will now assign the necessary role(s).
 
     ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab03/L3P91.png)
 
@@ -557,26 +557,26 @@ In this task, we will assign the necessary user role to create and view knowledg
 
     ![Screenshot of bottom left drop down selection changing from Service to Service Management](./IMAGES/Lab03/L3P95.png)
 
-1. [] Once in the **Customer Service Admin Center** area, scroll down to **Knowledge Base Management** section and select **Settings** in the left navigation.
+1. [] If presented with **Customer Service admin center is released** dialog, select **Open Customer Service Admin Center**. Once in the **Customer Service Admin Center** area, select **Knowledge** under **Agent experience** in the left navigation. There are several options to manage your Knowledge Center. Let's explore them.
 
     ![Screenshot of Settings option in the site map in Knowledge Base Management section](./IMAGES/Lab03/L3P96.png)
 
-1. [] **Record Types** allows you to configure the record types you want to turn on for knowledge management. The list will include all entities that are available for an N:N relationship. Knowledge management is enabled for **Case** table by default. Because our scenario will also use the Case table, we don’t need to add any additional tables at this time. You should remove the other types.
+1. [] **Record Types** allows you to configure the record types you want to turn on for knowledge management. Select **Manage** to open the list. The list will include all entities that are available for an N:N relationship. Because our scenario will also use the Case table, we don’t need to add any additional tables at this time. You may remove the other types.
 
-        ![Screenshot of Record Types for knowledge management, with all available on the left and selected on the right.  Currently selected are Case and Contact.](./IMAGES/Lab03/L3P97.png)
+    ![Screenshot of Record Types for knowledge management, with all available on the left and selected on the right.  Currently selected are Case and Contact.](./IMAGES/Lab03/L3P97.png)
 
-1. [] **Support portal connection** allows you to integrate an external portal for publishing knowledge articles.
+1. [] **Portal** allows you to to set up an external portal. **Support portal connection** integrates an external portal for publishing knowledge articles.
     1.  Selecting Yes would share the knowledge article as a link in the email sent to the customer.
     1.  Selecting No would share the article content inserted in the email body.
     1.  [] Keep as **No** as we will not be integrating an external portal connection
 
         ![Text Description automatically generated](./IMAGES/Lab03/L3P98.png)
 
-1. [] In the **Knowledge articles feedback** section, set **Enable users to provide feedback on knowledge articles from search control** to **Yes**, if necessary. This will allow users to provide feedback on knowledge articles opened from knowledge search control.
+1. [] Select **Manage** next to **General settings**. In the **Feedback** section, toggle **Enable feedback** to to **Yes** to enable users to provide feedback on knowledge articles from search control. This will allow users to provide feedback on knowledge articles opened from knowledge search control.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P99.png)
     
-1. Select **Save**.
+1. [] Select **Save**.
 
 ### Task 3: Create Knowledge Article
 
@@ -605,7 +605,7 @@ In this task, you will create a new knowledge article about Asthma for agents to
 
         ![Screenshot of the new knowledge article with title, keyword, and description completed](./IMAGES/Lab03/L3P104.png)
 
-1. [] In the **Content** section, copy and paste the content for your knowledge article.
+1. [] In the **Content** section, copy and paste the following content for your knowledge article.
 
     **Common causes**
 
@@ -686,7 +686,7 @@ To ensure accuracy of the knowledge article, typically someone else would review
 
     ![Screenshot of the business process flow of a knowledge article which is in review stage and has the Review field drop down selected on the approved option](./IMAGES/Lab03/L3P111.png)
 
-1. [] Select **OK** when prompted to confirm approve article.
+1. [] Select **OK** when prompted to confirm approval of article.
 
     ![Screenshot of the OK button to confirm approval of article](./IMAGES/Lab03/L3P112.png)
 
@@ -706,7 +706,7 @@ To ensure accuracy of the knowledge article, typically someone else would review
 In this task, you will learn how to publish the knowledge article so it’s live and ready to be used.
 
 1. [] In your **Shortness of Breath** Knowledge Article, select the **Publish** stage.
-    1. [] For **Set Product Associated**, check the box **Completed**.
+    1. [] For **Set Product Associated**, check **Mark as Completed**.
     1. [] Add an **Expiration Date** for one year from now.
     1. [] Select **Finish**
 
@@ -716,14 +716,12 @@ In this task, you will learn how to publish the knowledge article so it’s live
 
     ![Screenshot of business process flow showing completed flag after selecting finish](./IMAGES/Lab03/L3P116.png)
 
-1. [] Specify the following details (see screenshot below):
+1. [] Specify the following details and select **Publish** (see screenshot below):
     1. [] **Publish**: Now
     1. [] **Published Status**: Published
     1. [] **Expiration State**: Published
     1. [] **Expiration Status**: Published
-    1. [] Publish approved related translations with Article, choose **Yes**.
-
-1. [] Select **Publish**
+    1. [] **Publish approved related translations with Article**: Yes
 
     ![Screenshot of Publish dialog with details filled out and publish button at bottom](./IMAGES/Lab03/L3P118.png)
 
@@ -767,9 +765,10 @@ The following screen shows Patient Service Center after a patient has been escal
 
     ![Screenshot of splash screen which is faded white background and shows loading percentages for page load.  This will allow omnichannel to work properly.](./IMAGES/Lab03/L3P125.png)
 
-    1. [] If you don’t see the splash screen and the presence indicator is grayed out, escalation into the app from the health bot won’t work properly.
-    1. [] Refresh again or close and reopen Patient Service Center until the splash screen appears. You may need to close all other apps or close incognito altogether and sign back in.
-   1. [] If you just assigned the Omnichannel agent role, it may take up to 15 minutes to apply and for the presence to show for your user.
+    1. If you don’t see the splash screen and the presence indicator is grayed out, escalation into the app from the health bot won’t work properly.
+    1. Refresh again or close and reopen Patient Service Center until the splash screen appears. You may need to close all other apps or close incognito altogether and sign back in.
+    1. If the presence indicator is red (busy), sign out and sign back into the Patient Service Center.
+    1. If you just assigned the Omnichannel agent role, it may take up to 15 minutes to apply and for the presence to show for your user.
 
 1. [] Once your presence indicator is green, you are ready to accept patient escalations.
 
@@ -792,11 +791,11 @@ The following screen shows Patient Service Center after a patient has been escal
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P127.png)
 
-1. [] You will see the chat notifies you -- **An agent will be with you in a moment.**
+1. [] You will see the chat notifies you -- **Please wait, I am transferring your request to a live agent... .**
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab03/L3P128.png)
 
-1. [] Now let’s switch over to the Patient Service Center app so you can accept the escalation as an agent.
+Now let’s switch over to the Patient Service Center app so you can accept the escalation as an agent.
 
 **Congratulations!** You have successfully configured and started a conversation with the Health Bot in the Healthcare Patient Portal and asked to escalate to an agent in Patient Service Center.
 
@@ -805,7 +804,7 @@ The following screen shows Patient Service Center after a patient has been escal
 
 In this task, you will act as the Patient Service Center Agent, accept the escalation from the healthbot and assist the patient with their issue by using the productivity pane.
 
-1. [] Navigate back to the **Patient Service Center** app. You should be signed in as your IAD User.
+1. [] Navigate back to the **Patient Service Center** app. You should be signed in as your Mod Administrator user.
 
 1. [] Notice in the upper right corner there is a **Chat request** from your user.
 
@@ -819,10 +818,12 @@ In this task, you will act as the Patient Service Center Agent, accept the escal
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P131.png)
 
-1. [] See the chat directly embedded on the left-hand side. Try out the command bar below it to see various options such as **auto-replies** and **surveys**.
+1. [] See the chat directly embedded on the left-hand side. Try out the command bar below it to see various options.
   
-1. [] Navigate the **productivity pane**. Go through the **agent script** and check off ones you complete asking the patient.
+1. [] Navigate the **Smart assist** pane. Review the **Agent scripts** (button on right side of pane).
   
-1. [] Go to **Knowledge Article** tab and search for **Breath** or **Inhaler**. Notice your Knowledge Article appear.
+1. [] Select **Knowledge Search** button (right side of **Smart assist** pane and search for **Breath** or **Inhaler**. Notice your Knowledge Article appear.
+
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P132.png)
 
 **Congratulations!** You completed the full experience from logging in as a patient to the portal, conversing with the health bot, and escalating into Patient Service Center to navigate the features for the agent.
