@@ -221,8 +221,6 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 -   **Route to Bot:** Initial customer conversation is through Health Bot in the default messaging queue. When the chat bot is first opened, route to Default queue which only contains the bot user (agent).
 -   **Human Routing Rule**: When context variable **EscalateToAgent** is present and set to 1, we route to the queue that has only human users (agents) who can take over conversation.
 
-#### Step 1: Create live chat workstream
-
 1. [] Navigate to **Workstreams**.
 
     ![Table Description automatically generated](./IMAGES/Lab02/L2P61.png)
@@ -269,9 +267,7 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT07.png)
 
-1. [] This should open the advanced settings and display your bot in the Smart assist bots subgrid. If necessary, expand **Advanced settings** to see the **Smart assist bots** subgrid.
-
-    > [!ALERT] If the MCH Application bot is not visible in the Smart assist bots subgrid, add it as you did in the Bots subgrid.
+1. [] Expand **Advanced settings** to see the **Smart assist bots** subgrid. Select **Add Bot**, ensure **MCH Application** is selected and select **Save and close**.
 
 1. [] Now we want to define a new context variable and routing rule. Select **+ Add Context variable**.
 
@@ -361,15 +357,15 @@ Portal Management: Application to help you get started with the advanced portal 
 
     ![Table Description automatically generated with medium confidence](./IMAGES/Lab02/L2P78.png)
 
-1. [] In **Active Content Snippets**, type **Chat** in the **Search** box and press **enter**.
+1. [] In **Active Content Snippets**, type: +++**Chat**+++ in the **Search** box and press **Enter**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P79.png)
 
-1. [] You will see two **Chat Widget Code** records retrieved in the list. Select to open the Chat Widget Code record related to **Lamna Healthcare Patient Portal.**
+1. [] You will see two **Chat Widget Code** records retrieved in the list. Select to open the Chat Widget Code record related to **Lamna Healthcare Patient Portal**.
 
     ![Table Description automatically generated with low confidence](./IMAGES/Lab02/L2P80.png)
 
-1. [] In the **Chat Widget Code** record associated with Customer self-service, select **Value (HTML) > Html** Tab and then paste the Chat Widget Code snippet that you copied and stored in the previous task.
+1. [] In the **Chat Widget Code** record associated with **Lamna Healthcare Patient Portal**, select **Value (HTML) > Html** tab and then paste the Chat Widget Code snippet that you copied and stored in Task 5 of Exercise 1.
 
     ![Graphical user interface, text, application, Teams Description automatically generated](./IMAGES/Lab02/L2P81.png)
 
@@ -381,7 +377,7 @@ Portal Management: Application to help you get started with the advanced portal 
 
     ![A picture containing text Description automatically generated](./IMAGES/Lab02/L2P83.png)
 
-1. [] In the **Chat Widget Code** record associated with the Healthcare Patient Portal, paste in **Value (HTML)** the same Chat Widget Code snippet that you copied and stored previously and added to the customer self-service chat widget code. Replace any value that may have already populated the field.
+1. [] In the **Chat Widget Code** record associated with the **Healthcare Patient Portal**, in the **Value (HTML) > HTML** tab, paste the same Chat Widget Code snippet that you copied and stored previously and added to the Lamna Healthcare Patient Portal chat widget code. Replace any value that may have already populated the field.
 
     ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab02/L2P84.png)
 
