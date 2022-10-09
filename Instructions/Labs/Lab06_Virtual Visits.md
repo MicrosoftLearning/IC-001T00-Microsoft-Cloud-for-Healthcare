@@ -152,6 +152,62 @@ In this task, you will configure the environment variables necessary to generate
 1. [] Select **Save and close**.
 
     ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6P20.png)
+    
+1. [] Open a new tab in your internet browser and go to +++portal.azure.com+++.
+
+1. [] Search for and select **Azure Active Directory**.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S2.png)
+    
+1. [] Select **Add > App registration**.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S6.png)
+    
+1. [] Name the App, **Lamna Healthcare - Microsoft Teams Identity** and select **Register**.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S7.png)
+
+1. [] After the App registration is created, set up the API Permissions and Secrets. Select **API Permissions**. Select **Add a permission**.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S9.png)
+
+1. [] Select **Microsoft Graph**.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S10.png)
+    
+1. [] Select **Application Permissions** and search for **Calendar**. Expand **Calendars** and select **Calendars.ReadWrite**. Select **Add permissions**.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S11.png)
+    
+1. [] Select **Grant admin consent for the Tenant**.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S13.png)
+
+1. [] Select **Yes** to see the granted permissions.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S13b.png)
+
+1. [] Obtain the Secret value by selecting **Certificates and secrets** on the left navigation. Then select **+ New client secret**.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S14.png)
+    
+1. [] Enter +++Lamna Healthcare - Microsoft Teams Identity secret+++ for the **Description** and then select **Add**.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S15.png)
+    
+1. [] Copy the **Secret Value** and save for later.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S16.png)
+    
+1. [] Return to the **Application** main page, copy the **Application ID** and save for later use.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S17.png)
+    
+1. [] Return to the **https://make.powerapps.com** tab and enter both the **Secret** and **Application IDs** that you copied into the **Environment variables**.
+
+1. [] Finally, enter the email address of your logged in user into the **Virtual Appointment Scheduler Email** field.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S19.png)
 
 **Congratulations!** You have obtained the Virtual Visit Client ID and Virtual Visit Secret combination to be used to authenticate against the Microsoft Graph API to schedule virtual meeting events. You have also entered the email address of a primary event scheduler.
 
