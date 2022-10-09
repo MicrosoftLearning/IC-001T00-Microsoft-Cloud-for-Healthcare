@@ -36,13 +36,13 @@ Below is an example of the appointment booking screen in the Patient Portal. As 
 
 ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P3.png)
 
-1. [] Go to <https://make.powerapps.com/> and open **Virtual Clinic**.
+1. [] Go to +++https://make.powerapps.com+++ and open **Virtual Clinic** on the **Apps** page.
 
 1. [] In the upper right-hand corner, select the **funnel** icon which will open **Advanced Find**.
 
     ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6P4.png)
 
-1. [] In the **Search** box, browse for **Codeable Concepts** and select **Results**.
+1. [] In the **Search** box, scroll to and select **Codeable Concepts** and select **Results** on the ribbon.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P5.png)
 
@@ -69,7 +69,7 @@ There are two different places the Teams meeting may be created:
 -   In the case of virtual appointments, the Teams meeting is created on the mapped user’s calendar.
 -   In the case of instant virtual appointments, the Teams meeting is created on the Organizer (organizer email for virtual appointments) specified in the Admin settings.
 
-1. [] In Power Apps, select **Apps** and then open the **Virtual Clinic** application.
+1. [] In Power Apps, select **Apps** and then open the **Virtual Clinic** application (you may have it open in another tab already).
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P8.png)
 
@@ -81,7 +81,7 @@ There are two different places the Teams meeting may be created:
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P10.png)
 
-1. [] Select **Save & Close**. If you receive a "Duplicate records found" message, select **Ignore and Save**.
+1. [] Select **Save & Close**. If you receive a **Duplicate records found** message, select **Ignore and Save**.
 
 **Congratulations!** You have mapped the practitioner record to your logged in user.
 
@@ -101,7 +101,7 @@ In this task, you will configure the practitioner’s schedule to allow patients
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P13.png)
 
-**Congratulations!** You have enabled a practitioner’s schedule to be used for booking virtual appointments.
+**Congratulations!** You have verified a practitioner’s schedule is enabled to be used for booking virtual appointments.
 
 ### Task 4: Configure Slots
 
@@ -129,7 +129,7 @@ In this task, we will configure a new appointment slot to show practitioner’s 
 
 In this task, you will configure the environment variables necessary to generate a Microsoft Teams URL for virtual appointments.
 
-1. [] Go to <https://make.powerapps.com/>
+1. [] Go to +++https://make.powerapps.com+++. You may already have this window open.
 
 1. [] Go to **Apps** and select **See environment variables**.
 
@@ -145,7 +145,7 @@ In this task, you will configure the environment variables necessary to generate
 
         ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P18.png)
 
-1. [] Finally, enter the email address of your logged in user into the **Virtual Appointment Scheduler Email** field (*ex: iaduser77@powerplatformopenhacks.onmicrosoft.com*).
+1. [] Finally, enter the email address of your logged in user into the **Virtual Appointment Scheduler Email** field (*ex: admin@WWLx...*).
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P19.png)
 
@@ -159,13 +159,11 @@ In this task, you will configure the environment variables necessary to generate
 
 In this task, we will activate the Flows and Connection References that deployed along with the Virtual Clinic application.
 
-1. [] Navigate to <https://make.powerapps.com/>.
-
-1. [] Select **Solutions** and then select **+ New Solution**.
+1. [] In **Power Apps**, select **Solutions** and then select **+ New Solution**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P21.png)
 
-1. [] Name the solution **LamnaHealthcare**, choose the **Default Publisher** and select **Create**.
+1. [] Name the solution +++LamnaHealthcare+++, choose the **CDS Default Publisher** and select **Create**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P22.png)
 
@@ -199,7 +197,6 @@ In this task, we will activate the Flows and Connection References that deployed
 
 1. [] Select **Sign in** for **Office 365 Users** to create the Connection Reference.
 
-    ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P30.png)
 
 1. [] Select **Continue**.
 
@@ -235,9 +232,9 @@ Additionally, your care team can use Microsoft Teams internally to do the follow
 
 By default, the Basic and Enhanced Microsoft Teams integration is disabled for customer engagement apps in Dynamics 365. In this Task, we will enable Microsoft Teams in Dynamics 365.
 
-1. [] Go to <https://admin.powerplatform.microsoft.com/>.
+1. [] Go to +++https://admin.powerplatform.microsoft.com+++.
 
-1. [] Select your Microsoft Cloud for Healthcare environment from the list
+1. [] Select **Environments** and then select your **MC4H Labs** environment from the list
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P35A.png)
 
@@ -253,9 +250,7 @@ By default, the Basic and Enhanced Microsoft Teams integration is disabled for c
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P37.png)
 
-1. [] On the Microsoft Teams collaboration and chat page, switch **Turn on the linking of Dynamics 365 records to Microsoft Teams channels** to **Yes**.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P38.png)
+1. [] On the **Microsoft Teams collaboration and chat** page, switch **Turn on the linking of Dynamics 365 records to Microsoft Teams channels** to **Yes**.
 
 1. [] Select the **Save** button at the bottom left.
 
@@ -277,9 +272,7 @@ By default, the Basic and Enhanced Microsoft Teams integration is disabled for c
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P43.png)
 
-1. [] You will now see that both Microsoft Teams Integration settings are set to Yes. Select **OK**.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P44.png)
+You will now see that both Microsoft Teams Integration settings are set to Yes.
 
 **Congratulations!** You have enabled Microsoft Teams integration for Dynamics 365.
 
@@ -287,13 +280,13 @@ By default, the Basic and Enhanced Microsoft Teams integration is disabled for c
 
 In this task, you will customize the Microsoft Teams experience for a practitioner by embedding the Virtual Clinic app to the Teams channel in your environment. We will be utilizing the Microsoft Teams web experience for this task.
 
-1. [] While logged in to your Microsoft 365 tenant, open a new tab and go to [teams.microsoft.com](https://teams.microsoft.com).
+1. [] While logged in to your Microsoft 365 tenant, open a new tab and go to +++teams.microsoft.com+++.
 
 1. [] Select **Next** through the prompts, and then select **Let’s Go.**
 
     ![Graphical user interface, application, website Description automatically generated](./IMAGES/Lab06/L6P45.png)
 
-1. [] Select **Teams** on the left navigation bar and then select **Create Team.**
+1. [] At the bottom of the left navigation bar, select **Join or create a team** and then **Create a team**.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab06/L6P46.png)
 
@@ -305,11 +298,11 @@ In this task, you will customize the Microsoft Teams experience for a practition
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P48.png)
 
-1. [] Name the Team **Lamna Healthcare – Redmond** and select **Create**. You may skip add members step.
+1. [] Name the Team +++Lamna Healthcare – Redmond+++ and select **Create**. You may skip the **add members** step.
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P49.png)
 
-1. [] Once the Team is created and the **General channel** selected, select the **+** button to add a tab
+1. [] Once the Team is created and the **General** channel selected, select the **+** button to add a tab
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P50.png)
 
@@ -341,7 +334,7 @@ In this final exercise, you will use the items that you configured in the previo
 
 In this task, you will log in to the Patient Portal as Reed Flores and schedule an instant virtual appointment.
 
-1. [] Go to <https://make.powerapps.com/>
+1. [] Go to +++https://make.powerapps.com+++ (You may already have it open in another tab.)
 
 1. [] First, we must create an account in the patient portal for Reed Flores like we did for Casey Jensen in Lab 05: Patient Access & Service Center. Go to **Apps** and open **Healthcare Administration**.
 
@@ -359,7 +352,7 @@ In this task, you will log in to the Patient Portal as Reed Flores and schedule 
 
     ![Table Description automatically generated with low confidence](./IMAGES/Lab06/L6P58.png)
 
-1. [] Select **Sign in**.
+1. [] Select **Secure sign in**.
 
     ![Graphical user interface, text Description automatically generated](./IMAGES/Lab06/L6P59.png)
 
@@ -391,7 +384,7 @@ In this task, you will log in to the Patient Portal as Reed Flores and schedule 
 
     ![](./IMAGES/Lab06/L6P66.png)
 
-1. [] On the insurance section, select **+ Add Insurance.**
+1. [] On the **Insurance** section, select **+ Add Insurance.**
 
     ![Graphical user interface Description automatically generated with medium confidence](./IMAGES/Lab06/L6P67.png)
 
