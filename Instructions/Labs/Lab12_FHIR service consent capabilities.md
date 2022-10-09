@@ -342,7 +342,7 @@ Now you will be linking the Practitioner/WDT000000003 Resource to your user acco
 
 1. [] In the **Profile** blade, copy the **Object ID** for your account.
 
-1. [] You will also need your /<fhir_proxy_app_name> (**Portal** -> **Resource Group** -> **/<fhir_proxy_app_name>**).
+1. [] You will also need your /&lt;fhir_proxy_app_name> (**Portal** -> **Resource Group** -> **/$lt;fhir_proxy_app_name>**).
 
 1. [] In Postman, get a new access token (POST AuthorizeGetToken).
 
@@ -350,7 +350,7 @@ Now you will be linking the Practitioner/WDT000000003 Resource to your user acco
 
 1. [] In the URL field for the request, you will see this string: https://<fhir_proxy_app_name\>.azurewebsites.net/manage/link/Practitioner/WDT000000003/\<object-id\>
 
-1. [] Paste your **/<fhir_proxy_app_name>** and **/<object-id>** in the appropriate places in the string.
+1. [] Paste your **/&lt;fhir_proxy_app_name>** and **/&lt;object-id>** in the appropriate places in the string.
 
 1. [] Press **Send**. You will get back a message saying the link has been established with a response code of 200.
 
