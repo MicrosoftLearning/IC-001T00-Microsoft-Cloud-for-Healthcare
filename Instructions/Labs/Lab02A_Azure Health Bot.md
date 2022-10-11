@@ -246,7 +246,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
     > [!NOTE] Note: If there is already a value in the field, replace with this value.
 
-1. [] Select the **Virtual Visit Secret** box, enter +++@lab.Variable(AppSecret)+++ in the **Default Value** field. Select **Save**.
+1. [] Select the **Virtual Visit Secret** variable, and in the pane that opens, enter +++@lab.Variable(AppSecret)+++ in the **Default Value** field. Select **Save**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T4S5.png)
 
