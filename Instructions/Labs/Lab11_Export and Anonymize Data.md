@@ -33,7 +33,7 @@ More information on HIPAA de-identification rules can be found [here](https://ww
 
 1. [] Follow the instructions in the **Exporting de-identified data** article located [here](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/de-identified-export) for creating your anonymizationConfig.json file and placing it inside the anonymization container within your **expsa** storage account. Return when you reach **Manage Configuration File in ACR**.
 
-    > [!HINT] Copy the sample configuration file and save it as a JSON file to your computer. Then in your storage account, select **Containers > anonymization > Upload** and upload the file.
+    > [!HINT] Copy the sample configuration file and save it as a JSON file to your computer. Then in your storage account, select **Containers > anonymization > Upload** and upload the file. Keep track of the name of the container and the file as they will be used in the API call.
 
 2. [] Next, follow the instructions in the **Configure export settings and set up a storage account** article [here](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/configure-export-data) for configuring your **expsa** storage account for the \$export operation. Return when you reach **Securing the FHIR service $export operation**. Read the note below about the FHIR service managed identity.
 
