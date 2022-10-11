@@ -232,19 +232,25 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] In Microsoft Edge, go to +++https://make.powerapps.com+++ 
 
-1. [] In the left navigation, select **Apps**. 
+1. [] In the left navigation, select **Solutions**. Select **Default Solution** to open it.
 
-1. [] In the warning banner, select **See environment variables**. 
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2aE2T4S2.png)
 
-1. [] In the **Environment variables** pane, in the **Virtual Visit Client ID** box, enter +++@lab.Variable(clientappid)+++ 
+1. [] You should land on the **Objects** page. Search for +++variable+++ and select **Environment variables**.
 
-1. [] In the **Virtual Visit Secret** box, enter +++@lab.Variable(AppSecret)+++ 
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2aE2T4S3.png)
+
+1. [] Select the **Virtual Visit Client ID** variable, and in the **Edit Virtual Visit Client ID** pane that opens on the right, enter +++@lab.Variable(clientappid)+++ in the **Default Value** field. Select **Save**.
+
+    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2aE2T4S4.png)
+
+    > [!NOTE] Note: If there is already a value in the field, replace with this value.
+
+1. [] Select the **Virtual Visit Secret** box, enter +++@lab.Variable(AppSecret)+++ in the **Default Value** field. Select **Save**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T4S5.png)
 
-1. [] In the **Virtual Appointment Scheduler Email** box, enter +++@lab.CloudCredential(WWLM365Enterprise2019wSPE_E).Username+++ 
-
-1. [] Select **Save and close**. 
+1. [] Select the **Virtual Appointment Scheduler Email** box, enter +++@lab.CloudCredential(WWLM365Enterprise2019wSPE_E).Username+++ in the **Default Value** field. Select **Save**.
 
 ### Task 5. Activate Flows and connection references 
 
