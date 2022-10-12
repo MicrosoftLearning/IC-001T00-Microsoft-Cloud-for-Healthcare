@@ -248,8 +248,6 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] Select the **Virtual Visit Secret** variable, and in the pane that opens, enter +++@lab.Variable(AppSecret)+++ in the **Default Value** field. Select **Save**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T4S5.png)
-
 1. [] Select the **Virtual Appointment Scheduler Email** box, enter +++@lab.CloudCredential(WWLM365Enterprise2019wSPE_E).Username+++ in the **Default Value** field. Select **Save**.
 
 ### Task 5. Activate Flows and connection references 
