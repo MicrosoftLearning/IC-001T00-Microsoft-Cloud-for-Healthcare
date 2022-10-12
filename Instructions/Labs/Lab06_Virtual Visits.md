@@ -131,27 +131,17 @@ In this task, you will configure the environment variables necessary to generate
 
 1. [] Go to +++https://make.powerapps.com+++. You may already have this window open.
 
-1. [] Go to **Apps** and select **See environment variables**.
+1. [] In the left navigation, select **Solutions**. Select **Default Solution** to open it.
 
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P16.png)
+1. [] You should land on the **Objects** page. Search for +++variable+++ and select **Environment variables**.
 
-1. [] Scroll down to the bottom to find the **Virtual Visit Secret** and the **Virtual Visit Client ID**. These environment variables are used to authenticate against the Microsoft Graph API to schedule the meeting event. To set these up, we need to create a new Application Registration in Microsoft Azure.
+1. [] Scroll down to the bottom to find the **Virtual Visit Secret** and the **Virtual Visit Client ID**. These environment variables are used to authenticate against the Microsoft Graph API to schedule the meeting event.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P17.png)
+1. [] Select the **Virtual Visit Client ID** variable, and in the **Edit Virtual Visit Client ID** pane that opens on the right, enter +++dfda9044-cb98-4b0f-8086-cd651dbe4af4+++ in the **Default Value** field. Select **Save**.
 
-1. [] Copy and paste the following variables:
-    1. [] **Virtual Visit Secret**: aJm7Q\~y_bSlwV0z\~pQ0NZ3-zIlmhNKJbPzPfa
-    1. [] **Virtual Visit Client ID**: dfda9044-cb98-4b0f-8086-cd651dbe4af4
+1. [] Select the **Virtual Visit Secret** variable, and in the pane that opens, enter +++aJm7Q\~y_bSlwV0z\~pQ0NZ3-zIlmhNKJbPzPfa+++ in the **Default Value** field. Select **Save**.
 
-        ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P18.png)
-
-1. [] Finally, enter the email address of your logged in user into the **Virtual Appointment Scheduler Email** field (*ex: admin@WWLx...*).
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P19.png)
-
-1. [] Select **Save and close**.
-
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6P20.png)
+1. [] Select the **Virtual Appointment Scheduler Email** box, enter the email address of your logged in user in the **Default Value** field (*ex: admin@WWLx...*). Select **Save**.
     
 1. [] Open a new tab in your internet browser and go to +++portal.azure.com+++.
 
