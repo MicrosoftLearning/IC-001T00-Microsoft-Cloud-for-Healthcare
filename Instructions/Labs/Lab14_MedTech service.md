@@ -41,7 +41,7 @@ In the first part of this lab, you will use the Azure Portal to deploy an Event 
 
 Now you will use Azure Portal to deploy and configure MedTech service within your Azure Health Data Services workspace.
 
-1. [] Open +++https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure+++ in a new browser tab to open Deploy MedTech service in the Azure Portal article.
+1. [] Open +++https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure#deploy-the-medtech-service-manually+++ in a new browser tab to open Deploy MedTech service in the Azure Portal article.
 
 1. [] When you get to the part of the instructions to **Configure MedTech service to ingest data**, for this training it is recommended to use the default **Consumer group** that was assigned when you deployed your Event Hub in the previous exercise (for more information on consumer groups, select the following link, [**Consumer groups**](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-features#consumer-groups "Consumer groups") .
 
