@@ -239,7 +239,7 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
 1. [] On the **Chat Workstream** record, you must set up your chat channel. Select **Set up chat** under **Live chat**.
 
-        ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT03.png)
+    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT03.png)
 
 1. [] The Live Chat setup screen will open. Enter the channel details as follows and select **Next.**:
     1. [] **Name**: Chat Widget
