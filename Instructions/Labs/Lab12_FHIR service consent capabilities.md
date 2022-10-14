@@ -171,10 +171,10 @@ json
     "value": "Administrator"
 }
 ```
+  
+1. [] On the menu, select **Save**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1e.png)
-    
-1. [] On the menu, select **Save**.
 
 ### Task 3: Configure API permissions
 
