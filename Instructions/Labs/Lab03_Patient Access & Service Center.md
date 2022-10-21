@@ -783,9 +783,35 @@ The following screen shows Patient Service Center after a patient has been escal
     1. [] Make sure you set the Welcome message in the Health Bot lab
     1. [] If the welcome message doesn’t show, check the settings you did in Lab 02 (Teams and Human handoff enabled). Also make sure you added the widget snippet to the Patient Healthcare chat widget.
 
-1. [] Select **Lamna Healthcare** **Support** to start a support conversation.
+1. [] Select **Lamna Healthcare Support** to start a support conversation.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P126.png)
+
+1. [] The Health Bot responds with options to refill a medication or escalate to a live agent. Select **Medication Refill** because Casey wants to refill the inhaler medication.
+
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S4.png)
+
+1. [] Fill in Casey Jensen's **name** and **email** information and enter +++Albuterol inhaler+++ in the **Medication Requested** field.
+
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S5.png)
+
+1. [] Select **Submit**, and you will receive a response that confirms your request.
+
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S6.png)
+
+    In the next steps, assume that Casey was out of refills for her medication. For this case, you will test the process of escalating to a live agent to refill Casey's medication another way.
+
+1. [] Close the Azure Health Bot chat.
+
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S7.png)
+
+1. [] Select **Let's Chat** to open a new Health Bot conversation.
+
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S8.png)
+
+1. [] Select **Lamna Healthcare Support**.
+
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S9.png)
 
 1. [] Select **Live Agent** in the next prompt to escalate to an agent.
 
@@ -814,12 +840,14 @@ In this task, you will act as the Patient Service Center Agent, accept the escal
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P130.png)
 
-1. [] The page should reload and show the patient record, active chat, and productivity pane as seen below.
+    The page should reload and show the patient record, active chat, and productivity pane as seen below. Your status should now show as red (busy).
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P131.png)
 
-1. [] See the chat directly embedded on the left-hand side. Try out the command bar below it to see various options.
-  
+1. [] See the chat directly embedded on the left-hand side. Explore the command bar under the chat to try various options such as auto replies, adding/transferring agents, and so on.
+
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T3S4.png)
+
 1. [] Navigate the **Smart assist** pane. Review the **Agent scripts** (button on right side of pane).
   
 1. [] Select **Knowledge Search** button (right side of **Smart assist** pane and search for **Breath** or **Inhaler**. Notice your Knowledge Article appear.
