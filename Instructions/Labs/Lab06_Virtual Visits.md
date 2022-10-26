@@ -36,7 +36,53 @@ Below is an example of the appointment booking screen in the Patient Portal. As 
 
 ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P3.png)
 
-1. [] Go to +++https://make.powerapps.com+++ and open **Virtual Clinic** on the **Apps** page.
+For an entity that isn't shown directly in an application's sitemap, we can add a new record through Power Apps or Dynamics 365. To create a new practitioner specialty, we'll show you how to create a new Codeable Concepts record in both ways, starting with Power Apps.
+
+1. [] Go to +++https://make.powerapps.com+++.
+
+1. [] Expand **Dataverse** on the left sitemap and select **Tables**.
+
+    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S2.png)
+    
+1. [] Select the **All** tab and search for **Codeable Concept**.
+
+    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S3.png)
+
+1. [] Select the **Codeable Concept** table and view the **Codeable Concept columns and data** tile. You'll likely see no data.
+
+    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S4.png)
+
+1. [] Select the view dropdown, select **(Select All)** and select **Save**. Then you should see data in the system.
+
+    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S5.png)
+    
+1. [] At the bottom of the pane, select **Add more rows**.
+
+1. [] On the toolbar, select **+New row** dropdown > **New row using form**.
+
+    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S6.png)
+
+1. [] In the **New Codeable Concept** form, fill in the following details and select **Save & Close**.
+    1. [] **Name**: +++General Medicine+++
+    1. [] **Text**: +++General Medicine+++
+    1. [] **Type**: Practitioner Specialty (you may have to scroll down several times to see it)
+    1. [] **Code**: +++general+++
+    
+    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S7.png)
+    
+1. [] Select **Done** in the popup to refresh the table.
+
+1. In the **Type** column, select the dropdown, select **Filter by**, and the the dropdown list, scroll and select **Practitioner Specialty**. Then select **Apply**.
+
+    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S8.png)
+    
+    You'll see your new record in the list.
+    
+    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S8b.png)
+
+    You can also add records through the Dynamics 365 classic UI. We'll show how to do that now. You may skip to the next task if you already have this knowledge.
+
+1. [] In +++https://make.powerapps.com+++ and open **Virtual Clinic** on the **Apps** page.
 
 1. [] In the upper right-hand corner, select the **funnel** icon which will open **Advanced Find**.
 
