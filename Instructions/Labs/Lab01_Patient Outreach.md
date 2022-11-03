@@ -176,7 +176,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Graphical user interface, website Description automatically generated](./IMAGES/L1P25.png)
 
-1. [] Hover over the image in the **Edit image** pane and select **Replace**. Click **Upload to library**.
+1. [] Hover over the image in the **Edit image** pane and select **Replace**. Select **Upload to library**.
 
     ![Graphical user interface, application, PowerPoint Description automatically generated](./IMAGES/L1P26.png)
 
@@ -196,8 +196,8 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     1. [] **Date**: Pick a date in the future
     1. [] **Headline**: +++Healthy Eye Seminar+++
-    1. [] **Description 1**: Hi, {{contact.firstname}}! You are invited to Lamna Healthcare’s Healthy Eye Virtual Event.
-    1. [] **Description 2**: Come join us at this virtual event!
+    1. [] **Description 1**: +++Hi, {{contact.firstname}}! You are invited to Lamna Healthcare’s Healthy Eye Virtual Event.+++
+    1. [] **Description 2**: +++Come join us at this virtual event!+++
 
         ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P31.png)
 
@@ -301,7 +301,7 @@ In this exercise, you will create a healthcare-focused, virtual educational **Ev
 
 1. [] Select **New** on the command bar to create a new event.
 
-1. [] Enter details for the New Event. Enter **Event Name** as +++**Healthy Eye Seminar**+++ and enter the same **Schedule details** as you entered for the Marketing email in the previous exercise. Familiarize yourself with the other fields on the forms as part of the Preliminaries event stage.
+1. [] Enter details for the New Event. Enter **Event name** as +++**Healthy Eye Seminar**+++ and enter the same **Schedule details** as you entered for the Marketing email in the previous exercise. Familiarize yourself with the other fields on the forms as part of the Preliminaries event stage.
 
     ![new Event record](./IMAGES/L1P51.png)
 
