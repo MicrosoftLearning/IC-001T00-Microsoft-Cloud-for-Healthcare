@@ -55,9 +55,9 @@ In this exercise, you will do the following:
     ![Create Azure Health Bot subscription](./IMAGES/Lab02/L2P4.png)
 
 1. [] You will be redirected to the Azure Health Bot page. Enter the following information:
-    1. [] **Subscription**: +++Azure Pass - Sponsorship+++
-    1. [] **Resource Group**: +++Training-266467+++
-    1. [] **Name**: iaduser[x]-healthbot (e.g., iaduser01-healthbot, using your assigned user)
+    1. [] **Subscription**: Keep as **Azure Pass - Sponsorship**
+    1. [] **Resource Group**: Select the existing resource group from dropdown
+    1. [] **Name**: mc4h01-healthbot
     1. [] **Region**: East US
     1. [] **Plan**: Free (F0)
 
@@ -83,7 +83,7 @@ In this exercise, you will do the following:
 
     ![Text, letter Description automatically generated](./IMAGES/Lab02/L2P9.png)
 
-1. [] You will be navigated to your new Azure Health Bot instance homepage.
+1. [] You will be navigated to your new Azure Health Bot instance homepage. You may have to enter your username again.
 
     ![Text Description automatically generated](./IMAGES/Lab02/L2P10.png)
 
@@ -218,7 +218,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
     @lab.TextBox(AppSecret) 
 
-    > [!ALERT] You <u>**must**</u> record the secret value now. This value will be masked and not recoverable after you browse away from this page. You may also want to record this value in a text editor like Notepad to ensure you have a copy. 
+    > [!ALERT] You <u>**must**</u> record the secret **value** now. This value will be masked and not recoverable after you browse away from this page. You may also want to record this value in a text editor like Notepad to ensure you have a copy. 
 
 1. [] In the resource menu, select **Overview**. 
 
@@ -260,7 +260,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] Select the **Publisher** menu, select **CDS Default Publisher**, and then select **Create**. 
 
-1. [] In the **Solutions** list, to the right of **LamnaHealthcare**, select the ellipsis and then select **Edit**. 
+1. [] If you are taken back to the **Solutions** list, to the right of **LamnaHealthcare**, select the ellipsis and then select **Edit**. 
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S5.png)
 
