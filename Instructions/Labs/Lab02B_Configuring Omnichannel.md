@@ -69,7 +69,7 @@ In the following tasks, you will complete the following:
 
     ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab02/L2P34.png)
 
-1. [] If necessary, select the **Omnichannel Agent** roles to assign to your user and select **OK**.
+1. [] If necessary, select the **Omnichannel Agent** role to assign to your user and select **OK**.
 
     ![Table Description automatically generated with medium confidence](./IMAGES/Lab02/L2P35.png)
 
@@ -157,7 +157,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
 In this task, you will create and configure the omnichannel queues necessary to communicate with the correct bot or agent depending on the situation.
 
-1. [] In <http://make.powerapps.com>, open the **Omnichannel admin center** app. If selecting it doesn't open the pane, select its ellipsis and selec **Edit**.
+1. [] In <http://make.powerapps.com>, open the **Omnichannel admin center** app. If selecting it doesn't open the pane, on the command bar, select **Activate**, wait for the **Success** message, and then open the app.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P51.png)
 
@@ -171,19 +171,17 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
     We will now associate the Default messaging queue with the Bot User so it will respond to incoming messages from customers without agent (human) intervention.
 
-1. [] Select **Add Existing User** on the **User (Agents)** subgrid to add the Bot user you previously created.
+1. [] Select **Add users** on the **Users** subgrid to add the Bot user you previously created.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P54.png)
 
-1. [] In the **Lookup Records** pane, search for your Bot User (**MCH Application**) created in the earlier task.
-
-    ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab02/L2P55.png)
+1. [] In the **Add Users** pane, search for your Bot User (**MCH Application**) created in the earlier task.
 
 1. [] Select the record from the list and select **Add**.
 
     ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab02/L2P56.png)
 
-1. [] You should now see the Bot User (MCH Application) in the Users list. Save and close.
+1. [] You should now see the Bot User (**MCH Application**) in the **Users** list.
 
     > [!NOTE] Note: If the user does not populate after adding, make sure you assigned the omnichannel agent security role to the bot user in the previous task (it may take up to 15 minutes for changes to take effect).
 
@@ -241,8 +239,8 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT03.png)
 
-1. [] The Live Chat setup screen will open. Enter the channel details as follows and select **Next.**:
-    1. [] **Name**: Chat Widget
+1. [] The Live Chat setup screen will open. Enter the channel details as follows and select **Next**:
+    1. [] **Name**: +++Chat Widget+++
     1. [] **Language**: English – United States
 
         ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT04.png)
@@ -253,7 +251,7 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
 1. [] Select **Next** to see the **User features** that can be defined for the bot. Nothing is needed here now.
 
-1. [] Review your settings and select **Create channel**.
+1. [] Select **Next**, review your settings and select **Create channel**.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT05.png)
         
@@ -267,7 +265,7 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT07.png)
 
-1. [] Expand **Advanced settings** to see the **Smart assist bots** subgrid. Select **Add Bot**, ensure **MCH Application** is selected and select **Save and close**.
+1. [] Expand **Advanced settings** to see the **Smart assist bots** subgrid. Select **Add Bot**, ensure **MCH Application** is selected and select **Add**.
 
 1. [] Now we want to define a new context variable and routing rule. Select **+ Add Context variable**.
 
@@ -290,8 +288,8 @@ In this task, we will set up basic chat routing. This will allow for users to ch
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT10.png)
 
 1. [] Create the new route-to-queues ruleset with the following details and select **Create**:
-    1. [] **Name:** +++Human Agent+++
-    1. [] **Queue:** EscalateToHuman
+    1. [] **Name**: +++Human Agent+++
+    1. [] **Description**: +++Escalate To Human+++
 
         ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT11.png)
 
@@ -365,7 +363,7 @@ Portal Management: Application to help you get started with the advanced portal 
 
     ![Table Description automatically generated with low confidence](./IMAGES/Lab02/L2P80.png)
 
-1. [] In the **Chat Widget Code** record associated with **Lamna Healthcare Patient Portal**, select **Value (HTML) > Html** tab and then paste the Chat Widget Code snippet that you copied and stored in Task 5 of Exercise 1.
+1. [] In the **Chat Widget Code** record associated with **Lamna Healthcare Patient Portal**, select **Value (HTML) > Html** tab and then paste the Chat Widget Code snippet that you copied and stored in Task 4 of Exercise 1.
 
     ![Graphical user interface, text, application, Teams Description automatically generated](./IMAGES/Lab02/L2P81.png)
 
@@ -406,6 +404,8 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
 1. [] Navigate back to the Azure **Health Bot instance** homepage where you set the bot settings. This is the portal management link you copied from the Azure portal.
 
+    > [!NOTE] Note: If you do not have this link, open https://portal.azure.com, select Azure Health Bot under Azure services, and select the health bot your created earlier.
+
     ![Text Description automatically generated](./IMAGES/Lab02/L2P93.png)
 
 1. [] Select to expand the side navigation bar. Navigate to **Scenario > Manage**.
@@ -434,7 +434,7 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
 1. [] Enter the **Display Text**: +++Hi there, I’m your Healthcare Assistant.+++
 
-1. {} Select the **pencil** next to **Statement** in the top bar and change Title to **Intro**.
+1. [] Select the **pencil** next to **Statement** in the top bar and change Title to **Intro**.
 
     ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P99.png)
 
@@ -450,7 +450,7 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
 1. [] Enter the following details:
     1. [] **Display Text**: +++Would you like to request a medication refill or chat with a live agent?+++
-    1. [] **Variable name**: ++MedicationOrAgent++
+    1. [] **Variable name**: +++MedicationOrAgent+++
     1. [] **Data type**: string
     1. [] Rename Title to +++**MedOrAgent**+++.
 
