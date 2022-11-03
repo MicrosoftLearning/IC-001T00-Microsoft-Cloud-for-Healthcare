@@ -157,7 +157,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
 In this task, you will create and configure the omnichannel queues necessary to communicate with the correct bot or agent depending on the situation.
 
-1. [] In <http://make.powerapps.com>, open the **Omnichannel admin center** app.
+1. [] In <http://make.powerapps.com>, open the **Omnichannel admin center** app. If selecting it doesn't open the pane, select its ellipsis and selec **Edit**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P51.png)
 
