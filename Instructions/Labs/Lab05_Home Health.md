@@ -46,7 +46,7 @@ Each resource can have different attributes that distinguish it from others, inc
 
 Now let’s create a Bookable Resource in the Home Health application.
 
-1. [] Navigate to <https://make.powerapps.com/>. Ensure the MC4H Labs Environment is selected in the upper right. 
+1. [] Navigate to +++https://make.powerapps.com+++. Ensure the MC4H Labs Environment is selected in the upper right. 
 
 1. [] Open the **Field Service** app. You may have to sign out and back into Dynamics 365 as your user.
 
