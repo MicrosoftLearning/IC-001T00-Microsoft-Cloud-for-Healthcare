@@ -69,7 +69,7 @@ Lamna Healthcare wants to associate the previously installed Customer Self-Servi
 
 We will first open the Portal to show the Customer Self-Service template currently bound. After the configuration steps in this task, you will see the new Healthcare Patient Portal user interface.
 
-1. [] Navigate to <https://make.powerapps.com> in an In-Private or Incognito window.
+1. [] Navigate to +++https://make.powerapps.com+++ in an In-Private or Incognito window.
 
 1. [] Select the correct environment from the upper right **Environment** dropdown.
 
@@ -101,7 +101,7 @@ We will first open the Portal to show the Customer Self-Service template current
 
     ![Screenshot of selecting Lamna Healthcare Patient Portal](./IMAGES/Lab03/L3P10.png)
 
-1. [] This will bring out the **Portal settings** panel on the right.
+    This will bring out the **Portal settings** panel on the right.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P11.png)
 
@@ -109,13 +109,11 @@ We will first open the Portal to show the Customer Self-Service template current
 
     ![Screenshot of portal settings dialog](./IMAGES/Lab03/L3P12.png)
 
-1. [] Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You may have to re-sign in. You should be first navigated to the **Portal Details** tab of the **Power Apps Portals admin center**.
+    Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You may have to re-sign in. You should be first navigated to the **Portal Details** tab of the **Power Apps Portals admin center**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P13.png)
 
-1. [] Scroll down to **Update Portal Binding > Select Website Record**.
-
- 1. [] Open the **Select Website Record** dropdown and change the value from **Customer Self-Service** to **Healthcare Patient Portal**, if necessary. This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario.
+1. [] Scroll down to **Update Portal Binding > Select Website Record**. Open the **Select Website Record** dropdown and change the value from **Customer Self-Service** to **Healthcare Patient Portal**, if necessary. This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario.
 
     ![Screenshot of selecting Healthcare Patient Portal in drop down](./IMAGES/Lab03/L3P15.png)
 
@@ -158,7 +156,7 @@ In this task, we will edit the Patient Portal website to align the name with Lam
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P22.png)
 
-1. [] The Patient Portal designer will load after getting thing ready.
+    The Patient Portal designer will load after getting everything ready.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P23.png)
 
@@ -166,7 +164,7 @@ In this task, we will edit the Patient Portal website to align the name with Lam
 
     ![Graphical user interface, table Description automatically generated](./IMAGES/Lab03/L3P24.png)
 
-1. [] Select the text box that reads **Contoso Healthcare** and change it to **Lamna Healthcare**.
+1. [] Select the text box that reads **Contoso Healthcare** and change it to +++Lamna Healthcare+++.
 
     ![A picture containing table Description automatically generated](./IMAGES/Lab03/L3P25.png)
 
@@ -178,7 +176,7 @@ In this task, we will edit the Patient Portal website to align the name with Lam
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P27.png)
 
-1. [] It may take a moment to load the preview.
+    It may take a moment to load the preview.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab03/L3P28.png)
 
@@ -272,7 +270,7 @@ In this task, you will continue as Casey and navigate the features of the Patien
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P44.png)
 
-1. [] You will be navigated to the Patient Portal Homepage.
+    You will be navigated to the Patient Portal Homepage.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P45.png)
 
@@ -389,7 +387,7 @@ See the following documentation to learn more about these roles: [Assign roles a
 
     ![Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](./IMAGES/Lab03/L3P68.png)
 
-1. [] While in the **Enabled User** list, scroll down to find your user or use the **Search** bar.
+1. [] While in the **Enabled User** list, scroll down to find your MOD Administrator user or use the **Search** bar.
 
     ![Screenshot of searching for user in enabled user list](./IMAGES/Lab03/L3P69.png)
 
@@ -495,7 +493,7 @@ In this task, you will associate the agent script with a session template so it 
 
     ![Screenshot of Add existing agent script button in the agent scripts subgrid of the "Chat session - Default" template](./IMAGES/Lab03/L3P85.png)
 
-1. [] The Lookup Records pane should appear on the right.
+    The Lookup Records pane should appear on the right.
 
     ![Screenshot of Searching for Validate Patient Information record in Lookup field](./IMAGES/Lab03/L3P86.png)
 
@@ -529,7 +527,7 @@ In this task, we will assign the necessary user role to create and view knowledg
 
     ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab03/L3P91.png)
 
-1. [] There are three roles you can choose with [create/read permissions for Knowledge Articles](https://docs.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article#create-a-knowledge-article).
+    There are three roles you can choose with [create/read permissions for Knowledge Articles](https://docs.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article#create-a-knowledge-article).
     1.  Knowledge Manager
     1.  Customer Service Manager
     1.  Customer Service Representative
@@ -741,7 +739,7 @@ The following screen shows Patient Service Center after a patient has been escal
 
 1. [] Navigate to Power Apps and open the **Lamna Healthcare Patient Portal** app.
 
-1. [] Sign into the **Patient Portal** as **Caseyn Jensen**, using the credentials you created in Exercise 1, Task 4 when you registered Casey for the patient portal (username = CaseyJensen and the password is the one you created).
+1. [] Sign into the **Patient Portal** as **Casey Jensen**, using the credentials you created in Exercise 1, Task 4 when you registered Casey for the patient portal (username = CaseyJensen and the password is the one you created).
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P120.png)
 
@@ -777,7 +775,7 @@ The following screen shows Patient Service Center after a patient has been escal
 
 ### Task 2: Patient Escalates through Healthcare Bot
 
-1. [] Select the **Let’s Chat** Health Bot chat widget in the bottom right corner of the portal.
+1. [] Switch back to the portal and select the **Let’s Chat** Health Bot chat widget in the bottom right corner of the portal.
 
 1. [] The Health Bot should go through the same conversation you created in Lab 02.
     1. [] Make sure you set the Welcome message in the Health Bot lab
