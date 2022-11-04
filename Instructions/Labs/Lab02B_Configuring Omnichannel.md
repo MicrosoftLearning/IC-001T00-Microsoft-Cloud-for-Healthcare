@@ -541,7 +541,10 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 1. [] Select **Save** and select **Refresh** in the **Web Chat** pane. Select **Run** to see your scenario in the webchat.
 
-1. [] Fill in information for the request and select **Submit** to see the confirmation text.
+1. [] Fill in information for the request and select **Submit** to see the confirmation text:
+    1. [] **Name**: +++Jensen, Casey+++
+    1. [] **Email**: +++caseyjensen@contoso.com+++ 
+    1. [] **Medication Requested**: +++Albuterol inhaler+++
 
     ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab02/L2P124.png)
 
@@ -567,7 +570,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![](./IMAGES/Lab02/L2P128.png)
 
-1. [] Add the following code in the action, which will trigger the Live agent chat:
+1. [] Add the following code in the action (replacing what is there), which will trigger the Live agent chat:
 
     session.sendChannelData('Escalating...', {
 
@@ -609,7 +612,7 @@ In this task, you will create another bot scenario called **MCH_PatientServiceWe
 
 1. [] On the scenario editor designer, add a **Statement** element.
 
-1. [] Rename the statement **Welcome**. Do not add any Display text as we will show it in the card instead.
+1. [] Rename the statement +++Welcome+++. Do not add any Display text as we will show it in the card instead.
 
 1. [] Select **Add Cards**.
 
