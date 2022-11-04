@@ -255,7 +255,7 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT05.png)
         
-1. [] Once the chat channel is successfully created, copy the script of the chat **widget**, and save it somewhere like Notepad to add it to your website later. Select **Done** to close the wizard.
+1. [] Once the chat channel is successfully created, copy the script of the chat **widget**, and save it somewhere like Notepad. You will use this in Exercise 2. Select **Done** to close the wizard.
 
 1. [] In your new **Chat Workstream** record, select **Add Bot** to add the Azure Health bot for initial routing.
 
@@ -310,30 +310,6 @@ In this task, we will set up basic chat routing. This will allow for users to ch
 1. [] The Chat Workstream now has a Human Agent ruleset that will escalate to a human agent when the EscalateToAgent context variable is set to 1
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT13.png)
-
-**Congratulations!** You have created the proper context variable and routing rules that will allow customers to begin conversation with a health bot and escalate to a human agent.
-
-### Task 5: Create Chat Widget for Health Bot
-
-1. [] Navigate to **Chat**.
-
-    ![A picture containing graphical user interface Description automatically generated](./IMAGES/Lab02/L2P72.png)
-
-1. [] Select **+New** Chat Widget.
-
-    ![A picture containing graphical user interface Description automatically generated](./IMAGES/Lab02/L2P73.png)
-
-1. [] Give the Chat Widget a **Name** (eg., Patient Portal Chat Widget).
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P74.png)
-
-1. [] Select **Save**.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P75.png)
-
-1. [] After the record is saved, a **Widget Code Snippet** will be generated. Copy the code snippet and store it for later use.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P76.png)
 
 **Congratulations!** In this exercise, you have successfully configured Customer Service Omnichannel Live chat by creating the necessary Users, Queues, Work Streams, Context Variables, Routing Rules, and Chat Widget. These all work together and allow patients to chat with a virtual health bot with the option to escalate up to a human agent if needed.
 
