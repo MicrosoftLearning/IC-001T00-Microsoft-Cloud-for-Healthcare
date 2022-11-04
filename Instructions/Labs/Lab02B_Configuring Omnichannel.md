@@ -667,9 +667,9 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P148.png)
 
-    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when the green circle with the checkmark appears)
-
 1. [] To verify the presence status, navigate back to **Power Apps** and open **Customer Service Workspace.**
+
+    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when the green circle with the checkmark appears)
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P149.png)
 
