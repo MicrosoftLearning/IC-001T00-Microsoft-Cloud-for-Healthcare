@@ -111,7 +111,7 @@ See below for the **Care Plan Management Entity Relationship Diagram**.
 
 In this exercise, you will navigate the patient record and explore all the detailed information that is captured about the patient by Microsoft Cloud for Healthcare. In this case, we will examine the healthcare information of Amber Rodriguez to see how a care team member would obtain a full view of the patient.
 
-1. [] Navigate to <http://make.powerapps.com/> in an In-Private or Incognito window. If you are in an official training class, sign in with your assigned user.
+1. [] Navigate to +++http://make.powerapps.com+++ in an In-Private or Incognito window. If you are in an official training class, sign in with your assigned user.
 
 1. [] Select the **MC4H Labs Environment** in the upper right.
 
