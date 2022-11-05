@@ -52,7 +52,7 @@ For an entity that isn't shown directly in an application's sitemap, we can add 
 
     ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S4.png)
 
-1. [] Select the view dropdown, select **(Select All)** and select **Save**. Then you should see data in the system.
+1. [] Select the Show existing column dropdown, select **(Select All)** and select **Save**. Then you should see data in the system.
 
     ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S5.png)
     
@@ -72,7 +72,7 @@ For an entity that isn't shown directly in an application's sitemap, we can add 
     
 1. [] Select **Done** in the popup to refresh the table.
 
-1. In the **Type** column, select the dropdown, select **Filter by**, and the the dropdown list, scroll and select **Practitioner Specialty**. Then select **Apply**.
+1. [] In the **Type** column, select the dropdown, select **Filter by**, and the the dropdown list, scroll and select **Practitioner Specialty**. Then select **Apply**.
 
     ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S8.png)
     
@@ -88,11 +88,11 @@ For an entity that isn't shown directly in an application's sitemap, we can add 
 
     ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6P4.png)
 
-1. [] In the **Search** box, scroll to and select **Codeable Concepts** and select **Results** on the ribbon.
+1. [] In the **Search** box, scroll to and select **Codeable Concepts** and select **Continue**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P5.png)
 
-1. [] Select **New Codeable Concept**.
+1. [] Select **Cancel** in the **Edit filters: Codeable Concepts** pane if it opens. Select **New**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P6.png)
 
@@ -103,6 +103,8 @@ For an entity that isn't shown directly in an application's sitemap, we can add 
     1. [] **Code**: +++general+++
 
         ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P7.png)
+        
+    > [!NOTE] If you receive a duplicate record error, clear the error and make a small change to the Name. Then resave.
 
 **Congratulations!** You have created a new Practitioner Specialty that will now be available for selection as an appointment visit in the Patient Portal.
 
@@ -143,7 +145,7 @@ In this task, you will configure the practitioner’s schedule to allow patients
 
     ![Table Description automatically generated](./IMAGES/Lab06/L6P12.png)
 
-1. [] Verify the toolbar at the top shows **Deactivate** as a choice instead of **Activate**. This means the schedule is active. Select the back arrow next to **Show Chart**.
+1. [] Verify the toolbar at the top shows **Deactivate** as a choice instead of **Activate**. This means the schedule is active. Select the back arrow.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P13.png)
 
@@ -179,71 +181,73 @@ In this task, you will configure the environment variables necessary to generate
 
 1. [] In the left navigation, select **Solutions**. Select **Default Solution** to open it.
 
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S2.png)
+
 1. [] You should land on the **Objects** page. Search for +++variable+++ and select **Environment variables**.
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S3.png)
 
 1. [] Scroll down to the bottom to find the **Virtual Visit Secret** and the **Virtual Visit Client ID**. These environment variables are used to authenticate against the Microsoft Graph API to schedule the meeting event.
 
-1. [] Select the **Virtual Visit Client ID** variable, and in the **Edit Virtual Visit Client ID** pane that opens on the right, enter +++dfda9044-cb98-4b0f-8086-cd651dbe4af4+++ in the **Default Value** field. Select **Save**.
+1. [] Select the **Virtual Visit Client ID** variable, and in the **Edit Virtual Visit Client ID** pane that opens on the right, verify the value in the **Default Value** field matches the Application ID you had in previous labs. Select **Cancel**.
 
-1. [] Select the **Virtual Visit Secret** variable, and in the pane that opens, enter +++aJm7Q\~y_bSlwV0z\~pQ0NZ3-zIlmhNKJbPzPfa+++ in the **Default Value** field. Select **Save**.
+1. [] Select the **Virtual Visit Secret** variable, and in the pane that opens, verify the value in the **Default Value** field matches the Client secret value you had in previous labs. Select **Cancel**.
 
 1. [] Select the **Virtual Appointment Scheduler Email** box, enter the email address of your logged in user in the **Default Value** field (*ex: admin@WWLx...*). Select **Save**.
-    
+
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S7.png)
+
 1. [] Open a new tab in your internet browser and go to +++portal.azure.com+++.
 
 1. [] Search for and select **Azure Active Directory**.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S2.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S9.png)
     
 1. [] Select **Add > App registration**.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S6.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S10.png)
     
-1. [] Name the App, **Lamna Healthcare - Microsoft Teams Identity** and select **Register**.
+1. [] Name the App, +++Lamna Healthcare - Microsoft Teams Identity+++ and select **Register**.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S7.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S11.png)
 
 1. [] After the App registration is created, set up the API Permissions and Secrets. Select **API Permissions**. Select **Add a permission**.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S9.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S12.png)
 
 1. [] Select **Microsoft Graph**.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S10.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S13.png)
     
 1. [] Select **Application Permissions** and search for **Calendar**. Expand **Calendars** and select **Calendars.ReadWrite**. Select **Add permissions**.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S11.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S14.png)
     
-1. [] Select **Grant admin consent for the Tenant**.
+1. [] Select **Grant admin consent for the Contoso**.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S13.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S15.png)
 
 1. [] Select **Yes** to see the granted permissions.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S13b.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S16.png)
 
 1. [] Obtain the Secret value by selecting **Certificates and secrets** on the left navigation. Then select **+ New client secret**.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S14.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S17.png)
     
 1. [] Enter +++Lamna Healthcare - Microsoft Teams Identity secret+++ for the **Description** and then select **Add**.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S15.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S18.png)
     
 1. [] Copy the **Secret Value** and save for later.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S16.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S19.png)
     
 1. [] Return to the **Application** main page, copy the **Application ID** and save for later use.
 
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S17.png)
+    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S20.png)
     
-1. [] Return to the **https://make.powerapps.com** tab and enter both the **Secret** and **Application IDs** that you copied into the **Environment variables**.
-
-1. [] Finally, enter the email address of your logged in user into the **Virtual Appointment Scheduler Email** field.
-
-    ![A picture containing shape Description automatically generated](./IMAGES/Lab06/L6E1T5S19.png)
+1. [] Return to the **https://make.powerapps.com** tab and enter both the **Secret** and **Application IDs** that you copied into the **Default Value** fields of the  **Virtual Visit Client ID** and **Virtual Visit Secret** environment variables.
 
 **Congratulations!** You have obtained the Virtual Visit Client ID and Virtual Visit Secret combination to be used to authenticate against the Microsoft Graph API to schedule virtual meeting events. You have also entered the email address of a primary event scheduler.
 
