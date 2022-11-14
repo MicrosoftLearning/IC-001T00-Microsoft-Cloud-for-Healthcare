@@ -218,13 +218,15 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
     @lab.TextBox(AppSecret) 
 
-    > [!ALERT] You <u>**must**</u> record the secret **value** now. This value will be masked and not recoverable after you browse away from this page. You may also want to record this value in a text editor like Notepad to ensure you have a copy. 
+    > [!ALERT] You <u>**must**</u> record the secret **value** now **AND** in a text editor like Notepad. This value will be masked and not recoverable after you browse away from this page. You will need this value for later labs. 
 
-1. [] In the resource menu, select **Overview**. 
+1. [] In the resource menu, select **Overview**.
 
 1. [] To the right of **Application (client) ID**, select the **Copy to clipboard** icon to copy the secret value to the clipboard and then paste the secret value in the following text box: 
 
     @lab.TextBox(clientappid) 
+
+    > [!NOTE] Record the application (client) ID now **AND** in a text editor like Notepad. You will need this ID for later labs.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T3S6.png)
 
