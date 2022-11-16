@@ -150,7 +150,7 @@ We will first open the Portal to show the Customer Self-Service template current
 
 In this task, we will edit the Patient Portal website to align the name with Lamna Healthcare Company since the template uses a generic company name.
 
-1. [] Navigate to **Apps** in <https://make.powerapps.com>.
+1. [] Navigate to **Apps** in +++https://make.powerapps.com+++.
 
 1. [] Select the **Lamna Healthcare Patient Portal** app and select **More Commands (…) > Edit**. If you receive a dialog with options to **Open in Power Pages** or **Open in Power Apps**, select **Open in Power Apps**.
 
@@ -197,7 +197,7 @@ Now that the Patient Portal is ready to go, we need to allow Lamna Healthcare pa
 
 In this task, you will learn how to create an invitation code for patients to sign up and use the Lamna Healthcare Patient Portal. Since Casey Jensen will be accessing the patient portal to fill her medication in this lab, we will create an account for her.
 
-1. [] Open the **Healthcare Administration** app in [Power Apps](http://make.powerapps.com). You may have to select the back arrow in the browser window.
+1. [] Open the **Healthcare Administration** app in Power Apps, +++http://make.powerapps.com+++. You may have to select the back arrow in the browser window.
 
     ![Screenshot of Apps screen with Healthcare Administration App](./IMAGES/Lab03/L3P31.png)
 
