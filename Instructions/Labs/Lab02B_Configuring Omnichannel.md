@@ -157,7 +157,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
 In this task, you will create and configure the omnichannel queues necessary to communicate with the correct bot or agent depending on the situation.
 
-1. [] In +++http://make.powerapps.com+++, open the **Omnichannel admin center** app. If selecting it doesn't open the pane, on the command bar, select **Activate**, wait for the **Success** message, and then open the app.
+1. [] In +++http://make.powerapps.com+++, open the **Omnichannel admin center** app. If selecting it doesn't open the Omnichannel admin center app, on the command bar or on the ellipsis menu for the app, select **Activate**, wait for the **Success** message, and then open the app. Do not edit the app.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P51.png)
 
@@ -323,7 +323,7 @@ Customer self-service portal: A customer self-service portal enables customers t
 
 Portal Management: Application to help you get started with the advanced portal configuration. In this walk-through, you will learn how to configure Chat widget in Portal Management app.
 
-1. [] In +++http://make.powerapps.com+++, open the **Portal Management** app.
+1. [] In +++http://make.powerapps.com+++, open the **Portal Management** app. It may need to be activated.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P77.png)
 
@@ -380,7 +380,7 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
 1. [] Navigate back to the Azure **Health Bot instance** homepage where you set the bot settings. This is the portal management link you copied from the Azure portal.
 
-    > [!NOTE] Note: If you do not have this link, open https://portal.azure.com, select Azure Health Bot under Azure services, and select the health bot your created earlier.
+    > [!NOTE] Note: If you do not have this link, open +++https://portal.azure.com+++, select Azure Health Bot under Azure services, and select the health bot your created earlier.
 
     ![Text Description automatically generated](./IMAGES/Lab02/L2P93.png)
 
@@ -507,7 +507,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 1. [] Select **Adaptive Card** in **Card Type**.
 
-1. [] Refer to the lab resources file **AdaptiveCardForMedicationRefill.txt** and copy the json content and paste it in the json section of your card.
+1. [] Refer to the Resources file **AdaptiveCardForMedicationRefill.txt** and copy the json content and paste it in the json section of your card.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P116.png)
 
