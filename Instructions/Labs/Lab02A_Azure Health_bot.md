@@ -44,7 +44,7 @@ In this exercise, you will do the following:
 
 ### Task 1: Install Azure Health Bot in Azure Subscription
 
-1. [] While logged in to your Microsoft 365 tenant, open a new tab in your internet browser incognito or in-private mode and navigate to Azure Portal at <https://portal.azure.com/>
+1. [] While logged in to your Microsoft 365 tenant, open a new tab in your internet browser incognito or in-private mode and navigate to Azure Portal at +++https://portal.azure.com+++
 
 1. [] Search for **Azure Health Bot** in the top search bar and select it from the search results.
 
@@ -57,7 +57,7 @@ In this exercise, you will do the following:
 1. [] You will be redirected to the Azure Health Bot page. Enter the following information:
     1. [] **Subscription**: Keep as **Azure Pass - Sponsorship**
     1. [] **Resource Group**: Select the existing resource group from dropdown
-    1. [] **Name**: mc4h01-healthbot
+    1. [] **Name**: +++mc4h01-healthbot+++
     1. [] **Region**: East US
     1. [] **Plan**: Free (F0)
 
@@ -83,8 +83,10 @@ In this exercise, you will do the following:
 
     ![Text, letter Description automatically generated](./IMAGES/Lab02/L2P9.png)
 
-1. [] You will be navigated to your new Azure Health Bot instance homepage. You may have to enter your username again.
+1. [] If you are asked to give permission to the bot, please select **Accept**. You will be navigated to your new Azure Health Bot instance homepage. You may have to enter your username again.
 
+    ![Text Description automatically generated](./IMAGES/Lab02/L2E1T1S10a.png)
+    
     ![Text Description automatically generated](./IMAGES/Lab02/L2P10.png)
 
 **Congratulations!** You have successfully created a new Health Bot instance in your Azure tenant.
@@ -222,7 +224,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] In the resource menu, select **Overview**.
 
-1. [] To the right of **Application (client) ID**, select the **Copy to clipboard** icon to copy the secret value to the clipboard and then paste the secret value in the following text box: 
+1. [] To the right of **Application (client) ID**, select the **Copy to clipboard** icon to copy the Application (client) ID to the clipboard and then paste the ID in the following text box: 
 
     @lab.TextBox(clientappid) 
 
@@ -292,7 +294,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] Select the back arrow next to **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status to booked**. 
 
-1. [] Reselect the flow and on the menu select **Turn on**. It may take 10-15 seconds for the flow to turn on and the page to refresh. 
+1. [] Reselect the flow and on the menu select **Turn on**. It may take 10-15 seconds for the flow to turn on and the page to refresh. If you receive a "Turn on Failed" message, try again.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S16.png)
 
