@@ -323,7 +323,7 @@ Customer self-service portal: A customer self-service portal enables customers t
 
 Portal Management: Application to help you get started with the advanced portal configuration. In this walk-through, you will learn how to configure Chat widget in Portal Management app.
 
-1. [] In <http://make.powerapps.com>, open the **Portal Management** app.
+1. [] In +++http://make.powerapps.com+++, open the **Portal Management** app.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P77.png)
 
@@ -448,7 +448,7 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 1. [] For the second action, fill in the following:
     1. [] **Action type**: imBack
     1. [] **Action value**: +++LiveAgent+++
-    1. [] **Action title**: +++“Live Agent”+++
+    1. [] **Action title**: +++"Live Agent"+++
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P104.png)
 
