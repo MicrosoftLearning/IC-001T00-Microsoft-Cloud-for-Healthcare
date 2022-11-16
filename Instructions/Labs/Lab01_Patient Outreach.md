@@ -60,7 +60,7 @@ nearby objects are blurry).
 
 1. [] Navigate to +++https://make.powerapps.com/+++ and log into your Microsoft 365 tenant, if needed.
 
-1. [] Go to **Apps** and open **Marketing**.
+1. [] If needed, change the environment from **Contoso** to **MC4H** on the top bar. Go to **Apps** and open **Marketing**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P3.png)
 
