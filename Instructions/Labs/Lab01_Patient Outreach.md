@@ -307,7 +307,7 @@ In this exercise, you will create a healthcare-focused, virtual educational **Ev
 
 1. [] Select **Save**.
 
-1. [] Since this will be a virtual event, in the **Stream This Event Online** section, toggle “**Do you want to stream this event**” to **Yes**.
+1. [] Since this will be a virtual event, in the **Stream This Event Online** section, toggle “**Do you want to stream this event**” to **Yes**. If you are working on a small screen, you may have to scroll down to see this section.
 
     ![Select Yes to stream the event online](./IMAGES/L1P52.png)
 
@@ -320,6 +320,8 @@ In this exercise, you will create a healthcare-focused, virtual educational **Ev
 1. [] Advance each stage in the business process flow until you reach the **Launch** stage. Observe the fields associated with each stage as you advance through them.
 
     ![Business Process flow with all stages checked up to Launch](./IMAGES/L1P55.png)
+
+    > [!NOTE] If you also want to include Post Event items in your event, you can advance to the **Post Event** stage and select **Finish** at the end.
 
 1. [] Select **Go live** on the command bar. If you don’t see Go live available, select **Save** first.
 
