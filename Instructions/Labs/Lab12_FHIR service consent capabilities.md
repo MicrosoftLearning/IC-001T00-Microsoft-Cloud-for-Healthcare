@@ -304,7 +304,7 @@ To configure Consent Opt-Out, you must create a [FHIR Participant](http://hl7.or
 
 1. [] Review [this information](https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#configuring-participant-authorization-roles-for-users) about configuring FHIR Participant roles for FHIR-Proxy and then return here when finished.
 
-1. [] Go to **Portal > AAD > Enterprise Applications > <fhir_proxy_app_name> > Users and groups**.
+1. [] Go to **Portal > AAD > Enterprise Applications > [fhir_proxy_app_name] > Users and groups**.
 
 1. [] Select **+Add user/group**.
 
