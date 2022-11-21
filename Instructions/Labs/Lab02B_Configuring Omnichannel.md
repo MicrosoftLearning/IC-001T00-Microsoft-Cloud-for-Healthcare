@@ -157,7 +157,7 @@ In this task, you will create a **Bot User** which helps connect **Azure Health 
 
 In this task, you will create and configure the omnichannel queues necessary to communicate with the correct bot or agent depending on the situation.
 
-1. [] In +++http://make.powerapps.com+++, open the **Omnichannel admin center** app. If selecting it doesn't open the Omnichannel admin center app, on the command bar or on the ellipsis menu for the app, select **Activate**, wait for the **Success** message, and then open the app. Do not edit the app.
+1. [] In +++http://make.powerapps.com+++, select the **Omnichannel admin center** app. On the command bar or on the ellipsis menu for the app, select **Activate**, if necessary, and wait for the **Success** message. You may need to refresh your page. Then open the app. Do not edit the app.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P51.png)
 
@@ -426,8 +426,8 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
 1. [] Enter the following details:
     1. [] **Display Text**: +++Would you like to request a medication refill or chat with a live agent?+++
-    1. [] **Variable name**: +++MedicationOrAgent+++
-    1. [] **Data type**: string
+    1. [] **Input variable**: +++MedicationOrAgent+++
+    1. [] **Input type**: string
     1. [] Rename Title to +++**MedOrAgent**+++.
 
 1. [] Select **Add Cards**.
@@ -507,7 +507,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
 1. [] Select **Adaptive Card** in **Card Type**.
 
-1. [] Refer to the Resources file **AdaptiveCardForMedicationRefill.txt** and copy the json content and paste it in the json section of your card.
+1. [] In **C:/Labfiles**, open **AdaptiveCardForMedicationRefill.txt** and copy the json content and paste it in the json section of your card.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P116.png)
 
@@ -529,7 +529,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P120.png)
 
-1. [] Add **Display text** as the following: +++**scenario.formData.myName + " - Thanks for providing the information, we have created a Medication Request for you regarding the following medication: " + scenario.formData.myMedReq**+++
+1. [] Add **Display text** as the following: +++**scenario.formData.myName + " - Thanks for providing the information, we have created a Medication Request for you regarding the following medication: " + scenario.formData.myMedReq**+++. This can be done with the dropdown set as Markdown or Javascript.
 
 1. [] Rename the statement to +++Confirmation+++ and select **Save**.
 
