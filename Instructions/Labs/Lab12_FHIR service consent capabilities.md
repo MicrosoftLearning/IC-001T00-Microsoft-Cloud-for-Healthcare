@@ -65,7 +65,7 @@ Before setting up FHIR-Proxy for Consent Opt-Out filtering, you must first confi
 
 ### Task 2: Configure App Roles
 
-1. [] In the **Authentication** pane, under **Identity provider**, select **Microsoft (/<fhirproxyname/>)**.
+1. [] In the **Authentication** pane, under **Identity provider**, select **Microsoft ([fhirproxynamr])**.
 
 1. [] In the resource menu, under **Manage**, select **Manifest**.
 
@@ -190,7 +190,7 @@ json
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1f.png)
 
-1. [] Select the **user_impersonation** checkbox and then select **Add permissions**.
+1. [] Ensure **Delegated permissions** is selected and select the **user_impersonation** checkbox. Then select **Add permissions**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1g.png)
 
