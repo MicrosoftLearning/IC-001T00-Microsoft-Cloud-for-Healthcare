@@ -44,7 +44,7 @@ In this exercise, you will do the following:
 
 ### Task 1: Install Azure Health Bot in Azure Subscription
 
-1. [] While logged in to your Microsoft 365 tenant, open a new tab in your internet browser incognito or in-private mode and navigate to Azure Portal at +++https://portal.azure.com+++
+1. [] Open a new tab in your internet browser incognito or in-private mode and navigate to Azure Portal at +++https://portal.azure.com+++. Log in to your Microsoft 365 tenant.
 
 1. [] Search for **Azure Health Bot** in the top search bar and select it from the search results.
 
@@ -79,13 +79,13 @@ In this exercise, you will do the following:
 
 1. [] You will be redirected to the **Resource** page for your new Azure Health Bot. Select the **Management portal** link in the Essential section to open your Azure Health Bot instance configuration page.
 
-    > [!ALERT] Note: Please copy this Management portal link and store it to access the Health Bot later.
+    > [!ALERT] Note: Please copy this Management portal link. Store it on the VM and your own computer to access the Health Bot later.
 
     ![Text, letter Description automatically generated](./IMAGES/Lab02/L2P9.png)
 
 1. [] If you are asked to give permission to the bot, please select **Accept**. You will be navigated to your new Azure Health Bot instance homepage. You may have to enter your username again.
 
-    ![Text Description automatically generated](./IMAGES/Lab02/L2E1T1S10a.png)
+    ![Text Description automatically generated](./IMAGES/Lab02/L2aE1T1S10a.png)
     
     ![Text Description automatically generated](./IMAGES/Lab02/L2P10.png)
 
@@ -126,7 +126,7 @@ In this exercise, you will do the following:
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P19.png)
 
-1. [] This will bring out a side window with your **Bot Id** information. Copy and store the **Bot Id** for later to use when creating the Dynamics 365 Application User.
+1. [] This will bring out a side window with your **Bot Id** information. Copy and store the **Bot Id** for later to use when creating the Dynamics 365 Application User. Always store values on both the VM and your own computer.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P20.png)
 
@@ -220,7 +220,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
     @lab.TextBox(AppSecret) 
 
-    > [!ALERT] You <u>**must**</u> record the secret **value** now **AND** in a text editor like Notepad. This value will be masked and not recoverable after you browse away from this page. You will need this value for later labs. 
+    > [!ALERT] You <u>**must**</u> record the secret **value** now **AND** in a text editor like Notepad and on your own device. This value will be masked and not recoverable after you browse away from this page. You will need this value for later labs. 
 
 1. [] In the resource menu, select **Overview**.
 
@@ -228,13 +228,13 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
     @lab.TextBox(clientappid) 
 
-    > [!NOTE] Record the application (client) ID now **AND** in a text editor like Notepad. You will need this ID for later labs.
+    > [!NOTE] Record the application (client) ID now **AND** in a text editor like Notepad on your own computer. You will need this ID for later labs.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T3S6.png)
 
 ### Task 4. Configure environment variables 
 
-1. [] In Microsoft Edge, go to +++https://make.powerapps.com+++ 
+1. [] In Microsoft Edge, go to +++https://make.powerapps.com+++. Ensure you are in the MC4H Labs environment.
 
 1. [] In the left navigation, select **Solutions**. Select **Default Solution** to open it.
 
@@ -256,7 +256,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 ### Task 5. Activate Flows and connection references 
 
-1. [] On the Power Apps page, in the left navigation, select **Solutions**. 
+1. [] On the Power Apps page, in the left navigation, select the left arrow, **Back to Solutions**, and then select **Solutions**. 
 
 1. [] On the menu, select **+ New solution**. 
 
@@ -294,7 +294,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] Select the back arrow next to **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status to booked**. 
 
-1. [] Reselect the flow and on the menu select **Turn on**. It may take 10-15 seconds for the flow to turn on and the page to refresh. If you receive a "Turn on Failed" message, try again.
+1. [] Reselect the flow and on the menu select **Turn on**. It may take 10-15 seconds for the flow to turn on and the page to refresh. If you receive a "Turn on Failed" message, try again. You may have to repeat this steps several times for the flow to turn on.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S16.png)
 
@@ -304,7 +304,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 In this task, you will be using the Azure Application ID you created in Task 1 in our Azure tenant called “**MCH Application Id**”. Registering this Id establishes a trusted relationship between your Dynamics 365 app and the Microsoft identity platform. Using this Id, you will later create a Dynamics 365 Application User to bridge the authentication between Azure Health Bot and Power Apps.
 
-1. [] Navigate back to the Azure Portal and search for +++**App Registrations**+++ in the **Search** box.
+1. [] Navigate back to the Azure Portal and search for +++**App Registrations**+++ in the **Search** box. If you have closed this tab or window, use +++https://portal.azure.com+++ in a new tab or window.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P22.png)
 
