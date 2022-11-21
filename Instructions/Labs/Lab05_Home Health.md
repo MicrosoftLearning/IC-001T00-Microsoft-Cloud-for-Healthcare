@@ -134,7 +134,7 @@ Here is an example of a configured **Schedule Board**:
 
 ![Screenshot of a configured Schedule Board in Home Health application](./IMAGES/Lab05/L5P18.png)
 
-1. [] Navigate to <https://make.powerapps.com/>.
+1. [] Navigate to +++https://make.powerapps.com/+++.
 
 1. [] Open the **Resource Scheduling** app.
 
