@@ -201,7 +201,7 @@ In this task, you will learn how to create an invitation code for patients to si
 
     ![Screenshot of Apps screen with Healthcare Administration App](./IMAGES/Lab03/L3P31.png)
 
-1. [] In the **Administration** section of the sitemap, select **People,** if not already selected. You will see the **Active Patients** grid view. Open the **Casey Jensen** patient record by double-clicking it so we can obtain an invitation code for her to use.
+1. [] In the **Administration** section of the sitemap, select **Patients**, if not already selected. You will see the **Active Patients** grid view. Open the **Casey Jensen** patient record by double-clicking it so we can obtain an invitation code for her to use.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P32.png)
 
