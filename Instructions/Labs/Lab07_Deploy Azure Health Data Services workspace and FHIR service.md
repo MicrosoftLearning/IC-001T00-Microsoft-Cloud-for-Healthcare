@@ -31,11 +31,11 @@ In the first part of this lab, you will use a template to deploy resources with 
 -   [FHIR Loader (for Lab-09)](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
 -   [FHIR-Proxy (for Lab-13)](https://github.com/microsoft/fhir-proxy)
 
-1. [] To begin, select the following link, [deployment form](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fazure-health-data-services-workshop%2Fmain%2Fresources%2Fdeploy%2Fdeployfhirtrain.json "deployment form"), to open the form in a new browser tab.
+1. [] To begin, open a new browser tab and navigate to the deployment form at +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fazure-health-data-services-workshop%2Fmain%2Fresources%2Fdeploy%2Fdeployfhirtrain.json+++.
 
 1. [] Select or fill in the parameter values (see image below).
 
-    > [!ALERT] Important: In order to successfully deploy resources with this ARM template, the user must have [Owner](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner) rights for the [Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) where the components are deployed. Before running the ARM template, it is recommended to create a new resource group first and check that you have Owner permissions. Once you confirm that you have Owner rights, then select that resource group in the dropdown menu when you fill out the deployment form.
+    > [!ALERT] Important: In order to successfully deploy resources with this ARM template, the user must have **Owner** rights (see +++https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner+++)  for the **Resource Group** (see +++https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal+++) where the components are deployed. Before running the ARM template, it is recommended to create a new resource group first and check that you have Owner permissions. Once you confirm that you have Owner rights, then select that resource group in the dropdown menu when you fill out the deployment form.
 
     1. [] Accept the default Subscription and set the resource group to the training resource as shown. (The resource may be named differently).
 
@@ -51,7 +51,7 @@ In the first part of this lab, you will use a template to deploy resources with 
 
 > [!NOTE] Note: This deployment typically takes 20 minutes. During the deployment, you can read the instructions linked in Step 2 below. When the deployment finishes, go ahead and proceed with those instructions.
 
-To learn more about the resources deployed with this ARM template, view [here.](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components)
+To learn more about the resources deployed with this ARM template, view the following resource in a new tab: +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components+++
 
 ===
 
@@ -62,13 +62,13 @@ In the next part of this lab, you will
 -   Visit another page and follow the instructions on setting up Postman.
 -   Make API calls to test FHIR service using Postman.
 
-1. [] To begin, **CTRL+click** (Windows or Linux) or **CMD+click** (Mac) on the link below to open a Postman tutorial in a new browser tab.
-
-    [Postman Setup Tutorial](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/Postman_FHIR_service_README.md)
+1. [] To begin, open the Postman setup tutorial in a new browser tab using the URL: +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/Postman_FHIR_service_README.md+++
 
 1. [] Follow the instructions and return here when finished.
 
->[!ALERT]Important: Store the **clientSecret Value**, not the **clientSecret ID** when you create your Postman app registration. That is the value you will need later in Postman when you fill in the clientSecret. You will not be able to get this value again. If you save the wrong item, you will have to create another secret.
+>[!ALERT]Important: Store the **clientSecret Value** on your computer, not the **clientSecret ID** when you create your Postman app registration. That is the value you will need later in Postman when you fill in the clientSecret. You will not be able to get this value again. If you save the wrong item, you will have to create another secret.
+
+>[!NOTE]A managed identity was automatically enabled for your FHIR service. That managed identity is what needs to be assigned the Storage Blob Data Contributor role in one of the ADLS Gen2 storage accounts in your resource group in future labs. The name of this storage account ends with "expsa".
 
 What does success look like for Lab 7?
 
