@@ -4,7 +4,7 @@
 
 In this lab, you will learn how to use the FHIR service's custom \$convert-data operation to convert HL7v2 messages and C-CDA documents into FHIR.
 
-In today's health industry, the FHIR R4 format has become the standard medium for storage and exchange of health data. As FHIR interoperability spreads throughout the industry, health IT operations are deploying conversion pipelines for ingesting and transforming legacy data formats into FHIR. Two of the most common legacy formats in use are [HL7v2](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185) and [C-CDA](https://www.healthit.gov/topic/standards-technology/consolidated-cda-overview). In this lab, we will explore how to convert data from these formats into FHIR using the Microsoft health data platform.
+In today's health industry, the FHIR R4 format has become the standard medium for storage and exchange of health data. As FHIR interoperability spreads throughout the industry, health IT operations are deploying conversion pipelines for ingesting and transforming legacy data formats into FHIR. Two of the most common legacy formats in use are **HL7v2** (see +++https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185+++) and **C-CDA** (see +++https://www.healthit.gov/topic/standards-technology/consolidated-cda-overview+++). In this lab, we will explore how to convert data from these formats into FHIR using the Microsoft health data platform.
 
 ## Learning objectives
 
@@ -17,7 +17,7 @@ In this lab, you will:
 
 To convert HL7v2 data into FHIR, first you must prepare a \$convert-data API request.
 
-1. [] Go to **Postman** and create a new API request by selecting **Add request** in the **FHIR CALLS** collection imported in Lab-01.
+1. [] Go to **Postman** and create a new API request by selecting **Add request** in the **FHIR CALLS** collection imported in Lab 7.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab08/L8P1.png)
 
@@ -42,9 +42,9 @@ To convert HL7v2 data into FHIR, first you must prepare a \$convert-data API req
 
 ## Exercise 2: Set up Request Parameters
 
-1. [] Review the FHIR service [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data) for an overview of the **\$convert-data** operation.
+1. [] Review the FHIR service documentation at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data+++ for an overview of the **\$convert-data** operation.
 
-1. [] Select [**ADT_A01.hl7**](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-02%20-%20Convert%20HL7v2%20and%20C-CDA%20to%20FHIR/samples/ADT_A01.hl7) to view a sample HL7v2 message (you may want to click on the **Raw** button on the right for ease of viewing).
+1. [] To view a sample HL7v2 message, open a new tab and go to **ADT_A01.hl7** at +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-02%20-%20Convert%20HL7v2%20and%20C-CDA%20to%20FHIR/samples/ADT_A01.hl7+++  (You may want to select the **Raw** button on the right for ease of viewing.)
 
 1. [] In the **Body** tab in Postman, select the **raw** button and choose **JSON** from the dropdown menu on the right.
 
@@ -54,9 +54,9 @@ To convert HL7v2 data into FHIR, first you must prepare a \$convert-data API req
 
     ![](./IMAGES/Lab08/L8P4b.png)
 
-1. [] Copy and paste the HL7v2 message into the **inputData valueString**. You will need to make some changes in the HL7v2 payload so that the formatting follows the sample request given in the \$convert-data [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data#sample-request).
+1. [] Copy and paste the HL7v2 message into the **inputData valueString**. You will need to make some changes in the HL7v2 payload so that the formatting follows the sample request given in the \$convert-data documentation at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data#sample-request+++.
 
-    > [!HINT] Hint: In the sample request in the documentation (link above), look at how the \\ escape character is used to escape the \\& in the HL7v2 payload. Also pay attention to the way \\n newline characters are used. You will need to add at least one \\ escape character and several \\n newline characters in the HL7v2 message in the Convert Data - HL7 request. Use this [online tool](https://www.freeformatter.com/json-escape.html) for automatically escaping JSON if you would prefer not to do this manually.
+    > [!HINT] Hint: In the sample request in the documentation (URL above), look at how the \\ escape character is used to escape the \\& in the HL7v2 payload. Also pay attention to the way \\n newline characters are used. You will need to add at least one \\ escape character and several \\n newline characters in the HL7v2 message in the Convert Data - HL7 request. Use the online tool at +++https://www.freeformatter.com/json-escape.html+++ for automatically escaping JSON if you would prefer not to do this manually.
 
     *Optional – prepare the JSON request parameters and HL7v2 payload in VS Code (with the HL7 extension installed) first before pasting into the body of the Postman request.
 
@@ -136,11 +136,11 @@ Now you will make another API request similar to the one above, except this time
 
 ## Exercise 5: Set up Request Parameters
 
-1. [] Select [**CCDA_Ford_Elaine.xml**](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-02%20-%20Convert%20HL7v2%20and%20C-CDA%20to%20FHIR/samples/CCDA_Ford_Elaine.xml) to view a sample C-CDA data file (select on Raw on the right side to view the entire data string in your browser window).
+1. [] To view a sample C-CDA data file, open a new tab and navigate to **CCDA_Ford_Elaine.xml** at +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-02%20-%20Convert%20HL7v2%20and%20C-CDA%20to%20FHIR/samples/CCDA_Ford_Elaine.xml+++  (Select Raw on the right side to view the entire data string in your browser window.)
 
-1. []Copy and paste the C-CDA data into VS Code or a text editor of your choice.
+1. [] Copy and paste the C-CDA data into VS Code or a text editor of your choice.
 
-1. [] Refer back to the FHIR service \$convert-data [documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data) on how to arrange the parameters in the JSON body of the request. Be aware that the parameters now need to work for C-CDA data (see the table below).
+1. [] Refer back to the FHIR service \$convert-data documentation at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data+++ on how to arrange the parameters in the JSON body of the request. Be aware that the parameters now need to work for C-CDA data (see the table below).
 
     | "name"                        | "valueString"                           |
     |-------------------------------|-----------------------------------------|
@@ -150,7 +150,7 @@ Now you will make another API request similar to the one above, except this time
 
 1. [] You will need to format the C-CDA data payload so that it sits correctly in the JSON request body.
 
-    > [!HINT] Hint: The JSON spec requires all keys and values to be surrounded by double quotes. Any double quotes within the JSON data payload must be \\ escaped, however. Look at the " quotation marks in the C-CDA data string. These " quotes all need to be \\ escaped in order for the \$convert-data request to work. This [online tool](https://www.freeformatter.com/json-escape.html) is helpful for adding \\ escape characters to JSON where needed. Alternatively, you could use a text editor and do a "find and replace". Whatever method works best for you is fine.
+    > [!HINT] Hint: The JSON spec requires all keys and values to be surrounded by double quotes. Any double quotes within the JSON data payload must be \\ escaped, however. Look at the " quotation marks in the C-CDA data string. These " quotes all need to be \\ escaped in order for the \$convert-data request to work. The online tool at +++https://www.freeformatter.com/json-escape.html+++ is helpful for adding \\ escape characters to JSON where needed. Alternatively, you could use a text editor and do a "find and replace". Whatever method works best for you is fine.
 
 1. [] When ready, copy and paste the JSON-formatted request parameters with the C-CDA payload into the body of the **Convert Data - CCDA** request in Postman.
 
@@ -204,6 +204,6 @@ After making the \$convert-data request, you should receive a FHIR Bundle respon
 
 > [!NOTE] Note: If you get an error, check that the "" characters are properly escaped in the C-CDA payload.
 
-What does success look like for Lab-08?
+What does success look like for Lab 8?
 -   A FHIR "resourceType": "Bundle" response after calling \$convert-data with an HL7v2 payload
 -   A FHIR "resourceType": "Bundle" response after calling \$convert-data with a C-CDA payload
