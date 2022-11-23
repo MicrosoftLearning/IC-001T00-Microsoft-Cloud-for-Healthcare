@@ -31,7 +31,7 @@ In this lab, you will:
 
 ## Exercise 1: Download Sample Data
 
-1. [] Start by downloading these two .zip files to your desktop (Open the following URLs in new tabs. You will see a download button on the right).
+1. [] Start by downloading these two .zip files to the VM desktop (Open the following URLs in new tabs. You will see a download button on the right).
 
 - **good_bundles.zip** at +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-03%20-%20Ingest%20to%20FHIR/samples/good_bundles.zip+++
 - **bad_bundles.zip** at +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-03%20-%20Ingest%20to%20FHIR/samples/bad_bundles.zip+++
@@ -42,7 +42,7 @@ In this lab, you will:
 
 Visit the FHIR Loader (OSS) repository at +++https://github.com/microsoft/fhir-loader+++ and read the documentation for more info on the operating principles of the application.
 
-1. [] In Azure Portal, navigate to the Blob Storage account that was created for FHIR Loader in Lab-07. Go to **Portal -> Resource Groups -> [name of resource group] -> Storage account** (the name of the Storage account will end in **"impsa"**).
+1. [] In Azure Portal, navigate to the Blob Storage account that was created for FHIR Loader in Lab 7. Go to **Portal -> Resource Groups -> [name of resource group] -> Storage account** (the name of the Storage account will end in **"impsa"**).
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab09/L9P2.png)
 
