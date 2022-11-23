@@ -2,20 +2,20 @@
 
 ## Overview
 
-In this lab, you will get experience working with medical IoT data using the [MedTech service](https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/iot-connector-overview) in Azure Health Data Services.
+In this lab, you will get experience working with medical IoT data using the MedTech service (see +++https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/iot-connector-overview+++) in Azure Health Data Services.
 
 With the rise of wearables and other connected sensor technologies, IoT devices have exploded in the healthcare marketplace. Currently, there is no single data standard for medical IoT device I/O, and this has resulted in many proprietary data models in use across the medical IoT landscape. To provide a centralized platform for medical IoT data connectivity, Microsoft has taken a vendor-agnostic approach, offering the MedTech service toolkit for converting output from any medical IoT device into FHIR. In this lab, we will be using the MedTech service in Azure Health Data Services to map medical IoT data for ingestion into the FHIR service.
 
 In this lab, you will be deploying MedTech service within your Azure Health Data Services workspace, and you will be configuring the service to receive and transform medical IoT data for persistence in FHIR. The steps in this lab are outlined below.
 
-**Exercise 1** - Deploy and configure [Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-about).  
+**Exercise 1** - Deploy and configure Azure Event Hubs (see +++https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-about+++).  
 **Exercise 2** - Deploy a MedTech service instance in your Azure Health Data Services workspace.  
 **Exercise 3** - Import data mappings for converting medical IoT device data into FHIR.  
 **Exercise 4** - Configure Azure Roles for MedTech Service to securely connect to the FHIR service.  
 **Exercise 5** - Install tools for creating custom IoT data mappings for storing IoT data in FHIR.  
 **Exercise 6** - Import custom IoT data maps into MedTech service.
 
-Have a look at [this document](https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/get-started-with-iot) for an overview of the MedTech service deployment and configuration process (you already deployed an Azure Health Data Services workspace and FHIR service in Lab 7).
+Have a look at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/get-started-with-iot+++ for an overview of the MedTech service deployment and configuration process (you already deployed an Azure Health Data Services workspace and FHIR service in Lab 7).
 
 ## Learning objectives
 
@@ -31,9 +31,31 @@ In this lab, you will:
 
 In the first part of this lab, you will use the Azure Portal to deploy an Event Hubs namespace in preparation to create your own Event Hub.
 
-1. [] To begin, navigate to the **Create an Event Hubs namespace** article at +++https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create#create-an-event-hubs-namespace+++ and follow the instructions for creating an Event Hubs namespace.
+1. [] Go to **Portal -> Create a resource** and then select **See more in All services**.
 
-1. [] Continue to the next section, **Create an Event Hub** to create your own Event Hub.
+1. [] Scroll down to **Analytics** (or select **Analytics** on the left).
+
+1. [] Select **Event Hubs**.
+
+    image placeholder
+
+1. [] Select **+Create**.
+
+    image placeholder
+    
+1. [] Enter a unique **Namespace name**. Confirm that the **Location** and **Pricing tier** are correct. Then select **Next: Advanced**.
+
+    image placeholder
+
+1. [] Confirm that your **Advanced** settings are correct and select **Next: Networking**.
+
+1. [] Confirm that your **Networking** settings are correct and select **Next: Tags**.
+
+1. [] Add any tags as needed and select **Next: Review + create**.
+
+1. [] Select **Create**.
+
+1. [] Now open the Create an Event Hub instructions at +++https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create#create-an-event-hub+++ in a new browser tab and complete the steps for setting up your new Event Hub. Return here when finished.
 
 ===
 
@@ -43,19 +65,19 @@ Now you will use Azure Portal to deploy and configure MedTech service within you
 
 1. [] Open +++https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure#deploy-the-medtech-service-manually+++ in a new browser tab to open Deploy MedTech service in the Azure Portal article.
 
-1. [] When you get to the part of the instructions to **Configure MedTech service to ingest data**, for this training it is recommended to use the default **Consumer group** that was assigned when you deployed your Event Hub in the previous exercise (for more information on consumer groups, select the following link, [**Consumer groups**](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-features#consumer-groups "Consumer groups") .
+1. [] When you get to the part of the instructions to **Configure MedTech service to ingest data**, for this training it is recommended to use the default **Consumer group** that was assigned when you deployed your Event Hub in the previous exercise. For more information on consumer groups, see Consumer groups at +++https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-features#consumer-groups+++.
 
 ===
 
 ## Exercise 3: Import data mappings for converting medical IoT device data into FHIR
 
-In the **Configure Device mapping properties** section, you will be going to [another GitHub repository](https://github.com/microsoft/iomt-fhir/blob/main/docs/Configuration.md#device-content-mapping) and copying two sample data mapping templates to paste directly into MedTech service in Azure portal. You will paste one of the templates in the MedTech service **Device Mapping** tab and another in the MedTech service **Destination** tab. 
+In the **Configure Device mapping properties** section, you will be going to another GitHub repository located at +++https://github.com/microsoft/iomt-fhir/blob/main/docs/Configuration.md#device-content-mapping+++ and copying two sample data mapping templates to paste directly into MedTech service in Azure portal. You will paste one of the templates in the MedTech service **Device Mapping** tab and another in the MedTech service **Destination** tab. 
 
-1. [] Follow the instructions in the [Deploy the MedTech service using the Azure portal](https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure#configure-device-mapping-properties) article under the section, **Configure the device mapping properties**.
+1. [] Follow the instructions in the **Deploy the MedTech service using the Azure portal** article at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-iot-connector-in-azure#configure-device-mapping-properties+++ under the section, **Configure the device mapping properties**.
 
-1. [] Next, read the  **Device Content Mapping** section in the GitHub repository [here](https://github.com/microsoft/iomt-fhir/blob/main/docs/Configuration.md#device-content-mapping).
+1. [] Next, read the  **Device Content Mapping** section in the GitHub repository located at +++https://github.com/microsoft/iomt-fhir/blob/main/docs/Configuration.md#device-content-mapping+++.
 
-1. [] Then go [here](https://github.com/microsoft/azure-health-data-services-workshop/tree/main/Challenge-09%20-%20MedTech%20service/SampleData/Answers) to copy the two sample templates.
+1. [] Then go to the GitHub repository at +++https://github.com/microsoft/azure-health-data-services-workshop/tree/main/Challenge-09%20-%20MedTech%20service/SampleData/Answers+++ to copy the two sample templates.
 
 > [!NOTE] **Note:** The instructions in the GitHub repository linked above are written for the IoMT FHIR Connector for Azure (OSS), but the same principles apply to MedTech service.
 
@@ -75,7 +97,7 @@ Now you will configure permissions so that MedTech service can securely connect 
 
 ## Exercise 5: BONUS
 
-Use this [IoT mapper tool](https://github.com/microsoft/iomt-fhir/tree/main/tools/data-mapper) to create maps for the sample messages in the SampleData folder for this lab (accessible at the top of the page). You will find that the SampleData folder has two files. Both files are the same data, but the Three-Sample-Message-Types-with-labels.json has messages with data descriptions and/or units of measure. There are three sample messages in each file - VITALS, BP, and WEIGHT. The VITALS message is an array of data. BP and WEIGHT are single-entry messages.
+Use the IoT mapper tool located at +++https://github.com/microsoft/iomt-fhir/tree/main/tools/data-mapper+++ to create maps for the sample messages in the SampleData folder for this lab (accessible at the top of the page). You will find that the SampleData folder has two files. Both files are the same data, but the Three-Sample-Message-Types-with-labels.json has messages with data descriptions and/or units of measure. There are three sample messages in each file - VITALS, BP, and WEIGHT. The VITALS message is an array of data. BP and WEIGHT are single-entry messages.
 
 When you begin the FHIR mapping, you can make up values for the 'Code'. For example - Code: A1235, System: https://loinc.org, Text: Heart Rate.
 
