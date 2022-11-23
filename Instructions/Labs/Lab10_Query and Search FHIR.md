@@ -161,9 +161,7 @@ To begin, you are going to populate your FHIR service with additional sample Res
 
 Now you can experiment with a variety of search parameters for querying data in FHIR.
 
-On top of the common search parameters, it's possible to add modifiers right after a parameter to sharpen search results. Some example modifiers are: not, :exact, and :contains. Take a quick look at the [modifiers section](https://www.hl7.org/fhir/search.html#modifiers) of the official FHIR documentation to get a sense of how these are used.
-
-### Task 1
+On top of the common search parameters, it's possible to add modifiers right after a parameter to sharpen search results. Some example modifiers are: not, :exact, and :contains. Take a quick look at the **modifiers section** at +++https://www.hl7.org/fhir/search.html#modifiers+++ of the official FHIR documentation to get a sense of how these are used.
 
 1. [] Go to **Postman**, access the **FHIR Search** collection, and search for **Patient Resources** using **\_id**, **name**, and other parameters following the examples for Exercise 2. Try adding modifiers to fine-tune the results.
 
@@ -212,7 +210,7 @@ For composite searches, FHIR service in Azure Health Data Services supports the 
 
 1. [] Then modify the **http://loinc.org\|8462-4 (diastolic blood pressure)** value and see if you can get different search results.
 
-To learn more about composite searches in FHIR, please visit [here](https://build.fhir.org/search.html#combining).
+To learn more about composite searches in FHIR, please visit +++https://build.fhir.org/search.html#combining+++.
 
 ===
 
@@ -225,11 +223,9 @@ FHIR specifies a set of parameters for organizing and aggregating search results
 | Parameter  | Purpose                                                                                                                                                                                                                                                                            |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_elements | For limiting the information returned to a list of Elements. For example, \_elements=identifier,birthdate,language for the Patient Resource.                                                                                                                                       |
-| \_summary  | For returning pre-selected Elements within a Resource type. For example, searching with the \_summary=true parameter causes the server to only return Elements marked with ElementDefinition.isSummary in their [base definition](http://www.hl7.org/fhir/elementdefinition.html). |
+| \_summary  | For returning pre-selected Elements within a Resource type. For example, searching with the \_summary=true parameter causes the server to only return Elements marked with ElementDefinition.isSummary in their base definition (see +++http://www.hl7.org/fhir/elementdefinition.html+++). |
 | \_total    | For returning the number of Resource instances that match the given search criteria. For example, \_total=accurate returns the exact number of Resource instances found.                                                                                                           |
 | \_sort     | For setting the sorting hierarchy of results according to a comma-separated list of search parameters. For example, \_sort=status,date,category.                                                                                                                                   |
-
-### Task 1
 
 1. [] Using the **FHIR Search** collection in **Postman**, perform several Patient queries with the following search result parameters: **\_summary=true**, **\_summary=count**, **\_total=accurate**, **\_sort=gender**.
 
@@ -239,7 +235,7 @@ FHIR specifies a set of parameters for organizing and aggregating search results
 
 **Overview**
 
-Resources in FHIR are equipped with reference Elements for capturing relationships between the people, activities, and items associated in real-world healthcare scenarios. To create a reference between Resources in FHIR, a reference Element in one Resource must be populated with another Resource's [Logical ID](https://www.hl7.org/fhir/resource.html#id), [Business Identifier](https://www.hl7.org/fhir/resource.html#identifiers), or [Canonical URL](https://www.hl7.org/fhir/resource.html#canonical).
+Resources in FHIR are equipped with reference Elements for capturing relationships between the people, activities, and items associated in real-world healthcare scenarios. To create a reference between Resources in FHIR, a reference Element in one Resource must be populated with another Resource's **Logical ID** (+++https://www.hl7.org/fhir/resource.html#id+++), **Business Identifier** (+++https://www.hl7.org/fhir/resource.html#identifiers+++), or **Canonical URL** (+++https://www.hl7.org/fhir/resource.html#canonical+++).
 
 Below is an excerpt from an Observation Resource instance with a reference to a Patient Resource instance. Notice how Patient/WDT000000002 is referenced as the subject of the observation.
 
@@ -269,7 +265,7 @@ For example, the following request queries a FHIR server for all Observation ins
 
 > GET {{fhirurl}}/Observation?subject=Patient/WDT000000002
 
-To simplify using multiple search parameters in a reference-based query, FHIR also specifies syntax for chaining parameters with . to refine results. Below is a chained search for all Observation instances that reference a subject (i.e., Patient) with the name of Nathan Adunosh (note the : after subject, which makes Patient into a [type modifier](https://www.hl7.org/fhir/codesystem-search-modifier-code.html#search-modifier-code-type)).
+To simplify using multiple search parameters in a reference-based query, FHIR also specifies syntax for chaining parameters with . to refine results. Below is a chained search for all Observation instances that reference a subject (i.e., Patient) with the name of Nathan Adunosh (note the : after subject, which makes Patient into a type modifier (see +++https://www.hl7.org/fhir/codesystem-search-modifier-code.html#search-modifier-code-type+++)).
 
 > GET {{fhirurl}}/Observation?subject:Patient.name=Nathan Adunosh
 
@@ -279,11 +275,9 @@ Despite this, the FHIR specification does make room for reverse-chained searchin
 
 > GET {{fhirurl}}/Patient?_has:Observation:patient:code=55284-4
 
-### Task 1
-
 1. [] Using the **FHIR Search** collection in **Postman**, conduct several chained searches. 
 
-1. [] Then try a reverse-chained search using the **\_has** parameter. For more examples of chained and reverse-chained searches, refer to the [FHIR search examples](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples) page.
+1. [] Then try a reverse-chained search using the **\_has** parameter. For more examples of chained and reverse-chained searches, refer to the **FHIR search examples** page at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples+++.
 
 ===
 
@@ -305,11 +299,9 @@ Likewise but in the opposite direction, you can use \_revinclude to retrieve Res
 
     > [!NOTE] Note: Because of the potential for "open-ended" searches with \_include and \_revinclude, the number of results returned from these searches is capped to an arbitrary limit on the FHIR service in Azure Health Data Services.
 
-### Task 1
-
 1. [] Using the **FHIR Search** collection in **Postman**, search for **PractitionerRole Resources** and include the associated **Practitioner Resources** in the results.
 
-1. [] Do a search using **\_revinclude** to discover all **PractitionerRole Resources** for an Organization. For more examples of searches with the \_include and \_revinclude parameters, please see the [FHIR search examples](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples) page.
+1. [] Do a search using **\_revinclude** to discover all **PractitionerRole Resources** for an Organization. For more examples of searches with the \_include and \_revinclude parameters, please see the **FHIR search examples** page at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples+++.
 
 ===
 
@@ -321,7 +313,7 @@ At some point, you will find a use case where you need to retrieve information t
 
 1. [] To create a new search parameter, you need to POST a SearchParameter Resource to the FHIR service database. Review the **Create New Search Parameter** call in the **FHIR Search** Postman collection to see how this is done and when ready, select **Send** to run the call and create the new search parameter.
 
-1. [] Select the following link to review the documentation on how to perform a search using the custom search parameter that you just created: [Defining custom search parameters](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-do-custom-search#test-search-parameters). Return here when you have finished the review.
+1. [] In a new tab navigate to the following URL to review the documentation on how to perform a search using the custom search parameter that you just created: Defining custom search parameters at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-do-custom-search#test-search-parameters+++. Return here when you have finished the review.
 
 1. [] Then, review the **Reindex** call in the **FHIR Search** Postman collection and select **Send**.
 
