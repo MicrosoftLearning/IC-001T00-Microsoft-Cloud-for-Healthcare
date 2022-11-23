@@ -130,7 +130,7 @@ From here, you will be using the DICOM service for the features outlined in the 
 
 1. [] In Postman, make sure you have selected your **dicom-service** environment as the active environment.
 
-1. [] Select the **FHIR calls** collection. Duplicate the **POST AuthorizeGetToken** request and move the duplicated call to the Conformance-as-Postman collection.
+1. [] Select the **FHIR calls** collection. Duplicate the **POST AuthorizeGetToken** request and move the duplicated call to the **Conformance-as-Postman** collection.
 
 1. [] Select this **POST AuthorizeGetToken** request and select **Send**. You should receive a 200 OK message in response. Your access token is now saved to the bearerToken environment variable in your dicom-service Postman environment. Access tokens expire after 60 minutes. A refresh can be obtained by sending the POST AuthorizeGetToken request again.
 
