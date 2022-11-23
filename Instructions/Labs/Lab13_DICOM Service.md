@@ -4,7 +4,7 @@
 
 In this lab, you will get experience working with medical images using the DICOM service in Azure Health Data Services.
 
-The [DICOMweb™](https://www.dicomstandard.org/using/dicomweb) standard is the RESTful API protocol used throughout the health industry for medical image storage, querying, and exchange. The DICOM service within [Azure Health Data Services](https://docs.microsoft.com/azure/healthcare-apis/healthcare-apis-overview) is a DICOMweb™-compliant server that ingests and persists DICOM objects at multiple thousands of images per second. DICOM service in Azure Health Data Services facilitates transmission of imaging data with any DICOMweb™ enabled system or application through standard transactions like [Store (STOW-RS)](https://docs.microsoft.com/azure/healthcare-apis/dicom/dicom-services-conformance-statement#store-stow-rs), [Search (QIDO-RS)](https://docs.microsoft.com/azure/healthcare-apis/dicom/dicom-services-conformance-statement#search-qido-rs), and [Retrieve (WADO-RS)](https://docs.microsoft.com/azure/healthcare-apis/dicom/dicom-services-conformance-statement#retrieve-wado-rs). DICOM service is part of Azure Health Data Services, which establishes [HIPAA](https://docs.microsoft.com/azure/compliance/offerings/offering-hipaa-us) and [HITRUST](https://docs.microsoft.com/azure/compliance/offerings/offering-hitrust) compliance for all [PHI (protected health information)](https://www.hhs.gov/answers/hipaa/what-is-phi/index.html) stored within an Azure Health Data Services workspace. This means you can upload PHI data to the DICOM service and the data will remain safely within the Azure Health Data Services workspace compliance boundary. In this challenge, we will be looking at how to deploy, configure, and use DICOM service for its foundational features.
+The DICOMweb™ standard at +++https://www.dicomstandard.org/using/dicomweb+++ is the RESTful API protocol used throughout the health industry for medical image storage, querying, and exchange. The DICOM service within Azure Health Data Services (see +++https://docs.microsoft.com/azure/healthcare-apis/healthcare-apis-overview+++) is a DICOMweb™-compliant server that ingests and persists DICOM objects at multiple thousands of images per second. DICOM service in Azure Health Data Services facilitates transmission of imaging data with any DICOMweb™ enabled system or application through standard transactions like **Store (STOW-RS)** (see +++https://docs.microsoft.com/azure/healthcare-apis/dicom/dicom-services-conformance-statement#store-stow-rs+++), **Search (QIDO-RS)** (see +++https://docs.microsoft.com/azure/healthcare-apis/dicom/dicom-services-conformance-statement#search-qido-rs+++), and **Retrieve (WADO-RS)** (see +++https://docs.microsoft.com/azure/healthcare-apis/dicom/dicom-services-conformance-statement#retrieve-wado-rs+++). DICOM service is part of Azure Health Data Services, which establishes HIPAA (+++https://docs.microsoft.com/azure/compliance/offerings/offering-hipaa-us+++) and HITRUST (+++https://docs.microsoft.com/azure/compliance/offerings/offering-hitrust+++) compliance for all PHI (protected health information) (see +++https://www.hhs.gov/answers/hipaa/what-is-phi/index.html+++) stored within an Azure Health Data Services workspace. This means you can upload PHI data to the DICOM service and the data will remain safely within the Azure Health Data Services workspace compliance boundary. In this challenge, we will be looking at how to deploy, configure, and use DICOM service for its foundational features.
 
 ## Learning objectives
 
@@ -29,7 +29,7 @@ In this lab, you will:
 
 ## Exercise 1: Find your Azure Health Data Services workspace using Azure Portal
 
-In Lab-07, you deployed an Azure Health Data Services workspace in your resource group. You can view your Azure Health Data Services workspace settings by navigating to **Portal** -> **Resource Group** and finding the resource with a name ending in **"ws"** (see image below).
+In Lab 7, you deployed an Azure Health Data Services workspace in your resource group. You can view your Azure Health Data Services workspace settings by navigating to **Portal** -> **Resource Group** and finding the resource with a name ending in **"ws"** (see image below).
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab13/L13P1.png)
 
@@ -43,7 +43,7 @@ In Lab-07, you deployed an Azure Health Data Services workspace in your resource
 
 ## Exercise 2: Deploy DICOM service using Azure Portal
 
-Now you will visit another page and follow the instructions to [Deploy DICOM service using the Azure portal](https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/deploy-dicom-services-in-azure). 
+Now you will visit another page and follow the instructions to **Deploy DICOM service using the Azure portal** at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/dicom/deploy-dicom-services-in-azure+++. 
 
 1. [] Begin at step 4 under Deploying DICOM service. 
 
@@ -79,19 +79,19 @@ You will need to add the **DICOM Data Owner** role for yourself (i.e., your user
 
 ## Exercise 4: Import Postman environment and collection files to connect with DICOM service
 
-1. [] Access the **Postman environment template** for **DICOM service** [here](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-08%20-%20DICOM%20service/postman/dicom-service.postman_environment.json). 
+1. [] Access the **Postman environment template** for **DICOM service** at +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-08%20-%20DICOM%20service/postman/dicom-service.postman_environment.json+++). 
 
-1. [] Save the file locally (select **Raw** and then do a **Save as** from your browser).
+1. [] Save the file to the VM (select **Raw** and then do a **Save as** from your browser).
 
 1. [] In Postman, find the **Environments** tab on the left and select the **Import** button.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab13/L13P1b.png)
 
-1. [] Import the **dicom-service.postman_environment.json** file that you just saved locally.
+1. [] Import the **dicom-service.postman_environment.json** file that you just saved.
     1. [] Add the file to Postman using the **Upload Files** button. 
     1. [] Then select **Import**.
 
-1. [] Now, access the **Conformance-as-Postman.postman_collection.json** file available [here](https://github.com/microsoft/dicom-server/blob/main/docs/resources/Conformance-as-Postman.postman_collection.json) and save the file locally. 
+1. [] Now, access the **Conformance-as-Postman.postman_collection.json** file available at +++https://github.com/microsoft/dicom-server/blob/main/docs/resources/Conformance-as-Postman.postman_collection.json+++ and save the file on the VM. 
 
 1. [] Then import the file into Postman. This will show up as a collection when imported.
     1. [] Add the file to Postman using the **Upload Files** button. 
@@ -130,11 +130,11 @@ From here, you will be using the DICOM service for the features outlined in the 
 
 1. [] In Postman, make sure you have selected your **dicom-service** environment as the active environment.
 
-1. [] Select the **FHIR calls** collection.
+1. [] Select the **FHIR calls** collection. Duplicate the **POST AuthorizeGetToken** request and move the duplicated call to the Conformance-as-Postman collection.
 
-1. [] Select the **POST AuthorizeGetToken** request and select **Send**. You should receive a 200 OK message in response. Your access token is now saved to the bearerToken environment variable in your dicom-service Postman environment. Access tokens expire after 60 minutes. A refresh can be obtained by sending the POST AuthorizeGetToken request again.
+1. [] Select this **POST AuthorizeGetToken** request and select **Send**. You should receive a 200 OK message in response. Your access token is now saved to the bearerToken environment variable in your dicom-service Postman environment. Access tokens expire after 60 minutes. A refresh can be obtained by sending the POST AuthorizeGetToken request again.
 
-1. [] Once your dicom-service Postman environment is set up and you have obtained an access token, please go to [this repo](https://github.com/microsoft/dicom-server/tree/main/docs/dcms) and download the three DICOM instance files (**.dcm**) to your Postman directory on your computer (C:\Users\[your username]\Postman\files.
+1. [] Once your dicom-service Postman environment is set up and you have obtained an access token, please go to the repo at +++https://github.com/microsoft/dicom-server/tree/main/docs/dcms+++ and download the three DICOM instance files (**.dcm**) to your Postman directory on the VM (C:\Users\[your username]\Postman\files.
 
 1. [] Then, for each of the three **POST Store-single-instance** calls in the **Conformance-as-Postman** collection, 
     1. [] Go to **Body**, select the **x** next to the filename.
