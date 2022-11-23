@@ -147,7 +147,7 @@ To begin, you are going to populate your FHIR service with additional sample Res
 
 ### Task 1
 
-1. [] Go to **Postman** and access the **FHIR Search** collection provided in Lab-07. Make sure that the fhir-service environment is active and that you have a valid access token (use POST AuthorizeGetToken to get a token refresh).
+1. [] Go to **Postman** and access the **FHIR Search** collection provided in Lab 7. Make sure that the fhir-service environment is active and that you have a valid access token (use POST AuthorizeGetToken to get a token refresh).
 
 1. [] There is a request titled **Step 1 - Save Sample Resource Bundle**. Select this request, and then select **Send** to deliver the Bundle to your FHIR service. This will save some Resources that future requests in this lab require.
 
