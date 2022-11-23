@@ -12,7 +12,7 @@ In the Azure health ecosystem, the Azure Health Data Services workspace is a log
 
 ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab07/L7P1.png)
 
-The workspace also creates a compliance boundary (HIPAA, HITRUST) within which protected health information can travel. This means that [Role-Based Access Control (RBAC)](https://docs.microsoft.com/azure/healthcare-apis/configure-azure-rbac), private network data transit with [Private Link](https://docs.microsoft.com/azure/healthcare-apis/healthcare-apis-configure-private-link), and [event messages](https://docs.microsoft.com/azure/healthcare-apis/events/events-deploy-portal) can all be configured at the workspace level – reducing your system management complexity.
+The workspace also creates a compliance boundary (HIPAA, HITRUST) within which protected health information can travel. This means that **Role-Based Access Control (RBAC)** (see +++https://docs.microsoft.com/azure/healthcare-apis/configure-azure-rbac+++), private network data transit with **Private Link** (see +++https://docs.microsoft.com/azure/healthcare-apis/healthcare-apis-configure-private-link+++), and **event messages** (see +++https://docs.microsoft.com/azure/healthcare-apis/events/events-deploy-portal+++) can all be configured at the workspace level – reducing your system management complexity.
 
 ## Learning objectives
 
@@ -26,10 +26,10 @@ In this lab, you will:
 ## Exercise 1: Deploy Azure Health Data Services workspace and FHIR service to your Azure environment
 
 In the first part of this lab, you will use a template to deploy resources with the Azure Portal. This template will deploy
--   [Azure Health Data Services workspace](https://docs.microsoft.com/en-us/azure/healthcare-apis/workspace-overview)
--   [FHIR service](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
--   [FHIR Loader (for Lab-09)](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
--   [FHIR-Proxy (for Lab-13)](https://github.com/microsoft/fhir-proxy)
+- Azure Health Data Services workspace (see +++https://docs.microsoft.com/en-us/azure/healthcare-apis/workspace-overview+++)
+- FHIR service (see +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview+++)
+- FHIR Loader (for Lab 9) (see +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview+++)
+- FHIR-Proxy (for Lab 13) (see +++https://github.com/microsoft/fhir-proxy+++)
 
 1. [] To begin, open a new browser tab and navigate to the deployment form at +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fazure-health-data-services-workshop%2Fmain%2Fresources%2Fdeploy%2Fdeployfhirtrain.json+++.
 
@@ -49,7 +49,7 @@ In the first part of this lab, you will use a template to deploy resources with 
 
 1. [] Select **Review + create** when ready, and then select **Create** on the next page.
 
-> [!NOTE] Note: This deployment typically takes 20 minutes. During the deployment, you can read the instructions linked in Step 2 below. When the deployment finishes, go ahead and proceed with those instructions.
+> [!NOTE] Note: This deployment typically takes 20 minutes. If the deployment fails, try to re-deploy. During the deployment, you can read the instructions linked in Step 2 below. When the deployment finishes, go ahead and proceed with those instructions.
 
 To learn more about the resources deployed with this ARM template, view the following resource in a new tab: +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components+++
 
@@ -66,9 +66,13 @@ In the next part of this lab, you will
 
 1. [] Follow the instructions and return here when finished.
 
->[!ALERT]Important: Store the **clientSecret Value** on your computer, not the **clientSecret ID** when you create your Postman app registration. That is the value you will need later in Postman when you fill in the clientSecret. You will not be able to get this value again. If you save the wrong item, you will have to create another secret.
+> [!ALERT]Important: Store the **clientSecret Value** on your computer, not the **clientSecret ID** when you create your Postman app registration. That is the value you will need later in Postman when you fill in the clientSecret. You will not be able to get this value again. If you save the wrong item, you will have to create another secret.
 
->[!NOTE]A managed identity was automatically enabled for your FHIR service. That managed identity is what needs to be assigned the Storage Blob Data Contributor role in one of the ADLS Gen2 storage accounts in your resource group in future labs. The name of this storage account ends with "expsa".
+> [!NOTE]Note 1: In Step 5 in the tutorial, select Persist All when you add the Postman variables. This will allow the values to be remembered for future labs.
+
+    ![Graphical user interface Description automatically generated](./IMAGES/Lab07/L7P4.png)
+
+> [!NOTE]Note 2: A managed identity was automatically enabled for your FHIR service. That managed identity is what needs to be assigned the Storage Blob Data Contributor role in one of the ADLS Gen2 storage accounts in your resource group in future labs. The name of this storage account ends with "expsa".
 
 What does success look like for Lab 7?
 
