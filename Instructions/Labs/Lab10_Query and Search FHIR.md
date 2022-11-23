@@ -2,25 +2,24 @@
 
 ## Overview
 
-In this lab, you will learn how to use [FHIR search](https://www.hl7.org/fhir/search.html) operations to query data in your FHIR service.
-
-The FHIR specification defines a RESTful API framework for interacting with Resources in a FHIR server database. Healthcare system integrators and app developers can take advantage of the rich set of search parameters in the FHIR API for querying Resources. In this lab, you will get practice using the FHIR search API to query Resources in the [FHIR service](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview) in [Azure Health Data Services](https://docs.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-overview).
+In this lab, you will learn how to use **FHIR search** at +++https://www.hl7.org/fhir/search.html+++ operations to query data in your FHIR service.
+The FHIR specification defines a RESTful API framework for interacting with Resources in a FHIR server database. Healthcare system integrators and app developers can take advantage of the rich set of search parameters in the FHIR API for querying Resources. In this lab, you will get practice using the FHIR search API to query Resources in the **FHIR service** (see +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview+++) in **Azure Health Data Services** (see +++https://docs.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-overview+++).
 
 Think of these FHIR searches in user terms – a doctor may want to find all encounters for patients with a certain condition. Queries like this are focused on retrieving Resource instances per some filter criteria (in this example, Encounter instances filtered by their reference to a type of Condition).
 
 **FHIR search basics**
 
-At the top level, the FHIR data model is made up of a collection of Resources for structuring information generated in real-world healthcare settings. Resources in FHIR represent the different entities tied to healthcare activities. There are Resources for the people involved (Patient, Practitioner, etc.), the events that occur (Encounter, Observation, Procedure, etc.), and many other aspects connected with healthcare scenarios.
+At the top level, the FHIR data model (see +++https://hl7.org/FHIR/+++) is made up of a collection of Resources (see +++https://www.hl7.org/fhir/resourcelist.html+++) for structuring information generated in real-world healthcare settings. Resources in FHIR represent the different entities tied to healthcare activities. There are Resources for the people involved (Patient, Practitioner, etc.), the events that occur (Encounter, Observation, Procedure, etc.), and many other aspects connected with healthcare scenarios.
 
 Within every Resource, FHIR defines a set of Elements for storing details that uniquely identify each Resource instance\* on a FHIR server. Elements such as id and meta apply to all Resource types in FHIR, while other Elements are attached to specific Resource types (e.g., the gender Element is only found in Patient, Person, Practitioner, and RelatedPerson Resources). Furthermore, the FHIR model is designed to allow users to add Elements to Resources through extensions.
 
 Along with Elements, each Resource in FHIR is defined with a set of search parameters. When a remote client app makes a FHIR search API call, search parameters are used to focus the data retrieved from the FHIR server. There are standard search parameters that apply to all Resource types (e.g., \_id, \_lastUpdated), and there are search parameters specific to certain Resource types (e.g., gender is a search parameter defined for Patient). Additionally, FHIR provides a framework for creating custom search parameters. See the links below for more information.
 
-\*Note: A Resource instance on a FHIR server has a unique, server-wide Resource id. This id is also referred to as the Resource instance's [Logical ID](https://www.hl7.org/fhir/resource.html#id).
+    > [!Note] Note: A Resource instance on a FHIR server has a unique, server-wide Resource id. This id is also referred to as the Resource instance's Logical ID (see +++https://www.hl7.org/fhir/resource.html#id+++).
 
--   [Standard Search Parameters](https://www.hl7.org/fhir/search.html#all)
--   [Patient Resource-specific Search Parameters](https://www.hl7.org/fhir/patient.html#search) (note that Resource-specific search parameters are always listed at the bottom of the "Content" tab in FHIR R4 Resource documentation)
--   [Defining Custom Search Parameters](https://docs.microsoft.com/azure/healthcare-apis/fhir/how-to-do-custom-search)
+- Standard Search Parameters at +++https://www.hl7.org/fhir/search.html#all+++
+- Patient Resource-specific Search Parameters at +++https://www.hl7.org/fhir/patient.html#search+++ (note that Resource-specific search parameters are always listed at the bottom of the "Content" tab in FHIR R4 Resource documentation)
+- Defining Custom Search Parameters at +++https://docs.microsoft.com/azure/healthcare-apis/fhir/how-to-do-custom-search+++
 
 **Searching with GET**
 
@@ -129,7 +128,7 @@ Response (excerpt):
 
 ...}
 
-\*Note: The GET {{fhirurl}}/\<Resource\>/\<id\> pattern is technically a read interaction (and not a search interaction, as defined by HL7).
+    > [!NOTE]Note: The GET {{fhirurl}}/\<Resource\>/\<id\> pattern is technically a read interaction (and not a search interaction, as defined by HL7).
 
 ## Learning objectives
 
@@ -154,7 +153,7 @@ To begin, you are going to populate your FHIR service with additional sample Res
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab10/L10P1.png)
 
-> [!NOTE] **Note:** The FHIR Search collection has sample requests to demonstrate many different FHIR searches. They aren't always specified by name in these instructions, but in Postman they will start with "Step \#" for reference.
+    > [!NOTE] Note: The FHIR Search collection has sample requests to demonstrate many different FHIR searches. They aren't always specified by name in these instructions, but in Postman they will start with "Step \#" for reference.
 
 ===
 
@@ -170,7 +169,7 @@ On top of the common search parameters, it's possible to add modifiers right aft
 
 -   **Q:** What Element(s) are you searching against when you assign a value to the name parameter in a Patient search?
 
-> [!NOTE] **Note:** The FHIR service in Azure Health Data Services supports most Resource-specific search parameters defined in the FHIR specification. The Resource-specific search parameters that are not supported are listed here: [FHIR R4 Unsupported Search Parameters](https://github.com/microsoft/fhir-server/blob/main/src/Microsoft.Health.Fhir.Core/Data/R4/unsupported-search-parameters.json).
+    > [!NOTE] **Note:** The FHIR service in Azure Health Data Services supports most Resource-specific search parameters defined in the FHIR specification. The Resource-specific search parameters that are not supported are listed here: [FHIR R4 Unsupported Search Parameters](https://github.com/microsoft/fhir-server/blob/main/src/Microsoft.Health.Fhir.Core/Data/R4/unsupported-search-parameters.json).
 
 ===
 
@@ -268,17 +267,17 @@ In connection with reference Elements, Resources also have reference search para
 
 For example, the following request queries a FHIR server for all Observation instances that reference Patient/WDT000000002. The subject parameter in the request is a reference type search parameter.
 
-GET {{fhirurl}}/Observation?subject=Patient/WDT000000002
+> GET {{fhirurl}}/Observation?subject=Patient/WDT000000002
 
 To simplify using multiple search parameters in a reference-based query, FHIR also specifies syntax for chaining parameters with . to refine results. Below is a chained search for all Observation instances that reference a subject (i.e., Patient) with the name of Nathan Adunosh (note the : after subject, which makes Patient into a [type modifier](https://www.hl7.org/fhir/codesystem-search-modifier-code.html#search-modifier-code-type)).
 
-GET {{fhirurl}}/Observation?subject:Patient.name=Nathan Adunosh
+> GET {{fhirurl}}/Observation?subject:Patient.name=Nathan Adunosh
 
 The FHIR data model's reference associations are one-directional, meaning that structurally, references are always from "parent" Resource to "child" Resource (without a reference pointing in the opposite direction). As demonstrated in the chained search above, Patient is the "child" with Observation as the "parent" Resource.
 
 Despite this, the FHIR specification does make room for reverse-chained searching with the \_has parameter. The \_has parameter effectively allows searching for a "child" Resource as referenced by a "parent" Resource. This is demonstrated in the reverse-chained search request below, which queries a FHIR server for any Patient referenced by an Observation containing the code 55284-4. Note that the patient search parameter towards the end functions as a shortened form of subject:Patient.
 
-GET {{fhirurl}}/Patient?_has:Observation:patient:code=55284-4
+> GET {{fhirurl}}/Patient?_has:Observation:patient:code=55284-4
 
 ### Task 1
 
@@ -298,13 +297,13 @@ To illustrate, let's imagine you are interested in retrieving all AllergyIntoler
 
 But it would be more efficient to retrieve all of this information in a single query. This is made possible with the \_include and \_revinclude parameters. The example below illustrates how \_include expands the main search (AllergyIntolerance?_code=) to return the referenced Resource instances as well (patient at the end is short for subject:Patient).
 
-GET {{fhirurl}}/AllergyIntolerance?_code=123456789&_include=AllergyIntolerance:patient
+> GET {{fhirurl}}/AllergyIntolerance?_code=123456789&_include=AllergyIntolerance:patient
 
 Likewise but in the opposite direction, you can use \_revinclude to retrieve Resources along with other Resources that refer to them. Below is an example where Patient instances are retrieved along with MedicationRequest instances that reference the Patient instances. The Patient search is limited to patients who live in the city specified in the \_address-city parameter.
 
-GET {{fhirurl}}/Patient?_address-city='XXXXXXX'&_revinclude=MedicationRequest:patient:medication.code=1234567
+> GET {{fhirurl}}/Patient?_address-city='XXXXXXX'&_revinclude=MedicationRequest:patient:medication.code=1234567
 
-Note: Because of the potential for "open-ended" searches with \_include and \_revinclude, the number of results returned from these searches is capped to an arbitrary limit on the FHIR service in Azure Health Data Services.
+    > [!NOTE] Note: Because of the potential for "open-ended" searches with \_include and \_revinclude, the number of results returned from these searches is capped to an arbitrary limit on the FHIR service in Azure Health Data Services.
 
 ### Task 1
 
@@ -330,7 +329,7 @@ At some point, you will find a use case where you need to retrieve information t
 
 1. [] Once you have tested the new search parameter and re-indexed the FHIR service database, try running the **Search by Custom Search Parameter** call in the **FHIR Search collection**. You should receive a Bundle with results filtered by the custom search parameter.
 
-What does success look like for Lab-10?
+What does success look like for Lab 10?
 
 -   Develop a basic understanding of how to perform FHIR search operations in FHIR service.
 -   Perform several queries using paired/multiple parameters for Common and Composite Search.
