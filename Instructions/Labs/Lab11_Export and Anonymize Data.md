@@ -4,9 +4,9 @@
 
 In this lab, you will learn how to export de-identified data from the FHIR service.
 
-Healthcare organizations frequently conduct research studies with patient medical records as the main source of data. This type of study where patient health records are used for non-treatment purposes is referred to as "secondary use" research. In the U.S., access to patients' Personal Health Information (PHI) for secondary use is strictly controlled by two federal regulations: [The Revised Common Rule](https://www.hhs.gov/ohrp/regulations-and-policy/regulations/finalized-revisions-common-rule/index.html) and the [Health Insurance Portability and Accountability Act (HIPAA)](https://www.cdc.gov/phlp/publications/topic/hipaa.html#:~:text=The%20Health%20Insurance%20Portability%20and,the%20patient's%20consent%20or%20knowledge.). In the latter case, researchers are not allowed to access patients' PHI unless the information has been de-identified following HIPAA guidelines. De-identification (or anonymization) of PHI involves removing details from patients' medical data that could reveal patients' identities. HIPAA specifies two methods of de- identification: the [HIPAA Safe Harbor Method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#safeharborguidance) and the [HIPAA Expert Determination Method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#guidancedetermination). In this lab, we will get practice using the Azure health data platform to de-identify and export FHIR data according to a set of data redaction/transformation rules.
+Healthcare organizations frequently conduct research studies with patient medical records as the main source of data. This type of study where patient health records are used for non-treatment purposes is referred to as "secondary use" research. In the U.S., access to patients' Personal Health Information (PHI) for secondary use is strictly controlled by two federal regulations: **The Revised Common Rule** (at +++https://www.hhs.gov/ohrp/regulations-and-policy/regulations/finalized-revisions-common-rule/index.html+++) and the **Health Insurance Portability and Accountability Act (HIPAA)** (at +++https://www.cdc.gov/phlp/publications/topic/hipaa.html#:~:text=The%20Health%20Insurance%20Portability%20and,the%20patient's%20consent%20or%20knowledge+++). In the latter case, researchers are not allowed to access patients' PHI unless the information has been de-identified following HIPAA guidelines. De-identification (or anonymization) of PHI involves removing details from patients' medical data that could reveal patients' identities. HIPAA specifies two methods of de- identification: the **HIPAA Safe Harbor Method** (at +++https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#safeharborguidance+++) and the **HIPAA Expert Determination Method** (at +++https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#guidancedetermination+++). In this lab, we will get practice using the Azure health data platform to de-identify and export FHIR data according to a set of data redaction/transformation rules.
 
-In this lab, you will be using the \$export command in the FHIR service to export de-identified FHIR data into an ADLS Gen2 blob storage container. The \$export operation in FHIR service is an implementation of the bulk export function detailed in the [FHIR Bulk Data Access specification](https://hl7.org/fhir/uv/bulkdata/export/index.html). To familiarize yourself with the FHIR service \$export operation, please read the **How to export FHIR data** article located [here](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/export-data) and return here when finished.
+In this lab, you will be using the \$export command in the FHIR service to export de-identified FHIR data into an ADLS Gen2 blob storage container. The \$export operation in FHIR service is an implementation of the bulk export function detailed in the **FHIR Bulk Data Access specification** located at +++https://hl7.org/fhir/uv/bulkdata/export/index.html+++. To familiarize yourself with the FHIR service \$export operation, please read the **How to export FHIR data** article located at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/export-data+++ and return here when finished.
 
 ## Learning objectives
 
@@ -14,8 +14,7 @@ In this lab, you will:
 
 -   Configure bulk export of FHIR data from the FHIR service
 -   Use a sample anonymization config file to de-identify FHIR data on export
--   Export anonymized data to an [Azure Data Lake Storage
-    Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
+-   Export anonymized data to an Azure Data Lake Storage Gen2 (see +++https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction+++)
     account
 -   Securely share anonymized data with a group not affiliated with your
     organization
@@ -31,13 +30,13 @@ More information on HIPAA de-identification rules can be found [here](https://ww
 
 ## Exercise 2: Configure storage account for export
 
-1. [] Follow the instructions in the **Exporting de-identified data** article located [here](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/de-identified-export) for creating your anonymizationConfig.json file and placing it inside the anonymization container within your **expsa** storage account. Return when you reach **Manage Configuration File in ACR**.
+1. [] When you deployed Azure components in Lab 7, a managed identity (see +++https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview+++) was automatically enabled for your FHIR service. That managed identity is what needs to be assigned the Storage Blob Data Contributor role in one of the ADLS Gen2 storage accounts in your resource group. The name of this storage account ends with "expsa". Follow the instructions in the **Configure export settings and set up a storage account** article at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/configure-export-data+++ for configuring your **expsa** storage account for the \$export operation. Return when you reach **Securing the FHIR service $export operation**. Read the note below about the FHIR service managed identity.
 
-    > [!HINT] Copy the sample configuration file and save it as a JSON file to your computer. Then in your storage account, select **Containers > anonymization > Upload** and upload the file. Keep track of the name of the container and the file as they will be used in the API call.
+> [!ALERT] Note: Keep in mind that you are configuring the storage account in this step (and not the FHIR service!). In the storage account, be careful not to add a role assignment to a service client or a service principal by mistake!
 
-2. [] Next, follow the instructions in the **Configure export settings and set up a storage account** article [here](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/configure-export-data) for configuring your **expsa** storage account for the \$export operation. Return when you reach **Securing the FHIR service $export operation**. Read the note below about the FHIR service managed identity.
+1. [] Follow the instructions in the **Exporting de-identified data** article located at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/de-identified-export+++ for creating your anonymizationConfig.json file and placing it inside the anonymization container within your **expsa** storage account. Return when you reach **Manage Configuration File in ACR**.
 
-> [!NOTE] Note: When you deployed Azure components in Lab-07, a [managed identity](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview) was automatically enabled for your FHIR service. That managed identity is what needs to be assigned the Storage Blob Data Contributor role in one of the ADLS Gen2 storage accounts in your resource group. The name of this storage account ends with "expsa". Keep in mind that you are configuring the storage account in this step (and not the FHIR service!). In the storage account, be careful not to add a role assignment to a service client or a service principal by mistake!
+    > [!HINT] Copy the sample configuration file and save it as a JSON file to the VM. Then in your storage account, select **Containers > anonymization > Upload** and upload the file. Keep track of the name of the container and the file as they will be used in the API call.
 
 Review [How to export FHIR data](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/export-data) for more information.
 
@@ -72,7 +71,7 @@ GET {{fhirurl}}/\$export?_container={{containerName}}&_anonymizationConfig={{con
 
 1. [] Once everything is set up and ready to go, with the **\$export** request selected, press **Send** in Postman to initiate the request.
 
-    The \$export operation uses the [FHIR Asynchronous Request Pattern](https://hl7.org/fhir/R4/async.html). Detailed information on headers for bulk export operations in FHIR can be found [here](https://hl7.org/Fhir/uv/bulkdata/export/index.html#headers).
+    The \$export operation uses the **FHIR Asynchronous Request Pattern** (see +++https://hl7.org/fhir/R4/async.html+++). Detailed information on headers for bulk export operations in FHIR can be found at +++https://hl7.org/Fhir/uv/bulkdata/export/index.html#headers+++.
 
 1. [] You should receive a 202 Accepted response.
 
@@ -86,7 +85,7 @@ GET {{fhirurl}}/\$export?_container={{containerName}}&_anonymizationConfig={{con
 
 Researchers from outside organizations cannot have direct access to healthcare or payer organizations' Azure tenants. You will need to find a way to securely transfer the anonymized data to these external groups.
 
-1. [] Review the **Create SAS Tokens** article [here](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/document-translation/create-sas-tokens?tabs=Containers) for setting up a Shared Access Signature (SAS) token. 
+1. [] Review the **Create SAS Tokens** article at +++https://docs.microsoft.com/en-us/azure/cognitive-services/translator/document-translation/create-sas-tokens?tabs=Containers+++ for setting up a Shared Access Signature (SAS) token. 
 
 1. Then, generate a SAS token to allow a research team to access the anonymized data that you exported.
 
