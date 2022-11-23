@@ -132,13 +132,16 @@ From here, you will be using the DICOM service for the features outlined in the 
 
 1. [] Select the **FHIR calls** collection. Duplicate the **POST AuthorizeGetToken** request and move the duplicated call to the **Conformance-as-Postman** collection.
 
-1. [] Select this **POST AuthorizeGetToken** request and select **Send**. You should receive a 200 OK message in response. Your access token is now saved to the bearerToken environment variable in your dicom-service Postman environment. Access tokens expire after 60 minutes. A refresh can be obtained by sending the POST AuthorizeGetToken request again.
+1. [] Select the **Conformance-as-Postman** collection, and on the **Authorization** tab, verify that the **Type** field is set to **Bearer Token** and the **Token** field is set to **{{bearerToken}}**.
+
+1. [] Select the **POST AuthorizeGetToken** request and select **Send**. You should receive a 200 OK message in response. Your access token is now saved to the bearerToken environment variable in your dicom-service Postman environment. Access tokens expire after 60 minutes. A refresh can be obtained by sending the POST AuthorizeGetToken request again.
 
 1. [] Once your dicom-service Postman environment is set up and you have obtained an access token, please go to the repo at +++https://github.com/microsoft/dicom-server/tree/main/docs/dcms+++ and download the three DICOM instance files (**.dcm**) to your Postman directory on the VM (C:\Users\[your username]\Postman\files.
 
 1. [] Then, for each of the three **POST Store-single-instance** calls in the **Conformance-as-Postman** collection, 
-    1. [] Go to **Body**, select the **x** next to the filename.
-    1. [] Select **Select File** and choose the appropriate **.dcm** file (downloaded in the previous step) and select **Open**.
+    1. [] Ensure the URL is {{baseUrl}}/studies. Change if needed.
+    2. [] Go to **Body**, select the **x** next to the filename.
+    3. [] Select **Select File** and choose the appropriate **.dcm** file (downloaded in the previous step) and select **Open**.
 
     ![A screenshot of a computer Description automatically generated with medium confidence](./IMAGES/Lab13/L13P2.png)
     
