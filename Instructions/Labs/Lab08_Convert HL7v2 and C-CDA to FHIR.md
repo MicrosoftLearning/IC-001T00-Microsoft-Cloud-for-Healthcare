@@ -120,7 +120,7 @@ Now you will make another API request similar to the one above, except this time
 
 1. [] Rename the new request to **Convert Data - CCDA**.
 
-1. [] Fill in the URL of the request as before with **{{fhirurl}}/$convert-data**.
+1. [] Fill in the URL of the request as before with **{{fhirurl}}/$convert-data**
 
 1. [] Change the HTTP operation from **GET** to **POST**.
 
