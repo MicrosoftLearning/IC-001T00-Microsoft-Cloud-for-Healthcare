@@ -2,11 +2,11 @@
 
 ## Overview
 
-In this lab, you will use [FHIR-Proxy](https://github.com/microsoft/fhir-proxy) (OSS) to block access to data stored in the [FHIR service](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview).
+In this lab, you will use FHIR-Proxy (OSS) (see +++https://github.com/microsoft/fhir-proxy+++) to block access to data stored in the FHIR service (see +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview+++).
 
-The wide adoption of [FHIR R4](https://hl7.org/FHIR/) has given patients a new measure of control over their health data. With a patient's data stored in FHIR, mechanisms are available to block certain providers and/or organizations from accessing the data if the patient elects to withhold records. One way these data restrictions are managed in FHIR is through the [Consent Resource](https://build.fhir.org/consent.html). In this lab, we will be exploring capabilities in the Azure health data platform that make it possible for patients to opt out of sharing their FHIR records with certain parties.
+The wide adoption of FHIR R4 (see +++https://hl7.org/FHIR/+++) has given patients a new measure of control over their health data. With a patient's data stored in FHIR, mechanisms are available to block certain providers and/or organizations from accessing the data if the patient elects to withhold records. One way these data restrictions are managed in FHIR is through the Consent Resource (see +++https://build.fhir.org/consent.html+++). In this lab, we will be exploring capabilities in the Azure health data platform that make it possible for patients to opt out of sharing their FHIR records with certain parties.
 
-In this lab, you will be activating the [Consent Opt-Out filter](https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#consent-opt-out-filter) in [FHIR-Proxy](https://github.com/microsoft/fhir-proxy) (OSS). You will be modifying authorization settings to block a specific practitioner from accessing a patient's FHIR records in the FHIR service. For configuring and testing the Consent Opt-Out filter, you will be setting up Postman to call the FHIR-Proxy endpoint.
+In this lab, you will be activating the Consent Opt-Out filter (see +++https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#consent-opt-out-filter+++) in FHIR-Proxy (OSS). You will be modifying authorization settings to block a specific practitioner from accessing a patient's FHIR records in the FHIR service. For configuring and testing the Consent Opt-Out filter, you will be setting up Postman to call the FHIR-Proxy endpoint.
 
 **HIR-Proxy and FHIR service overview**
 
@@ -16,7 +16,7 @@ Component View of FHIR-Proxy and FHIR service with Postman set up to call the FH
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1.png)
 
-FHIR-Proxy asserts control over FHIR data interactions only if its [pre- and/or post-processing modules](https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#date-sort-post-processor) have been enabled and configured. Otherwise, with no special configuration, API calls made to the FHIR-Proxy endpoint go straight through to the FHIR service, and responses are sent back unfiltered to the remote client app (such as Postman in our case).
+FHIR-Proxy asserts control over FHIR data interactions only if its pre- and/or post-processing modules (see +++https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#date-sort-post-processor+++) have been enabled and configured. Otherwise, with no special configuration, API calls made to the FHIR-Proxy endpoint go straight through to the FHIR service, and responses are sent back unfiltered to the remote client app (such as Postman in our case).
 
 In Lab 07, you enabled the Consent Opt-Out filter when you deployed FHIR-Proxy. Now you'll need to do some configuration for the filter to take effect.
 
@@ -65,7 +65,7 @@ Before setting up FHIR-Proxy for Consent Opt-Out filtering, you must first confi
 
 ### Task 2: Configure App Roles
 
-1. [] In the **Authentication** pane, under **Identity provider**, select **Microsoft ([fhirproxynamr])**.
+1. [] In the **Authentication** pane, under **Identity provider**, select **Microsoft ([fhirproxyname])**.
 
 1. [] In the resource menu, under **Manage**, select **Manifest**.
 
@@ -286,9 +286,9 @@ You should receive a 200 OK response code for each of these requests. If not, yo
 
 ## Exercise 4: Post a Consent Resource to the FHIR service
 
-Here you will populate your FHIR service with a [Consent Resource](https://www.hl7.org/fhir/consent.html) to configure the [Consent Opt-Out filter](https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#consent-opt-out-filter) in FHIR-Proxy.
+Here you will populate your FHIR service with a Consent Resource (see +++https://www.hl7.org/fhir/consent.html+++) to configure the Consent Opt-Out filter (see +++https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#consent-opt-out-filter+++) in FHIR-Proxy.
 
-1. [] Review the sample **Consent Resource** in the **consent-resource.json** file located [here](https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-07%20-%20FHIR%20service%20consent%20capabilities/sample-data/consent-resource.json). You will see that Patient/WDT000000001 is opting out of sharing records with Practitioner/WDT000000003.
+1. [] Review the sample **Consent Resource** in the **consent-resource.json** file located at +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-07%20-%20FHIR%20service%20consent%20capabilities/sample-data/consent-resource.json+++. You will see that Patient/WDT000000001 is opting out of sharing records with Practitioner/WDT000000003.
 
 1. [] Go to the **FHIR CALLS** collection in **Postman** and select the **POST Consent Resource** call.
 
@@ -300,9 +300,9 @@ Here you will populate your FHIR service with a [Consent Resource](https://www.h
 
 ## Exercise 5: Add a Practitioner role in FHIR-Proxy
 
-To configure Consent Opt-Out, you must create a [FHIR Participant](http://hl7.org/fhir/2020Feb/participant.html) role for the individual (or organization) being blocked from access to a patient's FHIR data. In the real world, you would be associating a FHIR Participant role with a provider, and you would be activating the Consent Resource on behalf of a patient to block said provider from accessing the patient's FHIR records. In this exercise, you are going to be assigning a FHIR Participant role to *your own Azure account* – as though you are the provider (i.e., Practitioner/WDT000000003) being blocked from accessing FHIR data owned by Patient/WDT000000001.
+To configure Consent Opt-Out, you must create a FHIR Participant (see +++http://hl7.org/fhir/2020Feb/participant.html+++) role for the individual (or organization) being blocked from access to a patient's FHIR data. In the real world, you would be associating a FHIR Participant role with a provider, and you would be activating the Consent Resource on behalf of a patient to block said provider from accessing the patient's FHIR records. In this exercise, you are going to be assigning a FHIR Participant role to *your own Azure account* – as though you are the provider (i.e., Practitioner/WDT000000003) being blocked from accessing FHIR data owned by Patient/WDT000000001.
 
-1. [] Review [this information](https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#configuring-participant-authorization-roles-for-users) about configuring FHIR Participant roles for FHIR-Proxy and then return here when finished.
+Review the information at +++https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#configuring-participant-authorization-roles-for-users+++ about configuring FHIR Participant roles for FHIR-Proxy and then return here when finished.
 
 1. [] Go to **Portal > AAD > Enterprise Applications > [fhir_proxy_app_name] > Users and groups**.
 
@@ -334,7 +334,7 @@ You have now assigned the Practitioner role to yourself in FHIR-Proxy. This prep
 
 ## Exercise 6: Link your Object ID to a FHIR Practitioner Resource ID
 
-Now you will be linking the Practitioner/WDT000000003 Resource to your user account's **Object ID** in AAD. This will cause the Consent Opt-Out filter in FHIR-Proxy to listen for API calls from *you* and enforce the Consent rules blocking Practitioner/WDT000000003 (you) from accessing data belonging to Patient/WDT000000001. See the FHIR-Proxy configuration [documentation](https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#configuring-participant-authorization-roles-for-users) for details on the linkage between a [User Principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) in AAD and a Resource instance in the FHIR service.
+Now you will be linking the Practitioner/WDT000000003 Resource to your user account's **Object ID** in AAD. This will cause the Consent Opt-Out filter in FHIR-Proxy to listen for API calls from *you* and enforce the Consent rules blocking Practitioner/WDT000000003 (you) from accessing data belonging to Patient/WDT000000001. See the FHIR-Proxy configuration documentation at +++https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#configuring-participant-authorization-roles-for-users+++ for details on the linkage between a User Principal (see +++https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object+++) in AAD and a Resource instance in the FHIR service.
 
 1. [] Go to **Portal** -> **AAD** -> **Users**.
 
@@ -360,7 +360,7 @@ Now you will be linking the Practitioner/WDT000000003 Resource to your user acco
 
 You now need to authenticate yourself as the caller trying to access Patient/WDT000000001. This way, FHIR-Proxy will know to block your access to Patient/WDT000000001 – because your Azure account is associated with Practitioner/WDT000000003.
 
-1. [] Go to the **FHIR CALLS** collection in Postman and select the **GET Patient Consent Opt Out** call.
+1. [] Go to the **FHIR CALLS** collection in Postman (in the VM) and select the **GET Patient Consent Opt Out** call.
 
 1. [] Select the **Authorization** tab.
 
@@ -377,7 +377,7 @@ You now need to authenticate yourself as the caller trying to access Patient/WDT
 
 1. [] Then select **Use Token** in the **MANAGE ACCESS TOKENS** window in Postman.
 
-> [!NOTE] Note: To check that your Azure user account is correctly linked to the Practitioner role, copy the new **Access Token** from the **MANAGE ACCESS TOKENS** window and paste it into the JSON Web Token viewer at <https://jwt.io/>. Under "roles", you should see the "Writer", "Practitioner", and "Reader" roles for yourself.
+> [!NOTE] Note: To check that your Azure user account is correctly linked to the Practitioner role, copy the new **Access Token** from the **MANAGE ACCESS TOKENS** window and paste it into the JSON Web Token viewer at +++https://jwt.io/+++. Under "roles", you should see the "Writer", "Practitioner", and "Reader" roles for yourself.
 
 ===
 
