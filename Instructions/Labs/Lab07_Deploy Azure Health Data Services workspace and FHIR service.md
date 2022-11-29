@@ -49,7 +49,7 @@ In the first part of this lab, you will use a template to deploy resources with 
 
 1. [] Select **Review + create** when ready, and then select **Create** on the next page.
 
-> [!NOTE] Note: This deployment typically takes 20 minutes. If the deployment fails, try to re-deploy. During the deployment, you can read the instructions linked in Step 2 below. When the deployment finishes, go ahead and proceed with those instructions.
+> [!NOTE] Note: This deployment typically takes 20 minutes. If the deployment fails, try to re-deploy. During the deployment, you can read the instructions linked in Exercise 2 below. When the deployment finishes, go ahead and proceed with those instructions.
 
 To learn more about the resources deployed with this ARM template, view the following resource in a new tab: +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components+++
 
