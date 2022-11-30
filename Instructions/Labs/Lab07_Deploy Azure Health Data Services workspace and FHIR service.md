@@ -64,15 +64,18 @@ In the next part of this lab, you will
 
 1. [] To begin, open the Postman setup tutorial in a new browser tab using the URL: +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/Postman_FHIR_service_README.md+++
 
+    > [!ALERT] **Important 1**: Record the **clientSecret Value** on your computer or on paper, not the **clientSecret ID** when you create your Postman app registration. That is the value you will need later in Postman when you fill in the clientSecret. You will not be able to get this value again. If you save the wrong item, you will have to create another secret.
+
+    > [!ALERT] **Important 2**: Record the username and password you use for Postman setup in the VM. You will use this to log into Postman in the remaining labs when using Postman within the VM. This will retain your settings from this lab in Postman.
+
+    > [!ALERT] **Important 3**: In Step 4 in the tutorial, select Persist All when you add the Postman variables prior to saving. This will allow the values to be remembered for future labs.
+
 1. [] Follow the instructions and return here when finished.
 
-> [!ALERT]Important: Store the **clientSecret Value** on your computer, not the **clientSecret ID** when you create your Postman app registration. That is the value you will need later in Postman when you fill in the clientSecret. You will not be able to get this value again. If you save the wrong item, you will have to create another secret.
-
-> [!NOTE]Note 1: In Step 4 in the tutorial, select Persist All when you add the Postman variables prior to saving. This will allow the values to be remembered for future labs.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab07/L7P4.png)
 
-> [!NOTE]Note 2: A managed identity was automatically enabled for your FHIR service. That managed identity is what needs to be assigned the Storage Blob Data Contributor role in one of the ADLS Gen2 storage accounts in your resource group in future labs. The name of this storage account ends with "expsa".
+> [!NOTE] Note: A managed identity was automatically enabled for your FHIR service. That managed identity is what needs to be assigned the Storage Blob Data Contributor role in one of the ADLS Gen2 storage accounts in your resource group in future labs. The name of this storage account ends with "expsa".
 
 What does success look like for Lab 7?
 
