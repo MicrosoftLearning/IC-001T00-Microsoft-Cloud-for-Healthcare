@@ -68,7 +68,7 @@ In the next part of this lab, you will
 
 > [!ALERT]Important: Store the **clientSecret Value** on your computer, not the **clientSecret ID** when you create your Postman app registration. That is the value you will need later in Postman when you fill in the clientSecret. You will not be able to get this value again. If you save the wrong item, you will have to create another secret.
 
-> [!NOTE]Note 1: In Step 5 in the tutorial, select Persist All when you add the Postman variables. This will allow the values to be remembered for future labs.
+> [!NOTE]Note 1: In Step 4 in the tutorial, select Persist All when you add the Postman variables prior to saving. This will allow the values to be remembered for future labs.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab07/L7P4.png)
 
