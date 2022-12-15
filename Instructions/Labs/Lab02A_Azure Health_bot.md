@@ -206,7 +206,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S13.png)
 
-### Task 3. Create a new client secret and record secret and app Id values 
+### Task 3. Create a new client secret, record secret and Application client Id values 
 
 1. [] In the resource menu under **Manage**, select **Certificates & secrets**. 
 
@@ -294,7 +294,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] Select the back arrow next to **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status to booked**. 
 
-1. [] Reselect the flow and on the menu select **Turn on**. 
+1. [] Reselect the flow and on the command bar select **Turn on**. 
 
     > [!NOTE] Note: It may take 10-15 seconds for the flow to turn on and the page to refresh. If you receive a "Turn on failed" message, try again. You may have to repeat this step several times for the flow to turn on.
 
@@ -302,31 +302,4 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] When complete, in the left navigation, select **&larr; Back to solutions**. If the navigation menu is collapsed, you could use the left arrow icon. 
 
-
-### Task 6: Obtain Azure Application ID
-
-In this task, you will be using the Azure Application ID you created in Task 1 in our Azure tenant called “**MCH Application Id**”. Registering this Id establishes a trusted relationship between your Dynamics 365 app and the Microsoft identity platform. Using this Id, you will later create a Dynamics 365 Application User to bridge the authentication between Azure Health Bot and Power Apps.
-
-1. [] Navigate back to the Azure Portal and search for +++**App Registrations**+++ in the **Search** box. If you have closed this tab or window, use +++https://portal.azure.com+++ in a new tab or window.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P22.png)
-
-1. [] You will be landed in the **App registration** homepage on the **Owned applications** tab.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P23.png)
-
-1. [] Select the **All applications** tab.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P24.png)
-
-1. [] To search for our Application Id, type +++**MCH Application**+++ in the **Search** box.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P25.png)
-
-1. [] Select the **MCH Application** app registration resource. Copy and store the **Application (client) ID** for later to use when creating the Dynamics 365 Application User.
-
-    > [!NOTE] Note: ID values have been removed in the screenshot for privacy purposes.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P26.png)
-
-**Congratulations!** You have successfully obtained the MCH Application ID from Application Registrations in the Azure Portal.
+**Congratulations!** You have now successfully activated the Flow and connected the Connection references.
