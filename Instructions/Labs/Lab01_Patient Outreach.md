@@ -152,7 +152,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Click Marketing emails](./IMAGES/L1P19.png)
 
-1. [] In the **Active marketing emails** view, open **Email invitation – Free Diabetes Prevention Event**.
+1. [] In the **Active marketing emails** view, open **Email invitation - Free Diabetes Prevention Event**.
 
     ![Graphical user interface, text, email Description automatically generated](./IMAGES/L1P20.png)
 
@@ -160,7 +160,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![](./IMAGES/L1P21.png)
 
-1. [] Change the **Name** of the event to +++**Email Invitation – Healthy Eye Seminar Virtual Event**+++ and the **Description** to +++**Healthy Eye Seminar Event**+++.
+1. [] Change the **Name** of the event to +++**Email Invitation - Healthy Eye Seminar Virtual Event**+++ and the **Description** to +++**Healthy Eye Seminar Event**+++.
 
     ![Text Description automatically generated](./IMAGES/L1P22.png)
 
@@ -168,7 +168,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Text Description automatically generated](./IMAGES/L1P23.png)
 
-1. [] Navigate back to **Marketing** emails list and select your newly created segment **Email Invitation – Healthy Eye Seminar Virtual Event**.
+1. [] Navigate back to **Marketing** emails list and select your newly created segment **Email Invitation - Healthy Eye Seminar Virtual Event**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P24.png)
 
@@ -184,7 +184,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/L1P28.png)
 
-1. [] Navigate to **C:\LabFiles** and select the file **Glasses.jpg**. Select **Open** and then **Upload**.
+1. [] Navigate to **C:\LabFiles** and select the file **Glasses.jpg**. Select **Open** and then **Upload**. 
 
     ![Select the “Glasses.jpg” image from the file location, click Upload](./IMAGES/L1P29.png)
 
@@ -201,7 +201,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
         ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P31.png)
 
-1. [] Edit the **footer** text of the email so that it reads **©2022 Lamna Healthcare Event.** Do not edit the dynamic text below it.
+1. [] Edit the **footer** text of the email so that it reads +++©2022 Lamna Healthcare Event+++. Do not edit the dynamic text below it.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/L1P32.png)
 
