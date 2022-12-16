@@ -61,7 +61,7 @@ In the following tasks, you will complete the following:
 
     ![Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](./IMAGES/Lab02/L2P32.png)
 
-1. [] While in the **Enabled User** list, scroll to find the **Mod Administrator** or use the **Search** bar.
+1. [] While in the **Enabled User** list, scroll to find the **MOD Administrator** or use the **Search** bar.
 
     ![Screenshot of searching for user in enabled user list](./IMAGES/Lab02/L2P33.png)
 
@@ -69,7 +69,7 @@ In the following tasks, you will complete the following:
 
     ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab02/L2P34.png)
 
-1. [] If necessary, select the **Omnichannel Agent** role to assign to your user and select **OK**.
+1. [] If necessary, select the **Omnichannel agent** role to assign to your user and select **OK**. 
 
     ![Table Description automatically generated with medium confidence](./IMAGES/Lab02/L2P35.png)
 
@@ -165,7 +165,7 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P52.png)
 
-1. [] Open **Default Messaging Queue**.
+1. [] Open **Default messaging queue**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P53.png)
 
@@ -201,7 +201,7 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
 1. [] A **Users** subgrid should appear. If your user is not visible, select **Add Users** in the subgrid.
 
-1. [] Search for and add your **MOD Administrator** user to the queue. The user is now added to the queue with the agent role.
+1. [] Search for and select your **MOD Administrator** user. Click **Add**. The user is now added to the queue with the agent role.
 
     The queue **Escalate To Human** is created to manage and redirect the incoming messages from a user to a Customer Service (human) Agent when Bot sends the user through to a live agent.
 
