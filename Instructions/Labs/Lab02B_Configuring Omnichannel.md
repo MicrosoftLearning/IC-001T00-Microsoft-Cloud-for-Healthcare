@@ -667,9 +667,9 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P148.png)
 
-1. [] To verify the presence status, navigate back to **Power Apps** and open **Customer Service Workspace.**
+1. [] To verify the presence status, navigate back to **Power Apps** and open **Customer Service workspace**.
 
-    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when the green circle with the checkmark appears)
+    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Presence status is enabled when the green circle with the checkmark appears.)
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P149.png)
 
@@ -679,18 +679,18 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P151.png)
 
-1. [] In the **Health Bot in Lamna Healthcare Patient Portal**, select **Lamna Healthcare Support** button, then the **Live Agent** button to witness the escalation into Omnichannel to chat with a live agent (your user!)
+1. [] In the **Health Bot in Lamna Healthcare Patient Portal**, select **Lamna Healthcare Support** button, then the **Live Agent** button to witness the escalation into Omnichannel chat with a Live Agent (your user!)
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P152.png) ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2P153.png)
 
-1. [] Navigating back to **Omnichannel for Customer Service**, your user as the Live Agent should receive an incoming notification with **Accept/Reject** options for that chat.
+1. [] Navigating back to **Customer Service workspace**, your user as the Live Agent should receive an incoming notification with **Accept/Reject** options for that chat.
 
-1. [] Select **Accept** to connect and chat with customer (In this case chat with the **patient**).
+1. [] Select **Accept** to connect and chat with the customer (In this case, with the **patient**). The presence indicator will change to Busy.
 
-    ![live agent notification on Customer Service](./IMAGES/Lab02/L2P154.png)
+    ![live agent notification on Customer Service](./IMAGES/Lab02/L2P154.png) 
 
-1. [] As soon as Live Chat Agent accepts the incoming chat notification, Omnichannel for Customer Service has opened a **Live Chat Widget** and Agent would be able to see the entire bot conversation with user and continue the chat conversation with user for further assistance.
+1. [] When a Live Agent accepts the incoming chat notification, the Customer Service workspace will open a **Live Chat Widget** and the Agent will be able to see the entire bot conversation with the customer/patient and continue the conversation with the customer/patient to provide further assistance. 
 
     ![live agent notification on Customer Service](./IMAGES/Lab02/L2P155.png)
 
-**Congratulations!** You have successfully extended the Azure Health Bot with custom scenarios and tested the end-to-end escalation scenario from a patient using the Azure Health Bot in Power Apps Portals to chatting with a Live Agent in Omnichannel for Customer Service.
+**Congratulations!** You have successfully extended the Azure Health Bot with custom scenarios and tested the end-to-end escalation scenario from a patient using the Azure Health Bot in Power Apps Portals to chatting with a Live Agent in Omnichannel for Customer Service. 
