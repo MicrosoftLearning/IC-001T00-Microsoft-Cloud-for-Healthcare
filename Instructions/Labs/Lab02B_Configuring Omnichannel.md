@@ -410,7 +410,7 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
 1. [] Enter the **Display Text**: +++Hi there, I’m your Healthcare Assistant.+++
 
-1. [] Select the **pencil** next to **Statement** in the top bar and change Title to **Intro**.
+1. [] Select the **pencil** next to **Statement** in the top bar and change Title to +++Intro+++.
 
     ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P99.png)
 
@@ -452,7 +452,7 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P104.png)
 
-1. [] Select **Ok** and then **Save** to get back to designer.
+1. [] Select **OK** and then **Save** to get back to designer.
 
 1. [] Select the bottom circle on **Intro** and drag it to the top circle on the new prompt, **MedOrAgent** to connect them. An arrow will automatically appear when you try to connect Intro and MedOrAgent boxes using ellipse pointer.
 
@@ -468,7 +468,7 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P110.png)
     
-1. [] Select the Refresh button on the title bar of the chat window to clear the chat for the next text.
+1. [] Select the Refresh button on the title bar of the Web Chat panel to clear the chat for the next test.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P110b.png)
 
@@ -476,7 +476,7 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
 This section checks whether the user has clicked Medication Refill or Live Agent with the help of the variable MedicationOrAgent. It will redirect the message accordingly.
 
-1. [] Add a **Branch** to the designer canvas.
+1. [] Select **+ Add element**, **Flow control elements**, **Branch** to the designer canvas.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P111.png)
 
@@ -500,7 +500,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 1. [] Add the following details and select **Add Cards**:
     1. [] **Input variable**: +++formData+++
     2. [] **Input Type**: Object
-    3. [] Change Title to +++Submit+++
+    3. [] Rename to +++Submit+++
     4. [] Do not add any display text since the adaptive card will display instead
 
         ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab02/L2P115.png)
@@ -539,7 +539,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P122.png)
 
-1. [] Select **Save** and select **Refresh** in the **Web Chat** pane. Select **Run** to see your scenario in the webchat.
+1. [] Select **Save** and select **Refresh** in the **Web Chat** panel. Select **Run** to see your scenario in the webchat.
 
 1. [] Fill in information for the request and select **Submit** to see the confirmation text:
     1. [] **Name**: +++Jensen, Casey+++
