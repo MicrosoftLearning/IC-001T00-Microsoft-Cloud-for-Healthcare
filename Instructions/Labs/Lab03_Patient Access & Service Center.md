@@ -109,19 +109,17 @@ We will first open the Portal to show the Customer Self-Service template current
 
     ![Screenshot of portal settings dialog](./IMAGES/Lab03/L3P12.png)
 
-    Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You may have to re-sign in. You should be first navigated to the **Portal Details** tab of the **Power Apps Portals admin center**.
+    Selecting **Administration** will open a new window, the **Power Platform admin center**, where you can do portal administrative tasks. You may have to re-sign in. You should be first navigated to the **Power Pages sites** tab of the **Power Platform admin center**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P13.png)
 
-1. [] Scroll down to **Update Portal Binding > Select Website Record**. Open the **Select Website Record** dropdown and change the value from **Customer Self-Service** to **Healthcare Patient Portal**, if necessary. This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario.
+1. [] Under **Site Details**, select **Edit**. On the **Edit Details** pane, change the **Website Record** dropdown to **Healthcare Patient Portal**. This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario. 
 
     ![Screenshot of selecting Healthcare Patient Portal in drop down](./IMAGES/Lab03/L3P15.png)
 
-1. [] Select **Update**.
+1. [] Select **Save**. 
 
-    ![Screenshot of updating portal binding](./IMAGES/Lab03/L3P16.png)
-
-1. [] Select **Portal Actions** section on the left navigation. Then select the first option, **Restart.**
+1. [] From the command bar, select **Site Actions** then select **Restart site**Select **Portal Actions** section on the left navigation. Then select the first option, **Restart.**
 
     ![Screenshot of selecting Portals Admin Center, select Portal Actions, and Restart](./IMAGES/Lab03/L3P17.png)
 
