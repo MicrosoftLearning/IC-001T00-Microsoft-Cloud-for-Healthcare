@@ -52,11 +52,11 @@ In this task, you will explore the main tables related to Patient Data. Select e
 
 | Table Name | Definition |
 |----|----|
-| **Patient (Contact)**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact+++ | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
-| **AllergyIntolerance**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcore/allergyintolerance+++ | Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance. |
-| **Condition**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/condition+++ | A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern. |
-| **MedicationRequest**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/medicationrequest+++ | An order or request for both supply of the medication and the instructions for administration of the medication to a patient. |
-| **RelatedPerson**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/relatedperson+++ | Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process. |
+| [Patient (Contact)](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact) | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
+| [AllergyIntolerance](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcore/allergyintolerance) | Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance. |
+| [Condition](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/condition) | A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern. |
+| [MedicationRequest](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/medicationrequest) | An order or request for both supply of the medication and the instructions for administration of the medication to a patient. |
+| [RelatedPerson](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/relatedperson) | Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process. |
 
 See below for the **Patient Detail Entity Relationship Diagram**.
 
