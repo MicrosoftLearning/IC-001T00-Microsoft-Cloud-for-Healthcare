@@ -125,7 +125,7 @@ In this exercise, you will navigate the patient record and explore all the detai
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P8.png)
 
-1. [] Select **People** in the left Site Map.
+1. [] Under **Administration**, select **People** from the site navigation.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P9.png)
 
@@ -149,13 +149,17 @@ In this exercise, you will navigate the patient record and explore all the detai
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P14.png)
 
-1. [] In the **Clinical Data** section, you can cycle through the various icons to see different medical details including **medical requests**, **encounters**, **procedures**, and possibly **observations**. This is a simple and efficient way to observe patient healthcare details.
+1. [] In the **Clinical details** section, you can cycle through the various icons to see different medical details including **Medications and prescriptions**, **Encounters**, **Results and diagnostics**, and **Procedures**. This is a simple and efficient way to observe patient healthcare details.
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P15.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P16.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P15.png) 
+    
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P16.png)
+    
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P17.png) 
+    
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P18.png)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P17.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P18.png)
-
-1. [] The **Patient Interactions** section shows any activity, note, or post and can be filtered or sorted.
+1. [] The **Patient interactions** section shows any activity, note, or post and can be filtered or sorted.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab04/L4P19.png)
 
