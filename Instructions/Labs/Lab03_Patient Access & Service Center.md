@@ -321,7 +321,7 @@ In this task, you will continue as Casey and navigate the features of the Patien
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P58.png)
 
-1. [] You may log out of the Patient Portal by selecting the patient’s name in the upper right drop-down and selecting **Sign Out**.
+1. [] You may log out of the Patient Portal by selecting the patient’s name in the upper right drop-down and selecting **Sign out**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P59.png)
 
@@ -353,7 +353,7 @@ In this task, you will assign the necessary roles to your user to create and use
 
 See the following documentation to learn more about these roles: [Assign roles and enable users for Omnichannel for Customer Service](https://docs.microsoft.com/en-us/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges)
 
-1. [] Using an In-Private or Incognito window, navigate to [Power Apps](http://make.powerapps.com).
+1. [] Using an In-Private or Incognito window, navigate to [Power Apps](https://make.powerapps.com) +++https://make.powerapps.com+++.
 
 1. [] Select the correct environment from the upper right **Environment** dropdown, if necessary.
 
@@ -428,35 +428,35 @@ In this task, you will create an agent script in the Omnichannel admin center ap
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P74.png)
 
-1. [] In the **Agent script steps** section, select **+New Agent script step**. You may have to select the vertical ellipsis depending on the size of your window.
+1. [] In the **Agent script steps** section, select **+ New Agent script step**. You may have to select the vertical ellipsis depending on the size of your window.
 
     ![Add Agent script step to the new agent script](./IMAGES/Lab03/L3P75.png)
 
 1. [] The Quick Create form for the Agent script step appears. Specify the following fields:
     1. [] **Name**: +++Confirm Phone Number+++
     1. [] **Unique Name**: +++msdyn_ConfirmPhone+++
-    1. [] **Order**: 1
+    1. [] **Order**: +++1+++ 
     1. [] **Action type**: Text
     1. [] **Text instructions**: +++Ask patient to confirm phone number.+++
 
         ![Screenshot of Quick create form for a step to Confirm Phone Number for the patient](./IMAGES/Lab03/L3P76.png)
 
-1. [] Select **Save and Close**. Now let’s add another step.
+1. [] Select **Save & Close**. Now let’s add another step.
 
-1. [] In the **Agent script steps** section, select **+New Agent script step** again.
+1. [] In the **Agent script steps** section, select **+ New Agent script step** again.
 
     ![Screenshot of New Agent script step button in agent script steps subgrid ](./IMAGES/Lab03/L3P77.png)
 
 1. [] Another Quick Create form for the Agent script step appears. Specify the following fields:
     1. [] **Name**: +++Verify Insurance Information+++
     1. [] **Unique Name**: +++msdyn_VerifyInsuranceInformation+++
-    1. [] **Order**: 2
+    1. [] **Order**: +++2+++
     1. [] **Action type**: Text
     1. [] **Text instructions**: +++Ask Patient for Insurance Provider and ID \#. Verify their response matches insurance information on file.+++
 
     ![Screenshot of Quick create form for a step to Verify Insurance Information for the patient](./IMAGES/Lab03/L3P78.png)
 
-1. [] Select **Save and Close**. Both steps should now be in the Agent script steps table.
+1. [] Select **Save & Close**. Both steps should now be in the Agent script steps table.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P79.png)
 
@@ -545,15 +545,11 @@ In this task, we will assign the necessary user role to create and view knowledg
 
 ### Task 2: Set up Knowledge Management Settings
 
-1. [] In [Power Apps](http://make.powerapps.com), open the **Customer Service Hub** app.
+1. [] In [Power Apps](https://make.powerapps.com/) +++https://make.powerapps.com/+++, select **Apps** and open the **Customer Service admin center** app.
 
     ![Screenshot of Customer Service Hub application in Power Apps list](./IMAGES/Lab03/L3P94.png)
 
-1. [] In **Customer Service Hub**, on the left navigation bar, go to the bottom left corner where there’s a dropdown that says **Service**. Select it and change the area to **Service Management**. 
-
-    ![Screenshot of bottom left drop down selection changing from Service to Service Management](./IMAGES/Lab03/L3P95.png)
-
-1. [] If presented with **Customer Service admin center is released** dialog, select **Open Customer Service Admin Center**. Once in the **Customer Service Admin Center** area, select **Knowledge** under **Agent experience** in the left navigation. There are several options to manage your Knowledge Center. Let's explore them.
+1. [] Select **Knowledge** under **Agent experience** on the left navigation. There are several options to manage the Knowledge Center. Let's explore them.
 
     ![Screenshot of Settings option in the site map in Knowledge Base Management section](./IMAGES/Lab03/L3P96.png)
 
@@ -564,7 +560,7 @@ In this task, we will assign the necessary user role to create and view knowledg
 1. [] **Portal** allows you to to set up an external portal. **Support portal connection** integrates an external portal for publishing knowledge articles.
     1.  Selecting Yes would share the knowledge article as a link in the email sent to the customer.
     1.  Selecting No would share the article content inserted in the email body.
-    1.  [] Keep as **No** as we will not be integrating an external portal connection
+    1.  [] Keep as **No** as we will not be integrating an external portal connection   
 
         ![Text Description automatically generated](./IMAGES/Lab03/L3P98.png)
 
@@ -573,6 +569,7 @@ In this task, we will assign the necessary user role to create and view knowledg
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P99.png)
     
 1. [] Select **Save**.
+
 
 ### Task 3: Create Knowledge Article
 
