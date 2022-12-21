@@ -163,15 +163,15 @@ In this exercise, you will navigate the patient record and explore all the detai
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab04/L4P19.png)
 
-1. [] Select the **Profile** tab to get **Patient, Address, and Insurance Information.** In the **Patient Information**, notice that key patient data such as **Date of Birth** and **Primary Practitioner** are shown. The healthcare data model uses the contact entity from the Common Data Model and defines the type of contact as patient, practitioner, or related person. This determines the type of form shown.
+1. [] Select the **Profile** tab to get Patient information including address, and Insurance coverage. In the **Patient information** section, notice that key patient data such as **Date of birth** and **Primary practitioner** are shown. The healthcare data model uses the contact entity from the Common Data Model and defines the type of contact as patient, practitioner, or related person. This determines the type of form shown.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab04/L4P20.png)
 
-1. [] Select the **Clinical Timeline** tab. On this tab, a care team member will be able to view a weekly calendar of the patient’s clinical information as well as a list of any upcoming or previous events.
+1. [] Select the **Clinical timeline** tab. On this tab, a care team member will be able to view a weekly calendar of the patient’s clinical information as well as a list of any upcoming or previous events.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P21.png)
 
-1. [] Select the **Upcoming** **events** dropdown in the right pane and switch to **previous events**.
+1. [] Select the **Upcoming** **events** dropdown in the right pane and switch to **Previous events**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P22.png)
 
@@ -183,7 +183,7 @@ In this exercise, you will navigate the patient record and explore all the detai
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P25.png)
 
-1. [] Select the **Care Team** tab. On this tab, the care team member can find other members who may be providing care to the patient for any current conditions and care plans.
+1. [] Select the **Care team** tab. On this tab, the care team member can find other members who may be providing care to the patient for any current conditions and care plans.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P24.png)
     
@@ -203,11 +203,11 @@ In this exercise, you will be creating a new Location record for the **Lamna Hea
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P27.png)
 
-1. [] In the **Care Management** sitemap on the left, select **Locations**.
+1. [] In the **Care Management** sitemap on the left, under **Administration**, select **Locations**.
 
     ![A picture containing graphical user interface Description automatically generated](./IMAGES/Lab04/L4P28.png)
 
-1. [] In the **All Locations** view, select **+New**.
+1. [] In the **All Locations** view, select **+ New**.
 
     ![A picture containing diagram Description automatically generated](./IMAGES/Lab04/L4P29.png)
 
