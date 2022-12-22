@@ -46,9 +46,9 @@ Each resource can have different attributes that distinguish it from others, inc
 
 Now let’s create a Bookable Resource in the Home Health application.
 
-1. [] Navigate to +++https://make.powerapps.com+++. Ensure the MC4H Labs Environment is selected in the upper right. 
+1. [] Navigate to [PowerApps](https://make.powerapps.com/), +++https://make.powerapps.com/+++. Ensure the **MC4H Labs** environment is selected in the upper right. 
 
-1. [] Open the **Field Service** app. You may have to sign out and back into Dynamics 365 as your user.
+1. [] Select **Apps**, open the **Field Service** app. You may have to sign out and back into Dynamics 365 as your user.
 
     ![Open the Field Service app](./IMAGES/Lab05/L5P3.png)
 
@@ -56,7 +56,7 @@ Now let’s create a Bookable Resource in the Home Health application.
 
     ![Change the area from Service to Resources](./IMAGES/Lab05/L5P4.png)
 
-1. [] This will take you to the Bookable Resources entity. Select **New** on the command bar to create a new **Bookable Resource**.
+1. [] This will take you to the Bookable Resources entity. Select **+ New** on the command bar to create a new **Bookable Resource**.
 
     ![Click New on the command bar to create a new Bookable Resource](./IMAGES/Lab05/L5P5.png)
 
@@ -64,7 +64,7 @@ Now let’s create a Bookable Resource in the Home Health application.
 
     ![Select Resource Type](./IMAGES/Lab05/L5P6.png)
 
-1. [] Pick your training **User** (**MCH Application**) and select your **Time Zone.**
+1. [] Pick your training **User** (**MOD Administrator**) and select your **Time Zone.**
 
     ![Pick a User and select their Time Zone](./IMAGES/Lab05/L5P7.png)
 
@@ -81,7 +81,7 @@ Now let’s create a Bookable Resource in the Home Health application.
 
     ![Chart, scatter chart Description automatically generated](./IMAGES/Lab05/L5P9.png)
 
-1. [] Save the record.
+1. [] **Save** the record.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab05/L5P10.png)
 
@@ -144,7 +144,7 @@ Here is an example of a configured **Schedule Board**:
 
     ![Change the area to Settings](./IMAGES/Lab05/L5P20.png)
 
-1. [] Select **Administration** on the site map.
+1. [] Under **Scheduling**, select **Administration** from the site map.
 
     ![Click Administration](./IMAGES/Lab05/L5P21.png)
 

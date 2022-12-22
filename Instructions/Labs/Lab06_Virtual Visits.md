@@ -38,7 +38,7 @@ Below is an example of the appointment booking screen in the Patient Portal. As 
 
 For an entity that isn't shown directly in an application's sitemap, we can add a new record through Power Apps or Dynamics 365. To create a new practitioner specialty, we'll show you how to create a new Codeable Concepts record in both ways, starting with Power Apps.
 
-1. [] Go to +++https://make.powerapps.com+++.
+1. [] Navigate to [PowerApps](https://make.powerapps.com/), +++https://make.powerapps.com/+++. Ensure the **MC4H Labs** environment is selected in the upper right. 
 
 1. [] Expand **Dataverse** on the left sitemap and select **Tables**.
 
@@ -70,7 +70,7 @@ For an entity that isn't shown directly in an application's sitemap, we can add 
     
     ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S7.png)
     
-1. [] Select **Done** in the popup to refresh the table.
+1. [] Select **Done** on the popup to refresh the table.
 
 1. [] In the **Type** column, select the dropdown, select **Filter by**, and the the dropdown list, scroll and select **Practitioner Specialty**. Then select **Apply**.
 
@@ -191,7 +191,7 @@ By default, the Basic and Enhanced Microsoft Teams integration is disabled for c
 
 1. [] Go to +++https://admin.powerplatform.microsoft.com+++.
 
-1. [] Select **Environments** and then select your **MC4H Labs** environment from the list
+1. [] Select **Environments** and select the **MC4H Labs** environment from the list.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P35A.png)
 
@@ -233,17 +233,18 @@ You will now see that both Microsoft Teams Integration settings are set to Yes.
 
 **Congratulations!** You have enabled Microsoft Teams integration for Dynamics 365.
 
+
 ### Task 2: Embed Virtual Clinic App in Microsoft Teams
 
 In this task, you will customize the Microsoft Teams experience for a practitioner by embedding the Virtual Clinic app to the Teams channel in your environment. We will be utilizing the Microsoft Teams web experience for this task.
 
-1. [] While logged in to your Microsoft 365 tenant, open a new tab and go to +++teams.microsoft.com+++.
+1. [] While logged in to your Microsoft 365 tenant, open a new tab and go to +++https://teams.microsoft.com/+++.
 
 1. [] Select **Next** through the prompts, and then select **Let’s Go.**
 
     ![Graphical user interface, application, website Description automatically generated](./IMAGES/Lab06/L6P45.png)
 
-1. [] At the bottom of the left navigation bar, select **Join or create a team** and then **Create a team**.
+1. [] At the bottom of the left navigation bar, select **Join or create a team** and then **Create team**.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab06/L6P46.png)
 
@@ -259,7 +260,7 @@ In this task, you will customize the Microsoft Teams experience for a practition
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P49.png)
 
-1. [] Once the Team is created and the **General** channel selected, select the **+** button to add a tab
+1. [] Once the Team is created and the **General** channel selected, select the **+** button to add a tab.
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P50.png)
 
@@ -280,6 +281,7 @@ In this task, you will customize the Microsoft Teams experience for a practition
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P54.png)
 
 **Congratulations!** You have embedded the Virtual Clinic app in Microsoft Teams.
+
 
 ===
 
