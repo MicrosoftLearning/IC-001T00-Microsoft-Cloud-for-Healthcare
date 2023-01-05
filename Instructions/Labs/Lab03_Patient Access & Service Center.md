@@ -584,7 +584,7 @@ In this task, you will create a new knowledge article about Asthma for agents to
 
     ![Screenshot of bottom left drop down selection changing back from Service Management to Service ](./IMAGES/Lab03/L3P100.png)
 
-1. [] In the sitemap, navigate to **Service > Knowledge Articles**.
+1. [] In the sitemap, navigate to **Knowledge > Knowledge Articles**.
 
     ![Screenshot of Knowledge Article option in site map](./IMAGES/Lab03/L3P101.png)
 
