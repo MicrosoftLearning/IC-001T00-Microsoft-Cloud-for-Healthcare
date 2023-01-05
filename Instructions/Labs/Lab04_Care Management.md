@@ -149,7 +149,7 @@ In this exercise, you will navigate the patient record and explore all the detai
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P14.png)
 
-1. [] In the **Clinical Data** section, you can cycle through the various icons to see different medical details including **medical requests**, **encounters**, **procedures**, and possibly **observations**. This is a simple and efficient way to observe patient healthcare details.
+1. [] In the **Clinical Details** section, you can cycle through the various icons to see different medical details including **medications and prescriptions**, **encounters**, **results and diagnostics**, and **procedures**. This is a simple and efficient way to observe patient healthcare details.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P15.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P16.png)
 
