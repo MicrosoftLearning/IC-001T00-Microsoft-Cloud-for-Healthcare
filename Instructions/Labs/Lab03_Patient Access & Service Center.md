@@ -109,7 +109,7 @@ We will first open the Portal to show the Customer Self-Service template current
 
     ![Screenshot of portal settings dialog](./IMAGES/Lab03/L3P12.png)
 
-    Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You may have to re-sign in. You should be first navigated to the **Portal Details** tab of the **Power Apps Portals admin center**.
+    Selecting **Administration** will open a new window, the **Power Platform admin center**, where you can do portal administrative tasks. You may have to re-sign in. You should be first navigated to the **Power Pages sites** tab of the **Power Platform admin center**. Select **Switch to Classic**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P13.png)
 
@@ -117,9 +117,7 @@ We will first open the Portal to show the Customer Self-Service template current
 
     ![Screenshot of selecting Healthcare Patient Portal in drop down](./IMAGES/Lab03/L3P15.png)
 
-1. [] Select **Update**.
-
-    ![Screenshot of updating portal binding](./IMAGES/Lab03/L3P16.png)
+1. [] Select **Update**. 
 
 1. [] Select **Portal Actions** section on the left navigation. Then select the first option, **Restart.**
 
@@ -323,7 +321,7 @@ In this task, you will continue as Casey and navigate the features of the Patien
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P58.png)
 
-1. [] You may log out of the Patient Portal by selecting the patient’s name in the upper right drop-down and selecting **Sign Out**.
+1. [] You may log out of the Patient Portal by selecting the patient’s name in the upper right drop-down and selecting **Sign out**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P59.png)
 
@@ -355,7 +353,7 @@ In this task, you will assign the necessary roles to your user to create and use
 
 See the following documentation to learn more about these roles: [Assign roles and enable users for Omnichannel for Customer Service](https://docs.microsoft.com/en-us/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges)
 
-1. [] Using an In-Private or Incognito window, navigate to [Power Apps](http://make.powerapps.com).
+1. [] Using an In-Private or Incognito window, navigate to [Power Apps](https://make.powerapps.com) +++https://make.powerapps.com+++.
 
 1. [] Select the correct environment from the upper right **Environment** dropdown, if necessary.
 
@@ -430,35 +428,35 @@ In this task, you will create an agent script in the Omnichannel admin center ap
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P74.png)
 
-1. [] In the **Agent script steps** section, select **+New Agent script step**. You may have to select the vertical ellipsis depending on the size of your window.
+1. [] In the **Agent script steps** section, select **+ New Agent script step**. You may have to select the vertical ellipsis depending on the size of your window.
 
     ![Add Agent script step to the new agent script](./IMAGES/Lab03/L3P75.png)
 
 1. [] The Quick Create form for the Agent script step appears. Specify the following fields:
     1. [] **Name**: +++Confirm Phone Number+++
     1. [] **Unique Name**: +++msdyn_ConfirmPhone+++
-    1. [] **Order**: 1
+    1. [] **Order**: +++1+++ 
     1. [] **Action type**: Text
     1. [] **Text instructions**: +++Ask patient to confirm phone number.+++
 
         ![Screenshot of Quick create form for a step to Confirm Phone Number for the patient](./IMAGES/Lab03/L3P76.png)
 
-1. [] Select **Save and Close**. Now let’s add another step.
+1. [] Select **Save & Close**. Now let’s add another step.
 
-1. [] In the **Agent script steps** section, select **+New Agent script step** again.
+1. [] In the **Agent script steps** section, select **+ New Agent script step** again.
 
     ![Screenshot of New Agent script step button in agent script steps subgrid ](./IMAGES/Lab03/L3P77.png)
 
 1. [] Another Quick Create form for the Agent script step appears. Specify the following fields:
     1. [] **Name**: +++Verify Insurance Information+++
     1. [] **Unique Name**: +++msdyn_VerifyInsuranceInformation+++
-    1. [] **Order**: 2
+    1. [] **Order**: +++2+++
     1. [] **Action type**: Text
     1. [] **Text instructions**: +++Ask Patient for Insurance Provider and ID \#. Verify their response matches insurance information on file.+++
 
     ![Screenshot of Quick create form for a step to Verify Insurance Information for the patient](./IMAGES/Lab03/L3P78.png)
 
-1. [] Select **Save and Close**. Both steps should now be in the Agent script steps table.
+1. [] Select **Save & Close**. Both steps should now be in the Agent script steps table.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P79.png)
 
@@ -547,15 +545,11 @@ In this task, we will assign the necessary user role to create and view knowledg
 
 ### Task 2: Set up Knowledge Management Settings
 
-1. [] In [Power Apps](http://make.powerapps.com), open the **Customer Service Hub** app.
+1. [] In [Power Apps](https://make.powerapps.com/) +++https://make.powerapps.com/+++, select **Apps** and open the **Customer Service admin center** app.
 
-    ![Screenshot of Customer Service Hub application in Power Apps list](./IMAGES/Lab03/L3P94.png)
+    ![Screenshot of Customer Service admin center application in the Apps list](./IMAGES/Lab03/L3P94.png)
 
-1. [] In **Customer Service Hub**, on the left navigation bar, go to the bottom left corner where there’s a dropdown that says **Service**. Select it and change the area to **Service Management**. 
-
-    ![Screenshot of bottom left drop down selection changing from Service to Service Management](./IMAGES/Lab03/L3P95.png)
-
-1. [] If presented with **Customer Service admin center is released** dialog, select **Open Customer Service Admin Center**. Once in the **Customer Service Admin Center** area, select **Knowledge** under **Agent experience** in the left navigation. There are several options to manage your Knowledge Center. Let's explore them.
+1. [] Select **Knowledge** under **Agent experience** on the left navigation. There are several options to manage the Knowledge Center. Let's explore them.
 
     ![Screenshot of Settings option in the site map in Knowledge Base Management section](./IMAGES/Lab03/L3P96.png)
 
@@ -566,21 +560,24 @@ In this task, we will assign the necessary user role to create and view knowledg
 1. [] **Portal** allows you to to set up an external portal. **Support portal connection** integrates an external portal for publishing knowledge articles.
     1.  Selecting Yes would share the knowledge article as a link in the email sent to the customer.
     1.  Selecting No would share the article content inserted in the email body.
-    1.  [] Keep as **No** as we will not be integrating an external portal connection
+    1.  [] Keep as **No** as we will not be integrating an external portal connection   
 
         ![Text Description automatically generated](./IMAGES/Lab03/L3P98.png)
 
-1. [] Select **Manage** next to **General settings**. In the **Feedback** section, toggle **Enable feedback** to to **Yes** to enable users to provide feedback on knowledge articles from search control. This will allow users to provide feedback on knowledge articles opened from knowledge search control.
+1. [] Select **Manage >** next to **General settings**. In the **Feedback** section, toggle **Enable feedback** to to **Yes** to enable users to provide feedback on knowledge articles from search control. This will allow users to provide feedback on knowledge articles opened from knowledge search control.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P99.png)
     
 1. [] Select **Save**.
 
+
 ### Task 3: Create Knowledge Article
 
 In this task, you will create a new knowledge article about Asthma for agents to access during patient conversations.
 
-1. [] In **Customer Service Hub,** on the left navigation bar, go to the bottom left corner where you previously modified the dropdown. Change it back from **Service Management** to **Service**.
+1. [] In [Power Apps](https://make.powerapps.com/) +++https://make.powerapps.com/+++, select **Apps** and open the **Customer Service Hub** app.
+
+1. [] On the left navigation bar, go to the bottom left corner, ensure you're in the **Service** area.
 
     ![Screenshot of bottom left drop down selection changing back from Service Management to Service ](./IMAGES/Lab03/L3P100.png)
 
@@ -588,7 +585,7 @@ In this task, you will create a new knowledge article about Asthma for agents to
 
     ![Screenshot of Knowledge Article option in site map](./IMAGES/Lab03/L3P101.png)
 
-1. [] Select **New** on the command bar.
+1. [] Select **+ New** on the command bar.
 
     ![Screenshot of New button on command bar in Knowledge Article section](./IMAGES/Lab03/L3P102.png)
 
@@ -603,7 +600,7 @@ In this task, you will create a new knowledge article about Asthma for agents to
 
         ![Screenshot of the new knowledge article with title, keyword, and description completed](./IMAGES/Lab03/L3P104.png)
 
-1. [] In the **Content** section, copy and paste the following content for your knowledge article.
+1. [] In the **Content > Designer** section, copy and paste the following content for your knowledge article.
 
     **Common causes**
 
@@ -655,7 +652,7 @@ In this task, you will create a new knowledge article about Asthma for agents to
 
 1. [] In the **Assign Primary Author** dropdown list, you may choose a person who is responsible for maintaining the article content. By default, the user who creates the article is the primary author. For this training, we will keep it as our MOD user.
 
-1. [] Select **Next Stage** to mark the article complete and ready for review.
+1. [] Select **Next Stage >** to mark the article complete and ready for review.
 
     ![Screenshot of close up of the author stage with information filled out](./IMAGES/Lab03/L3P107.png)
 
@@ -704,7 +701,7 @@ To ensure accuracy of the knowledge article, typically someone else would review
 In this task, you will learn how to publish the knowledge article so it’s live and ready to be used.
 
 1. [] In your **Shortness of Breath** Knowledge Article, select the **Publish** stage.
-    1. [] For **Set Product Associated**, check **Mark as Completed**.
+    1. [] For **Set Product Associations**, check **Mark as Complete**.
     1. [] Add an **Expiration Date** for one year from now.
     1. [] Select **Finish**
 
@@ -737,9 +734,9 @@ The following screen shows Patient Service Center after a patient has been escal
 
 ### Task 1: Patient Logs into Access Portal & Agent logs into Patient Service Center
 
-1. [] Navigate to Power Apps and open the **Lamna Healthcare Patient Portal** app.
+1. [] Navigate to [Power Apps](https://make.powerapps.com/) +++https://make.powerapps.com/+++, and open the **Lamna Healthcare Patient Portal** app.
 
-1. [] Sign into the **Patient Portal** as **Casey Jensen**, using the credentials you created in Exercise 1, Task 4 when you registered Casey for the patient portal (username = CaseyJensen and the password is the one you created).
+1. [] Sign into the **Lamna Healthcare Patient Portal** as **Casey Jensen**, using the credentials you created in Exercise 1, Task 4 when you registered Casey for the patient portal (username = CaseyJensen and the password is the one you created).
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P120.png)
 
@@ -755,7 +752,7 @@ The following screen shows Patient Service Center after a patient has been escal
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P123.png)
 
-1. [] Navigate to **Apps** and open the **Patient Service Center** app.
+1. [] In a new tab, navigate to PowerApps **Apps** and open the **Patient Service Center** app.
 
     ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab03/L3P124.png)
 
@@ -765,17 +762,17 @@ The following screen shows Patient Service Center after a patient has been escal
 
     1. If you don’t see the splash screen and the presence indicator is grayed out, escalation into the app from the health bot won’t work properly.
     1. Refresh again or close and reopen Patient Service Center until the splash screen appears. You may need to close all other apps or close incognito altogether and sign back in.
-    1. If the presence indicator is red (busy), sign out and sign back into the Patient Service Center.
+    1. If the presence indicator is showing red (busy), sign out and sign back into the Patient Service Center.
     1. If you just assigned the Omnichannel agent role, it may take up to 15 minutes to apply and for the presence to show for your user.
 
-1. [] Once your presence indicator is green, you are ready to accept patient escalations.
+1. [] Once your **presence indicator** is **Available** and showing the green tick, you are ready to accept patient escalations.
 
 **Congratulations!** You have successfully logged in as both the patient and the live agent. Now it’s time to start the Health Bot conversation.
 
 
 ### Task 2: Patient Escalates through Healthcare Bot
 
-1. [] Switch back to the portal and select the **Let’s Chat** Health Bot chat widget in the bottom right corner of the portal.
+1. [] Switch back to the **Lamna Healthcare Patient Portal** tab and select the **Let’s Chat** Health Bot chat widget in the bottom right corner of the portal.
 
 1. [] The Health Bot should go through the same conversation you created in Lab 02.
     1. [] Make sure you set the Welcome message in the Health Bot lab
@@ -819,7 +816,7 @@ The following screen shows Patient Service Center after a patient has been escal
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab03/L3P128.png)
 
-Now let’s switch over to the Patient Service Center app so you can accept the escalation as an agent.
+Now let’s switch over to the **Patient Service Center** app so you can accept the escalation as an agent.
 
 **Congratulations!** You have successfully configured and started a conversation with the Health Bot in the Healthcare Patient Portal and asked to escalate to an agent in Patient Service Center.
 

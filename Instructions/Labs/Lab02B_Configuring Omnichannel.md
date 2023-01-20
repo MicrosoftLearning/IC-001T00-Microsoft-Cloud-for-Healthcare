@@ -61,7 +61,7 @@ In the following tasks, you will complete the following:
 
     ![Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](./IMAGES/Lab02/L2P32.png)
 
-1. [] While in the **Enabled User** list, scroll to find the **Mod Administrator** or use the **Search** bar.
+1. [] While in the **Enabled User** list, scroll to find the **MOD Administrator** or use the **Search** bar.
 
     ![Screenshot of searching for user in enabled user list](./IMAGES/Lab02/L2P33.png)
 
@@ -69,7 +69,7 @@ In the following tasks, you will complete the following:
 
     ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab02/L2P34.png)
 
-1. [] If necessary, select the **Omnichannel Agent** role to assign to your user and select **OK**.
+1. [] If necessary, select the **Omnichannel agent** role to assign to your user and select **OK**. 
 
     ![Table Description automatically generated with medium confidence](./IMAGES/Lab02/L2P35.png)
 
@@ -165,7 +165,7 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P52.png)
 
-1. [] Open **Default Messaging Queue**.
+1. [] Open **Default messaging queue**.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P53.png)
 
@@ -201,7 +201,7 @@ In this task, you will create and configure the omnichannel queues necessary to 
 
 1. [] A **Users** subgrid should appear. If your user is not visible, select **Add Users** in the subgrid.
 
-1. [] Search for and add your **MOD Administrator** user to the queue. The user is now added to the queue with the agent role.
+1. [] Search for and select your **MOD Administrator** user. Click **Add**. The user is now added to the queue with the agent role.
 
     The queue **Escalate To Human** is created to manage and redirect the incoming messages from a user to a Customer Service (human) Agent when Bot sends the user through to a live agent.
 
@@ -410,7 +410,7 @@ In this task, you will create the **MCH_PatientService** bot scenario using the 
 
 1. [] Enter the **Display Text**: +++Hi there, I’m your Healthcare Assistant.+++
 
-1. [] Select the **pencil** next to **Statement** in the top bar and change Title to **Intro**.
+1. [] Select the **pencil** next to **Statement** in the top bar and change Title to +++Intro+++.
 
     ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P99.png)
 
@@ -452,7 +452,7 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P104.png)
 
-1. [] Select **Ok** and then **Save** to get back to designer.
+1. [] Select **OK** and then **Save** to get back to designer.
 
 1. [] Select the bottom circle on **Intro** and drag it to the top circle on the new prompt, **MedOrAgent** to connect them. An arrow will automatically appear when you try to connect Intro and MedOrAgent boxes using ellipse pointer.
 
@@ -468,7 +468,7 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P110.png)
     
-1. [] Select the Refresh button on the title bar of the chat window to clear the chat for the next text.
+1. [] Select the Refresh button on the title bar of the Web Chat panel to clear the chat for the next test.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P110b.png)
 
@@ -476,7 +476,7 @@ This section prompts two buttons Medication Refill and Live Agent. When user cli
 
 This section checks whether the user has clicked Medication Refill or Live Agent with the help of the variable MedicationOrAgent. It will redirect the message accordingly.
 
-1. [] Add a **Branch** to the designer canvas.
+1. [] Select **+ Add element**, **Flow control elements**, **Branch** to the designer canvas.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P111.png)
 
@@ -500,7 +500,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 1. [] Add the following details and select **Add Cards**:
     1. [] **Input variable**: +++formData+++
     2. [] **Input Type**: Object
-    3. [] Change Title to +++Submit+++
+    3. [] Rename to +++Submit+++
     4. [] Do not add any display text since the adaptive card will display instead
 
         ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab02/L2P115.png)
@@ -539,7 +539,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Diagram Description automatically generated](./IMAGES/Lab02/L2P122.png)
 
-1. [] Select **Save** and select **Refresh** in the **Web Chat** pane. Select **Run** to see your scenario in the webchat.
+1. [] Select **Save** and select **Refresh** in the **Web Chat** panel. Select **Run** to see your scenario in the webchat.
 
 1. [] Fill in information for the request and select **Submit** to see the confirmation text:
     1. [] **Name**: +++Jensen, Casey+++
@@ -667,9 +667,9 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P148.png)
 
-1. [] To verify the presence status, navigate back to **Power Apps** and open **Customer Service Workspace.**
+1. [] To verify the presence status, navigate back to **Power Apps** and open **Customer Service workspace**.
 
-    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when the green circle with the checkmark appears)
+    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Presence status is enabled when the green circle with the checkmark appears.)
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P149.png)
 
@@ -679,18 +679,18 @@ In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P151.png)
 
-1. [] In the **Health Bot in Lamna Healthcare Patient Portal**, select **Lamna Healthcare Support** button, then the **Live Agent** button to witness the escalation into Omnichannel to chat with a live agent (your user!)
+1. [] In the **Health Bot in Lamna Healthcare Patient Portal**, select **Lamna Healthcare Support** button, then the **Live Agent** button to witness the escalation into Omnichannel chat with a Live Agent (your user!)
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P152.png) ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2P153.png)
 
-1. [] Navigating back to **Omnichannel for Customer Service**, your user as the Live Agent should receive an incoming notification with **Accept/Reject** options for that chat.
+1. [] Navigating back to **Customer Service workspace**, your user as the Live Agent should receive an incoming notification with **Accept/Reject** options for that chat.
 
-1. [] Select **Accept** to connect and chat with customer (In this case chat with the **patient**).
+1. [] Select **Accept** to connect and chat with the customer (In this case, with the **patient**). The presence indicator will change to Busy.
 
-    ![live agent notification on Customer Service](./IMAGES/Lab02/L2P154.png)
+    ![live agent notification on Customer Service](./IMAGES/Lab02/L2P154.png) 
 
-1. [] As soon as Live Chat Agent accepts the incoming chat notification, Omnichannel for Customer Service has opened a **Live Chat Widget** and Agent would be able to see the entire bot conversation with user and continue the chat conversation with user for further assistance.
+1. [] When a Live Agent accepts the incoming chat notification, the Customer Service workspace will open a **Live Chat Widget** and the Agent will be able to see the entire bot conversation with the customer/patient and continue the conversation with the customer/patient to provide further assistance. 
 
     ![live agent notification on Customer Service](./IMAGES/Lab02/L2P155.png)
 
-**Congratulations!** You have successfully extended the Azure Health Bot with custom scenarios and tested the end-to-end escalation scenario from a patient using the Azure Health Bot in Power Apps Portals to chatting with a Live Agent in Omnichannel for Customer Service.
+**Congratulations!** You have successfully extended the Azure Health Bot with custom scenarios and tested the end-to-end escalation scenario from a patient using the Azure Health Bot in Power Apps Portals to chatting with a Live Agent in Omnichannel for Customer Service. 

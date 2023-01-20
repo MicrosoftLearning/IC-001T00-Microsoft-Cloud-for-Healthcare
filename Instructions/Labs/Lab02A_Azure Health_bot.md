@@ -50,7 +50,7 @@ In this exercise, you will do the following:
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P3.png)
 
-1. [] Select **Create** button to create a new Azure Health Bot instance.
+1. [] Select the **+ Create** button to create a new Azure Health Bot instance.
 
     ![Create Azure Health Bot subscription](./IMAGES/Lab02/L2P4.png)
 
@@ -63,7 +63,7 @@ In this exercise, you will do the following:
 
         ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P5.png)
 
-1. [] Select **Review + Create**.
+1. [] Select **Review + create**.
 
 1. [] On the **Review and create** page, verify your details are correct as Azure validates your Health Bot. After validation passes, the create button will become enabled. Select **Create**.
 
@@ -77,7 +77,7 @@ In this exercise, you will do the following:
 
 1. [] Please wait until deployment is complete for the Azure Health Bot, then select **Go to resource** when enabled.
 
-1. [] You will be redirected to the **Resource** page for your new Azure Health Bot. Select the **Management portal** link in the Essential section to open your Azure Health Bot instance configuration page.
+1. [] You will be redirected to the **Resource** page for your new Azure Health Bot. Select the **Management portal** link in the Essentials section to open your Azure Health Bot instance configuration page.
 
     > [!ALERT] Note: Please copy this Management portal link. Store it on the VM and your own computer to access the Health Bot later.
 
@@ -148,7 +148,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] In the left navigation, select **Azure Active Directory**. 
 
-1. [] On the **Overview** page, under **Manage**, select **App registration**. 
+1. [] On the **Overview** page, under **Manage**, select **App registrations**. 
 
 1. [] In the **App registrations** pane, select **+ New registration**. 
 
@@ -206,9 +206,9 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S13.png)
 
-### Task 3. Create a new client secret and record secret and app Id values 
+### Task 3. Create a new client secret, record secret and Application client Id values 
 
-1. [] In the resource menu under **Manage**, select **Certificate & secrets**. 
+1. [] In the resource menu under **Manage**, select **Certificates & secrets**. 
 
 1. [] On the menu, select **+ New client secret**. 
 
@@ -216,7 +216,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T3S3.png)
 
-1. [] In the **Value** column, select the **Copy to clipboard** icon to copy the secret value to the clipboard and then paste the secret value in the following text box: 
+1. [] In the **Value** column, select the **Copy to clipboard** icon to copy the value to the clipboard and then paste the value in the following text box: 
 
     @lab.TextBox(AppSecret) 
 
@@ -224,17 +224,17 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] In the resource menu, select **Overview**.
 
-1. [] To the right of **Application (client) ID**, select the **Copy to clipboard** icon to copy the Application (client) ID to the clipboard and then paste the ID in the following text box: 
+1. [] Hover over **Application (client) ID**, select the **Copy to clipboard** icon to copy the Application (client) ID to the clipboard and then paste the ID in the following text box: 
 
     @lab.TextBox(clientappid) 
 
-    > [!NOTE] Record the application (client) ID now **AND** in a text editor like Notepad on your own computer. You will need this ID for later labs.
+    > [!ALERT] Record the application (client) ID now **AND** in a text editor like Notepad on your own computer. You will need this ID for later labs.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T3S6.png)
 
 ### Task 4. Configure environment variables 
 
-1. [] In Microsoft Edge, go to +++https://make.powerapps.com+++. Ensure you are in the MC4H Labs environment.
+1. [] In Microsoft Edge, go to +++https://make.powerapps.com+++. Ensure you are in the **MC4H Labs** environment.
 
 1. [] In the left navigation, select **Solutions**. Select **Default Solution** to open it.
 
@@ -252,7 +252,7 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] Select the **Virtual Visit Secret** variable, and in the pane that opens, enter +++@lab.Variable(AppSecret)+++ in the **Default Value** field. Select **Save**.
 
-1. [] Select the **Virtual Appointment Scheduler Email** box, enter +++@lab.CloudCredential(WWLM365Enterprise2019wSPE_E).Username+++ in the **Default Value** field. Select **Save**.
+1. [] Select the **Virtual Appointment Scheduler Email** box, enter +++@lab.CloudCredential(M365EnterpriseMC4H).Username+++ in the **Default Value** field. Select **Save**.
 
 ### Task 5. Activate Flows and connection references 
 
@@ -294,36 +294,12 @@ In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual 
 
 1. [] Select the back arrow next to **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status to booked**. 
 
-1. [] Reselect the flow and on the menu select **Turn on**. It may take 10-15 seconds for the flow to turn on and the page to refresh. If you receive a "Turn on Failed" message, try again. You may have to repeat this steps several times for the flow to turn on.
+1. [] Reselect the flow and on the command bar select **Turn on**. 
+
+    > [!NOTE] Note: It may take 10-15 seconds for the flow to turn on and the page to refresh. If you receive a "Turn on failed" message, try again. You may have to repeat this step several times for the flow to turn on.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S16.png)
 
-1. [] When complete, in the left navigation, select **&larr; Back to solutions**. If the navigation menu is collapsed, you will use the left arrow icon. 
+1. [] When complete, in the left navigation, select **&larr; Back to solutions**. If the navigation menu is collapsed, you could use the left arrow icon. 
 
-### Task 6: Obtain Azure Application ID
-
-In this task, you will be using the Azure Application ID you created in Task 1 in our Azure tenant called “**MCH Application Id**”. Registering this Id establishes a trusted relationship between your Dynamics 365 app and the Microsoft identity platform. Using this Id, you will later create a Dynamics 365 Application User to bridge the authentication between Azure Health Bot and Power Apps.
-
-1. [] Navigate back to the Azure Portal and search for +++**App Registrations**+++ in the **Search** box. If you have closed this tab or window, use +++https://portal.azure.com+++ in a new tab or window.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P22.png)
-
-1. [] You will be landed in the **App registration** homepage on the **Owned applications** tab.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P23.png)
-
-1. [] Select the **All applications** tab.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P24.png)
-
-1. [] To search for our Application Id, type +++**MCH Application**+++ in the **Search** box.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P25.png)
-
-1. [] Select the **MCH Application** app registration resource. Copy and store the **Application (client) ID** for later to use when creating the Dynamics 365 Application User.
-
-    > [!NOTE] Note: ID values have been removed in the screenshot for privacy purposes.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P26.png)
-
-**Congratulations!** You have successfully obtained the MCH Application ID from Application Registrations in the Azure Portal.
+**Congratulations!** You have now successfully activated the Flow and connected the Connection references.

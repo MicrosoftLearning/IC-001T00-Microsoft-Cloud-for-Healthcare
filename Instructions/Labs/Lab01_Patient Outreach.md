@@ -60,7 +60,7 @@ nearby objects are blurry).
 
 1. [] Navigate to +++https://make.powerapps.com/+++ and log into your Microsoft 365 tenant, if needed.
 
-1. [] If needed, change the environment from **Contoso** to **MC4H** on the top bar. Go to **Apps** and open **Marketing**.
+1. [] If needed, change the environment from **Contoso** to **MC4H Labs** on the top bar. Go to **Apps** and open **Marketing**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P3.png)
 
@@ -152,7 +152,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Click Marketing emails](./IMAGES/L1P19.png)
 
-1. [] In the **Active marketing emails** view, open **Email invitation – Free Diabetes Prevention Event**.
+1. [] In the **Active marketing emails** view, open **Email invitation - Free Diabetes Prevention Event**.
 
     ![Graphical user interface, text, email Description automatically generated](./IMAGES/L1P20.png)
 
@@ -160,7 +160,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![](./IMAGES/L1P21.png)
 
-1. [] Change the **Name** of the event to +++**Email Invitation – Healthy Eye Seminar Virtual Event**+++ and the **Description** to +++**Healthy Eye Seminar Event**+++.
+1. [] Change the **Name** of the event to +++**Email Invitation - Healthy Eye Seminar Virtual Event**+++ and the **Description** to +++**Healthy Eye Seminar Event**+++.
 
     ![Text Description automatically generated](./IMAGES/L1P22.png)
 
@@ -168,7 +168,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Text Description automatically generated](./IMAGES/L1P23.png)
 
-1. [] Navigate back to **Marketing** emails list and select your newly created segment **Email Invitation – Healthy Eye Seminar Virtual Event**.
+1. [] Navigate back to **Marketing** emails list and select your newly created segment **Email Invitation - Healthy Eye Seminar Virtual Event**.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P24.png)
 
@@ -184,7 +184,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/L1P28.png)
 
-1. [] Navigate to **C:\LabFiles** and select the file **Glasses.jpg**. Select **Open** and then **Upload**.
+1. [] Navigate to **C:\LabFiles** and select the file **Glasses.jpg**. Select **Open** and then **Upload**. 
 
     ![Select the “Glasses.jpg” image from the file location, click Upload](./IMAGES/L1P29.png)
 
@@ -201,7 +201,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
         ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P31.png)
 
-1. [] Edit the **footer** text of the email so that it reads **©2022 Lamna Healthcare Event.** Do not edit the dynamic text below it.
+1. [] Edit the **footer** text of the email so that it reads +++©2022 Lamna Healthcare Event+++. Do not edit the dynamic text below it.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/L1P32.png)
 
@@ -253,7 +253,7 @@ Now let’s make our own customer journey for patients with hypermetropia.
 
     ![Name the record Healthy Eye Seminar](./IMAGES/L1P41.png)
 
-1. [] Go back to the **Designer** tab. On the canvas between the gray arrows after the starting box, select the blue plus sign (**+**) that appears when you scroll over the line.
+1. [] Go back to the **Designer** tab. On the canvas between the Start and End arrows after the starting box, select **Add tile** using the blue plus sign (**+**) that appears when you hover over the line. 
 
     ![Add button appears in designer tab](./IMAGES/L1P42.png)
 
@@ -307,7 +307,7 @@ In this exercise, you will create a healthcare-focused, virtual educational **Ev
 
 1. [] Select **Save**.
 
-1. [] Since this will be a virtual event, in the **Stream This Event Online** section, toggle “**Do you want to stream this event**” to **Yes**. If you are working on a small screen, you may have to scroll down to see this section.
+1. [] Since this will be a virtual event, in the **Stream this event online** section, toggle “**Do you want to stream this event**” to **Yes**. If you are working on a small screen, you may have to scroll down to see this section.
 
     ![Select Yes to stream the event online](./IMAGES/L1P52.png)
 

@@ -52,11 +52,11 @@ In this task, you will explore the main tables related to Patient Data. Select e
 
 | Table Name | Definition |
 |----|----|
-| **Patient (Contact)**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact+++ | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
-| **AllergyIntolerance**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcore/allergyintolerance+++ | Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance. |
-| **Condition**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/condition+++ | A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern. |
-| **MedicationRequest**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/medicationrequest+++ | An order or request for both supply of the medication and the instructions for administration of the medication to a patient. |
-| **RelatedPerson**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/relatedperson+++ | Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process. |
+| [Patient (Contact)](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact) | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
+| [AllergyIntolerance](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcore/allergyintolerance) | Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance. |
+| [Condition](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/condition) | A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern. |
+| [MedicationRequest](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/medicationrequest) | An order or request for both supply of the medication and the instructions for administration of the medication to a patient. |
+| [RelatedPerson](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/relatedperson) | Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process. |
 
 See below for the **Patient Detail Entity Relationship Diagram**.
 
@@ -70,15 +70,15 @@ In this task, you will explore the main tables related to Clinic Data. Select ea
 
 | Table Name | Definition |
 |----|----|
-| **Patient or Practitioner (Contact)**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact+++ | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
-| **Organization**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/applicationcommon/organization+++ | Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation. |
-| **Location**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/location+++ | Details and position information for a physical place where services are provided and resources and participants may be stored, found, contained or accommodated. |
-| **AppointmentEMR**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/appointmentemr+++ | A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s). |
-| **Procedure**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/procedure+++ | An action that is or was performed on a patient. This can be a physical intervention like an operation, or less invasive like counseling or hypnotherapy. |
-| **Encounter**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/encounter+++ | An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. |
-| **EpisodeOfCare**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/episodeofcare+++ | An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. |
-| **Observation**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/observation+++ | Measurements and simple assertions made about a patient, device or other subject. |
-| **CodeableConcept**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/codeableconcept+++ | A Codeable Concept represents a value that is usually supplied by providing a reference to one or more terminologies, but may also be defined by the provision of text. |
+| [Patient or Practitioner (Contact)](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact) | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
+| [Organization](https://docs.microsoft.com/en-us/common-data-model/schema/core/applicationcommon/organization) | Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation. |
+| [Location](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/location) | Details and position information for a physical place where services are provided and resources and participants may be stored, found, contained or accommodated. |
+| [AppointmentEMR](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/appointmentemr) | A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s). |
+| [Procedure](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/procedure) | An action that is or was performed on a patient. This can be a physical intervention like an operation, or less invasive like counseling or hypnotherapy. |
+| [Encounter](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/encounter) | An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. |
+| [EpisodeOfCare](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/episodeofcare) | An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. |
+| [Observation](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/observation) | Measurements and simple assertions made about a patient, device or other subject. |
+| [CodeableConcept](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/codeableconcept) | A Codeable Concept represents a value that is usually supplied by providing a reference to one or more terminologies, but may also be defined by the provision of text. |
 
 See below for the **Clinical Data Entity Relationship Diagram**.
 
@@ -92,14 +92,14 @@ In this task, you will explore the main tables related to Care Plan Management. 
 
 | Table Name | Definition |
 |----|----|
-| **Patient (Contact)**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact+++ | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
-| **CarePlan**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/careplan+++ | Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition |
-| **CarePlanActivity**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplanactivity+++ | Identifies a planned action to occur as part of the plan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc. |
-| **CarePlanActivityGoal**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplanactivitygoal+++ | Internal reference that identifies the goals that this activity is intended to contribute towards meeting. |
-| **Goal**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/goal+++ | Target objective for a user or a team for a specified time period. |
-| **CarePlanGoal**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplangoal+++ | Describes the intended objective(s) of carrying out the care plan. |
-| **Encounter**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/encounter+++ | An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. |
-| **Episode of Care**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/episodeofcare+++ | An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. |
+| [Patient (Contact)](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact) | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
+| [CarePlan](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/careplan) | Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition |
+| [CarePlanActivity](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplanactivity) | Identifies a planned action to occur as part of the plan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc. |
+| [CarePlanActivityGoal](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplanactivitygoal) | Internal reference that identifies the goals that this activity is intended to contribute towards meeting. |
+| [Goal](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/goal) | Target objective for a user or a team for a specified time period. |
+| [CarePlanGoal](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplangoal) | Describes the intended objective(s) of carrying out the care plan. |
+| [Encounter](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/encounter) | An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. |
+| [Episode of Care](https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/episodeofcare) | An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. |
 
 See below for the **Care Plan Management Entity Relationship Diagram**.
 
@@ -111,13 +111,13 @@ See below for the **Care Plan Management Entity Relationship Diagram**.
 
 In this exercise, you will navigate the patient record and explore all the detailed information that is captured about the patient by Microsoft Cloud for Healthcare. In this case, we will examine the healthcare information of Amber Rodriguez to see how a care team member would obtain a full view of the patient.
 
-1. [] Navigate to +++http://make.powerapps.com+++ in an In-Private or Incognito window. If you are in an official training class, sign in with your assigned user.
+1. [] Navigate to [PowerApps](https://make.powerapps.com) +++http://make.powerapps.com+++ in an In-Private or Incognito window. If you are in an official training class, sign in with your assigned user.
 
-1. [] Select the **MC4H Labs Environment** in the upper right.
+1. [] Select the **MC4H Labs** environment in the upper right.
 
     ![](./IMAGES/Lab04/L4P6.png)
 
-1. [] In Power Apps, select **Apps** in the left sitemap. Select and open **Care Management**.
+1. [] In Power Apps, select **Apps** in the left navigation. Select and open the **Care Management** app.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P7.png)
 
@@ -125,7 +125,7 @@ In this exercise, you will navigate the patient record and explore all the detai
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P8.png)
 
-1. [] Select **People** in the left Site Map.
+1. [] Under **Administration**, select **People** from the site navigation.
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P9.png)
 
@@ -149,25 +149,29 @@ In this exercise, you will navigate the patient record and explore all the detai
 
     ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P14.png)
 
-1. [] In the **Clinical Data** section, you can cycle through the various icons to see different medical details including **medical requests**, **encounters**, **procedures**, and possibly **observations**. This is a simple and efficient way to observe patient healthcare details.
+1. [] In the **Clinical details** section, you can cycle through the various icons to see different medical details including **Medications and prescriptions**, **Encounters**, **Results and diagnostics**, and **Procedures**. This is a simple and efficient way to observe patient healthcare details.
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P15.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P16.png)
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P15.png) 
+    
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P16.png)
+    
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P17.png) 
+    
+    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P18.png)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P17.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P18.png)
-
-1. [] The **Patient Interactions** section shows any activity, note, or post and can be filtered or sorted.
+1. [] The **Patient interactions** section shows any activity, note, or post and can be filtered or sorted.
 
     ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab04/L4P19.png)
 
-1. [] Select the **Profile** tab to get **Patient, Address, and Insurance Information.** In the **Patient Information**, notice that key patient data such as **Date of Birth** and **Primary Practitioner** are shown. The healthcare data model uses the contact entity from the Common Data Model and defines the type of contact as patient, practitioner, or related person. This determines the type of form shown.
+1. [] Select the **Profile** tab to get Patient information including address, and Insurance coverage. In the **Patient information** section, notice that key patient data such as **Date of birth** and **Primary practitioner** are shown. The healthcare data model uses the contact entity from the Common Data Model and defines the type of contact as patient, practitioner, or related person. This determines the type of form shown.
 
     ![Graphical user interface Description automatically generated](./IMAGES/Lab04/L4P20.png)
 
-1. [] Select the **Clinical Timeline** tab. On this tab, a care team member will be able to view a weekly calendar of the patient’s clinical information as well as a list of any upcoming or previous events.
+1. [] Select the **Clinical timeline** tab. On this tab, a care team member will be able to view a weekly calendar of the patient’s clinical information as well as a list of any upcoming or previous events.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P21.png)
 
-1. [] Select the **Upcoming** **events** dropdown in the right pane and switch to **previous events**.
+1. [] Select the **Upcoming** **events** dropdown in the right pane and switch to **Previous events**.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P22.png)
 
@@ -179,7 +183,7 @@ In this exercise, you will navigate the patient record and explore all the detai
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P25.png)
 
-1. [] Select the **Care Team** tab. On this tab, the care team member can find other members who may be providing care to the patient for any current conditions and care plans.
+1. [] Select the **Care team** tab. On this tab, the care team member can find other members who may be providing care to the patient for any current conditions and care plans.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P24.png)
     
@@ -199,11 +203,11 @@ In this exercise, you will be creating a new Location record for the **Lamna Hea
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P27.png)
 
-1. [] In the **Care Management** sitemap on the left, select **Locations**.
+1. [] In the **Care Management** sitemap on the left, under **Administration**, select **Locations**.
 
     ![A picture containing graphical user interface Description automatically generated](./IMAGES/Lab04/L4P28.png)
 
-1. [] In the **All Locations** view, select **+New**.
+1. [] In the **All Locations** view, select **+ New**.
 
     ![A picture containing diagram Description automatically generated](./IMAGES/Lab04/L4P29.png)
 
