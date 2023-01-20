@@ -253,7 +253,7 @@ Now let’s make our own customer journey for patients with hypermetropia.
 
     ![Name the record Healthy Eye Seminar](./IMAGES/L1P41.png)
 
-1. [] Go back to the **Designer** tab. On the canvas between the gray arrows after the starting box, select the blue plus sign (**+**) that appears when you scroll over the line.
+1. [] Go back to the **Designer** tab. On the canvas between the Start and End arrows after the starting box, select **Add tile** using the blue plus sign (**+**) that appears when you hover over the line. 
 
     ![Add button appears in designer tab](./IMAGES/L1P42.png)
 
@@ -307,7 +307,7 @@ In this exercise, you will create a healthcare-focused, virtual educational **Ev
 
 1. [] Select **Save**.
 
-1. [] Since this will be a virtual event, in the **Stream This Event Online** section, toggle “**Do you want to stream this event**” to **Yes**. If you are working on a small screen, you may have to scroll down to see this section.
+1. [] Since this will be a virtual event, in the **Stream this event online** section, toggle “**Do you want to stream this event**” to **Yes**. If you are working on a small screen, you may have to scroll down to see this section.
 
     ![Select Yes to stream the event online](./IMAGES/L1P52.png)
 
