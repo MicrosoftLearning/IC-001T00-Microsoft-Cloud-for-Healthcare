@@ -113,7 +113,7 @@ We will first open the Portal to show the Customer Self-Service template current
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P13.png)
 
-1. [] Scroll down to **Update Portal Binding > Select Website Record**. Open the **Select Website Record** dropdown and change the value from **Customer Self-Service** to **Healthcare Patient Portal**, if necessary. This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario.
+1. [] Scroll down to **Update Portal Binding > Select Website Record**. Open the **Select Website Record** dropdown and change the value from **Lamna Healthcare Patient Portal** to **Healthcare Patient Portal**, if necessary. This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario.
 
     ![Screenshot of selecting Healthcare Patient Portal in drop down](./IMAGES/Lab03/L3P15.png)
 
