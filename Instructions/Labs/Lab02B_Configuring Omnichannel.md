@@ -592,7 +592,7 @@ This section checks whether the user has clicked Medication Refill or Live Agent
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P131.png)
 
-1. [] Select the back arrow next to **MCH_PatientSerivce** in the scenario editor.
+1. [] Select the back arrow next to **MCH_PatientService** in the scenario editor.
 
     ![Graphical user interface, application, Word Description automatically generated](./IMAGES/Lab02/L2P132.png)
 
@@ -635,7 +635,7 @@ In this task, you will create another bot scenario called **MCH_PatientServiceWe
 
     ![Text Description automatically generated with medium confidence](./IMAGES/Lab02/L2P142.png)
 
-1. [] Select the back arrow next to **MCH_PatientSerivce** in the scenario editor.
+1. [] Select the back arrow next to **MCH_PatientServiceWelcome** in the scenario editor.
 
 ### Task 3: Configure Welcome Scenario as Automatic
 
