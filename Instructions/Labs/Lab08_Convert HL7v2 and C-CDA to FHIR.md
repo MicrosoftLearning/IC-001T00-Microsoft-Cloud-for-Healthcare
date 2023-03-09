@@ -136,27 +136,32 @@ Now you will make another API request similar to the one above, except this time
 
 ## Exercise 5: Set up Request Parameters
 
-1. [] To view a sample C-CDA data file, open a new tab and navigate to **CCDA_Ford_Elaine.xml** at +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-02%20-%20Convert%20HL7v2%20and%20C-CDA%20to%20FHIR/samples/CCDA_Ford_Elaine.xml+++  (Select Raw on the right side to view the entire data string in your browser window.)
+1. [] To view a sample C-CDA data file, open a new tab and navigate to **CCDA_Ford_Elaine.xml** at +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-02%20-%20Convert%20HL7v2%20and%20C-CDA%20to%20FHIR/samples/CCDA_Ford_Elaine.xml+++  
 
-1. [] Copy and paste the C-CDA data into VS Code or a text editor of your choice.
+1. [] Select **Raw** on the right side for ease of viewing.
 
-1. [] Refer back to the FHIR service \$convert-data documentation at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data+++ on how to arrange the parameters in the JSON body of the request. Be aware that the parameters now need to work for C-CDA data (see the table below).
+1. [] Copy the XML file and save it in a notepad.
 
-    | "name"                        | "valueString"                           |
+1. [] In the **Body** tab in Postmanfor the **Convert Data - CCDA** request, select the **raw** and choose **JSON** from the dropdown menu on the right.
+
+1. In the **Body**, enter and format the C-CDA request parameters following the example given in the $convert-data documentation at +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data+++. Be aware that the parameters now need to work for C-CDA data (see the table below).
+
+    | **name**                      | **valueString**                         |
     |-------------------------------|-----------------------------------------|
     | "inputDataType"               | "Ccda"                                  |
     | "templateCollectionReference" | "microsofthealth/ccdatemplates:default" |
     | "rootTemplate"                | "CCD"                                   |
 
-1. [] You will need to format the C-CDA data payload so that it sits correctly in the JSON request body.
 
-    > [!HINT] Hint: The JSON spec requires all keys and values to be surrounded by double quotes. Any double quotes within the JSON data payload must be \\ escaped, however. Look at the " quotation marks in the C-CDA data string. These " quotes all need to be \\ escaped in order for the \$convert-data request to work. The online tool at +++https://www.freeformatter.com/json-escape.html+++ is helpful for adding \\ escape characters to JSON where needed. Alternatively, you could use a text editor and do a "find and replace". Whatever method works best for you is fine.
+    ![](./IMAGES/Lab08/L8P7.png)
+    
+1. [] Reformat the xml file of the C-CDA payload you saved earlier so that the formatting follows the sample request given in the **$convert-data** documentation at https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data. You will need to escape the quotation marks. Use the online tool in the note below or a text editor, whichever is easiest. Note the formatted xml file.
 
-1. [] When ready, copy and paste the JSON-formatted request parameters with the C-CDA payload into the body of the **Convert Data - CCDA** request in Postman.
+    > [!NOTE] **Note**: The JSON spec requires all keys and values to be surrounded by double quotes. Any double quotes within the JSON data payload must be \\ escaped, however. Look at the " quotation marks in the C-CDA data string. These " quotes all need to be \\ escaped in order for the \$convert-data request to work. The online tool at +++https://www.freeformatter.com/json-escape.html+++ is helpful for adding \\ escape characters to JSON where needed. Alternatively, you could use a text editor and do a "find and replace". Whatever method works best for you is fine.
 
-    1. [] Select the **raw** button and choose **JSON** from the dropdown menu on the right.
-    1. [] Paste the sample request in from the documentation above.
-    1. [] Replace the **inputData valueString** value with the CCDA string  
+    *Optional – prepare the C-CDA request parameters and C-CDA payload in VS Code first before pasting into the body of the Postman request.*
+
+1. [] Copy and paste the re-formatted **C-CDA** message into the **inputData valueString**.
 
 1. [] Make sure to save the **Convert Data - CCDA** request.
 
