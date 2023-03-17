@@ -311,7 +311,7 @@ In the last exercise, we assigned **Home Health Work Order** 00034 to our Home H
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P55.png)
 
-1. [] Select to open the Work Order. Notice the **Booking Status** says **In Progress**. Expand the status field using the blue arrow in the upper right. Select the **magnifying glass** next to the status field to modify the value.
+1. [] Select to open the Work Order. Notice the **Booking Status** says **In Progress**. Expand the status field using the arrow in the upper right.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P56.png)![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P57.png)
 
