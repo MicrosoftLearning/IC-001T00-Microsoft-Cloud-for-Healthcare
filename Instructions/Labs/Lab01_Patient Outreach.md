@@ -201,7 +201,7 @@ In this exercise, you will create a marketing email that will be used to reach o
 
         ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P31.png)
 
-1. [] Edit the **footer** text of the email so that it reads **©2022 Lamna Healthcare Event.** Do not edit the dynamic text below it.
+1. [] Edit the **footer** text of the email so that it reads **©2023 Lamna Healthcare Event.** Do not edit the dynamic text below it.
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/L1P32.png)
 
