@@ -315,10 +315,6 @@ In the last exercise, we assigned **Home Health Work Order** 00034 to our Home H
 
     ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P56.png)![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P57.png)
 
-1. [] Remove **In progress** from the selected values by selecting the **x** next to it.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P58.png)![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab05/L5P59.png)
-
 1. [] Set the **Booking Status** to **Completed** to close the Work Order. Select **Save** in the upper right.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab05/L5P60.png)![Graphical user interface, application Description automatically generated](./IMAGES/Lab05/L5P61.png)
