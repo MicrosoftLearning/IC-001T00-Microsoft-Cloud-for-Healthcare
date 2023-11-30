@@ -28,6 +28,8 @@ Patient Outreach focuses on the Deliver exceptional patient and member experienc
 
 This lab focuses on the healthcare story of Elizabeth Moore.
 
+![image](./IMAGES/image2.png)
+
 At an annual checkup earlier this year, Elizabeth is diagnosed with hypermetropia, a common eye condition in adults in which nearby objects are blurry. Lamna Healthcare Company has seen a recent influx of patients who want to be more educated on hypermetropia. Lamna has decided to increase their patient outreach efforts by hosting a virtual marketing event.
 
 In this module, you'll play the role of a Lamna Healthcare Company marketing administrator and will use the Patient Outreach capabilities in Microsoft Cloud for Healthcare to walk through the following exercises:
@@ -56,6 +58,8 @@ In this exercise, you'll create a patient segment by using the Patient Outreach 
 
 6.	Click on a **New Segment**.
  
+![image](./IMAGES/image3.png)
+
 7.	Update with below details:
 
     1.	Name of the Segment – **Patients with Hypermetropia**
@@ -64,22 +68,36 @@ In this exercise, you'll create a patient segment by using the Patient Outreach 
 
     3.	Click on **Create**.
  
+![image](./IMAGES/image4.png)
+
 8.	Expand the arrow beside the **Add a new group** and select **Attribute group**.
  
+![image](./IMAGES/image5.png)
+
 9.	Search for **Status** under Search area. Expand **Contact** and select **Status** under Contact. Add it to existing group.
  
+![image](./IMAGES/image6.png)
+
 10.	 Select the **operator** as **Is** and **Value** as **Active**
  
+![image](./IMAGES/image7.png)
+
 11.	Select **Add a subgroup**.
 
 12.	Enter **Condition** in the search area on the Right-side panel. Select **Condition** under **Condition**. Click on **+** symbol. Select **Existing group** and then select **Group 1.1.**
 
 **Note** - If you are unable to find, you can click on Add a table and add the condition table
  
+![image](./IMAGES/image8.png)
+
 13.	 Select **Patient** under **Add an attribute from a different table** pop-up.
  
+![image](./IMAGES/image9.png)
+
 14.	Click on **Done**.
  
+![image](./IMAGES/image10.png)
+
 15.	 Update with below details
 
         1. Operator – **Contains**
@@ -88,16 +106,24 @@ In this exercise, you'll create a patient segment by using the Patient Outreach 
 
         3.	Click on **Save**.
  
+![image](./IMAGES/image11.png)
+
 16.	 Click on **Ready to use**.
  
+![image](./IMAGES/image12.png)
+
 17.	 The segment takes approximately 10-15 minutes to be used in journey.
  
+![image](./IMAGES/image13.png)
+
 **Note**- You won't be able to use the new patient segment in a customer journey until it goes live.
 
 18.	Select **Refresh** on the command bar to refresh the page.
 
 19.	Select the **Members and Insights** tab to see which patients have been added to the Dynamic segment. Notice Elizabeth Moore in the list, a recipient of our next marketing event outreach email.
  
+![image](./IMAGES/image14.png)
+
 You've completed the steps to create a patient segment that can be used for patient outreach. This patient segment will be used in the tasks in the next exercise. For more information about dynamics segments, see [Create a dynamic segment (Dynamics 365 Marketing)](https://learn.microsoft.com/en-us/dynamics365/marketing/create-segment/). For more information about segments in general, see [Working with segments (Dynamics 365 Marketing)](https://learn.microsoft.com/en-us/dynamics365/marketing/segmentation-lists-subscriptions/).
 
     
@@ -109,20 +135,32 @@ In this exercise, you'll create a marketing email that will be used to reach out
 
 2.	Click on **+ New**.
  
+![image](./IMAGES/image15.png)
+
 3.	Click on **Skip** on Email templates window.
 
 4.	Rename the Email as **Email Invitation - Healthy Eye Seminar Virtual Event.**
  
+![image](./IMAGES/image16.png)
+
 5.	In the Email body, Click on **Add element here** and click on **Image**.
- 
+
+![image](./IMAGES/image17.png) 
+
 6.	Click on **Add image > Upload to library**.
  
+![image](./IMAGES/image18.png)
+
 7.	Navigate to the path where **Glasses.jpg** image is saved and upload the file.
 
 8.	Click on + sign once the image is uploaded.
  
+![image](./IMAGES/image19.png)
+
 9.	Click on **text**.
  
+![image](./IMAGES/image20.png)
+
 10.	Edit the text of the email as follows:
 
     1.	Pick a date : **December 1st, 2023, 9:00 am to 1:00 pm**
@@ -133,27 +171,49 @@ In this exercise, you'll create a marketing email that will be used to reach out
 
     4.	Description 2 - **Come join us at this virtual Event.**
  
+![image](./IMAGES/image21.png)
+
 12.	Remove the **{{contact.firstname}}** and click on **Personalization**.
  
+![image](./IMAGES/image22.png)
+
 13.	Click on **New Dynamic text**.
  
+![image](./IMAGES/image23.png)
+
 14.	Click on **Choose an attribute.**
  
+![image](./IMAGES/image24.png)
+
 15.	Expand **Contact** and select **first name**.
  
+![image](./IMAGES/image25.png)
+
+![image](./IMAGES/image26.png)
+
 16.	Edit the footer text of the email so that it reads **©2023 Lamna Health Event.**
  
+![image](./IMAGES/image27.png)
+
 17.	Update the below details
 
     1.	From – Enter the text as **Your Care Team at**
 
     2.	From Email – Add a dynamic content text Account’s Name. – {{AccountName}}
  
-    3.	Scroll up and add a Subject - You are invited for Healthy Eye Virtual Seminar!
+![image](./IMAGES/image28.png)
+
+   	3.	Scroll up and add a Subject - You are invited for Healthy Eye Virtual Seminar!
  
+ ![image](./IMAGES/image29.png)
+    
     4.	On the right-side panel, click on **Settings**, Under Reply to **Email** please enter dynamic content text Email.
  
-18.	On the command bar, select **Save**. Click on **Ready to Send**.
+![image](./IMAGES/image30.png)
+
+![image](./IMAGES/image31.png)
+
+19.	On the command bar, select **Save**. Click on **Ready to Send**.
 
 You've completed the steps to create a marketing email that can be used for patient outreach. This marketing email will be used in the next exercise. For more information on creating marketing emails, see [Create a marketing email (Dynamics 365 Marketing)](https://learn.microsoft.com/en-us/dynamics365/marketing/create-marketing-email/)
 
@@ -163,6 +223,8 @@ In this exercise, you'll create a patient journey for the patient segment that y
 
 The following screenshot shows an example of a configured patient journey that focuses on the Patient Activation Measure segment group and sends them a marketing email after a three-month waiting period.
  
+![image](./IMAGES/image32.png)
+
 Now let’s make our own patient journey for patients with hypermetropia.
 
 1.	Click on **Journeys** under **Engagement** on the left navigation pane.
@@ -171,6 +233,8 @@ Now let’s make our own patient journey for patients with hypermetropia.
 
 3.	Click on **Skip** and create from Blank.
  
+![image](./IMAGES/image33.png)
+
 4.	Update the details:
 
     1.	Name of the Journey - **Healthy Eye Seminar**
@@ -183,14 +247,28 @@ Now let’s make our own patient journey for patients with hypermetropia.
 
     5.	Click on **Create**.
  
+![image](./IMAGES/image34.png)
+
+![image](./IMAGES/image35.png)
+
 5.	Click on + symbol.
  
+![image](./IMAGES/image36.png)
+
 6.	Select **Send an email.**
  
+![image](./IMAGES/image37.png)
+
 7.	On the right side, select the email that you created – **Email invitation – Healthy Eye Seminar.**
  
+![image](./IMAGES/image38.png)
+
+![image](./IMAGES/image39.png)
+
 8.	Change the frequency to  repeating journey.
  
+![image](./IMAGES/image40.png)
+
 9.	You can update the End data accordingly.
 
 10.	Once you have created. **Save** and **publish** the journey.
@@ -208,25 +286,50 @@ In this exercise, you'll create a healthcare-focused, virtual marketing event th
 
 2.	Select **Events** on the left navigation pane on the page.
  
+![image](./IMAGES/image41.svg)
+
 3.	Select **+ New event** on the command bar to create a new event.
  
+![image](./IMAGES/image42.svg)
+
 4.	Enter details for the new event. Enter **Healthy Eye Seminar** in the **Event name** field and enter the same schedule details that you entered for the marketing email in the previous exercise. Make sure that you become familiar with the other fields on the forms as part of the **Preliminaries** event stage.
  
+![image](./IMAGES/image43.svg)
+
 5.	Select **Save**. This will open more options on the command bar.
 
 6.	Because this event will be virtual, in the **Stream This Event Online** section, change the **Do you want to stream this event toggle** to **Yes**.
 
- 
+![image](./IMAGES/image44.svg) 
+
 7.	In the Business Process Flow, select the first stage **Preliminaries**. In the flyout menu, select **Next Stage**.
  
+![image](./IMAGES/image45.svg)
+
 8.	Advance each stage in the business process flow until you reach the **Launch** stage. Observe the fields that are associated with each stage as you advance through them. Click on **Next** Stage for **Launch** stage. Click on **Finish** when you reach **Post Event** stage.
   
+![image](./IMAGES/image46.svg)
+
+![image](./IMAGES/image47.svg)
+
+![image](./IMAGES/image48.svg)
+
 9.	Select **Go live** on the command bar. If you don’t see Go live available, select Save first.
  
+![image](./IMAGES/image49.svg)
+
+![image](./IMAGES/image50.svg)
+
+![image](./IMAGES/image51.svg)
+
 10.	The Microsoft Teams meeting URL will populate.
+
+![image](./IMAGES/image52.svg)
 
 11.	You can also choose to **change the meeting options** toggle to **Yes** to enable its settings and more fields appear. These options allow you to make the recording available to attendees, enable meeting chat, allow reactions, and more.
  
+![image](./IMAGES/image53.svg)
+
 You've created a virtual marketing event for patients with hypermetropia by using Microsoft Cloud for Healthcare. For more information, see [Event planning and management overview.](https://learn.microsoft.com/en-us/dynamics365/marketing/event-management/)
 
 ## Exercise 5 – Create a trigger-based patient journey 
@@ -237,10 +340,16 @@ In this exercise, you'll create a patient trigger by using the Customer Insights
 
 1.	Switch back to [Power Apps portal](https://make.powerapps.com/). Navigate to **Apps** on the left navigation pane and launch **Customer Insights – Journeys** App by selecting the **play** button.
  
+![image](./IMAGES/image54.png)
+
 2.	On the Customer Insights – Journeys app, select **Triggers** under **Engagement** from the left-navigation pane.
  
+![image](./IMAGES/image55.png)
+
 3.	Select **New trigger.**
  
+![image](./IMAGES/image56.png)
+
 4.	Enter the following details:
 
   	a.	Name the new trigger - **Encounter Details Updated**. 
@@ -249,6 +358,8 @@ In this exercise, you'll create a patient trigger by using the Customer Insights
 
     c.	Select **Create**.
  
+![image](./IMAGES/image57.png)
+
 6.	Enter the following details. 
 
     a.	In which table is the record created or updated? – Search for **Encounter** and select the option from the list.
@@ -261,14 +372,22 @@ In this exercise, you'll create a patient trigger by using the Customer Insights
 
     e.	Click on **Ready to use**.
  
+![image](./IMAGES/image58.png)
+
 7.	 After the trigger is saved. It is not ready to use for the journey.
  
+![image](./IMAGES/image59.png)
+
 ## Task: Create a trigger-based patient journey
 
 1.	Select **Journeys** on the left navigation pane.
  
+![image](./IMAGES/image60.png)
+
 2.	Select **New Journey.**
  
+![image](./IMAGES/image61.png)
+
 3.	Enter the following details:
 
     a.	Name of Journey – **Encounter Details Update** 
@@ -279,10 +398,20 @@ In this exercise, you'll create a patient trigger by using the Customer Insights
 
     d.	Select **Create**.
  
+![image](./IMAGES/image62.png)
+
 4.	Select **Save** to save the journey. 
 
 **Note** – You can click on Plus symbol to add and extend your Trigger based journeys
  
+![image](./IMAGES/image63.png)
+
 5.	Select **Publish** on the journey is saved.
  
+![image](./IMAGES/image64.png)
+
+![image](./IMAGES/image65.png)
+
 The status of the Journey now is Live
+
+![image](./IMAGES/image66.png)
