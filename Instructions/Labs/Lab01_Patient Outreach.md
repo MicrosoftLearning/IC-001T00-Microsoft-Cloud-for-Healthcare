@@ -157,123 +157,130 @@ You've completed the steps to create a marketing email that can be used for pati
 
 ## Exercise 3: Create a Patient Journey
 
-In this exercise, you will create a Patient Journey for the patient segment that you created in the first exercise. A **Patient Journey** can expand your
-organization’s patient outreach marketing capabilities by helping healthcare organizations guide the members of a selected segment through the communication process. It does this by using automated messaging, activity generation, interactive decision points, and more.
+In this exercise, you'll create a patient journey for the patient segment that you created in the first exercise. A patient journey can expand your organization's patient outreach marketing capabilities by helping healthcare organizations guide the members of a selected segment through the communication process. It completes this action by using automated messaging, activity generation, interactive decision points, and more.
 
-Here is an example of a configured **Patient Journey**, which focuses on the Patient Activation Measure segment group and sends them a marketing email after a 3-month waiting period.
+The following screenshot shows an example of a configured patient journey that focuses on the Patient Activation Measure segment group and sends them a marketing email after a three-month waiting period.
+ 
+Now let’s make our own patient journey for patients with hypermetropia.
 
-![Patient Journey selected on site map](./IMAGES/L1P34.png)
+1.	Click on **Journeys** under **Engagement** on the left navigation pane.
 
-Now let’s make our own customer journey for patients with hypermetropia.
+2.	Select **+ New journey** to create a new patient journey.
 
-1.  In the **Patient Outreach** app, select **Patient journeys** under **Marketing execution** on the Site map.
+3.	Click on **Skip** and create from Blank.
+ 
+4.	Update the details:
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/L1P35.png)
+    1.	Name of the Journey - **Healthy Eye Seminar**
 
-1.  Select **New** to create a new Patient Journey.
+    2.	Choose the type of Journey – **Segment-based**.
 
-    ![Click New to create a new Patient Journey](./IMAGES/L1P36.png)
+    3.	Select a Segment – **Patients with Hypermetropia**
 
-1.  When prompted to choose a **Customer journey template** option, select **Skip** as we will create our own customer journey.
+    4.	Start Date – Current date.
 
-    ![Click Skip as we will create our own customer journey](./IMAGES/L1P37.png)
+    5.	Click on **Create**.
+ 
+5.	Click on + symbol.
+ 
+6.	Select **Send an email.**
+ 
+7.	On the right side, select the email that you created – **Email invitation – Healthy Eye Seminar.**
+ 
+8.	Change the frequency to  repeating journey.
+ 
+9.	You can update the End data accordingly.
 
-1.  In the **Designer** view under **Who do you want to be on this journey?**, select the plus sign to **Set audience.**
+10.	Once you have created. **Save** and **publish** the journey.
 
-    ![New customer journey screenshot](./IMAGES/L1P38.png)
+11.	After your patient journey has started, you'll be able to gather key metrics and insights from the record. This information will become available at a time that is based on the date and time that you chose for the start of the customer journey. You can return to view the results later if they aren't yet available.
 
-1.  In the **Audience** panel that shows on the right, search for the **Patients with Hypermetropia** segment that you created in the previous task.
+You've created a patient journey that will send the invitation email to the Healthy Eye Seminar to members of the Patients with Hypermetropia segment. For more information on patient journeys, see Create a simple customer journey (Dynamics 365 Marketing).
 
-    ![Find the “Patients with Hypermetropia” segment that you created in the previous task](./IMAGES/L1P39.png)
-
-1.  Select “**Patients with Hypermetropia**” for the source segment.
-
-    ![select “Patients with Hypermetropia” ](./IMAGES/L1P40.png)
-
-1.  Select the **General** tab and rename the record to **Healthy Eye Seminar**. Select **Save**.
-
-    ![Name the record Healthy Eye Seminar](./IMAGES/L1P41.png)
-
-1.  Go back to the **Designer** tab. On the canvas between the gray arrows after the starting box, select the blue plus sign (**+**) that appears when you scroll over the line.
-
-    ![Add button appears in designer tab](./IMAGES/L1P42.png)
-
-1.  Select **Send an email** from the contextual menu.
-
-    ![select Send an email from the contextual menu](./IMAGES/L1P43.png)
-
-1.  In the panel on the right for the **Email** field, select the marketing email **Email Invitation – Healthy Eye Seminar Virtual Event** that you created in the previous exercise.
-
-    ![Customer Journey Designer View to select an email](./IMAGES/L1P44.png)
-
-    ![Select the “Email Invitation – Healthy Eye Seminar” email that you created in the previous task](./IMAGES/L1P45.png)
-
-1.  Select **Save.**
-
-    ![click save for customer journey](./IMAGES/L1P46.png)
-
-1.  Switch to the **General** tab to configure the run schedule for your customer journey. Enter a **Start and End** date and time that makes sense for your event. If you want to see insights for the journey, choose an upcoming **Start time** on today’s date. Remember the dates you enter for the next exercise.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/L1P47.png)
-
-1.  Select **Save**.
-
-1.  Your journey is now ready to go. To start the journey, navigate back to the **Designer** tab and publish it by selecting **Go live** on the command bar.
-
-    ![select go live on the command bar](./IMAGES/L1P48.png)
-
-1.  Dynamics 365 Marketing copies the journey to its email marketing service, which executes the journey by processing contacts, performing actions, and collecting results during the time it is set to run. Watch the journey's **Status Reason** as it sequences through **Going Live** to **Live**.
-
-    ![Your journey is now ready to go. To start the journey, publish it by selecting Go live on the command bar](./IMAGES/L1P49.png)
-
-1.  Once your patient journey runs, you will be able to gather **key metrics and insights** from the record. When this information is available depends on the date and time you chose for the start of the customer journey. You may come back to see the results later if they aren’t yet available.
-
-**Congratulations**! You have created a patient journey by utilizing the patient segment and marketing email you created in the previous exercise. For more information on patient journeys, see [Create a simple customer journey (Dynamics 365 Marketing) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/marketing/create-simple-customer-journey).
-
-=
 
 ## Exercise 4: Create a Virtual Healthcare Educational Event
 
-In this exercise, you will create a healthcare-focused, virtual educational **Event** corresponding to the patient journey you created in the previous exercise that sends the Healthy Eye Seminar event invite to everyone in the patient segment. The **Marketing Event Management** feature helps you every step of the way, from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting, final analytics, lead generation, and evaluation of ROI.
+In this exercise, you'll create a healthcare-focused, virtual marketing event that corresponds to the patient journey that you created in the previous exercise where you sent the Healthy Eye Seminar event invite to everyone in the patient segment. The **Marketing Event Management** feature helps you every step of the way, from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting, final analytics, lead generation, and evaluation of ROI.
 
-1.  In the **Patient Outreach** application, select **Events** on the Site Map under **Event Management**.
+1.	Change the area to **Event planning**.
 
-    ![Click on Events on the Sitemap](./IMAGES/L1P50.png)
+2.	Select **Events** on the left navigation pane on the page.
+ 
+3.	Select **+ New event** on the command bar to create a new event.
+ 
+4.	Enter details for the new event. Enter **Healthy Eye Seminar** in the **Event name** field and enter the same schedule details that you entered for the marketing email in the previous exercise. Make sure that you become familiar with the other fields on the forms as part of the **Preliminaries** event stage.
+ 
+5.	Select **Save**. This will open more options on the command bar.
 
-1.  Select **New** on the command bar to create a new event.
+6.	Because this event will be virtual, in the **Stream This Event Online** section, change the **Do you want to stream this event toggle** to **Yes**.
 
-1.  Enter details for the New Event. Enter **Event name** as **Healthy Eye Seminar** and enter the same **Schedule details** as you entered for the Marketing email in the previous exercise. Familiarize yourself with the other fields on the forms as part of the Preliminaries event stage.
+ 
+7.	In the Business Process Flow, select the first stage **Preliminaries**. In the flyout menu, select **Next Stage**.
+ 
+8.	Advance each stage in the business process flow until you reach the **Launch** stage. Observe the fields that are associated with each stage as you advance through them. Click on **Next** Stage for **Launch** stage. Click on **Finish** when you reach **Post Event** stage.
+  
+9.	Select **Go live** on the command bar. If you don’t see Go live available, select Save first.
+ 
+10.	The Microsoft Teams meeting URL will populate.
 
-    ![new Event record](./IMAGES/L1P51.png)
+11.	You can also choose to **change the meeting options** toggle to **Yes** to enable its settings and more fields appear. These options allow you to make the recording available to attendees, enable meeting chat, allow reactions, and more.
+ 
+You've created a virtual marketing event for patients with hypermetropia by using Microsoft Cloud for Healthcare. For more information, see [Event planning and management overview.](https://learn.microsoft.com/en-us/dynamics365/marketing/event-management/)
 
-1.  Select **Save**.
+## Exercise 5 – Create a trigger-based patient journey 
 
-1.  Since this will be a virtual event, in the **Stream This Event Online** section, toggle “**Do you want to stream this event**” to **Yes**. If you are working on a small screen, you may have to scroll down to see this section.
+In this exercise, you'll create a patient trigger by using the Customer Insights – Journey app in Microsoft Cloud for Healthcare and use the patient trigger to create the patient journey. 
 
-    ![Select Yes to stream the event online](./IMAGES/L1P52.png)
+## Task: Create a trigger
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/L1P53.png)
+1.	Switch back to [Power Apps portal](https://make.powerapps.com/). Navigate to **Apps** on the left navigation pane and launch **Customer Insights – Journeys** App by selecting the **play** button.
+ 
+2.	On the Customer Insights – Journeys app, select **Triggers** under **Engagement** from the left-navigation pane.
+ 
+3.	Select **New trigger.**
+ 
+4.	Enter the following details:
 
-1.  In the **Business Process Flow**, select the first stage **Preliminaries**. In the flyout, select **Next Stage.**
+  	a.	Name the new trigger - **Encounter Details Updated**. 
 
-    ![Click Preliminaries and then click Next Stage](./IMAGES/L1P54.png)
+    b.	What action will activate the trigger? – Select **When a record related to the customer is created or updated.**
 
-1.  Advance each stage in the business process flow until you reach the **Launch** stage. Observe the fields associated with each stage as you advance through them.
+    c.	Select **Create**.
+ 
+6.	Enter the following details. 
 
-    ![Business Process flow with all stages checked up to Launch](./IMAGES/L1P55.png)
+    a.	In which table is the record created or updated? – Search for **Encounter** and select the option from the list.
 
-    > [!NOTE] If you also want to include Post Event items in your event, you can advance to the **Post Event** stage and select **Finish** at the end.
+    b.	Which attribute contains the audience? – **Patient**
 
-1.  Select **Go live** on the command bar. If you don’t see Go live available, select **Save** first.
+    c.	When is the trigger activated? – **Any of the above** 
 
-    ![Click Go live on the command bar](./IMAGES/L1P56.png)
+    d.	Which attribute updates should activate the trigger? – **Encounter Name**
 
-1.  You will see the **Teams URL** populated.
+    e.	Click on **Ready to use**.
+ 
+7.	 After the trigger is saved. It is not ready to use for the journey.
+ 
+## Task: Create a trigger-based patient journey
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P57.png)
+1.	Select **Journeys** on the left navigation pane.
+ 
+2.	Select **New Journey.**
+ 
+3.	Enter the following details:
 
-1.  You may also choose to **change the meeting options**. After toggling to enable this setting, additional fields appear. These allow you to modify settings such as making the recording available to attendees, enabling meeting chat, allowing reactions, etc.
+    a.	Name of Journey – **Encounter Details Update** 
 
-    ![Graphical user interface, text Description automatically generated](./IMAGES/L1P58.png)
-    
-**Congratulations**, you have created a virtual marketing event for patients with hypermetropia by using Microsoft Cloud for Healthcare. For more information, see [Event planning and management overview](https://docs.microsoft.com/en-us/dynamics365/marketing/event-management/).
+    b.	Choose the type of the journey -  **Trigger-based**.
+
+    c.	Choose a trigger – Select **Encounter Details Updated**
+
+    d.	Select **Create**.
+ 
+4.	Select **Save** to save the journey. 
+
+**Note** – You can click on Plus symbol to add and extend your Trigger based journeys
+ 
+5.	Select **Publish** on the journey is saved.
+ 
+The status of the Journey now is Live
