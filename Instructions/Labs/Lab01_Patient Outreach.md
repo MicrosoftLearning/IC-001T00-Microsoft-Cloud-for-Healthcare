@@ -123,13 +123,13 @@ In this exercise, you'll create a marketing email that will be used to reach out
  
 10.	Edit the text of the email as follows:
 
-        11.	Pick a date : **December 1st, 2023, 9:00 am to 1:00 pm**
+    1.	Pick a date : **December 1st, 2023, 9:00 am to 1:00 pm**
 
-        2.	Headline : **Healthy Eye Seminar**
+    2.	Headline : **Healthy Eye Seminar**
 
-        3.  Description 1 - **Hi, {{contact.firstname}}! You're invited to Lamna Healthcare's Healthy Eye Virtual Event.**
+    3.  Description 1 - **Hi, {{contact.firstname}}! You're invited to Lamna Healthcare's Healthy Eye Virtual Event.**
 
-        4.	Description 2 - **Come join us at this virtual Event.**
+    4.	Description 2 - **Come join us at this virtual Event.**
  
 12.	Remove the **{{contact.firstname}}** and click on **Personalization**.
  
@@ -143,13 +143,13 @@ In this exercise, you'll create a marketing email that will be used to reach out
  
 17.	Update the below details
 
-        1.	From – Enter the text as **Your Care Team at**
+    1.	From – Enter the text as **Your Care Team at**
 
-        2.	From Email – Add a dynamic content text Account’s Name. – {{AccountName}}
+    2.	From Email – Add a dynamic content text Account’s Name. – {{AccountName}}
  
-        3.	Scroll up and add a Subject - You are invited for Healthy Eye Virtual Seminar!
+    3.	Scroll up and add a Subject - You are invited for Healthy Eye Virtual Seminar!
  
-        4.	On the right-side panel, click on **Settings**, Under Reply to **Email** please enter dynamic content text Email.
+    4.	On the right-side panel, click on **Settings**, Under Reply to **Email** please enter dynamic content text Email.
  
 18.	On the command bar, select **Save**. Click on **Ready to Send**.
 
