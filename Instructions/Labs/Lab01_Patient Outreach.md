@@ -80,11 +80,11 @@ In this exercise, you'll create a patient segment by using the Patient Outreach 
  
 15.	 Update with below details
 
-    1.	Operator – **Contains**
+        1. Operator – **Contains**
 
-    2.	Value – Enter **Hypermetropia**
+        2.	Value – Enter **Hypermetropia**
 
-    3.	Click on **Save**.
+        3.	Click on **Save**.
  
 16.	 Click on **Ready to use**.
  
