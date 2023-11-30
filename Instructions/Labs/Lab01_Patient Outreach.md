@@ -123,7 +123,7 @@ In this exercise, you'll create a marketing email that will be used to reach out
  
 10.	Edit the text of the email as follows:
 
-   	    1.	Pick a date : **December 1st, 2023, 9:00 am to 1:00 pm**
+        11.	Pick a date : **December 1st, 2023, 9:00 am to 1:00 pm**
 
         2.	Headline : **Healthy Eye Seminar**
 
@@ -131,17 +131,17 @@ In this exercise, you'll create a marketing email that will be used to reach out
 
         4.	Description 2 - **Come join us at this virtual Event.**
  
-11.	Remove the **{{contact.firstname}}** and click on **Personalization**.
+12.	Remove the **{{contact.firstname}}** and click on **Personalization**.
  
-12.	Click on **New Dynamic text**.
+13.	Click on **New Dynamic text**.
  
-13.	Click on **Choose an attribute.**
+14.	Click on **Choose an attribute.**
  
-14.	Expand **Contact** and select **first name**.
+15.	Expand **Contact** and select **first name**.
  
-15.	Edit the footer text of the email so that it reads **©2023 Lamna Health Event.**
+16.	Edit the footer text of the email so that it reads **©2023 Lamna Health Event.**
  
-16.	Update the below details
+17.	Update the below details
 
         1.	From – Enter the text as **Your Care Team at**
 
@@ -151,7 +151,7 @@ In this exercise, you'll create a marketing email that will be used to reach out
  
         4.	On the right-side panel, click on **Settings**, Under Reply to **Email** please enter dynamic content text Email.
  
-17.	On the command bar, select **Save**. Click on **Ready to Send**.
+18.	On the command bar, select **Save**. Click on **Ready to Send**.
 
 You've completed the steps to create a marketing email that can be used for patient outreach. This marketing email will be used in the next exercise. For more information on creating marketing emails, see [Create a marketing email (Dynamics 365 Marketing)](https://learn.microsoft.com/en-us/dynamics365/marketing/create-marketing-email/)
 
