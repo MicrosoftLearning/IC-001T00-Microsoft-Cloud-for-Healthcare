@@ -25,7 +25,6 @@ Patient Outreach focuses on the Deliver exceptional patient and member experienc
 
 ![image](./IMAGES/image1.png)
 
-
 This lab focuses on the healthcare story of Elizabeth Moore.
 
 ![image](./IMAGES/image2.png)
