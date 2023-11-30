@@ -23,7 +23,10 @@ Key capabilities of **Patient Outreach** include:
 
 Patient Outreach focuses on the Deliver exceptional patient and member experiences priority scenario by creating personalized communication based on patient insights
 
-(./IMAGES/image1.png)
+
+
+![image](./Images/image1.svg)
+
 
 This lab focuses on the healthcare story of Elizabeth Moore.
 
