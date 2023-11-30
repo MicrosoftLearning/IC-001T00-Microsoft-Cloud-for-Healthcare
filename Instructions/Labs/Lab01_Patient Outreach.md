@@ -9,17 +9,17 @@ The Patient Outreach application in Microsoft Cloud for Healthcare allows health
 
 Key capabilities of **Patient Outreach** include:
 
--   Patient segmentation - Prebuilt patient segments are based on the industry
+-   **Patient segmentation** - Prebuilt patient segments are based on the industry
     standard Healthcare Effectiveness Data and Information Set (HEDIS) to
     provide baseline patient cohorts.
 
--   Patient engagement campaigns - Create healthcare-specific email campaigns
+-   **Patient engagement campaigns** - Create healthcare-specific email campaigns
     that use patient segments based on the HEDIS industry standard.
 
--   Event management - Use provider and payer event management templates for
+-   **Event management** - Use provider and payer event management templates for
     event administration and registration.
 
--   Trigger-based journeys - Allow patient journeys to initiate based on a condition and enable faster reactions to patient interactions and changes. Trigger journeys are based on real-world interactions such as checking in for an appointment or being discharged from the hospital.
+-   **Trigger-based journeys** - Allow patient journeys to initiate based on a condition and enable faster reactions to patient interactions and changes. Trigger journeys are based on real-world interactions such as checking in for an appointment or being discharged from the hospital.
 
 Patient Outreach focuses on the Deliver exceptional patient and member experiences priority scenario by creating personalized communication based on patient insights
 
@@ -98,77 +98,62 @@ In this exercise, you'll create a patient segment by using the Patient Outreach 
  
 You've completed the steps to create a patient segment that can be used for patient outreach. This patient segment will be used in the tasks in the next exercise. For more information about dynamics segments, see [Create a dynamic segment (Dynamics 365 Marketing)](https://learn.microsoft.com/en-us/dynamics365/marketing/create-segment/). For more information about segments in general, see [Working with segments (Dynamics 365 Marketing)](https://learn.microsoft.com/en-us/dynamics365/marketing/segmentation-lists-subscriptions/).
 
-
     
 ## Exercise 2: Create a Marketing Email 
 
-In this exercise, you will create a marketing email that will be used to reach out to the patient segment you created in the previous exercise. Marketing emails are used to directly communicate with the patients that reside in a particular patient segment.
+In this exercise, you'll create a marketing email that will be used to reach out to the patient segment that you created in the previous exercise. Marketing emails help you directly communicate with patients who reside in a particular patient segment.
 
-1.  In the **Patient Outreach** app, scroll down to **Marketing Execution** in the left navigation pane and select **Marketing emails.**
+1.	Select **Emails** under **Channels** from the Left navigation pane.
 
-    ![Click Marketing emails](./IMAGES/L1P19.png)
+2.	Click on **+ New**.
+ 
+3.	Click on **Skip** on Email templates window.
 
-1.  In the **Active marketing emails** view, open **Email invitation – Free Diabetes Prevention Event**.
+4.	Rename the Email as **Email Invitation - Healthy Eye Seminar Virtual Event.**
+ 
+5.	In the Email body, Click on **Add element here** and click on **Image**.
+ 
+6.	Click on **Add image > Upload to library**.
+ 
+7.	Navigate to the path where **Glasses.jpg** image is saved and upload the file.
 
-    ![Graphical user interface, text, email Description automatically generated](./IMAGES/L1P20.png)
+8.	Click on + sign once the image is uploaded.
+ 
+9.	Click on **text**.
+ 
+10.	Edit the text of the email as follows:
 
-1.  Select the **Save** dropdown on the command bar and then **Save as**.
+   	    1.	Pick a date : **December 1st, 2023, 9:00 am to 1:00 pm**
 
-    !(./IMAGES/L1P21.png)
+        2.	Headline : **Healthy Eye Seminar**
 
-1.  Change the **Name** of the event to **Email Invitation – Healthy Eye Seminar Virtual Event** and the **Description** to **Healthy Eye Seminar Event**.
+        3.  Description 1 - **Hi, {{contact.firstname}}! You're invited to Lamna Healthcare's Healthy Eye Virtual Event.**
 
-    ![Text Description automatically generated](./IMAGES/L1P22.png)
+        4.	Description 2 - **Come join us at this virtual Event.**
+ 
+11.	Remove the **{{contact.firstname}}** and click on **Personalization**.
+ 
+12.	Click on **New Dynamic text**.
+ 
+13.	Click on **Choose an attribute.**
+ 
+14.	Expand **Contact** and select **first name**.
+ 
+15.	Edit the footer text of the email so that it reads **©2023 Lamna Health Event.**
+ 
+16.	Update the below details
 
-1.  Select **Save and Close**.
+        1.	From – Enter the text as **Your Care Team at**
 
-    ![Text Description automatically generated](./IMAGES/L1P23.png)
+        2.	From Email – Add a dynamic content text Account’s Name. – {{AccountName}}
+ 
+        3.	Scroll up and add a Subject - You are invited for Healthy Eye Virtual Seminar!
+ 
+        4.	On the right-side panel, click on **Settings**, Under Reply to **Email** please enter dynamic content text Email.
+ 
+17.	On the command bar, select **Save**. Click on **Ready to Send**.
 
-1.  Navigate back to **Marketing** emails list and select your newly created segment **Email Invitation – Healthy Eye Seminar Virtual Event**.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/L1P24.png)
-
-1.  Select the image in the Designer.
-
-    ![Graphical user interface, website Description automatically generated](./IMAGES/L1P25.png)
-
-1.  Hover over the image in the **Edit image** pane and select **Replace**. Select **Upload to library**.
-
-    ![Graphical user interface, application, PowerPoint Description automatically generated](./IMAGES/L1P26.png)
-
-1.  Select **Add files**.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/L1P28.png)
-
-1.  Navigate to **C:\LabFiles** and select the file **Glasses.jpg**. Select **Open** and then **Upload**.
-
-    ![Select the “Glasses.jpg” image from the file location, click Upload](./IMAGES/L1P29.png)
-
-1.  Select **Done**.
-
-    ![Click Done](./IMAGES/L1P30.png)
-
-1.  Edit the text of the email as follows:
-
-    1.  **Date**: Pick a date in the future
-    1.  **Headline**: Healthy Eye Seminar
-    1.  **Description 1**: Hi, {{contact.firstname}}! You are invited to Lamna Healthcare’s Healthy Eye Virtual Event.
-    1.  **Description 2**: Come join us at this virtual event!
-
-        ![Graphical user interface, text, application Description automatically generated](./IMAGES/L1P31.png)
-
-1.  Edit the **footer** text of the email so that it reads **©2022 Lamna Healthcare Event.** Do not edit the dynamic text below it.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/L1P32.png)
-
-1.  Select **Save** on the command bar and then select **Go live** so that the marketing email is available for use.
-
-    !(./IMAGES/L1P33.png)
-
-**Congratulations**! You have completed the necessary steps to create a marketing email for patient outreach. This marketing email will be used in the
-next set of tasks. For more information on creating marketing emails, see [Create a marketing email (Dynamics 365 Marketing) \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/marketing/create-marketing-email).
-
-=
+You've completed the steps to create a marketing email that can be used for patient outreach. This marketing email will be used in the next exercise. For more information on creating marketing emails, see [Create a marketing email (Dynamics 365 Marketing)](https://learn.microsoft.com/en-us/dynamics365/marketing/create-marketing-email/)
 
 ## Exercise 3: Create a Patient Journey
 
