@@ -22,15 +22,15 @@ In this module, you play the role of a Lamna Healthcare IT developer. You create
 
 In this lab, you will:
 
-    1.  Create an Azure Health Bot and obtain application and bot identifiers.
+        1.  Create an Azure Health Bot and obtain application and bot identifiers.
 
-    2.	Create an application user for your bot and assign yourself and the bot to the omnichannel agent role.
+        2.	Create an application user for your bot and assign yourself and the bot to the omnichannel agent role.
 
-    3.	Set up a chat channel, workstream, queue, context variable, and routing rule to define how users interact with the bot and human agents.
+        3.	Set up a chat channel, workstream, queue, context variable, and routing rule to define how users interact with the bot and human agents.
 
-    4.	Embed your chat widget in a Microsoft Power Apps portal.
+        4.	Embed your chat widget in a Microsoft Power Apps portal.
 
-    5.	Create scenarios in Azure Health Bot that enable it to engage with patients.
+        5.	Create scenarios in Azure Health Bot that enable it to engage with patients.
 
 ## Exercise 1: Redeem Azure Pass and Create a Patient Portal
 
