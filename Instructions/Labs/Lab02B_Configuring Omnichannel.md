@@ -10,19 +10,19 @@ In this lab, you'll play the role of a Lamna Healthcare IT developer and use the
 
 In this lab, you will:
 
-    1.	Assign the Omnichannel agent security role to your user and the bot user.
+1. Assign the Omnichannel agent security role to your user and the bot user.
 
-    2.	Create an application user with the MCH Application ID and your bot ID.
-
-    3.	Set up queues for bot and agent users.
-
-    4.	Set up a workstream to define a chat channel with a context variable and routing rule to route the message to a bot or an agent.
+2. Create an application user with the MCH Application ID and your bot ID.
+    
+3. Set up queues for bot and agent users.
+    
+4. Set up a workstream to define a chat channel with a context variable and routing rule to route the message to a bot or an agent.
 
 ## Set up Omnichannel for Customer Service live chat
 
 To assign the Omnichannel agent security role, follow these steps:
 
-1.	While in an InPrivate or Incognito browser, go to (Microsoft Power Apps)[https://make.powerapps.com/].
+1.	While in an InPrivate or Incognito browser, go to [Microsoft Power Apps](https://make.powerapps.com/)
 
 2.	Select your environment from the **Environment** dropdown menu in the upper right.
 
@@ -48,13 +48,13 @@ You've now assigned the correct Omnichannel agent role to the user, which will a
 
 You need to set up two users in Omnichannel for Customer Service:
 
-    1. **Health Bot User** - The Azure Health Bot user that you created in the previous exercise. This configuration will allow you to assign the bot as a user and take initial messages through live chat.
+1. **Health Bot User** - The Azure Health Bot user that you created in the previous exercise. This configuration will allow you to assign the bot as a user and take initial messages through live chat.
 
-    2. **Omnichannel Agent User** - The current user account that you've used to sign in to Dynamics 365. This configuration will allow you to be a live agent in Customer Service who receives messages from portal users through Azure bot escalations.
+2. **Omnichannel Agent User** - The current user account that you've used to sign in to Dynamics 365. This configuration will allow you to be a live agent in Customer Service who receives messages from portal users through Azure bot escalations.
 
 In this task, you'll create a bot user, which will help you connect **Azure Health Bot** with **Omnichannel live chat.**
 
-1.	Open a new tab and go to Power Platform admin URL -  (Microsoft Power Platform admin center.)[https://admin.powerplatform.microsoft.com/]
+1.	Open a new tab and go to Power Platform admin URL -  [Microsoft Power Platform admin center.](https://admin.powerplatform.microsoft.com/)
 
 2.	Select **Environments** from the left navigation pane. Search for and select your Microsoft Cloud for Healthcare environment from the list.
 
@@ -93,11 +93,11 @@ You've successfully created a bot user and have assigned the Omnichannel agent r
 
 ## Task: Create and set up human agent queues
 
-You can use queues to collect and distribute workload among agents. As a result, agents will be added as members to the queues and the workload will be distributed among the agents based on assignment methods. For more information, see (Manage queues for unified routing.)[https://learn.microsoft.com/en-us/dynamics365/customer-service/queues-omnichannel?tabs=customerserviceadmincenter]
+You can use queues to collect and distribute workload among agents. As a result, agents will be added as members to the queues and the workload will be distributed among the agents based on assignment methods. For more information, see [Manage queues for unified routing.](https://learn.microsoft.com/en-us/dynamics365/customer-service/queues-omnichannel?tabs=customerserviceadmincenter)
 
 In this task, you'll create the omnichannel queue that's necessary for communicating with a human agent.
 
-1.	Switch back to the tab with (Power Apps)[https://make.powerapps.com/] select Apps in the left navigation pane and open the **Customer Service admin center** app
+1.	Switch back to the tab with [Power Apps](https://make.powerapps.com/) select Apps in the left navigation pane and open the **Customer Service admin center** app
 
 2.	You should be on the **Home** page.  Select **Guided channel setup** on the left navigation pane and select **Start new.**
  
@@ -124,19 +124,19 @@ You've now created the necessary queue to escalate to a human agent and have add
 
 ## Task: Update the live workstream with context variables and routing rules
 
-A workstream is a container to enrich, route, and assign work items, and it's associated with a channel, such as live chat, voice, or case. After a bot has been added to a workstream, the incoming work item will be routed to the selected bot at runtime based on classification rules. For more information, see (Create workstreams for unified routing.)[https://learn.microsoft.com/en-us/dynamics365/customer-service/create-workstreams?tabs=customerserviceadmincenter]
+A workstream is a container to enrich, route, and assign work items, and it's associated with a channel, such as live chat, voice, or case. After a bot has been added to a workstream, the incoming work item will be routed to the selected bot at runtime based on classification rules. For more information, see [Create workstreams for unified routing.](https://learn.microsoft.com/en-us/dynamics365/customer-service/create-workstreams?tabs=customerserviceadmincenter)
 
 In this task, you'll set up basic chat routing with a new workstream. This setup will allow users to chat with a bot user initially and then route to a live human agent in the proper situation.
 
 You'll complete the following tasks:
 
-    •	Create a new channel and workstream.
+1. Create a new channel and workstream.
 
-    •	Turn on proactive chat for the channel.
+2. Turn on proactive chat for the channel.
 
-    •	Add a bot for initial routing: Initial customer conversation is directed to the Azure Health Bot.
+3. Add a bot for initial routing: Initial customer conversation is directed to the Azure Health Bot.
 
-    •	Create a context variable and routing rule to escalate to a human agent. When context variable **EscalateToAgent** is present and set to **1**, you'll route to the **Escalate to Human** queue that you previously set up with your user so that an agent can continue the conversation.
+4. Create a context variable and routing rule to escalate to a human agent. When context variable **EscalateToAgent** is present and set to **1**, you'll route to the **Escalate to Human** queue that you previously set up with your user so that an agent can continue the conversation.
 
 1.	While continuing the guided setup from the previous task, enter a **Chat name** and **Chat language** for your channel and a workstream **Name**. Keep the **Work distribution mode** as **Push** and then select **Next**.
 
@@ -208,13 +208,13 @@ In this exercise, you’ll embed the **Omnichannel Chat Widget** into the Power 
 
 Now, you’ll set up the chat widget to show on the customer website.
 
-    •	**Customer self-service portal** – Enables customers to access self-service knowledge and support resources, view the progress of their cases, and provide feedback.
+•	**Customer self-service portal** – Enables customers to access self-service knowledge and support resources, view the progress of their cases, and provide feedback.
 
-    •	**Portal Management** – Application to help you get started with the advanced portal configuration. In this exercise, you’ll learn how to set up the chat widget in the **Portal Management** app.
+•	**Portal Management** – Application to help you get started with the advanced portal configuration. In this exercise, you’ll learn how to set up the chat widget in the **Portal Management** app.
 
 Follow these steps to complete the exercise:
 
-1.	In (Power Apps,)[https://make.powerapps.com/] select Apps in the left navigation pane and open the **Portal Management** app
+1.	In [Power Apps,](https://make.powerapps.com/) select Apps in the left navigation pane and open the **Portal Management** app
 
 2.	Select **Content Snippets** in the left navigation pane. Enter **chat** in the search box and then press the **Enter** key. Two **Chat Widget Code** records( **Healthcare Patient Portal** and the **Lamna healthcare Patient portal** you created) will be visible in the list as highlighted in the below screenshot.
  
@@ -317,19 +317,19 @@ This section prompts two buttons: **Medication Refill** and **Live Agent.** When
 
     o	Select the plus (+) icon twice to add two actions. For the first action, select the following values:
 
-        1	**Action type** - imBack
+        1. **Action type** - imBack
 
-        2	**Action value** - MedicationRefill
+        2. **Action value** - MedicationRefill
 
-        3	**Action title** - "Medication Refill"
+        3. **Action title** - "Medication Refill"
 
     o	For the second action, fill in the following values:
 
-        1	**Action type** - imBack
+        1. **Action type** - imBack
 
-        2	**Action value** - LiveAgent
+        2. **Action value** - LiveAgent
 
-        3	**Action title** - "Live Agent"
+        3. **Action title** - "Live Agent"
  
 5.  Select **OK** to return to the prompt details. The Hero Card should be defined.	
 
@@ -343,7 +343,7 @@ This section prompts two buttons: **Medication Refill** and **Live Agent.** When
 
 The test welcome message should display from the previous exercise along with the new statement and prompt asking for a medication refill or chat with an agent.
 
-**Step****:** **Add a MedicationOrAgent decision branch**
+**Step:** **Add a MedicationOrAgent decision branch**
 
 This step checks whether the user has selected **Medication Refill** or **Live Agent** with the help of the **MedicationOrAgent** variable. It will redirect the message according to the selection.
 
@@ -356,7 +356,7 @@ This step checks whether the user has selected **Medication Refill** or **Live A
  
 4.	Place the IsMedRefill below MedOrAgent. Select and drag the bottom circle of the **MedOrAgent** prompt to the top circle of the **IsMedRefill** branch decision to connect them.
  
-**Step****:** **Prompt the user to enter data for the medication refill option**
+**Step:** **Prompt the user to enter data for the medication refill option**
 
 Your next step is to prompt the user to enter data for the medication refill option by following these steps:
 
@@ -449,7 +449,7 @@ JSON for adaptive card:
   ] 
 }  
 
-**Note** - Go to the (Adaptive Card visualizer)[https://adaptivecards.io/] to test your own authored card.
+**Note** - Go to the [Adaptive Card visualizer](https://adaptivecards.io/) to test your own authored card.
  
 4.	On the prompt form, select **Vertical** from the **Cards layout** dropdown menu. Select **Save**.
 
