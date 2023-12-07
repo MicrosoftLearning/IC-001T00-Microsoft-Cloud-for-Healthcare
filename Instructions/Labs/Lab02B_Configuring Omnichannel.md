@@ -317,11 +317,11 @@ This section prompts two buttons: **Medication Refill** and **Live Agent.** When
 
     o	Select the plus (+) icon twice to add two actions. For the first action, select the following values:
 
-        1. **Action type** - imBack
+            1. **Action type** - imBack
 
-        2. **Action value** - MedicationRefill
+            2. **Action value** - MedicationRefill
 
-        3. **Action title** - "Medication Refill"
+            3. **Action title** - "Medication Refill"
 
     o	For the second action, fill in the following values:
 
