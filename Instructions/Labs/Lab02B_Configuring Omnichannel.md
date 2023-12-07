@@ -317,19 +317,19 @@ This section prompts two buttons: **Medication Refill** and **Live Agent.** When
 
 5.	Select the plus (+) icon twice to add two actions. For the first action, select the following values:
 
-    6.	**Action type** - imBack
+    1.	**Action type** - imBack
 
-   2. **Action value** - MedicationRefill
+    2. **Action value** - MedicationRefill
 
    3. **Action title** - "Medication Refill"
 
 6. For the second action, fill in the following values:
 
- 1. **Action type** - imBack
+   1. **Action type** - imBack
 
-2.  **Action value** - LiveAgent
+   2. **Action value** - LiveAgent
 
-        3. **Action title** - "Live Agent"
+   3. **Action title** - "Live Agent"
  
 5.  Select **OK** to return to the prompt details. The Hero Card should be defined.	
 
