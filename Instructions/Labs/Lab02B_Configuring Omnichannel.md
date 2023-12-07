@@ -451,6 +451,7 @@ JSON for adaptive card:
     } 
   ] 
 }  
+
 }
 **Note** - Go to the [Adaptive Card visualizer](https://adaptivecards.io/) to test your own authored card.
  
