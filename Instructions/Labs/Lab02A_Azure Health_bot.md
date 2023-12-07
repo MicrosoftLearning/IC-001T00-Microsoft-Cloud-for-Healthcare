@@ -22,21 +22,21 @@ In this module, you play the role of a Lamna Healthcare IT developer. You create
 
 In this lab, you will:
 
-        1. Create an Azure Health Bot and obtain application and bot identifiers.
+1. Create an Azure Health Bot and obtain application and bot identifiers.
         
-        2. Create an application user for your bot and assign yourself and the bot to the omnichannel agent role.
+2. Create an application user for your bot and assign yourself and the bot to the omnichannel agent role.
         
-        3. Set up a chat channel, workstream, queue, context variable, and routing rule to define how users interact with the bot and human agents.
+3. Set up a chat channel, workstream, queue, context variable, and routing rule to define how users interact with the bot and human agents.
         
-        4. Embed your chat widget in a Microsoft Power Apps portal.
+4. Embed your chat widget in a Microsoft Power Apps portal.
         
-        5. Create scenarios in Azure Health Bot that enable it to engage with patients.
+5. Create scenarios in Azure Health Bot that enable it to engage with patients.
 
 ## Exercise 1: Redeem Azure Pass and Create a Patient Portal
 
 ### Task: Redeem Azure Pass
 
-1.	Open a new tab on your browser and browse to the **Microsoft Azure Pass** website using the (Azure pass)[https://www.microsoftazurepass.com/.]
+1.	Open a new tab on your browser and browse to the **Microsoft Azure Pass** website using the [Azure pass](https://www.microsoftazurepass.com/.)
 link.
 
 2.	Click on **Start**.
@@ -57,7 +57,7 @@ link.
 
 In this task, you'll learn how to register a new application in Microsoft Azure Active Directory (Azure AD), grant delegated and application permissions, and create a client secret.
 
-1.	While signed into your **Microsoft 365 tenant**, open a new browser tab, and then go to the (Azure portal)[https://portal.azure.com/]. In the upper-left corner of the page, select the hamburger icon (three horizontal lines) and then select **Microsoft Entra ID**.
+1.	While signed into your **Microsoft 365 tenant**, open a new browser tab, and then go to the [Azure portal](https://portal.azure.com/). In the upper-left corner of the page, select the hamburger icon (three horizontal lines) and then select **Microsoft Entra ID**.
  
 2.	On the left navigation pane, select **App registrations** and then select **+ New registration** in the right pane.
  
@@ -95,7 +95,7 @@ The status for each added permission will change to **Granted**, as shown in the
  
 ### Task: Create the Lamna Healthcare Patient Portal app
 
-1.	Open a new tab and login to (Power pages portal)[https://make.powerpages.microsoft.com/] with your credentials. Change the environment on the top-right corner of the home page to the trial that you are using in Power Apps.
+1.	Open a new tab and login to [Power pages portal](https://make.powerpages.microsoft.com/) with your credentials. Change the environment on the top-right corner of the home page to the trial that you are using in Power Apps.
 
 2.	Click on **Create a site** on the home page.
  
@@ -113,7 +113,7 @@ The status for each added permission will change to **Granted**, as shown in the
  
 ## Set up Azure Health Bot
 
-Azure Health Bot empowers developers in healthcare organizations to build and deploy AI-powered, compliant, conversational healthcare experiences at scale. It combines a built-in medical database with natural language capabilities to understand clinical terminology, and you can customize it to support your organization's clinical use cases. The service ensures alignment with industry compliance requirements and is privacy protected to Health Insurance Portability and Accountability Act (HIPAA) standards. For more information, see (Azure Health Bot documentation.)[https://learn.microsoft.com/en-us/azure/health-bot/]
+Azure Health Bot empowers developers in healthcare organizations to build and deploy AI-powered, compliant, conversational healthcare experiences at scale. It combines a built-in medical database with natural language capabilities to understand clinical terminology, and you can customize it to support your organization's clinical use cases. The service ensures alignment with industry compliance requirements and is privacy protected to Health Insurance Portability and Accountability Act (HIPAA) standards. For more information, see [Azure Health Bot documentation.](https://learn.microsoft.com/en-us/azure/health-bot/)
 
 In this exercise, you'll complete the following tasks:
 
@@ -129,7 +129,7 @@ In this exercise, you'll complete the following tasks:
 
 Follow these steps to install the Azure Health Bot in an Azure subscription.
 
-1.	While signed into your Microsoft 365 tenant, open a new tab in your internet browser in Incognito or InPrivate mode and then go to the (Microsoft Azure portal.)[https://portal.azure.com/]
+1.	While signed into your Microsoft 365 tenant, open a new tab in your internet browser in Incognito or InPrivate mode and then go to the [Microsoft Azure portal.](https://portal.azure.com/)
 
 2.	Search for **Azure Health Bot** in the search bar and then select it from the search results.
  
