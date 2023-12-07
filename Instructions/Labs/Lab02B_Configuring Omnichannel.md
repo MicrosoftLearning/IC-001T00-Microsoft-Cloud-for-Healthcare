@@ -441,8 +441,7 @@ JSON for adaptive card:
           ]
         }
       ]
-    } 
-  ],  
+    } ],  
     "actions": [
     {
     "type": "Action.Submit",
