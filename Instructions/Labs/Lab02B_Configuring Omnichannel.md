@@ -321,7 +321,7 @@ This section prompts two buttons: **Medication Refill** and **Live Agent.** When
 
     2. **Action value** - MedicationRefill
 
-   3. **Action title** - "Medication Refill"
+    3. **Action title** - "Medication Refill"
 
 6. For the second action, fill in the following values:
 
@@ -374,7 +374,9 @@ Your next step is to prompt the user to enter data for the medication refill opt
 3.	Change the **Card type** to **Adaptive Card**. Add the following **JSON** to your card to show multiple fields of input for the user in an appealing format. Select **OK**.
 
 JSON for adaptive card:
+
 { 
+
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json", 
     "type": "AdaptiveCard", 
     "version": "1.0", 
