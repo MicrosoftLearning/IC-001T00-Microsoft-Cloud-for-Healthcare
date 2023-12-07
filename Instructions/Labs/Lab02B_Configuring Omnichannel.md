@@ -375,9 +375,7 @@ Your next step is to prompt the user to enter data for the medication refill opt
 
 JSON for adaptive card:
 
-{ 
-
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json", 
+{ "$schema": "http://adaptivecards.io/schemas/adaptive-card.json", 
     "type": "AdaptiveCard", 
     "version": "1.0", 
     "body": [
@@ -446,9 +444,7 @@ JSON for adaptive card:
     {
     "type": "Action.Submit",
     "title": "Submit"
-    } 
-  ] 
-}  
+    } ] }  
 
 
 
