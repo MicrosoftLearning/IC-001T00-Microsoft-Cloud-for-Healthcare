@@ -376,6 +376,8 @@ Your next step is to prompt the user to enter data for the medication refill opt
 JSON for adaptive card:
 
 { 
+
+{
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json", 
     "type": "AdaptiveCard", 
     "version": "1.0", 
@@ -449,7 +451,7 @@ JSON for adaptive card:
     } 
   ] 
 }  
-
+}
 **Note** - Go to the [Adaptive Card visualizer](https://adaptivecards.io/) to test your own authored card.
  
 4.	On the prompt form, select **Vertical** from the **Cards layout** dropdown menu. Select **Save**.
