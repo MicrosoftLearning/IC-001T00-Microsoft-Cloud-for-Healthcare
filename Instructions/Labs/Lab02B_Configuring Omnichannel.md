@@ -315,19 +315,19 @@ This section prompts two buttons: **Medication Refill** and **Live Agent.** When
  
 4.	Select **Hero Card** from the **Card type** dropdown menu. Leave the title blank because you're already prompted with the display text. Select the plus (+) icon to add new actions so that the user can select a response to send to the bot.
 
-    o	Select the plus (+) icon twice to add two actions. For the first action, select the following values:
+5.	Select the plus (+) icon twice to add two actions. For the first action, select the following values:
 
-   1. **Action type** - imBack
+    6.	**Action type** - imBack
 
    2. **Action value** - MedicationRefill
 
    3. **Action title** - "Medication Refill"
 
-    o	For the second action, fill in the following values:
+6. For the second action, fill in the following values:
 
  1. **Action type** - imBack
 
-    2. **Action value** - LiveAgent
+2.  **Action value** - LiveAgent
 
         3. **Action title** - "Live Agent"
  
