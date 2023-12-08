@@ -12,101 +12,193 @@ In the Azure health ecosystem, the Azure Health Data Services workspace is a log
 
 ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab07/L7P1.png)
 
-The workspace also creates a compliance boundary (HIPAA, HITRUST) within which protected health information can travel. This means that **Role-Based Access Control (RBAC)** (see +++https://docs.microsoft.com/azure/healthcare-apis/configure-azure-rbac+++), private network data transit with **Private Link** (see +++https://docs.microsoft.com/azure/healthcare-apis/healthcare-apis-configure-private-link+++), and **event messages** (see +++https://docs.microsoft.com/azure/healthcare-apis/events/events-deploy-portal+++) can all be configured at the workspace level – reducing your system management complexity.
-
-## Learning objectives
-
-In this lab, you will:
-
--   Explain the difference between workspaces and services in Azure Health Data Services
--   Use a template to deploy a FHIR service instance inside an Azure Health Data Services workspace
--   Create an AAD service client for Postman and grant it access to your FHIR service
--   Configure and use Postman for sending web API requests to your FHIR service
 
 ## Exercise 1: Deploy Azure Health Data Services workspace and FHIR service to your Azure environment
 
 In the first part of this lab, you will use a template to deploy resources with the Azure Portal. This template will deploy
-- Azure Health Data Services workspace (see +++https://docs.microsoft.com/en-us/azure/healthcare-apis/workspace-overview+++)
-- FHIR service (see +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview+++)
-- FHIR Loader (for Lab 9) (see +++https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview+++)
-- FHIR-Proxy (for Lab 13) (see +++https://github.com/microsoft/fhir-proxy+++)
+- Azure Health Data Services workspace 
+- FHIR service 
+- FHIR Loader 
+- FHIR-Proxy 
 
-1. [] To begin, open a new browser tab and navigate to the deployment form at +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fazure-health-data-services-workshop%2Fmain%2Fresources%2Fdeploy%2Fdeployfhirtrain.json+++.
+1.	Login to [Azure Portal](https://portal.azure.com/) with your credentials.
 
-1. [] Select or fill in the parameter values (see image below).
+2.	Click on three horizontal bars on the top-left of the Azure portal and click on **Create a resource.**
+ 
+3.	In the search bar, Enter **Azure Health Data Services**. Then expand **create** and click on **Azure Health Data Services.**
+ 
+4.	Update with the below details:
 
-    > [!ALERT] Important: In order to successfully deploy resources with this ARM template, the user must have **Owner** rights (see +++https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner+++)  for the **Resource Group** (see +++https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal+++) where the components are deployed. Before running the ARM template, it is recommended to create a new resource group first and check that you have Owner permissions. Once you confirm that you have Owner rights, then select that resource group in the dropdown menu when you fill out the deployment form.
+    5.	**Azure subscription** – Your Azure subscription
 
-    1. [] Accept the default Subscription and set the resource group to the training resource as shown. (The resource may be named differently).
-
-    1. [] Enter a custom **Deployment Prefix**. This prefix will be prepended to the names of all created resources ("trn05" is shown as an example prefix).
-
-    1. [] Change **Resource Location** to **eastus**.
-
-    1. [] Make sure to select the **true** values as shown.
-
-        ![Graphical user interface Description automatically generated](./IMAGES/Lab07/L7P3.png)
-
-1. [] Select **Review + create** when ready, and then select **Create** on the next page.
-
-> [!NOTE] Note: This deployment typically takes 20 minutes. If the deployment fails, try to re-deploy. During the deployment, you can read the instructions linked in Exercise 2 below. When the deployment finishes, go ahead and proceed with those instructions.
-
-To learn more about the resources deployed with this ARM template, view the following resource in a new tab: +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/FHIR-Starter_ARM_template_README.md#deployed-components+++
-
-===
-
-## Exercise 2: Set up Postman and test FHIR service
-
+  	Resource group – Create new and name it as AHDSW – XX (XX is the unique ID for unique value)
+2.	Workspace name – ahdswdemo- XX ((XX is the unique ID for unique value)
+ii.	Region – East US
+iii.	Click on Review + Create.
+ 
+5.	After a successful validation click on Create.
+ 
+6.	Wait for the deployment is successful and click on Resource.
+ 
+7.	You now can create a FHIR service, DICOM service, and MedTech service from the newly deployed Azure Health Data Services workspace. For this lab, click on Deploy FHIR service.
+ 
+8.	Click on Add FHIR Service
+ 
+9.	Enter a Service name as training for your FHIR service. Select the FHIR version as R4, and then select Review + create.
+ 
+10.	Once the validation is successful, click on Create.
+ 
+11.	Wait for the deployment to complete.
+ 
+12.	 Click on Go to resource once the deployment is complete.
+ 
+Exercise 2: Set up Postman and test FHIR service
 In the next part of this lab, you will
+•	Visit another page and follow the instructions on setting up Postman.
+•	Make API calls to test FHIR service using Postman.
+Task 1 - Register a service client application in Microsoft Entra ID 
 
--   Visit another page and follow the instructions on setting up Postman.
--   Make API calls to test FHIR service using Postman.
+1.	Open a duplicate tab of Azure Portal and search for Microsoft Entra ID. Select the option from the list displayed accordingly.
+ 
+2.	Click on App registrations from the left navigation pane.
+ 
+3.	Select New registration.
+ 
+4.	Update the below details:
+3.	Name of the application – myhealthapiapp-XX (XX is the unique ID for unique value)
+4.	For Supported account types, select Accounts in this organization directory only. Leave the other options as is.
+5.	Select Register.
+ 
+5.	The app is created.
+ 
+6.	Select Authentication from the left navigation pane to review the settings. The default value for Allow public client flows is "No".
+ 
+7.	Select Add a platform to configure the platform. 
+ 
+8.	For Postman, select Mobile and desktop applications. 
+ 
+9.	Enter "https://www.getpostman.com/oauth2/callback" in the Custom redirect URIs section. Select the Configure button to save the setting.
+ 
+10.	 Click on Certificates & secrets from the left navigation pane.
+ 
+11.	Click on New client secret.
+ 
+12.	Enter the Description as Mysecret1 and Let the Expires value be as it is. Click on Add. Copy the Value and Secret ID’s value in a notepad
+ 
+13.	 Select API permissions from the left navigation pane.
+14.	Click on Add a new permission.
+ 
+15.	Since we are using Azure Health Data Services, you'll add a permission to the service by searching for Azure Healthcare APIs under APIs my organization uses.
+ 
+16.	Select Delegated permissions and search for user_impersonation. Select user_impersonation, and then select Add permissions.
+ 
+17.	Click on Grant Admin consent for Contoso. Click on Yes.
+ 
+ 
+Task 2 - Assign FHIR Data Contributor role in Azure for Postman service client
+1.	In the Azure Portal, Enter FHIR in the search area. 
+6.	Select the FHIR service created – training-XX ((XX is the unique ID for unique value). Click on the service.
+2.	Click on the Access control (IAM) from the left navigation pane. 
+ 
+3.	Click on Add > Add role assignment.
+ 
+4.	Search for FHIR Data contributor and select the option from the list. Click on Next.
+ 
+5.	Click on Select members and add the use that you are logged in and the app you created. Click on Review + Assign.
+ 
+6.	Click on Review +Assign again. 
+7.	The role is added.
+ 
+8.	Perform the same steps and add the role for the application - myhealthapiapp that we created.
+Task 3 – Launch Postman and import environment and collection files
 
-1. [] To begin, open the Postman setup tutorial in a new browser tab using the URL: +++https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/Postman_FHIR_service_README.md+++
+1.	Install the Postman application and login with credentials by creating a new account.
+2.	Launch the Postman application. Create a Workspace by name My FHIRService. Click on Create.
+ 
+3.	On the left navigation pane, click on Environments and select Create environment and update the environments variables by following the next steps.
+ 
+4.	Access the Postman environment template for FHIR service by opening the github URL https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/fhir-service.postman_environment.json. 
+5.	Click on anywhere inside the code and select all ( Ctrl +A) 
+6.	Open a Note pad and paste the code. Right click and then click Save as to save the file with the name – fhir-service.postname_environment.JSON locally in JSON format.
+ 
+7.	Access the Postman environment template for FHIR proxy using the URL https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/fhir-proxy.postman_environment.json. 
+8.	Click on anywhere inside the code and select all ( Ctrl +A) 
+9.	Open a Note pad and paste the code. Right click and then click Save as to save the file with the name – fhir-proxy.postname_environment.JSON locally in JSON format.
+ 
+10.	Switch back to Postman application in your workspace. Click on the Environments tab on the left and click the Import button next to the workspace name.
+11.	Import the fhir-service.postman_environment.json file that you saved locally in the beginning of this exercise. On the Import pane, click on Files.
+ 
+12.	Select the fhir-service.postman_environment.json file from your local drive and click Open. 
+13.	Similarly, Import the fhir-proxy.postman_environment.json file that you saved locally in the beginning of this exercise.
+ 
+14.	Now, access the FHIR-CALLS.postman-collection.json file available in this repo https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/FHIR-CALLS.postman_collection.json. 
+15.	Click on anywhere inside the code and select all ( Ctrl +A) 
+16.	Open a Note pad and paste the code. Right click and then click Save as to save the file with the name – fhir-CALLS.postname_environment.JSON locally in JSON format.
+ 
+17.	Navigate to the Postman and import the file like previously done
+18.	Access the FHIR_Search.postman_collection.json file available in this repo https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/FHIR_Search.postman_collection.json. 
+19.	Click on anywhere inside the code and select all ( Ctrl +A) 
+20.	Open a Note pad and paste the code. Right click and then click Save as to save the file with the name – fhir-Search.postname_environment.JSON locally in JSON format.
+ 
+21.	Switch back to Postman application and import the files accordingly.
+ 
+Task 4 – Configure Postman environment
+1.	Select Environment tab on the left navigation of Postman and then select fhir-service environment.
+ 
+2.	For the fhir-service Postman environment, you will need to retrieve the following values from the Azure portal. Copy the following values from the Azure portal and paste them in the respective CURRENT VALUE columns of fhir-service environment.
+•	tenantId – Microsoft Entra  tenant ID (go to Microsoft Entra ID -> Overview -> Tenant ID)
+•	clientId - Application (client) ID for Postman service client app that you created.
+•	clientSecret - Client secret value stored for Postman application.
+•	fhirurl - Go to Resource Group on Azure portal and then select your Resource group. Select FHIR service resource group. On the FHIR service resource group, on the Overview tab, go to FHIR metadata endpoint and copy without "/metadata" on the end.
+•	resource - Same as fhirurl
+•	bearerToken - Blank. 
+ 
+3.	Select the three horizontal dots on the table and select Persist All.
+ 
+4.	Click Save to retain the fhir-service environment values.
+5.	Repeat Step 1 to Step 4 for fhir-proxy environment.
+Task 5 - Get an access token from Microsoft Entra 
+In order to connect to FHIR service, you will need to get an access token first. To obtain an access token from AAD via Postman, you can send a POST AuthorizeGetToken request. The POST AuthorizeGetToken call comes pre-configured as part of the FHIR CALLS collection that you imported earlier.
+1.	In Postman, click on Collections on the left, select the FHIR CALLS collection.
 
-    > [!ALERT] **Important 1**: Record the **clientSecret Value** on your computer or on paper, not the **clientSecret ID** when you create your Postman app registration. That is the value you will need later in Postman when you fill in the clientSecret. You will not be able to get this value again. If you save the wrong item, you will have to create another secret.
+ 
 
-    > [!ALERT] **Important 2**: Record the username and password you use for Postman setup in the VM. You will use this to log into Postman in the remaining labs when using Postman within the VM. This will retain your settings from this lab in Postman.
+2.	Expand and select POST AuthorizeGetToken. 
+ 
+3.	Make sure that fhir-service environment is selected from the dropdown menu above the Send button.
+ 
 
-    > [!ALERT] **Important 3**: In Step 4 in the tutorial, select Persist All when you add the Postman variables prior to saving. This will allow the values to be remembered for future labs.
+4.	On clicking Send, you should receive a response in the Body tab like shown below. The access_token value is automatically saved to the bearerToken variable in the Postman environment.
+	{
+  	  "token_type": "Bearer",
+  	  "expires_in": "3599",
+  	  "ext_expires_in": "3599",
+ 	   "expires_on": "XXXXXXXXXX",
+ 	   "not_before": "XXXXXXXXXX",
+  	  "resource": "XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  	  "access_token": "XXXXXXXXXXXX..."
+	}
+ 
 
-1. [] Follow the instructions and return here when finished.
+You now have a valid access token in your Postman environment and can use the token in subsequent API calls to your FHIR service.
+Note
+Access tokens expire after 60 minutes. To obtain a token refresh, simply make another POST AuthorizeGetToken call and you will receive a new token valid for another 60 minutes.
 
-
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab07/L7P4.png)
-
-> [!NOTE] Note: A managed identity was automatically enabled for your FHIR service. That managed identity is what needs to be assigned the Storage Blob Data Contributor role in one of the ADLS Gen2 storage accounts in your resource group in future labs. The name of this storage account ends with "expsa".
-
-What does success look like for Lab 7?
-
--   Azure Health Data Services workspace and FHIR service deployed and available in Azure.
--   Other Azure resources for later labs successfully deployed. Template deployment must show no errors.
--   App registration created in Azure Active Directory for use with Postman and your FHIR service.
--   Postman set up and able to connect with your FHIR service.
-    -   Capability Statement from your FHIR service – received.
-
-        {
-
-        "resourceType": "CapabilityStatement",
-
-        "url": "/metadata",
-
-        "version": "1.0.0.0",
-
-        "name": "Microsoft FHIR service 2.2.61 Capability Statement",
-
-        "status": "draft",
-
-        "experimental": true,
-
-        "date": "2022-02-18T00:06:47.9408665+00:00",
-
-        "publisher": "Microsoft",
-
-        "more below ..." : "..."
-
-        }
-
--   POST AuthorizeGetToken call in Postman to obtain an AAD access token – succeeded.
--   POST Save Patient call in Postman to populate FHIR service with a Patient Resource – succeeded.
--   GET List Patients call in Postman to retrieve a bundle with at least one Patient Resource from your FHIR service – succeeded
+Task 6 - Test FHIR service with Postman
+1.	Click on collections from the left navigation pane. Expand the FHIR CALLS collection, and then select the GET List Metadata call. 
+ 
+2.	Click Send to test that FHIR service is functioning on a basic level. The GET List Metadata call returns the FHIR service's Capability Statement. 
+ 
+ 
+3.	If you receive an error, there should be information in the response indicating the cause of the error. If you receive a response like shown below, this means your setup has passed the first test.
+4.	Click on POST Save Patient in the FHIR CALLS collection and press Send. 
+ 
+ 
+5.	If you get a response like shown below, this means you succeeded in populating FHIR service with a Patient Resource. This indicates that your setup is functioning properly.
+ 
+6.	Enter GET List Patients in the FHIR CALLS collection and press Send. 
+ 
+ 
+7.	If the response is as shown below, this means you successfully obtained a list of every Patient Resource stored in the FHIR service database (currently only one patient). This means your setup is fully functional.
+ 
+8.	Now you can experiment with other sample calls or your own FHIR API calls.
