@@ -29,55 +29,65 @@ In the first part of this lab, you will use a template to deploy resources with 
  
 4.	Update with the below details:
 
-    5.	**Azure subscription** – Your Azure subscription
+    i.	**Azure subscription** – Your Azure subscription
 
-  	Resource group – Create new and name it as AHDSW – XX (XX is the unique ID for unique value)
-2.	Workspace name – ahdswdemo- XX ((XX is the unique ID for unique value)
-ii.	Region – East US
-iii.	Click on Review + Create.
+    ii. **Resource group** – Create new and name it as AHDSW – XX (XX is the unique ID for unique value)
+
+    iii. **Workspace name** – ahdswdemo- XX ((XX is the unique ID for unique value)
+
+    iv.	**Region** – East US
+
+    v. Click on **Review + Create.**
  
-5.	After a successful validation click on Create.
+5.	After a successful validation click on **Create**.
  
 6.	Wait for the deployment is successful and click on Resource.
  
-7.	You now can create a FHIR service, DICOM service, and MedTech service from the newly deployed Azure Health Data Services workspace. For this lab, click on Deploy FHIR service.
+7.	You now can create a FHIR service, DICOM service, and MedTech service from the newly deployed Azure Health Data Services workspace. For this lab, click on **Deploy FHIR service.**
  
-8.	Click on Add FHIR Service
+8.	Click on **Add FHIR Service**.
  
-9.	Enter a Service name as training for your FHIR service. Select the FHIR version as R4, and then select Review + create.
+9.	Enter a **Service name** as **training** for your FHIR service. Select the **FHIR version** as **R4**, and then select **Review + create.**
  
-10.	Once the validation is successful, click on Create.
+10.	Once the validation is successful, click on **Create**.
  
 11.	Wait for the deployment to complete.
  
-12.	 Click on Go to resource once the deployment is complete.
+12.	 Click on **Go to resource** once the deployment is complete.
  
-Exercise 2: Set up Postman and test FHIR service
-In the next part of this lab, you will
-•	Visit another page and follow the instructions on setting up Postman.
-•	Make API calls to test FHIR service using Postman.
-Task 1 - Register a service client application in Microsoft Entra ID 
+### Exercise 2: Set up Postman and test FHIR service
 
-1.	Open a duplicate tab of Azure Portal and search for Microsoft Entra ID. Select the option from the list displayed accordingly.
+In the next part of this lab, you will
+
+• Visit another page and follow the instructions on setting up Postman.
+
+• Make API calls to test FHIR service using Postman.
+
+## Task 1 - Register a service client application in Microsoft Entra ID 
+
+1. Open a duplicate tab of Azure Portal and search for **Microsoft Entra ID**. Select the option from the list displayed accordingly.
+
+2. Click on **App registrations** from the left navigation pane.
+
+3. Select **New registration.**
+
+4. Update the below details:
+
+   1. **Name of the application** – myhealthapiapp-XX (XX is the unique ID for unique value)
+
+   2. For Supported account types, select **Accounts in this organization directory only**. Leave the other options as is.
+
+   3. Select **Register**.
  
-2.	Click on App registrations from the left navigation pane.
+5. The app is created.
+
+6. Select **Authentication** from the left navigation pane to review the settings. The default value for **Allow public client flows** is "**No**".
  
-3.	Select New registration.
+7. Select Add a platform to configure the platform. 
  
-4.	Update the below details:
-3.	Name of the application – myhealthapiapp-XX (XX is the unique ID for unique value)
-4.	For Supported account types, select Accounts in this organization directory only. Leave the other options as is.
-5.	Select Register.
+8. For Postman, select Mobile and desktop applications. 
  
-5.	The app is created.
- 
-6.	Select Authentication from the left navigation pane to review the settings. The default value for Allow public client flows is "No".
- 
-7.	Select Add a platform to configure the platform. 
- 
-8.	For Postman, select Mobile and desktop applications. 
- 
-9.	Enter "https://www.getpostman.com/oauth2/callback" in the Custom redirect URIs section. Select the Configure button to save the setting.
+9. Enter "https://www.getpostman.com/oauth2/callback" in the Custom redirect URIs section. Select the Configure button to save the setting.
  
 10.	 Click on Certificates & secrets from the left navigation pane.
  
