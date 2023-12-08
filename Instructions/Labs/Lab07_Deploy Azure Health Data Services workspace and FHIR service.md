@@ -83,102 +83,129 @@ In the next part of this lab, you will
 
 6. Select **Authentication** from the left navigation pane to review the settings. The default value for **Allow public client flows** is "**No**".
  
-7. Select Add a platform to configure the platform. 
+7. Select **Add a platform** to configure the platform. 
  
-8. For Postman, select Mobile and desktop applications. 
+8. For Postman, select **Mobile and desktop applications**. 
  
-9. Enter "https://www.getpostman.com/oauth2/callback" in the Custom redirect URIs section. Select the Configure button to save the setting.
+9. Enter (https://www.getpostman.com/oauth2/callback) in the **Custom redirect URIs** section. Select the **Configure** button to save the setting.
  
-10.	 Click on Certificates & secrets from the left navigation pane.
+10.	 Click on **Certificates & secrets** from the left navigation pane.
  
-11.	Click on New client secret.
+11.	Click on **New client secret.**
  
-12.	Enter the Description as Mysecret1 and Let the Expires value be as it is. Click on Add. Copy the Value and Secret ID’s value in a notepad
+12.	Enter the **Description** as **Mysecret1** and Let the Expires value be as it is. Click on **Add**. Copy the **Value** and **Secret ID’s** value in a notepad
  
-13.	 Select API permissions from the left navigation pane.
-14.	Click on Add a new permission.
+13.	 Select **API permissions** from the left navigation pane.
+
+14.	Click on **Add a new permission.**
  
-15.	Since we are using Azure Health Data Services, you'll add a permission to the service by searching for Azure Healthcare APIs under APIs my organization uses.
+15.	Since we are using Azure Health Data Services, you'll add a permission to the service by searching for **Azure Healthcare APIs** under **APIs my organization uses**.
  
-16.	Select Delegated permissions and search for user_impersonation. Select user_impersonation, and then select Add permissions.
+16.	Select **Delegated permissions** and search for **user_impersonation**. Select **user_impersonation**, and then select **Add permissions.**
  
-17.	Click on Grant Admin consent for Contoso. Click on Yes.
+17.	Click on **Grant Admin consent for Contoso**. Click on **Yes**.
+
  
- 
-Task 2 - Assign FHIR Data Contributor role in Azure for Postman service client
-1.	In the Azure Portal, Enter FHIR in the search area. 
-6.	Select the FHIR service created – training-XX ((XX is the unique ID for unique value). Click on the service.
+## Task 2 - Assign FHIR Data Contributor role in Azure for Postman service client
+
+1.	In the Azure Portal, Enter **FHIR** in the search area. 
+
+2.	Select the FHIR service created – **training-XX** ((XX is the unique ID for unique value). Click on the service.
+
 2.	Click on the Access control (IAM) from the left navigation pane. 
  
-3.	Click on Add > Add role assignment.
+3.	Click on **Add > Add role assignment.**
  
-4.	Search for FHIR Data contributor and select the option from the list. Click on Next.
+4.	Search for **FHIR Data contributor** and select the option from the list. Click on **Next**.
  
-5.	Click on Select members and add the use that you are logged in and the app you created. Click on Review + Assign.
+5.	Click on **Select members** and add the use that you are logged in and the app you created. Click on **Review + Assign**.
  
-6.	Click on Review +Assign again. 
+6.	Click on **Review + Assign** again. 
+
 7.	The role is added.
  
-8.	Perform the same steps and add the role for the application - myhealthapiapp that we created.
-Task 3 – Launch Postman and import environment and collection files
+8.	Perform the same steps and add the role for the application - **myhealthapiapp** that we created.
 
-1.	Install the Postman application and login with credentials by creating a new account.
-2.	Launch the Postman application. Create a Workspace by name My FHIRService. Click on Create.
+## Task 3 – Launch Postman and import environment and collection files
+
+1.	Install the [Postman application](https://www.postman.com/downloads/) and login with credentials by creating a new account.
+
+2.	Launch the Postman application. Create a Workspace by name My **FHIRService**. Click on **Create**.
  
-3.	On the left navigation pane, click on Environments and select Create environment and update the environments variables by following the next steps.
+3.	On the left navigation pane, click on **Environments** and select **Create environment** and update the environments variables by following the next steps.
  
-4.	Access the Postman environment template for FHIR service by opening the github URL https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/fhir-service.postman_environment.json. 
+4.	Access the Postman environment template for **FHIR service** by opening the github URL https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/fhir-service.postman_environment.json. 
+
 5.	Click on anywhere inside the code and select all ( Ctrl +A) 
-6.	Open a Note pad and paste the code. Right click and then click Save as to save the file with the name – fhir-service.postname_environment.JSON locally in JSON format.
+
+6.	Open a Note pad and paste the code. Right click and then click **Save as** to save the file with the name – **fhir-service.postname_environment.JSON** locally in JSON format.
  
-7.	Access the Postman environment template for FHIR proxy using the URL https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/fhir-proxy.postman_environment.json. 
+7.	Access the Postman environment template for **FHIR proxy** using the URL https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/fhir-proxy.postman_environment.json. 
+
 8.	Click on anywhere inside the code and select all ( Ctrl +A) 
-9.	Open a Note pad and paste the code. Right click and then click Save as to save the file with the name – fhir-proxy.postname_environment.JSON locally in JSON format.
+
+9.	Open a Note pad and paste the code. Right click and then click Save as to save the file with the name – **fhir-proxy.postname_environment.JSON** locally in JSON format.
  
-10.	Switch back to Postman application in your workspace. Click on the Environments tab on the left and click the Import button next to the workspace name.
-11.	Import the fhir-service.postman_environment.json file that you saved locally in the beginning of this exercise. On the Import pane, click on Files.
+10.	Switch back to Postman application in your workspace. Click on the **Environments** tab on the left and click the Import button next to the workspace name.
+
+11.	Import the **fhir-service.postman_environment.json** file that you saved locally in the beginning of this exercise. On the **Import** pane, click on **Files**.
  
-12.	Select the fhir-service.postman_environment.json file from your local drive and click Open. 
-13.	Similarly, Import the fhir-proxy.postman_environment.json file that you saved locally in the beginning of this exercise.
+12.	Select the **fhir-service.postman_environment.json** file from your local drive and click **Open**. 
+
+13.	Similarly, Import the **fhir-proxy.postman_environment.json** file that you saved locally in the beginning of this exercise.
  
-14.	Now, access the FHIR-CALLS.postman-collection.json file available in this repo https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/FHIR-CALLS.postman_collection.json. 
+14.	Now, access the **FHIR-CALLS.postman-collection.json** file available in this repo https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/FHIR-CALLS.postman_collection.json. 
+
 15.	Click on anywhere inside the code and select all ( Ctrl +A) 
-16.	Open a Note pad and paste the code. Right click and then click Save as to save the file with the name – fhir-CALLS.postname_environment.JSON locally in JSON format.
+
+16.	Open a Note pad and paste the code. Right click and then click Save as to save the file with the name – **fhir-CALLS.postname_environment.JSON** locally in JSON format.
  
-17.	Navigate to the Postman and import the file like previously done
-18.	Access the FHIR_Search.postman_collection.json file available in this repo https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/FHIR_Search.postman_collection.json. 
+17.	Navigate to the **Postman** and import the file like previously done
+
+18.	Access the **FHIR_Search.postman_collection.json** file available in this repo https://github.com/microsoft/azure-health-data-services-workshop/blob/main/resources/docs/samples/FHIR_Search.postman_collection.json. 
+
 19.	Click on anywhere inside the code and select all ( Ctrl +A) 
-20.	Open a Note pad and paste the code. Right click and then click Save as to save the file with the name – fhir-Search.postname_environment.JSON locally in JSON format.
+
+20.	Open a Note pad and paste the code. Right click and then click Save as to save the file with the name – f**hir-Search.postname_environment.JSON** locally in JSON format.
  
-21.	Switch back to Postman application and import the files accordingly.
+21.	Switch back to **Postman** application and import the files accordingly.
  
-Task 4 – Configure Postman environment
-1.	Select Environment tab on the left navigation of Postman and then select fhir-service environment.
+## Task 4 – Configure Postman environment
+
+1.	Select **Environment** tab on the left navigation of Postman and then select **fhir-service** environment.
  
 2.	For the fhir-service Postman environment, you will need to retrieve the following values from the Azure portal. Copy the following values from the Azure portal and paste them in the respective CURRENT VALUE columns of fhir-service environment.
-•	tenantId – Microsoft Entra  tenant ID (go to Microsoft Entra ID -> Overview -> Tenant ID)
-•	clientId - Application (client) ID for Postman service client app that you created.
-•	clientSecret - Client secret value stored for Postman application.
-•	fhirurl - Go to Resource Group on Azure portal and then select your Resource group. Select FHIR service resource group. On the FHIR service resource group, on the Overview tab, go to FHIR metadata endpoint and copy without "/metadata" on the end.
-•	resource - Same as fhirurl
-•	bearerToken - Blank. 
+
+	1. **tenantId** – Microsoft Entra  tenant ID (go to Microsoft Entra ID -> Overview -> Tenant ID)
+
+	2. **clientId** - Application (client) ID for Postman service client app that you created.
+
+   	3. **clientSecret** - Client secret value stored for Postman application.
+
+	4. **fhirurl** - Go to Resource Group on Azure portal and then select your Resource group. Select FHIR service resource group. On the FHIR service resource group, on the Overview tab, go to FHIR metadata endpoint and copy without "/metadata" on the end.
+
+	5. **resource** - Same as fhirurl
+
+	6. **bearerToken** - Blank. 
  
-3.	Select the three horizontal dots on the table and select Persist All.
+3.	Select the three horizontal dots on the table and select **Persist All.**
  
-4.	Click Save to retain the fhir-service environment values.
+4.	Click **Save** to retain the fhir-service environment values.
+
 5.	Repeat Step 1 to Step 4 for fhir-proxy environment.
-Task 5 - Get an access token from Microsoft Entra 
+
+## Task 5 - Get an access token from Microsoft Entra 
+
 In order to connect to FHIR service, you will need to get an access token first. To obtain an access token from AAD via Postman, you can send a POST AuthorizeGetToken request. The POST AuthorizeGetToken call comes pre-configured as part of the FHIR CALLS collection that you imported earlier.
-1.	In Postman, click on Collections on the left, select the FHIR CALLS collection.
 
- 
+1.	In Postman, click on **Collections** on the left, select the **FHIR CALLS** collection.
 
-2.	Expand and select POST AuthorizeGetToken. 
+2.	Expand and select **POST AuthorizeGetToken**. 
  
-3.	Make sure that fhir-service environment is selected from the dropdown menu above the Send button.
+3.	Make sure that **fhir-service** environment is selected from the dropdown menu above the **Send** button.
  
-
-4.	On clicking Send, you should receive a response in the Body tab like shown below. The access_token value is automatically saved to the bearerToken variable in the Postman environment.
+4.	On clicking **Send**, you should receive a response in the Body tab like shown below. The access_token value is automatically saved to the bearerToken variable in the Postman environment.
+   
 	{
   	  "token_type": "Bearer",
   	  "expires_in": "3599",
@@ -189,24 +216,23 @@ In order to connect to FHIR service, you will need to get an access token first.
   	  "access_token": "XXXXXXXXXXXX..."
 	}
  
-
 You now have a valid access token in your Postman environment and can use the token in subsequent API calls to your FHIR service.
-Note
-Access tokens expire after 60 minutes. To obtain a token refresh, simply make another POST AuthorizeGetToken call and you will receive a new token valid for another 60 minutes.
 
-Task 6 - Test FHIR service with Postman
-1.	Click on collections from the left navigation pane. Expand the FHIR CALLS collection, and then select the GET List Metadata call. 
+**Note** - Access tokens expire after 60 minutes. To obtain a token refresh, simply make another POST AuthorizeGetToken call and you will receive a new token valid for another 60 minutes.
+
+## Task 6 - Test FHIR service with Postman
+
+1.	Click on **Collections** from the left navigation pane. Expand the **FHIR CALLS** collection, and then select the **GET List Metadata call**. 
  
-2.	Click Send to test that FHIR service is functioning on a basic level. The GET List Metadata call returns the FHIR service's Capability Statement. 
- 
- 
+2.	Click **Send** to test that **FHIR** **service** is functioning on a basic level. The **GET List Metadata** call returns the FHIR service's Capability Statement. 
+  
 3.	If you receive an error, there should be information in the response indicating the cause of the error. If you receive a response like shown below, this means your setup has passed the first test.
-4.	Click on POST Save Patient in the FHIR CALLS collection and press Send. 
- 
- 
+
+4.	Click on **POST Save Patient** in the **FHIR CALLS** collection and press **Send**. 
+  
 5.	If you get a response like shown below, this means you succeeded in populating FHIR service with a Patient Resource. This indicates that your setup is functioning properly.
  
-6.	Enter GET List Patients in the FHIR CALLS collection and press Send. 
+6.	Enter **GET List Patients** in the FHIR CALLS collection and press **Send**. 
  
  
 7.	If the response is as shown below, this means you successfully obtained a list of every Patient Resource stored in the FHIR service database (currently only one patient). This means your setup is fully functional.
