@@ -39,7 +39,9 @@ In this lab, you'll first play the role of a Lamna Healthcare system administrat
 In this exercise, you will learn how to do the following:
 
 1.  Configure an external website to the Healthcare Patient Portal template
+
 2.  Create a registration code and invite a patient to create an account for the website
+
 3.  Log in as a patient to navigate the features of the healthcare website
 
 The **Healthcare Patient Portal** is a template installed in your environment by the Patient Access module in Microsoft Cloud Solution Center when Microsoft Cloud for Healthcare was deployed.
