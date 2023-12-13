@@ -117,13 +117,13 @@ Azure Health Bot empowers developers in healthcare organizations to build and de
 
 In this exercise, you'll complete the following tasks:
 
-    1.	Set up Azure Health Bot from the Azure portal.
+1. Set up Azure Health Bot from the Azure portal.
 
-    2.	Set up and enable integration between Omnichannel for Microsoft Dynamics 365 Customer Service and Azure Health Bot.
+2. Set up and enable integration between Omnichannel for Microsoft Dynamics 365 Customer Service and Azure Health Bot.
 
-    3.	Set up and enable a bot channel to obtain a bot ID.
+3. Set up and enable a bot channel to obtain a bot ID.
 
-    4.	Obtain the application client ID for your health bot to use later.
+4. Obtain the application client ID for your health bot to use later.
 
 ### Task: Install Azure Health Bot in Azure subscription
 
