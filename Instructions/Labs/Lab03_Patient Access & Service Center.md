@@ -34,15 +34,6 @@ Casey is an avid runner but has exercise-induced asthma and requires an albutero
 
 In this lab, you'll first play the role of a Lamna Healthcare system administrator, where you'll set up the Patient Access portal and various tools in the Patient Service Center application. Next, you'll play the role of Casey, who will sign in to the portal, navigate the various options, interact with the Azure Health Bot, and escalate to a live agent in Patient Service Center to refill the medication.
 
-## Learning objectives
-
-In this lab, you will:
-
--   Configure and navigate the Patient Access Portal
--   Create and configure Agent Scripts to show in the Productivity Pane
--   Create and configure Knowledge Articles
--   Experience escalation scenario from Patient Portal through Azure Health Bot into Patient Service Center
-
 ## Exercise 1: Configure & Navigate the Patient Access Portal
 
 In this exercise, you will learn how to do the following:
@@ -53,803 +44,539 @@ In this exercise, you will learn how to do the following:
 
 The **Healthcare Patient Portal** is a template installed in your environment by the Patient Access module in Microsoft Cloud Solution Center when Microsoft Cloud for Healthcare was deployed.
 
-A **Portal** is an external website that allows for communication between a company and its users. In this case, the Lamna Healthcare Company wants an external website for their patients to access their medical history and communicate effectively with the institution. The Healthcare Patient Portal template tailors the website’s user interface for a healthcare company focusing on secure communication, information access, and an overall improved patient experience.
+**Microsoft Power Pages** (previously Microsoft Power Apps portal) is an external website that allows communication between a company and its users. In this case, Lamna Healthcare Company wants an external website for their patients to access their medical histories and communicate effectively with the institution. The Healthcare Patient Portal template tailors the website's user interface (UI) for a healthcare company. It focuses on providing more secure communication, information access, and an overall improved patient experience.
 
-Here’s what you should see after configuring and logging into the Healthcare Patient Portal:
+The following image shows an example of the welcome page that displays after you've set up and signed in to the Lamna Healthcare Patient Portal.
 
-![Screenshot of Healthcare Patient Portal landing page](./IMAGES/Lab03/L3P3.png)
+For more information, see [Microsoft Power Apps portals documentation].(https://learn.microsoft.com/en-us/power-apps/maker/portals/)
 
-If you’d like to learn more about portals, check out Microsoft Docs: [What is Power Apps portals?](https://docs.microsoft.com/en-us/powerapps/maker/portals/overview)
+## Task: Set up the Lamna Healthcare Patient Portal
 
-### Task 1: Configure the Healthcare Patient Portal
+Prior to deploying Microsoft Cloud for Healthcare, you created a portal in your environment by using the Customer Self-Service template. Creating this portal was a prerequisite for deploying the Patient Access module.
 
-Prior to deploying Microsoft Cloud for Healthcare, we created a portal in your environment using the **Customer Self-Service** template. This was a prerequisite to install the Healthcare Patient Portal as part of the Patient Access module.
+Lamna Healthcare wants to associate the previously installed Customer self-service template with the Healthcare Patient Portal template so that the correct website is displayed to the user. The following steps will guide you through the process of binding your website to the proper template and restarting the portal for changes to apply.
 
-Lamna Healthcare wants to associate the previously installed Customer Self-Service portal with the **Healthcare Patient Portal** template, so the correct website is displayed to the user. The following steps will guide you through how to bind your website to the proper template and restart the portal for changes to apply.
+First, open the portal to view the Customer Self-Service template that’s currently bound. After you've completed the configuration steps in this task, the new Lamna Healthcare Patient Portal UI will display.
 
-We will first open the Portal to show the Customer Self-Service template currently bound. After the configuration steps in this task, you will see the new Healthcare Patient Portal user interface.
+1.	While signed into your Microsoft 365 tenant, open a new tab, and go to [Power Pages portal].(https://powerpages.microsoft.com/en-in/) Select your environment.
 
-1. [] Navigate to +++https://make.powerapps.com+++ in an In-Private or Incognito window.
+2.	Under **Active Sites**, Select **Lamna Healthcare Patient Portal > Preview > Desktop**.
+ 
+3.	The **Customer Self-Service** website template is displayed in the Lamna Healthcare Patient Portal. Close the website. You'll need to set it to the Healthcare Patient Portal template.
+ 
+4.	Go back to Power Pages Portal.
 
-1. [] Select the correct environment from the upper right **Environment** dropdown.
+5.	Select the three horizontal dots and then **Admin center.**
+ 
+6.	Selecting **Admin center** will open a new window, **Microsoft Power Platform admin center**, where you can complete administrative tasks. Select **Switch to Classic** in the upper command bar to use the classic UI to complete the template binding.
+ 
+7.	In the **Portal Details** area, scroll down to **Update Portal Binding** and select **Healthcare Patient Portal** from the **Select Website** **Record** dropdown menu.
+ 
+8.	Select **Update** after you’ve selected the Healthcare Patient Portal.
 
-    ![](./IMAGES/Lab03/L3P4.png)
+9.	Select **Portal Actions** on the left navigation pane and then select **Restart**.
 
-1. [] Select **Apps** on the left navigation bar.
+10.	Wait for 1 to 5 minutes for the portal to restart and then return to the website. The website should show the Healthcare Patient Portal template.
+ 
+You've completed the post deployment step to set up the Healthcare Patient Portal template that’s deployed from Patient Access. After you've updated the bindings and have restarted the portal, the website will display as **Healthcare Patient Portal** template rather than **Customer Self-Service.**
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P5.png)
+## Task: Modify the company name in Lamna Healthcare Patient Portal
 
-1. [] Find the **Lamna Healthcare** **Patient Portal** app. It should be the only app where the app type is Portal. You may also search for it in the Search bar in the upper right.
+In this task, you'll edit the Lamna Healthcare Patient Portal website to align the name with Lamna Healthcare Company because the template uses a generic company name.
 
-    ![Screenshot of Lamna Healthcare Patient Portal in App list](./IMAGES/Lab03/L3P6.png)
+1.	Go back to **Power Pages** where you have your **Lamna Health care Patient Portal.**
+ 
+2.	Click on three horizontal dots and select **Portal management.**
+ 
+3.	Once **Portal management** launches, click on **Code Snippets** from the left navigation pane under Content.
 
-1. [] Select the app name to open the **Lamna Healthcare Patient Portal**. You may also select **More Commands (…) > Browse** or click **Browse** on the top command bar to open it.
+4.	Search for **Navbar** in the search area. Click on **Navbar left** for **Healthcare patient portal**.
+ 
+5.	Under **General** tab, scroll down to Value parameter. On scrolling right in the HTML code area, replace Contoso Healthcare with Lamna Healthcare.
+ 
+6.	Click on **Save & Close.**
 
-    ![Screenshot of selecting Lamna Healthcare Patient Portal](./IMAGES/Lab03/L3P7.png)
+7.	The name of the portal is changed successfully. 
 
-1. [] You should see the Customer Self-Service template shown in the Lamna Healthcare Patient Portal.
+8.	Go back to **Power pages.** Open the **admin center** of the portal. 
+ 
+9.	Click on **Restart site** under **Site Actions**.
+ 
+When you launch the Lamna Healthcare Patient Portal, it should now show **Lamna Healthcare** company name in the upper-left corner. You've now completed modifying the Lamna Healthcare Patient Portal to display the correct company name.
 
-    ![Screenshot of customer self-service portal landing page](./IMAGES/Lab03/L3P8.png)
+## Task: Invite a patient to the portal
 
-1. [] Close the **Lamna Healthcare Patient Portal** website. Now you will configure it to the Healthcare Patient Portal template.
+Now that the Lamna Healthcare Patient Portal is ready, you can allow Lamna Healthcare patients to create accounts. In this task, you'll create an invitation code for patients to sign up and use the Lamna Healthcare Patient Portal. Additionally, you'll create an account for Casey Jensen, who will access the patient portal to refill medication in this lab.
 
-1. [] Return to **Apps** section in Power Apps. Select the **Lamna Healthcare Patient Portal** app if it isn’t already selected.
+1.	Open the **Healthcare Administration** app in [Power Apps](http://make.powerapps.com/) under **Apps** from the left navigation pane by clicking on **play** button in your environment **Lamna Healthcare Company**.
 
-    ![Screenshot of Lamna Healthcare Patient Portal in App list](./IMAGES/Lab03/L3P9.png)
+2.	In the **Administration** section on the left navigation pane, select **Patients**, which will display the **Active Patients** grid view. Open the **Casey Jensen** patient record so that you can obtain an invitation code for Casey to use.
+ 
+3.	On the Casey Jensen patient record, select the vertical ellipsis (...) on the command bar and then select **Create Invitation.**
+ 
+4.	A **New Invitation** form is displayed. Don't change anything; select **Save**. An invitation code will be created for the patient.
+ 
+5.	To retrieve the patient code, go to the **Advanced** tab on the **Invitation** record. Copy and store the **Invitation Code** for accessing the Lamna Healthcare Patient Portal in the next task.
+ 
+You've successfully created an invitation code for Casey to register an account in the Lamna Healthcare Patient Portal.
 
-1. [] Select **More Commands (…) > Settings**.
+## Task: Redeem the invitation code and sign in to Patient Portal
 
-    ![Screenshot of selecting Lamna Healthcare Patient Portal](./IMAGES/Lab03/L3P10.png)
+In this task, you'll transition personas and act as Casey, a patient who has recently received an invitation code to the Lamna Healthcare Patient Portal. You'll use the code to register for the website and then navigate its features.
 
-    This will bring out the **Portal settings** panel on the right.
+1.	Login to Powerpages with your credentials and launch the Lamna Healthcare Patient Portal.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P11.png)
+2.	In the Lamna Healthcare Patient Portal, select **Sign in.**
+ 
+3.	After the sign-in page loads, select the **Redeem invitation** tab.
 
-1. [] In **Portal settings**, under **Advanced options**, select **Administration**.
+4.	Paste the invitation code that you stored for Casey Jensen. Select **Register**.
+ 
+5.	Register a new local account for Casey Jensen with the following recommended details:
 
-    ![Screenshot of portal settings dialog](./IMAGES/Lab03/L3P12.png)
+    o	**Email** - Casey.Jensen@contoso.com (should autofill)
 
-    Selecting Administration will open a new window, the **Power Apps Portals admin center**, where you can do portal administrative tasks. You may have to re-sign in. You should be first navigated to the **Portal Details** tab of the **Power Apps Portals admin center**.
+    o	**Username** - CaseyJensen
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P13.png)
+    o	**Password** - Make up your own. Note the password to use for sign-in later.
 
-1. [] Scroll down to **Update Portal Binding > Select Website Record**. Open the **Select Website Record** dropdown and change the value from **Customer Self-Service** to **Healthcare Patient Portal**, if necessary. This will bind the Healthcare Patient Portal template with this portal URL and show the proper user interface to the user for our healthcare scenario.
+6.	Select **Register** and then you should be signed in to the Lamna Healthcare Patient Portal.
 
-    ![Screenshot of selecting Healthcare Patient Portal in drop down](./IMAGES/Lab03/L3P15.png)
+You've successfully redeemed an invitation to register an account for Casey Jensen and you’ve also signed in.
 
-1. [] Select **Update**.
+## Task: Navigate the Patient Access portal
 
-    ![Screenshot of updating portal binding](./IMAGES/Lab03/L3P16.png)
+In this task, you'll continue as Casey and navigate the features of the Lamna Healthcare Patient Portal.
 
-1. [] Select **Portal Actions** section on the left navigation. Then select the first option, **Restart.**
+1.	You should be directed to the Lamna Healthcare Patient Portal home page. If not, select the logo in the upper-left corner to go to the home page anytime.
+ 
+The center of the home page shows shortcuts to **Schedule an appointment, View messages, or Find a doctor.**
+ 
+Under the shortcuts, a section shows current patient information, including **Unread messages, Upcoming appointments, and Medications.**
+ 
+2.	The left navigation pane contains all available options for navigation in the Lamna Healthcare Patient Portal. Select each option to discover what's available and to view each associated screen.
+ 
+3.	Select **Home** to return to the home page.
 
-    ![Screenshot of selecting Portals Admin Center, select Portal Actions, and Restart](./IMAGES/Lab03/L3P17.png)
+4.	Select **Find a doctor** to view a list of practitioners with associated information.
+ 
+5.	Selecting **Messages** allows for a more secure method to send and receive messages to healthcare professionals. Expand **Messages** on the navigation bar to view the **Inbox** and **Sent** messages.
+ 
+6.	Expand **Appointments** to check upcoming appointments and to schedule new appointments. Scheduling new appointments allows for clinic or virtual appointments, including instant virtual appointments. The **Schedule a virtual visit** exercise will go through the process of booking an instant virtual appointment.
+ 
+7.	Expand the Medical records section, in the **Overview** section, review the medical records, including medications, allergies, conditions, visit summaries, care plans, and care team. You can view a full overview and filter by date and type.
+ 
+8.	In the **Personal information** section, review the emergency contacts and insurance coverages.
+ 
+ 
+9.	Locate the Azure Health Bot icon in the lower-right corner of the screen. You can start a conversation by selecting the **Let's Chat** button to open the virtual assistant.
+ 
+In the final exercise, you'll have a full conversation with the bot; for now, you can select Close and then continue with this lab.
+ 
+10.	Access the patient profile page by selecting the patient's name in the dropdown menu in the upper-right corner and then selecting **Profile**.
+ 
+11.	On the patient profile page, you can customize the patient profile as needed. For now, keep it the same.
+ 
+12.	Sign out of the Lamna Healthcare Patient Portal by selecting the patient's name in the dropdown menu in the upper-right corner and then selecting **Sign out.**
+ 
+You should be redirected to the sign-in page.
+ 
+You've now navigated the Lamna Healthcare Patient Portal to discover the information and communication that are available to the patient.
 
-1. [] When prompted, confirm the **Restart** for the portal. This will allow the change to take effect.
+In this exercise, you’ve completed the following tasks of:
 
-    ![Screenshot of restart confirmation dialog](./IMAGES/Lab03/L3P18.png)
+    •	Setting up the Patient Access portal to display as the Healthcare Patient Portal template.
 
-1. [] Wait 1-5 minutes for the portal to restart. (Feel free to refill water or stretch your legs!)
+    •	Modifying the portal to display the company name.
 
-1. [] After a few minutes, open the **Lamna Healthcare Patient Portal** in Power Apps.
+    •	Inviting a patient to register for the website.
 
-    ![Screenshot of Lamna Healthcare Patient Portal in App list](./IMAGES/Lab03/L3P19.png)
+    •	Navigating the Healthcare Patient Portal features.
 
-1. [] If you see **HTTP Error 503: The service is unavailable,** the portal is still restarting.
+## Create and set up agent scripts
 
-    ![Screenshot of Server Unavailable, error 503 ](./IMAGES/Lab03/L3P20.png)
+Lamna Healthcare Company wants to ensure that they have proper tools in place to provide the best service and guidance during patient interactions.
 
-1. [] Once the Portal is opened and running properly, it should look like the following:
+Patient Service Center has a **Productivity** pane, an auxiliary work area that contains tools that support or expedite an agent's tasks when they're engaging with patients. During a patient engagement, the pane will be shown next to the patient record information, and the agent can collapse or expand it as needed. For more information, see [Productivity pane overview].(https://learn.microsoft.com/en-us/dynamics365/omnichannel/administrator/productivity-pane/)
 
-    ![Screenshot of Patient Access Portal sign in page with the Healthcare Patient Portal template configured.](./IMAGES/Lab03/L3P21.png)
+Agents can use the **Agent scripts** tool in the **Productivity** pane to help with patient care. Agent scripts provide guidance for a specific situation and can help organizations be unified, accurate, and effective while also being more efficient with patients. The scripts ensure that only company-endorsed information is being shared, help reduce error, and improve customer satisfaction.
 
-**Congratulations!** You completed the post deployment steps to configure the Healthcare Patient Portal template deployed from Patient Access. After updating the bindings and restarting the portal, the website now shows as Healthcare Patient Portal template rather than Customer Self-Service.
+In this exercise, you'll create and set up an agent script to appear in the **Productivity** pane in Patient Service Center. The following screen shows the **Productivity** pane, with the **Agent scripts** tab showing.
+ 
+## Task: Assign the Productivity tools administrator role
+In this task, you'll assign the necessary roles to your user to create and use agent scripts. Specifically, you'll add the **Productivity tools administrator** and **Productivity tools user** roles. The **Productivity tools administrator** can complete any action (create/read/write/append/delete) on the agent script, whereas the **Productivity tools user** role only has read capabilities. Because you're creating the roles, you'll need the administrator role. For more information, see ]Assign roles and enable users for Omnichannel for Customer Service](https://learn.microsoft.com/en-us/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges/?azure-portal=true#)
 
+1.	While signed into your Microsoft 365 tenant, open a new tab, and go to [Microsoft Power Apps].(https://make.powerapps.com/). Select your environment.
 
-### Task 2: Modify Company Name in Patient Portal
+2.	Select the **gear icon** in the upper-right corner and then select **Advanced settings**. A new window should open and direct you to Dynamics 365. If it takes a while to load, reload the page.
 
-In this task, we will edit the Patient Portal website to align the name with Lamna Healthcare Company since the template uses a generic company name.
+3.	In **Dynamics 365**, select **Settings > Security**.
 
-1. [] Navigate to **Apps** in +++https://make.powerapps.com+++.
+4.	Under **Security**, select **Users**.
+ 
+5.	Switch the **System Views** dropdown menu from **Omnichannel Users** to **Enabled Users** for the grid view so that your user will show in the list.
 
-1. [] Select the **Lamna Healthcare Patient Portal** app and select **More Commands (…) > Edit**. If you receive a dialog with options to **Open in Power Pages** or **Open in Power Apps**, select **Open in Power Apps**.
+ 
+6.	While in the **Enabled Users** list, scroll down to find your user, or you can use the search option. Select your user and then select **Manage Roles** on the command bar.
+ 
+7.	Scroll down and select the following two roles for your user. Select **OK**.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P22.png)
+    o	**Productivity tools administrator**
 
-    The Patient Portal designer will load after getting everything ready.
+    o	**Productivity tools user**
+ 
+**Note** - You'll assign more roles in this exercise. We recommend that you leave the user screen open.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P23.png)
+You've successfully assigned the necessary Productivity tools user roles to set up and use agent scripts.
 
-1. [] Once loaded, you should see **Contoso Healthcare** in the upper left of the design screen. The name may be overlapping the logo but will display properly on the website.
+## Task: Create an agent script
 
-    ![Graphical user interface, table Description automatically generated](./IMAGES/Lab03/L3P24.png)
+In this task, you'll create an agent script in the Omnichannel Administration app. This script will guide the agent to validate patient information when a conversation is initiated between a patient and an agent in Patient Service Center. The script will have two steps: one to confirm phone number information and another to verify insurance information. This task will guide you through the creation of this agent script and its steps.
 
-1. [] Select the text box that reads **Contoso Healthcare** and change it to +++Lamna Healthcare+++.
+1.	In Power Apps, select **Apps** on the left navigation pane. Open the **Customer Service admin center** application.
+ 
+2.	On the left navigation pane, under **Agent experience**, select **Productivity** and then select **Manage** next to **Agent scripts.**
+ 
+3.	Select **+ New** on the command bar to create a new agent script.
+ 
+4.	For the **New Agent** script record, specify the following information and then select **Save**.
 
-    ![A picture containing table Description automatically generated](./IMAGES/Lab03/L3P25.png)
+    o	**Name** - Validate Patient Information
 
-1. [] The page should automatically save the changes. You can verify in the command bar that it says **Saved**, has the green check mark, and on hover shows the correct saved time.
+    o	**Unique Name** - msdyn_ValidatePatientInformation
 
-    ![A picture containing background pattern Description automatically generated](./IMAGES/Lab03/L3P26.png)
+5.	The **New Agent script steps** subgrid should appear. Select **+ New Agent script step** to create a new step in the agent script.
+ 
+6.	Specify the following fields in the New Agent script step form:
 
-1. [] Select **Sync Configurations** in the command bar to sync data to CDS.
+    o	**Name** - Confirm Phone Number
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P27.png)
+    o	**Unique Name** - msdyn_ConfirmPhone
 
-    It may take a moment to load the preview.
+    o	**Order** - 1
 
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab03/L3P28.png)
+    o	**Action type** - Text
 
-1. [] Once configurations have completed syncing, select **Browse website** on the command bar.
+    o	**Text instructions** - Ask patient to confirm phone number.
 
-    ![](./IMAGES/Lab03/L3P29.png)
+7.	Select **Save & Close**.
 
-1. [] The Healthcare Patient Portal should open, and you should see the **Lamna Healthcare** company name in the upper left corner.
+ 
+8.	In the **Agent script steps** section, select **+ New Agent script step** again to add another step.
 
-    ![A person holding a baby Description automatically generated with low confidence](./IMAGES/Lab03/L3P30.png)
+9.	Specify the following fields in the second **Agent script step** form:
 
-**Congratulations!** You completed modifying the Healthcare Patient Portal to display the correct company name.
+    o	**Name** - Verify Insurance Information
 
+    o	**Unique Name** - msdyn_VerifyInsuranceInformation
 
-### Task 3: Invite a Patient to the Portal
+    o	**Order** - 2
 
-Now that the Patient Portal is ready to go, we need to allow Lamna Healthcare patients to create accounts.
+    o	**Action type** - Text
 
-In this task, you will learn how to create an invitation code for patients to sign up and use the Lamna Healthcare Patient Portal. Since Casey Jensen will be accessing the patient portal to fill her medication in this lab, we will create an account for her.
+    o	**Text instructions** - Ask Patient for Insurance Provider and ID #. Verify their response matches insurance information on file.
 
-1. [] Open the **Healthcare Administration** app in Power Apps, +++http://make.powerapps.com+++. You may have to select the back arrow in the browser window.
+10.	Select **Save & Close.**
 
-    ![Screenshot of Apps screen with Healthcare Administration App](./IMAGES/Lab03/L3P31.png)
+11.	Both steps should now be in the **Agent script steps** subgrid. Select **Save & Close.**
 
-1. [] In the **Administration** section of the sitemap, select **Patients**, if not already selected. You will see the **Active Patients** grid view. Open the **Casey Jensen** patient record by double-clicking it so we can obtain an invitation code for her to use.
+You've now completed creating an agent script with two steps to validate patient information, including phone number and insurance information.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P32.png)
+## Task: Associate the agent script with a session template
 
-1. [] On the **Casey Jensen** patient record, select **Create Invitation** from the top command bar. It should be near the right side. If you don't see it, you may have to expand additional options (vertical ellipsis) to see this command in the dropdown.
+In this task, you'll associate the agent script with a session template so that it will load for agents in specific chat sessions. You'll be associating the agent script that you created with the **Default chat session.** This default chat session opens during an escalation to an agent in Patient Service Center.
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P33.png)
+1.	In the Customer Service admin center, on the left navigation pane, under **Agent experience,** select **Overview**. This page displays an overview of vital agent information.
 
-1. [] A New Invitation form will appear. You don’t need to make any changes. Select **Save**. Once saved, an invitation code will be created for the patient. Let’s go retrieve it.
+ 
+2.	Select **Session templates** under **Workspaces**.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P35.png)
+ 
+3.	Select the C**hat session - default** session template. Select **Edit** on the command bar to open the **Chat session - default** record.
 
-1. [] Go to the **Advanced** tab on the **Invitation** record. Copy and store the **Invitation Code** (in Notepad or similar program) for accessing the Patient Portal in the next task.
+ 
+4.	To associate this session with the agent script, select the **Agent scripts** tab. In the **Agent scripts** section, select **Add Existing Agent script.**
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P36.png)
+ 
+5.	The **Lookup Records** pane will display. In the **Look for records** box, select the search icon (magnifying glass). Select the **Validate Patient Information** agent script from the list.
 
-**Congratulations!**  You have successfully created an invitation code for **Casey** to register an account in the Patient Portal.
+ 
+6.	After the agent script has been added as a record, select **Add**.
+ 
+The **Chat session - default** session template should now have the **Validate Patient Information** agent script in the subgrid. Then Click on **Save and Close.**
 
+You've now successfully created an agent script with two steps and have associated the agent script with the default chat session. Now, your agents can use this script during a default chat session with a patient.
 
-### Task 4: Redeem Invitation Code and Sign into Patient Portal
+## Exercise - Create and manage knowledge articles
 
-In this task, you will transition personas and act as Casey Jensen, who just received an invitation code to Lamna Healthcare’s Patient Portal and is excited to register and navigate its features.
+In this exercise, you'll learn how to create and manage knowledge articles that can address numerous issues that your customers want to discuss during the Patient Service Center conversation. These knowledge articles will appear in the **Productivity** pane in Patient Service Center through searching and AI-enabled suggestions.
+ 
+## Task: Assign the Knowledge Manager user role
 
-1. [] Open the **Lamna Healthcare Patient Portal** in [Power Apps](https://make.powerapps.com/).
+In this task, you'll assign the necessary user role to create and view knowledge articles.
 
-    ![Screenshot of Lamna Healthcare Patient Portal in App list](./IMAGES/Lab03/L3P37.png)
+1.	If you kept the **User Settings** page open from the previous exercise, go to the page, and then skip to the step after selecting Manage Roles.
 
-1. [] In the first task, we configured the portal to the Healthcare Patient Portal template. Now that it’s been restarted, your Patient Portal should open and look like the following:
+2.	Go to [Power Apps].(http://make.powerapps.com/) Select the **gear icon** in the upper-right corner and then select **Advanced settings.**
 
-    ![Screenshot of Healthcare Patient Portal Sign in Landing Page](./IMAGES/Lab03/L3P38.png)
+3.	In **Dynamics 365**, select **Settings > Security.**
+ 
+4.	Under **Security**, select **Users**.
 
-1. [] If you still see the Customer Self-Service template, make sure you’ve completed Exercise 1, Task 1 to change the template to the Healthcare Patient Portal.
+5.	Switch the **System Views** dropdown menu from **Omnichannel Users** to **Enabled Users** for the grid view so that your user will show in the list.
+ 
+6.	In the **Enabled Users** list, scroll and find your user. Alternatively, you can use the search option. Select your user and then select **Manage Roles** on the command bar.
+ 
+7.	Three roles that you can choose for [create/read permissions for knowledge articles](https://learn.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article#create-a-knowledge-article/?azure-portal=true#) are:
 
-1. [] In the Patient Portal, select **Sign in**.
+    o	Knowledge Manager
 
-    ![Screenshot of Sign in prompt](./IMAGES/Lab03/L3P39.png)
+    o	Customer Service Manager
 
-1. [] After the sign in page loads, select the **Redeem invitation** tab.
+    o	Customer Service Representative
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P40.png)
+For this exercise, select the **Knowledge Manager** role.
+ 
+8.	Ensure that you have the **System Administrator** role.
+ 
+9.	Select **OK** to close the **Manage User Roles** window and accept changes.
 
-1. [] Paste the **Invitation code** you stored for Casey Jensen. Select **Register.**
+You’ve now assigned the proper roles to create and read knowledge articles.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P41.png)
+## Task: Create a knowledge article
 
-1. [] Register a new local account for Casey Jensen with the following recommended details:
-    1. [] **Email**: Casey.Jensen@contoso.com (should auto-fill)
-    1. [] **Username**: +++CaseyJensen+++
-    1. [] **Password**: Make up your own. Please note the password to use for sign in later.
+In this task, you'll learn about the knowledge management settings that are available.
 
-        ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P42.png)
+1.	In [Power Apps],(http://make.powerapps.com/) open the Customer Service Hub app by clicking on play
+ 
+2.	On the left navigation pane, select **Knowledge Articles**. Select **+ New** on the command bar to add a new knowledge article.
+ 
+3.	In the **Article Content** section of the **New Knowledge Article,** specify the following details for a knowledge article on asthma and shortness of breath:
 
-1. [] Select **Register**. After selecting Register, you should be signed into the Patient Portal.
+    o	**Title** - Shortness of Breath
 
-**Congratulations!** You have successfully redeemed an invitation to register an account for Casey and signed in.
+    o	**Keywords** - Asthma, shortness of breath, trouble breathing, albuterol, inhaler
 
+    o	**Description** - Uncomfortable sensation or awareness of breathing or needing to breathe.
 
-### Task 5: Navigate the Patient Access Portal
-
-In this task, you will continue as Casey and navigate the features of the Patient Portal.
-
-1. [] After registering for an account in the **Patient Access Portal**, you should be welcomed by the portal Homepage or profile page if your account requires action, such as email confirmation required. You can ignore the email confirmation warning if displayed.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P43.png)
-
-1. [] Select **Lamna Healthcare** in the upper left to go back to the Homepage, if you are not already there.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P44.png)
-
-    You will be navigated to the Patient Portal Homepage.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P45.png)
-
-1. [] In the center of the homepage, you will see shortcuts to **Schedule an appointment**, **View messages**, or **Find a doctor**.
-
-    ![Screenshot of homepage shortcuts](./IMAGES/Lab03/L3P46.png)
-
-1. [] Below the shortcuts, you will see current patient information including **Unread messages**, **Upcoming appointments**, and current **Medications**.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P47.png)
-
-1. [] In the left navigation bar, you will see all available options for navigation in the Patient Portal. Select the options to see what’s available and each associated screen.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P48.png)
-
-    1. [] **Home** command will direct you to the homepage.
-    1. [] **Find a doctor** shows a list of practitioners with associated information.
-
-        ![Table Description automatically generated](./IMAGES/Lab03/L3P49.png)
-
-    1. [] **Messages** allows a secure method to send and receive messages to healthcare professionals. Expand **Messages** on the navigation bar to see both the **Inbox** and **Sent** messages.
-
-        ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P50.png)
-
-    1. [] Expand **Appointments** to check upcoming and schedule new appointments. Scheduling new appointments allows for clinic or virtual appointments, which also includes instant virtual appointments. The Virtual Visit Lab will go through the process of booking an instant virtual appointment.
-
-        ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P51.png)
-
-    1. [] Check **Medical records** including medications, allergies, conditions, visit summaries, care plans, and care team. You can see a full overview and filter by date and type.
-
-        ![Graphical user interface, text, email Description automatically generated](./IMAGES/Lab03/L3P52.png)
-
-    1. [] Lastly, there is **Personal information**, including emergency contacts and insurance coverages.
-
-        ![Text Description automatically generated](./IMAGES/Lab03/L3P53.png)
-
-1. [] The Azure Health Bot icon shows at the lower right-hand corner of the screen. You may start a conversation by selecting **Let’s Chat** button to open the virtual assistant.
-
-    ![Screenshot of Let's Chat virtual assistant Health Bot](./IMAGES/Lab03/L3P55.png)
-
-1. [] In the final exercise, we will have a full conversation with the bot, but for now we will close and continue.
-
-    ![Screenshot of closing the Health Bot conversation](./IMAGES/Lab03/L3P56.png)
-
-1. [] You may access the patient Profile page at any time by selecting the patient’s name in the upper right dropdown and selecting **Profile**.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P57.png)
-
-1. [] Here you can customize the patient profile as needed. For now, we will keep it the same.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P58.png)
-
-1. [] You may log out of the Patient Portal by selecting the patient’s name in the upper right drop-down and selecting **Sign Out**.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P59.png)
-
-1. [] You should be redirected back to the sign in page.
-
-    ![A person holding a baby Description automatically generated with low confidence](./IMAGES/Lab03/L3P60.png)
-
-**Congratulations!** You have navigated the Patient Portal to see what information and communication is available to the Patient. In this exercise, you learned how to configure the Patient Access Portal to display as the Healthcare Patient Portal, modify the portal to display the company name, invite patients to register to the website, and navigate the website features.
-
-===
-
-## Exercise 2: Configure Agent Scripts
-
-Lamna Healthcare Company wants to ensure they have proper tools in place to provide the best service and guidance during patient interactions.
-
-Patient Service Center has a **productivity pane** which is an auxiliary work area which contains tools that support or expedite an agent's tasks when engaging with patients. During a patient engagement, it will be embedded directly on the screen next to patient information and can be collapsed or expanded as needed.
-
-See the following documentation to learn more about the productivity pane: [Productivity pane overview](https://docs.microsoft.com/en-us/dynamics365/omnichannel/administrator/productivity-pane)
-
-**Agent Scripts** are one of the tools in the productivity pane that agents can use to help with patient care. Agent Scripts provide guidance for a specific situation and help organizations be unified, accurate, and effective while also being faster and more efficient with patients. The scripts ensure that only accurate, company-endorsed information is being shared and help reduce error and improve customer satisfaction.
-
-In this exercise, you will create an agent script to appear in the productivity pane in Patient Service Center. The following screen shows the productivity pane on the right-hand side with the Agent Scripts tab showing. The agent script selected is Validate Patient Information and there are two steps shown. You will not see this below output until the final exercise in this lab while testing escalation, however, you will be creating the components needed to display in the productivity pane later.
-
-![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P61.png)
-
-### Task 1: Assign Productivity Tools Administrator Role
-
-In this task, you will assign the necessary roles to your user to create and use agent scripts. Specifically, you will be adding the **Productivity tools administrator** and **Productivity tools user** roles. The Productivity tools administrator can do any action (create/read/write/append/delete) on the agent script, while the Productivity tools user only has read capabilities. Since we are creating them, we need the administrator role.
-
-See the following documentation to learn more about these roles: [Assign roles and enable users for Omnichannel for Customer Service](https://docs.microsoft.com/en-us/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges)
-
-1. [] Using an In-Private or Incognito window, navigate to [Power Apps](http://make.powerapps.com).
-
-1. [] Select the correct environment from the upper right **Environment** dropdown, if necessary.
-
-    ![](./IMAGES/Lab03/L3P62.png)
-
-1. [] Select **Apps** on the left navigation bar.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P63.png)
-
-1. [] Open the **Omnichannel admin center** app.
-
-    ![Screenshot of Omnichannel Administrator App in Power Apps](./IMAGES/Lab03/L3P64.png)
-
-1. [] Select the **gear** icon in the upper right corner and navigate to **Advanced Settings**.
-
-    ![Screenshot of Advanced settings in Settings drop down](./IMAGES/Lab03/L3P65.png)
-
-1. [] A new window should open and navigate to Dynamics 365. It may take a while to load. If it’s been longer than a minute, stop and reload the page. It should then load faster.
-
-1. [] In Dynamics 365, select **Settings > Security**.
-
-    ![Screenshot of Dynamics 365 navigation to settings and security on command bar](./IMAGES/Lab03/L3P66.png)
-
-1. [] Under **Security**, select **Users**.
-
-    ![Screenshot of Users option first in the list of security settings](./IMAGES/Lab03/L3P67.png)
-
-1. [] Switch the view dropdown from **Omnichannel Users** to **Enabled Users** for the grid view so that your user will show in the list.
-
-    ![Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](./IMAGES/Lab03/L3P68.png)
-
-1. [] While in the **Enabled User** list, scroll down to find your MOD Administrator user or use the **Search** bar.
-
-    ![Screenshot of searching for user in enabled user list](./IMAGES/Lab03/L3P69.png)
-
-1. [] Select your user for the training and select **Manage Roles** on the top command bar.
-
-    ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab03/L3P70.png)
-
-1. [] Scroll down and select the following two roles to add to your user and select **OK**.
-    1. [] Productivity tools administrator
-    1. [] Productivity tools user
-
-        ![Screenshot of Manage User Roles dialog where 2 roles have been selected: Productivity tools administrator and Productivity tools user](./IMAGES/Lab03/L3P71.png)
-
-> [!NOTE] Note: You will assign more roles in this lab. It is recommended to leave the User screen open.
-
-**Congratulations!** You have successfully assigned the necessary **Productivity tools** user roles to set up and use agent scripts.
-
-
-### Task 2: Create an Agent Script
-
-In this task, you will create an agent script in the Omnichannel admin center app. This script will guide the agent to **validate patient information** when a conversation is initiated between a patient and an agent in Patient Service Center. The script will have two steps, one to **confirm phone information** and another to **verify insurance information**. This task will guide you through creation of this agent script and its steps.
-
-1. [] Navigate to **Omnichannel admin center** application which you opened in the first task.
-
-1. [] In the left navigation bar, select **Agent Experience**, and in the **Agent experience** page, select **Manage** to the right of **Agent Scripts**.
-
-    ![Omnichannel Administration app to create new agent scripts](./IMAGES/Lab03/L3P71b.png)
-
-1. [] On the **Active Agent scripts** page, select **+New**.
-
-    ![Omnichannel Administration app to create new agent scripts](./IMAGES/Lab03/L3P72.png)
-
-1. [] For the **New Agent script** record, specify the following:
-    1. [] **Name**: +++Validate Patient Information+++
-    1. [] **Unique Name**: +++msdyn_ValidatePatientInformation+++
-
-        ![Create new agent script called Validate Patient Information](./IMAGES/Lab03/L3P73.png)
-
-1. [] Select **Save**. The **Agent script steps** should appear on the right
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P74.png)
-
-1. [] In the **Agent script steps** section, select **+New Agent script step**. You may have to select the vertical ellipsis depending on the size of your window.
-
-    ![Add Agent script step to the new agent script](./IMAGES/Lab03/L3P75.png)
-
-1. [] The Quick Create form for the Agent script step appears. Specify the following fields:
-    1. [] **Name**: +++Confirm Phone Number+++
-    1. [] **Unique Name**: +++msdyn_ConfirmPhone+++
-    1. [] **Order**: 1
-    1. [] **Action type**: Text
-    1. [] **Text instructions**: +++Ask patient to confirm phone number.+++
-
-        ![Screenshot of Quick create form for a step to Confirm Phone Number for the patient](./IMAGES/Lab03/L3P76.png)
-
-1. [] Select **Save and Close**. Now let’s add another step.
-
-1. [] In the **Agent script steps** section, select **+New Agent script step** again.
-
-    ![Screenshot of New Agent script step button in agent script steps subgrid ](./IMAGES/Lab03/L3P77.png)
-
-1. [] Another Quick Create form for the Agent script step appears. Specify the following fields:
-    1. [] **Name**: +++Verify Insurance Information+++
-    1. [] **Unique Name**: +++msdyn_VerifyInsuranceInformation+++
-    1. [] **Order**: 2
-    1. [] **Action type**: Text
-    1. [] **Text instructions**: +++Ask Patient for Insurance Provider and ID \#. Verify their response matches insurance information on file.+++
-
-    ![Screenshot of Quick create form for a step to Verify Insurance Information for the patient](./IMAGES/Lab03/L3P78.png)
-
-1. [] Select **Save and Close**. Both steps should now be in the Agent script steps table.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P79.png)
-
-1. [] The agent script is now complete. Select **Save & Close**.
-
-    ![Screenshot of the completed "Validate Patient Information" Agent script](./IMAGES/Lab03/L3P80.png)
-
-**Congratulations!** You have completed creating an agent script with two steps to validate patient information, including phone number and insurance information.
-
-
-### Task 3: Associate the Agent Script with a Session Template
-
-In this task, you will associate the agent script with a session template so it will load for agents based on the type of session they’ve opened. We will be associating the agent script we just created with the Default chat session. This is the default chat session that opens during an escalation to an agent in Patient Service Center.
-
-1. [] Open the **Omnichannel admin center** app in Power Apps if you aren’t already in it.
-
-    ![Screenshot of Omnichannel Administrator App in Power Apps](./IMAGES/Lab03/L3P81.png)
-
-1. [] In the left navigation bar, select **Agent Experience**. On the **Agent experience** page, select **Manage** to the right of **Session templates**.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P82.png)
-
-1. [] Select the **Chat session – default** session template. We will associate this session with the agent script.
-
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab03/L3P83.png)
-
-1. [] Double-click or select **Edit** on the command bar to open the **Chat session – default** record.
-
-    ![Graphical user interface, table Description automatically generated](./IMAGES/Lab03/L3P84.png)
-
-1. [] Select the **Agent scripts** tab. In the **Agent scripts** section, select **Add Existing Agent script**.
-
-    ![Screenshot of Add existing agent script button in the agent scripts subgrid of the "Chat session - Default" template](./IMAGES/Lab03/L3P85.png)
-
-    The Lookup Records pane should appear on the right.
-
-    ![Screenshot of Searching for Validate Patient Information record in Lookup field](./IMAGES/Lab03/L3P86.png)
-
-1. [] In the **Look for Records** box, select the **search** icon (magnifying glass).
-
-1. [] Select the **Validate Patient Information** agent script from the list and select **Add.**
-
-    ![Screenshot of Add button on bottom of Lookup Records pane](./IMAGES/Lab03/L3P88.png)
-
-1. [] Chat session – default Session Template should have the Validate Patient Information Agent script.
-
-    ![chat session - default agent script tab](./IMAGES/Lab03/L3P89.png)
-
-**Congratulations!** You have successfully created an agent script with two steps and associated the agent script with the default chat session. Now your agents can use this script during a default chat session with a patient.
-
-===
-
-## Exercise 3: Configure Knowledge Articles
-
-In this exercise, you will learn how to create and manage Knowledge Articles that can address any number of issues your customers would like to discuss during the patient service center conversation. These knowledge articles will appear in the productivity pane in Patient Service Center through AI-enabled suggestions.
-
-![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P90.jpg)
-
-### Task 1: Assign Knowledge Manager User Role
-
-In this task, we will assign the necessary user role to create and view knowledge articles.
-
-1. [] If you kept the **User Settings** page up from the previous exercise, navigate to that page. If you didn’t keep it open, follow all the steps in Exercise 2, Task 1 and then return here to assign the proper role.
-
-1. [] Select your user and select **Manage Roles**. You will now assign the necessary role(s).
-
-    ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab03/L3P91.png)
-
-    There are three roles you can choose with [create/read permissions for Knowledge Articles](https://docs.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article#create-a-knowledge-article).
-    1.  Knowledge Manager
-    1.  Customer Service Manager
-    1.  Customer Service Representative
-
-1. [] For this lab, select the **Knowledge Manager** role.
-
-    ![Screenshot of Manage User Roles dialog with Knowledge Manager role selected](./IMAGES/Lab03/L3P92.png)
-
-1. [] Also ensure you have the **System Administrator** role. Official training users have it assigned.
-
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab03/L3P93.png)
-
-1. [] Select **OK** to close the **Manage User Roles** window and accept changes.
-
-**Congratulations!** You have assigned the proper roles to create and read knowledge articles.
-
-
-### Task 2: Set up Knowledge Management Settings
-
-1. [] In [Power Apps](http://make.powerapps.com), open the **Customer Service Hub** app.
-
-    ![Screenshot of Customer Service Hub application in Power Apps list](./IMAGES/Lab03/L3P94.png)
-
-1. [] In **Customer Service Hub**, on the left navigation bar, go to the bottom left corner where there’s a dropdown that says **Service**. Select it and change the area to **Service Management**. 
-
-    ![Screenshot of bottom left drop down selection changing from Service to Service Management](./IMAGES/Lab03/L3P95.png)
-
-1. [] If presented with **Customer Service admin center is released** dialog, select **Open Customer Service Admin Center**. Once in the **Customer Service Admin Center** area, select **Knowledge** under **Agent experience** in the left navigation. There are several options to manage your Knowledge Center. Let's explore them.
-
-    ![Screenshot of Settings option in the site map in Knowledge Base Management section](./IMAGES/Lab03/L3P96.png)
-
-1. [] **Record Types** allows you to configure the record types you want to turn on for knowledge management. Select **Manage** to open the list. The list will include all entities that are available for an N:N relationship. Because our scenario will also use the Case table, we don’t need to add any additional tables at this time. You may remove the other types.
-
-    ![Screenshot of Record Types for knowledge management, with all available on the left and selected on the right.  Currently selected are Case and Contact.](./IMAGES/Lab03/L3P97.png)
-
-1. [] **Portal** allows you to to set up an external portal. **Support portal connection** integrates an external portal for publishing knowledge articles.
-    1.  Selecting Yes would share the knowledge article as a link in the email sent to the customer.
-    1.  Selecting No would share the article content inserted in the email body.
-    1.  [] Keep as **No** as we will not be integrating an external portal connection
-
-        ![Text Description automatically generated](./IMAGES/Lab03/L3P98.png)
-
-1. [] Select **Manage** next to **General settings**. In the **Feedback** section, toggle **Enable feedback** to to **Yes** to enable users to provide feedback on knowledge articles from search control. This will allow users to provide feedback on knowledge articles opened from knowledge search control.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P99.png)
-    
-1. [] Select **Save**.
-
-### Task 3: Create Knowledge Article
-
-In this task, you will create a new knowledge article about Asthma for agents to access during patient conversations.
-
-1. [] In **Customer Service Hub,** on the left navigation bar, go to the bottom left corner where you previously modified the dropdown. Change it back from **Service Management** to **Service**.
-
-    ![Screenshot of bottom left drop down selection changing back from Service Management to Service ](./IMAGES/Lab03/L3P100.png)
-
-1. [] In the sitemap, navigate to **Knowledge > Knowledge Articles**.
-
-    ![Screenshot of Knowledge Article option in site map](./IMAGES/Lab03/L3P101.png)
-
-1. [] Select **New** on the command bar.
-
-    ![Screenshot of New button on command bar in Knowledge Article section](./IMAGES/Lab03/L3P102.png)
-
-1. [] You should be on the **Content** tab of a **New Knowledge Article**.
-
-    ![Screenshot of content tab of a new knowledge article](./IMAGES/Lab03/L3P103.png)
-
-1. [] On the **Article Content** section tab of the new knowledge article, specify the following details:
-    1. [] **Title**: +++Shortness of Breath+++
-    1. [] **Keywords**: +++Asthma, shortness of breath, trouble breathing, inhaler, albuterol+++
-    1. [] **Description**: +++Uncomfortable sensation or awareness of breathing or needing to breathe.+++
-
-        ![Screenshot of the new knowledge article with title, keyword, and description completed](./IMAGES/Lab03/L3P104.png)
-
-1. [] In the **Content** section, copy and paste the following content for your knowledge article.
+4.	Scroll down to **Content** section under the **Article Content** area, copy and paste the following content for your knowledge article.
 
     **Common causes**
 
-    Shortness of breath is not always related to an underlying condition. It may be caused by:
-    - Aerobic exercise
-    - Intense physical activity
-    - High altitude with lower oxygen levels
-    - Poor cardiovascular fitness
-    - Anxiety
-    - Being obese
-    - General weakness
+        Shortness of breath isn't always related to an underlying condition. It might be caused by:
+
+        o	Aerobic exercise
+
+        o	Intense physical activity
+
+        o	High altitude with lower oxygen levels
+
+        o	Poor cardiovascular fitness
+
+        o	Anxiety
+
+        o	Being obese
+
+        o	General weakness
 
     **Treatment**
 
-    Self-treatment: Self- care steps that may be helpful in some less- serious cases:
-    - Stop smoking
-    - Avoid exposure to pollutants, allergens and environmental toxins
-    - Lose weight if overweight
-    - Avoid exertion at elevations
-    - Take slow even breaths
-    - When you breathe out, put your lips together, like slowly blowing out a candle (Pursed Lip Breathing)
+        Self-treatment: Self-care steps that might be helpful in some less-serious cases:
+
+        o	Stop smoking
+
+        o	Avoid exposure to pollutants, allergens, and environmental toxins
+
+        o	Lose weight if overweight
+
+        o	Avoid exertion at elevations
+
+        o	Take slow, even breaths
+
+        o	When you breathe out, put your lips together, like slowly blowing out a candle (pursed lip breathing)
 
     **See a doctor if you notice:**
-    - Chest pain or pressure
-    - Inability to function
+
+        o	Chest pain or pressure
+
+        o	Inability to function
 
     **See a doctor immediately if you notice:**
-    - Fever or a change in the amount, color, or thickness of sputum
-    - Breathlessness does not go away after resting for 30 minutes
-    - Swelling in the feet and ankles
-    - Trouble breathing when you lie flat
-    - High fever, chills, and cough
-    - Wheezing
-    - Worsening of pre- existing shortness of breath
 
-1. [] Select **Save**.
+        o	Fever or a change in the amount, color, or thickness of sputum
 
-    ![Screenshot of save button on command bar for the new knowledge article](./IMAGES/Lab03/L3P105.png)
+  	    o	Breathlessness doesn't go away after resting for 30 minutes
 
-    The Business Process flow bar at the top of the form helps you to drive the article towards completeness. You have the option to customize the stages in the Business Process flow to suit your requirements. We will now complete the author stage so it can move into review.
+        o	Swelling in the feet and ankles
 
-1. [] On the Business process bar, select **Author**. The business step options should pop out below.
+        o	Trouble breathing when you lie flat
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P106.png)
+        o	High fever, chills, and cough
 
-1. [] From the the **Article Subject:** dropdown select **Default Subject**. This is the subject of the article to help with searches.
+        o	Wheezing
 
-1. [] Check the box for **Mark for Review** as **Mark Complete**.
+        o	Worsening of preexisting shortness of breath
 
-1. [] In the **Assign Primary Author** dropdown list, you may choose a person who is responsible for maintaining the article content. By default, the user who creates the article is the primary author. For this training, we will keep it as our MOD user.
+5.	Select **Save**.
 
-1. [] Select **Next Stage** to mark the article complete and ready for review.
+6.	The business process flow bar at the top of the form will help you to drive the article toward completion. On the business process bar, select **Author**. The business step options should be displayed in a pop-up window.
 
-    ![Screenshot of close up of the author stage with information filled out](./IMAGES/Lab03/L3P107.png)
+    o	Add the **Article Subject** as **Default Subject,** which is the subject of the article to help with searches.
 
-The knowledge article is now in the review stage of the business process flow and is ready for review.
+    o	Under **Mark for Review** Select the checkbox for **Mark Completed** and it will change to **Completed**.
 
-![Screenshot of Review Stage selected in the business process flow](./IMAGES/Lab03/L3P108.png)
+    o	Select **Next Stage** to mark the article as complete and ready for review.
 
-**Congratulations!** You have successfully created a knowledge article for Shortness of Breath and marked it for review.
+7.	The knowledge article is now in the **Review** stage of the business process flow. Select **Save & Close.**
 
+The article is now in draft state and ready for review.
 
-### Task 4: Review and Publish Knowledge Article
+You've now successfully created a knowledge article titled **Shortness of Breath** and have marked it for review.
 
-To ensure accuracy of the knowledge article, typically someone else would review and approve it. For this training exercise, you will mark the article reviewed and approved yourself. Quick note that this task also requires the Knowledge Manager role or another that can approve knowledge articles.
+## Task: Review and publish a knowledge article
 
-1. [] In **Customer Service Hub**, in the left navigation select **Dashboards** and use the dropdown to choose the **My Knowledge Dashboard**.
+Typically, to ensure accuracy of the knowledge article, someone else should review and approve it. However, for this training exercise, you'll mark the article as reviewed and approved instead. This task also requires the Knowledge Manager role or another role that can approve knowledge articles.
 
-    ![Screenshot of Dashboards selected in site map, changing the view from Tier 1 dashboard to My Knowledge Dashboard in Customer Service Hub](./IMAGES/Lab03/L3P109.png)
+1.	 Click on **Dashboards** under **My Work.** Filter with My **Knowledge Dashboards.**
+ 
+2.	Select the **Shortness of Breath** knowledge article in the **My Active Articles** stream.
 
-1. [] Note the **Shortness of Breath** knowledge article in **My Active Articles** stream.
+3.	On the business process bar, Click on **Review** stage and in the **Review** dropdown menu, select **Approved**.
 
-    ![Screenshot of "Shortness of Breath"  article showing in My Active Articles stream in My Knowledge Dashboard](./IMAGES/Lab03/L3P110.png)
+4.	Select **OK** when prompted to **Confirm approval of article(s).**
 
-1. [] Select the **Shortness of Breath** knowledge article.
+5.	Select **Next Stage** to move to the **Publish** stage.
+ 
+6.	You should now be in the **Publish** stage and the **Status Reason** should have changed to **Approved**.
 
-1. [] On the **Business process** bar, in the **Review** stage and in the **Review** dropdown, select **Approved**.
+You’ve now successfully reviewed and approved the knowledge article. Next, you'll learn how to publish the knowledge article to be available during Patient Service Center calls.
 
-    ![Screenshot of the business process flow of a knowledge article which is in review stage and has the Review field drop down selected on the approved option](./IMAGES/Lab03/L3P111.png)
+## Task: Publish your knowledge article
 
-1. [] Select **OK** when prompted to confirm approval of article.
+In this task, you'll learn how to publish the knowledge article so that it's live and ready to be used.
 
-    ![Screenshot of the OK button to confirm approval of article](./IMAGES/Lab03/L3P112.png)
+1.	In your **Shortness of Breath** knowledge article, select the **Publish** stage.
 
-1. [] Select **Next Stage** to move to **Publish** stage.
+    I.	For **Set Product Associated,** select **Mark as completed** checkbox  which will change to **Completed**.
 
-    ![Screenshot of the next stage button below the review field in the business process flow](./IMAGES/Lab03/L3P113.png)
+    II.	In the **Set Expiration Date** field, set the date for one year from now.
 
-1. [] You should now be in the **Publish** stage and **Status Reason** should have changed to **Approved**.
+    III. Select **Finish**.
 
-    ![Screenshot of publish stage currently highlighted and status reason field in upper right changed to approved](./IMAGES/Lab03/L3P114.png)
+After you select **Finish**, a panel will show to **Publish**.
 
-**Congratulations!** You have successfully reviewed and approved the knowledge article. We will show you how to publish the Knowledge Articles to be available during patient service center calls.
+2.	Set **Expiration State** and **Expiration Status** to **Published**. Select **Publish**.
 
+Now, the knowledge article is in a **Published** state.
 
-### Task 5: Publish your Knowledge Article
+You’ve now successfully reviewed and published the knowledge article. You can view this knowledge article in Patient Service Center when you’re testing the final escalation.
 
-In this task, you will learn how to publish the knowledge article so it’s live and ready to be used.
+You can accomplish numerous tasks with knowledge articles, and this module mentions only a small portion of capabilities. For more information about knowledge articles, see the following documentation:
 
-1. [] In your **Shortness of Breath** Knowledge Article, select the **Publish** stage.
-    1. [] For **Set Product Associated**, check **Mark as Completed**.
-    1. [] Add an **Expiration Date** for one year from now.
-    1. [] Select **Finish**
+[Create and manage knowledge articles](https://learn.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article/)
 
-        ![Screenshot of fields filled in for publish stage of knowledge article.  Check Completed textbox for Set Product Associated and Add an expiration date for one year from now](./IMAGES/Lab03/L3P115.png)
+[Search and share knowledge articles](https://learn.microsoft.com/en-us/dynamics365/customer-service/search-knowledge-articles-csh#rue#)
 
-1. [] Once you select **Finish**, the **Publish** popout window will open.
+## Exercise - Experience escalation into Patient Service Center
 
-    ![Screenshot of business process flow showing completed flag after selecting finish](./IMAGES/Lab03/L3P116.png)
+In this exercise, you'll test the end-to-end escalation experience that you set up for the Patient Service Center agent. This process starts from when the patient signs in to the portal website and continues with a Health Bot conversation. Then, it will end with an escalation to a human agent who will provide proper care by using agent scripts and knowledge articles from Dynamics 365.
 
-1. [] Specify the following details and select **Publish** (see screenshot below):
-    1. [] **Publish**: Now
-    1. [] **Published Status**: Published
-    1. [] **Expiration State**: Published
-    1. [] **Expiration Status**: Published
-    1. [] **Publish approved related translations with Article**: Yes
+The following screen shows Patient Service Center after a patient call has been escalated to a call agent. This exercise will show how the call agent can use the agent setup to give personalized experiences with proposed insights directly in the application.
+ 
+## Task: Sign in to Healthcare Patient Portal and Patient Service Center
 
-    ![Screenshot of Publish dialog with details filled out and publish button at bottom](./IMAGES/Lab03/L3P118.png)
+In this task, you'll sign in to Healthcare Patient Portal and Patient Service Center.
 
-**Congratulations!** You have successfully reviewed and published the knowledge article. We will see these knowledge articles highlighted in Patient Service Center when testing the final escalation.
+1.	Go to [Power Apps](http://make.powerapps.com/) and open **Healthcare Patient Portal.**
 
-===
+2.	Sign in to the Lamna Healthcare Patient Portal as **Casey Jensen** by using the credentials that you created.
+ 
+3.	You should be directed to the home page. If you're on the profile page, select the Lamna Healthcare name/logo in the upper-left corner to go to the home page.
+ 
+4.	Your patient is ready in Healthcare Patient Portal. Now, you'll ensure that an agent is available for the patient when the Health Bot needs to escalate.
 
-## Exercise 4: Experience Escalation & Smart Assist Features
+**Note** - Before opening Patient Service Center, make sure that you've already added the Omnichannel agent role to your user, as shown in the Azure Health Bot lab.
 
-In this exercise, you will utilize the Smart Assist features and test the full experience you configured for the patient and patient service center agent. Starting from when the patient logs into the portal website, continuing with a health bot conversation, and ending with an escalation to a human agent who can provide proper care in Dynamics 365 with Agent Scripts and Knowledge Articles.
+5.	If you didn't assign the Omnichannel agent role in the Azure Health Bot lab, go to **Users** in Dynamics 365, select your user, select **Manage Roles,** assign the **Omnichannel agent** role, and then select **OK**. Changes might take 15 minutes to reflect properly.
+ 
+6.	Switch back to Power Apps Portal. Go to the **Apps** list in Power Apps and open the Omnichannel for Customer Service app.
 
-The following screen shows Patient Service Center after a patient has been escalated to a call agent. This lab will conclude by bringing together all the components we’ve set up in previous exercises and show how the call agent can give personalized experiences with proposed insights directly in the application.
+7.	In the **Omnichannel for Customer Service** , a loading screen will display that will go through percentages. This process ensures that the live agent status is captured properly.
 
-![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P119.jpg)
+8.	If the loading screen doesn't appear and/or the presence indicator continuously spins or appears dimmed, then escalation into the Patient Service Center app from the Health Bot won't work properly. If so, refresh again, or close and reopen Patient Service Center until the loading screen appears. You might need to close all other apps or close the InPrivate or Incognito window and then sign in again.
 
-### Task 1: Patient Logs into Access Portal & Agent logs into Patient Service Center
+If you assigned the Omnichannel agent role, it might take up to 15 minutes to apply and for the presence to show for your user.
+When your presence indicator is green, you're ready to accept patient escalations.
 
-1. [] Navigate to Power Apps and open the **Lamna Healthcare Patient Portal** app.
+You've successfully signed in as the patient and the live agent. Now, you can start the Health Bot conversation.
 
-1. [] Sign into the **Patient Portal** as **Casey Jensen**, using the credentials you created in Exercise 1, Task 4 when you registered Casey for the patient portal (username = CaseyJensen and the password is the one you created).
+## Task: Patient escalates through Azure Health Bot to live agent
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P120.png)
+In this task, you'll experience the patient call escalation through the Azure Health Bot to a live agent.
 
-1. [] You may be directed to the profile if your email requires confirmation. In which case, select **Lamna Healthcare** in the upper left to go to the portal Homepage, if necessary.
+1.	Switch back to your Patient Portal. Select the Azure Health Bot **Let's Chat widget** in the lower-right corner of the portal.
+ 
+2.	The Health Bot should go through the same conversation that you created in the Azure Health Bot lab. If the conversation doesn't start, check the following factors:
 
-1. [] Your patient is all set in the Patient Portal. Now we need to make sure an agent is available for them when the Health Bot needs to escalate.
+    a. Make sure that you've set the automatic welcome message in the Health Bot portal.
 
-    ![A screenshot of a computer Description automatically generated with low confidence](./IMAGES/Lab03/L3P122.png)
+    b. Verify the settings that you made in the Azure Health Bot lab (Microsoft Teams and human handoff enabled). Also, make sure that you added the widget snippet to the Patient Healthcare chat widget code in Portal Management.
 
-    > [!NOTE] Note: Before opening Patient Service Center, make sure you have completed adding the Omnichannel agent role to your user in Lab 02.
+3.	Select the **Lamna Healthcare Support** button to start a support conversation.
+ 
+4.	The Health Bot responds with options to refill a medication or escalate to a live agent. Select **Medication Refill** because Casey wants to refill the inhaler medication.
+ 
+5.	Fill in Casey Jensen's **name** and **email** information and then enter **Albuterol inhaler** in the **Medication Requested** field.
+ 
+6.	Select **Submit**, and you'll receive a response that confirms your request.
+ 
+7.	In the next steps, assume that Casey is out of medication refills. Therefore, you'll test the process of escalating to a live agent to refill Casey's medication another way.
 
-1. [] If you didn’t assign the Omnichannel agent role in Lab 02, assign the proper role by following the steps in Exercise 2, Task 1 – Assign Productivity User Roles. Once you’ve selected your user and selected **Manage Roles**, assign the **Omnichannel agent** role and select **OK**.
+8.	**Close** the Azure Health Bot chat.
+ 
+9.	Select **Let's Chat** to open a new Health Bot conversation.
+ 
+10.	Select **Lamna Healthcare Support.**
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P123.png)
+11.	Select **Live Agent** in the next prompt to escalate to an agent.
+ 
+The chat will soon notify you that **An agent will be with you in a moment.**
+ 
+12.	Switch to the **Omnichannel for Customer Service** app so that you can accept the escalation as an agent. The upper-right corner will show a notification indicating that you have a **Chat request** from your user. Select **Accept** to start a conversation with the patient.
 
-1. [] Navigate to **Apps** and open the **Patient Service Center** app.
+13.	The page should reload and show the patient record, active chat, and **Productivity** pane, as shown in the following screenshot. Your status should now show as red (busy).
 
-    ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab03/L3P124.png)
+14.	The chat will be directly embedded in the window. Explore the command bar in the chat to try various options, such as adding a note that's associated with the patient.
 
-1. [] In the Patient Service Center, you should see a “Loading…” splash screen that goes through percentages. This ensures the live agent status is captured properly.
+ 
+15.	Notice that the **patient sentiment analysis** in the chat indicates **Neutral**.
+ 
+16.	Go to the **Lamna Healthcare Patient Portal**. Acting as Casey, type **Thank you very much!** in the chat.
 
-    ![Screenshot of splash screen which is faded white background and shows loading percentages for page load.  This will allow omnichannel to work properly.](./IMAGES/Lab03/L3P125.png)
+ 
+17.	Return to **Patient Service Center** and notice that the **patient sentiment** **analysis** has changed from **Neutral** to **Slightly positive** from the patient feedback in the chat.
+ 
+ 
+18.	Go to the **Productivity** pane on the right side of the screen, which includes **Smart assist**, agent scripts, and knowledge articles. You can expand and collapse this panel as needed.
 
-    1. If you don’t see the splash screen and the presence indicator is grayed out, escalation into the app from the health bot won’t work properly.
-    1. Refresh again or close and reopen Patient Service Center until the splash screen appears. You may need to close all other apps or close incognito altogether and sign back in.
-    1. If the presence indicator is red (busy), sign out and sign back into the Patient Service Center.
-    1. If you just assigned the Omnichannel agent role, it may take up to 15 minutes to apply and for the presence to show for your user.
+ 
+19.	The **Smart assist** tab will show suggested articles and cases based off the chat discussion. Because you haven't set up the Smart assist option, these articles won't show at this time. When this training is expanded, steps for this functionality will be added.
+ 
+20.	Select the **Agent script** tab and complete the steps by selecting the button to the right of the step name. The text will turn green, and a check mark will appear to the left of the step name.
+ 
+21.	Go to the **Knowledge Article** tab and search for **breath** or **inhaler**. Notice that your article appears.
 
-1. [] Once your presence indicator is green, you are ready to accept patient escalations.
+ 
+22.	Select the knowledge article in the list to open in the larger tab.
 
-**Congratulations!** You have successfully logged in as both the patient and the live agent. Now it’s time to start the Health Bot conversation.
+ 
+23.	When completed with the conversation, the agent can select **End** to stop the conversation.
+ 
+ 
+24.	**Close** the session.
 
+25.	After closing the session, you'll be directed to the Omnichannel Agent Dashboard and your status will turn green (available).
 
-### Task 2: Patient Escalates through Healthcare Bot
+ 
+You've completed the full experience from signing in as a patient to the portal, conversing with the Health Bot, and escalating into Patient Service Center to navigate the features as a live agent.
 
-1. [] Switch back to the portal and select the **Let’s Chat** Health Bot chat widget in the bottom right corner of the portal.
-
-1. [] The Health Bot should go through the same conversation you created in Lab 02.
-    1. [] Make sure you set the Welcome message in the Health Bot lab
-    1. [] If the welcome message doesn’t show, check the settings you did in Lab 02 (Teams and Human handoff enabled). Also make sure you added the widget snippet to the Patient Healthcare chat widget.
-
-1. [] Select **Lamna Healthcare Support** to start a support conversation.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P126.png)
-
-1. [] The Health Bot responds with options to refill a medication or escalate to a live agent. Select **Medication Refill** because Casey wants to refill the inhaler medication.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S4.png)
-
-1. [] Fill in Casey Jensen's **name** and **email** information and enter +++Albuterol inhaler+++ in the **Medication Requested** field.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S5.png)
-
-1. [] Select **Submit**, and you will receive a response that confirms your request.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S6.png)
-
-    In the next steps, assume that Casey was out of refills for her medication. For this case, you will test the process of escalating to a live agent to refill Casey's medication another way.
-
-1. [] Close the Azure Health Bot chat.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S7.png)
-
-1. [] Select **Let's Chat** to open a new Health Bot conversation.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S8.png)
-
-1. [] Select **Lamna Healthcare Support**.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T2S9.png)
-
-1. [] Select **Live Agent** in the next prompt to escalate to an agent.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3P127.png)
-
-1. [] You will see the chat notifies you -- **Please wait, I am transferring your request to a live agent... .**
-
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab03/L3P128.png)
-
-Now let’s switch over to the Patient Service Center app so you can accept the escalation as an agent.
-
-**Congratulations!** You have successfully configured and started a conversation with the Health Bot in the Healthcare Patient Portal and asked to escalate to an agent in Patient Service Center.
-
-
-### Task 3: Agent Provides Personalized Care in Patient Service Center with the Productivity Pane
-
-In this task, you will act as the Patient Service Center Agent, accept the escalation from the healthbot and assist the patient with their issue by using the productivity pane.
-
-1. [] Navigate back to the **Patient Service Center** app. You should be signed in as your Mod Administrator user.
-
-1. [] Notice in the upper right corner there is a **Chat request** from your user.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P129.png)
-
-1. [] Select **Accept** to start a conversation with the patient.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab03/L3P130.png)
-
-    The page should reload and show the patient record, active chat, and productivity pane as seen below. Your status should now show as red (busy).
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P131.png)
-
-1. [] See the chat directly embedded on the left-hand side. Explore the command bar under the chat to try various options such as auto replies, adding/transferring agents, and so on.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab03/L3E4T3S4.png)
-
-1. [] Navigate the **Smart assist** pane. Review the **Agent scripts** (button on right side of pane).
-  
-1. [] Select **Knowledge Search** button (right side of **Smart assist** pane and search for **Breath** or **Inhaler**. Notice your Knowledge Article appear.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab03/L3P132.png)
-
-**Congratulations!** You completed the full experience from logging in as a patient to the portal, conversing with the health bot, and escalating into Patient Service Center to navigate the features for the agent.
