@@ -2,178 +2,206 @@
 
 ## Overview
 
-Microsoft Cloud for Healthcare’s Virtual Clinic application allows clinicians to use video conferencing to provide high-quality, personalized, and affordable consultations. Using the entire meetings platform in Microsoft Teams, providers will be able to schedule, manage, and conduct virtual visits with patients. The Virtual Clinic application can then be embedded inside of Microsoft Teams to provide a practitioner with a full view of their patient’s information and history all in one unique experience.
+Microsoft Cloud for Healthcare's virtual health allows clinicians to use video conferencing to provide high-quality, personalized, and affordable consultations. Using the entire meetings platform in Microsoft Teams, providers can schedule, manage, and conduct virtual consultation with patients. With the Microsoft Teams integration, practitioners get a full view of their patient's information and history.
 
-Virtual Care focuses on the **Enhance patient engagement** priority scenario by providing a virtual health solution for scheduling and following up on virtual visits between patients, providers, and care managers.
+Virtual Care focuses on the **Deliver Exceptional Patient experiences** and **Foster health team collaboration** priority scenario by providing a virtual health solution for scheduling and following up on virtual visits between patients, providers, and care managers.
 
-![Graphical user interface Description automatically generated with low confidence](./IMAGES/Lab06/L6P1.png)
 
 This lab will focus on the healthcare story of Reed Flores.
 
-![Timeline Description automatically generated](./IMAGES/Lab06/L6P2.png)
+
 
 After coming home from hiking, Reed noticed he had a new rash on his right leg. He decides to schedule a virtual appointment to get a diagnosis.
 
 In this lab, you will first play the role of a Lamna Healthcare system administrator by configuring the Microsoft Cloud for Healthcare Virtual Clinic application to be used for virtual appointments. Then, you will play the role of Reed Flores by scheduling a virtual appointment with his practitioner, Alex Johnson. Finally, you will join the virtual appointment from the view of a practitioner to observe the complete end-to-end experience.
 
-## Learning objectives
-
-In this lab, you will:
-
--   Configure the Virtual Clinic app
--   Configure Microsoft Teams for virtual visits
--   Schedule a virtual visit in the Patient Portal
-
-## Exercise 1: Configure Virtual Clinic Application
+## Exercise 1: Configure Microsoft Cloud for Healthcare for virtual visits
 
 In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual Clinic application. The Virtual Clinic application allows practitioners to use video conferencing in Microsoft Teams to provide high-quality, personalized, and affordable consultations for their patients.
 
-### Task 1: Create a new Practitioner Specialty for the Patient Portal
+## Task: Create a new Codeable Concept for practitioner specialty type
 
-In this task, we are going to create a new Practitioner Specialty for the Patient Portal. Practitioner Specialties are used to define the reason why a patient is booking the virtual appointment. They are defined as Codeable Concepts records, with the type of Practitioner Specialty.
+In this task, you’ll create a new Codeable Concept of type **practitioner specialty** to use on the **Patient Portal**. Practitioner specialty is used to define a reason why a patient is booking the virtual appointment.
 
-Below is an example of the appointment booking screen in the Patient Portal. As the first step in the process, the user must select a reason for their appointment.
+As the first step in the booking process, the user must select a reason, which includes the practitioners' specialties.
 
-![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P3.png)
+**Note** - The Codeable Concept is one of the most important data items in HL7’s Fast Healthcare Interoperability Resources (FHIR) and is defined in the FHIR specification as a value that is usually supplied by providing a reference to one or more terminologies or ontologies, but may also be defined by the provision of text. Practitioner covers all individuals who are engaged in the healthcare process and healthcare-related services as part of their formal responsibilities and this resource is used for attribution of activities and responsibilities to these individuals.Practitioners include (but are not limited to):
 
-For an entity that isn't shown directly in an application's sitemap, we can add a new record through Power Apps or Dynamics 365. To create a new practitioner specialty, we'll show you how to create a new Codeable Concepts record in both ways, starting with Power Apps.
+    •	physicians, dentists, pharmacists
 
-1. [] Go to +++https://make.powerapps.com+++.
+    •	physician assistants, nurses, scribes
 
-1. [] Expand **Dataverse** on the left sitemap and select **Tables**.
+    •	midwives, dietitians, therapists, optometrists, paramedics
 
-    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S2.png)
-    
-1. [] Select the **All** tab and search for **Codeable Concept**.
+    •	medical technicians, laboratory scientists, prosthetic technicians, radiographers
 
-    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S3.png)
+    •	social workers, professional homecare providers, official volunteers
 
-1. [] Select the **Codeable Concept** table and view the **Codeable Concept columns and data** tile. You'll likely see no data.
+    •	receptionists handling patient registration
 
-    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S4.png)
+    •	IT personnel merging or unmerging patient records
 
-1. [] Select the Show existing column dropdown, select **(Select All)** and select **Save**. Then you should see data in the system.
+    •	Service animal (for example, ward assigned dog capable of detecting cancer in patients)
 
-    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S5.png)
-    
-1. [] At the bottom of the pane, select **Add more rows**.
+Following is an example of the appointment booking screen in the Patient Portal, which displays the practitioner’s specialties defined as Codeable Concepts.
+ 
+For an entity that isn’t shown directly on an application’s navigation, you can add a new record for those entities through Power Apps. To create a new practitioner specialty, you’ll create a new Codeable Concept record through Power Apps.
 
-1. [] On the toolbar, select **+New row** dropdown > **New row using form**.
+1.	While signed into your Microsoft 365 tenant, open a new tab, and go to Microsoft Power Apps. Select your environment.
 
-    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S6.png)
+2.	On the left navigation pane, select **Tables**.
 
-1. [] In the **New Codeable Concept** form, fill in the following details and select **Save & Close**.
-    1. [] **Name**: +++General Medicine+++
-    1. [] **Text**: +++General Medicine+++
-    1. [] **Type**: Practitioner Specialty (you may have to scroll down several times to see it)
-    1. [] **Code**: +++general+++
-    
-    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S7.png)
-    
-1. [] Select **Done** in the popup to refresh the table.
+3.	In the right pane, select **All** tables.
 
-1. [] In the **Type** column, select the dropdown, select **Filter by**, and the the dropdown list, scroll and select **Practitioner Specialty**. Then select **Apply**.
+4.	Use the search box in the upper right corner to search for the string **codeable**.
 
-    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S8.png)
-    
-    You'll see your new record in the list.
-    
-    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6E1T1S8b.png)
+5.	Select the **Codeable Concept** table from the search results and then select Edit.
+ 
+6.	Select **+New** **row** dropdown and then select **New row using form.**
 
-    You can also add records through the Dynamics 365 classic UI. We'll show how to do that now. You may skip to the next task if you already have this knowledge.
+7.	In the **New Codable Concept** form, fill in the following details.
 
-1. [] In +++https://make.powerapps.com+++ and open **Virtual Clinic** on the **Apps** page.
+    o	**Name** - General Medicine
 
-1. [] In the upper right-hand corner, select the **funnel** icon which will open **Advanced Find**.
+    o	**Text** - General Medicine
 
-    ![Icon Description automatically generated with low confidence](./IMAGES/Lab06/L6P4.png)
+    o	**Type** - Practitioner Specialty
 
-1. [] In the **Search** box, scroll to and select **Codeable Concepts** and select **Continue**.
+    o	**Code** – general
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P5.png)
+    o	Select **Save & Close**
 
-1. [] Select **Cancel** in the **Edit filters: Codeable Concepts** pane if it opens. Select **New**.
+8.	After saving and closing the new **Codeable Concepts** form, select **Done** on the **Currently adding a new row** pop-up to refresh the **Codeable Concepts** table.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P6.png)
+ 
+9.	Once the **Codeable Concepts** table is refreshed, select the **Name** column, and then select **Filter by.**
 
-1. [] In the **New Codable Concept** record, fill in the following details and select **Save**.
-    1. [] **Name**: +++General Medicine+++
-    1. [] **Text**: +++General Medicine+++
-    1. [] **Type**: Practitioner Specialty (you may have to scroll down pretty far)
-    1. [] **Code**: +++general+++
+ 
+10.	In the **Filter by** pane, use the below expression and select **Apply**.
 
-        ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P7.png)
-        
-    > [!NOTE] If you receive a duplicate record error, clear the error and make a small change to the Name. Then resave.
+    o	**Operator**: Contains
 
-**Congratulations!** You have created a new Practitioner Specialty that will now be available for selection as an appointment visit in the Patient Portal.
+    o	**Value**: General
 
-### Task 2: Configure Mapped System User on Practitioner Record
+ 
+11.	You can now verify that a new codeable concept of type **Practitioner** **Specialty** is successfully created.
 
-In this task, you will configure the Mapped System User field on the Practitioner record. This field should be set to the system user that maps to the contact record. In our case here, we will set it to the record associated with our logged in user. This will allow our user to act as the practitioner in the virtual visit.
+ 
+You've created a new practitioner specialty that will now be available for selection as an appointment visit reason in the Patient Portal.
 
-There are two different places the Teams meeting may be created:
+### Task : Create a new Practitioner's schedule
+
+In this task, you'll configure the practitioner's schedule to allow patients to book appointments with them in the Patient Portal.
+
+1.	While on [Power Apps](https://make.powerapps.com/), on the left navigation pane, select **Tables**.
+
+2.	In the right pane, select **All** tables.
+
+3.	Use the search box in the upper right corner to search for the string **schedule**.
+
+4.	Select the **Schedule** table. and click on **Edit**.
+
+**Note**: Select the Schedule table with the Name - **msemr_schedule** 
+
+5.	In the **Schedule columns and data** section, select the dropdown to add an existing column to the editable view. Search for **Active** and then select Active to add the column. You may also remove the columns that have no data. Select **Save**.
+ 
+6.	Select **Alex Johnson schedule** under the **Name** column and then change the value of **Active** column from **No** to **Yes**. You may need to scroll right in the grid.
+ 
+You've enabled a practitioner's schedule to be used for booking virtual appointments.
+
+## Task: Configure slots for appointments
+
+In this task, you'll configure a new appointment slot to show practitioner's availability. This configuration will allow patients to select an available appointment time slot when booking with a practitioner. Enable Reed's practitioner, Alex Johnson, to be available today at a set time for virtual appointments.
+
+1.	Go to [Power Apps.](https://make.powerapps.com/)
+
+2.	Select **Apps** on the left navigation.
+
+3.	Select **Virtual Clinic** app in the right pane. Click on **Play** button to launch the app.
+
+4.	select **Schedule** on the left navigation pane under administration
+
+5.	Select the Alex Johnson schedule from the **Active Schedules** list.
+ 
+6.	Scroll down to the bottom of the page. Select **+ New Slot** under **Associated slots**
+
+7.	Fill in the following details in the **New Slot** form and select **Save & Close**.
+
+    1.	**Name** - Alex Johnson Slot
+
+    2.	**Start** - Today, at a later time
+
+    3.	**End** - Today, an hour after the Start
+
+    4.	**Schedule** - Alex Johnson schedule
+
+    5.	**Status** - Free
+
+    6.	**isVirtual** - Yes
+
+    7.	**Specialty** - General Medicine (the practitioner specialty record you created)
+
+    8.	**Service** **Category** - General Medicine (same as specialty)
+
+    9.	Select **Save and Close**
+
+You've created a new virtual slot for Reed to book with the practitioner, Alex Johnson.
+
+### Task : Configure Mapped System User on Practitioner Record
+
+In this task, you'll configure the Mapped System User field on the Practitioner record. This field should be set to the system user that maps to the contact record. Set this field to our logged-in user record.
 
 -   In the case of virtual appointments, the Teams meeting is created on the mapped user’s calendar.
 -   In the case of instant virtual appointments, the Teams meeting is created on the Organizer (organizer email for virtual appointments) specified in the Admin settings.
 
-1. [] In Power Apps, select **Apps** and then open the **Virtual Clinic** application (you may have it open in another tab already).
+1.  Launch the Healthcare Administration app from power apps. Select **Practitioners** on the left navigation pane.
 
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P8.png)
+2.	Select the **Alex Johnson** record and select **Edit**.
+  
+3.	In the **Summary** tab, select your logged-in user as the **Mapped System User.** Select **Save & Close.**
 
-1. [] Select **People**, change the view to **Active Practitioners**, and open the **Alex Johnson** record.
+**Note** – If you get any window for duplicates. Please ignore and save.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P9.png)
+You've mapped the practitioner record to your logged in user so that you can accept the video call when the patient has a virtual visit.
 
-1. [] Select your logged in user as the **Mapped System User**.
+## Task: Enable cloud flow
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P10.png)
+In this task, you’ll create connection references and enable the cloud flow for virtual care.
 
-1. [] Select **Save & Close**. If you receive a **Duplicate records found** message, select **Ignore and Save**.
+1.	While signed into your Microsoft 365 tenant, open a new tab, go to [Power Apps.](https://make.powerapps.com/)
 
-**Congratulations!** You have mapped the practitioner record to your logged in user.
+2.	Select **Solutions** and then select **+ New Solution.**
 
-### Task 3: Enable a Practitioner’s Schedule
+3.	Use the below information to create a new solution and select **Create**.
 
-In this task, you will configure the practitioner’s schedule to allow patients to book appointments with them using the Patient Portal. This will allow Reed to schedule an appointment with his practitioner, Alex Johnson.
+    o	**Display name** - Lamna Healthcare
 
-1. [] In the **Virtual Clinic** app, change the sitemap area in the lower left corner from **Operations** to **Schedule Administration**.
+    o	**Name** - LamnaHealthcare
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P11.png)
+    o	**Publisher** - CDS Default Publisher
+ 
+4.	On the Lamna Healthcare solution page, select **+ Add existing** and then select **Cloud flow** under **Automation**.
+ 
+5.	On the **Add existing cloud flows** page, select **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status to booked** and select **Add**.
+ 
+6.	Select the cloud flow. Select **Details** dropdown and then select **Details** in a new tab.
+ 
+7.	Select **Edit** on the cloud flow page.
+ 
+8.	Select **Sign in** for **Microsoft Dataverse** and **Office 365 Users** connectors to sign in with the currently logged-in user and create a connection reference.
+ 
+9.	Select **Continue**.
+ 
+10.	Select **Save** to commit your updates.
+ 
+11.	After the flow is saved successfully, select the **Back arrow** to return to the flow’s main page.
 
-1. [] On the sitemap, select **Schedules** and open the **Alex Johnson schedule** record.
+12.	The status of the flow is **Off**. Select **Turn on** to enable the flow on top-right corner of the page
+ 
+13.	Close the **Power Automate** tab to go back to Lamna Healthcare solution page and select **Publish all customizations.**
 
-    ![Table Description automatically generated](./IMAGES/Lab06/L6P12.png)
+You’ve created connection references to Microsoft Dataverse and Office 365 Users connectors and turned on the cloud flow for creating virtual appointments.
 
-1. [] Verify the toolbar at the top shows **Deactivate** as a choice instead of **Activate**. This means the schedule is active. Select the back arrow.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P13.png)
-
-**Congratulations!** You have verified a practitioner’s schedule is enabled to be used for booking virtual appointments.
-
-### Task 4: Configure Slots
-
-In this task, we will configure a new appointment slot to show practitioner’s availability. This will allow patients to select an available appointment time slot when booking with a practitioner. In this case, we will enable the practitioner, Alex Johnson, to be available today at a set time for virtual appointments.
-
-1. [] In the **Virtual Clinic** app, select **Slots** on the Site Map and select **+ New**.
-
-    ![Graphical user interface, table Description automatically generated](./IMAGES/Lab06/L6P14.png)
-
-1. [] Fill in the following record details and select **Save & Close**.
-    1. [] **Name**: +++Alex Johnson Slot+++
-    1. [] **Start**: Today, at a later time
-    1. [] **End**: Today, an hour after the Start
-    1. [] **Schedule**: Alex Johnson schedule
-    1. [] **Status**: Free
-    1. [] **isVirtual**: Yes
-    1. [] **Specialty**: General Medicine (the practitioner specialty record you created)
-    1. [] **Service Category**: General Medicine (same as specialty)
-
-        ![A screenshot of a computer Description automatically generated](./IMAGES/Lab06/L6P15.png)
-
-**Congratulations!** You have created a new virtual slot for Reed to book with his practitioner, Alex Johnson.
-
-===
 
 ## Exercise 2: Configure Microsoft Teams for Virtual Visits
 
@@ -182,108 +210,34 @@ In this exercise, you will configure integration with Microsoft Teams for Lamna 
 Additionally, your care team can use Microsoft Teams internally to do the following:
 
 -   Chat, call, post messages, and communicate as a team.
+
 -   Store and share files and documents to collaborate.
+
 -   Use Shifts to create, manage, and share schedules among your staff.
 
-### Task 1: Install and Set up Microsoft Teams Integration
+### Task : Enable Microsoft Teams Integration
 
 By default, the Basic and Enhanced Microsoft Teams integration is disabled for customer engagement apps in Dynamics 365. In this Task, we will enable Microsoft Teams in Dynamics 365.
 
-1. [] Go to +++https://admin.powerplatform.microsoft.com+++.
+1.  Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com)
 
-1. [] Select **Environments** and then select your **MC4H Labs** environment from the list
+1.  Select **Environments**. Select your environment. Next, select **Settings**
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P35A.png)
+1.  Select **Integration** and then select **Teams integration settings.**
 
-1. [] You will land on your environments detail page.
+1.  On the **Microsoft Teams collaboration and chat** page, switch **Turn on the linking of Dynamics 365 records to Microsoft Teams channels** to **Yes**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P35.png)
+5.	Switch **Turn on Enhanced Teams Integration** to **Yes**.
 
-1. [] Select the **Settings** button on the top command bar.
+6.	On the pop-up, select the currently signed-in user to grant the necessary permissions.
 
-    ![Text, whiteboard Description automatically generated](./IMAGES/Lab06/L6P36.png)
+7.	Select **Accept**.
 
-1. [] Expand **Integration** and select **Teams integration settings**.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P37.png)
-
-1. [] On the **Microsoft Teams collaboration and chat** page, switch **Turn on the linking of Dynamics 365 records to Microsoft Teams channels** to **Yes**.
-
-1. [] Select the **Save** button at the bottom left.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P39.png)
-
-1. [] After the page finishes saving, switch **Turn on Enhanced Microsoft Teams Integration** to **Yes**.
-
-    ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab06/L6P40.png)
-
-1. [] Another pop-up window will open to grant permissions. Select the user you are signed in as currently.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P41.png)
-
-1. [] Select **Accept** for requested permissions. It may take several minutes to configure. Ensure you do not have pop ups blocked that may interfere with the communication. If so, turn off blockers for this website, cancel and try connecting again.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P42.png)
-
-1. [] Once the dialog disappears, select the **Save** button at the bottom left.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P43.png)
-
-You will now see that both Microsoft Teams Integration settings are set to Yes.
+8.	Switch **Turn on Microsoft Teams chats inside Dynamics 365** to **Yes**, and then select **Save**.
 
 **Congratulations!** You have enabled Microsoft Teams integration for Dynamics 365.
 
-### Task 2: Embed Virtual Clinic App in Microsoft Teams
-
-In this task, you will customize the Microsoft Teams experience for a practitioner by embedding the Virtual Clinic app to the Teams channel in your environment. We will be utilizing the Microsoft Teams web experience for this task.
-
-1. [] While logged in to your Microsoft 365 tenant, open a new tab and go to +++teams.microsoft.com+++.
-
-1. [] Select **Next** through the prompts, and then select **Let’s Go.**
-
-    ![Graphical user interface, application, website Description automatically generated](./IMAGES/Lab06/L6P45.png)
-
-1. [] At the bottom of the left navigation bar, select **Join or create a team** and then **Create a team**.
-
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab06/L6P46.png)
-
-1. [] Select **From scratch**.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P47.png)
-
-1. [] Select **Public**.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P48.png)
-
-1. [] Name the Team +++Lamna Healthcare – Redmond+++ and select **Create**. You may skip the **add members** step.
-
-    ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P49.png)
-
-1. [] Once the Team is created and the **General** channel selected, select the **+** button to add a tab
-
-    ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P50.png)
-
-1. [] Search for **Power Apps** and select **Power Apps**
-
-    ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P51.png)
-
-1. [] Select **Add**
-
-    ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P52.png)
-
-1. [] Select **Model-driven apps** form the dropdown menu, then scroll down and select **Virtual Clinic** and select **Save**. Ensure to select the app that is associated with your environment.
-
-    ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P53.png)
-
-1. [] You will now see the Virtual Clinic app embedded in Microsoft Teams
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P54.png)
-
-**Congratulations!** You have embedded the Virtual Clinic app in Microsoft Teams.
-
-===
-
-## Exercise 3: Schedule a Virtual Visit
+## Exercise : Schedule a Virtual Visit
 
 In this final exercise, you will use the items that you configured in the previous exercises to schedule a virtual visit between Reed Flores and his practitioner, Alex Johnson.
 
@@ -291,110 +245,51 @@ In this final exercise, you will use the items that you configured in the previo
 
 In this task, you will log in to the Patient Portal as Reed Flores and schedule an instant virtual appointment.
 
-1. [] Go to +++https://make.powerapps.com+++ (You may already have it open in another tab.)
+1.  Go to [Power Apps.](https://make.powerapps.com)
 
-1. [] First, we must create an account in the patient portal for Reed Flores like we did for Casey Jensen in Lab 05: Patient Access & Service Center. Go to **Apps** and open **Healthcare Administration**.
+2.  Select **Apps** on the left navigation pane.
 
-    ![Screenshot of Apps screen with Healthcare Administration App](./IMAGES/Lab06/L6P55.png)
+3.	Select and open **Healthcare Administration** app by selecting play button.
 
-1. [] Open **Reed Flores**’ record and select **Create Invitation** on the command bar.
+4.	Select **Patients** app in the left navigation pane.
+ 
+5.	In the right pane, on the **Active Patients** view, select the record **Reed Flores** and then select **Edit**.
+ 
+6.	Select ellipsis (⋮), and then select **Create Invitation** from the pop-up.
 
-    ![](./IMAGES/Lab06/L6P56.png)
+7.	Select **Save** on the **New Invitation** form.
 
-1. [] Select **Save** and navigate to the **Advanced** tab for the invitation code. Store the invitation code.
+8.	Go to the **Advanced** tab and copy the Invitation Code to use on the patient portal.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P57.png)
+9.	Go to Power Pages,  Launch your **Lamna healthcare Patient Portal** in Desktop view
 
-1. [] Navigate back to **Power Apps** and open the **Lamna Healthcare Patient Portal.**
+10.	Select **Sign in** on the landing page.
+ 
+11.	Go to the **Redeem invitation** tab. Paste the **Invitation Code** you retrieved in the previous task. Leave the box unchecked for returning customer. Select **Register**.
+ 
+12.	Enter a username and password for **Reed Flores**. Something you'll remember. Select **Register**.
+ 
+13.	You may land on the profile page. Select the logo in the upper right to go to the **homepage**.
+ 
+14.	Go to **Appointments** and select **Schedule** **new**.
+ 
+15.	Select **Instant virtual appointment.**
+ 
+16.	Select the **General Medicine** option that you created earlier in the exercise as the reason for the visit.
+ 
+17.	In the **Personal** section, scroll down and select **Next**.
 
-    ![Table Description automatically generated with low confidence](./IMAGES/Lab06/L6P58.png)
+18.	In the **Insurance** section, select **+ Add Insurance.**
 
-1. [] Select **Secure sign in**.
+**Note** - If you encounter an error when adding the insurance, ensure the environment variables and API permissions are set up as mentioned in the [Configure environment.](https://learn.microsoft.com/en-us/training/modules/training-environment-preparation-healthcare/4a-azure-trial) For more information on these settings, see [Set up and configure a Patient access portal.](https://learn.microsoft.com/en-us/dynamics365/industry/healthcare/configure-portals#known-issue)
+ 
+19.	Fill out the required fields with any information and select **Next**.
+ 
+20.	Select **Next**.
+ 
+21.	**Check the box** for Consent Terms and then select **Join queue.**
+ 
+22.	A new internet browser tab opens and may be blank. **Select the link** provided to join the appointment.
+ 
+You've scheduled an instant virtual appointment using the patient portal.
 
-    ![Graphical user interface, text Description automatically generated](./IMAGES/Lab06/L6P59.png)
-
-1. [] Select the **Redeem Invitation** tab, enter the **Invitation code**, and select **Register**.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P60.png)
-
-1. [] Create an account for **Reed Flores**. Select **Register**.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P61.png)
-
-1. [] If you are landed on the profile page, select the **Lamna Healthcare** name or logo in the top left to go to the homepage.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P62.png)
-
-1. [] Expand **Appointments** and select **Schedule new**.
-
-    ![Graphical user interface, website Description automatically generated](./IMAGES/Lab06/L6P63.png)
-
-1. [] Select **Instant virtual appointment**.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P64.png)
-
-1. [] Select the **General Medicine** option that you created earlier in the lab as the reason for the visit.
-
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P65.png)
-
-1. [] On the Personal tab, Reed Flores’ personal information should auto-populate. Scroll down and select **Next** to go to the next section. It may take a moment for the button to enable.
-
-    ![](./IMAGES/Lab06/L6P66.png)
-
-1. [] On the **Insurance** section, select **+ Add Insurance.**
-
-    ![Graphical user interface Description automatically generated with medium confidence](./IMAGES/Lab06/L6P67.png)
-
-1. [] Fill out the required fields with any information and select **Next.**
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P68.png)
-
-1. [] Select **Next.**
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P69.png)
-
-1. [] Check the box for **Consent Terms** and then select **Join queue**.
-
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P70.png)
-
-1. [] A new internet browser tab will open and may be blank. Let’s join as the practitioner first and then rejoin as the patient.
-
-1. [] Open a new tab in your browser and go to [teams.microsoft.com](https://teams.microsoft.com). Select **Use the web app instead**.
-
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab06/L6P71.png)
-
-1. [] Navigate to the **Virtual Clinic** app that you embedded in the **Lamna Healthcare – Redmond** Teams channel.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P72.png)
-
-1. [] On the Instant Virtual Appointment Dashboard, you will see that **Reed Flores** has arrived for a virtual appointment. Double-click to open the record.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab06/L6P73.png)
-
-1. [] When **Reed Flores**’ patient record opens, select **Join Meeting**.
-
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab06/L6P74.png)
-
-1. [] Select **Cancel** as we will not open the Microsoft Teams desktop app in this example.
-
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab06/L6P75.png)
-
-1. [] Select **Continue on this browser** to proceed with opening the virtual meeting.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab06/L6P76.png)
-
-1. [] Select **Join now** to join the virtual meeting.
-
-    ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P77.png)
-
-1. [] Select **Teams** on the right to reduce the size of the meeting and see the full holistic experience for a practitioner.
-
-    ![Graphical user interface, application, Teams Description automatically generated](./IMAGES/Lab06/L6P78.png)
-
-    ![A screenshot of a computer Description automatically generated](./IMAGES/Lab06/L6P79.png)
-
-1. [] Go back to the **Lamna Healthcare Patient Portal** tab and select the link provided to join the appointment as the patient in the portal.
-
-    ![Graphical user interface, website Description automatically generated](./IMAGES/Lab06/L6P80.png)
-
-**Congratulations!** You have scheduled an instant virtual appointment using the patient portal and joined the appointment as a practitioner using the Virtual Clinic app embedded in Microsoft Teams.
