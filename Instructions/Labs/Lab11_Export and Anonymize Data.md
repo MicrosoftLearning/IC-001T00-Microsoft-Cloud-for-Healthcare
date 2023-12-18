@@ -13,22 +13,36 @@ In this lab, you will be using the \$export command in the FHIR service to expor
 1.  Review the sample configuration file, provided by Microsoft, [here](https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/de-identified-export#configuration-file). It demonstrates how de-identification works between the FHIR service and an ADLS Gen2 account. In real-world use, you would need to review the HIPAA guidelines and customize the configuration file with additional anonymization rules (e.g., rules for redacting/transforming patient names).
 
 
+![image](./IMAGES/Lab11/image1.png)
+
 ## Exercise 2: Configure storage account for export
 
 1.	Select **Resource groups.**
  
+![image](./IMAGES/Lab11/image2.png)
+
 2.	Select your **Azure Health Data services** resource group you created.
 
 3.	Select your **FHIR Service.**
  
+![image](./IMAGES/Lab11/image3.png)
+
 4.	Select **Identity** blade on the left navigation pane under **Settings**.
  
+![image](./IMAGES/Lab11/image4.png)
+
 5.	Set the **Status** option to **On**.
  
+![image](./IMAGES/Lab11/image5.png)
+
 6.	Select **Save** and confirm save by selecting **Yes** to enable managed identity for the FHIR Service.
  
+![image](./IMAGES/Lab11/image6.png)
+
 7.	Once the system identity has been enabled, you'll see an **Object (principal) ID** value for your FHIR service.
  
+![image](./IMAGES/Lab11/image7.png)
+
 ## Exercise 3: Give permission in the storage account for FHIR service access 
 
 8.	When you deployed Azure components in Lab 7, a managed identity was automatically enabled for your FHIR service. 
@@ -41,14 +55,24 @@ In this lab, you will be using the \$export command in the FHIR service to expor
 
 12.	Select your Storage account. 
  
+![image](./IMAGES/Lab11/image8.png)
+
 13.	In your Storage Account, select **Access control (IAM)** from the left navigation pane.
  
+![image](./IMAGES/Lab11/image9.png)
+
 14.	Select **Add > Add role assignment.** 
  
+![image](./IMAGES/Lab11/image10.png)
+
 15.	On the **Role** tab, select the **Storage Blob Data Contributor** role.
  
+![image](./IMAGES/Lab11/image11.png)
+
 16.	On the **Members** tab, select **Managed identity**, and then click **+ Select members.**
  
+![image](./IMAGES/Lab11/image12.png)
+
 17.	On the **Select managed identities** pane that appears on the right side, select your **Azure subscription.**
 
 18.	Select **FHIR Service** for the **Managed identity** field.
@@ -57,8 +81,12 @@ In this lab, you will be using the \$export command in the FHIR service to expor
 
 20.	Choose **Select**.
  
+![image](./IMAGES/Lab11/image13.png)
+
 21.	Similarly, select users again and add your admin user. Click **Review + assign** twice to assign the **Storage Blob Data Contributor** role to your FHIR service.
  
+![image](./IMAGES/Lab11/image14.png)
+
 22.	Please perform the same steps for the role - **Storage Queue Data Contributor**
 
 ## Exercise 4: Specify the storage account for FHIR service export
@@ -69,13 +97,21 @@ The final step is to specify the ADLS Gen2 account that the FHIR service will us
 
 1.	Go to your FHIR service. Under overview tab, on the right-side pan, click on **Configure Export.**
  
+![image](./IMAGES/Lab11/image15.png)
+
 2.	Select the storage account and click on **Save**.
  
+![image](./IMAGES/Lab11/image16.png)
+
 After you've completed this final configuration step, you're ready to export data from the FHIR service. See [How to export FHIR data](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/export-data) for details on performing $export operations with the FHIR service.
 
 5.	Follow the instructions in the **Exporting de-identified** **data** article located at (https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/de-identified-export)
 
+![image](./IMAGES/Lab11/image17.png)
+
 6.	Upon scrolling down, copy the sample configuration file and save it as **anonymizationConfig.json** file to the VM. 
+
+![image](./IMAGES/Lab11/image18.png)
 
 7.	Go to your storage account under your **Azure health data service** resource group
 
@@ -83,13 +119,18 @@ After you've completed this final configuration step, you're ready to export dat
 
 9.	Select the container named **anonymization**.
  
+![image](./IMAGES/Lab11/image19.png)
+
 10.	Go to the **container** and select **Upload**.
  
+![image](./IMAGES/Lab11/image20.png)
+
 11.	From the files select **anonymizationConfig.json** file that you saved earlier.
 
 12.	Then select **Upload**.
 
- 
+![image](./IMAGES/Lab11/image21.png) 
+
 ## Exercise 5: Export anonymized data
 
 Now you will go to the FHIR CALLS collection in Postman and prepare a new $export request to de-identify and export FHIR data. This API call will cause the FHIR service to create a new folder inside the anonymization container in the "expsa" storage account and export all Resources to the new folder. The PHI in the Resources will be de-identified following the rules defined in the anonymizationConfig.json file.
@@ -104,10 +145,14 @@ GET {{fhirurl}}/$export?_container={{containerName}}&_anonymizationConfig={{conf
 
 2.	Select your **fhir-service** environment.
  
+![image](./IMAGES/Lab11/image22.png)
+
 3.	Click on **Collections**. Go to your **FHIR CALLS** collection and prepare a new **$export request** to de-identify and export FHIT data.
 
 4.	Select the ellipses (…) next to **FHIR CALLS** and then select **Add request.**
  
+![image](./IMAGES/Lab11/image23.png)
+
 5.	Change the request name to **Export Anonymized FHIR Data**
 
 6.	Copy the following request URL and paste it into **FHIR URL** field. 
@@ -120,8 +165,12 @@ GET {{fhirurl}}/$export?_container={{containerName}}&_anonymizationConfig={{conf
 
     **configFileName** - anonymizationConfig.json
  
+![image](./IMAGES/Lab11/image24.png)
+
 8.	Go to the **Authorization** tab for the **GET Export Anonymized FHIR Data** request and make sure that **Inherit auth from parent** is selected.
  
+![image](./IMAGES/Lab11/image25.png)
+
 9.	Go to the **Headers** tab.
 
 10.	Add the following Keys and Values:
@@ -132,34 +181,52 @@ GET {{fhirurl}}/$export?_container={{containerName}}&_anonymizationConfig={{conf
 
     iii. **Prefer**: respond-async
 
-12.	Select** **Save.
+12.	Select **Save**.
  
+![image](./IMAGES/Lab11/image26.png)
+
 13.	Once everything is set up and ready to go, with the **$export** request selected, press **Send** in Postman to initiate the request.
 
 14.	You should receive a 202 Accepted response.
  
+![image](./IMAGES/Lab11/image27.png)
+
 15.	Now if you go to your storage account in Azure portal, there should be a new folder within the **anonymization** container. 
  
+![image](./IMAGES/Lab11/image28.png)
+
 16.	Go to this folder to access the de-identified FHIR data that you just exported.
  
+![image](./IMAGES/Lab11/image29.png)
+
 17.	Inside the folder, each row will have three dots on the right side. Select these three dots and select **View/Edit.**
  
+![image](./IMAGES/Lab11/image30.png)
+
 18.	You will notice that information has been removed/redacted from the FHIR records per the anonymization rules defined in the anonymizationConfig.json file.
  
+![image](./IMAGES/Lab11/image31.png)
+
 ## Exercise 6: Securely transfer the files to the research team
 
 Researchers from outside organizations cannot have direct access to healthcare or payer organizations' Azure tenants. You will need to find a way to securely transfer the anonymized data to these external groups.
 
 1.	Right-click the container and select **Shared access tokens** from the dropdown menu
  
+![image](./IMAGES/Lab11/image32.png)
+
 2.	Select **Signing method → User delegation key**.
  
+![image](./IMAGES/Lab11/image33.png)
+
 3.	Define **Permissions** by checking and/or clearing the appropriate check box:
 
     o	Your **source** container or file must have designated **read** and **list** access.
 
     o	Your **target** container or file must have designated **write** and **list** access.
  
+![image](./IMAGES/Lab11/image34.png)
+
 4.	Specify the signed key **Start** and **Expiry** times.
 
     o	When you create a shared access signature (SAS), the default duration is 48 hours. After 48 hours, you'll need to create a new token.
@@ -168,14 +235,20 @@ Researchers from outside organizations cannot have direct access to healthcare o
 
     o	The value for the expiry time is a maximum of seven days from the creation of the SAS token.
  
+![image](./IMAGES/Lab11/image35.png)
+
 5.	The **Allowed IP addresses** field is optional and specifies an IP address or a range of IP addresses from which to accept requests. If the request IP address doesn't match the IP address or address range specified on the SAS token, it won't be authorized.
 
 6.	The **Allowed protocols** field is optional and specifies the protocol permitted for a request made with the SAS. The default value is HTTPS.
 
 7.	Review then select Generate SAS token and URL.
  
+![image](./IMAGES/Lab11/image36.png)
+
 8.	The **Blob SAS token** query string and **Blob SAS URL** will be displayed in the lower area of window.
  
+![image](./IMAGES/Lab11/image37.png)
+
 **Note** - Copy and paste the Blob SAS token and URL values in a secure location. They'll only be displayed once and cannot be retrieved once the window is closed. To [construct a SAS URL](https://learn.microsoft.com/en-us/azure/cognitive-services/Translator/document-translation/how-to-guides/create-sas-tokens?tabs=Containers#use-your-sas-url-to-grant-access), append the SAS token (URI) to the URL for a storage service.
 
 **Note** - Pay special attention to the "Permissions" section of the above documentation. Reading files and listing files in a container are two different permissions.
