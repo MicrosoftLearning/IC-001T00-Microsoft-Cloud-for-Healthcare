@@ -15,7 +15,7 @@ Within every Resource, FHIR defines a set of Elements for storing details that u
 
 Along with Elements, each Resource in FHIR is defined with a set of search parameters. When a remote client app makes a FHIR search API call, search parameters are used to focus the data retrieved from the FHIR server. There are standard search parameters that apply to all Resource types (e.g., \_id, \_lastUpdated), and there are search parameters specific to certain Resource types (e.g., gender is a search parameter defined for Patient). Additionally, FHIR provides a framework for creating custom search parameters. See the links below for more information.
 
-      Note: A Resource instance on a FHIR server has a unique, server-wide Resource id. This id is also referred to as the Resource instance's Logical ID (see https://www.hl7.org/fhir/resource.html#id).
+      **Note**: A Resource instance on a FHIR server has a unique, server-wide Resource id. This id is also referred to as the Resource instance's Logical ID (see https://www.hl7.org/fhir/resource.html#id).
 
 - Standard Search Parameters at (https://www.hl7.org/fhir/search.html#all)
 
@@ -136,13 +136,17 @@ Response (excerpt):
 
 To begin, you are going to populate your FHIR service with additional sample Resources.
 
-### Task 1
+1.  Launch the **Postman** application and Sign in-to your **Postman workspace** and select **Collections** from the left navigation.
 
-1.  Launch the **Postman** application and Sign in-to your Postman workspace and select Collections from the left navigation.
+![image](./IMAGES/Lab10/image1.png)
 
-2.  Expand the **FHIR Search** collection provided in Lab 7.
+2.  Expand the **FHIR Search** collection provided in Lab 7. Select **POST AuthorizeGetToken**.
+
+![image](./IMAGES/Lab10/image2.png)
 
 3.  Make sure that the fhir-service is selected on the top-right corner of the Postman application.
+
+![image](./IMAGES/Lab10/image3.png)
 
 4.  Get a new Entra access token using the POST AuthorizeGetToken call. Go to the Authorization tab of the request and make the following updates:
 
@@ -156,10 +160,20 @@ To begin, you are going to populate your FHIR service with additional sample Res
 
    o Select **Send**. You should receive a response in the Body tab like shown below.
  
+![image](./IMAGES/Lab10/image4.png)
+
+![image](./IMAGES/Lab10/image5.png)
+
 6.	In the **FHIR Search** collection, select **POST Step 1 - Save Sample Resource Bundle.** 
  
+![image](./IMAGES/Lab10/image6.png)
+
 7.	Select **Send** to deliver the Bundle to your FHIR service. This will save some Resources for the future requests in this lab.
  
+![image](./IMAGES/Lab10/image7.png)
+
+![image](./IMAGES/Lab10/image8.png)
+
 **Note** - The FHIR Search collection has sample requests to demonstrate many different FHIR searches. They aren't always specified by name in these instructions, but in Postman they will start with "Step #" for reference.
 
 
@@ -173,20 +187,32 @@ On top of the common search parameters, it's possible to add modifiers right aft
 
 2.	Select **Send**.
  
+![image](./IMAGES/Lab10/image9.png)
+
 3.	You should receive a Bundle containing all Patient Resource instances stored in the FHIR server database.
  
+![image](./IMAGES/Lab10/image10.png)
+
 4.	In the **FHIR Search** collection, select **GET Step 2 – List Patient by ID.**
 
 5.	Select **Send**.
  
+![image](./IMAGES/Lab10/image11.png)
+
 6.	You should receive a Bundle containing the Patient Resource instance with the given id.
  
+![image](./IMAGES/Lab10/image12.png)
+
 7.	In the **FHIR Search** collection, select **GET Step 2 – List Patient by Name Contains**.
 
 8.	Select **Send**.
  
+![image](./IMAGES/Lab10/image13.png)
+
 9.	You should receive a Bundle containing the Patient Resource instance with the given name.
  
+![image](./IMAGES/Lab10/image14.png)
+
 **Note** - The FHIR service in Azure Health Data Services supports most Resource-specific search parameters defined in the FHIR specification. The Resource-specific search parameters that are not supported are listed here: [FHIR R4 Unsupported Search Parameters.](https://github.com/microsoft/fhir-server/blob/main/src/Microsoft.Health.Fhir.Core/Data/R4/unsupported-search-parameters.json)
 
 ## Exercise 3: Perform Composite Searches
@@ -222,20 +248,31 @@ For composite searches, FHIR service in Azure Health Data Services supports the 
 
 2.	Select **Send**.
  
+![image](./IMAGES/Lab10/image15.png)
+
 3.	You should receive a Bundle response containing the patient details that matches the date of birth mentioned in the URL section.
  
+![image](./IMAGES/Lab10/image16.png)
+
 4.	In the **FHIR Search** collection, select **GET Step 2 – List Patient by Identifier.**  
 
 5.	Select **Send**.
  
+![image](./IMAGES/Lab10/image17.png)
+
 6.	You should receive a Bundle response containing the patient details that matches the identifier mentioned in the URL section.
  
+![image](./IMAGES/Lab10/image18.png)
+
 7.	In the **FHIR Search** collection, select **Get Step 3 – List Patient Observation by Results Composite.** 
 
 8.	Select **Send**.
  
+![image](./IMAGES/Lab10/image19.png)
+
 9.	You should receive a Bundle response containing the patient observations that matches the parameter combo code value quantity value defined in the URL section.
 
+![image](./IMAGES/Lab10/image20.png)
 
 ## Exercie 4: Add Search Result Parameters
 
@@ -253,13 +290,21 @@ FHIR specifies a set of parameters for organizing and aggregating search results
 
 2.	Select **Send**.
  
+![image](./IMAGES/Lab10/image21.png)
+
 3.	You should receive a Bundle response containing the count of patients based on the search parameter defined in the URL section.
  
+![image](./IMAGES/Lab10/image22.png)
+
 4.	In the **FHIR Search** collection, select **GET Step 4 – Count All Patients and Start Paging Resources**.  
 
 5.	Select **Send**.
  
+![image](./IMAGES/Lab10/image23.png)
+
 6.	You should receive a Bundle response containing the exact number of Resource instances found based on the search parameters defined in the URL section.
+
+![image](./IMAGES/Lab10/image24.png)
 
 ## Exercise 5: Use the Chained & Reverse Chained Search Result Parameters
 
@@ -311,16 +356,24 @@ Despite this, the FHIR specification does make room for reverse-chained searchin
 
 2.	Select **Send**.
  
+![image](./IMAGES/Lab10/image25.png)
+
 3.	You should receive a Bundle response containing the patient details as defined in the URL section.
  
+![image](./IMAGES/Lab10/image26.png)
+
 ## Task 2: Use Reverse Chained search result parameters
 
 1.	In the **FHIR Search** collection, select **GET Step 5 –List Patient with Observations of BP (Reverse Chain).**  
 
 2.	Select **Send**.
  
+![image](./IMAGES/Lab10/image27.png)
+
 3.	You should receive a Bundle response containing the patient details as defined in the URL section.
  
+![image](./IMAGES/Lab10/image28.png)
+
 ## Exercise 6: Use the Include & Reverse Include Search Result Parameters
 
 **Overview**
@@ -345,23 +398,33 @@ Likewise but in the opposite direction, you can use \_revinclude to retrieve Res
 
 2.	Select **Send**.
  
+![image](./IMAGES/Lab10/image29.png)
+
 3.	You should receive a Bundle response containing the practitioner resources as defined in the URL section.
  
+![image](./IMAGES/Lab10/image30.png)
+
 ## Task 2: Use Reverse Include search result parameters
 
 1.	Create a new request by clicking on the + sign beside **GET Step 6 – List Practitioner from PractitionerRole (Include)**
  
+![image](./IMAGES/Lab10/image31.png)
+
 2.	Click on **Save**. Enter **Step 6 – List Practitioner Role Resources for an Organization (Reverse Include)** in the **Request name** field.
  
+![image](./IMAGES/Lab10/image32.png)
+
 3.	Enter **{{fhirurl}}/PractitionerRole?_revinclude=PractitionerRole:organization** in the **URL** field.
 
 4.	Click **Save**.
  
+![image](./IMAGES/Lab10/image33.png)
+
 5.	Select **Send**.
 
 6.	You should receive a Bundle response containing all Practitioner Resources for an Organization as defined in the URL section.
  
-
+![image](./IMAGES/Lab10/image34.png)
 
 ## Exercise 7: Use a Custom Search Parameter
 
@@ -371,27 +434,43 @@ At some point, you will find a use case where you need to retrieve information t
 
 1.	In the **FHIR Search** collection, select **GET Step 7 – Create New Search Parameter.**  
  
+![image](./IMAGES/Lab10/image35.png)
+
 2.	Select **Send** to create a new search parameter.
  
+![image](./IMAGES/Lab10/image36.png)
+
 3.	You should receive a Bundle response containing the response that the new search parameter is added to the service database successfully.
  
+![image](./IMAGES/Lab10/image37.png)
+
 ## Task 2: Reindex the FHIR Service Database
 
 1.	In the **FHIR Search** collection, select **POST Step 7 – Reindex**.  
  
+![image](./IMAGES/Lab10/image38.png)
+
 2.	Select **Send**.
  
+![image](./IMAGES/Lab10/image39.png)
+
 3.	You should receive a response that the FHIR Service Database is reindexed.
  
+![image](./IMAGES/Lab10/image40.png)
+
 ## Task 3: Search by Custom Search Parameter
 
 1.	In the **FHIR Search** collection, select **GET Step 7 – Search by Custom Search Parameter.** 
   
+![image](./IMAGES/Lab10/image41.png)
+
 2.	Select **Send**.
  
+![image](./IMAGES/Lab10/image42.png)
+
 3.	You should receive a Bundle response with results filtered by the Custom Search Parameters.
  
-
+![image](./IMAGES/Lab10/image43.png)
 
 
 
