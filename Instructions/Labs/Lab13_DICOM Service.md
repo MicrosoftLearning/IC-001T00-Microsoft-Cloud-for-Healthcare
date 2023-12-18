@@ -41,27 +41,46 @@ Now you will visit another page and follow the instructions to [Deploy DICOM ser
 
 1.	 Once you are on your Azure Health Data Service workspace, you can see **Deploy DICOM service.**
  
+![image](./IMAGES/Lab13/image1.png)
+
 2.	Select **Add DICOM service.**
  
+![image](./IMAGES/Lab13/image2.png)
+
 3.	Enter a name for the DICOM service, and then select **Review + create.**
  
+![image](./IMAGES/Lab13/image3.png)
+
 4.	Once the Validation is success, click on **Create**.
  
+![image](./IMAGES/Lab13/image4.png)
+
 5.	The deployment takes a couple of minutes to complete. Once it is completed, click on **Go to resource.**
  
- 
+![image](./IMAGES/Lab13/image5.png) 
+
+![image](./IMAGES/Lab13/image6.png)
+
 ## Exercise 3: Configure Azure roles for access to DICOM data
 
 1.	In your DICOM service pane, in the resources menu, select **Access control (IAM).**
 
 2.	 On the menu, select **+Add > Add role assignment.**
  
+![image](./IMAGES/Lab13/image7.png)
+
 3.	 On the **Add role assignment** page, in the **search by role name, description, or ID** box, enter **DICOM**. In the results, select **DICOM Data Owner**. Click on **Next**.
  
+![image](./IMAGES/Lab13/image8.png)
+
 4.	Select the **+Select Members** option.
  
+![image](./IMAGES/Lab13/image9.png)
+
 5.	 In the **Select members** pane in the **Select** box, enter your Administrator account name and Application - **myhealthapiapp**, and click on **Select** to proceed further. Click on **Review + Assign.**
  
+![image](./IMAGES/Lab13/image10.png)
+
 6.	Click on Review + Assign again. The roles are now assigned successfully. 
 
 7.	You can check in Role assignments tab for confirmation.
@@ -74,9 +93,14 @@ Now you will visit another page and follow the instructions to [Deploy DICOM ser
 
 3.	 Launch the Postman application, click on your **Environments**  on the left and select the **Import** button.
  
+![image](./IMAGES/Lab13/image11.png)
+
 4.	Select the file that you just downloaded by navigating to the downloaded location.
   
+![image](./IMAGES/Lab13/image12.png)
+
 5.	Select the **dicom-service.postman_environment.json** file that you just saved.
+
 
 6.	Now, access the **Conformance-as-Postman.postman_collection.json** file available at https://github.com/microsoft/dicom-server/blob/main/docs/resources/Conformance-as-Postman.postman_collection.json and download the file as before.
 
@@ -106,6 +130,8 @@ You will now configure a new Postman environment for DICOM service (dicom-servic
 
 3.	 Populate the above parameter values in your **dicom-service** Postman environment. Input the values in the **CURRENT VALUE** column. Leave **bearerToken** blank.
  
+![image](./IMAGES/Lab13/image13.png)
+
 4.	 Make sure to select **Save** to retain the dicom-service environment values.
 
 ## Exercise 6: Populate DICOM service with single instance images
@@ -114,27 +140,46 @@ From here, you will be using the DICOM service for the features outlined in the 
 
 1.	 In Postman, make sure you have selected your **dicom-service** environment as the active environment.
  
+![image](./IMAGES/Lab13/image14.png)
+
 2.	Select the **FHIR calls** collection. Duplicate the **POST AuthorizeGetToken** request and move the duplicated call to the **Conformance-as-Postman** collection.
  
+![image](./IMAGES/Lab13/image15.png)
+
+![image](./IMAGES/Lab13/image16.png)
+
 3.	 Select the **Conformance-as-Postman** collection, and on the **Authorization** tab, verify that the **Type** field is set to **Bearer Token** and the **Token** field is set to **{{bearerToken}}**. **Save** it.
  
+![image](./IMAGES/Lab13/image17.png)
+
 4.	 Select the **POST AuthorizeGetToken** (Duplicate and copied) request and select **Send**. You should receive a 200 OK message in response. Your access token is now saved to the bearerToken environment variable in your dicom-service Postman environment. Access tokens expire after 60 minutes. A refresh can be obtained by sending the **POST AuthorizeGetToken** request again.
  
+![image](./IMAGES/Lab13/image18.png)
+
 5.	 Once your dicom-service Postman environment is set up and you have obtained an access token, please go to the repo at (https://github.com/microsoft/dicom-server/tree/main/docs/dcms) and download the three DICOM instance files **(.dcm)** to your Postman directory (C:\Users[your username]\Postman\files).
  
+![image](./IMAGES/Lab13/image19.png)
+
 6.	 Then, for each of the three POST Store-single-instance calls in the **Conformance-as-Postman** collection,
 
  i.	 Ensure the URL is **{{baseUrl}}/studies**. Change if needed.
  
+![image](./IMAGES/Lab13/image20.png)
+ 
  ii. Go to **Body**, select the **x** next to the filename.
+ 
+![image](./IMAGES/Lab13/image21.png)
  
  iii. Select **Select File** and choose the appropriate **.dcm** file (downloaded in the previous step) and select **Open**.
  
+![image](./IMAGES/Lab13/image22.png)
+
 7.	 Save each call.
 
 8.	 Press **Send** for each **POST Store-single-instance(red-triange.dcm)** call and you will populate your DICOM service.
  
+![image](./IMAGES/Lab13/image23.png) 
  
- 
+![image](./IMAGES/Lab13/image24.png)
 
-
+![image](./IMAGES/Lab13/image25.png)
