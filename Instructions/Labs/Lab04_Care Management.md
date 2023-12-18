@@ -106,48 +106,74 @@ In this exercise, you'll navigate the patient record and explore information tha
 
 2.	In Power Apps, select **Apps** on the left navigation pane. Select and open **Care Management** by clicking on the **play** button.
  
+![image](./IMAGES/Lab04/image9.png)
+
 3.	You'll be directed to **Health Analytics** under **Care management.** 
  
+![image](./IMAGES/Lab04/image10.png)
+
 The Care Coordinator Dashboard view is as shown in the below image.
 
- 
+![image](./IMAGES/Lab04/image12.svg) 
+
 4.	Select **People** on the left navigation pane. Note that the default view is **Active Patients**. In your own time, you can switch the view to **Active Practitioners** and explore the practitioners form to observe how it differs from the patient form.
  
+![image](./IMAGES/Lab04/image13.png)
+
 5.	Find and select **Amber Rodriguez** from the **Active Patients** view. Open the record by double-clicking or selecting **Edit** in the command bar.
 
- 
+![image](./IMAGES/Lab04/image15.svg) 
+
 6.	In the **Patient-Clinical** form, examine the **Summary** tab on Amber's patient record. The purpose of the patient record is to give a comprehensive view of Amber's latest information.
+
+![image](./IMAGES/Lab04/image17.svg)
  
-    1.	The **Patient snapshot** section displays a customizable view of the patient information. Select an item to display the details of the record on the right panel of the form.
+   1.	The **Patient snapshot** section displays a customizable view of the patient information. Select an item to display the details of the record on the right panel of the form.
 
-    2.	In the **Active conditions** section, review Amber's preexisting conditions. You can drill down for more information or create a new condition for the patient.
+   2.	In the **Active conditions** section, review Amber's preexisting conditions. You can drill down for more information or create a new condition for the patient.
 
-    3.	In the **Clinical details** section, cycle through the various icons to review different medical details, including **Medications and prescriptions, Encounters, Results and diagnostics,** and **Procedures**. This method is simple and efficient for observing patient healthcare details.
+   3.	In the **Clinical details** section, cycle through the various icons to review different medical details, including **Medications and prescriptions, Encounters, Results and diagnostics,** and **Procedures**. This method is simple and efficient for observing patient healthcare details.
 
-    4.	**Assistant** section provides an overview of notifications so that the admin can check back later to stay updated.
+![image](./IMAGES/Lab04/image19.svg)
 
-    5.	Review the **Patient Interactions** section, which shows any activity, note, or post. You can filter and sort this section if necessary.
+   4.	**Assistant** section provides an overview of notifications so that the admin can check back later to stay updated.
+
+   5.	Review the **Patient Interactions** section, which shows any activity, note, or post. You can filter and sort this section if necessary.
 
 7.	Select the **Profile** tab.
+
+![image](./IMAGES/Lab04/image21.svg)
 
 8.	The **Profile** tab includes extra and non-clinical information, including the **Patient information, Patient relationships, Patient contact methods, Insurance coverage, Claims,** and **Medical identifiers** sections.
 
  
+![image](./IMAGES/Lab04/image23.svg)
+
 9.	Select the **Clinical timeline** tab. On this tab, a care team member can view a weekly calendar of the patient's clinical information and a list of upcoming or previous events.
  
+![image](./IMAGES/Lab04/image25.svg)
+
 10.	Select the **Upcoming events** dropdown menu on the right pane to view **Previous events.**
  
+![image](./IMAGES/Lab04/image27.svg)
+
 11.	Review the list of events that Amber had previously, including appointments, care plans, encounters, and medication requests.
 
- 
+![image](./IMAGES/Lab04/image29.svg) 
+
 12.	Select the **Care Plan** tab. On this tab, the care team member has a full view of all care plans that are associated with the patient. This tab also includes a list of the patient's care plan activities and statistics for completed activities and goals. You can create a new care plan or filter by care plan type in this view.
 
  
+![image](./IMAGES/Lab04/image31.svg)
+
 13.	Select the **Care team** tab. On this tab, the care team member can find other members who might be providing care to the patient for current conditions and care plans.
  
+![image](./IMAGES/Lab04/image33.svg)
+
 14.	Select the **Related** tab to view other details that are related to the patient record.
 
- 
+![image](./IMAGES/Lab04/image35.svg) 
+
 You've now explored the starting dashboards and the unified patient view features in the Care Management application.
 
    
@@ -159,6 +185,8 @@ In this exercise, you will be creating a new Location record for the **Lamna Hea
 
 2.	In the **All Locations** view, select **+ New**
  
+![image](./IMAGES/Lab04/image37.svg)
+
 3.	Fill in the following information for the new location:
 
     o	**Name** - Lamna Healthcare - Redmond, WA
@@ -171,19 +199,24 @@ In this exercise, you will be creating a new Location record for the **Lamna Hea
 
 4.	Select **Save & Close.**
 
- 
+![image](./IMAGES/Lab04/image39.svg) 
+
 5.	In the left navigation, select **Organizations** to review the new location in its managing organization record. Change the grid view in the dropdown menu from **My Active Accounts** to **Active Accounts.**
 
- 
+![image](./IMAGES/Lab04/image41.svg) 
+
 6.	While in the **Active Accounts** view, select the **Lamna Healthcare Company** organization.
 
- 
+![image](./IMAGES/Lab04/image43.svg) 
+
 7.	On the Lamna Healthcare Company record, select the **Related** tab and then scroll down to select **Locations**.
 
- 
+![image](./IMAGES/Lab04/image45.svg) 
+
 The newly created **Lamna Healthcare - Redmond, WA** location will show as associated with the record.
 
- 
+![image](./IMAGES/Lab04/image47.svg) 
+
 You've now created a new location in Redmond, WA for Lamna Healthcare Company and have viewed it in the associated organization in the Care Management application.
 
 
@@ -197,6 +230,8 @@ In this task, you continue to walkthrough by creating a new **Patient** and **Pa
 
     b.	Select **Contact** from the list.
  
+![image](./IMAGES/Lab04/image49.svg)
+
 2.	Create a new **patient** record by filling out the following information:
 
     a.	**Contact Type**: Patient
@@ -213,8 +248,12 @@ In this task, you continue to walkthrough by creating a new **Patient** and **Pa
 
     g.	Click on **Save and Close**
  
+![image](./IMAGES/Lab04/image51.svg)
+
 3.	Click on the record you just created.
  
+![image](./IMAGES/Lab04/image53.svg)
+
 4.	Go to **Profile** tab. Enter the below details
 
     a.	Click on Edit icon for Home address and update the below details
@@ -229,12 +268,22 @@ In this task, you continue to walkthrough by creating a new **Patient** and **Pa
 
        v.**Country**: United States of America
  
+![image](./IMAGES/Lab04/image54.png)
+
+![image](./IMAGES/Lab04/image56.svg)
+
+![image](./IMAGES/Lab04/image58.svg)
+
 5.	Click on **Save**.
 
 6.	Click on **Related** drop-down and select **Encounters**.
  
+![image](./IMAGES/Lab04/image60.svg)
+
 7.	Click on **New Encounter.**
  
+![image](./IMAGES/Lab04/image62.svg)
+
 8.	Enter the following details for the new encounter:
 
     a.	**Name**: Regular Test
@@ -253,9 +302,15 @@ In this task, you continue to walkthrough by creating a new **Patient** and **Pa
 
     h.	Click on **Save and Close.**
  
- 
+![image](./IMAGES/Lab04/image64.svg) 
+
+![image](./IMAGES/Lab04/image66.svg)
+
+
 9.	We will proceed with creating a new **Care Plan** and **Care Plan Team** for the Patient that we created in the previous step. In this step, we will create a **Care Plan** with one or more **Care Team member(s)** so that the whole care team can collaborate and provide better healthcare for the patient. Click on **Care Plan** tab. Click on **Blank** from the list.
  
+![image](./IMAGES/Lab04/image68.svg)
+
 10.	Enter the following details for new care plan:
 
     a.	**Plan name** - Emma Williams - Care Plan
@@ -270,9 +325,12 @@ In this task, you continue to walkthrough by creating a new **Patient** and **Pa
 
     f.	Click on **Save and Close**
 
- 
+![image](./IMAGES/Lab04/image70.svg) 
+
 11.	Create a Care team by clicking on **Care team** tab and selecting **Add a new care team.**
  
+![image](./IMAGES/Lab04/image72.svg)
+
 12.	Enter the following details on the create new team wizard.
 
      a. Under **Create care team**
@@ -284,6 +342,8 @@ In this task, you continue to walkthrough by creating a new **Patient** and **Pa
        iii.	**Context type**: Encounter
 
        iv.**Encounter**: Regular Test
+
+![image](./IMAGES/Lab04/image74.svg)
  
     b.	Under **Add members**
 
@@ -291,8 +351,14 @@ In this task, you continue to walkthrough by creating a new **Patient** and **Pa
 
        ii.**Search members** – Adrian King
  
+![image](./IMAGES/Lab04/image76.svg)
+    
     c.	Select member type – **Related persons** and add **Cameron Baker.** Click on **Next**.
  
+![image](./IMAGES/Lab04/image78.svg)
+
 13. Click on **Submit**.
  
+![image](./IMAGES/Lab04/image80.svg)
+
 In this module till now, you explored the Administration section of the Care Management application. In your own time, you can continue through the other sections of the application, including Care Management, Clinical Data, and Templates.
