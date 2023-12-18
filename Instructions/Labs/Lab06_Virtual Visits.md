@@ -6,9 +6,11 @@ Microsoft Cloud for Healthcare's virtual health allows clinicians to use video c
 
 Virtual Care focuses on the **Deliver Exceptional Patient experiences** and **Foster health team collaboration** priority scenario by providing a virtual health solution for scheduling and following up on virtual visits between patients, providers, and care managers.
 
+![image](./IMAGES/Lab06/image1.png)
 
 This lab will focus on the healthcare story of Reed Flores.
 
+![image](./IMAGES/Lab06/image2.png)
 
 
 After coming home from hiking, Reed noticed he had a new rash on his right leg. He decides to schedule a virtual appointment to get a diagnosis.
@@ -27,24 +29,26 @@ As the first step in the booking process, the user must select a reason, which i
 
 **Note** - The Codeable Concept is one of the most important data items in HL7’s Fast Healthcare Interoperability Resources (FHIR) and is defined in the FHIR specification as a value that is usually supplied by providing a reference to one or more terminologies or ontologies, but may also be defined by the provision of text. Practitioner covers all individuals who are engaged in the healthcare process and healthcare-related services as part of their formal responsibilities and this resource is used for attribution of activities and responsibilities to these individuals.Practitioners include (but are not limited to):
 
-    •	physicians, dentists, pharmacists
+ •	physicians, dentists, pharmacists
 
-    •	physician assistants, nurses, scribes
+ •	physician assistants, nurses, scribes
 
-    •	midwives, dietitians, therapists, optometrists, paramedics
+ •	midwives, dietitians, therapists, optometrists, paramedics
 
-    •	medical technicians, laboratory scientists, prosthetic technicians, radiographers
+ •	medical technicians, laboratory scientists, prosthetic technicians, radiographers
 
-    •	social workers, professional homecare providers, official volunteers
+ •	social workers, professional homecare providers, official volunteers
 
-    •	receptionists handling patient registration
+ •	receptionists handling patient registration
 
-    •	IT personnel merging or unmerging patient records
+ •	IT personnel merging or unmerging patient records
 
-    •	Service animal (for example, ward assigned dog capable of detecting cancer in patients)
+ •	Service animal (for example, ward assigned dog capable of detecting cancer in patients)
 
 Following is an example of the appointment booking screen in the Patient Portal, which displays the practitioner’s specialties defined as Codeable Concepts.
- 
+
+![image](./IMAGES/Lab06/image3.png)
+
 For an entity that isn’t shown directly on an application’s navigation, you can add a new record for those entities through Power Apps. To create a new practitioner specialty, you’ll create a new Codeable Concept record through Power Apps.
 
 1.	While signed into your Microsoft 365 tenant, open a new tab, and go to Microsoft Power Apps. Select your environment.
@@ -57,7 +61,11 @@ For an entity that isn’t shown directly on an application’s navigation, you 
 
 5.	Select the **Codeable Concept** table from the search results and then select Edit.
  
+![image](./IMAGES/Lab06/image4.png)
+
 6.	Select **+New** **row** dropdown and then select **New row using form.**
+
+![image](./IMAGES/Lab06/image5.png)
 
 7.	In the **New Codable Concept** form, fill in the following details.
 
@@ -71,22 +79,28 @@ For an entity that isn’t shown directly on an application’s navigation, you 
 
     o	Select **Save & Close**
 
+![image](./IMAGES/Lab06/image6.png)
+
 8.	After saving and closing the new **Codeable Concepts** form, select **Done** on the **Currently adding a new row** pop-up to refresh the **Codeable Concepts** table.
 
- 
+![image](./IMAGES/Lab06/image7.png) 
+
 9.	Once the **Codeable Concepts** table is refreshed, select the **Name** column, and then select **Filter by.**
 
- 
+![image](./IMAGES/Lab06/image8.png) 
+
 10.	In the **Filter by** pane, use the below expression and select **Apply**.
 
     o	**Operator**: Contains
 
     o	**Value**: General
 
- 
+![image](./IMAGES/Lab06/image9.png) 
+
 11.	You can now verify that a new codeable concept of type **Practitioner** **Specialty** is successfully created.
 
- 
+![image](./IMAGES/Lab06/image10.png) 
+
 You've created a new practitioner specialty that will now be available for selection as an appointment visit reason in the Patient Portal.
 
 ### Task : Create a new Practitioner's schedule
@@ -103,10 +117,16 @@ In this task, you'll configure the practitioner's schedule to allow patients to 
 
 **Note**: Select the Schedule table with the Name - **msemr_schedule** 
 
+![image](./IMAGES/Lab06/image11.png)
+
 5.	In the **Schedule columns and data** section, select the dropdown to add an existing column to the editable view. Search for **Active** and then select Active to add the column. You may also remove the columns that have no data. Select **Save**.
  
+![image](./IMAGES/Lab06/image12.png)
+
 6.	Select **Alex Johnson schedule** under the **Name** column and then change the value of **Active** column from **No** to **Yes**. You may need to scroll right in the grid.
  
+![image](./IMAGES/Lab06/image13.png)
+
 You've enabled a practitioner's schedule to be used for booking virtual appointments.
 
 ## Task: Configure slots for appointments
@@ -123,7 +143,11 @@ In this task, you'll configure a new appointment slot to show practitioner's ava
 
 5.	Select the Alex Johnson schedule from the **Active Schedules** list.
  
+![image](./IMAGES/Lab06/image14.png)
+
 6.	Scroll down to the bottom of the page. Select **+ New Slot** under **Associated slots**
+
+![image](./IMAGES/Lab06/image15.png)
 
 7.	Fill in the following details in the **New Slot** form and select **Save & Close**.
 
@@ -145,6 +169,8 @@ In this task, you'll configure a new appointment slot to show practitioner's ava
 
     9.	Select **Save and Close**
 
+![image](./IMAGES/Lab06/image16.png)
+
 You've created a new virtual slot for Reed to book with the practitioner, Alex Johnson.
 
 ### Task : Configure Mapped System User on Practitioner Record
@@ -158,7 +184,13 @@ In this task, you'll configure the Mapped System User field on the Practitioner 
 
 2.	Select the **Alex Johnson** record and select **Edit**.
   
+![image](./IMAGES/Lab06/image17.png)
+
+![image](./IMAGES/Lab06/image18.png)
+
 3.	In the **Summary** tab, select your logged-in user as the **Mapped System User.** Select **Save & Close.**
+
+![image](./IMAGES/Lab06/image19.png)
 
 **Note** – If you get any window for duplicates. Please ignore and save.
 
@@ -172,6 +204,8 @@ In this task, you’ll create connection references and enable the cloud flow fo
 
 2.	Select **Solutions** and then select **+ New Solution.**
 
+![image](./IMAGES/Lab06/image20.png)
+
 3.	Use the below information to create a new solution and select **Create**.
 
     o	**Display name** - Lamna Healthcare
@@ -180,25 +214,45 @@ In this task, you’ll create connection references and enable the cloud flow fo
 
     o	**Publisher** - CDS Default Publisher
  
+![image](./IMAGES/Lab06/image21.png)
+
 4.	On the Lamna Healthcare solution page, select **+ Add existing** and then select **Cloud flow** under **Automation**.
  
+![image](./IMAGES/Lab06/image22.png)
+
 5.	On the **Add existing cloud flows** page, select **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status to booked** and select **Add**.
  
+![image](./IMAGES/Lab06/image23.png)
+
 6.	Select the cloud flow. Select **Details** dropdown and then select **Details** in a new tab.
  
+![image](./IMAGES/Lab06/image24.png)
+
 7.	Select **Edit** on the cloud flow page.
  
+![image](./IMAGES/Lab06/image25.png)
+
 8.	Select **Sign in** for **Microsoft Dataverse** and **Office 365 Users** connectors to sign in with the currently logged-in user and create a connection reference.
  
+![image](./IMAGES/Lab06/image26.png)
+
 9.	Select **Continue**.
  
+![image](./IMAGES/Lab06/image27.png)
+
 10.	Select **Save** to commit your updates.
  
+![image](./IMAGES/Lab06/image28.png)
+
 11.	After the flow is saved successfully, select the **Back arrow** to return to the flow’s main page.
 
 12.	The status of the flow is **Off**. Select **Turn on** to enable the flow on top-right corner of the page
  
+![image](./IMAGES/Lab06/image29.png)
+
 13.	Close the **Power Automate** tab to go back to Lamna Healthcare solution page and select **Publish all customizations.**
+
+![image](./IMAGES/Lab06/image30.png)
 
 You’ve created connection references to Microsoft Dataverse and Office 365 Users connectors and turned on the cloud flow for creating virtual appointments.
 
@@ -223,7 +277,11 @@ By default, the Basic and Enhanced Microsoft Teams integration is disabled for c
 
 1.  Select **Environments**. Select your environment. Next, select **Settings**
 
+![image](./IMAGES/Lab06/image31.png)
+
 1.  Select **Integration** and then select **Teams integration settings.**
+
+![image](./IMAGES/Lab06/image32.png)
 
 1.  On the **Microsoft Teams collaboration and chat** page, switch **Turn on the linking of Dynamics 365 records to Microsoft Teams channels** to **Yes**.
 
@@ -234,6 +292,8 @@ By default, the Basic and Enhanced Microsoft Teams integration is disabled for c
 7.	Select **Accept**.
 
 8.	Switch **Turn on Microsoft Teams chats inside Dynamics 365** to **Yes**, and then select **Save**.
+
+![image](./IMAGES/Lab06/image33.png)
 
 **Congratulations!** You have enabled Microsoft Teams integration for Dynamics 365.
 
@@ -253,43 +313,79 @@ In this task, you will log in to the Patient Portal as Reed Flores and schedule 
 
 4.	Select **Patients** app in the left navigation pane.
  
+![image](./IMAGES/Lab06/image34.png)
+
 5.	In the right pane, on the **Active Patients** view, select the record **Reed Flores** and then select **Edit**.
  
+![image](./IMAGES/Lab06/image35.png)
+
 6.	Select ellipsis (⋮), and then select **Create Invitation** from the pop-up.
+
+![image](./IMAGES/Lab06/image36.png)
 
 7.	Select **Save** on the **New Invitation** form.
 
+![image](./IMAGES/Lab06/image37.png)
+
 8.	Go to the **Advanced** tab and copy the Invitation Code to use on the patient portal.
+
+![image](./IMAGES/Lab06/image38.png)
 
 9.	Go to Power Pages,  Launch your **Lamna healthcare Patient Portal** in Desktop view
 
+![image](./IMAGES/Lab06/image39.png)
+
 10.	Select **Sign in** on the landing page.
  
+![image](./IMAGES/Lab06/image40.png)
+
 11.	Go to the **Redeem invitation** tab. Paste the **Invitation Code** you retrieved in the previous task. Leave the box unchecked for returning customer. Select **Register**.
  
+![image](./IMAGES/Lab06/image41.png)
+
 12.	Enter a username and password for **Reed Flores**. Something you'll remember. Select **Register**.
  
+![image](./IMAGES/Lab06/image42.png)
+
 13.	You may land on the profile page. Select the logo in the upper right to go to the **homepage**.
  
+![image](./IMAGES/Lab06/image43.png)
+
 14.	Go to **Appointments** and select **Schedule** **new**.
  
+![image](./IMAGES/Lab06/image44.png)
+
 15.	Select **Instant virtual appointment.**
  
+![image](./IMAGES/Lab06/image45.png)
+
 16.	Select the **General Medicine** option that you created earlier in the exercise as the reason for the visit.
  
+![image](./IMAGES/Lab06/image46.png)
+
 17.	In the **Personal** section, scroll down and select **Next**.
 
 18.	In the **Insurance** section, select **+ Add Insurance.**
 
 **Note** - If you encounter an error when adding the insurance, ensure the environment variables and API permissions are set up as mentioned in the [Configure environment.](https://learn.microsoft.com/en-us/training/modules/training-environment-preparation-healthcare/4a-azure-trial) For more information on these settings, see [Set up and configure a Patient access portal.](https://learn.microsoft.com/en-us/dynamics365/industry/healthcare/configure-portals#known-issue)
  
+![image](./IMAGES/Lab06/image47.png)
+
 19.	Fill out the required fields with any information and select **Next**.
  
+![image](./IMAGES/Lab06/image48.png)
+
 20.	Select **Next**.
  
+![image](./IMAGES/Lab06/image49.png)
+
 21.	**Check the box** for Consent Terms and then select **Join queue.**
  
+![image](./IMAGES/Lab06/image50.png)
+
 22.	A new internet browser tab opens and may be blank. **Select the link** provided to join the appointment.
  
+![image](./IMAGES/Lab06/image51.png)
+
 You've scheduled an instant virtual appointment using the patient portal.
 
