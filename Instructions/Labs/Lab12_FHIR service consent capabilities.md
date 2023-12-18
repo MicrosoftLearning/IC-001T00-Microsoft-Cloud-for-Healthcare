@@ -14,7 +14,7 @@ In the Azure health data platform, FHIR-Proxy (OSS) acts as a gateway for API ca
 
 Component View of FHIR-Proxy and FHIR service with Postman set up to call the FHIR-Proxy endpoint.
 
-![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1.png)
+![image](./IMAGES/Lab12/image1.png)
 
 FHIR-Proxy asserts control over FHIR data interactions only if its pre- and/or post-processing modules (see https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.md#date-sort-post-processor) have been enabled and configured. Otherwise, with no special configuration, API calls made to the FHIR-Proxy endpoint go straight through to the FHIR service, and responses are sent back unfiltered to the remote client app (such as Postman in our case).
 
@@ -26,10 +26,16 @@ In Lab 07, you enabled the Consent Opt-Out filter when you deployed FHIR-Proxy. 
 
 2.	Click on three horizontal lines on the left side of the portal and Click on **Create a resource.**
  
+![image](./IMAGES/Lab12/image2.png)
+
 3.	Click on **Compute** on the left navigation pane under **Categories**
  
+![image](./IMAGES/Lab12/image3.png)
+
 4.	Enter Function app in the search area. Click on **Create > function app.**
  
+![image](./IMAGES/Lab12/image4.png)
+
 5.	Update the below details:
 
     a.	Select your subscription
@@ -40,12 +46,20 @@ In Lab 07, you enabled the Consent Opt-Out filter when you deployed FHIR-Proxy. 
 
     d.	Runtime stack – **Python**
  
+![image](./IMAGES/Lab12/image5.png)
+
 6.	Click on **Review + Create.**
  
+![image](./IMAGES/Lab12/image6.png)
+
 7.	Click on **Create**.
  
+![image](./IMAGES/Lab12/image7.png)
+
 8.	Click on **Go to resource** once the deployment is complete.
  
+![image](./IMAGES/Lab12/image8.png)
+
 ## Exercise 2: Configure FHIR-Proxy authentication settings
 
 Before setting up FHIR-Proxy for Consent Opt-Out filtering, you must first configure FHIR-Proxy authentication so that FHIR-Proxy can securely connect with the FHIR service.
@@ -54,18 +68,30 @@ Before setting up FHIR-Proxy for Consent Opt-Out filtering, you must first confi
 
 1.  Select **Resource groups**
 
+![image](./IMAGES/Lab12/image9.png)
+
 2.  On the **Resource groups** pane, select your resource group.
+
+![image](./IMAGES/Lab12/image10.png)
 
 3.  In the **Resources** list, find the **Function** **app** you created and select it.
 
+![image](./IMAGES/Lab12/image11.png)
+
 4.  In the resource menu, under **Settings**, select **Authentication**. Select **Add identity provider.**
  
+![image](./IMAGES/Lab12/image12.png)
+
 5.	On the **Add an identity provider** page, select the **Identity provider** menu and then select **Microsoft**.
 
 6.	Scroll down and under **App Service authentication settings > Restrict Access**, select **Allow unauthenticated access**. Select **Next: Permissions.**
  
+![image](./IMAGES/Lab12/image13.png)
+
 7.	On the menu, select **+ Add permission**. In the **Request API permissions** pane, scroll down and expand **User**. Select **User.Read** and then select **Update permissions**. Select **Add**.
  
+![image](./IMAGES/Lab12/image14.png)
+
 8.	Now you will be navigated back to the **Authentication** pane.
 
 
@@ -73,13 +99,15 @@ Before setting up FHIR-Proxy for Consent Opt-Out filtering, you must first confi
 
 1.  In the **Authentication** pane, under **Identity provider**, select **Microsoft ([fhirproxyname])**.
 
+![image](./IMAGES/Lab12/image15.png)
+
 1.  In the resource menu, under **Manage**, select **Manifest**.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1c.png)
+    ![image](./IMAGES/Lab12/image16.png)
     
 1.  In the Manifest JSON file, locate the **appRoles** element.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1d.png)
+    ![image](./IMAGES/Lab12/image17.png)
 
 1.  Press **enter** between the square brackets **[]** to create a new row and enter the following member types. Click on **Save.**
 
@@ -178,31 +206,48 @@ json
 }
 ```
 
+![image](./IMAGES/Lab12/image18.png)
+
+![image](./IMAGES/Lab12/image19.png)
+
 ### Task 3: Configure API permissions
 
 1.  In the resource menu, under **Manage**, select **API permissions**.
 
 1.  Under **Configured permissions**, select **+ Add a permission**.
 
+![image](./IMAGES/Lab12/image20.png)
+
 1.  In the **Request API permissions** pane, select the **APIs my organization uses** tab. In the search box, enter **Azure Healthcare APIs**. In the results, select **Azure Healthcare APIs**.
+
+![image](./IMAGES/Lab12/image21.png)
 
 1.  Ensure **Delegated permissions** is selected.
 
+![image](./IMAGES/Lab12/image22.png)
+
 2.  Select the **user_impersonation** checkbox and then select **Add permissions.**
+
+![image](./IMAGES/Lab12/image23.png)
 
 3.  Under **Configured permissions**, select **Grant admin consent for Contoso.**
 
+![image](./IMAGES/Lab12/image24.png)
+
 4.  In the **Grant admin consent confirmation** dialog box, select **Yes**.
 
+![image](./IMAGES/Lab12/image25.png)
+
 5.  Verify the Status has been updated.
+
+![image](./IMAGES/Lab12/image26.png)
 
 1.  In the resource menu, under **Manage**, select **App roles**.
 
 1.  Review the App roles that have been created.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab12/L12P1i.png)
+    ![image](./IMAGES/Lab12/image27.png)
 
-===
 
 ## Exercise 3: Configure Postman to connect with the FHIR-Proxy endpoint
 
@@ -210,28 +255,47 @@ In the next part of this lab, you will be setting up a new environment in Postma
 
 1.  Search for **Microsoft Entra ID** in the search and select the option accordingly.
 
+![image](./IMAGES/Lab12/image28.png)
+
 2.  On the left navigation pane, under **Manage** option, select **App registration.**
+
+![image](./IMAGES/Lab12/image29.png)
 
 3.  Navigate to your **Postman** service client app **myhealthapiapp** that we created.
 
 1.  On the resource menu, under **Manage**, select **API permissions**
 
+![image](./IMAGES/Lab12/image30.png)
+
 2.  Under **Configured permissions**. Select **+ Add a permission**.
+
+![image](./IMAGES/Lab12/image31.png)
 
 1.  Select the **API’s my organization uses** tab and you will see a list containing the **FHIR-Proxy** instance that you deployed and registered earlier. Select the FHIR-Proxy app name that we created in Task 1.
 
+![image](./IMAGES/Lab12/image32.png)
+
 1.  Under **What type of permissions does your application require**, select **Delegated permissions**.
+
+![image](./IMAGES/Lab12/image33.png)
 
 1.  Select the **user_impersonation** checkbox and then select **Add permissions**.
 
+![image](./IMAGES/Lab12/image34.png)
 
 1.  On the menu, select **+ Add a permission** again.
 
 1.  In the **Request API permissions** pane, select the **API’s my organization uses** tab. Select the **FHIR-Proxy** app name
 
+![image](./IMAGES/Lab12/image35.png)
+
 1.  Select **Application permissions**.
 
+![image](./IMAGES/Lab12/image36.png)
+
 1.  Select the **Resource Reader** and **Resource Writer** checkboxes and then select **Add permissions**.
+
+![image](./IMAGES/Lab12/image37.png)
 
 1.  Under **Configured permissions**, select **+ Add a permission**.
 
@@ -239,40 +303,63 @@ In the next part of this lab, you will be setting up a new environment in Postma
 
 1.  Select **Delegated permissions**.
 
+![image](./IMAGES/Lab12/image38.png)
+
 1.  Select the **user_impersonation** checkbox and then select **Add permissions**(If it is already added, you can close the window)
 
 1.  Under **Configured permissions**, select **Grant admin consent for Contoso**.
+
+![image](./IMAGES/Lab12/image39.png)
 
 1.  In the **Grant admin consent confirmation** dialog box, select **Yes**.
 
 1.  Verify the **Status** has been updated.
 
-## Exercise 3: Confirm Postman configuration
+![image](./IMAGES/Lab12/image40.png)
+
+## Exercise 4: Confirm Postman configuration
 
 1.  Switch back to Postman application. Sign-in to your Postman workspace.
 
 2.	Be sure that **fhir-proxy** is selected as your active environment in **Postman** on the top right corner of the application.
 
+![image](./IMAGES/Lab12/image41.png)
+
 1.  Go to **Collections** and expand **FHIR Search** collection. Select **POST AuthorizeGetToken.**
+
+![image](./IMAGES/Lab12/image42.png)
 
 2.  Press **Send** to generate a token.
 
+![image](./IMAGES/Lab12/image43.png)
+
 3.  You should receive a **200 OK** response code in the **Body** section.
+
+![image](./IMAGES/Lab12/image44.png)
 
 **Note** - If you do not get 200 OK response, you will need to run the POST Save Sample Resources request again in the FHIR Search collection in Postman (this step was covered in Lab-10).
 
 4.  From the **FHIR Search** collection, select **GET Step 4 - Count All Patients** request.
 
+![image](./IMAGES/Lab12/image45.png)
+
 5.  Select **Send** to send the request
 
+![image](./IMAGES/Lab12/image46.png)
+
 6.  You should receive a Bundle as shown below (the number of patients will be different from what is shown in the image).
+
+![image](./IMAGES/Lab12/image47.png)
 
 7.  To confirm you have the **Patient** and **Practitioner Resources** needed for this lab, follow the below steps.
 
 8.  Replace the request URL of Count All Patients request with {fhirurl}}/Patient/WDT000000001 and **Send** it.
 
+![image](./IMAGES/Lab12/image48.png)
+
 9.  You should receive a **200 OK** response code for the request.
 
+![image](./IMAGES/Lab12/image49.png)
 
 ## Exercise 5: Post a Consent Resource to the FHIR service
 
@@ -280,11 +367,21 @@ Here you will populate your FHIR service with a Consent Resource (see https://ww
 
 1.  Review the sample **Consent Resource** in the **consent-resource.json** file located at https://github.com/microsoft/azure-health-data-services-workshop/blob/main/Challenge-07%20-%20FHIR%20service%20consent%20capabilities/sample-data/consent-resource.json. You will see that Patient/WDT000000001 is opting out of sharing records with Practitioner/WDT000000003.
 
+![image](./IMAGES/Lab12/image50.png)
+
 1.  Go to the **FHIR CALLS** collection in **Postman** and select the **POST Consent Resource** call.
+
+![image](./IMAGES/Lab12/image51.png)
 
 1.  Inspect the **Body** of the request, and you will see that it contains the same Consent Resource that you just reviewed above.
 
+![image](./IMAGES/Lab12/image52.png)
+
 1.  Select **Send** to populate your FHIR service with the **Consent Resource.**
+
+![image](./IMAGES/Lab12/image53.png)
+
+![image](./IMAGES/Lab12/image54.png)
 
 ## Exercise 6: Add a Practitioner role in FHIR-Proxy
 
@@ -294,23 +391,39 @@ Review the information at https://github.com/microsoft/fhir-proxy/blob/main/docs
 
 1.  Open the **Azure portal**, click the **Menu** icon and then select Microsoft Entra ID
 
+![image](./IMAGES/Lab12/image55.png)
+
 2.  Select **Enterprise Applications** under **Manage** on the left navigation pane.
+
+![image](./IMAGES/Lab12/image56.png)
 
 3.  Select the application **fhirapp123**.
 
+![image](./IMAGES/Lab12/image57.png)
+
 1.  On the left navigation pane, select **Users and groups**. Select **+Add user/group**.
+
+![image](./IMAGES/Lab12/image58.png)
 
 1.  Under **Users and groups**, select **None Selected**. Type in your name or Azure login name and press **Select**.
 
+![image](./IMAGES/Lab12/image59.png)
+
 1.  Under **Select a role**, select **None Selected**. 
 
+![image](./IMAGES/Lab12/image60.png)
+
 1.  Select **Resource Reader**, and then select **Select** and **Assign**.
+
+![image](./IMAGES/Lab12/image61.png)
 
 1.  Select **+Add user/group** (again).
 
 2.  Repeat steps 4 to 8. This time we assign **Practitioner** role.
 
 3.  You have now assigned the Practitioner role to yourself in FHIR-Proxy. This prepares FHIR-Proxy to associate your identity in AAD with a Practitioner Resource in the FHIR service.
+
+![image](./IMAGES/Lab12/image62.png)
 
 4.  In the next step, you will use FHIR-Proxy to make a direct link between your user account and Practitioner/WDT000000003.
 
@@ -321,11 +434,15 @@ Now you will be linking the Practitioner/WDT000000003 Resource to your user acco
 
 1.  Click the Menu icon and then select **Microsoft Entra ID**.
 
+![image](./IMAGES/Lab12/image63.png)
+
 2.  Select **Users** from the left navigation pane.
 
 1.  On the **Users** blade, do a search for yourself and select on your admin name in the list.
 
 1.  In the **Overview** blade, copy the **Object ID** for your account.
+
+![image](./IMAGES/Lab12/image64.png)
 
 1.  You will also need your <fhir_proxy_app_name>. Navigate to your **ADHSW** resource group. Then, select your FHIR proxy app resource group – **fhirapp123**
 
@@ -333,11 +450,17 @@ Now you will be linking the Practitioner/WDT000000003 Resource to your user acco
 
 2.  Switch back to Postman apploication, go to the **FHIR CALLS** collection, get a new access token by sending **POST AuthorizeGetToken** request.
 
+![image](./IMAGES/Lab12/image65.png)
+
 3.  Once the token is generated, select the **GET Link Roles** call from the **FHIR CALLS** collection.
+
+![image](./IMAGES/Lab12/image66.png)
 
 1.  In the URL field for the request, you will see this string: https://<fhir_proxy_app_name\>.azurewebsites.net/manage/link/Practitioner/WDT000000003/\<object-id\>
 
 1.  Paste your **<fhir_proxy_app_name>** and **<object-id>** in the appropriate places in the string. Select **Save** and **Send**
+
+![image](./IMAGES/Lab12/image67.png)
 
 1.  You will get back a message saying the link has been established with a response code of 200.
 
@@ -349,9 +472,13 @@ You now need to authenticate yourself as the caller trying to access Patient/WDT
 
 1.  Select the **Authorization** tab. Scroll down and select **Get New Access Token**.
 
+![image](./IMAGES/Lab12/image68.png)
+
 1.  You will be prompted to "Authenticate via browser". Select **Proceed**.
 
 1.  You will be taken to a new tab in your web browser, and if you are already logged into Azure Portal in your browser session, you should see a message: "Your call is authenticated".
+
+![image](./IMAGES/Lab12/image69.png)
 
     1.  If you are not logged into Azure Portal, you will be prompted to authenticate with your Azure login credentials.
 
@@ -359,7 +486,11 @@ You now need to authenticate yourself as the caller trying to access Patient/WDT
 
 1.  After authenticating in your browser, you'll return to Postman and you'll see "Authentication complete". Select **Proceed**.
 
+![image](./IMAGES/Lab12/image70.png)
+
 1.  Then select **Use Token** in the **MANAGE ACCESS TOKENS** window in Postman.
+
+![image](./IMAGES/Lab12/image71.png)
 
 **Note**: To check that your Azure user account is correctly linked to the Practitioner role, copy the new **Access Token** from the **MANAGE ACCESS TOKENS** window and paste it into the JSON Web Token viewer at https://jwt.io/. Under "roles", you should see the "Writer", "Practitioner", and "Reader" roles for yourself.
 
@@ -368,7 +499,7 @@ You now need to authenticate yourself as the caller trying to access Patient/WDT
 
 1.  Now, if you press **Send** in the **GET Patient Consent Opt Out** call, you should receive an **access-denied** response with a **401 Unauthorized** code as shown below. This indicates that Consent Opt-Out is working properly.
 
-!(./IMAGES/Lab12/L12P5.png)
+![image](./IMAGES/Lab12/image72.png)
 
 
 
