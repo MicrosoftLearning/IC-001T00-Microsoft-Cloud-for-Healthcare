@@ -2,328 +2,293 @@
 
 ## Overview
 
-The Azure Health Bot Service is a cloud platform that empowers developers in healthcare organizations to build and deploy their compliant, AI-powered Patient insights and health bots, that help them improve processes and reduce costs. It allows you to offer your users intelligent and personalized access to health-related information and interactions through a natural conversation experience.
+The Microsoft Azure Health Bot service is a cloud platform that empowers developers in healthcare organizations to build and deploy their AI-powered, compliant, conversational healthcare experiences at scale. It allows businesses to offer your users intelligent and personalized access to health-related information and interactions through a natural conversation experience.
 
-With the service, healthcare organizations can build a "health bot instance" and integrate it with their systems that patients, nurses, doctors, and other representatives interact with. Building an instance allows you to:
+With the service, healthcare organizations can build a health bot instance and integrate it with their systems that patients, nurses, doctors, and other representatives can interact with. Building an instance allows you to improve processes, services, outcomes, and cost.
 
--   Improve processes
--   Improve services
--   Improve outcomes
--   Reduces cost
+Azure Health Bot service contains a built-in medical database, including triage protocols. You can also extend a health bot instance to include your own scenarios and integrate with other IT systems and data sources To learn more about Azure Health Bot, see [Azure Health Bot Overview](https://docs.microsoft.com/en-us/azure/health-bot/) on Microsoft Docs.
 
-The Health Bot Service contains **a built-in medical database**, including **triage protocols**. You can also extend a health bot instance to include your own scenarios and integrate with other IT systems and data sources. To learn more about Azure Health Bot, see [Azure Health Bot Overview](https://docs.microsoft.com/en-us/azure/health-bot/) on Microsoft Docs.
+## Industry prioritized scenarios
 
-The Azure Health Bot focuses on the Enhance patient engagement priority scenario by creating a virtual bot health option to allow for new avenues of care with embedded insights.
+Azure Health Bot focuses on the Enhance patient engagement priority scenario by creating a virtual bot health option to allow for new avenues of care with embedded insights.
 
-![](./IMAGES/Lab02/L2P1.png)
+![image](./IMAGES/Lab02/I1.png)
 
-This lab will focus on Lamna Healthcare Company.
+This lab focuses on Lamna Healthcare Company.
 
-![Timeline Description automatically generated](./IMAGES/Lab02/L2P2.png)
+![image](./IMAGES/Lab02/I2.png)
 
-As part of their digital transformation efforts, Lamna Healthcare Company is seeking to streamline their patient engagement capabilities by implementing Azure Health Bot to help improve processes and services, such as entering medication requests. By allowing patients to interact with this service, Lamna Healthcare Company will move one step closer to their goal of improving patient outcomes while reducing overall costs.
 
-In this lab, you'll play the role of a Lamna Healthcare IT developer and configure Azure Health Bot for a medication refill scenario.
+As part of their digital transformation efforts, Lamna Healthcare Company is seeking to streamline their patient engagement capabilities by implementing Azure Health Bot to help improve processes and services, such as entering medication requests. By allowing patients to interact with this service, Lamna Healthcare Company moves one step closer to their goal of improving patient outcomes while reducing overall costs.
 
-## Learning objectives
+In this module, you play the role of a Lamna Healthcare IT developer. You create and set up your own Azure Health Bot with a custom scenario that allows for medication refills and escalating to a service center agent.
 
-In this lab, you will:
+## Exercise 1: Redeem Azure Pass and Create a Patient Portal
 
--   Set up Azure Health Bot
--   Configure Dynamics 365 Customer Service Omnichannel Live Chat
+### Task: Redeem Azure Pass
 
-## Exercise 1: Set Up Azure Health Bot
+1.	Open a new tab on your browser and browse to the **Microsoft Azure Pass** website using the [Azure pass](https://www.microsoftazurepass.com/.)
+link.
 
-In this exercise, you will do the following:
+2.	Click on **Start**.
+ 
+![image](./IMAGES/Lab02/I3.png)
 
--   Set up Health Bot from Azure Portal
--   Configure and enable the integration between Dynamics 365 Omnichannel and Health Bot
--   Configure and enable Bot channel to obtain a Bot Id
+3.	Enter the Office 365 tenant credentials. Click on **Sign-in.**
 
-**Azure Health Bot** empowers developers in healthcare organizations to build and deploy AI-powered, compliant, conversational healthcare experiences at scale. It combines built-in medical database with natural language capabilities to understand clinical terminology and can be easily customized to support your organization's clinical use cases. The service ensures alignment with industry compliance requirements and is privacy protected to HIPAA standards. To learn more about Azure Health Bot, please reference this [Azure Health Bot documentation](https://docs.microsoft.com/en-us/azure/health-bot/).
+4.	Verify email id and then click on **Confirm Microsoft Account.**
+ 
+![image](./IMAGES/Lab02/I4.png)
 
-### Task 1: Install Azure Health Bot in Azure Subscription
+5.	Paste the **promo code** in the **Enter Promo code** box and click **Claim Promo Code**.
+ 
+![image](./IMAGES/Lab02/I5.png)
 
-1. [] Open a new tab in your internet browser incognito or in-private mode and navigate to Azure Portal at +++https://portal.azure.com+++. Log in to your Microsoft 365 tenant.
+6.	It may take few seconds to process the redemption.
 
-1. [] Search for **Azure Health Bot** in the top search bar and select it from the search results.
+7.	Fill in the details appropriately on the **Sign up** page.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P3.png)
+8.	On the **Agreement** window, select the check box - I agree to the subscription agreement, offer details, and privacy statement, and then click on **Sign up**. You may also **Submit** the feedback.
+ 
+![image](./IMAGES/Lab02/I6.png)
 
-1. [] Select **Create** button to create a new Azure Health Bot instance.
+![image](./IMAGES/Lab02/I7.png)
 
-    ![Create Azure Health Bot subscription](./IMAGES/Lab02/L2P4.png)
+![image](./IMAGES/Lab02/I8.png)
 
-1. [] You will be redirected to the Azure Health Bot page. Enter the following information:
-    1. [] **Subscription**: Keep as **Azure Pass - Sponsorship**
-    1. [] **Resource Group**: Select the existing resource group from dropdown
-    1. [] **Name**: +++mc4h01-healthbot+++
-    1. [] **Region**: East US
-    1. [] **Plan**: Free (F0)
+### Task: Register an app in Azure AD
 
-        ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P5.png)
+In this task, you'll learn how to register a new application in Microsoft Azure Active Directory (Azure AD), grant delegated and application permissions, and create a client secret.
 
-1. [] Select **Review + Create**.
+1.	While signed into your **Microsoft 365 tenant**, open a new browser tab, and then go to the [Azure portal](https://portal.azure.com/). In the upper-left corner of the page, select the hamburger icon (three horizontal lines) and then select **Microsoft Entra ID**.
+ 
+![image](./IMAGES/Lab02/I9.png)
 
-1. [] On the **Review and create** page, verify your details are correct as Azure validates your Health Bot. After validation passes, the create button will become enabled. Select **Create**.
+2.	On the left navigation pane, select **App registrations** and then select **+ New registration** in the right pane.
+ 
+![image](./IMAGES/Lab02/I10.png)
 
-    > [!NOTE] Note: It will take few seconds to run the backend process before the Create button is enabled.
+3.	On the **Register an application** page, enter the name for the bot as **MCH Application ID** and then select the **Accounts in any organizational directory (Any Azure AD directory - Multitenant)** option under the **Supported account types** section. Then, select **Register**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P6.png)
+![image](./IMAGES/Lab02/image11.svg)
 
-1. [] You will be redirected to the **Deployment** page for your new Azure Health Bot.
+4.	Select **API permissions** on the left navigation pane. On the right pane, select **+ Add a permission.**
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P7.png)
+![image](./IMAGES/Lab02/image12.svg)
 
-1. [] Please wait until deployment is complete for the Azure Health Bot, then select **Go to resource** when enabled.
+5.	On the **Request API permissions** page, select **APIs my organization** **uses**. Use the search box to search for the string **Dataverse**. From the search result, select **Dataverse**.
+ 
+![image](./IMAGES/Lab02/image13.svg)
 
-1. [] You will be redirected to the **Resource** page for your new Azure Health Bot. Select the **Management portal** link in the Essential section to open your Azure Health Bot instance configuration page.
+6.	Select **Delegated permissions**. Under the **Select permissions** section, select the checkbox beside **user_impersonation**. Then, select **Add permissions**.
 
-    > [!ALERT] Note: Please copy this Management portal link. Store it on the VM and your own computer to access the Health Bot later.
+![image](./IMAGES/Lab02/image14.svg)
 
-    ![Text, letter Description automatically generated](./IMAGES/Lab02/L2P9.png)
+7.	Select **API permissions** on the left navigation pane. On the right pane, select **+ Add a permission.** Select **Microsoft APIs** and then select **Microsoft Graph.**
+ 
+![image](./IMAGES/Lab02/image15.svg)
 
-1. [] If you are asked to give permission to the bot, please select **Accept**. You will be navigated to your new Azure Health Bot instance homepage. You may have to enter your username again.
+8.	On the **Request API permissions** page, select **Application permissions**. Use the search box to search for the string **calendars**. Select the checkbox beside **Calendars.ReadWrite**.
 
-    ![Text Description automatically generated](./IMAGES/Lab02/L2aE1T1S10a.png)
-    
-    ![Text Description automatically generated](./IMAGES/Lab02/L2P10.png)
+![image](./IMAGES/Lab02/image16.svg)
 
-**Congratulations!** You have successfully created a new Health Bot instance in your Azure tenant.
+9.	On the **Request API permissions** page, select **Application permissions**. Use the search box to search for the string **user.read**. Select the checkbox beside **User.Read.All**.
+ 
+![image](./IMAGES/Lab02/image17.svg)
 
+10.	On the **Request API permissions** page, select **Delegate permissions**. Use the search box to search for the string **user.read**. Select the checkbox beside **User.Read.All** and then select **Add permissions.**
+ 
+![image](./IMAGES/Lab02/image18.svg)
 
-### Task 2: Update Azure Health Bot Settings to Enable Dynamics 365 Integration
+11.	Select **Grant admin consent**, as shown in the following screenshot.
 
-1. [] On the **Azure Health Bot** homepage, expand the side navigation bar to see the sitemap labels, if needed. After expanding, you will see the sitemap labels next to the icons.
+![image](./IMAGES/Lab02/image19.svg)
 
-1. [] Select **Configuration > Conversation** on the navigation bar.
+12.	On the **Grant admin consent confirmation** pop-up window, select **Yes**.
+ 
+![image](./IMAGES/Lab02/image20.svg)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P13.png)
+The status for each added permission will change to **Granted**, as shown in the following screenshot.
 
-1. [] You will be landed in the **Interactions** tab.
+![image](./IMAGES/Lab02/image21.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P14.png)
+13.	On the left navigation pane, select **Certificates & secrets**, and then in the right pane, select **+ New client secret**. On the **Add a client secret** blade, provide the **Description** as **Demo Health Bot,** leave the **Expires** value at its default setting, and then select **Add**.
+ 
+![image](./IMAGES/Lab02/image22.svg)
 
-1. [] Select **Human Handoff** tab in the Conversation settings.
+**Note**- You'll need to create an application secret so that you can use it along with this application ID to authenticate the bot.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P15.png)
+14.	Copy the secret value and then save it in a notepad so that you can use it later in this learning path.
 
-1. [] Scroll to the bottom of the **Human Handoff** page. Under **Dynamics 365 Omnichannel**, toggle **Enabled** for **Bridge Messages**. This is required to allow communication and bridge messages between the Azure health Bot and Dynamics 365 Omnichannel for Customer Service.
+![image](./IMAGES/Lab02/image23.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P16.png)
+**Note** - After you've created the secret and the page has refreshed, the secret value will no longer be available to copy.
 
-1. [] Select **Save**.
+15.	On the left navigation pane, select **Overview tab**. From the right pane, copy the **Application (client) ID** and then save it in a notepad so that you can use it later in this learning path.
+ 
+![image](./IMAGES/Lab02/image24.svg)
 
-    ![](./IMAGES/Lab02/L2P17.png)
+### Task: Create the Lamna Healthcare Patient Portal app
 
-    Now let’s enable the Health Bot for **Microsoft Teams** Channel.
+1.	Open a new tab and login to [Power pages portal](https://make.powerpages.microsoft.com/) with your credentials. Change the environment on the top-right corner of the home page to the trial that you are using in Power Apps.
 
-1. [] Navigate to **Integration > Channels**.
+2.	Click on **Create a site** on the home page.
+ 
+![image](./IMAGES/Lab02/I25.png)
 
-    ![A screenshot of a computer screen Description automatically generated with medium confidence](./IMAGES/Lab02/L2P18.png)
+3.	Enter **Customer** in the **Search** area and Select the **Customer Self Service Portal.**
+ 
+![image](./IMAGES/Lab02/image26.svg)
 
-1. [] In the **Channels** list, select the toggle to enable **Microsoft Teams**.
+**Note** – If you are unable to see Customer service template, please proceed with creating a site with any random template. Log off from power pages and login back, You will now be able to see the Customer Self Service portal template.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P19.png)
+4.	Select **Choose this template.**
+ 
+![image](./IMAGES/Lab02/image27.svg)
 
-1. [] This will bring out a side window with your **Bot Id** information. Copy and store the **Bot Id** for later to use when creating the Dynamics 365 Application User. Always store values on both the VM and your own computer.
+5.	Enter **Name** of the site as **Lamna Healthcare patient portal** and Web address as **LamnaPatientPortal** (If you get the message that the URL is not available, you can try with different names). You can provide the name and address of your choice. Once provided, click on Done.
+ 
+![image](./IMAGES/Lab02/image28.svg)
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P20.png)
+6.	The portal will take some time to configure.
+ 
+![image](./IMAGES/Lab02/image29.svg)
 
-1. [] Select **Create**. This should enable Teams channel and your Microsoft Teams toggle should reflect accordingly.
+7.	The site will be ready in 5-10 minutes
+ 
+![image](./IMAGES/Lab02/I30.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P21.png)
-    
-1. [] In the **Channels** list, select the toggle to enable **Omnichannel**. Select **Create** in the side window.
+## Set up Azure Health Bot
 
-**Congratulations!** You completed the Azure Health Bot settings for integration with Microsoft Teams and Dynamics 365 Omnichannel for Customer Service.
+Azure Health Bot empowers developers in healthcare organizations to build and deploy AI-powered, compliant, conversational healthcare experiences at scale. It combines a built-in medical database with natural language capabilities to understand clinical terminology, and you can customize it to support your organization's clinical use cases. The service ensures alignment with industry compliance requirements and is privacy protected to Health Insurance Portability and Accountability Act (HIPAA) standards. For more information, see [Azure Health Bot documentation.](https://learn.microsoft.com/en-us/azure/health-bot/)
 
-## Exercise 2: Configure Virtual Clinic variables 
+In this exercise, you'll complete the following tasks:
 
-In this exercise, you will configure the Microsoft Cloud for Healthcare Virtual Clinic application.  The Virtual Clinic application allows practitioners to use video conferencing in Microsoft Teams to provide high-quality, personalized, and affordable consultations for their patients.
+1. Set up Azure Health Bot from the Azure portal.
 
-### Task 1: Create a new Azure app registration 
+2. Set up and enable integration between Omnichannel for Microsoft Dynamics 365 Customer Service and Azure Health Bot.
 
-1. [] In Microsoft Edge, go to +++https://aad.portal.azure.com+++ 
+3. Set up and enable a bot channel to obtain a bot ID.
 
-1. [] In the left navigation, select **Azure Active Directory**. 
+4. Obtain the application client ID for your health bot to use later.
 
-1. [] On the **Overview** page, under **Manage**, select **App registration**. 
+### Task: Install Azure Health Bot in Azure subscription
 
-1. [] In the **App registrations** pane, select **+ New registration**. 
+Follow these steps to install the Azure Health Bot in an Azure subscription.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T1S4.png)
+1.	While signed into your Microsoft 365 tenant, open a new tab in your internet browser in Incognito or InPrivate mode and then go to the [Microsoft Azure portal.](https://portal.azure.com/)
 
-1. [] Complete the application registration using the following information: 
+2.	Search for **Azure Health Bot** in the search bar and then select it from the search results.
+ 
+![image](./IMAGES/Lab02/image31.svg)
 
-    | Property | Value |
-    |---|---|
-    | Name | +++MCH Application+++ |
-    | Supported account types | Accounts in any organizational directory (Any Azure AD directory - Multitenant |
-    | Redirect URI (optional) > Select a platform | Web | 
+3.	Select the **Create** button to create a new Azure Health Bot instance.
+ 
+![image](./IMAGES/Lab02/image32.svg)
 
-1. [] Select **Register**. A URL is not required. 
+4.	You'll be redirected to the **Azure Health Bot** page, where you can enter the following information:
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T1S6.png)
+    o	**Subscription** - Choose your Azure subscription
 
-### Task 2. Assign permissions to the MCH Application 
+    o	**Resource group** - Use the resource group that you created in environment preparation
 
-1. [] In the **MCH Application** pane, under **Manage**, select **API permissions**. 
+    o	**Name** - [username]-healthbot (you can choose any name)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S1.png)
+    o	**Region** - Select the closest region
 
-1. [] Under **Configured permissions**, on the menu, select **+ Add a permission**. 
+    o	**Plan** - Free (F0)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S2.png)
+5.	Select **Review + create.**
+ 
+![image](./IMAGES/Lab02/image33.svg)
 
-1. [] In the **Request API permissions** pane, select the **APIs my organization uses** tab. 
+6.	On the **Review + create** page, verify that your details are correct as Azure validates your Health Bot. When the create button has been enabled after validation passes, select **Create**.
 
-1. [] Locate and then select +++Dataverse+++. 
+**Note** - It will take a few seconds for the system to run the process before the **Create** button is enabled.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S4.png)
+![image](./IMAGES/Lab02/image34.svg)
 
-1. [] Select **Delegated permissions** and then, under **Permission**, select the **user_impersonation**. 
+You'll be redirected to the **Deployment** page for your new Azure Health Bot.
 
-1. [] Select **Add permissions**. 
+7.	When the deployment is complete, the **Go to resource** button will be enabled. Wait until the deployment has completed for the Azure Health Bot and then select **Go to resource.**
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S6.png)
+![image](./IMAGES/Lab02/image35.svg)
 
-1. [] Select **+ Add a permission**. 
+8.	You'll be redirected to the **Resource** page for your new Azure Health Bot. Select the **Management** **portal** link on the right of the **Essentials** section to open your Azure Health Bot instance setup page. Select your username for sign-in, if prompted.
 
-1. [] In the **Request API permissions** pane, select **Microsoft Graph**. 
+**Note** - Copy this **Management portal** link and store it to access the Health Bot later.
+ 
+![image](./IMAGES/Lab02/image36.svg)
 
-1. [] Select **Application permissions**. 
+9.	Your new Azure Health Bot instance homepage should appear.
 
-1. [] Under **Select permissions**, expand **Calendars**. 
+![image](./IMAGES/Lab02/image37.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S10.png)
+You've successfully created a new Health Bot instance in your Azure tenant.
 
-1. [] Select the **Calendars.ReadWrite** checkbox and then select **Add permissions**. 
+### Task: Update Azure Health Bot settings to enable Dynamics 365 integration
 
-1. [] Under **Configured permissions**, on the menu, select **Grant admin consent for Contoso**. 
+To update Azure Health Bot settings to enable Dynamics 365 integration, follow these steps:
 
-1. [] In the **Grant admin consent confirmation** dialog box, select **Yes**.
+1.	Select **Configuration > Conversation** on the left navigation bar, which will open the **Interactions** tab.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T2S13.png)
+![image](./IMAGES/Lab02/image38.svg)
 
-### Task 3. Create a new client secret and record secret and app Id values 
+2.	Select the **Human Handoff** tab in the **Conversation Configuration** settings.
 
-1. [] In the resource menu under **Manage**, select **Certificate & secrets**. 
+![image](./IMAGES/Lab02/image39.svg)
 
-1. [] On the menu, select **+ New client secret**. 
+3.	Scroll to the bottom of the **Human Handoff** page. Under **Dynamics 365 OmniChannel**, switch the **Bridge Messages** toggle to **Enabled**. This option is required to allow communication and bridge messages between the Azure Health Bot and Omnichannel for Dynamics 365 Customer Service. Select **Save** after enabling the feature.
 
-1. [] In the **Add a client secret** pane, in the **Description** box, enter +++Lamna Healthcare app secret+++ and then select **Add**. 
+![image](./IMAGES/Lab02/image40.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T3S3.png)
+4.	Go to **Integration > Channels** on the left navigation pane. Enable the Health Bot for the **Microsoft Teams** and **Omnichannel** channels.
 
-1. [] In the **Value** column, select the **Copy to clipboard** icon to copy the secret value to the clipboard and then paste the secret value in the following text box: 
+![image](./IMAGES/Lab02/image41.svg)
 
-    @lab.TextBox(AppSecret) 
+5.	In the **Channels** list, select the toggle to enable **Microsoft Teams.**
 
-    > [!ALERT] You <u>**must**</u> record the secret **value** now **AND** in a text editor like Notepad and on your own device. This value will be masked and not recoverable after you browse away from this page. You will need this value for later labs. 
+![image](./IMAGES/Lab02/image42.svg)
 
-1. [] In the resource menu, select **Overview**.
+6.	A pop-up window will appear with your **Bot ID** information. Copy and store the Bot ID value for later when you create the Dynamics 365 application user. Select **Create**.
 
-1. [] To the right of **Application (client) ID**, select the **Copy to clipboard** icon to copy the Application (client) ID to the clipboard and then paste the ID in the following text box: 
+![image](./IMAGES/Lab02/image43.svg)
 
-    @lab.TextBox(clientappid) 
+7.	In the **Channels** list, select the toggle to enable **Omnichannel**.
 
-    > [!NOTE] Record the application (client) ID now **AND** in a text editor like Notepad on your own computer. You will need this ID for later labs.
+![image](./IMAGES/Lab02/image44.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T3S6.png)
+8.	The Bot ID should be the same as the Teams channel, then select **Create** .
 
-### Task 4. Configure environment variables 
+![image](./IMAGES/Lab02/image45.svg)
 
-1. [] In Microsoft Edge, go to +++https://make.powerapps.com+++. Ensure you are in the MC4H Labs environment.
+Microsoft Teams and Omnichannel channels are enabled and active.
 
-1. [] In the left navigation, select **Solutions**. Select **Default Solution** to open it.
+![image](./IMAGES/Lab02/image46.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2aE2T4S2.png)
+You've completed the Azure Health Bot settings for integration with Microsoft Teams and Omnichannel for Dynamics 365 Customer Service.
 
-1. [] You should land on the **Objects** page. Search for +++variable+++ and select **Environment variables**.
+### Task: Obtain an Azure application ID
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2aE2T4S3.png)
+In this task, you'll be using the Azure application ID that you created in your Azure tenant during environment preparation. You might have called it "**MCH Application ID**". Registering this ID established a trusted relationship between your Dynamics 365 app and the Microsoft identity platform.
+You'll now obtain the client ID and store it to later create a Dynamics 365 application user to bridge the authentication between Azure Health Bot and Microsoft Power Apps.
 
-1. [] Select the **Virtual Visit Client ID** variable, and in the **Edit Virtual Visit Client ID** pane that opens on the right, enter +++@lab.Variable(clientappid)+++ in the **Default Value** field. Select **Save**.
+1.	Return to the Azure portal and search for **App registrations** in the search box. Select the **App registrations** service.
+ 
+![image](./IMAGES/Lab02/image47.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2aE2T4S4.png)
+2.	The **App registrations** homepage opens with the **Owned applications** tab.
 
-    > [!NOTE] Note: If there is already a value in the field, replace with this value.
+![image](./IMAGES/Lab02/image48.svg)
 
-1. [] Select the **Virtual Visit Secret** variable, and in the pane that opens, enter +++@lab.Variable(AppSecret)+++ in the **Default Value** field. Select **Save**.
+3.	Select the **All applications** tab and then enter **MCH Application ID** in the search box to search for your application ID.
 
-1. [] Select the **Virtual Appointment Scheduler Email** box, enter +++@lab.CloudCredential(WWLM365Enterprise2019wSPE_E).Username+++ in the **Default Value** field. Select **Save**.
+![image](./IMAGES/Lab02/image49.svg)
 
-### Task 5. Activate Flows and connection references 
+4.	Select the **MCH Application Id** app registration resource. Copy and store the **Application (client) ID** for later when you create the Dynamics 365 application user.
 
-1. [] On the Power Apps page, in the left navigation, select the left arrow, **Back to Solutions**, and then select **Solutions**. 
+**Note** - ID values have been removed in the screenshot for privacy purposes.
 
-1. [] On the menu, select **+ New solution**. 
+![image](./IMAGES/Lab02/image50.svg)
 
-1. [] In the **New solution** pane, in the **Display name** box, enter +++LamnaHealthcare+++ 
-
-1. [] Select the **Publisher** menu, select **CDS Default Publisher**, and then select **Create**. 
-
-1. [] If you are taken back to the **Solutions** list, to the right of **LamnaHealthcare**, select the ellipsis and then select **Edit**. 
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S5.png)
-
-1. [] On the menu, select **Add existing** > **Automation** > **Cloud flow**. 
-
-1. [] In the **Add existing cloud flows** pane, select **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status booked** and then select **Add**. 
-
-1. [] Hover over the cloud flow and then, on the left, select the checkbox. 
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S8.png)
-
-1. [] On the menu, select **Edit**. 
-
-1. [] In the **Welcome to Power Automate** dialog box, select **Get started**. 
-
-1. [] To the right of **Microsoft Dataverse** select **Sign in**. 
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S11.png)
-
-1. [] To the right of **Office 365 Users** select **Sign in**. 
-
-1. [] Select **Continue**. 
-
-1. [] Review the new flow and then, in the top right menu, select **Save**. 
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S14.png)
-
-1. [] Select the back arrow next to **CF -> Schedule Teams Meeting for instant and virtual, update record with url and status to booked**. 
-
-1. [] Reselect the flow and on the menu select **Turn on**. It may take 10-15 seconds for the flow to turn on and the page to refresh. If you receive a "Turn on Failed" message, try again. You may have to repeat this steps several times for the flow to turn on.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2E2T5S16.png)
-
-1. [] When complete, in the left navigation, select **&larr; Back to solutions**. If the navigation menu is collapsed, you will use the left arrow icon. 
-
-### Task 6: Obtain Azure Application ID
-
-In this task, you will be using the Azure Application ID you created in Task 1 in our Azure tenant called “**MCH Application Id**”. Registering this Id establishes a trusted relationship between your Dynamics 365 app and the Microsoft identity platform. Using this Id, you will later create a Dynamics 365 Application User to bridge the authentication between Azure Health Bot and Power Apps.
-
-1. [] Navigate back to the Azure Portal and search for +++**App Registrations**+++ in the **Search** box. If you have closed this tab or window, use +++https://portal.azure.com+++ in a new tab or window.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P22.png)
-
-1. [] You will be landed in the **App registration** homepage on the **Owned applications** tab.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P23.png)
-
-1. [] Select the **All applications** tab.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P24.png)
-
-1. [] To search for our Application Id, type +++**MCH Application**+++ in the **Search** box.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P25.png)
-
-1. [] Select the **MCH Application** app registration resource. Copy and store the **Application (client) ID** for later to use when creating the Dynamics 365 Application User.
-
-    > [!NOTE] Note: ID values have been removed in the screenshot for privacy purposes.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P26.png)
-
-**Congratulations!** You have successfully obtained the MCH Application ID from Application Registrations in the Azure Portal.
+You've successfully obtained the MCH Application ID from the **Application registrations** page in the Azure portal.

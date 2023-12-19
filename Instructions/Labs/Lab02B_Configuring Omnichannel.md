@@ -2,695 +2,799 @@
 
 ## Overview
 
-Dynamics 365 Omnichannel integration allows the patient to interact with Health Bot using the Dynamics 365 chat widget to access the medical knowledge and your custom scenarios. It also allows the escalation of a bot conversation to a live agent to continue the interaction. When escalating a conversation, Dynamics passes along the conversation history and the context to the agent.
-
-![](./IMAGES/Lab02/L2P1.png)
-
-This lab will focus on Lamna Healthcare Company.
-
-![Timeline Description automatically generated](./IMAGES/Lab02/L2P2.png)
-
 As stated in the Lab 2A, Lamna Healthcare Company is seeking to streamline their patient engagement capabilities by implementing Azure Health Bot to help improve processes and services, such as entering medication requests. By allowing patients to interact with this service, Lamna Healthcare Company will move one step closer to their goal of improving patient outcomes while reducing overall costs.
 
 In this lab, you'll play the role of a Lamna Healthcare IT developer and use the Azure Health Bot you configured in Lab2A to integrate with Dynamics 365 Omnichannel. This will complete the work for a medication refill scenario.
 
-## Learning objectives
 
-In this lab, you will:
+## Assign the Omnichannel agent security role
 
-- Configure Dynamics 365 Customer Service Omnichannel Live Chat
-- Embed Azure Health Bot in a Power Apps Portal
-- Extend Azure Health Bot with custom scenarios
+To assign the Omnichannel agent security role, follow these steps:
 
-## Exercise 1: Configure Omnichannel Live Chat
+1.	While in an InPrivate or Incognito browser, go to [Microsoft Power Apps](https://make.powerapps.com/)
 
-In this exercise, you will be configuring live chat for **Dynamics 365 Omnichannel for Customer Service**. Omnichannel for Customer Service offers a suite of capabilities that extend the power of Dynamics 365 Customer Service Enterprise to enable organizations to instantly connect and engage with their customers across digital messaging channels.
+2.	Select your environment from the **Environment** dropdown menu in the upper right.
 
-In the following tasks, you will complete the following:
+3.	Select the **gear icon** in the upper-right corner and then select **Advanced settings**.
+ 
+![image](./IMAGES/Lab02/image51.svg)
 
-1.  Assign Omnichannel agent security role
-2.  Create an Application User using the **MCH Application Id** and your **Bot ID**
-3.  Configure Queues for Bot and Agent Users
-4.  Configure a Context Variable and Routing rule to route the message either to a Bot or Agent.
+4.	A new window should open showing the **Business Management** section of Dynamics 365. If loading takes a while, reload the page.
 
-### Task 1: Assign Omnichannel Agent Security Role
+![image](./IMAGES/Lab02/image52.svg)
 
-1. [] While in the In-Private or Incognito window, navigate to +++https://make.powerapps.com/+++.
+5.	On the upper command bar next to Dynamics 365, select **Settings** to open the dropdown menu. Select **Security** in the third column under **System**.
 
-1. [] Ensure the correct environment from the upper right **Environment** dropdown is selected.
+![image](./IMAGES/Lab02/image53.svg)
 
-    ![](./IMAGES/Lab02/L2P27.png)
+6.	Under **Security**, select **Users**.
 
-1. [] Select the **gear** icon in the upper right corner and navigate to **Advanced Settings**.
+![image](./IMAGES/Lab02/image54.svg)
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P28.png)
+7.	Switch the grid view dropdown menu from **Omnichannel Users** to **Enabled Users** so that you can view the user in the list.
 
-1. [] A new window should open and navigate to Dynamics 365. It may take a while to load. If it’s been longer than a minute, stop and reload the page. It should then load faster. It will land you in the Business Management section of Dynamics 365.
+![image](./IMAGES/Lab02/image55.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P29.png)
+8.	In the **Enabled Users** list, scroll or use the search bar to find your user.
 
-1. [] On the top command bar next to **Dynamics 365**, select **Settings** to open the drop-down, then select **Security** in the third column under **System**.
+![image](./IMAGES/Lab02/image56.svg)
 
-    ![Screenshot of Dynamics 365 navigation to settings and security on command bar](./IMAGES/Lab02/L2P30.png)
+9.	Select your user for the training and then select **Manage Roles** on the upper command bar.
+ 
+![image](./IMAGES/Lab02/image57.svg)
 
-1. [] Under **Security**, select **Users**.
+10.	Select the **Omnichannel agent** role to assign to your user and then select **OK**.
 
-    ![Screenshot of Users option first in the list of security settings](./IMAGES/Lab02/L2P31.png)
+You've now assigned the correct Omnichannel agent role to the user, which will allow you to be a live agent in Omnichannel.
 
-1. [] Switch the dropdown from **Omnichannel Users** to **Enabled Users** for the grid view so that your user will show in the list. You may have to select the ellipsis next to Chart Pane to open the contectual menu and select System Views to make the view dropdown visible. This may take several minutes for the page to display.
+## Task: Create a Health Bot user in Dynamics 365 Customer Service
 
-    ![Screenshot of Switching view in drop down to from Omnichannel Users to Enabled Users](./IMAGES/Lab02/L2P32.png)
+You need to set up two users in Omnichannel for Customer Service:
 
-1. [] While in the **Enabled User** list, scroll to find the **Mod Administrator** or use the **Search** bar.
+1. **Health Bot User** - The Azure Health Bot user that you created in the previous exercise. This configuration will allow you to assign the bot as a user and take initial messages through live chat.
 
-    ![Screenshot of searching for user in enabled user list](./IMAGES/Lab02/L2P33.png)
+2. **Omnichannel Agent User** - The current user account that you've used to sign in to Dynamics 365. This configuration will allow you to be a live agent in Customer Service who receives messages from portal users through Azure bot escalations.
 
-1. [] Select your user for the training and select **Manage Roles** on the top command bar.
+In this task, you'll create a bot user, which will help you connect **Azure Health Bot** with **Omnichannel live chat.**
 
-    ![Screenshot of Selecting current IAD User in list and clicking Manage Roles button on command bar](./IMAGES/Lab02/L2P34.png)
+1.	Open a new tab and go to Power Platform admin URL -  [Microsoft Power Platform admin center.](https://admin.powerplatform.microsoft.com/)
 
-1. [] If necessary, select the **Omnichannel Agent** role to assign to your user and select **OK**.
+2.	Select **Environments** from the left navigation pane. Search for and select your Microsoft Cloud for Healthcare environment from the list.
 
-    ![Table Description automatically generated with medium confidence](./IMAGES/Lab02/L2P35.png)
+![image](./IMAGES/Lab02/image58.svg)
 
-**Congratulations!** You assigned the proper omnichannel agent role to your user to allow you to be a live agent in omnichannel.
+3.	On your **Environments > Details** page, select the **Settings** button on the upper command bar.
 
+![image](./IMAGES/Lab02/image59.svg)
 
-### Task 2: Create Health Bot User in Dynamics 365 Customer Service
+4.	Expand **Users + permissions** and then select **Application users**.
 
-We need two users to configure in Omnichannel for Dynamics 365 Customer Service:
+![image](./IMAGES/Lab02/image60.svg)
 
--   **Health Bot User** – This is the Azure Health Bot user we created in the previous exercise.
--   **Omnichannel Agent User** – This is your current user whom you are logged into Dynamics 365. This will allow you to be a live agent in Customer Service who receives messages from portal users through Azure Bot escalations. Note: For official trainings, this is your assigned user, MOD Administrator.
+5.	Select the **+ New app user** button to create a new application user.
 
-In this task, you will create a **Bot User** which helps connect **Azure Health Bot** with **Omnichannel live Chat**.
+![image](./IMAGES/Lab02/image61.svg)
 
-1. [] Go to +++https://admin.powerplatform.microsoft.com+++. Select your **MC4H Labs** environment from the list
-    
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P36.png)
+6.	Select **+ Add an app** on the **Create a new app user** page.
 
-1. [] You will land on your environments detail page.
+![image](./IMAGES/Lab02/image62.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P37.png)
+7.	Paste the **Application ID** (the Application (client) ID that you obtained in the Azure portal for the supplied MCH Application ID) into the search box and then select the app from the list. You can also search for **mch**. Select **Add**.
 
-1. [] Select the **Settings** button on the top command bar.
+![image](./IMAGES/Lab02/image63.svg)
 
-    ![Text, whiteboard Description automatically generated](./IMAGES/Lab02/L2P38.png)
+8.	Select a **Business unit** from the dropdown list (the options in the list will be unique for each Dynamics 365 environment). Select **Create** in the lower right of the page.
+ 
+![image](./IMAGES/Lab02/image64.svg)
 
-1. [] Expand **Users + permissions** and select **Application users**.
+9.	Return to the **Dynamics 365 User** page that you previously accessed through **Advanced settings**. Switch the view to **Enabled Users** if you're not already on it. Clear the search terms, if any.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P39.png)
+10.	While in the **Enabled Users** list, search for **MCH Application ID** or scroll to find the bot app user. Double-click the user or select the row and then select **Edit**.
 
-1. [] Select (**+**) **New app user** button to create a new Application User.
+![image](./IMAGES/Lab02/image65.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P40.png)
+11.	Above the username, change the form type from **User** to **Application User.**
 
-1. [] Select (+) **Add an app** on the create screen that slides out on the right side.
+![image](./IMAGES/Lab02/image66.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P41.png)
+A new form will appear, and the **User type** should show as **Application user.**
 
-1. [] Paste the **Application ID** (the Application (client) ID you obtained in the Azure portal for the supplied MCH Application ID) into the search box and select the app from the list. Select **Add** at the bottom right.
+![image](./IMAGES/Lab02/image67.svg)
 
-    ![Graphical user interface, text, application, Teams Description automatically generated](./IMAGES/Lab02/L2P42.png)
+12.	In the **User Information** section, change the User type from Application user to **Bot application** **user**. A new field called **Bot application ID** will display.
 
-1. [] Select a **Business unit** from the dropdown list (the options in the list will be unique for each Dynamics 365 environment). Select **Create** at the bottom right.
+![image](./IMAGES/Lab02/image68.svg)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P43.png)
+13.	Add your details to the **Bot application ID**. This ID is the Azure Health Bot ID that you previously noted when you enabled the Teams and Omnichannel channels. This field displays after **Bot application user** has been selected as the **User type.**
 
-1. [] Return to the **Dynamics 365 User** page, switch the view to **Enabled Users**. This may take several minutes for the page to display.
+![image](./IMAGES/Lab02/image69.svg)
 
-    ![Screenshot of Dynamics 365 navigation to settings and security on command bar](./IMAGES/Lab02/L2P43A.png)
-    
-    ![Screenshot of Users option first in the list of security settings](./IMAGES/Lab02/L2P43B.png)
+14.	Select **Manage Roles** on the command bar.
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P44.png)
+![image](./IMAGES/Lab02/image70.svg)
 
-1. [] While in the **Enabled User** list, scroll to find your **App user** (this is your MCH user, not the MOD admin user) or use the **Search** bar. Double-click on the user or select the row and click **Edit**.
+15.	Assign the **Omnichannel agent** role to the bot user as you did for your own user in the previous task. This action will allow the bot to act as an omnichannel agent like your user.
 
-    ![](./IMAGES/Lab02/L2P45.png)
+![image](./IMAGES/Lab02/image71.svg) 
 
-1. [] Change the form type from **User** to **Application User** above the User Name.
+16.	Select **OmniChannel Administrator** role for your user ID and MCH Application Id users.
+ 
+![image](./IMAGES/Lab02/image72.svg)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P46.png)
+You've successfully created a bot user and have assigned the Omnichannel agent role to it.
 
-1. [] You will see a new form appear that aligns to an Application User.
+## Task: Create and set up human agent queues
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P47.png)
+You can use queues to collect and distribute workload among agents. As a result, agents will be added as members to the queues and the workload will be distributed among the agents based on assignment methods. For more information, see [Manage queues for unified routing.](https://learn.microsoft.com/en-us/dynamics365/customer-service/queues-omnichannel?tabs=customerserviceadmincenter)
 
-1. [] In the **User Information** section, enter or select the following information and select the **Save** icon in the bottom right corner:
-    1. [] **User type**: Select **Bot application user**. This will *display a new field* to store the Bot application Id.
-    1. [] **Bot application ID**: This is the Azure Health BotId you copied when enabling the Teams channel. This field is displayed once the User Type is selected to be Bot application user.
+In this task, you'll create the omnichannel queue that's necessary for communicating with a human agent.
 
-        ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P48.png)
+1.	Switch back to the tab with [Power Apps](https://make.powerapps.com/) select Apps in the left navigation pane and open the **Customer Service admin center** app
 
-1. [] Select **Manage Roles** on the command bar.
+![image](./IMAGES/Lab02/image73.svg)
 
-    ![Graphical user interface, text, application, Word Description automatically generated](./IMAGES/Lab02/L2P49.png)
+2.	You should be on the **Home** page.  Select **Guided channel setup** on the left navigation pane and select **Start new.**
+ 
+![image](./IMAGES/Lab02/image74.svg)
 
-1. [] If necessary, assign the **Omnichannel Agent** role to the Bot User as you did for your own user in the previous task. This will allow the bot to act as an omnichannel agent like your user.
+3.	On the **Name your setup** page, in the **Setup name** field, enter the name as **Healthcare** **Training**. Select **Next**.
 
-    ![Table Description automatically generated with medium confidence](./IMAGES/Lab02/L2P50.png)
+![image](./IMAGES/Lab02/image75.svg)
 
-**Congratulations**! You successfully created a Bot User and assigned to it the Omnichannel Agent role.
+4.	Select **Chat** as the channel type. Select **Next**.
 
-### Task 3: Create and Configure Omnichannel Queues
+![image](./IMAGES/Lab02/image76.svg)
 
-In this task, you will create and configure the omnichannel queues necessary to communicate with the correct bot or agent depending on the situation.
+5.	Select **Continue** **setup** on the **Summary** page.
 
-1. [] In +++http://make.powerapps.com+++, select the **Omnichannel admin center** app. On the command bar or on the ellipsis menu for the app, select **Activate**, if necessary, and wait for the **Success** message. You may need to refresh your page. Then open the app. Do not edit the app.
+![image](./IMAGES/Lab02/image77.svg) 
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P51.png)
+6.	Select **Next** on the following two screens, which discuss creating user accounts and assigning security roles.
 
-1. [] Select **Queues** on the left navigation bar.
+![image](./IMAGES/Lab02/image78.svg)
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P52.png)
+![image](./IMAGES/Lab02/image79.svg)
 
-1. [] Open **Default Messaging Queue**.
+7.	In the  Define a queue page, create a queue called **Escalate to Human,** which will manage and redirect the incoming messages from a user to a Customer Service (human) agent when the bot sends the user through to a live agent. Create the new queue with the following details:
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P53.png)
+    o	**Name** - Escalate to Human
 
-    We will now associate the Default messaging queue with the Bot User so it will respond to incoming messages from customers without agent (human) intervention.
+    o	**Type** - It will default to **Messaging**
 
-1. [] Select **Add users** on the **Users** subgrid to add the Bot user you previously created.
+8. Select  **Next**.
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P54.png)
+![image](./IMAGES/Lab02/image80.svg)
 
-1. [] In the **Add Users** pane, search for your Bot User (**MCH Application**) created in the earlier task.
+9.	Select your user to add to the queue. Select **Next**.
 
-1. [] Select the record from the list and select **Add**.
+![image](./IMAGES/Lab02/image81.svg)
 
-    ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab02/L2P56.png)
+You've now created the necessary queue to escalate to a human agent and have added your user to the messaging queue. Now, you can create the workstream to initially route to a virtual bot, along with routing rules to direct the user to the **Escalate to Human** queue in the proper conditions.
 
-1. [] You should now see the Bot User (**MCH Application**) in the **Users** list.
+## Task: Update the live workstream with context variables and routing rules
 
-    > [!NOTE] Note: If the user does not populate after adding, make sure you assigned the omnichannel agent security role to the bot user in the previous task (it may take up to 15 minutes for changes to take effect).
+A workstream is a container to enrich, route, and assign work items, and it's associated with a channel, such as live chat, voice, or case. After a bot has been added to a workstream, the incoming work item will be routed to the selected bot at runtime based on classification rules. For more information, see [Create workstreams for unified routing.](https://learn.microsoft.com/en-us/dynamics365/customer-service/create-workstreams?tabs=customerserviceadmincenter)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P57.png)
+In this task, you'll set up basic chat routing with a new workstream. This setup will allow users to chat with a bot user initially and then route to a live human agent in the proper situation.
 
-1. [] Go back to the **Queues** grid. Select **+ New queue** to create a new Queue.
+You'll complete the following tasks:
 
-    ![Graphical user interface, application Description automatically generated with medium confidence](./IMAGES/Lab02/L2P58.png)
+1. Create a new channel and workstream.
 
-1. [] Give the new Queue the following details:
-    1. [] **Name**: +++Escalate To Human+++
-    1. [] **Type**: Messaging
-    1. [] **Group number**: 1
-    1. [] Select **Create**.
+2. Turn on proactive chat for the channel.
 
-        ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P59.png)
+3. Add a bot for initial routing: Initial customer conversation is directed to the Azure Health Bot.
 
-1. [] A **Users** subgrid should appear. If your user is not visible, select **Add Users** in the subgrid.
+4. Create a context variable and routing rule to escalate to a human agent. When context variable **EscalateToAgent** is present and set to **1**, you'll route to the **Escalate to Human** queue that you previously set up with your user so that an agent can continue the conversation.
 
-1. [] Search for and add your **MOD Administrator** user to the queue. The user is now added to the queue with the agent role.
+1.	While continuing the guided setup from the previous task, enter a **Chat name** and **Chat language** for your channel and a workstream **Name**. Keep the **Work distribution mode** as **Push** and then select **Next**.
 
-    The queue **Escalate To Human** is created to manage and redirect the incoming messages from a user to a Customer Service (human) Agent when Bot sends the user through to a live agent.
+    o	**Chat name** - Chat Widget
 
-    ![A screenshot of a computer Description automatically generated](./IMAGES/Lab02/L2P60.png)
+    o	**Workstream Name** - Chat Workstream
 
-**Congratulations!** You have created the necessary queue to escalate to human agent and added the appropriate users to each messaging queue.
+![image](./IMAGES/Lab02/image82.svg)
 
+2.	Define a ruleset that will allow work from this channel to be routed to the **Escalate to Human** queue. Name the **Routing rules as Human Agent** and the **Rule item** as **Human Agent Rule**. Select **Next**.
 
-### Task 4: Update Live Work Stream with Context Variables and Routing Rules
+![image](./IMAGES/Lab02/image83.svg)
 
-Workstreams are containers to enrich, route, and assign work items. A workstream is associated with a channel, such as live chat, voice, or case. After a bot is added to a workstream, the incoming work item is first routed to the selected bot at runtime based off classification rules. For more information, see Create workstreams for unified routing on Microsoft Learn.
+**Note** – On **Define a Chatbot** page select **Skip for now** and select **Next**.
+ 
+![image](./IMAGES/Lab02/image84.svg)
 
-In this task, we will set up basic chat routing. This will allow for users to chat with a bot user in certain cases and a live human agent in other scenarios. The routing rules will allow chat to behave as follows:
+3.	It will take a moment for the system to create the chat channel and workstream. When the process is complete, make sure that you **Copy** the c**hat widget snippet** **code** and store it for later. Select **Go to home**.
 
--   **Route to Bot:** Initial customer conversation is through Health Bot in the default messaging queue. When the chat bot is first opened, route to Default queue which only contains the bot user (agent).
--   **Human Routing Rule**: When context variable **EscalateToAgent** is present and set to 1, we route to the queue that has only human users (agents) who can take over conversation.
+![image](./IMAGES/Lab02/image85.svg)
 
-1. [] Navigate to **Workstreams**.
+4.	You still need to set up a few components for the routing to happen correctly:
 
-    ![Table Description automatically generated](./IMAGES/Lab02/L2P61.png)
+  	o	Enable proactive chat for the chat channel so that the bot can prompt the user.
 
-1. [] Select **+ New Workstream** on the command bar.
+    o	Add the bot user in the default messaging queue so that conversations initially route to the bot.
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT01.png)
-    
-1. [] Enter the following details for the new workstream and select **Create**:
-    1. [] **Name**: +++Chat Workstream+++
-    1. [] **Type**: Messaging
-    1. [] **Channel**: Chat
-    1. [] **Work distribution mode**: Push
+    o	Add the default messaging queue as the fallback queue for the new workstream.
 
-        ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT02.png)
+    o	Define the routing rule in the workstream for escalating to a human agent.
 
-1. [] On the **Chat Workstream** record, you must set up your chat channel. Select **Set up chat** under **Live chat**.
+5.	Go to **Overview** on the left navigation. Select **Chat** in the **Channels** section to view all chat channels.
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT03.png)
+![image](./IMAGES/Lab02/image86.svg)
 
-1. [] The Live Chat setup screen will open. Enter the channel details as follows and select **Next**:
-    1. [] **Name**: +++Chat Widget+++
-    1. [] **Language**: English – United States
+6.	Select the newly created chat channel, **Chat Widget**, and then select **Edit** on the command bar.
 
-        ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT04.png)
+![image](./IMAGES/Lab02/image87.svg)
 
-1. [] On the following screen, toggle to enable **Proactive chat**. 
+7.	In the **Chat channel settings** form, select the **Chat widget** tab and then turn on **Proactive chat**. This setting will allow the bot to prompt the user on the website where it’s embedded. Select **Copy** to copy the chat widget code and store it for later use, if you haven’t done so already. Select **Save** **and close.**
 
-1. [] Select **Next** to see the **Behaviors** settings you can customize for your bot, including automated messages and surveys. No need to customize anything here now.
+![image](./IMAGES/Lab02/image88.svg)
 
-1. [] Select **Next** to see the **User features** that can be defined for the bot. Nothing is needed here now.
+8.	Return to **Overview** on the left navigation pane. Scroll down to **Workstreams** and then select **Chat**.
+ 
+![image](./IMAGES/Lab02/I89.png)
 
-1. [] Select **Next**, review your settings and select **Create channel**.
+9.	Select **Chat Workstream** and then select **Edit**.
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT05.png)
-        
-1. [] Once the chat channel is successfully created, copy the script of the chat **widget**, and save it somewhere like Notepad. You will use this in Exercise 2. Select **Done** to close the wizard.
+![image](./IMAGES/Lab02/image90.svg)
 
-1. [] In your new **Chat Workstream** record, select **Add Bot** to add the Azure Health bot for initial routing.
+10.	In the **Chat Workstream** record, select **Edit** for the **Fallback queue.**
+ 
+![image](./IMAGES/Lab02/image91.svg)
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT06.png)
+11.	Select the **Default messaging queue(All users)** from the **Choose existing** dropdown menu. Select **Save and close.**
+ 
+![image](./IMAGES/Lab02/image92.svg)
 
-1. [] Find and select your bot. Select **Save and close**.
+12.	The updated fallback queue will display. Select **+ Add bot** to add the Azure Health Bot for initial routing.
+ 
+![image](./IMAGES/Lab02/image93.svg)
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT07.png)
+13.	Select your bot user from the **Name** dropdown menu. Select  Connect. 
+ 
+![image](./IMAGES/Lab02/image94.svg)
 
-1. [] Expand **Advanced settings** to see the **Smart assist bots** subgrid. Select **Add Bot**, ensure **MCH Application** is selected and select **Add**.
+14.	The bot user has been added. Now, you’ll need to edit the ruleset so that the queue properly escalates to a human agent. First, you’ll need a number variable to use with your escalation logic. On the lower-left corner of the **Workstream** page, select **Show advanced settings.**
+ 
+![image](./IMAGES/Lab02/image95.svg)
 
-1. [] Now we want to define a new context variable and routing rule. Select **+ Add Context variable**.
+![image](./IMAGES/Lab02/image96.svg)
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT08.png)
+15.	Review the advanced settings for the workstream and then select **+ Add context variable.**
+ 
+![image](./IMAGES/Lab02/image97.svg)
 
-1. [] In the context variable flyout, select **+ Add** to add new context variable.
+16.	In the **Add context variable** screen, select **+ Add**. Create the new context variable, which you’ll use to determine whether you need to escalate to an agent or not. Enter **EscalateToAgent** as the **Name** and then select **Number** from the **Type** dropdown menu. Select **Create**.
+ 
+![image](./IMAGES/Lab02/image98.svg)
 
-1. [] Create the new Context Variable with the following details and select **Create**:
-    1. [] **Name**: +++EscalateToAgent+++
-    1. [] **Type**: Number
+17.	The **EscalateToAgent** context variable of the **Number** type should show as added. Close the **Context variables** screen.
 
-        ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT09.png)
+![image](./IMAGES/Lab02/image99.svg)
 
-1. [] Close the context variable panel. You should now see the new EscalateToAgent context variable in the live chat workstream. 
+18.	On the workstream record, select Show **Advanced Settings** to collapse it. Select **Human Agent** under **Ruleset name.**
+ 
+![image](./IMAGES/Lab02/image100.svg)
 
-1. [] Select **Advanced Settings** to collapse to the main page.
+19.	Select **Human Agent Rule** and then select **Edit**.
+ 
+![image](./IMAGES/Lab02/image101.svg)
 
-1. [] In the **Routing rules** subgrid, next to **Route to queues**, select **+Create ruleset**.
+20.	**Delete** the initial condition in the rule to start with a blank canvas. The logic to follow is having the workstream route the chat channel to a human agent if the **EscalateToHuman** context variable is equal to **1** in any bot conversation.
+ 
+![image](./IMAGES/Lab02/image102.svg)
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT10.png)
+21.	Select **Add > Add related entity** to add a new condition.
+ 
+![image](./IMAGES/Lab02/image103.svg)
 
-1. [] Create the new route-to-queues ruleset with the following details and select **Create**:
-    1. [] **Name**: +++Human Agent+++
-    1. [] **Description**: +++Escalate To Human+++
+22.	Select **Context item value (Conversation)** from the dropdown menu to have the routing rule check if conversation context values contain specific data.
 
-        ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT11.png)
+23.	After you select **Context item value (Conversation)**, the following dropdown menu will populate with **contains data** and a sub condition will appear. Select the new **EscalateToAgent** context variable, and then set it as **Equals** to **1** in the condition. This setting will allow bot conversations to route to a human agent if that variable is ever set to **1**. You’ll view this result in the last exercise in this module. Select **Save and close**.
 
-1. [] In the new **Human Agent** queue ruleset, select **+ Create rule**.
+![image](./IMAGES/Lab02/image104.png)
 
-1. [] Name the new rule +++**Human Agent Rule**+++.
+The Chat Workstream will show **Human Agent Rule** with the condition that will escalate to a human agent when the context variable is set to 1.
+ 
+![image](./IMAGES/Lab02/image105.png)
 
-1. [] Under **Conditions**, choose **Add related entity** from the dropdown.
+You’ve now created a new chat channel, workstream, queue, context variable, and routing rule that will allow customers to begin a conversation with a health bot and escalate to a human agent.
 
-1. [] In the first two dropdowns, choose **Context item value** and **Contains data**. In the inline condition, choose **EscalateToAgent Equals 1**.
+### Embed Azure Health Bot in the Power Apps portal
 
-1. [] In the **Route to queues** section, choose **Escalate to Human** queue created previously. 
+In this exercise, you’ll embed the **Omnichannel Chat Widget** into the Power Apps Customer self-service portal by using the Portal Management configuration. In your environment, you created a Lamna Healthcare Company portal by using the **Customer self-service** portal template before deploying Microsoft Cloud for Healthcare. 
 
-1. [] The configured rule set is shown below. Select **Create**.
+Now, you’ll set up the chat widget to show on the customer website.
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT12.png)
+•	**Customer self-service portal** – Enables customers to access self-service knowledge and support resources, view the progress of their cases, and provide feedback.
 
-1. [] The Chat Workstream now has a Human Agent ruleset that will escalate to a human agent when the EscalateToAgent context variable is set to 1
+•	**Portal Management** – Application to help you get started with the advanced portal configuration. In this exercise, you’ll learn how to set up the chat widget in the **Portal Management** app.
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2bNT13.png)
+Follow these steps to complete the exercise:
 
-**Congratulations!** In this exercise, you have successfully configured Customer Service Omnichannel Live chat by creating the necessary Users, Queues, Work Streams, Context Variables, Routing Rules, and Chat Widget. These all work together and allow patients to chat with a virtual health bot with the option to escalate up to a human agent if needed.
+1.	In [Power Apps,](https://make.powerapps.com/) select Apps in the left navigation pane and open the **Portal Management** app
 
-===
+![image](./IMAGES/Lab02/image106.svg)
 
-## Exercise 2: Embed Health Bot in Power Apps Portal
+2.	Select **Content Snippets** in the left navigation pane. Enter **chat** in the search box and then press the **Enter** key. Two **Chat Widget Code** records( **Healthcare Patient Portal** and the **Lamna healthcare Patient portal** you created) will be visible in the list as highlighted in the below screenshot.
+ 
+![image](./IMAGES/Lab02/image107.svg)
 
-In this exercise, you will be embedding the **Omnichannel Chat Widget** into the Power Apps Customer self-service portal using Portal Management configuration. In your environment, we created a Lamna Healthcare Company Portal using the **Customer self-service portal** template before deploying Microsoft Cloud for Healthcare. Now we will configure the chat widget to show on the customer website.
+3.	Select and edit each **Chat Widget** **Code** record, one at a time, to modify the **Value** contents with the chat widget code snippet that you previously saved. You can find the snippet in the Chat Workstream in the Customer Service admin center again if needed.
 
-Customer self-service portal: A customer self-service portal enables customers to access self-service knowledge, support resources, view the progress of their cases, and provide feedback.
+ 
+![image](./IMAGES/Lab02/image108.svg)
 
-Portal Management: Application to help you get started with the advanced portal configuration. In this walk-through, you will learn how to configure Chat widget in Portal Management app.
+4.	In each **Chat Widget Code** record, under **Value** **(HTML)**  paste the chat widget code snippet that you previously copied and saved. The Health Bot that you created is embedded in the Customer self-service portal and the Healthcare Patient Portal templates, whichever your portal website is currently set to show. Select **Save & Close.**
+ 
+![image](./IMAGES/Lab02/image109.svg)
 
-1. [] In +++http://make.powerapps.com+++, open the **Portal Management** app. It may need to be activated.
+5.	Repeat the same step for the other  chat widgets so that it will show on both website templates: the Healthcare Patient Portal and the one that's associated with your current Customer self-service template.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P77.png)
+ 
+![image](./IMAGES/Lab02/image110.svg)
 
-1. [] Select **Content Snippets** in the left navigation pane
+6.	Test to ensure that the chat widgets are properly embedded. Go to Power Apps and select to open **Lamna Healthcare Patient Portal**
 
-    ![Table Description automatically generated with medium confidence](./IMAGES/Lab02/L2P78.png)
+![image](./IMAGES/Lab02/image111.svg) 
 
-1. [] In **Active Content Snippets**, type: +++**Chat**+++ in the **Search** box and press **Enter**.
+7.	The Azure Health Bot should display the **Let's Chat** button in the lower-right corner of the screen. The chat widgets are successfully embedded into the Customer self-service portal.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P79.png)
+![image](./IMAGES/Lab02/image112.svg) 
 
-1. [] You will see two **Chat Widget Code** records retrieved in the list. Select to open the Chat Widget Code record related to **Lamna Healthcare Patient Portal**.
+8.	Test that the bot is properly connected. Go to your Health Bot management portal that you have created before from Azure Portal. Select **Configuration > Conversation** left navigation pane. Scroll down to the **Automatic welcome** section and enter a greeting for the portal user as **Hello! This is a test**. Select **Save** on the command bar.	
 
-    ![Table Description automatically generated with low confidence](./IMAGES/Lab02/L2P80.png)
+![image](./IMAGES/Lab02/image113.png) 
 
-1. [] In the **Chat Widget Code** record associated with **Lamna Healthcare Patient Portal**, select **Value (HTML) > Html** tab and then paste the Chat Widget Code snippet that you copied and stored in Task 4 of Exercise 1.
+9.	Return to Lamna Healthcare Patient Portal with the Customer self-service template. Refresh the page and select the **Let's Chat** widget, and the **welcome message** should greet you in the chat.
 
-    ![Graphical user interface, text, application, Teams Description automatically generated](./IMAGES/Lab02/L2P81.png)
+![image](./IMAGES/Lab02/image114.svg) 
 
-1. [] Select **Save & Close**.
+In this exercise, you've successfully updated the chat widget in the Power Apps portal content snippets. With this configuration, the Health Bot will be visible on the Power Apps portal for the Customer self-service template and the Healthcare Patient Portal template.
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P82.png)
+## Extend Azure Health Bot with custom scenarios
 
-1. [] Now open the other **Chat Widget Code** associated with the **Healthcare Patient Portal** website.
+Integration with Omnichannel for Dynamics 365 Customer Service allows the patient to interact with the Azure Health Bot by using the Dynamics 365 chat widget to access medical information and your custom scenarios. It also allows the escalation of a bot conversation to a live agent to continue the interaction. When a conversation is escalated, Dynamics passes along the conversation history and the context to the agent.
 
-    ![A picture containing text Description automatically generated](./IMAGES/Lab02/L2P83.png)
+In this exercise, you'll complete the following tasks:
 
-1. [] In the **Chat Widget Code** record associated with the **Healthcare Patient Portal**, in the **Value (HTML) > HTML** tab, paste the same Chat Widget Code snippet that you copied and stored previously and added to the Lamna Healthcare Patient Portal chat widget code. Replace any value that may have already populated the field.
+1.	Design the following Health Bot scenario called **MCH_PatientService.**
 
-    ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab02/L2P84.png)
+    o	**Intro** statement card - Triggers a welcome message to the customer.
 
-1. [] Select **Save and Close**.
+    o	**MedOrAgent** card - Prompts with the **Medication refill** or **Live Agent** action authored card.
 
-**Congratulations!** In this exercise you have successfully updated the chat widget in the Power App Portal Content Snippets. With this configuration, the Health Bot will be visible on the Power Apps portal for both the customer self-service template and the healthcare patient portal template.
+    o	**IsMedRefill** decision card - Checks the variable and submits a medication refill or starts live chat.
 
-===
+    o	**Submit** card - Prompts an adaptive card message (input text) with name, email, and medication name.
 
-## Exercise 3: Extend Azure Health Bot with Custom Scenarios
+    o	**Live Chat** card - Communicates to the customer that they're being directed to a live agent.
 
-**Dynamics 365 Omnichannel** integration allows the patient to interact with **Azure Health Bot** using the Dynamics 365 chat widget to access the medical knowledge and your custom scenarios. It also, allows the escalation of a bot conversation to a live agent to continue the interaction. When escalating a conversation, Dynamics passes along the conversation history and the context to the agent.
+    o	**Confirmation** card - Repeats information that has been gathered from the submission and then thanks the customer.
 
-In this exercise, you will be doing the following:
+    o	**Escalate** card - Triggers an **escalate to live agent** message on Omnichannel for Customer Service.
 
--   Designing the below Health Bot Scenario called **MCH_PatientService**
+2.	Design another Health Bot scenario called **MCH_PatientServiceWelcome**. This scenario holds the starting statement that will allow the user to invoke the **MCH_PatientService** scenario.
 
-    ![Diagram Description automatically generated](./IMAGES/Lab02/L2P92.png)
+3.	Set the **Automatic Welcome Scenario** to be the **MCH_PatientServiceWelcome** custom scenario that you create. This setting will begin the scenario when a user first interacts with the Health Bot.
 
--   Design another Health Bot Scenario called **MCH_PatientServiceWelcome**. This scenario holds the starting statement which will allow the user to invoke the **MCH_PatientService** scenario.
--   Set the **Automatic Welcome Scenario** to be the MCH_PatientServiceWelcome custom scenario you create. This will begin the scenario when a user first interacts with the Health Bot.
+## Task: Create the MCH_PatientService scenario
 
-### Task 1: Create MCH_PatientService Scenario
+In this task, you'll create the **MCH_PatientService** bot scenario by using the designer canvas.
 
-In this task, you will create the **MCH_PatientService** bot scenario using the designer canvas.
+1.	Return to the **Azure Health Bot** instance home page where you set the bot settings. This link is the portal management link that you copied from the Azure portal. Select **Create new scenario** on the landing page. If you aren't on the landing page, you can go to **Scenario > Manage** on the left navigation pane.
 
-1. [] Navigate back to the Azure **Health Bot instance** homepage where you set the bot settings. This is the portal management link you copied from the Azure portal.
+![image](./IMAGES/Lab02/image115.svg) 
 
-    > [!NOTE] Note: If you do not have this link, open +++https://portal.azure.com+++, select Azure Health Bot under Azure services, and select the health bot your created earlier.
+2.	Enter **MCH_PatientService** as the **Name** and the **Scenario ID** for the new Health Bot scenario.
 
-    ![Text Description automatically generated](./IMAGES/Lab02/L2P93.png)
+![image](./IMAGES/Lab02/image116.svg) 
 
-1. [] Select to expand the side navigation bar. Navigate to **Scenario > Manage**.
+3.	Design the scenario conversation, which should take you directly to the designer. If not, select the **MCH_PatientService** scenario in **Scenarios > Manage** to edit.
+ 
+![image](./IMAGES/Lab02/image117.png)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P94.png)
+**Step: Add a bot introduction statement**
 
-1. [] Select **+ New** button on the top ribbon.
+In this step, you'll add a bot introduction statement.
 
-    ![Graphical user interface, text Description automatically generated](./IMAGES/Lab02/L2P95.png)
+1.	Click on the **Plus(+)** symbol.
+ 
+![image](./IMAGES/Lab02/image118.svg)
 
-1. [] Provide the following details for the new health bot scenario and select **Create**:
-    1. [] **Name**: +++MCH_PatientService+++
-    1. [] **Scenario ID**: +++MCH_PatientService+++
+2.	Add a beginning statement to the scenario by selecting the plus (+) sign in the center of the canvas and then by going to **Conversational elements > Statement**.
 
-        ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P96.png)
+![image](./IMAGES/Lab02/image119.svg) 
 
-1. [] It should navigate you directly to the designer. If not, select the MCH_PatientService scenario in **Scenarios > Manage** to edit. Now let’s design the scenario conversation. 
+3.	In the **Display text** box, enter the following message: **Hi there, I'm your Healthcare Assistant.**
 
-    ![A screenshot of a computer Description automatically generated](./IMAGES/Lab02/L2P97.png)
+4.	Select the pencil icon next to Statement in the upper bar and change the Title to Intro. Select Save.
+ 
+![image](./IMAGES/Lab02/image120.svg)
 
-#### Step 1: Add Bot Introduction Statement
+5.	The Intro statement will be added to the designer canvas. Double-click if you need to edit any item on the canvas.
+ 
+![image](./IMAGES/Lab02/image121.svg)
 
-1. [] Select **+ Add element > Conversational elements > Statement** to add a beginning **Statement** to the scenario to the editor.
+**Step: Add a statement for a medication request or a live agent**
 
-    ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P98.png)
+This section prompts two buttons: **Medication Refill** and **Live Agent.** When a user selects either button, the appropriate text to the **MedicationOrAgent** variable will be set.
 
-1. [] Enter the **Display Text**: +++Hi there, I’m your Healthcare Assistant.+++
+1.	Add a prompt to the user by right clicking the canvas or by selecting **Add element > Conversational elements > Prompt**.
 
-1. [] Select the **pencil** next to **Statement** in the top bar and change Title to **Intro**.
+![image](./IMAGES/Lab02/image122.svg) 
 
-    ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P99.png)
+2.	Enter the following details:
 
-1. [] Select **Save**. You will see the intro statement added to the designer canvas. To edit it, you can double-click anytime.
+    o	**Display text** - Would you like to request a medication refill or chat with a live agent?
 
-#### Step 2: Add Prompt for Medication Request or Live Agent
+    o	**Input variable** - MedicationOrAgent
 
-This section prompts two buttons Medication Refill and Live Agent. When user click any one of the buttons it will set the appropriate text to the variable MedicationOrAgent.
+    o	**Input type** - String
 
-1. [] Select **Add element > Conversational elements > Prompt** icon to add a prompt.
+    o	**Title** - Rename to MedOrAgent
+ 
+![image](./IMAGES/Lab02/image123.svg)
 
-    ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P101.png)
+3.	Scroll down and select the **Add Cards** button.
 
-1. [] Enter the following details:
-    1. [] **Display Text**: +++Would you like to request a medication refill or chat with a live agent?+++
-    1. [] **Input variable**: +++MedicationOrAgent+++
-    1. [] **Input type**: string
-    1. [] Rename Title to +++**MedOrAgent**+++.
+![image](./IMAGES/Lab02/image124.svg) 
 
-1. [] Select **Add Cards**.
+4.	Select **Hero Card** from the **Card type** dropdown menu. Leave the title blank because you're already prompted with the display text. Select the plus (+) icon to add new actions so that the user can select a response to send to the bot.
 
-    ![A picture containing chart Description automatically generated](./IMAGES/Lab02/L2P103.png)
+![image](./IMAGES/Lab02/image125.svg)
 
-1. [] Select **Card Type** as **Hero Card.** Leave title blank as we already prompted with display text.
+5.	Select the plus (+) icon twice to add two actions. For the first action, select the following values:
 
-    ![A picture containing chart Description automatically generated](./IMAGES/Lab02/L2P103b.png)
+    1.	**Action type** - imBack
 
-1. [] Select **Add Action** button twice to add two actions.
+    2. **Action value** - MedicationRefill
 
-1. [] For the first action, select the following:
-    1. [] **Action type**: imBack
-    1. [] **Action value**: +++MedicationRefill+++
-    1. [] **Action title**: +++"Medication Refill"+++
+    3. **Action title** - "Medication Refill"
 
-1. [] For the second action, fill in the following:
-    1. [] **Action type**: imBack
-    1. [] **Action value**: +++LiveAgent+++
-    1. [] **Action title**: +++"Live Agent"+++
+6. For the second action, fill in the following values:
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P104.png)
+   1. **Action type** - imBack
 
-1. [] Select **Ok** and then **Save** to get back to designer.
+   2. **Action value** - LiveAgent
 
-1. [] Select the bottom circle on **Intro** and drag it to the top circle on the new prompt, **MedOrAgent** to connect them. An arrow will automatically appear when you try to connect Intro and MedOrAgent boxes using ellipse pointer.
+   3. **Action title** - "Live Agent"
 
-    ![Diagram Description automatically generated](./IMAGES/Lab02/L2P107.png)
 
-1. [] Select **Save**.
+5.  Select **OK** to return to the prompt details. The Hero Card should be defined.	
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](./IMAGES/Lab02/L2P108.png)
+![image](./IMAGES/Lab02/image126.svg)
 
-1. [] Select **Run** to see the output in the WebChat on the right.
+6.	Select **Vertical** from the **Cards layout** dropdown menu. Select **Save**.
 
-    ![Diagram Description automatically generated](./IMAGES/Lab02/L2P109.png)
+![image](./IMAGES/Lab02/image127.svg) 
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P110.png)
-    
-1. [] Select the Refresh button on the title bar of the chat window to clear the chat for the next text.
+7.	Move the **Intro** box above the **MedOrAgent** box and connect them. To do so, select the bottom circle on **Intro** and drag it to the top circle on the new prompt. An arrow automatically appears when you try to connect the **Intro** and **MedOrAgent** boxes. Select **Save** in the menu, which might have changed to an ellipsis (...).
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P110b.png)
+ 
+![image](./IMAGES/Lab02/image128.svg)
 
-#### Step 3: Add MedicationOrAgent Decision Branch
+8.	Remember to save often because the scenario won't auto save. Now that the scenario has been saved, the run command should be enabled. Select **Run** from the menu to view the output in the Web Chat on the right.
 
-This section checks whether the user has clicked Medication Refill or Live Agent with the help of the variable MedicationOrAgent. It will redirect the message accordingly.
+![image](./IMAGES/Lab02/image129.svg)
 
-1. [] Add a **Branch** to the designer canvas.
+The test welcome message should display from the previous exercise along with the new statement and prompt asking for a medication refill or chat with an agent.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P111.png)
+![image](./IMAGES/Lab02/image130.svg)
 
-1. [] Enter the following in the javascript Boolean expression: +++scenario.MedicationOrAgent === "MedicationRefill"+++
+**Step:** **Add a MedicationOrAgent decision branch**
 
-1. [] Rename to +++IsMedRefill+++. Select **Save**.
+This step checks whether the user has selected **Medication Refill** or **Live Agent** with the help of the **MedicationOrAgent** variable. It will redirect the message according to the selection.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P112.png)
+1.	Right-click the canvas to bring up the menu, select **Flow control elements > Branch** to allow your logic to proceed in two different directions.
 
-1. [] Select and drag the bottom circle of the **MedOrAgent** prompt to the top circle of the **IsMedRefill** branch decision to connect them. Select **Save**.
+![image](./IMAGES/Lab02/image131.svg) 
 
-    ![Diagram Description automatically generated](./IMAGES/Lab02/L2P113.png)
-    
+2.	Enter the following expression in the **Javascript Boolean expression** box: **scenario.MedicationOrAgent === "MedicationRefill"**
 
-#### Step 4: Prompt User to Enter Data for Medication Refill Option
+3.	Rename the branch to **IsMedRefill** and then select **Save**.
+ 
+![image](./IMAGES/Lab02/image132.svg)
 
-1. [] Add a **Prompt** element. This will be used to display the Form data (using Adaptive Card) to capture Patient name, email, and phone to create an appointment.
+4.	Place the IsMedRefill below MedOrAgent. Select and drag the bottom circle of the **MedOrAgent** prompt to the top circle of the **IsMedRefill** branch decision to connect them.
+ 
+![image](./IMAGES/Lab02/image133.svg)
 
-    ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P114.png)
+**Step:** **Prompt the user to enter data for the medication refill option**
 
-1. [] Add the following details and select **Add Cards**:
-    1. [] **Input variable**: +++formData+++
-    2. [] **Input Type**: Object
-    3. [] Change Title to +++Submit+++
-    4. [] Do not add any display text since the adaptive card will display instead
+Your next step is to prompt the user to enter data for the medication refill option by following these steps:
 
-        ![Graphical user interface, text, application, email, Teams Description automatically generated](./IMAGES/Lab02/L2P115.png)
+1.	Add a **Prompt** element that will be used to display the form data (by using an Adaptive Card) to capture the patient's name, email, and phone number to create an appointment.
 
-1. [] Select **Adaptive Card** in **Card Type**.
+![image](./IMAGES/Lab02/image134.png) 
 
-1. [] In **C:/Labfiles**, open **AdaptiveCardForMedicationRefill.txt** and copy the json content and paste it in the json section of your card.
+2.	Add the following details. When you're finished, select the **Add Cards** button.
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P116.png)
+    o	**Input variable** - formData
 
-1. [] Select **OK** and **Save** to get back to the designer.
-  
-1. [] Connect the **Yes** condition of the **IsMedRefill** branch to the **Submit** prompt.
+    o	**Input type** - Object
 
-    ![Diagram Description automatically generated](./IMAGES/Lab02/L2P117.png)
+    o	**Title** - Submit
 
-1. [] Save and run your current scenario. If you don’t save the scenario first, it won’t run with updates since the last save. If you haven’t saved at all, it won’t recognize any conversation.
+![image](./IMAGES/Lab02/image135.svg)
 
-1. [] Select the  **Medication Refill** card when prompted. The AdaptiveCard will be displayed.
+3.	Change the **Card type** to **Adaptive Card**. Add the following **JSON** to your card to show multiple fields of input for the user in an appealing format. Select **OK**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P119.png)
+JSON for adaptive card:
 
-#### Step 5: Add Confirmation Statement
+{ 
 
-1. [] Add a **Statement** element.
+"$schema": "http://adaptivecards.io/schemas/adaptive-card.json", 
+    "type": "AdaptiveCard", 
+    "version": "1.0", 
+    "body": [
+    {
+    "type": "ColumnSet",
+    "columns": [
+        {
+        "type": "Column",
+        "width": 2,
+        "items": [
+            {
+            "type": "TextBlock",
+            "text": "Tell us about yourself",
+            "weight": "bolder",
+            "size": "medium"
+            },
+            {
+            "type": "TextBlock",
+            "text": "We just need a few more details to get your Medication refill.",
+            "isSubtle": true,
+            "wrap": true
+            },
+            {
+            "type": "TextBlock",
+            "text": "Don't worry, we'll never share or sell your information.",
+            "isSubtle": true,
+            "wrap": true,
+            "size": "small"
+            },
+            {
+            "type": "TextBlock",
+            "text": "Your name",
+            "wrap": true
+            },
+            {
+            "type": "Input.Text",
+            "id": "myName",
+            "placeholder": "Full name"
+            },
+            {
+            "type": "TextBlock",
+            "text": "Your email",
+            "wrap": true
+            },
+            {
+            "type": "Input.Text",
+            "id": "myEmail",
+            "placeholder": "youremail@example.com",
+            "style": "email"
+            },
+            {
+            "type": "TextBlock",
+            "text": "Medication Requested"
+            },
+            {
+            "type": "Input.Text",
+            "id": "myMedReq",
+            "placeholder": "Medication Name",
+            "wrap": "true"
+            }
+          ]
+        }
+      ]
+    } ],  
+    "actions": [
+    {
+    "type": "Action.Submit",
+    "title": "Submit"
+    } ] 
 
-    ![A picture containing application Description automatically generated](./IMAGES/Lab02/L2P120.png)
+}  
 
-1. [] Add **Display text** as the following: +++**scenario.formData.myName + " - Thanks for providing the information, we have created a Medication Request for you regarding the following medication: " + scenario.formData.myMedReq**+++. This can be done with the dropdown set as Markdown or Javascript.
 
-1. [] Rename the statement to +++Confirmation+++ and select **Save**.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P121.png)
+**Note** - Go to the [Adaptive Card visualizer](https://adaptivecards.io/) to test your own authored card.
+ 
+![image](./IMAGES/Lab02/image136.svg)
 
-1. [] Connect the **Submit** step to the **Confirmation** step in the designer canvas.
+4.	On the prompt form, select **Vertical** from the **Cards layout** dropdown menu. Select **Save**.
 
-    ![Diagram Description automatically generated](./IMAGES/Lab02/L2P122.png)
+![image](./IMAGES/Lab02/image137.svg)
 
-1. [] Select **Save** and select **Refresh** in the **Web Chat** pane. Select **Run** to see your scenario in the webchat.
+5.	**Connect** the **Yes** condition of the **IsMedRefill** branch to the **Submit** prompt.
 
-1. [] Fill in information for the request and select **Submit** to see the confirmation text:
-    1. [] **Name**: +++Jensen, Casey+++
-    1. [] **Email**: +++caseyjensen@contoso.com+++ 
-    1. [] **Medication Requested**: +++Albuterol inhaler+++
+![image](./IMAGES/Lab02/image138.svg) 
 
-    ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab02/L2P124.png)
+6.	**Save** and **Run** your current scenario. If you don't save the scenario first, it won't run with updates that have been made since the last save. If you haven't saved at all, it won't recognize any conversation.
 
-#### Step 6: Invoke Live Agent Action
+The Adaptive Card output should display in the Web Chat when the system is running the conversation and selecting **Medication Refill** when prompted.
 
-1. [] Add a **Statement** element to the canvas.
+![image](./IMAGES/Lab02/image139.svg)
 
-1. [] Enter **Display Text**: +++**Please wait, I am transferring your request to a live agent for further assistance.**+++
-  
-1. [] Rename the statement to +++Live Chat+++
+**Step: Add a confirmation statement**
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P126.png)
+To add a confirmation statement, follow these steps:
 
-1. [] Select **Save** to return to the designer page.
-  
-1. [] Connect the **No** decision of the **IsMedRefill** branch to the **Live Chat** statement.
+1.	Add a **Statement** element.
+ 
+![image](./IMAGES/Lab02/image140.svg)
 
-    ![Diagram Description automatically generated](./IMAGES/Lab02/L2P127.png)
+2.	Set the **Display text** as follows:
 
-#### Step 7: Add Action to Invoke Escalation
+    scenario.formData.myName + " - Thanks for providing the information, we have created a Medication Request for you regarding the following medication: " + scenario.formData.myMedReq
 
-1. [] Add an **Action** element to the canvas that will be used to trigger an escalation to Omnichannel Live Agent
+3.	Rename the statement to **Confirmation** and then select **Save**.
+ 
+![image](./IMAGES/Lab02/image141.svg)
 
-    ![](./IMAGES/Lab02/L2P128.png)
+4.	Connect the **Submit** element to the **Confirmation** element on the designer canvas.
+ 
+![image](./IMAGES/Lab02/image142.svg)
 
-1. [] Add the following code in the action (replacing what is there), which will trigger the Live agent chat:
+5.	Select **Save** and **Run** to view your scenario in the web chat. Select **Refill Medication** in the authored card.
+
+6.	Fill in information for the request and then select **Submit**. Note the confirmation text that's returned from the bot, which was defined in your confirmation step.
+ 
+![image](./IMAGES/Lab02/image143.svg)
+
+**Step: Invoke a live agent action**
+
+To invoke a live agent action, follow these steps:
+
+1.	Add a **Statement** element to the canvas.
+
+2.	In the **Display text** box, enter **Please wait, I am transferring your request to a live agent for further assistance.**
+
+3.	Rename the statement to **Live Chat** and then select **Save**.
+ 
+![image](./IMAGES/Lab02/image144.svg)
+
+4.	Connect the **No** decision of the **IsMedRefill** branch to the **Live Chat** statement.
+
+![image](./IMAGES/Lab02/image145.svg)
+
+**Step: Add an action to invoke escalation**
+
+To add an action to invoke escalation, follow these steps:
+
+1.	Add an **Action** element to the canvas under **Advanced control elements**, which you'll use to trigger an escalation to an Omnichannel live agent.
+
+ 
+![image](./IMAGES/Lab02/image146.svg)
+
+2.	Add the following code to the action, which will trigger the live agent chat:
 
     session.sendChannelData('Escalating...', {
+  "tags": JSON.stringify({type: "Escalate", context: {"EscalateToAgent": 1}})
+   });
 
-    "tags": JSON.stringify({type: "Escalate", context: {"EscalateToAgent": 1}})
+3.	Name the action **Escalate** and then select **Save** to return to the designer page.
 
-    });
+ 
+![image](./IMAGES/Lab02/image147.svg)
 
-1. [] Name the action +++Escalate+++. Select **Save** to return to the designer page.
+Connect the **Live Chat** statement to the new **Escalate** action. 
+ 
+![image](./IMAGES/Lab02/image148.svg)
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P129.png)
+You've now completed the final connection. The following screenshot shows your full scenario.
+ 
+![image](./IMAGES/Lab02/image149.svg)
 
-1. [] Connect the **Live Chat** to the new **EscalateToAgent** action. You completed the final connection!
+4.	**Save** and **Run** your scenario to view the full scenario output.
 
-    ![Diagram Description automatically generated](./IMAGES/Lab02/L2P130.png)
+5.	Select **Live Agent** in the authored card to show the escalation action.
 
-1. [] Save, refresh the chat, and run your scenario to see the full scenario output.
+![image](./IMAGES/Lab02/image150.svg) 
 
-1. [] Select **Live Agent** in the authored card should show the escalation action.
+6.	**Exit** the **MCH_PatientService** scenario editor with the back arrow next to your scenario name. Make sure that you save before confirming to exit.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P131.png)
+![image](./IMAGES/Lab02/image151.svg)
 
-1. [] Select the back arrow next to **MCH_PatientService** in the scenario editor.
+You've now created a custom scenario to allow the patient to refill a medication or escalate to a live agent.
 
-    ![Graphical user interface, application, Word Description automatically generated](./IMAGES/Lab02/L2P132.png)
+## Task: Create the MCH_PatientServiceWelcome scenario
 
-### Task 2: Create MCH_PatientServiceWelcome Scenario
+In this task, you'll create another bot scenario called **MCH_PatientServiceWelcome** to invoke the **MCH_PatientService** scenario. Because the automatic welcome message in the Health Bot settings can be only one step, you'll use it to initiate the multi-step scenario that you created.
 
-In this task, you will create another bot scenario called **MCH_PatientServiceWelcome** to invoke the **MCH_PatientService** scenario.
+1.	On the Azure Health Bot scenarios page, select **New** to create another new scenario.
 
-1. [] On the Azure Health Bot scenarios page, select **+New** to create another new scenario
+![image](./IMAGES/Lab02/image152.svg) 
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P133.png)
+2.	Enter **MCH_PatientServiceWelcome** as the **Name** and the **Scenario ID** for the new Health Bot scenario. Select **Create**.
+ 
+![image](./IMAGES/Lab02/image153.png) 
 
-1. [] Provide the following details for the new scenario and select **Create**:
-    1. [] **Name**: +++MCH_PatientServiceWelcome+++
-    1. [] **Scenario ID**: +++MCH_PatientServiceWelcome+++
+![image](./IMAGES/Lab02/image154.svg)
 
-        ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P134.png)
+3.	On the scenario editor designer, add a **Statement** element.
 
-1. [] On the scenario editor designer, add a **Statement** element.
+![image](./IMAGES/Lab02/image155.svg) 
 
-1. [] Rename the statement +++Welcome+++. Do not add any Display text as we will show it in the card instead.
+4.	Rename the statement to **Welcome**. Add a Display text as – **Welcome to Lamna Healthcare Patient Service Portal**. Select **Add Cards.**
 
-1. [] Select **Add Cards**.
+![image](./IMAGES/Lab02/image156.png) 
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P137.png)
+5.	Select **Hero Card** from the **Card type** dropdown menu. Select the plus (+) icon to add an action.
 
-1. [] Choose **Hero Card**. Add **Title**: +++Welcome to Lamna Healthcare Patient Service Portal+++
+![image](./IMAGES/Lab02/image157.svg) 
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P139.png)
+6.	Provide the following details for the action:
 
-1. [] Select **Add Action** and provide the following details:
-    1. [] **Action type**: imBack
-    1. [] **Action value**: +++"begin MCH_PatientService"+++
-    1. [] **Action title**: +++"Lamna Healthcare Support"+++
+    o	**Action type** - imBack
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P140.png)
+    o	**Action value** - begin MCH_PatientService
 
-1. [] Select **OK** and **Save** to view your completed scenario. This will be used to kick off the conversation and allow the other MCH_PatientService scenario to be invoked through the authored card.
+    o	**Action title** - "Lamna Healthcare Support"
 
-1. [] Save and run to test your bot scenario **MCH_PatientServiceWelcome** scenario in the Web Chat.
+![image](./IMAGES/Lab02/image158.png) 
 
-    ![Text Description automatically generated with medium confidence](./IMAGES/Lab02/L2P142.png)
+7.	Select **OK** and then select **Save** on the statement form.
 
-1. [] Select the back arrow next to **MCH_PatientServiceWelcome** in the scenario editor.
+![image](./IMAGES/Lab02/image159.svg) 
 
-### Task 3: Configure Welcome Scenario as Automatic
+8.	**Save** and **Run** to test your **MCH_PatientServiceWelcome** bot scenario in the Web Chat.
+ 
+![image](./IMAGES/Lab02/image160.svg)
 
-In this task, we will set the MCH\_ PatientServiceWelcome to be the “Automatic Welcome Scenario” in settings. This will always trigger the welcome scenario when a user starts a conversion with the **Azure** **Health Bot**.
+9.	**Exit** the scenario designer.
 
-1. [] Navigate to **Configuration > Conversation**
+You've now created a welcome scenario that will kick off the MCH_PatientService scenario.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P143.png)
+## Task: Set up the welcome scenario to be automatic
 
-1. [] In the **Interactions** tab, scroll down to the **Automatic Welcome** section.
+In this task, you'll set the **MCH_PatientServiceWelcome** to be the **Automatic Welcome Scenario** in settings. This setting will always trigger the scenario when a user starts a conversion with the Health Bot from the portal.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P144.png)
+1.	Go to **Configuration > Conversation** from the left navigation pane.
+ 
+![image](./IMAGES/Lab02/image161.svg)
 
-1. [] In the **Automatic welcome scenario** dropdown, select the **MCH_PatientServiceWelcome**. Select **Save**.
+2.	On the **Interactions** tab, scroll down to the **Automatic welcome** section. From the **Automatic welcome scenario** dropdown menu, select the **MCH_ PatientServiceWelcome** scenario. You can clear the automatic welcome message that you previously set. Select **Save**.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P145.png)
+![image](./IMAGES/Lab02/image162.svg)
 
-### Task 4: Test Health Bot Escalation from Power Apps Portal to Dynamics 365 Omnichannel
+You've successfully set the **MCH_PatientServiceWelcome** scenario as the default scenario that kicks off when a user interacts with the Health Bot.
 
-1. [] Navigate to **Power Apps** and click to open **Lamna Healthcare Patient Portal**.
+## Task: Test Health Bot escalation from Power Apps portal to Omnichannel
 
-    ![Open Lamna Healthcare Portal](./IMAGES/Lab02/L2P146.png)
+In this task, you'll test the escalation experience from the Power Apps portal to an Omnichannel live agent.
 
-1. [] You should see the Health Bot **Let’s Chat** button in the lower right-hand corner of the screen. This means the chat widget was successfully embedded into the Customer Self-service portal.
+1.	Go to Power Apps. Select the correct environment and open **Lamna Healthcare Patient Portal**.
 
-    ![Graphical user interface, website Description automatically generated](./IMAGES/Lab02/L2P147.png)
 
-1. [] When you the select the chat widget, the bot will trigger the welcome scenario message we created and set as the default welcome message **(MCH_PatientServiceWelcome)**.
+2.	The Azure Health Bot **Let's Chat** button should display in the lower-right corner of the screen, meaning that the chat widget was successfully embedded into the Customer self-service portal.
+ 
+![image](./IMAGES/Lab02/image163.svg)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab02/L2P148.png)
+3.	When you select the chat widget, the bot will trigger the welcome scenario message that you created and will set it as the default welcome message, **MCH_PatientServiceWelcome**.
 
-1. [] To verify the presence status, navigate back to **Power Apps** and open **Customer Service Workspace.**
+![image](./IMAGES/Lab02/image164.svg) 
 
-    > [!ALERT] Note: Omnichannel for Customer Chat Widget will work only when you see the presence status is enabled. There should be a splash loading screen that goes through multiple steps and then displays the status indicator as available once loaded. (Status is enabled when the green circle with the checkmark appears)
+4.	Return to Power Apps and open **Customer Service workspace.**
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P149.png)
+![image](./IMAGES/Lab02/image165.svg)
 
-    ![Check presence status](./IMAGES/Lab02/L2P150.png)
+**Note** - Escalation into the Customer Service workspace will work only when the **Presence** status shows as enabled. A splash loading screen will show that goes through multiple steps and then displays the status indicator as **Available** after it's loaded. The status is enabled when it shows a check mark in a green circle.
 
-    Splash screen:
+![image](./IMAGES/Lab02/image166.svg)  
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab02/L2P151.png)
+5.	In the Health Bot dialog in the Patient Portal, select the **Healthcare Support** button and then select the **Live Agent** button to witness the escalation into Omnichannel to chat with a live agent (you).
 
-1. [] In the **Health Bot in Lamna Healthcare Patient Portal**, select **Lamna Healthcare Support** button, then the **Live Agent** button to witness the escalation into Omnichannel to chat with a live agent (your user!)
+![image](./IMAGES/Lab02/image167.svg) 
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab02/L2P152.png) ![Graphical user interface, text, application, chat or text message Description automatically generated](./IMAGES/Lab02/L2P153.png)
+6.	Return to Omnichannel for Customer Service. Your user, as the **Live Agent**, should receive an incoming notification with **Accept** and **Reject** options for the chat.
 
-1. [] Navigating back to **Omnichannel for Customer Service**, your user as the Live Agent should receive an incoming notification with **Accept/Reject** options for that chat.
+7.	Select **Accept** to connect and chat with the customer, or in this case, the patient.
 
-1. [] Select **Accept** to connect and chat with customer (In this case chat with the **patient**).
+![image](./IMAGES/Lab02/image168.svg)  
 
-    ![live agent notification on Customer Service](./IMAGES/Lab02/L2P154.png)
+8.	When a live chat agent accepts the incoming chat notification, Omnichannel for Customer Service will open a **Live Chat** widget, where the agent can view the entire bot conversation with the user and continue to chat with them.
+ 
+![image](./IMAGES/Lab02/image169.svg) 
 
-1. [] As soon as Live Chat Agent accepts the incoming chat notification, Omnichannel for Customer Service has opened a **Live Chat Widget** and Agent would be able to see the entire bot conversation with user and continue the chat conversation with user for further assistance.
-
-    ![live agent notification on Customer Service](./IMAGES/Lab02/L2P155.png)
-
-**Congratulations!** You have successfully extended the Azure Health Bot with custom scenarios and tested the end-to-end escalation scenario from a patient using the Azure Health Bot in Power Apps Portals to chatting with a Live Agent in Omnichannel for Customer Service.
+Now, you've successfully tested the escalation scenario from the patient by using a Health Bot in the Power Apps portal to a live agent in Omnichannel for Customer Service.

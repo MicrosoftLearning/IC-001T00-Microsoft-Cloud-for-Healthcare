@@ -2,32 +2,23 @@
 
 ## Overview
 
-The **Care Management** application allows healthcare systems to provide coordinated care to each patient by quickly communicating the right information, at the right time, to the right people. Users can easily create, personalize, and enable new care plans for patients, manage care teams, and view patients’ clinical timelines and care insights right within the application.
-
-Key capabilities for Care Management include the following:
-
--   **Care team**: View and collaborate with care teams to provide the best care for the patient.
-    -   **Care plan**: Create and assign care plans and automate adherence to improve care coordination for your patients.
-    -   **Clinical timeline**: Concise, sequential, and interactive view of patient's clinical occurrences.
-    -   **Virtual clinic**: Provide your care team members the ability to perform virtual appointments with patients.
-
-Care Management focuses on both **Enhance patient engagement** and **Empower health team collaboration** priority scenarios. It creates a system that allows for enhanced care team collaboration and coordination, virtual care options, and a 360 view of patient healthcare data including patient insights.
-
-![](./IMAGES/Lab04/L4P1.png)
+Care Management focuses on the **Enhance patient engagement** and **Empower health team collaboration** priority scenarios. It creates a system that allows for a 360-degree view of patient healthcare data with patient insights, enhanced care team collaboration, and virtual care options.    
 
 This lab will focus on the story of Lamna Healthcare Company, who is opening a new location in Redmond, WA.
 
 ![Timeline Description automatically generated](./IMAGES/Lab04/L4P2.png)
 
-Now that Lamna Healthcare Company’s new location is ready to open, we need to ensure the new location record is in the system and that the employees understand the healthcare data model basics and how the tables and relationships are surfaced in the Care Management application.
+Now that Lamna Healthcare Company's new location is ready to open, it needs to be entered into the system. Additionally, employees must understand the healthcare data model and how the data is displayed in the Care Management application.
 
-## Learning objectives
+The following exercises in this module help you learn more about the Care Management application:
 
-In this lab, you will:
+•	Explore the healthcare data model and how patient details, clinical data, and care plan data are related.
 
--   Explore the Healthcare Data Model
--   Navigate the Care Management application
--   Create a new Location record
+•	Navigate the unified patient view of a patient record in the Care Management application.
+
+•	Create a location record for Lamna Healthcare Company.
+
+•	Add a new patient information in the Care Management App.
 
 ## Exercise 1: Explore the Healthcare Data Model
 
@@ -52,11 +43,11 @@ In this task, you will explore the main tables related to Patient Data. Select e
 
 | Table Name | Definition |
 |----|----|
-| **Patient (Contact)**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact+++ | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
-| **AllergyIntolerance**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcore/allergyintolerance+++ | Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance. |
-| **Condition**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/condition+++ | A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern. |
-| **MedicationRequest**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/medicationrequest+++ | An order or request for both supply of the medication and the instructions for administration of the medication to a patient. |
-| **RelatedPerson**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/relatedperson+++ | Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process. |
+| **Patient (Contact)**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
+| **AllergyIntolerance**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcore/allergyintolerance | Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance. |
+| **Condition**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/condition | A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern. |
+| **MedicationRequest**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/medicationrequest | An order or request for both supply of the medication and the instructions for administration of the medication to a patient. |
+| **RelatedPerson**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/relatedperson | Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process. |
 
 See below for the **Patient Detail Entity Relationship Diagram**.
 
@@ -70,15 +61,15 @@ In this task, you will explore the main tables related to Clinic Data. Select ea
 
 | Table Name | Definition |
 |----|----|
-| **Patient or Practitioner (Contact)**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact+++ | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
-| **Organization**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/applicationcommon/organization+++ | Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation. |
-| **Location**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/location+++ | Details and position information for a physical place where services are provided and resources and participants may be stored, found, contained or accommodated. |
-| **AppointmentEMR**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/appointmentemr+++ | A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s). |
-| **Procedure**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/procedure+++ | An action that is or was performed on a patient. This can be a physical intervention like an operation, or less invasive like counseling or hypnotherapy. |
-| **Encounter**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/encounter+++ | An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. |
-| **EpisodeOfCare**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/episodeofcare+++ | An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. |
-| **Observation**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/observation+++ | Measurements and simple assertions made about a patient, device or other subject. |
-| **CodeableConcept**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/codeableconcept+++ | A Codeable Concept represents a value that is usually supplied by providing a reference to one or more terminologies, but may also be defined by the provision of text. |
+| **Patient or Practitioner (Contact)**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
+| **Organization**, https://docs.microsoft.com/en-us/common-data-model/schema/core/applicationcommon/organization | Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation. |
+| **Location**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/location | Details and position information for a physical place where services are provided and resources and participants may be stored, found, contained or accommodated. |
+| **AppointmentEMR**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/appointmentemr | A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s). |
+| **Procedure**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/procedure | An action that is or was performed on a patient. This can be a physical intervention like an operation, or less invasive like counseling or hypnotherapy. |
+| **Encounter**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/encounter | An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. |
+| **EpisodeOfCare**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/episodeofcare | An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. |
+| **Observation**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/observation | Measurements and simple assertions made about a patient, device or other subject. |
+| **CodeableConcept**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/codeableconcept | A Codeable Concept represents a value that is usually supplied by providing a reference to one or more terminologies, but may also be defined by the provision of text. |
 
 See below for the **Clinical Data Entity Relationship Diagram**.
 
@@ -92,152 +83,282 @@ In this task, you will explore the main tables related to Care Plan Management. 
 
 | Table Name | Definition |
 |----|----|
-| **Patient (Contact)**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact+++ | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
-| **CarePlan**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/careplan+++ | Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition |
-| **CarePlanActivity**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplanactivity+++ | Identifies a planned action to occur as part of the plan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc. |
-| **CarePlanActivityGoal**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplanactivitygoal+++ | Internal reference that identifies the goals that this activity is intended to contribute towards meeting. |
-| **Goal**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/goal+++ | Target objective for a user or a team for a specified time period. |
-| **CarePlanGoal**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplangoal+++ | Describes the intended objective(s) of carrying out the care plan. |
-| **Encounter**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/encounter+++ | An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. |
-| **Episode of Care**, +++https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/episodeofcare+++ | An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. |
+| **Patient (Contact)**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/administration/administrationcore/contact | Person with whom a business unit has a relationship, such as customer, supplier, and colleague. |
+| **CarePlan**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/careplan | Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition |
+| **CarePlanActivity**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplanactivity | Identifies a planned action to occur as part of the plan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc. |
+| **CarePlanActivityGoal**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplanactivitygoal | Internal reference that identifies the goals that this activity is intended to contribute towards meeting. |
+| **Goal**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/goal | Target objective for a user or a team for a specified time period. |
+| **CarePlanGoal**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/clinical/clinicalcareteam/careplangoal | Describes the intended objective(s) of carrying out the care plan. |
+| **Encounter**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/encounter | An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. |
+| **Episode of Care**, https://docs.microsoft.com/en-us/common-data-model/schema/core/industrycommon/healthcare/foundational/commoncore/episodeofcare | An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. |
 
 See below for the **Care Plan Management Entity Relationship Diagram**.
 
 ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P5.png)
 
-===
+
 
 ## Exercise 2: Navigate Care Management Application
 
-In this exercise, you will navigate the patient record and explore all the detailed information that is captured about the patient by Microsoft Cloud for Healthcare. In this case, we will examine the healthcare information of Amber Rodriguez to see how a care team member would obtain a full view of the patient.
+In this exercise, you'll navigate the patient record and explore information that's captured in the Care Management application. In this scenario, you'll examine the unified patient view to observe how a care team member would obtain a full view of clinical and non-clinical data for a specific patient.
 
-1. [] Navigate to +++http://make.powerapps.com+++ in an In-Private or Incognito window. If you are in an official training class, sign in with your assigned user.
+1.  Navigate to [Power apps portal](http://make.powerapps.com) in an In-Private or Incognito window. If you are in an official training class, sign in with your assigned user.
 
-1. [] Select the **MC4H Labs Environment** in the upper right.
+2.	In Power Apps, select **Apps** on the left navigation pane. Select and open **Care Management** by clicking on the **play** button.
+ 
+![image](./IMAGES/Lab04/image9.png)
 
-    ![](./IMAGES/Lab04/L4P6.png)
+3.	You'll be directed to **Health Analytics** under **Care management.** 
+ 
+![image](./IMAGES/Lab04/image10.png)
 
-1. [] In Power Apps, select **Apps** in the left sitemap. Select and open **Care Management**.
+The Care Coordinator Dashboard view is as shown in the below image.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P7.png)
+![image](./IMAGES/Lab04/image12.svg) 
 
-1. [] You will be landed in the **Health Analytics** section showing either the **Care Coordinator Dashboard** or the **Care Plan Activities Dashboard**. These are helpful tools for care coordinators to get a complete view of their healthcare organization data, including care plans, care plan activities, care plan goals, appointments (EMR), and activity timeline.
+4.	Select **People** on the left navigation pane. Note that the default view is **Active Patients**. In your own time, you can switch the view to **Active Practitioners** and explore the practitioners form to observe how it differs from the patient form.
+ 
+![image](./IMAGES/Lab04/image13.png)
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P8.png)
+5.	Find and select **Amber Rodriguez** from the **Active Patients** view. Open the record by double-clicking or selecting **Edit** in the command bar.
 
-1. [] Select **People** in the left Site Map.
+![image](./IMAGES/Lab04/image15.svg) 
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P9.png)
+6.	In the **Patient-Clinical** form, examine the **Summary** tab on Amber's patient record. The purpose of the patient record is to give a comprehensive view of Amber's latest information.
 
-1. [] Find and select **Amber Rodriguez** from the **Active Patients** view. Open the record by double clicking or selecting **Edit** in the command bar.
+![image](./IMAGES/Lab04/image17.svg)
+ 
+   1.	The **Patient snapshot** section displays a customizable view of the patient information. Select an item to display the details of the record on the right panel of the form.
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab04/L4P10.png)
+   2.	In the **Active conditions** section, review Amber's preexisting conditions. You can drill down for more information or create a new condition for the patient.
 
-1. [] Take a moment to examine the **Summary** tab on Amber’s patient record. The purpose of the patient record is to give a comprehensive view of Amber’s latest information. In the summary tab, the care team member will have a full view of Amber’s **Conditions**, **Test Results**, **Patient Relationships**, **Allergies** **and** **Sensitivities**, **Clinical Data**, and **Patient Interactions**.
+   3.	In the **Clinical details** section, cycle through the various icons to review different medical details, including **Medications and prescriptions, Encounters, Results and diagnostics,** and **Procedures**. This method is simple and efficient for observing patient healthcare details.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](./IMAGES/Lab04/L4P11.png)
+![image](./IMAGES/Lab04/image19.svg)
 
-1. [] In the **Active Conditions** section, the care provider can get a view of all of Amber’s pre-existing conditions.
+   4.	**Assistant** section provides an overview of notifications so that the admin can check back later to stay updated.
 
-    ![Graphical user interface Description automatically generated with medium confidence](./IMAGES/Lab04/L4P12.png)
+   5.	Review the **Patient Interactions** section, which shows any activity, note, or post. You can filter and sort this section if necessary.
 
-1. [] In the **Patient Relationships** area, you can see Amber’s related people in the system.
+7.	Select the **Profile** tab.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P13.png)
+![image](./IMAGES/Lab04/image21.svg)
 
-1. [] In the **Allergies and Sensitivities** section, you can get a singular point of view of all the reported allergies that the care givers need to be aware of for the patient.
+8.	The **Profile** tab includes extra and non-clinical information, including the **Patient information, Patient relationships, Patient contact methods, Insurance coverage, Claims,** and **Medical identifiers** sections.
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P14.png)
+ 
+![image](./IMAGES/Lab04/image23.svg)
 
-1. [] In the **Clinical Data** section, you can cycle through the various icons to see different medical details including **medications and prescriptions**, **encounters**, **results and diagnostics**, and **procedures**. This is a simple and efficient way to observe patient healthcare details.
+9.	Select the **Clinical timeline** tab. On this tab, a care team member can view a weekly calendar of the patient's clinical information and a list of upcoming or previous events.
+ 
+![image](./IMAGES/Lab04/image25.svg)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P15.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P16.png)
+10.	Select the **Upcoming events** dropdown menu on the right pane to view **Previous events.**
+ 
+![image](./IMAGES/Lab04/image27.svg)
 
-    ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P17.png) ![Graphical user interface, text, application Description automatically generated](./IMAGES/Lab04/L4P18.png)
+11.	Review the list of events that Amber had previously, including appointments, care plans, encounters, and medication requests.
 
-1. [] The **Patient Interactions** section shows any activity, note, or post and can be filtered or sorted.
+![image](./IMAGES/Lab04/image29.svg) 
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab04/L4P19.png)
+12.	Select the **Care Plan** tab. On this tab, the care team member has a full view of all care plans that are associated with the patient. This tab also includes a list of the patient's care plan activities and statistics for completed activities and goals. You can create a new care plan or filter by care plan type in this view.
 
-1. [] Select the **Profile** tab to get **Patient, Address, and Insurance Information.** In the **Patient Information**, notice that key patient data such as **Date of Birth** and **Primary Practitioner** are shown. The healthcare data model uses the contact entity from the Common Data Model and defines the type of contact as patient, practitioner, or related person. This determines the type of form shown.
+ 
+![image](./IMAGES/Lab04/image31.svg)
 
-    ![Graphical user interface Description automatically generated](./IMAGES/Lab04/L4P20.png)
+13.	Select the **Care team** tab. On this tab, the care team member can find other members who might be providing care to the patient for current conditions and care plans.
+ 
+![image](./IMAGES/Lab04/image33.svg)
 
-1. [] Select the **Clinical Timeline** tab. On this tab, a care team member will be able to view a weekly calendar of the patient’s clinical information as well as a list of any upcoming or previous events.
+14.	Select the **Related** tab to view other details that are related to the patient record.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P21.png)
+![image](./IMAGES/Lab04/image35.svg) 
 
-1. [] Select the **Upcoming** **events** dropdown in the right pane and switch to **previous events**.
+You've now explored the starting dashboards and the unified patient view features in the Care Management application.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P22.png)
-
-1. [] See the list of events Amber had previously including **Appointments**, **Care Plans**, **Encounters**, and **Medication Requests**.
-
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab04/L4P23.png)
-
-1. [] Select the **Care Plan** tab. On this tab, the care team member will be able to see a full view of all the Care Plans associated to the patient. This includes a list of their care plan activities and statistics for completed activities and goals. You can create a new care plan or filter by care plan type in this view.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P25.png)
-
-1. [] Select the **Care Team** tab. On this tab, the care team member can find other members who may be providing care to the patient for any current conditions and care plans.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P24.png)
-    
-1. [] Finally, select the **Related** tab to see any additional details related to the patient record.
-
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P26.png)
-
-**Congratulations!** You have explored the Care Management app and its featured data within a patient record.
-
-===
-
+   
 ## Exercise 3: Create a New Location
 
 In this exercise, you will be creating a new Location record for the **Lamna Healthcare Company** Organization. They have opened a new branch in **Redmond, WA** and we need to ensure this location is in the system.
 
-1. [] Select and open **Care Management** from the **Apps** list if you do not already have it open.
+1.	In the Care Management application, select **Native Locations** in the left navigation pane under **Administration**.
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P27.png)
+2.	In the **All Locations** view, select **+ New**
+ 
+![image](./IMAGES/Lab04/image37.svg)
 
-1. [] In the **Care Management** sitemap on the left, select **Locations**.
+3.	Fill in the following information for the new location:
 
-    ![A picture containing graphical user interface Description automatically generated](./IMAGES/Lab04/L4P28.png)
+    o	**Name** - Lamna Healthcare - Redmond, WA
 
-1. [] In the **All Locations** view, select **+New**.
+    o	**Address City** - Redmond
 
-    ![A picture containing diagram Description automatically generated](./IMAGES/Lab04/L4P29.png)
+    o	**Address State** - WA
 
-1. [] Fill in the following information for the new location:
-    1.  **Name**: +++Lamna Healthcare – Redmond, WA+++
-    1.  **Address City**: +++Redmond+++
-    1.  **Address State**: +++WA+++
-    1.  **Managing Organization**: +++Lamna Healthcare Company+++
+    o	**Managing Organization** - Lamna Healthcare Company
 
-        ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P30.png)
+4.	Select **Save & Close.**
 
-        ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P31.png)
+![image](./IMAGES/Lab04/image39.svg) 
 
-1. [] Select **Save & Close**. Now let’s see the new location in the Managing Organization record.
+5.	In the left navigation, select **Organizations** to review the new location in its managing organization record. Change the grid view in the dropdown menu from **My Active Accounts** to **Active Accounts.**
 
-1. [] In the sitemap on the left, select **Organizations**.
+![image](./IMAGES/Lab04/image41.svg) 
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P32.png)
+6.	While in the **Active Accounts** view, select the **Lamna Healthcare Company** organization.
 
-1. [] Change the grid view in the drop-down from **My Active Accounts** to **Active Accounts**.
+![image](./IMAGES/Lab04/image43.svg) 
 
-    ![Graphical user interface, text, application, email Description automatically generated](./IMAGES/Lab04/L4P33.png)
+7.	On the Lamna Healthcare Company record, select the **Related** tab and then scroll down to select **Locations**.
 
-1. [] Once in the **Active Accounts** view, select the **Lamna Healthcare Company** Organization.
+![image](./IMAGES/Lab04/image45.svg) 
 
-    ![Graphical user interface, application Description automatically generated](./IMAGES/Lab04/L4P34.png)
+The newly created **Lamna Healthcare - Redmond, WA** location will show as associated with the record.
 
-1. [] On the **Lamna Healthcare Company** record, select the **Related** tab and scroll down to select **Locations**.
+![image](./IMAGES/Lab04/image47.svg) 
 
-    ![Graphical user interface, application, email Description automatically generated](./IMAGES/Lab04/L4P35.png)
+You've now created a new location in Redmond, WA for Lamna Healthcare Company and have viewed it in the associated organization in the Care Management application.
 
-1. [] You will see the newly created **Lamna Healthcare – Redmond, WA** location associated to the record.
 
-    ![Text Description automatically generated](./IMAGES/Lab04/L4P36.png)
+## Exercise - Add Patient information in Care Management App
 
-**Congratulations!** You created a new location in Redmond, WA for Lamna Healthcare Company using the Care Management application.
+In this task, you continue to walkthrough by creating a new **Patient** and **Patient Encounter** record in the Care Management app, then assigning it a **Care Plan** and a **Care Team** based on the patient’s details. 
 
+1.	Create a new **Patient** record in **Care Management** app by performing the following steps:
+
+    a.	On top right corner of the **Care Management** home page, click on the **+** icon.
+
+    b.	Select **Contact** from the list.
+ 
+![image](./IMAGES/Lab04/image49.svg)
+
+2.	Create a new **patient** record by filling out the following information:
+
+    a.	**Contact Type**: Patient
+
+    b.	**First Name**: Emma 
+
+    c.	**Last Name**: Williams
+
+    d.	**Email**: emmawilliams@contosopersonal.com
+
+    e.	**Mobile Phone**: (561) 754-3010
+
+    f.	**Business Phone**: (431) 754-3010
+
+    g.	Click on **Save and Close**
+ 
+![image](./IMAGES/Lab04/image51.svg)
+
+3.	Click on the record you just created.
+ 
+![image](./IMAGES/Lab04/image53.svg)
+
+4.	Go to **Profile** tab. Enter the below details
+
+    a.	Click on Edit icon for Home address and update the below details
+
+       i.**Address**: 4 Illinois Drive
+
+       ii.**City**: Bronx
+
+       iii.**State/Province**: New York 
+
+       iv.**Zip code**: 10452
+
+       v.**Country**: United States of America
+ 
+![image](./IMAGES/Lab04/image54.png)
+
+![image](./IMAGES/Lab04/image56.svg)
+
+![image](./IMAGES/Lab04/image58.svg)
+
+5.	Click on **Save**.
+
+6.	Click on **Related** drop-down and select **Encounters**.
+ 
+![image](./IMAGES/Lab04/image60.svg)
+
+7.	Click on **New Encounter.**
+ 
+![image](./IMAGES/Lab04/image62.svg)
+
+8.	Enter the following details for the new encounter:
+
+    a.	**Name**: Regular Test
+
+    b.	**Patient**: Emma Williams
+
+    c.	**Status**: Planned 
+
+    d.	**Start Date**: Tomorrow’s date - 8 AM
+
+    e.	**End Date**: Tomorrow’s date – 11 AM
+
+    f.	**Priority**: Routine
+
+    g.	**Destination**: Lamna Healthcare Company
+
+    h.	Click on **Save and Close.**
+ 
+![image](./IMAGES/Lab04/image64.svg) 
+
+![image](./IMAGES/Lab04/image66.svg)
+
+
+9.	We will proceed with creating a new **Care Plan** and **Care Plan Team** for the Patient that we created in the previous step. In this step, we will create a **Care Plan** with one or more **Care Team member(s)** so that the whole care team can collaborate and provide better healthcare for the patient. Click on **Care Plan** tab. Click on **Blank** from the list.
+ 
+![image](./IMAGES/Lab04/image68.svg)
+
+10.	Enter the following details for new care plan:
+
+    a.	**Plan name** - Emma Williams - Care Plan
+
+    b.	**Status**: Active
+
+    c.	**Start Date**: Tomorrow’s date and time is 8 AM
+
+    d.	**End Date**: Tomorrow’s date and time is 11 AM 
+
+    e.	**Encounter**: Regular Test
+
+    f.	Click on **Save and Close**
+
+![image](./IMAGES/Lab04/image70.svg) 
+
+11.	Create a Care team by clicking on **Care team** tab and selecting **Add a new care team.**
+ 
+![image](./IMAGES/Lab04/image72.svg)
+
+12.	Enter the following details on the create new team wizard.
+
+     a. Under **Create care team**
+
+       i.**Care team name**: Emma Williams – Care Team
+
+       ii.**Care plan**: Emma Williams – Care Plan
+
+       iii.	**Context type**: Encounter
+
+       iv.**Encounter**: Regular Test
+
+![image](./IMAGES/Lab04/image74.svg)
+ 
+    b.	Under **Add members**
+
+       i.**Select member type** – Practitioners
+
+       ii.**Search members** – Adrian King
+ 
+![image](./IMAGES/Lab04/image76.svg)
+    
+    c.	Select member type – **Related persons** and add **Cameron Baker.** Click on **Next**.
+ 
+![image](./IMAGES/Lab04/image78.svg)
+
+13. Click on **Submit**.
+ 
+![image](./IMAGES/Lab04/image80.svg)
+
+In this module till now, you explored the Administration section of the Care Management application. In your own time, you can continue through the other sections of the application, including Care Management, Clinical Data, and Templates.
