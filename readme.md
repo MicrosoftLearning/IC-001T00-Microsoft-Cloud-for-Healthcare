@@ -1,3 +1,5 @@
+**This course will be retiring on  **2024/6/28**.  Once course is retired, all GitHub repos will be removed. Thank you.**
+
 # INF99X: Sample Course
 
 - **[Download Latest Student Handbook and AllFiles Content](../../releases/latest)**
