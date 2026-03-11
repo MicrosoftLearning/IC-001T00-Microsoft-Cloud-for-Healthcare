@@ -1,3 +1,12 @@
+---
+lab:
+  title: 'Module 4 Lesson 2 Lab 5: Home Health'
+  description: In this lab, you will play the role of a Lamna Healthcare Company Home Health dispatcher to configure the Home Health application.
+  duration: 150 minutes
+  level: 200
+  islab: true
+---
+
 # Module 4 Lesson 2 Lab 5: Home Health
 
 ## Overview
