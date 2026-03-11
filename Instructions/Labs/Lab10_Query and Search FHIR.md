@@ -1,3 +1,14 @@
+---
+lab:
+  title: 'Module 5 Lesson 4 Lab 10: Query and Search FHIR'
+  description: In this lab, you will learn how to use FHIR search at (https://www.hl7.org/fhir/search.html) operations to query data in your FHIR service. The FHIR specification defines a RESTful API framework for interacting with Resources in a FHIR server database. Healthcare system integrators and app developers can take advantage of the rich set of search parameters in the FHIR API for querying Resources. In this lab, you will get practice using the FHIR search API to query Resources in the FHIR service (see https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview) in Azure Health Data Services (see https://docs.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-overview).
+  duration: 148 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+---
+
 # Module 5 Lesson 4 Lab 10: Query and Search FHIR
 
 ## Overview
