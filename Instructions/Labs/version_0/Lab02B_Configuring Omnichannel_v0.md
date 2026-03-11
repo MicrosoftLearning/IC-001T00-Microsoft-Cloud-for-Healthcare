@@ -1,3 +1,18 @@
+---
+lab:
+  title: 'Module 4 Lesson 1- Lab 2B: Configuring Omnichannel'
+  description: Dynamics 365 Omnichannel integration allows the patient to interact
+    with Health Bot using the Dynamics 365 chat widget to access the medical knowledge
+    and your custom scenarios. It also allows the escalation of a bot conversation
+    to a live agent to continue the interaction. When escalating a conversation, Dynamics
+    passes along the conversation history and the context to the agent.
+  duration: 15 minutes
+  level: 200
+  islab: true
+  primarytopics:
+  - Dynamics 365
+---
+
 # Module 4 Lesson 1- Lab 2B: Configuring Omnichannel
 
 ## Overview
