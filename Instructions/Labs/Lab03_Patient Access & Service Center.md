@@ -1,3 +1,12 @@
+---
+lab:
+  title: 'Module 4 Lesson 1- Lab 3: Patient Access & Service Center'
+  description: In this exercise, you'll create and set up an agent script to appear in the Productivity pane in Patient Service Center. The following screen shows the Productivity pane, with the Agent scripts tab showing.
+  duration: 5 minutes
+  level: 100
+  islab: true
+---
+
 # Module 4 Lesson 1- Lab 3: Patient Access & Service Center
 
 ## Overview
