@@ -1,3 +1,14 @@
+---
+lab:
+  title: 'Module 4 Lesson 2 Lab 6: Virtual Visits'
+  description: In this exercise, you will configure integration with Microsoft Teams for Lamna Healthcare Company. Microsoft Teams offers several features useful for hospitals and other healthcare organizations. By integrating Microsoft Cloud for Healthcare with Microsoft Teams, you can improve the collaboration between your care team staff and enhance patient care. You can quickly schedule and conduct virtual visits remotely with patients.
+  duration: 152 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Teams
+---
+
 # Module 4 Lesson 2 Lab 6: Virtual Visits
 
 ## Overview
