@@ -1,3 +1,12 @@
+---
+lab:
+  title: 'Module 4 Lesson 1- Lab 3: Patient Access & Service Center'
+  description: In this exercise, you will create an agent script to appear in the productivity pane in Patient Service Center. The following screen shows the productivity pane on the right-hand side with the Agent Scripts tab showing. The agent script selected is Validate Patient Information and there are two steps shown. You will not see this below output until the final exercise in this lab while testing escalation, however, you will be creating the components needed to display in the productivity pane later.
+  duration: 5 minutes
+  level: 100
+  islab: true
+---
+
 # Module 4 Lesson 1- Lab 3: Patient Access & Service Center
 
 ## Overview
