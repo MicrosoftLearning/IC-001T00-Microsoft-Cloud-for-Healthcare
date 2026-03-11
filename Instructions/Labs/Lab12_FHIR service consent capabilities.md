@@ -1,3 +1,16 @@
+---
+lab:
+  title: 'Module 5 Lesson 4 Lab 12: FHIR service consent capabilities'
+  description: In this lab, you will use FHIR-Proxy (OSS) (see https://github.com/microsoft/fhir-proxy)
+    to block access to data stored in the FHIR service (see https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/overview).
+  duration: 156 minutes
+  level: 400
+  islab: true
+  primarytopics:
+  - Azure
+  - GitHub
+---
+
 # Module 5 Lesson 4 Lab 12: FHIR service consent capabilities
 
 ## Overview
