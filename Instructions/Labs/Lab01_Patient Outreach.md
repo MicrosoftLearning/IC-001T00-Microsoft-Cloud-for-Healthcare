@@ -1,3 +1,12 @@
+---
+lab:
+  title: 'Module 4 Lesson 1- Lab 1: Patient Outreach'
+  description: In this exercise, you'll create a patient segment by using the Patient Outreach app in Microsoft Cloud for Healthcare. You can use a patient segment to group patients into cohorts based on similar characteristics so that they can be better targeted with marketing communications. In this example, you'll create a patient segment for patients with hypermetropia (a vision condition in which nearby objects appear blurry).
+  duration: 15 minutes
+  level: 100
+  islab: true
+---
+
 # Module 4 Lesson 1- Lab 1: Patient Outreach
 
 
