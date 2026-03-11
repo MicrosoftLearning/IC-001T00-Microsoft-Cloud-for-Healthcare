@@ -1,3 +1,15 @@
+---
+lab:
+  title: 'Module 7 Lesson 4 Lab 14: MedTech service'
+  description: Now you will use Azure Portal to deploy and configure MedTech service within your Azure Health Data Services workspace.
+  duration: 112 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Portal
+---
+
 # Module 7 Lesson 4 Lab 14: MedTech service
 
 ## Overview
