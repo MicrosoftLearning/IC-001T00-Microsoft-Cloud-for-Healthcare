@@ -1,3 +1,14 @@
+---
+lab:
+  title: 'Module 5 Lesson 4 Lab 12: FHIR service consent capabilities'
+  description: Here you will populate your FHIR service with a Consent Resource (see https://www.hl7.org/fhir/consent.html) to configure the Consent Opt-Out filter (see https://github.com/microsoft/fhir-proxy/blob/main/docs/configuration.mdconsent-opt-out-filter) in FHIR-Proxy.
+  duration: 156 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - GitHub
+---
+
 # Module 5 Lesson 4 Lab 12: FHIR service consent capabilities
 
 ## Overview
