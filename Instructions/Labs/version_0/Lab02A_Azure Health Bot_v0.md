@@ -1,3 +1,18 @@
+---
+lab:
+  title: 'Module 4 Lesson 1- Lab 2A: Azure Health Bot'
+  description: The Azure Health Bot Service is a cloud platform that empowers developers
+    in healthcare organizations to build and deploy their compliant, AI-powered Patient
+    insights and health bots, that help them improve processes and reduce costs. It
+    allows you to offer your users intelligent and personalized access to health-related
+    information and interactions through a natural conversation experience.
+  duration: 154 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Azure
+---
+
 # Module 4 Lesson 1- Lab 2A: Azure Health Bot
 
 ## Overview
