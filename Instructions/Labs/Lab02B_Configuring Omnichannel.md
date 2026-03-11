@@ -1,3 +1,15 @@
+---
+lab:
+  title: 'Module 4 Lesson 1- Lab 2B: Configuring Omnichannel'
+  description: In this lab, you'll play the role of a Lamna Healthcare IT developer and use the Azure Health Bot you configured in Lab2A to integrate with Dynamics 365 Omnichannel. This will complete the work for a medication refill scenario.
+  duration: 152 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+    - Dynamics 365
+---
+
 # Module 4 Lesson 1- Lab 2B: Configuring Omnichannel
 
 ## Overview
