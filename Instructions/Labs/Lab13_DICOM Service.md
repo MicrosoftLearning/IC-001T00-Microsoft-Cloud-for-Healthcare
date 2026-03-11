@@ -1,3 +1,15 @@
+---
+lab:
+  title: 'Module 6 Lesson 4 Lab 13: DICOM Service'
+  description: In this lab, you will get experience working with medical images using
+    the DICOM service in Azure Health Data Services.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Azure
+---
+
 # Module 6 Lesson 4 Lab 13: DICOM Service
 
 ## Overview
