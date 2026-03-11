@@ -1,3 +1,15 @@
+---
+lab:
+  title: 'Module 5 Lesson 4 Lab 9: Ingest to FHIR'
+  description: In this lab, you will learn how to use the FHIR Loader utility (https://github.com/microsoft/fhir-loader)
+    to ingest FHIR data into the FHIR service.
+  duration: 52 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - GitHub
+---
+
 # Module 5 Lesson 4 Lab 9: Ingest to FHIR
 
 ## Overview
