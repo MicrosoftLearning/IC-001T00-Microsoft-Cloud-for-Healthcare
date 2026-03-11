@@ -1,3 +1,19 @@
+---
+lab:
+  title: 'Module 4 Lesson 2 Lab 6: Virtual Visits'
+  description: Microsoft Cloud for Healthcare's virtual health allows clinicians to
+    use video conferencing to provide high-quality, personalized, and affordable consultations.
+    Using the entire meetings platform in Microsoft Teams, providers can schedule,
+    manage, and conduct virtual consultation with patients. With the Microsoft Teams
+    integration, practitioners get a full view of their patient's information and
+    history.
+  duration: 152 minutes
+  level: 200
+  islab: true
+  primarytopics:
+  - Microsoft Teams
+---
+
 # Module 4 Lesson 2 Lab 6: Virtual Visits
 
 ## Overview
