@@ -1,3 +1,19 @@
+---
+lab:
+  title: 'Module 4 Lesson 1- Lab 2B: Configuring Omnichannel'
+  description: As stated in the Lab 2A, Lamna Healthcare Company is seeking to streamline
+    their patient engagement capabilities by implementing Azure Health Bot to help
+    improve processes and services, such as entering medication requests. By allowing
+    patients to interact with this service, Lamna Healthcare Company will move one
+    step closer to their goal of improving patient outcomes while reducing overall
+    costs.
+  duration: 152 minutes
+  level: 200
+  islab: true
+  primarytopics:
+  - Azure
+---
+
 # Module 4 Lesson 1- Lab 2B: Configuring Omnichannel
 
 ## Overview
