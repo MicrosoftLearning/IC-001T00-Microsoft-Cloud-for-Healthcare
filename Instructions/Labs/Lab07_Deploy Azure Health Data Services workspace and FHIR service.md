@@ -1,3 +1,14 @@
+---
+lab:
+  title: 'Module 5 Lesson 4 Lab 7: Deploy Azure Health Data Services workspace and FHIR service'
+  description: In this lab, you will deploy an Azure Health Data Services workspace containing a FHIR service instance. In addition, you will set up Postman as your application for testing the FHIR service API.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+---
+
 # Module 5 Lesson 4 Lab 7: Deploy Azure Health Data Services workspace and FHIR service
 
 ## Overview
