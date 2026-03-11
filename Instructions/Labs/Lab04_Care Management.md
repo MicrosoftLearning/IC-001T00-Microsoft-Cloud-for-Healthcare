@@ -1,3 +1,15 @@
+---
+lab:
+  title: 'Module 4 Lesson 2 Lab 4: Care Management'
+  description: Care Management focuses on the **Enhance patient engagement** and **Empower
+    health team collaboration** priority scenarios. It creates a system that allows
+    for a 360-degree view of patient healthcare data with patient insights, enhanced
+    care team collaboration, and virtual care options.
+  duration: 104 minutes
+  level: 100
+  islab: true
+---
+
 # Module 4 Lesson 2 Lab 4: Care Management
 
 ## Overview
