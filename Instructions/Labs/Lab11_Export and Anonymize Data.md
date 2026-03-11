@@ -1,3 +1,14 @@
+---
+lab:
+  title: 'Module 5 Lesson 4 Lab 11: Export and Anonymize Data'
+  description: In this lab, you will be using the \$export command in the FHIR service to export de-identified FHIR data into an ADLS Gen2 blob storage container. The \$export operation in FHIR service is an implementation of the bulk export function detailed in the FHIR Bulk Data Access specification located at https://hl7.org/fhir/uv/bulkdata/export/index.html. To familiarize yourself with the FHIR service \$export operation, please read the How to export FHIR data article located at https://docs.microsoft.com/en-us/azure/healthcare-apis/fhir/export-data and return here when finished.
+  duration: 140 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+---
+
 # Module 5 Lesson 4 Lab 11: Export and Anonymize Data
 
 ## Overview
