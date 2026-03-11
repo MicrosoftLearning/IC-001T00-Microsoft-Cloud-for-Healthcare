@@ -1,3 +1,12 @@
+---
+lab:
+  title: 'Module 6 Lesson 4 Lab 13: DICOM Service'
+  description: From here, you will be using the DICOM service for the features outlined in the objectives at the beginning of this lab. In this exercise, you will use an already configured Postman collection to execute the series of tasks.
+  duration: 60 minutes
+  level: 300
+  islab: true
+---
+
 # Module 6 Lesson 4 Lab 13: DICOM Service
 
 ## Overview
