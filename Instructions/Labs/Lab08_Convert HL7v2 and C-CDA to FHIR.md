@@ -1,3 +1,13 @@
+---
+lab:
+  title: 'Module 5 Lesson 4 Lab 8: Convert HL7v2 and C-CDA to FHIR'
+  description: In this lab, you will learn how to use the FHIR service's custom \$convert-data
+    operation to convert HL7v2 messages and C-CDA documents into FHIR.
+  duration: 60 minutes
+  level: 300
+  islab: true
+---
+
 # Module 5 Lesson 4 Lab 8: Convert HL7v2 and C-CDA to FHIR
 
 ## Overview
