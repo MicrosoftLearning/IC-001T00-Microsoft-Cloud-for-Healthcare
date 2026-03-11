@@ -1,3 +1,14 @@
+---
+lab:
+  title: 'Module 4 Lesson 1- Lab 2A: Azure Health Bot'
+  description: In this lab, you'll play the role of a Lamna Healthcare IT developer and configure Azure Health Bot for a medication refill scenario.
+  duration: 154 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+---
+
 # Module 4 Lesson 1- Lab 2A: Azure Health Bot
 
 ## Overview
