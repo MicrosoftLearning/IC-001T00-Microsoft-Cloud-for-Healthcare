@@ -1,3 +1,13 @@
+---
+lab:
+  title: 'Module 4 Lesson 1- Lab 3: Patient Access & Service Center'
+  description: Microsoft Cloud for Healthcare includes Patient Access and Patient
+    Service Center.
+  duration: 5 minutes
+  level: 100
+  islab: true
+---
+
 # Module 4 Lesson 1- Lab 3: Patient Access & Service Center
 
 ## Overview
