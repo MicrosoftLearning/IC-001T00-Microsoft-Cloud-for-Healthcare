@@ -1,3 +1,17 @@
+---
+lab:
+  title: 'Module 4 Lesson 2 Lab 5: Home Health'
+  description: Microsoft Cloud for Healthcare’s **Home Health** application allows
+    provider personnel to schedule appointments for the patient based on a variety
+    of factors. It allows for the communication of the right information, at the right
+    time, to the right people, to provide safe and effective care to your patients.
+    Manage home visit schedules, notify patients, and give access to medical information
+    to the provider on the go.
+  duration: 150 minutes
+  level: 200
+  islab: true
+---
+
 # Module 4 Lesson 2 Lab 5: Home Health
 
 ## Overview
