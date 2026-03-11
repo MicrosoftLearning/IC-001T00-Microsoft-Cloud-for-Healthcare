@@ -1,3 +1,13 @@
+---
+lab:
+  title: 'Module 5 Lesson 4 Lab 11: Export and Anonymize Data'
+  description: In this lab, you will learn how to export de-identified data from the
+    FHIR service.
+  duration: 140 minutes
+  level: 300
+  islab: true
+---
+
 # Module 5 Lesson 4 Lab 11: Export and Anonymize Data
 
 ## Overview
