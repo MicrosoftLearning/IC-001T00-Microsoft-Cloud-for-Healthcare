@@ -1,3 +1,17 @@
+---
+lab:
+  title: 'Module 4 Lesson 1- Lab 1: Patient Outreach'
+  description: The **Patient Outreach** application in Microsoft Cloud for Healthcare
+    focuses on patient campaign management, which helps you organize and automate
+    marketing and communicate with patients. It helps healthcare providers reach out
+    to their communities and patients in a targeted, efficient way. Providers can
+    choose email, text, regular mail, or a combination, to provide healthcare information
+    to specific groups of patients and community members.
+  duration: 15 minutes
+  level: 100
+  islab: true
+---
+
 # Module 4 Lesson 1- Lab 1: Patient Outreach
 
 
